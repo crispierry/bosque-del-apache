@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bosque del Apache Photo Plan</title>
+    <meta
+      name="description"
+      content="Five-day photography planning workspace for Bosque del Apache National Wildlife Refuge."
+    />
+    <link rel="canonical" href="https://crispierry.com/projects/bosque-del-apache/" />
+    <meta property="og:title" content="Bosque del Apache Photo Plan" />
+    <meta
+      property="og:description"
+      content="Five-day photography planning workspace for Bosque del Apache National Wildlife Refuge."
+    />
+    <meta property="og:url" content="https://crispierry.com/projects/bosque-del-apache/" />
+    <meta property="og:type" content="website" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      crossorigin=""
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23f7f1e7'/%3E%3Cpath d='M8 38c11-13 25-18 48-12-20 2-35 9-48 12Z' fill='%237f9b76'/%3E%3Cpath d='M16 32c10-12 24-17 38-14-12 3-23 10-31 21-3-1-5-3-7-7Z' fill='%23b9653d'/%3E%3C/svg%3E"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="app-shell">
+      <div class="brand-block">
+        <p class="eyebrow">Early December photography plan</p>
+        <h1>Bosque del Apache</h1>
+      </div>
+      <nav class="top-tabs" aria-label="Trip sections">
+        <button class="tab is-active" data-view="overview">Overview</button>
+        <button class="tab" data-view="map">Map</button>
+        <button class="tab" data-view="itinerary">Itinerary</button>
+        <button class="tab" data-view="windows">Photo Windows</button>
+        <button class="tab" data-view="lodging">Lodging</button>
+        <button class="tab" data-view="gear">Gear</button>
+        <button class="tab" data-view="practice">Practice</button>
+        <button class="tab" data-view="inspiration">Inspiration</button>
+        <button class="tab" data-view="sources">Sources</button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="view is-active" id="overview"></section>
+      <section class="view" id="map"></section>
+      <section class="view" id="itinerary"></section>
+      <section class="view" id="windows"></section>
+      <section class="view" id="lodging"></section>
+      <section class="view" id="gear"></section>
+      <section class="view" id="practice"></section>
+      <section class="view" id="inspiration"></section>
+      <section class="view" id="sources"></section>
+    </main>
+
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <script src="./app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,527 @@
+:root {
+  --paper: #f7f1e7;
+  --paper-2: #fffaf1;
+  --ink: #17140f;
+  --muted: #665f53;
+  --line: #d8cdbb;
+  --sage: #7f9b76;
+  --sage-dark: #385642;
+  --clay: #b9653d;
+  --gold: #d8a441;
+  --water: #4f8f9a;
+  --berry: #8c4351;
+  --shadow: 0 20px 60px rgba(55, 40, 20, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family:
+    Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+.app-shell {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  display: grid;
+  grid-template-columns: minmax(220px, 0.8fr) minmax(0, 2fr);
+  gap: 18px;
+  align-items: center;
+  border-bottom: 1px solid var(--line);
+  background: rgba(247, 241, 231, 0.94);
+  padding: 14px clamp(16px, 4vw, 42px);
+  backdrop-filter: blur(14px);
+}
+
+.brand-block h1 {
+  margin: 2px 0 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.55rem, 2.4vw, 2.4rem);
+  font-weight: 500;
+  line-height: 1;
+}
+
+.eyebrow {
+  margin: 0;
+  color: var(--clay);
+  font-size: 0.74rem;
+  font-weight: 760;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.top-tabs {
+  display: flex;
+  justify-content: flex-end;
+  gap: 7px;
+  overflow-x: auto;
+  scrollbar-width: thin;
+}
+
+.tab,
+.chip,
+.day-tab,
+.window-tab {
+  min-height: 36px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: rgba(255, 250, 241, 0.74);
+  color: var(--muted);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.tab {
+  padding: 8px 11px;
+  font-size: 0.86rem;
+}
+
+.tab:hover,
+.tab.is-active,
+.chip:hover,
+.chip.is-active,
+.day-tab:hover,
+.day-tab.is-active,
+.window-tab:hover,
+.window-tab.is-active {
+  border-color: var(--sage-dark);
+  background: var(--sage-dark);
+  color: #fffaf1;
+}
+
+main {
+  min-height: calc(100vh - 78px);
+}
+
+.view {
+  display: none;
+  padding: clamp(18px, 4vw, 42px);
+}
+
+.view.is-active {
+  display: block;
+}
+
+.dashboard {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 0.48fr);
+  gap: clamp(18px, 3vw, 34px);
+  align-items: stretch;
+}
+
+.panel,
+.photo-card,
+.slot-card,
+.lodging-card,
+.source-row,
+.gear-card {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 250, 241, 0.78);
+  box-shadow: var(--shadow);
+}
+
+.panel {
+  padding: clamp(18px, 3vw, 28px);
+}
+
+.hero-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(260px, 0.65fr);
+  gap: 22px;
+  min-height: 520px;
+}
+
+.hero-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 22px;
+}
+
+.hero-copy h2,
+.section-title h2 {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2.2rem, 5vw, 4.8rem);
+  font-weight: 500;
+  line-height: 0.96;
+}
+
+.hero-copy p,
+.section-title p,
+.card-copy,
+.muted {
+  color: var(--muted);
+  line-height: 1.62;
+}
+
+.hero-copy p {
+  max-width: 62ch;
+  font-size: 1.03rem;
+}
+
+.hero-photo {
+  position: relative;
+  min-height: 460px;
+  overflow: hidden;
+  border-radius: 8px;
+  background: #d8cdbb;
+}
+
+.hero-photo img,
+.photo-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.credit {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  max-width: calc(100% - 20px);
+  border-radius: 6px;
+  background: rgba(23, 20, 15, 0.72);
+  color: #fffaf1;
+  padding: 6px 8px;
+  font-size: 0.72rem;
+}
+
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.stat {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper-2);
+  padding: 14px;
+}
+
+.stat b {
+  display: block;
+  margin-bottom: 7px;
+  color: var(--ink);
+  font-size: 1.08rem;
+}
+
+.stat span {
+  color: var(--muted);
+  font-size: 0.86rem;
+}
+
+.side-stack {
+  display: grid;
+  gap: 16px;
+}
+
+.next-card {
+  border-left: 5px solid var(--clay);
+}
+
+.section-title {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  align-items: end;
+  margin-bottom: 20px;
+}
+
+.section-title h2 {
+  font-size: clamp(2rem, 4vw, 3.4rem);
+}
+
+.section-title p {
+  max-width: 64ch;
+  margin: 0;
+}
+
+.timeline {
+  display: grid;
+  gap: 14px;
+}
+
+.day-tabs,
+.window-tabs,
+.filter-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.day-tab,
+.window-tab,
+.chip {
+  padding: 8px 12px;
+}
+
+.slot-card {
+  display: grid;
+  grid-template-columns: 150px minmax(0, 1fr) minmax(220px, 0.42fr);
+  gap: 18px;
+  padding: 18px;
+}
+
+.slot-time {
+  color: var(--clay);
+  font-size: 0.78rem;
+  font-weight: 760;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.slot-card h3,
+.lodging-card h3,
+.gear-card h3,
+.photo-card h3,
+.source-row h3 {
+  margin: 0 0 8px;
+  font-size: 1.08rem;
+}
+
+.tag-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-top: 12px;
+}
+
+.tag {
+  border-radius: 999px;
+  background: rgba(79, 143, 154, 0.14);
+  color: #225861;
+  padding: 5px 8px;
+  font-size: 0.76rem;
+  font-weight: 700;
+}
+
+.tag.sunrise {
+  background: rgba(216, 164, 65, 0.2);
+  color: #6b4a10;
+}
+
+.tag.sunset {
+  background: rgba(185, 101, 61, 0.18);
+  color: #733517;
+}
+
+.tag.verify {
+  background: rgba(140, 67, 81, 0.14);
+  color: var(--berry);
+}
+
+.map-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(300px, 0.38fr);
+  gap: 18px;
+}
+
+#trip-map {
+  min-height: 680px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #e6e0d4;
+}
+
+.map-list {
+  display: grid;
+  gap: 10px;
+  max-height: 680px;
+  overflow: auto;
+}
+
+.map-item {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper-2);
+  padding: 12px;
+}
+
+.map-item h3 {
+  margin: 0 0 5px;
+  font-size: 0.96rem;
+}
+
+.map-item p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.86rem;
+  line-height: 1.52;
+}
+
+.leaflet-popup-content {
+  color: var(--ink);
+}
+
+.grid-2,
+.grid-3 {
+  display: grid;
+  gap: 16px;
+}
+
+.grid-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.lodging-card,
+.gear-card,
+.photo-card,
+.source-row {
+  padding: 16px;
+}
+
+.lodging-card[data-rank="1"] {
+  border-color: rgba(56, 86, 66, 0.55);
+}
+
+.rank {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  background: var(--sage-dark);
+  color: #fffaf1;
+  font-weight: 800;
+}
+
+.lodging-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 10px 0;
+}
+
+.meta-pill {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 5px 8px;
+  color: var(--muted);
+  font-size: 0.78rem;
+}
+
+.photo-card {
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+}
+
+.photo-card figure {
+  margin: 0;
+}
+
+.photo-card img {
+  aspect-ratio: 4 / 3;
+  display: block;
+}
+
+.photo-card figcaption {
+  padding: 14px;
+}
+
+.source-row {
+  display: grid;
+  grid-template-columns: 180px minmax(0, 1fr) 130px;
+  gap: 14px;
+  align-items: start;
+}
+
+a {
+  color: var(--sage-dark);
+  text-decoration-color: rgba(56, 86, 66, 0.3);
+  text-underline-offset: 3px;
+}
+
+a:hover {
+  color: var(--clay);
+}
+
+.empty-map {
+  display: grid;
+  min-height: 420px;
+  place-items: center;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper-2);
+  color: var(--muted);
+  text-align: center;
+}
+
+@media (max-width: 1060px) {
+  .app-shell,
+  .dashboard,
+  .hero-panel,
+  .map-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .top-tabs {
+    justify-content: start;
+  }
+
+  .hero-photo {
+    min-height: 320px;
+  }
+
+  .stat-grid,
+  .grid-3 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .slot-card {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 680px) {
+  .app-shell {
+    padding: 12px;
+  }
+
+  .view {
+    padding: 14px;
+  }
+
+  .hero-panel,
+  .panel {
+    padding: 14px;
+  }
+
+  .stat-grid,
+  .grid-2,
+  .grid-3,
+  .source-row {
+    grid-template-columns: 1fr;
+  }
+
+  #trip-map {
+    min-height: 520px;
+  }
+}

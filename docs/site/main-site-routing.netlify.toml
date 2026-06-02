@@ -1,0 +1,15 @@
+# Copy this snippet into the main crispierry.com Netlify site's netlify.toml
+# if this project is deployed as a separate Netlify site and proxied by path.
+# Replace the placeholder subdomain with this project's actual Netlify subdomain.
+
+[[redirects]]
+  from = "/projects/bosque-del-apache"
+  to = "/projects/bosque-del-apache/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/projects/bosque-del-apache/*"
+  to = "https://bosque-del-apache.netlify.app/:splat"
+  status = 200
+  force = true

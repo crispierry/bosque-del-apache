@@ -1,0 +1,15 @@
+[build]
+  publish = "site"
+
+# Supports checking this standalone Netlify site at the final mounted path too.
+# The owning crispierry.com site still needs the proxy/rewrite documented in docs/site/deployment.md.
+[[redirects]]
+  from = "/projects/bosque-del-apache"
+  to = "/projects/bosque-del-apache/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/projects/bosque-del-apache/*"
+  to = "/:splat"
+  status = 200
