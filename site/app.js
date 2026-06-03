@@ -587,6 +587,8 @@ const gearItems = [
     system: "Sony",
     name: "FE 24-105mm F4 G OSS",
     role: "Wide story, habitat, weather, flock scale",
+    image:
+      "https://d1ncau8tqf99kp.cloudfront.net/converted/78666_original_local_1200x1050_v3_converted.webp",
     specs: {
       aperture: "f/4-f/22",
       filter: "77 mm",
@@ -646,6 +648,8 @@ const gearItems = [
     system: "Sony",
     name: "FE 100-400mm F4.5-5.6 GM OSS",
     role: "Lighter handheld flight zoom and close-pass lens",
+    image:
+      "https://d1ncau8tqf99kp.cloudfront.net/converted/101425_original_local_1200x1050_v3_converted.webp",
     specs: {
       aperture: "f/4.5-5.6 to f/32-40",
       filter: "77 mm",
@@ -664,6 +668,8 @@ const gearItems = [
     system: "Sony",
     name: "FE 200-600mm F5.6-6.3 G OSS",
     role: "Primary Sony wildlife reach for Bosque and classic Tanzania setup",
+    image:
+      "https://d1ncau8tqf99kp.cloudfront.net/converted/101592_original_local_1200x1050_v3_converted.webp",
     specs: {
       aperture: "f/5.6-6.3 to f/32-36",
       filter: "95 mm",
@@ -682,6 +688,7 @@ const gearItems = [
     system: "Sony",
     name: "FE 400-800mm F6.3-8 G OSS",
     role: "Distant birds, distant cats, and bright-good-light reach",
+    image: "assets/sony-fe-400-800-g-oss.jpg",
     specs: {
       aperture: "f/6.3-8 to f/36-45",
       filter: "105 mm",
@@ -699,6 +706,8 @@ const gearItems = [
     system: "Sony",
     name: "SEL14TC 1.4x Teleconverter",
     role: "Good-light reach extension",
+    image:
+      "https://d1ncau8tqf99kp.cloudfront.net/converted/81413_original_local_1200x1050_v3_converted.webp",
     specs: {
       aperture: "Loses 1 stop",
       filter: "None",
@@ -756,6 +765,8 @@ const gearItems = [
     system: "Canon",
     name: "RF 70-200mm F2.8 L IS USM",
     role: "Compact close wildlife and travel telephoto",
+    image:
+      "https://s7d1.scene7.com/is/image/canon/3792C002_rf70-200mm-f2.8-l-is-usm_primary?fmt=webp",
     specs: {
       aperture: "f/2.8",
       filter: "77 mm",
@@ -795,6 +806,8 @@ const gearItems = [
     system: "Canon",
     name: "RF 100-500mm F4.5-7.1 L IS USM",
     role: "Primary Canon flight and flexible wildlife lens",
+    image:
+      "https://s7d1.scene7.com/is/image/canon/4112C002_rf100-500mm-f45-71-l-is-usm_primary?fmt=webp",
     specs: {
       aperture: "f/4.5-7.1 to f/32-54",
       filter: "77 mm",
@@ -812,6 +825,8 @@ const gearItems = [
     system: "Canon",
     name: "RF 200-800mm F6.3-9 IS USM",
     role: "Canon distant bird and long-reach wildlife lens",
+    image:
+      "https://s7d1.scene7.com/is/image/canon/6263C002_RF200_800mm_primary?fmt=webp-alpha&wid=760",
     specs: {
       aperture: "f/6.3-9 to f/54",
       filter: "95 mm",
@@ -829,6 +844,8 @@ const gearItems = [
     system: "Canon",
     name: "Extender RF 1.4x",
     role: "Good-light reach extension",
+    image:
+      "https://s7d1.scene7.com/is/image/canon/4113C002_extender-rf14x_primary?fmt=webp",
     specs: {
       aperture: "Loses 1 stop",
       filter: "None",
@@ -846,6 +863,7 @@ const gearItems = [
     system: "Support",
     name: "Beanbag or window support",
     role: "Vehicle blind stability",
+    image: "https://www.lenscoat.com/cdn/shop/files/lspjbk.jpg?v=1735901881&width=1080",
     specs: {
       aperture: "N/A",
       filter: "N/A",
@@ -853,9 +871,9 @@ const gearItems = [
       weight: "Usually 1-3 lb empty; fill locally if possible",
       stabilization: "Mechanical support",
     },
-    photo: "https://www.bhphotovideo.com/c/search?q=window%20beanbag%20camera%20support",
-    photoLabel: "Reference examples",
-    source: "https://www.bhphotovideo.com/c/search?q=window%20beanbag%20camera%20support",
+    photo: "https://www.lenscoat.com/collections/featured-products/products/lenscoat-lenssack-pro-jr",
+    photoLabel: "LensCoat product example",
+    source: "https://www.lenscoat.com/collections/featured-products/products/lenscoat-lenssack-pro-jr",
     note:
       "The fastest support for the auto loop. It is quieter and more practical than deploying tripod legs from the car.",
   },
@@ -863,6 +881,7 @@ const gearItems = [
     system: "Support",
     name: "Tripod, gimbal, and monopod",
     role: "Long waits, heavy lenses, decks, and locked compositions",
+    image: "https://tripodhead.com/images/wh-200-web.jpg",
     specs: {
       aperture: "N/A",
       filter: "N/A",
@@ -870,9 +889,9 @@ const gearItems = [
       weight: "Choose based on airline and lens load",
       stabilization: "Mechanical support",
     },
-    photo: "https://www.bhphotovideo.com/c/search?q=gimbal%20head%20wildlife%20photography",
-    photoLabel: "Reference examples",
-    source: "https://www.bhphotovideo.com/c/search?q=gimbal%20head%20wildlife%20photography",
+    photo: "https://tripodhead.com/products/WH-Specs.cfm",
+    photoLabel: "Wimberley product example",
+    source: "https://tripodhead.com/products/WH-Specs.cfm",
     note:
       "Bring sturdy legs if using 200-600, 400-800, or RF 200-800 for long waits. A monopod is the low-footprint deck fallback.",
   },
@@ -1104,6 +1123,88 @@ const mediaArticles = [
     ],
     apply:
       "Shot-first lens choice and discipline against over-tight compositions.",
+  },
+];
+
+const exifEvidence = [
+  {
+    group: "Wide and Environmental",
+    source: "Wikimedia Commons",
+    subject: "Snow geese at Bosque",
+    evidence: "Canon EOS 60D, 100mm EXIF",
+    implication: "Wide and short-telephoto frames are part of the core Bosque story, especially for flock scale and refuge atmosphere.",
+    url: "https://commons.wikimedia.org/wiki/File:Snow_Geese_(Bosque_del_Apache_National_Wildlife_Refuge).jpg",
+  },
+  {
+    group: "Wide and Environmental",
+    source: "BirdWatching / Rick Sammon",
+    subject: "Bosque sunrise",
+    evidence: "Canon EOS 5D Mark III with 24-105mm",
+    implication: "The 24-105mm is not a backup lens; it is a primary tool for sky, water, mountains, light, and bird scale.",
+    url: "https://www.birdwatchingdaily.com/photography/how-to-photograph-birds/best-camera-settings-for-bird-photography/",
+  },
+  {
+    group: "Mid-Telephoto Context",
+    source: "Wikimedia Commons",
+    subject: "Bosque light / landscape",
+    evidence: "Nikon D7000 with 55-300mm, 135mm EXIF; about 202mm full-frame equivalent",
+    implication: "Mid-telephoto compression works for layered light, water, mountains, habitat, and birds as small elements in place.",
+    url: "https://commons.wikimedia.org/wiki/File:Bosque_Light.jpg",
+  },
+  {
+    group: "Core Long Range",
+    source: "Wikimedia Commons",
+    subject: "Sandhill crane",
+    evidence: "Canon EOS 60D, 350mm EXIF",
+    implication: "Good position can make crane images viable below 500mm, especially when birds are near pools or crossing predictable lanes.",
+    url: "https://commons.wikimedia.org/wiki/File:Sandhill_Crane_(Bosque_del_Apache_National_Wildlife_Refuge).jpg",
+  },
+  {
+    group: "Core Long Range",
+    source: "Luminous Landscape",
+    subject: "Migratory bird photography",
+    evidence: "Canon D30 with Canon 400mm f/4 DO IS, 640mm effective field of view",
+    implication: "Classic Bosque bird work often sits around the 400-600mm-equivalent range, supporting the Sony 200-600 and Canon 100-500 plans.",
+    url: "https://luminous-landscape.com/bosque-del-apache/",
+  },
+  {
+    group: "Extreme Reach",
+    source: "LifePixel / Bob Coates",
+    subject: "Crane flight and reflections",
+    evidence: "Panasonic Lumix GX85 with 100-400mm; source notes an 800mm full-frame-equivalent setup",
+    implication: "Long reach helps when light and handling are under control, but behavior reading and support are still decisive.",
+    url: "https://www.lifepixel.com/photography-locations/bosque-del-apache-wildlife-refuge",
+  },
+  {
+    group: "Extreme Reach",
+    source: "Outdoor Photographer / George Lepp",
+    subject: "Snow goose in flight",
+    evidence: "Canon EOS-1D X, EF 400mm f/2.8L II, EF 2x III, 800mm",
+    implication: "Extreme reach can produce tight action images, but it is specialized and support-dependent rather than the everyday default.",
+    url: "https://www.outdoorphotographer.com/tips-techniques/wildlife-techniques/extreme-close-up/",
+  },
+];
+
+const fieldImplications = [
+  {
+    title: "Decide the photograph before the lens.",
+    note:
+      "The evidence supports everything from 24-105mm environmental frames to 800mm tight action. Lens choice should follow the intended image, not a reflexive reach-maximizing habit.",
+  },
+  {
+    title: "Sony 200-600 is the credible long default.",
+    note:
+      "For Bosque and especially Tanzania, the 200-600 is a primary wildlife tool. The 100-400 is the lighter close-pass option; the 400-800 is the bright-light reach specialist.",
+  },
+  {
+    title: "Wide frames need equal readiness.",
+    note:
+      "Blast-offs, mountain bands, water color, and sky scale happen quickly. Keep 24-105 mounted on the second body instead of treating it as a bag lens.",
+  },
+  {
+    title: "Reach only works after technique.",
+    note:
+      "Long lenses and teleconverters help when autofocus, support, shutter speed, exposure, and behavior prediction are already under control.",
   },
 ];
 
@@ -1799,33 +1900,165 @@ function renderInspiration() {
 function renderMedia() {
   const root = document.querySelector("#media");
   const kinds = ["All", ...Array.from(new Set(mediaArticles.map((item) => item.kind)))];
+  const evidenceGroups = Array.from(new Set(exifEvidence.map((item) => item.group)));
+  const primarySources = mediaArticles.slice(0, 3);
   root.innerHTML = `
-    <div class="section-title">
-      <div>
-        <p class="eyebrow">Articles and field guidance</p>
-        <h2>Media</h2>
-      </div>
-      <p>Each article now has a three-paragraph summary focused on what it teaches, what it changes in the field, and how to apply it during the Dec 6-12 trip.</p>
-    </div>
-    <div class="filter-row media-filters">
-      ${kinds.map((kind, index) => `<button class="chip ${index === 0 ? "is-active" : ""}" data-filter="${kind}">${kind}</button>`).join("")}
-    </div>
-    <div class="media-grid" id="media-results"></div>`;
+    <div class="media-editorial">
+      <section class="media-hero-section">
+        <div class="media-hero-copy">
+          <p class="eyebrow">Articles, EXIF, and field guidance</p>
+          <h2>Media</h2>
+          <p>The research library is organized as a field decision tool: the recommendation first, then source guidance, EXIF evidence, practical implications, and citations.</p>
+        </div>
+        <aside class="recommendation-summary">
+          <p class="eyebrow">Primary takeaway</p>
+          <h3>Carry reach, but do not let reach make every decision.</h3>
+          <p>The Sony 200-600 is a primary wildlife recommendation. The 24-105 stays ready for flock scale and place. The 100-400 and 400-800 are situational choices for handling or bright-light reach.</p>
+        </aside>
+      </section>
+
+      <section class="media-brief-grid" aria-label="Research summary">
+        <article class="brief-card is-primary">
+          <span>01</span>
+          <h3>Source guidance</h3>
+          <p>Use Cornell, The Quite Wild, and Thom Hogan as the decision anchors: location behavior, practical settings, and restraint against pure gear obsession.</p>
+        </article>
+        <article class="brief-card">
+          <span>02</span>
+          <h3>EXIF evidence</h3>
+          <p>The evidence supports a full range from 24-105mm environmental frames to 800mm tight action, with 400-600mm-equivalent work as the recurring center.</p>
+        </article>
+        <article class="brief-card">
+          <span>03</span>
+          <h3>Field implication</h3>
+          <p>Arrive with two bodies staged: one long wildlife lens and one wide/context lens. Choose the shot first, then the focal length.</p>
+        </article>
+      </section>
+
+      <section class="media-section">
+        <div class="media-section-header">
+          <div>
+            <p class="eyebrow">Source and article guidance</p>
+            <h3>What to read first</h3>
+          </div>
+          <p>Each article keeps its three-paragraph summary, but the layout now gives stronger weight to the most actionable sources.</p>
+        </div>
+        <div class="source-priority">
+          ${primarySources
+            .map(
+              (item, index) => `<article class="priority-source-card ${index === 0 ? "is-lead" : ""}">
+                <div class="media-meta">
+                  <span>${item.date}</span>
+                  <span>${item.kind}</span>
+                </div>
+                <h4><a href="${item.url}" target="_blank" rel="noreferrer">${item.title}</a></h4>
+                <p class="source-name">${item.source}</p>
+                <p>${item.apply}</p>
+              </article>`
+            )
+            .join("")}
+        </div>
+        <div class="filter-row media-filters">
+          ${kinds.map((kind, index) => `<button class="chip ${index === 0 ? "is-active" : ""}" data-filter="${kind}">${kind}</button>`).join("")}
+        </div>
+        <div class="article-results" id="media-results"></div>
+      </section>
+
+      <section class="media-section">
+        <div class="media-section-header">
+          <div>
+            <p class="eyebrow">Supporting proof</p>
+            <h3>EXIF evidence by focal-length role</h3>
+          </div>
+          <p>Grouped by what the data proves in the field, not by source chronology.</p>
+        </div>
+        <div class="evidence-board">
+          ${evidenceGroups
+            .map((group) => {
+              const items = exifEvidence.filter((item) => item.group === group);
+              return `<article class="evidence-group">
+                <header>
+                  <p class="eyebrow">${group}</p>
+                  <strong>${items.length} evidence ${items.length === 1 ? "note" : "notes"}</strong>
+                </header>
+                <div class="evidence-list">
+                  ${items
+                    .map(
+                      (item) => `<a class="evidence-note" href="${item.url}" target="_blank" rel="noreferrer">
+                        <span>${item.source}</span>
+                        <h4>${item.subject}</h4>
+                        <p class="evidence-data">${item.evidence}</p>
+                        <p>${item.implication}</p>
+                      </a>`
+                    )
+                    .join("")}
+                </div>
+              </article>`;
+            })
+            .join("")}
+        </div>
+      </section>
+
+      <section class="media-section">
+        <div class="media-section-header">
+          <div>
+            <p class="eyebrow">Practical field implications</p>
+            <h3>How this changes the plan</h3>
+          </div>
+          <p>These are the operational decisions the research supports.</p>
+        </div>
+        <div class="implication-grid">
+          ${fieldImplications
+            .map(
+              (item) => `<article class="implication-card">
+                <h4>${item.title}</h4>
+                <p>${item.note}</p>
+              </article>`
+            )
+            .join("")}
+        </div>
+      </section>
+
+      <section class="media-section citation-section">
+        <div class="media-section-header">
+          <div>
+            <p class="eyebrow">Links and citations</p>
+            <h3>Source index</h3>
+          </div>
+          <p>Article photos remain inspiration-only unless the source license explicitly permits reuse.</p>
+        </div>
+        <div class="citation-list">
+          ${mediaArticles
+            .map(
+              (item) => `<a href="${item.url}" target="_blank" rel="noreferrer">
+                <span>${item.kind}</span>
+                <strong>${item.title}</strong>
+                <em>${item.source}</em>
+              </a>`
+            )
+            .join("")}
+        </div>
+      </section>
+    </div>`;
 
   const results = root.querySelector("#media-results");
   const draw = (filter) => {
     const articles = filter === "All" ? mediaArticles : mediaArticles.filter((item) => item.kind === filter);
     results.innerHTML = articles
       .map(
-        (item) => `<article class="media-card">
-          <div class="media-meta">
-            <span>${item.date}</span>
-            <span>${item.kind}</span>
+        (item, index) => `<article class="media-card article-card ${index === 0 && filter === "All" ? "is-featured" : ""}">
+          <div class="article-kicker">
+            <div class="media-meta">
+              <span>${item.date}</span>
+              <span>${item.kind}</span>
+            </div>
+            <p class="source-name">${item.source}</p>
           </div>
-          <h3><a href="${item.url}" target="_blank" rel="noreferrer">${item.title}</a></h3>
-          <p class="muted">${item.source}</p>
-          ${item.summary.map((paragraph) => `<p class="card-copy">${paragraph}</p>`).join("")}
-          <p><b>Use it for:</b> ${item.apply}</p>
+          <div class="article-body">
+            <h3><a href="${item.url}" target="_blank" rel="noreferrer">${item.title}</a></h3>
+            ${item.summary.map((paragraph) => `<p class="card-copy">${paragraph}</p>`).join("")}
+            <p class="article-apply"><b>Use it for:</b> ${item.apply}</p>
+          </div>
         </article>`
       )
       .join("");
