@@ -2,13 +2,30 @@
 
 ## Status
 
-Initial research captured. Licenses must be rechecked before any website asset is published.
+Rechecked June 3, 2026. The three images currently used by the website prototype are public-domain USFWS assets and are safe publication candidates with credit recommended. The FWS source pages were re-opened and confirmed to list both the creator credit and `Public Domain` license. Any additional image must still be checked on its own source page before publication.
 
 ## Use Policy
 
 - Public-domain or clearly permissive-license images may be candidates for the website.
 - Photographer portfolio, blog, publication, or social images are inspiration only unless permission/license is explicit.
 - Every image candidate needs source, creator, URL, and license notes.
+- Do not use the USFWS logo or imply agency endorsement.
+
+## Current Website Assets
+
+| File | Source | Creator / Credit | License Status | Publish Status |
+|---|---|---|---|---|
+| `site/assets/snow-geese-gary-stolz-usfws-1800.jpg` | [Snow Geese, Bosque del Apache](https://www.fws.gov/media/snow-geese-bosque-del-apache-national-wildlife-refuge) | Gary Stolz / USFWS | Public domain | Safe candidate |
+| `site/assets/sandhill-cranes-ryan-hagerty-usfws-1800.jpg` | [Sandhill Cranes](https://www.fws.gov/media/sandhill-cranes-6) | Ryan Hagerty / USFWS | Public domain | Safe candidate |
+| `site/assets/snow-geese-flyout-lynne-braden-usfws-1800.jpg` | [Snow Geese Fly Overhead](https://www.fws.gov/media/snow-geese-fly-overhead-bosque-del-apache-refuge) | Lynne Braden / USFWS volunteer | Public domain | Safe candidate; includes people, use tastefully |
+
+## Current Site Asset License Audit
+
+| File | Source-page evidence | Publication action |
+|---|---|---|
+| `site/assets/snow-geese-gary-stolz-usfws-1800.jpg` | FWS source page lists credit `Stolz, Gary/USFWS` and media usage rights/license `Public Domain`. | Keep current credit: `Gary Stolz / USFWS, Public Domain`. |
+| `site/assets/sandhill-cranes-ryan-hagerty-usfws-1800.jpg` | FWS source page lists credit `Hagerty, Ryan/USFWS` and media usage rights/license `Public Domain`. | Keep current credit: `Ryan Hagerty / USFWS, Public Domain`. |
+| `site/assets/snow-geese-flyout-lynne-braden-usfws-1800.jpg` | FWS source page lists credit `Lynne Braden/USFWS volunteer` and media usage rights/license `Public Domain`. | Keep current credit: `Lynne Braden / USFWS volunteer, Public Domain`; use tastefully because people are visible. |
 
 ## Themes
 

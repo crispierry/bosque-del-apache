@@ -134,6 +134,7 @@ Each tab ranks locations by suitability and captures:
   - Best comfort.
   - Best if doing side trips.
 - Base strategy section: Socorro vs San Antonio vs closer/rural options.
+- Loyalty tradeoff note: Marriott Bonvoy appears regional rather than Socorro/San Antonio based; show the closest practical Bonvoy candidate separately so it does not look like a photography-first dawn base.
 
 ## Gear
 

@@ -2,7 +2,7 @@
 
 ## Status
 
-Initial research captured. Needs final tuning once exact dates, camera bodies, and carry preferences are confirmed.
+Updated June 3, 2026. The final camera system is not confirmed, and the user explicitly wants to keep both Sony and Canon options for now. This file keeps Sony and Canon as separate branches and simplifies the carry logic. The default recommendation is to choose one system before travel and avoid carrying both complete long-lens kits unless there is a specific body or backup reason.
 
 ## Available Kits
 
@@ -19,6 +19,26 @@ Initial research captured. Needs final tuning once exact dates, camera bodies, a
 - Canon 100-500mm.
 - Canon 200-800mm.
 - 1.4x teleconverter.
+
+## Camera-System Decision
+
+### If The Trip Is Sony-Only
+
+- Default dawn/sunset kit: Sony 24-105mm + Sony 200-600mm.
+- Add Sony 400-800mm only for bright mid-morning deck/field work or distant static birds.
+- Use the 1.4x only after light improves, and mainly for static or distant subjects.
+
+### If The Trip Is Canon-Only
+
+- Default dawn/sunset kit: Canon 24-105mm + Canon 100-500mm.
+- Add Canon 200-800mm only for bright mid-morning deck/field work or distant static birds.
+- Use the 1.4x only after light improves, and mainly for static or distant subjects.
+
+### If Both Systems Are Used
+
+- Do not carry Sony 200-600, Sony 400-800, Canon 100-500, and Canon 200-800 together unless there is a clear assignment for each body.
+- Pick one primary dawn/sunset system and leave the other as backup or midday reach.
+- Practical mixed carry: one 24-105, one flexible flight zoom, and optionally one longest zoom in the vehicle for bright field/deck work.
 
 ## General Recommendations
 
@@ -46,7 +66,7 @@ Initial research captured. Needs final tuning once exact dates, camera bodies, a
 
 ## Support And Carry
 
-- Vehicle-based sessions: keep two lenses ready, one long and one wide.
+- Vehicle-based sessions: keep two lenses ready, one long and one wide, with the longest lens stored but accessible if the light improves.
 - Deck sessions: tripod or monopod can help, but compact etiquette matters.
 - Highway 1 pullouts: prioritize mobility and safe positioning away from road edges.
 - Wind/cold mornings: gloves that allow controls, extra batteries, lens cloth, and stable footing.
