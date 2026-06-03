@@ -157,6 +157,7 @@ main {
 
 .view {
   display: none;
+  scroll-margin-top: 96px;
   max-width: var(--content);
   margin: 0 auto;
   padding: clamp(24px, 5vw, 56px) clamp(16px, 4vw, 42px) 72px;
@@ -517,6 +518,7 @@ main {
 }
 
 .lodging-card,
+.travel-card,
 .gear-card,
 .photo-card,
 .source-row,
@@ -527,6 +529,10 @@ main {
 
 .lodging-card[data-rank="1"] {
   border-color: rgba(196, 149, 106, 0.55);
+}
+
+.travel-card h3 {
+  margin-top: 0;
 }
 
 .rank {
@@ -1070,7 +1076,7 @@ main {
 
 .spec-grid {
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(118px, 1fr));
   gap: 8px;
   margin: 14px 0;
 }
@@ -1095,6 +1101,56 @@ main {
   color: var(--text);
   font-size: 0.88rem;
   overflow-wrap: anywhere;
+}
+
+.comparison-table-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--line-soft);
+  border-radius: 8px;
+  background: var(--surface);
+}
+
+.comparison-table {
+  width: 100%;
+  min-width: 980px;
+  border-collapse: collapse;
+}
+
+.comparison-table th,
+.comparison-table td {
+  border-bottom: 1px solid var(--line-soft);
+  padding: 13px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.comparison-table th {
+  color: var(--text);
+  font-size: 0.82rem;
+}
+
+.comparison-table td {
+  color: var(--muted);
+  font-size: 0.84rem;
+  line-height: 1.48;
+}
+
+.comparison-table td strong,
+.comparison-table td span {
+  display: block;
+}
+
+.comparison-table td strong {
+  margin-bottom: 6px;
+  color: var(--text);
+}
+
+.comparison-table td span + span {
+  margin-top: 5px;
+}
+
+.comparison-note {
+  margin-top: 12px;
 }
 
 .practice-card {

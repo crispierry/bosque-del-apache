@@ -97,6 +97,48 @@ const sources = [
     url: "https://www.marriott.com/en-gb/hotels/abqlf-fairfield-inn-and-suites-los-lunas/photos/",
     checked: checkedDate,
   },
+  {
+    topic: "Travel",
+    title: "ABQ Sunport facts and airlines",
+    url: "https://www.abqsunport.com/facts-figures/",
+    checked: checkedDate,
+  },
+  {
+    topic: "Travel",
+    title: "ABQ Sunport rental cars",
+    url: "https://www.abqsunport.com/rental-cars/",
+    checked: checkedDate,
+  },
+  {
+    topic: "Travel",
+    title: "SFO nonstop destinations",
+    url: "https://www.flysfo.org/nonstop/where-we-fly-united-states",
+    checked: checkedDate,
+  },
+  {
+    topic: "Travel",
+    title: "Southwest Oakland to Albuquerque",
+    url: "https://www.southwest.com/en/flights/flights-from-oakland-to-albuquerque",
+    checked: checkedDate,
+  },
+  {
+    topic: "Travel",
+    title: "Southwest San Jose to Albuquerque",
+    url: "https://www.southwest.com/routes/flights-from-san-jose-ca-to-albuquerque",
+    checked: checkedDate,
+  },
+  {
+    topic: "Travel",
+    title: "New Mexico Tourism - Bosque del Apache",
+    url: "https://www.newmexico.org/places-to-visit/regions/southwest/bosque-del-apache/",
+    checked: checkedDate,
+  },
+  {
+    topic: "Travel",
+    title: "NMDOT winter travel information",
+    url: "https://www.nmroads.com/",
+    checked: checkedDate,
+  },
 ];
 
 const photoLocations = [
@@ -314,6 +356,69 @@ const lodgingLocations = [
       "Closest practical Bonvoy option found, with free breakfast, free parking, fitness center, and newer-property appeal.",
     watch:
       "Not a photography-first base. A 6:10 AM setup means leaving around 4:20 AM, so use only if points/status outweigh the commute.",
+  },
+];
+
+const flightOptions = [
+  {
+    airport: "SFO",
+    route: "San Francisco to Albuquerque",
+    recommendation: "Strongest Bay Area default when SFO is convenient.",
+    detail:
+      "SFO's official nonstop list includes Albuquerque on United. Recheck the exact December schedule and fare before booking because airline frequency can change.",
+    source: "https://www.flysfo.org/nonstop/where-we-fly-united-states",
+  },
+  {
+    airport: "OAK",
+    route: "Oakland to Albuquerque",
+    recommendation: "Good East Bay option if the nonstop timing works.",
+    detail:
+      "Southwest lists Oakland to Albuquerque service. Treat it as schedule-dependent and compare arrival time against the drive south to Socorro.",
+    source: "https://www.southwest.com/en/flights/flights-from-oakland-to-albuquerque",
+  },
+  {
+    airport: "SJC",
+    route: "San Jose to Albuquerque",
+    recommendation: "South Bay fallback, likely connection-first.",
+    detail:
+      "Southwest's current San Jose to Albuquerque route page did not show a daily nonstop pattern in the research pass. Use it if the connection is better than driving to SFO/OAK.",
+    source: "https://www.southwest.com/routes/flights-from-san-jose-ca-to-albuquerque",
+  },
+  {
+    airport: "ABQ",
+    route: "Albuquerque to Socorro / Bosque",
+    recommendation: "Rent at ABQ, then drive south.",
+    detail:
+      "ABQ is New Mexico's largest commercial airport and offers nonstop service to more than 30 destinations. From the north, FWS directions use I-25 south to exit 139, then US 380 and NM-1 to the visitor center.",
+    source: "https://www.abqsunport.com/facts-figures/",
+  },
+];
+
+const rentalCarGuidance = [
+  {
+    title: "Best default: compact or midsize SUV",
+    note:
+      "A normal car can handle the main paved/highway approach and usual refuge gravel roads, but an SUV gives better clearance, cargo room, visibility, and winter-weather margin.",
+  },
+  {
+    title: "AWD is useful, not mandatory",
+    note:
+      "Book AWD if the price difference is modest or if December weather looks snowy or icy. It helps on I-25, NM-1, gravel pullouts, and muddy shoulders, but it does not replace cautious driving.",
+  },
+  {
+    title: "Avoid low-clearance sedans",
+    note:
+      "The Scenic Drive is described by FWS as a wide gravel road, but you will be moving slowly, pulling into turnouts, and carrying long lenses. Extra clearance is a comfort and gear-protection decision.",
+  },
+  {
+    title: "Plan around camera cargo",
+    note:
+      "Choose a hatchback/crossover cargo area with a cover if possible. Keep long lenses, tripod, beanbag, layers, snacks, water, and backup gear out of sight when parked.",
+  },
+  {
+    title: "Fuel, water, and winter checks",
+    note:
+      "Top off in Albuquerque or Socorro before dawn loops. FWS notes bottled water is not available on the refuge and potable water is not available on the Auto Tour Loop. Check NMRoads or 511 before winter travel.",
   },
 ];
 
@@ -595,6 +700,8 @@ const gearItems = [
       length: "113.3 mm",
       weight: "663 g",
       stabilization: "Optical SteadyShot",
+      zoomFocus: "Extending zoom; internal focus",
+      weather: "Dust and moisture resistant design; fluorine front coating",
     },
     photo:
       "https://www.sony.com/electronics/support/lenses-e-mount-lenses/sel24105g/specifications",
@@ -616,6 +723,8 @@ const gearItems = [
       length: "119.9 mm",
       weight: "695 g",
       stabilization: "No lens OSS; body-integrated stabilization",
+      zoomFocus: "Extending zoom; floating focus with XD linear motors",
+      weather: "Dust and moisture resistant design; fluorine front coating",
     },
     photo: "https://electronics.sony.com/imaging/lenses/all-e-mount/p/sel2470gm2",
     photoLabel: "Sony product photo",
@@ -636,6 +745,8 @@ const gearItems = [
       length: "200 mm",
       weight: "1,045 g without tripod mount",
       stabilization: "Optical SteadyShot",
+      zoomFocus: "Internal zoom; inner focus",
+      weather: "Sealed seams, rubber gaskets, rubber mount ring; fluorine front coating",
     },
     photo: "https://electronics.sony.com/imaging/lenses/all-e-mount/p/sel70200gm2",
     photoLabel: "Sony product photo",
@@ -656,6 +767,8 @@ const gearItems = [
       length: "205 mm",
       weight: "1,395 g without tripod mount",
       stabilization: "Optical SteadyShot",
+      zoomFocus: "Extending zoom with torque adjuster; floating focus",
+      weather: "Dust and moisture resistant design for light rain or windy conditions",
     },
     photo: "https://electronics.sony.com/imaging/lenses/all-e-mount/p/sel100400gm",
     photoLabel: "Sony product photo",
@@ -676,6 +789,8 @@ const gearItems = [
       length: "318 mm",
       weight: "2,115 g",
       stabilization: "Optical SteadyShot",
+      zoomFocus: "Internal zoom; DDSSM autofocus",
+      weather: "Dust and moisture resistant design; fluorine front coating",
     },
     photo: "https://electronics.sony.com/imaging/lenses/all-e-mount/p/sel200600g",
     photoLabel: "Sony product photo",
@@ -695,6 +810,8 @@ const gearItems = [
       length: "346 mm",
       weight: "2,475 g",
       stabilization: "Optical SteadyShot",
+      zoomFocus: "Internal zoom; linear motor focus group",
+      weather: "Internal zoom plus dust and moisture resistant design; fluorine front coating",
     },
     photo: "https://www.sony.co.uk/electronics/camera-lenses/sel400800g/specifications",
     photoLabel: "Sony product/spec page",
@@ -714,6 +831,8 @@ const gearItems = [
       length: "33.6 mm",
       weight: "167 g",
       stabilization: "N/A; lens/body stabilization still matters",
+      zoomFocus: "No zoom or focus; mounts between body and compatible lens",
+      weather: "No public sealing claim; avoid swaps in dust, rain, or snow",
     },
     photo: "https://electronics.sony.com/imaging/lenses/all-e-mount/p/sel14tc",
     photoLabel: "Sony product photo",
@@ -733,6 +852,8 @@ const gearItems = [
       length: "107.3 mm",
       weight: "700 g",
       stabilization: "Optical IS, up to 5 stops",
+      zoomFocus: "Extending zoom; Nano USM autofocus",
+      weather: "L-series dust/weather resistance; fluorine coating",
     },
     photo:
       "https://www.usa.canon.com/shop/catalog/product/view/id/50549/s/rf24-105mm-f4-l-is-usm/",
@@ -754,6 +875,8 @@ const gearItems = [
       length: "125.7 mm",
       weight: "900 g",
       stabilization: "Optical IS, up to 5 stops",
+      zoomFocus: "Extending zoom; Nano USM autofocus",
+      weather: "L-series dust/weather resistance; fluorine coating",
     },
     photo: "https://www.usa.canon.com/shop/p/rf24-70mm-f2-8l-is-usm",
     photoLabel: "Canon product photo",
@@ -773,6 +896,8 @@ const gearItems = [
       length: "146 mm",
       weight: "1,070 g without tripod mount",
       stabilization: "Optical IS, up to 5 stops",
+      zoomFocus: "Extending compact zoom; independent Nano USM autofocus",
+      weather: "Dust/weather-resistant construction at mount, switch panel, and rings; fluorine coatings",
     },
     photo: "https://www.usa.canon.com/shop/p/rf70-200mm-f2-8-l-is-usm",
     photoLabel: "Canon product photo",
@@ -793,6 +918,8 @@ const gearItems = [
       length: "199 mm",
       weight: "1,110-1,115 g",
       stabilization: "Optical IS modes 1, 2, 3",
+      zoomFocus: "Internal zoom and internal focus; dual Nano USM autofocus",
+      weather: "L-series weather-resistant construction; sealed rings/switch panel; fluorine coating",
     },
     photo:
       "https://www.usa.canon.com/shop/p/lens-rf70-200mm-f2-8-l-is-usm-z-white",
@@ -814,6 +941,8 @@ const gearItems = [
       length: "207.6 mm short / 297.6 mm long",
       weight: "1,365 g without tripod mount",
       stabilization: "Optical IS, up to 5 stops",
+      zoomFocus: "Extending zoom; Dual Nano USM autofocus",
+      weather: "L-series dust/weather resistance; fluorine front and rear coatings",
     },
     photo: "https://www.usa.canon.com/shop/p/rf100-500mm-f4-5-7-1-l-is-usm",
     photoLabel: "Canon product photo",
@@ -833,6 +962,8 @@ const gearItems = [
       length: "314.1 mm at 200 mm",
       weight: "2,050 g",
       stabilization: "Optical IS, up to 5.5 stops",
+      zoomFocus: "Extending zoom; Nano USM autofocus",
+      weather: "Dust/weather-resistant construction at mount, switches, buttons, and rings",
     },
     photo: "https://www.usa.canon.com/shop/p/rf200-800mm-f6-3-9-is-usm",
     photoLabel: "Canon product photo",
@@ -852,6 +983,8 @@ const gearItems = [
       length: "20.3 mm",
       weight: "225 g",
       stabilization: "N/A; lens/body stabilization still matters",
+      zoomFocus: "No zoom or focus; mounts between body and compatible lens",
+      weather: "No public sealing claim; avoid swaps in dust, rain, or snow",
     },
     photo: "https://www.usa.canon.com/shop/p/extender-rf1-4x",
     photoLabel: "Canon product photo",
@@ -870,6 +1003,8 @@ const gearItems = [
       length: "Model dependent",
       weight: "Usually 1-3 lb empty; fill locally if possible",
       stabilization: "Mechanical support",
+      zoomFocus: "N/A",
+      weather: "Use a rain cover; keep fabric dry before packing",
     },
     photo: "https://www.lenscoat.com/collections/featured-products/products/lenscoat-lenssack-pro-jr",
     photoLabel: "LensCoat product example",
@@ -888,6 +1023,8 @@ const gearItems = [
       length: "Model dependent",
       weight: "Choose based on airline and lens load",
       stabilization: "Mechanical support",
+      zoomFocus: "N/A",
+      weather: "Use leg locks carefully in dust; dry before collapsing",
     },
     photo: "https://tripodhead.com/products/WH-Specs.cfm",
     photoLabel: "Wimberley product example",
@@ -952,6 +1089,45 @@ const filterGuidance = [
     title: "Use polarizers selectively",
     note:
       "A circular polarizer can help water/reflection/sky scenes after sunrise. Remove it for flight, predawn, and any moment when shutter speed is the priority.",
+  },
+];
+
+const gearComparisonRows = [
+  {
+    category: "Standard story zoom",
+    sony: "FE 24-105mm F4 G OSS",
+    canon: "RF 24-105mm F4 L IS USM",
+    note: "Very similar travel/refuge-context role. Both share 77 mm filters; Canon is slightly shorter, Sony is slightly lighter.",
+  },
+  {
+    category: "Fast standard zoom",
+    sony: "FE 24-70mm F2.8 GM II",
+    canon: "RF 24-70mm F2.8 L IS USM",
+    note: "Canon adds optical IS; Sony is notably lighter. Both are travel/event lenses more than Bosque bird lenses.",
+  },
+  {
+    category: "70-200 f/2.8",
+    sony: "FE 70-200mm F2.8 GM OSS II",
+    canon: "RF 70-200mm F2.8 L IS USM Z",
+    note: "The Canon Z is the closer internal-zoom, extender-compatible comparison. The compact Canon non-Z is shorter but extends.",
+  },
+  {
+    category: "Flexible wildlife zoom",
+    sony: "FE 100-400mm F4.5-5.6 GM OSS",
+    canon: "RF 100-500mm F4.5-7.1 L IS USM",
+    note: "Canon gains 100 mm of reach; Sony is brighter at the long end and stops at 400 mm. Both extend while zooming.",
+  },
+  {
+    category: "Classic long wildlife zoom",
+    sony: "FE 200-600mm F5.6-6.3 G OSS",
+    canon: "RF 200-800mm F6.3-9 IS USM",
+    note: "Sony is internal-zoom and brighter; Canon reaches 800 mm and is slightly lighter but extends and is slower.",
+  },
+  {
+    category: "Extreme reach specialist",
+    sony: "FE 400-800mm F6.3-8 G OSS",
+    canon: "RF 200-800mm F6.3-9 IS USM",
+    note: "Sony is internal-zoom and better sealed around zoom movement; Canon starts wider and weighs less.",
   },
 ];
 
@@ -1653,15 +1829,63 @@ function renderWindows() {
   draw("Sunrise");
 }
 
-function renderLodging() {
-  const root = document.querySelector("#lodging");
+function renderTravel() {
+  const root = document.querySelector("#travel");
   root.innerHTML = `
     <div class="section-title">
       <div>
-        <p class="eyebrow">Hotels and commute</p>
-        <h2>Lodging</h2>
+        <p class="eyebrow">Flights, car, hotels</p>
+        <h2>Travel</h2>
       </div>
-      <p>Socorro remains the photography-first base. This section now includes a hotel-specific map and links or previews for each hotel photo source without putting lodging into the main photography map.</p>
+      <p>Use Albuquerque as the practical airport, choose a car around dawn photography logistics, and keep Socorro as the photography-first hotel base.</p>
+    </div>
+    <section class="panel media-decision">
+      <div>
+        <p class="eyebrow">Airport default</p>
+        <h3>Fly Bay Area to ABQ, then drive south.</h3>
+        <p class="card-copy">Albuquerque International Sunport is the planning default. From ABQ, rent a car, take I-25 south toward Socorro, then follow the official FWS route via exit 139, US 380, and NM-1 to the refuge visitor center.</p>
+      </div>
+      <div class="media-counts">
+        <span><b>SFO / OAK / SJC</b> Bay Area options</span>
+        <span><b>ABQ</b> rental car center</span>
+      </div>
+    </section>
+    <div class="grid-4 travel-grid">
+      ${flightOptions
+        .map(
+          (item) => `<article class="travel-card">
+            <p class="eyebrow">${item.airport}</p>
+            <h3>${item.route}</h3>
+            <p><b>${item.recommendation}</b></p>
+            <p class="card-copy">${item.detail}</p>
+            ${externalLink(item.source, "Source")}
+          </article>`
+        )
+        .join("")}
+    </div>
+    <div class="section-title compact-title support-title">
+      <div>
+        <p class="eyebrow">Rental car</p>
+        <h2>What to book</h2>
+      </div>
+      <p>The best car is not fancy; it is easy to load quietly in the dark, stable on winter highways, and practical on gravel pullouts.</p>
+    </div>
+    <div class="grid-3">
+      ${rentalCarGuidance
+        .map(
+          (item) => `<article class="travel-card">
+            <h3>${item.title}</h3>
+            <p class="card-copy">${item.note}</p>
+          </article>`
+        )
+        .join("")}
+    </div>
+    <div class="section-title compact-title support-title">
+      <div>
+        <p class="eyebrow">Hotels and commute</p>
+        <h2>Where to stay</h2>
+      </div>
+      <p>Socorro remains the photography-first base. The hotel-specific map stays here, separate from the main photography map.</p>
     </div>
     <div class="grid-2">
       ${lodgingLocations
@@ -1715,14 +1939,25 @@ function renderLodging() {
 
 function renderGear() {
   const root = document.querySelector("#gear");
-  const systems = ["Sony", "Canon", "Support"];
+  const systems = ["Sony", "Canon", "Support", "Compare"];
+  const gearByName = (name) => gearItems.find((item) => item.name === name);
+  const lensCell = (item) => {
+    if (!item) return "<td>Not configured</td>";
+    return `<td>
+      <strong>${item.name}</strong>
+      <span>${item.specs.aperture}; ${item.specs.length}; ${item.specs.weight}; ${item.specs.filter}</span>
+      <span>${item.specs.zoomFocus}</span>
+      <span>${item.specs.weather}</span>
+      ${externalLink(item.source, "Specs")}
+    </td>`;
+  };
   root.innerHTML = `
     <div class="section-title">
       <div>
         <p class="eyebrow">Camera kit</p>
         <h2>Gear</h2>
       </div>
-      <p>Every current gear item now has size/weight/filter/aperture/stabilization information where applicable, plus a photo or official photo reference link.</p>
+      <p>Every current gear item now has size/weight/filter/aperture/stabilization/weather information where applicable, plus a photo or official photo reference link.</p>
     </div>
     <section class="panel media-decision">
       <div>
@@ -1770,6 +2005,36 @@ function renderGear() {
 
   const results = root.querySelector(".gear-results");
   const draw = (system) => {
+    if (system === "Compare") {
+      results.innerHTML = `<div class="comparison-table-wrap">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th>Category</th>
+              <th>Sony</th>
+              <th>Canon</th>
+              <th>Takeaway</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${gearComparisonRows
+              .map((row) => {
+                const sony = gearByName(row.sony);
+                const canon = gearByName(row.canon);
+                return `<tr>
+                  <th scope="row">${row.category}</th>
+                  ${lensCell(sony)}
+                  ${lensCell(canon)}
+                  <td>${row.note}</td>
+                </tr>`;
+              })
+              .join("")}
+          </tbody>
+        </table>
+      </div>
+      <p class="muted comparison-note">Weather sealing language is manufacturer wording, not a waterproof guarantee. For Bosque, internal-zoom lenses reduce exposed barrel movement in dust and blowing grit; extending zooms are still viable but should be wiped before retracting.</p>`;
+      return;
+    }
     const items = gearItems.filter((item) => item.system === system);
     results.innerHTML = `<div class="gear-detail-grid">
       ${items
@@ -1793,6 +2058,8 @@ function renderGear() {
                 <div><dt>Weight</dt><dd>${item.specs.weight}</dd></div>
                 <div><dt>Aperture</dt><dd>${item.specs.aperture}</dd></div>
                 <div><dt>Stabilization</dt><dd>${item.specs.stabilization}</dd></div>
+                <div><dt>Zoom / focus</dt><dd>${item.specs.zoomFocus}</dd></div>
+                <div><dt>Weather</dt><dd>${item.specs.weather}</dd></div>
               </dl>
               <p>${item.note}</p>
               <div class="tag-row">
@@ -2083,7 +2350,7 @@ function renderSources() {
         <p class="eyebrow">Checked ${checkedDate}</p>
         <h2>Sources</h2>
       </div>
-      <p>Current access, lodging, pricing, specs, road, and bird-location notes should be rechecked after final booking and again in the week before travel.</p>
+      <p>Current access, travel, lodging, pricing, specs, road, and bird-location notes should be rechecked after final booking and again in the week before travel.</p>
     </div>
     <div class="timeline">
       ${sources
@@ -2102,10 +2369,14 @@ function renderSources() {
 }
 
 const defaultView = "overview";
+const viewAliases = {
+  lodging: "travel",
+};
 
 function normalizeViewId(id) {
-  const view = document.getElementById(id || "");
-  return view?.classList.contains("view") ? id : defaultView;
+  const resolvedId = viewAliases[id] || id;
+  const view = document.getElementById(resolvedId || "");
+  return view?.classList.contains("view") ? resolvedId : defaultView;
 }
 
 function getParentWindow() {
@@ -2173,7 +2444,7 @@ function showView(id, options = {}) {
       window.photoMapState.map.invalidateSize();
       window.photoMapState.map.fitBounds(window.photoMapState.bounds, { padding: [28, 28] });
     }
-    if (viewId === "lodging" && window.lodgingMapState) {
+    if (viewId === "travel" && window.lodgingMapState) {
       window.lodgingMapState.map.invalidateSize();
       window.lodgingMapState.map.fitBounds(window.lodgingMapState.bounds, { padding: [28, 28] });
     }
@@ -2206,7 +2477,7 @@ renderOverview();
 renderMap();
 renderItinerary();
 renderWindows();
-renderLodging();
+renderTravel();
 renderGear();
 renderPractice();
 renderInspiration();
