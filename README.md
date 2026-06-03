@@ -31,6 +31,7 @@ Research is being split into dedicated workstreams, then consolidated into the d
 - `docs/research/practice-techniques.md` - pre-trip drills, technique cards, and practice cadence.
 - `docs/research/books-to-buy.md` - ranked photography reading list with Kindle/eBook availability notes.
 - `docs/research/inspiration-photos.md` - visual references and licensing notes.
+- `docs/research/media.md` - photography article index and EXIF-backed lens evidence.
 - `docs/research/sources.md` - source log.
 - `docs/site/information-architecture.md` - website tabs, sections, and data model.
 - `site/` - static website prototype.

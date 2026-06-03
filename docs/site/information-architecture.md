@@ -31,6 +31,7 @@ Use top tabs for the major workspaces:
 - Gear
 - Practice
 - Inspiration
+- Media
 - Sources
 
 ## Overview
@@ -151,6 +152,13 @@ Lens configuration presets:
 - Landscape/sunset kit.
 - Minimal walking kit.
 
+Add a separate Bosque + Tanzania safari section:
+
+- Explain that Bosque prioritizes bird reach, while Tanzania prioritizes vehicle-based mammal flexibility.
+- Show Sony and Canon four-lens shared kits plus 1.4x teleconverter.
+- Show the three-lens Tanzania travel cut: keep 24-105mm, 70-200mm f/2.8, and 100-400mm/100-500mm; drop the 400-800mm/200-800mm unless birds or distant wildlife are a main goal.
+- Note that dust and vehicle shooting favor two bodies, fewer lens changes, and beanbag/window support.
+
 Per-slot gear suggestions:
 
 - Camera body.
@@ -199,7 +207,7 @@ Core practice modules:
 - Manual exposure discipline for stable light during fly-outs and fly-ins.
 - Burst timing: short intentional bursts instead of holding the shutter through every pass.
 - Long-lens stability from hand-held, monopod, tripod, and vehicle support positions.
-- Fast subject acquisition with 200-600mm, 400-800mm, or 100-500mm class lenses.
+- Fast subject acquisition with the Sony 100-400mm f/4.5, Sony 200-600mm fallback, Sony 400-800mm, Canon 100-500mm, or Canon 200-800mm.
 - Environmental compositions that include wetland, cottonwood, mountain, and dawn/sunset context.
 - Field workflow: batteries, cards, lens cloth, cold-weather handling, and post-shoot culling.
 
@@ -244,6 +252,21 @@ Each item should include:
 - Possible location/time.
 - Lens/composition note.
 - Source/credit.
+
+## Media
+
+Use the Media section as a research archive for photography articles, teaching references, and focal-length evidence.
+
+Article cards should be sorted newest first and include:
+
+- Date or date note.
+- Source / author.
+- Title and link.
+- Short summary.
+- Lens or camera takeaway.
+- Practical application for this trip.
+
+The section should also include a compact EXIF/evidence table that separates auditable photo metadata from article recommendations.
 
 ## Sources
 
