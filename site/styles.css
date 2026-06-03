@@ -195,6 +195,18 @@ main {
   letter-spacing: 0;
 }
 
+.hero-copy .hero-date {
+  display: block;
+  margin-top: 0.85rem;
+  color: var(--muted);
+  font-family: Inter, Arial, sans-serif;
+  font-size: clamp(0.72rem, 0.9vw, 0.84rem);
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
 .hero-copy p,
 .section-title p,
 .card-copy,

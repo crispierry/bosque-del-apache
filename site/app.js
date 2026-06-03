@@ -1414,7 +1414,7 @@ function renderOverview() {
     <section class="hero">
       <div class="hero-copy">
         <p class="eyebrow">Photography plan</p>
-        <h2>Bosque del Apache, Dec 6-12, 2026</h2>
+        <h2>Bosque del Apache <span class="hero-date">Dec 6-12, 2026</span></h2>
         <p>Arrive Sunday, scout if there is light, shoot five full on-site days from Monday through Friday, and leave Saturday with backups complete. The plan is organized around sunrise, mid-morning, and sunset because the refuge changes faster than a fixed schedule.</p>
         <div class="hero-actions">
           <a href="./bosque-del-apache-photo-plan.pdf" class="button-link">Open PDF booklet</a>
@@ -2101,20 +2101,79 @@ function renderSources() {
     </div>`;
 }
 
-function showView(id) {
+const defaultView = "overview";
+
+function normalizeViewId(id) {
+  const view = document.getElementById(id || "");
+  return view?.classList.contains("view") ? id : defaultView;
+}
+
+function getParentWindow() {
+  try {
+    return window.parent && window.parent !== window ? window.parent : null;
+  } catch {
+    return null;
+  }
+}
+
+function viewFromHash(targetWindow) {
+  const raw = targetWindow.location.hash.replace(/^#/, "");
+  if (!raw) return "";
+  try {
+    return normalizeViewId(decodeURIComponent(raw));
+  } catch {
+    return normalizeViewId(raw);
+  }
+}
+
+function requestedView() {
+  const parentWindow = getParentWindow();
+  const parentView = parentWindow ? viewFromHash(parentWindow) : "";
+  const ownView = viewFromHash(window);
+  const queryView = new URLSearchParams(window.location.search).get("view");
+  return normalizeViewId(parentView || ownView || queryView || defaultView);
+}
+
+function writeViewUrl(targetWindow, id, mode) {
+  const url = new URL(targetWindow.location.href);
+  url.hash = id;
+  const nextUrl = `${url.pathname}${url.search}${url.hash}`;
+  if (targetWindow.location.hash === `#${id}`) return;
+  targetWindow.history[mode === "replace" ? "replaceState" : "pushState"]({ view: id }, "", nextUrl);
+}
+
+function syncViewUrls(id, mode = "push") {
+  writeViewUrl(window, id, mode);
+  const parentWindow = getParentWindow();
+  if (parentWindow) {
+    writeViewUrl(parentWindow, id, mode);
+  }
+}
+
+function showView(id, options = {}) {
+  const viewId = normalizeViewId(id);
   document.querySelectorAll(".tab").forEach((tab) => {
-    tab.classList.toggle("is-active", tab.dataset.view === id);
+    const active = tab.dataset.view === viewId;
+    tab.classList.toggle("is-active", active);
+    if (active) {
+      tab.setAttribute("aria-current", "page");
+    } else {
+      tab.removeAttribute("aria-current");
+    }
   });
   document.querySelectorAll(".view").forEach((view) => {
-    view.classList.toggle("is-active", view.id === id);
+    view.classList.toggle("is-active", view.id === viewId);
   });
+  if (options.updateUrl) {
+    syncViewUrls(viewId, options.replace ? "replace" : "push");
+  }
   setTimeout(() => {
     window.dispatchEvent(new Event("resize"));
-    if (id === "map" && window.photoMapState) {
+    if (viewId === "map" && window.photoMapState) {
       window.photoMapState.map.invalidateSize();
       window.photoMapState.map.fitBounds(window.photoMapState.bounds, { padding: [28, 28] });
     }
-    if (id === "lodging" && window.lodgingMapState) {
+    if (viewId === "lodging" && window.lodgingMapState) {
       window.lodgingMapState.map.invalidateSize();
       window.lodgingMapState.map.fitBounds(window.lodgingMapState.bounds, { padding: [28, 28] });
     }
@@ -2123,11 +2182,24 @@ function showView(id) {
 
 function initTabs() {
   document.querySelectorAll(".tab").forEach((button) => {
-    button.addEventListener("click", () => showView(button.dataset.view));
+    button.addEventListener("click", () => showView(button.dataset.view, { updateUrl: true }));
   });
   document.querySelectorAll("[data-jump]").forEach((button) => {
-    button.addEventListener("click", () => showView(button.dataset.jump));
+    button.addEventListener("click", () => showView(button.dataset.jump, { updateUrl: true }));
   });
+  const syncFromUrl = () => {
+    const viewId = requestedView();
+    showView(viewId, { updateUrl: false });
+    writeViewUrl(window, viewId, "replace");
+  };
+  window.addEventListener("hashchange", syncFromUrl);
+  window.addEventListener("popstate", syncFromUrl);
+  const parentWindow = getParentWindow();
+  if (parentWindow) {
+    parentWindow.addEventListener("hashchange", syncFromUrl);
+    parentWindow.addEventListener("popstate", syncFromUrl);
+  }
+  showView(requestedView(), { updateUrl: Boolean(window.location.hash || parentWindow?.location.hash), replace: true });
 }
 
 renderOverview();
