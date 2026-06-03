@@ -1,16 +1,22 @@
 :root {
-  --paper: #f7f1e7;
-  --paper-2: #fffaf1;
-  --ink: #17140f;
-  --muted: #665f53;
-  --line: #d8cdbb;
-  --sage: #7f9b76;
-  --sage-dark: #385642;
-  --clay: #b9653d;
-  --gold: #d8a441;
-  --water: #4f8f9a;
-  --berry: #8c4351;
-  --shadow: 0 20px 60px rgba(55, 40, 20, 0.12);
+  --bg: #fafafa;
+  --surface: #ffffff;
+  --surface-soft: #f0f0f0;
+  --text: #1a1a1a;
+  --muted: #777777;
+  --line: rgba(26, 26, 26, 0.16);
+  --line-soft: rgba(26, 26, 26, 0.08);
+  --accent: #c4956a;
+  --accent-hover: #b0815a;
+  --accent-soft: rgba(196, 149, 106, 0.13);
+  --blue-soft: #eff6ff;
+  --blue-text: #1e3a5f;
+  --green-soft: #eef8f2;
+  --green-text: #25543a;
+  --rose-soft: #fff1f2;
+  --rose-text: #7f1d1d;
+  --shadow: 0 18px 45px rgba(0, 0, 0, 0.05);
+  --content: 1200px;
 }
 
 * {
@@ -23,10 +29,10 @@ html {
 
 body {
   margin: 0;
-  background: var(--paper);
-  color: var(--ink);
+  background: var(--bg);
+  color: var(--text);
   font-family:
-    Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Instrument Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     sans-serif;
 }
 
@@ -36,41 +42,59 @@ select {
   font: inherit;
 }
 
+button {
+  color: inherit;
+}
+
+a {
+  color: var(--text);
+  text-decoration-color: rgba(196, 149, 106, 0.45);
+  text-underline-offset: 4px;
+  transition:
+    color 160ms ease,
+    border-color 160ms ease,
+    background-color 160ms ease;
+}
+
+a:hover {
+  color: var(--accent-hover);
+}
+
 .app-shell {
   position: sticky;
   top: 0;
   z-index: 50;
   display: grid;
-  grid-template-columns: minmax(220px, 0.8fr) minmax(0, 2fr);
+  grid-template-columns: minmax(180px, 0.48fr) minmax(0, 2.4fr);
   gap: 18px;
   align-items: center;
-  border-bottom: 1px solid var(--line);
-  background: rgba(247, 241, 231, 0.94);
-  padding: 14px clamp(16px, 4vw, 42px);
+  border-bottom: 1px solid var(--line-soft);
+  background: rgba(250, 250, 250, 0.96);
+  padding: 13px clamp(16px, 4vw, 42px);
   backdrop-filter: blur(14px);
 }
 
 .brand-block h1 {
-  margin: 2px 0 0;
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(1.55rem, 2.4vw, 2.4rem);
-  font-weight: 500;
+  margin: 3px 0 0;
+  font-family: "Instrument Serif", Georgia, serif;
+  font-size: clamp(1.45rem, 2vw, 2rem);
+  font-weight: 400;
   line-height: 1;
 }
 
 .eyebrow {
   margin: 0;
-  color: var(--clay);
-  font-size: 0.74rem;
-  font-weight: 760;
+  color: var(--muted);
+  font-size: 0.73rem;
+  font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
 
 .top-tabs {
   display: flex;
-  justify-content: flex-end;
-  gap: 7px;
+  justify-content: flex-start;
+  gap: 5px;
   overflow-x: auto;
   scrollbar-width: thin;
 }
@@ -78,19 +102,39 @@ select {
 .tab,
 .chip,
 .day-tab,
-.window-tab {
+.window-tab,
+.button-link {
   min-height: 36px;
   border: 1px solid var(--line);
   border-radius: 6px;
-  background: rgba(255, 250, 241, 0.74);
-  color: var(--muted);
+  background: var(--surface);
   cursor: pointer;
   white-space: nowrap;
+  transition:
+    background-color 160ms ease,
+    border-color 160ms ease,
+    color 160ms ease;
 }
 
 .tab {
-  padding: 8px 11px;
-  font-size: 0.86rem;
+  padding: 8px 9px;
+  color: var(--muted);
+  font-size: 0.84rem;
+}
+
+.button-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 14px;
+  color: var(--text);
+  font-size: 0.92rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.button-link.secondary {
+  background: transparent;
 }
 
 .tab:hover,
@@ -100,32 +144,124 @@ select {
 .day-tab:hover,
 .day-tab.is-active,
 .window-tab:hover,
-.window-tab.is-active {
-  border-color: var(--sage-dark);
-  background: var(--sage-dark);
-  color: #fffaf1;
+.window-tab.is-active,
+.button-link:hover {
+  border-color: var(--accent);
+  background: var(--accent);
+  color: #ffffff;
 }
 
 main {
-  min-height: calc(100vh - 78px);
+  min-height: calc(100vh - 66px);
 }
 
 .view {
   display: none;
-  padding: clamp(18px, 4vw, 42px);
+  max-width: var(--content);
+  margin: 0 auto;
+  padding: clamp(24px, 5vw, 56px) clamp(16px, 4vw, 42px) 72px;
 }
 
 .view.is-active {
   display: block;
 }
 
-.dashboard {
+.hero {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(320px, 0.48fr);
-  gap: clamp(18px, 3vw, 34px);
+  grid-template-columns: minmax(0, 0.86fr) minmax(340px, 0.58fr);
+  gap: clamp(20px, 4vw, 48px);
   align-items: stretch;
+  margin-bottom: 24px;
 }
 
+.hero-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 520px;
+  border: 1px solid var(--line-soft);
+  background: var(--surface);
+  padding: clamp(24px, 5vw, 54px);
+}
+
+.hero-copy h2,
+.section-title h2 {
+  margin: 0;
+  color: var(--text);
+  font-family: "Instrument Serif", Georgia, serif;
+  font-size: clamp(3rem, 8vw, 6.2rem);
+  font-weight: 400;
+  line-height: 0.95;
+  letter-spacing: 0;
+}
+
+.hero-copy p,
+.section-title p,
+.card-copy,
+.muted,
+.panel p,
+.practice-card p,
+.lodging-card p,
+.gear-detail-card p,
+.media-card p,
+.evidence-card p,
+.source-row p {
+  color: var(--muted);
+  line-height: 1.68;
+}
+
+.hero-copy > p {
+  max-width: 64ch;
+  margin: 24px 0 0;
+  font-size: 1.04rem;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 28px;
+}
+
+.hero-photo {
+  position: relative;
+  min-height: 520px;
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--line-soft);
+  background: var(--surface-soft);
+}
+
+.hero-photo img,
+.photo-card img,
+.hotel-photo img,
+.gear-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-photo figcaption {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  max-width: calc(100% - 20px);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 6px;
+  background: rgba(10, 10, 10, 0.74);
+  color: #ffffff;
+  padding: 6px 8px;
+  font-size: 0.72rem;
+}
+
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.stat,
 .panel,
 .photo-card,
 .slot-card,
@@ -133,98 +269,28 @@ main {
 .source-row,
 .gear-card,
 .media-card,
-.evidence-card {
-  border: 1px solid var(--line);
+.evidence-card,
+.gear-detail-card,
+.practice-card {
+  border: 1px solid var(--line-soft);
   border-radius: 8px;
-  background: rgba(255, 250, 241, 0.78);
+  background: var(--surface);
   box-shadow: var(--shadow);
 }
 
-.panel {
-  padding: clamp(18px, 3vw, 28px);
-}
-
-.hero-panel {
-  display: grid;
-  grid-template-columns: minmax(0, 0.9fr) minmax(260px, 0.65fr);
-  gap: 22px;
-  min-height: 520px;
-}
-
-.hero-copy {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 22px;
-}
-
-.hero-copy h2,
-.section-title h2 {
-  margin: 0;
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(2.2rem, 5vw, 4.8rem);
-  font-weight: 500;
-  line-height: 0.96;
-}
-
-.hero-copy p,
-.section-title p,
-.card-copy,
-.muted {
-  color: var(--muted);
-  line-height: 1.62;
-}
-
-.hero-copy p {
-  max-width: 62ch;
-  font-size: 1.03rem;
-}
-
-.hero-photo {
-  position: relative;
-  min-height: 460px;
-  overflow: hidden;
-  border-radius: 8px;
-  background: #d8cdbb;
-}
-
-.hero-photo img,
-.photo-card img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.credit {
-  position: absolute;
-  right: 10px;
-  bottom: 10px;
-  max-width: calc(100% - 20px);
-  border-radius: 6px;
-  background: rgba(23, 20, 15, 0.72);
-  color: #fffaf1;
-  padding: 6px 8px;
-  font-size: 0.72rem;
-}
-
-.stat-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(135px, 1fr));
-  gap: 10px;
-}
-
 .stat {
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: var(--paper-2);
+  min-height: 104px;
   padding: 14px;
 }
 
 .stat b {
   display: block;
   margin-bottom: 7px;
-  color: var(--ink);
-  font-size: 1.08rem;
+  color: var(--text);
+  font-family: "Instrument Serif", Georgia, serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1;
 }
 
 .stat span {
@@ -232,39 +298,55 @@ main {
   font-size: 0.86rem;
 }
 
-.side-stack {
+.dashboard {
   display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 16px;
 }
 
-.compact-note {
-  margin-bottom: 16px;
+.panel {
+  padding: clamp(18px, 3vw, 28px);
 }
 
-.next-card {
-  border-left: 5px solid var(--clay);
+.panel h3,
+.slot-card h3,
+.lodging-card h3,
+.gear-card h3,
+.photo-card h3,
+.source-row h3,
+.media-card h3,
+.evidence-card h3,
+.gear-detail-card h3,
+.practice-card h3 {
+  margin: 0 0 8px;
+  color: var(--text);
+  font-size: 1.08rem;
+  line-height: 1.28;
+}
+
+.panel h3 {
+  font-size: 1.35rem;
 }
 
 .section-title {
   display: flex;
   justify-content: space-between;
-  gap: 18px;
+  gap: 24px;
   align-items: end;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 }
 
 .section-title h2 {
-  font-size: clamp(2rem, 4vw, 3.4rem);
+  font-size: clamp(2.2rem, 5vw, 4rem);
 }
 
 .section-title p {
-  max-width: 64ch;
+  max-width: 62ch;
   margin: 0;
 }
 
-.timeline {
-  display: grid;
-  gap: 14px;
+.compact-title h2 {
+  font-size: clamp(1.8rem, 3vw, 2.7rem);
 }
 
 .day-tabs,
@@ -280,6 +362,25 @@ main {
 .window-tab,
 .chip {
   padding: 8px 12px;
+  color: var(--muted);
+}
+
+.day-tab span {
+  display: block;
+  color: inherit;
+  font-size: 0.7rem;
+}
+
+.timeline,
+.practice-list,
+.media-grid,
+.evidence-grid {
+  display: grid;
+  gap: 14px;
+}
+
+.day-intro h3 {
+  font-size: clamp(1.35rem, 2.5vw, 2rem);
 }
 
 .slot-card {
@@ -290,20 +391,11 @@ main {
 }
 
 .slot-time {
-  color: var(--clay);
+  color: var(--accent-hover);
   font-size: 0.78rem;
   font-weight: 760;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-}
-
-.slot-card h3,
-.lodging-card h3,
-.gear-card h3,
-.photo-card h3,
-.source-row h3 {
-  margin: 0 0 8px;
-  font-size: 1.08rem;
 }
 
 .tag-row {
@@ -315,26 +407,32 @@ main {
 
 .tag {
   border-radius: 999px;
-  background: rgba(79, 143, 154, 0.14);
-  color: #225861;
+  background: var(--blue-soft);
+  color: var(--blue-text);
   padding: 5px 8px;
   font-size: 0.76rem;
   font-weight: 700;
 }
 
 .tag.sunrise {
-  background: rgba(216, 164, 65, 0.2);
-  color: #6b4a10;
+  background: #fff7ed;
+  color: #7c3f12;
 }
 
 .tag.sunset {
-  background: rgba(185, 101, 61, 0.18);
-  color: #733517;
+  background: var(--rose-soft);
+  color: var(--rose-text);
 }
 
 .tag.verify {
-  background: rgba(140, 67, 81, 0.14);
-  color: var(--berry);
+  background: var(--accent-soft);
+  color: #754b26;
+}
+
+.map-section,
+.support-title,
+.filter-guidance {
+  margin-top: 34px;
 }
 
 .map-layout {
@@ -343,12 +441,12 @@ main {
   gap: 18px;
 }
 
-#trip-map {
+.map-canvas {
   min-height: 680px;
   overflow: hidden;
-  border: 1px solid var(--line);
+  border: 1px solid var(--line-soft);
   border-radius: 8px;
-  background: #e6e0d4;
+  background: var(--surface-soft);
 }
 
 .map-list {
@@ -359,9 +457,9 @@ main {
 }
 
 .map-item {
-  border: 1px solid var(--line);
+  border: 1px solid var(--line-soft);
   border-radius: 8px;
-  background: var(--paper-2);
+  background: var(--surface);
   padding: 12px;
   text-align: left;
 }
@@ -378,12 +476,18 @@ main {
   line-height: 1.52;
 }
 
+.map-item.is-static {
+  cursor: default;
+}
+
 .leaflet-popup-content {
-  color: var(--ink);
+  color: var(--text);
 }
 
 .grid-2,
-.grid-3 {
+.grid-3,
+.grid-4,
+.gear-detail-grid {
   display: grid;
   gap: 16px;
 }
@@ -396,6 +500,10 @@ main {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.grid-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
 .lodging-card,
 .gear-card,
 .photo-card,
@@ -406,7 +514,7 @@ main {
 }
 
 .lodging-card[data-rank="1"] {
-  border-color: rgba(56, 86, 66, 0.55);
+  border-color: rgba(196, 149, 106, 0.55);
 }
 
 .rank {
@@ -416,9 +524,17 @@ main {
   width: 28px;
   height: 28px;
   border-radius: 999px;
-  background: var(--sage-dark);
-  color: #fffaf1;
+  background: var(--text);
+  color: #ffffff;
   font-weight: 800;
+}
+
+.rank-line {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 10px;
 }
 
 .lodging-meta {
@@ -434,6 +550,42 @@ main {
   padding: 5px 8px;
   color: var(--muted);
   font-size: 0.78rem;
+}
+
+.hotel-photo,
+.gear-photo {
+  display: grid;
+  min-height: 190px;
+  margin-bottom: 14px;
+  place-items: center;
+  overflow: hidden;
+  border: 1px solid var(--line-soft);
+  border-radius: 8px;
+  background: var(--surface-soft);
+  text-align: center;
+  text-decoration: none;
+}
+
+.gear-photo {
+  min-height: 220px;
+  background: #f7f7f7;
+}
+
+.hotel-photo-link,
+.gear-photo-link {
+  padding: 18px;
+  background:
+    linear-gradient(135deg, rgba(26, 26, 26, 0.05), rgba(196, 149, 106, 0.16)),
+    var(--surface-soft);
+}
+
+.hotel-photo-link span,
+.gear-photo-link span {
+  max-width: 15rem;
+  color: var(--text);
+  font-family: "Instrument Serif", Georgia, serif;
+  font-size: 1.55rem;
+  line-height: 1.05;
 }
 
 .photo-card {
@@ -457,7 +609,7 @@ main {
 
 .source-row {
   display: grid;
-  grid-template-columns: 180px minmax(0, 1fr) 130px;
+  grid-template-columns: 170px minmax(0, 1fr) 120px;
   gap: 14px;
   align-items: start;
 }
@@ -478,52 +630,29 @@ main {
   margin-bottom: 16px;
 }
 
-.media-decision h3 {
-  margin: 0 0 8px;
-  font-size: 1.2rem;
-}
-
 .media-counts {
   display: grid;
   gap: 10px;
 }
 
 .media-counts span {
-  border: 1px solid var(--line);
+  border: 1px solid var(--line-soft);
   border-radius: 8px;
-  background: var(--paper-2);
+  background: var(--surface-soft);
   padding: 14px;
   color: var(--muted);
 }
 
 .media-counts b {
   display: block;
-  color: var(--ink);
-  font-size: 1.5rem;
-}
-
-.media-grid,
-.evidence-grid {
-  display: grid;
-  gap: 16px;
+  color: var(--text);
+  font-family: "Instrument Serif", Georgia, serif;
+  font-size: 1.7rem;
+  font-weight: 400;
 }
 
 .media-grid {
   grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.evidence-section {
-  margin-top: 28px;
-}
-
-.evidence-grid {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-.media-card h3,
-.evidence-card h3 {
-  margin: 0 0 8px;
-  font-size: 1.08rem;
 }
 
 .media-meta {
@@ -553,41 +682,90 @@ main {
   margin-top: 8px;
 }
 
-.support-title {
-  margin-top: 30px;
+.gear-detail-grid {
+  grid-template-columns: 1fr;
 }
 
-.compact-title h2 {
-  font-size: clamp(1.8rem, 3vw, 2.6rem);
+.gear-detail-card {
+  display: grid;
+  grid-template-columns: minmax(240px, 0.36fr) minmax(0, 1fr);
+  gap: 18px;
+  padding: 16px;
 }
 
-a {
-  color: var(--sage-dark);
-  text-decoration-color: rgba(56, 86, 66, 0.3);
-  text-underline-offset: 3px;
+.spec-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 8px;
+  margin: 14px 0;
 }
 
-a:hover {
-  color: var(--clay);
+.spec-grid div {
+  min-width: 0;
+  border: 1px solid var(--line-soft);
+  border-radius: 8px;
+  background: var(--surface-soft);
+  padding: 10px;
+}
+
+.spec-grid dt {
+  color: var(--muted);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.spec-grid dd {
+  margin: 5px 0 0;
+  color: var(--text);
+  font-size: 0.88rem;
+  overflow-wrap: anywhere;
+}
+
+.practice-card {
+  display: grid;
+  grid-template-columns: 48px minmax(0, 1fr);
+  gap: 16px;
+  padding: 18px;
+}
+
+.practice-number {
+  display: inline-flex;
+  width: 38px;
+  height: 38px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  background: var(--text);
+  color: #ffffff;
+  font-family: "Instrument Serif", Georgia, serif;
+  font-size: 1.35rem;
+}
+
+.homework {
+  border-left: 3px solid var(--accent);
+  margin: 16px 0 0;
+  padding-left: 12px;
 }
 
 .empty-map {
   display: grid;
   min-height: 420px;
   place-items: center;
-  border: 1px solid var(--line);
+  border: 1px solid var(--line-soft);
   border-radius: 8px;
-  background: var(--paper-2);
+  background: var(--surface);
   color: var(--muted);
   text-align: center;
 }
 
 @media (max-width: 1060px) {
   .app-shell,
+  .hero,
   .dashboard,
-  .hero-panel,
   .map-layout,
-  .media-decision {
+  .media-decision,
+  .gear-detail-card {
     grid-template-columns: 1fr;
   }
 
@@ -595,13 +773,14 @@ a:hover {
     justify-content: start;
   }
 
+  .hero-copy,
   .hero-photo {
-    min-height: 320px;
+    min-height: 380px;
   }
 
-  .stat-grid,
   .grid-3,
-  .evidence-grid {
+  .grid-4,
+  .spec-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -616,12 +795,20 @@ a:hover {
   }
 
   .view {
-    padding: 14px;
+    padding: 18px 14px 56px;
   }
 
-  .hero-panel,
-  .panel {
-    padding: 14px;
+  .hero-copy {
+    min-height: auto;
+    padding: 20px;
+  }
+
+  .hero-photo {
+    min-height: 300px;
+  }
+
+  .hero-copy h2 {
+    font-size: clamp(2.8rem, 16vw, 4.4rem);
   }
 
   .section-title {
@@ -635,13 +822,106 @@ a:hover {
   .stat-grid,
   .grid-2,
   .grid-3,
+  .grid-4,
   .media-grid,
-  .evidence-grid,
-  .source-row {
+  .source-row,
+  .spec-grid,
+  .practice-card {
     grid-template-columns: 1fr;
   }
 
-  #trip-map {
+  .map-canvas {
     min-height: 520px;
+  }
+
+  .practice-card {
+    gap: 10px;
+  }
+}
+
+@media print {
+  @page {
+    margin: 0.55in;
+    size: letter;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+
+  body {
+    background: #ffffff;
+  }
+
+  .app-shell {
+    position: static;
+    display: block;
+    border-bottom: 1px solid #dddddd;
+    padding: 0 0 18px;
+  }
+
+  .top-tabs,
+  .hero-actions {
+    display: none;
+  }
+
+  main {
+    min-height: auto;
+  }
+
+  .view,
+  .view.is-active {
+    display: block;
+    max-width: none;
+    padding: 28px 0;
+    break-before: page;
+  }
+
+  #overview {
+    break-before: auto;
+  }
+
+  .hero,
+  .dashboard,
+  .grid-2,
+  .grid-3,
+  .grid-4,
+  .media-grid,
+  .map-layout,
+  .gear-detail-card,
+  .slot-card {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-copy,
+  .hero-photo,
+  .map-canvas {
+    min-height: auto;
+  }
+
+  .hero-photo {
+    max-height: 4.5in;
+  }
+
+  .panel,
+  .photo-card,
+  .slot-card,
+  .lodging-card,
+  .source-row,
+  .gear-card,
+  .media-card,
+  .evidence-card,
+  .gear-detail-card,
+  .practice-card {
+    box-shadow: none;
+    break-inside: avoid;
+  }
+
+  .map-list {
+    max-height: none;
+  }
+
+  a {
+    color: #1a1a1a;
   }
 }

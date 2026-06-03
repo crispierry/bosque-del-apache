@@ -18,7 +18,7 @@ This project is for planning and publishing a photography-focused trip guide for
 
 ## Research Status
 
-Core research has been refreshed as of June 3, 2026. The trip is narrowed to two candidate windows: November 29-December 5, 2026 or December 6-12, 2026, with a current planning bias toward December 6-12 to avoid Festival of the Cranes crowds while staying in the same bird window. Lodging should be one hotel room for two adults; Socorro remains the photography-first base, with Marriott Bonvoy documented as a Los Lunas tradeoff option. Exact Dec 6-12 third-party hotel snapshots are now captured, but direct booking totals/cancellation terms still need final verification before purchase. The main items still needing user confirmation are the exact date window to book, the final hotel, final camera system choice, and any additional images intended for publication.
+Core research has been refreshed as of June 3, 2026. The trip plan now uses the confirmed window of December 6-12, 2026: arrive Sunday, shoot five full on-site days from Monday through Friday, and depart Saturday. Lodging should be one hotel room for two adults; Socorro remains the photography-first base, with Marriott Bonvoy documented as a Los Lunas tradeoff option. Exact Dec 6-12 third-party hotel snapshots are captured, but direct booking totals/cancellation terms still need final verification before purchase. The gear plan keeps both Sony and Canon branches, with the Sony FE 200-600mm restored as a primary wildlife recommendation rather than a fallback, especially for Tanzania.
 
 ## Project Documents
 
@@ -38,6 +38,7 @@ Core research has been refreshed as of June 3, 2026. The trip is narrowed to two
 - `docs/research/finalization-checklist.md` - requirement-by-requirement status of the remaining-work list.
 - `docs/site/information-architecture.md` - website tabs, sections, and data model.
 - `site/` - static website prototype.
+- `site/bosque-del-apache-photo-plan.pdf` - offline iPad-readable PDF booklet generated from the website.
 
 ## Website Preview
 
@@ -59,7 +60,7 @@ This repository is configured for Netlify in `netlify.toml`.
 
 - Publish directory: `site`
 - Build command: leave blank
-- Production route: `https://crispierry.com/projects/bosque-del-apache/`
+- Production route: `https://crispierry.com/projects/bosque-del-apache`
 - Deployment procedure: `docs/site/deployment.md`
 
 ## Notes

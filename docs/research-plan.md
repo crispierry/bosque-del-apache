@@ -10,8 +10,8 @@ Research refresh completed June 3, 2026.
 
 - Official refuge access, hours, fees, tour-loop notes, and rules were rechecked.
 - Map pins were added for the visitor center, viewing decks, crane-pond pullouts, restrooms, food, fuel, and the main Socorro lodging candidates.
-- The trip is now narrowed to two candidate windows: November 29-December 5, 2026 or December 6-12, 2026, with a current planning bias toward December 6-12 to avoid Festival of the Cranes crowds.
-- Sunrise/sunset times are updated for both candidate windows.
+- The trip is now set for December 6-12, 2026, with arrival Sunday, five full on-site photography days Monday-Friday, and departure Saturday.
+- Sunrise/sunset times are updated for the December 6-12 window.
 - Lodging requirements are now one hotel room for two adults, with six hotel nights in either window.
 - Lodging recommendations are ranked for a safe, comfortable, not-too-expensive stay; Marriott Bonvoy has been added as a tradeoff option via Los Lunas rather than as the default sunrise base.
 - Exact Dec 6-12, 2026 Expedia snapshots were captured for the leading Socorro hotels and the Los Lunas Bonvoy option; direct brand-page attempts were documented, but direct-booking totals, cancellation windows, and recent room-specific reviews must still be checked before purchase.
@@ -24,7 +24,7 @@ Research refresh completed June 3, 2026.
 
 | Area | Output | Status |
 |---|---|---|
-| Trip timing | Early December assessment and five-day itinerary | Drafted and refreshed for two candidate windows |
+| Trip timing | Early December assessment and five-day itinerary | Drafted and refreshed for December 6-12, 2026 |
 | Festival context | Festival of the Cranes timing and crowd/programming tradeoff | Added; supports December 6-12 planning bias |
 | Current refuge rules | Access hours, visitor-center hours, fees, road-use rules, wildlife ethics | Rechecked June 3, 2026 |
 | Photo locations | Sunrise, mid-morning, and sunset rankings | Drafted and map-linked |
@@ -41,7 +41,7 @@ Research refresh completed June 3, 2026.
 
 These cannot be fully completed from research alone:
 
-- Formally choose between the two candidate windows. Current bias is December 6-12, 2026; November 29-December 5 remains useful only if Festival of the Cranes programming becomes a goal.
+- Recheck exact Dec 6-12, 2026 sun times and refuge operations again close to travel.
 - Confirm any pet, accessibility, breakfast, or room-location needs beyond one room for two adults.
 - Choose the final hotel after direct-booking refundable rates and cancellation windows are checked against the Dec 6-12 snapshot.
 - Choose Sony or Canon later, or explicitly confirm that the final published plan should retain both branches.

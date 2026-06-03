@@ -5,7 +5,7 @@
 Production URL:
 
 ```text
-https://crispierry.com/projects/bosque-del-apache/
+https://crispierry.com/projects/bosque-del-apache
 ```
 
 This project is a standalone static site in `site/`. The Netlify configuration in the repository root publishes that directory directly.
@@ -37,7 +37,7 @@ Netlify's current docs confirm that Git deploys connect a repository to a site a
 
 ## Main Website Route
 
-The public route belongs to the main `crispierry.com` website, not DNS. A URL path like `/projects/bosque-del-apache/` must be handled by the main site's routing or by a Netlify rewrite.
+The public route belongs to the main `crispierry.com` website, not DNS. A URL path like `/projects/bosque-del-apache` must be handled by the main site's routing or by a Netlify rewrite.
 
 Use one of these patterns.
 
@@ -51,18 +51,20 @@ Use this if the main website repository should own the project page directly.
 /projects/bosque-del-apache/
 ```
 
-2. Deploy the main website normally.
-3. Confirm these URLs load:
+2. Add or keep the main website route at `app/projects/bosque-del-apache/page.tsx` so `/projects/bosque-del-apache` embeds `/projects/bosque-del-apache/index.html`.
+3. Deploy the main website normally.
+4. Confirm these URLs load:
 
 ```text
-https://crispierry.com/projects/bosque-del-apache/
+https://crispierry.com/projects/bosque-del-apache
+https://crispierry.com/projects/bosque-del-apache/index.html
 https://crispierry.com/projects/bosque-del-apache/styles.css
 https://crispierry.com/projects/bosque-del-apache/app.js
 ```
 
 ## Option B: Proxy This Netlify Site From The Main Website
 
-Use this if this repository remains a separate Netlify site and the main website only exposes it under the project path.
+Use this only if this repository remains a separate Netlify site and the main website only exposes it under the project path. This is not the current production pattern when the main website embeds `/projects/bosque-del-apache/index.html` through a Next.js route.
 
 Add this to the main `crispierry.com` site's `netlify.toml`, replacing the Netlify subdomain with the real one:
 
@@ -80,9 +82,9 @@ Add this to the main `crispierry.com` site's `netlify.toml`, replacing the Netli
   force = true
 ```
 
-Keep the trailing slash redirect. The site's asset URLs are relative, so `/projects/bosque-del-apache/` resolves assets correctly while `/projects/bosque-del-apache` can resolve them from the wrong parent path in some browsers.
+This proxy fallback uses a trailing-slash redirect because directly serving the static app at `/projects/bosque-del-apache` would make its relative CSS, JavaScript, and image URLs resolve from the wrong parent path.
 
-Netlify's rewrite/proxy docs also note that proxied content can have asset-path issues when using relative paths. The trailing slash redirect avoids that for this static site.
+Netlify's rewrite/proxy docs also note that proxied content can have asset-path issues when using relative paths. The trailing-slash redirect avoids that for this static site.
 
 ## Manual Deploy Fallback
 
@@ -98,12 +100,12 @@ netlify deploy --prod --dir=site
 - Start the local preview and check the Overview, Map, Itinerary, Lodging, Gear, Practice, Inspiration, and Sources tabs.
 - Confirm all local assets load from `site/assets/`.
 - Confirm the Leaflet map loads with the external Leaflet CSS and script.
-- Confirm the canonical URL in `site/index.html` points to `https://crispierry.com/projects/bosque-del-apache/`.
+- Confirm the canonical URL in `site/index.html` points to `https://crispierry.com/projects/bosque-del-apache`.
 - Commit changes before pushing.
 
 ## Post-Deploy Checklist
 
-- Open `https://crispierry.com/projects/bosque-del-apache/`.
+- Open `https://crispierry.com/projects/bosque-del-apache`.
 - Confirm CSS and JavaScript load from the project path.
 - Confirm browser refresh works from the project path.
 - Confirm the standalone Netlify URL still works for deploy previews.

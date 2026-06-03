@@ -113,7 +113,7 @@ Each practice item should use this structure:
 - Success standard: know the slowest reliable shutter speed for each support method.
 - Common misses: leaning into the lens, poor foot position, loose tripod head, and forgetting stabilization mode differences.
 - Home practice location: backyard, balcony, parked car, local overlook.
-- Gear: Sony 100-400mm f/4.5, Sony 200-600mm fallback, Sony 400-800mm, Canon 100-500mm, Canon 200-800mm, and teleconverter combinations under consideration.
+- Gear: Sony 200-600mm, Sony 100-400mm f/4.5-5.6, Sony 400-800mm, Canon 100-500mm, Canon 200-800mm, and teleconverter combinations under consideration.
 - Field note: choose support based on the shot window, not on habit.
 
 ### Fast Focal-Length Decisions

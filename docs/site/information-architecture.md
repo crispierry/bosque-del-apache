@@ -12,10 +12,10 @@ Configured publishing pattern:
 
 - Build this as a small standalone project app in this repository first.
 - Publish this repository to Netlify with `site/` as the publish directory.
-- Mount it in the personal website under `/projects/bosque-del-apache/`.
+- Mount it in the personal website under `/projects/bosque-del-apache`.
 - Treat the existing photography gallery as related but not the main home for this guide, because this project is an itinerary/map/planning tool rather than a single photo gallery entry.
 - Reuse the personal site's project-app pattern if appropriate: publish the static app into a website public asset folder, or proxy the standalone Netlify site from that route.
-- Keep the trailing slash on `/projects/bosque-del-apache/` so relative CSS, JavaScript, and image asset paths resolve correctly.
+- Load the static app from `/projects/bosque-del-apache/index.html` inside the main website route so relative CSS, JavaScript, and image asset paths resolve correctly while the public route stays canonicalized without a trailing slash.
 
 Deployment details live in `docs/site/deployment.md`.
 
@@ -208,7 +208,7 @@ Core practice modules:
 - Manual exposure discipline for stable light during fly-outs and fly-ins.
 - Burst timing: short intentional bursts instead of holding the shutter through every pass.
 - Long-lens stability from hand-held, monopod, tripod, and vehicle support positions.
-- Fast subject acquisition with the Sony 100-400mm f/4.5, Sony 200-600mm fallback, Sony 400-800mm, Canon 100-500mm, or Canon 200-800mm.
+- Fast subject acquisition with the Sony 200-600mm, Sony 100-400mm f/4.5-5.6, Sony 400-800mm, Canon 100-500mm, or Canon 200-800mm.
 - Environmental compositions that include wetland, cottonwood, mountain, and dawn/sunset context.
 - Field workflow: batteries, cards, lens cloth, cold-weather handling, and post-shoot culling.
 

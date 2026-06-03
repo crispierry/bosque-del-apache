@@ -21,7 +21,7 @@ http://localhost:4173
 Configured publishing path:
 
 - Netlify publish directory: `site`
-- Public website route: `/projects/bosque-del-apache/`
+- Public website route: `/projects/bosque-del-apache`
 - Keep this as a standalone project app until research and layout stabilize.
 - Mount it through the main personal website by either copying the static output into the website's project area or proxying the standalone Netlify site from the main website.
 

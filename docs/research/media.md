@@ -8,7 +8,7 @@ Initial media index and lens-research archive added June 3, 2026. Articles are s
 
 The best Bosque del Apache lens plan is a compact system kit, not a single maximum-reach answer.
 
-- **Sony premium kit:** use the **Sony FE 100-400mm F4.5 GM OSS** as the primary dawn/flight/close-pass lens, keep the **Sony 24-105mm f/4** ready for blast-offs, sky, landscape, reflection, and habitat frames, and use the **Sony 400-800mm** when birds are distant and light is good. If the new 100-400mm f/4.5 is unavailable, the **Sony 200-600mm** remains the practical fallback wildlife zoom.
+- **Sony kit:** use the **Sony FE 200-600mm F5.6-6.3 G OSS** as the primary long wildlife lens, keep the **Sony 24-105mm f/4** ready for blast-offs, sky, landscape, reflection, and habitat frames, use the **Sony 100-400mm F4.5-5.6 GM OSS** when lighter close-pass/flight handling matters, and use the **Sony 400-800mm** when birds are distant and light is good.
 - **Canon:** use the **Canon RF 100-500mm** as the primary wildlife lens. Keep the **Canon 24-105mm** ready for wide/context frames. Use the **Canon RF 200-800mm** when birds are distant and light is good.
 
 The practical field rule: start with flexible zooms for dawn, dusk, and moving birds; add reach later when subjects are distant, static, and better lit.
@@ -49,7 +49,7 @@ For the shared **Bosque + Tanzania** kit, the 70-200mm f/2.8 moves up in priorit
 - Type: General wildlife technique guide with Bosque examples.
 - Summary: A broad wildlife tutorial that covers long lenses, teleconverters, support, behavior, action, composition, light, shutter speed, panning, and focus technique. It includes Bosque examples for snow geese and cranes.
 - Lens / camera takeaway: Explains why telephoto zooms are often more practical than primes, why teleconverters cost light and image quality, and why zooming out matters when action gets close.
-- Apply at Bosque: This supports using a flexible flight zoom first: Sony 100-400mm f/4.5 if available, Sony 200-600mm as the fallback, and Canon RF 100-500mm. It also supports saving teleconverters for bright, distant, static subjects.
+- Apply at Bosque: This supports using a flexible long zoom first: Sony 200-600mm or Sony 100-400mm f/4.5-5.6 depending distance and handling, and Canon RF 100-500mm. It also supports saving teleconverters for bright, distant, static subjects.
 
 ### 2022-12 - NANPA, "Bosque del Apache National Wildlife Refuge Regional Event"
 
@@ -97,7 +97,7 @@ For the shared **Bosque + Tanzania** kit, the 70-200mm f/2.8 moves up in priorit
 - Type: Classic Bosque photo essay and gear note.
 - Summary: A classic early-digital Bosque article emphasizing focal length, migratory bird abundance, and the usefulness of noting effective focal length on crop-sensor bodies.
 - Lens / camera takeaway: Most images were made with a Canon 400mm f/4 DO IS on a Canon D30, giving a 640mm effective field of view.
-- Apply at Bosque: The effective sweet spot for many bird images sits around 400-600mm full-frame equivalent or a little longer. This supports the Sony 100-400mm f/4.5 plus 1.4x / 400-800mm split kit, the Sony 200-600mm fallback, and the Canon RF 100-500mm plan.
+- Apply at Bosque: The effective sweet spot for many bird images sits around 400-600mm full-frame equivalent or a little longer. This supports the Sony 200-600mm as a core long zoom, the 100-400mm f/4.5-5.6 as a lighter handling option, the 400-800mm as a reach specialist, and the Canon RF 100-500mm plan.
 
 ### 2008-07-15 - Cornell All About Birds / Marie Read, "Bosque Del Apache, New Mexico: A Bird Photographer's Playground"
 

@@ -2,26 +2,27 @@
 
 ## Status
 
-Updated June 3, 2026. The final camera system is not confirmed, and the user wants to keep both Sony and Canon options for now. This file keeps Sony and Canon as separate branches while incorporating the Sony FE 100-400mm F4.5 GM OSS, 70-200mm f/2.8, and Tanzania safari crossover decisions.
+Updated June 3, 2026. The final camera system is not confirmed, and the user wants to keep both Sony and Canon options for now. This file keeps Sony and Canon as separate branches while correcting the Sony recommendation: the Sony FE 200-600mm F5.6-6.3 G OSS is a primary wildlife recommendation, not a fallback, especially for Tanzania.
 
 ## Best Lens Decision
 
 ### Sony
 
-If the **Sony FE 100-400mm F4.5 GM OSS** is available, it changes the Sony kit. It should become the **primary dawn, flight, and close-pass wildlife lens**, not because 400mm is always enough, but because constant f/4.5, fast autofocus, internal zoom, and the 100mm wide end are exactly what Bosque fly-outs and crane pools need.
+The previous draft underweighted the **Sony FE 200-600mm F5.6-6.3 G OSS**. It should be treated as the **primary Sony long wildlife lens** for Bosque and the clearest Sony safari recommendation for Tanzania. The **Sony FE 100-400mm F4.5-5.6 GM OSS** remains valuable as the lighter handheld close-pass/flight option, and the **Sony FE 400-800mm F6.3-8 G OSS** becomes the specialized bright-light reach lens.
 
 The best Sony kit is:
 
 1. **Sony FE 24-105mm F4 G OSS** - wide flock scale, sky, reflections, mountains, weather, and environmental story frames.
-2. **Sony FE 100-400mm F4.5 GM OSS** - primary dawn/flight/close bird lens.
-3. **Sony FE 400-800mm F6.3-8 G OSS** - distant birds, fields, raptors, and deck work once light is good.
-4. **Sony 1.4x teleconverter** - optional reach tool, not a default pre-sunrise setup.
+2. **Sony FE 200-600mm F5.6-6.3 G OSS** - primary long wildlife lens for cranes, geese, distant ducks, and Tanzania wildlife.
+3. **Sony FE 100-400mm F4.5-5.6 GM OSS** - lighter dawn/flight/close-pass lens when acquisition speed matters more than maximum reach.
+4. **Sony FE 400-800mm F6.3-8 G OSS** - distant birds, fields, raptors, and deck work once light is good.
+5. **Sony 1.4x teleconverter** - optional reach tool, not a default pre-sunrise setup.
 
-Leave the **Sony 200-600mm** at home if carrying both the 100-400mm f/4.5 and the 400-800mm. The 200-600mm remains the best practical substitute if the new 100-400mm f/4.5 is unavailable, too expensive, or if we want one simpler all-around wildlife zoom instead of splitting the job between fast/near and slow/far lenses.
+Do **not** leave the Sony 200-600mm out by default. If weight forces a Bosque cut, choose between 100-400 and 400-800 based on whether the priority is close flight handling or maximum bright-light reach. If weight forces a Tanzania cut, keep the 200-600 before the 400-800 unless distant birds are the dominant goal.
 
 Teleconverter rules:
 
-- Sony 100-400mm f/4.5 + 1.4x gives a useful 140-560mm f/6.3 range, but use it after light improves.
+- Sony 100-400mm f/4.5-5.6 + 1.4x gives a useful 140-560mm f/6.3-8 range, but use it after light improves.
 - Sony 400-800mm + 1.4x gives 560-1120mm f/9-11; reserve that for bright, distant, static subjects.
 - Sony 200-600mm + 1.4x gives 280-840mm f/8-9; useful for record shots, not first-light flight.
 
@@ -46,9 +47,9 @@ The best Canon kit is:
 
 ### If The Trip Is Sony-Only
 
-- Default Bosque dawn/sunset kit: Sony 24-105mm + Sony 100-400mm f/4.5.
-- Add Sony 400-800mm for bright mid-morning deck/field work, distant static birds, and good-light reach.
-- Use the Sony 200-600mm only as the practical fallback if the 100-400mm f/4.5 or 400-800mm is not available.
+- Default Bosque dawn/sunset kit: Sony 24-105mm + Sony 200-600mm.
+- Add Sony 100-400mm f/4.5-5.6 when lighter handheld close-pass/flight acquisition matters.
+- Add Sony 400-800mm for bright mid-morning deck/field work, distant static birds, and maximum good-light reach.
 - Use the 1.4x only after light improves, and mainly for static or distant subjects.
 
 ### If The Trip Is Canon-Only
@@ -59,7 +60,7 @@ The best Canon kit is:
 
 ### If Both Systems Are Used
 
-- Do not carry Sony 100-400mm f/4.5, Sony 400-800mm, Canon 100-500mm, and Canon 200-800mm together unless there is a clear assignment for each body.
+- Do not carry Sony 200-600mm, Sony 100-400mm f/4.5-5.6, Sony 400-800mm, Canon 100-500mm, and Canon 200-800mm together unless there is a clear assignment for each body.
 - Pick one primary dawn/sunset system and leave the other as backup or midday reach.
 - Practical mixed carry: one 24-105, one flexible flight zoom, and optionally one longest zoom in the vehicle for bright field/deck work.
 
@@ -96,7 +97,7 @@ Where it does not help enough:
 
 Recommendation:
 
-- **Sony:** The **Sony FE 70-200mm F2.8 GM OSS II** is a good optional fourth lens if we want f/2.8, portraits, low-light compression, or a teleconverter-compatible mid-telephoto. With the Sony 1.4x it becomes a 98-280mm f/4 lens, but that still does not replace the 100-400mm f/4.5 or 400-800mm.
+- **Sony:** The **Sony FE 70-200mm F2.8 GM OSS II** is a good optional fourth lens if we want f/2.8, portraits, low-light compression, or a teleconverter-compatible mid-telephoto. With the Sony 1.4x it becomes a 98-280mm f/4 lens, but that still does not replace the 200-600mm for primary wildlife reach.
 - **Canon:** The compact **Canon RF 70-200mm F2.8 L IS USM** is a good optional fourth lens for travel and portraits. If extender compatibility matters, choose the **Canon RF 70-200mm F2.8 L IS USM Z**, which supports RF 1.4x and 2x extenders through the zoom range.
 - If we must stay at **three lenses**, skip the 70-200mm and keep 24-105mm + flight zoom + reach zoom.
 - If we allow **four lenses**, the 70-200mm f/2.8 is the fourth lens, not a replacement for the 24-105mm.
@@ -120,15 +121,16 @@ If we allow four lenses:
 
 1. **Sony FE 24-105mm F4 G OSS** - landscapes, vehicle/camp life, elephants close to the vehicle, environmental wildlife.
 2. **Sony FE 70-200mm F2.8 GM OSS II** - close mammals, portraits, low-light compression, cubs/family behavior, camp/travel images.
-3. **Sony FE 100-400mm F4.5 GM OSS** - main Tanzania wildlife lens and Bosque dawn/flight lens.
-4. **Sony FE 400-800mm F6.3-8 G OSS** - Bosque reach, Tanzania birds, distant cats, rhino if relevant, and long-compression work.
-5. **Sony 1.4x teleconverter** - useful but avoid frequent mounting/unmounting in dust.
+3. **Sony FE 200-600mm F5.6-6.3 G OSS** - main Tanzania wildlife lens and strong Bosque long bird lens.
+4. **Sony FE 100-400mm F4.5-5.6 GM OSS** - lighter Bosque flight and close-pass option.
+5. **Sony FE 400-800mm F6.3-8 G OSS** - Bosque reach, Tanzania birds, distant cats, rhino if relevant, and long-compression work.
+6. **Sony 1.4x teleconverter** - useful but avoid frequent mounting/unmounting in dust.
 
 If we must reduce to three lenses for Tanzania travel weight:
 
-- Keep **24-105mm + 70-200mm f/2.8 + 100-400mm f/4.5**.
+- Keep **24-105mm + 70-200mm f/2.8 + 200-600mm**.
 - Leave **400-800mm** behind unless birds or distant wildlife are a major priority.
-- For Bosque-only bird work, put the 400-800mm back in and drop the 70-200mm if needed.
+- Bring the **100-400mm** only if close-pass handling and lighter handheld work outweigh the need for one simple long wildlife lens.
 
 ### Best Shared Canon Kit: Bosque + Tanzania
 
@@ -196,7 +198,7 @@ The clearest pattern across Bosque-specific sources is not "bring the longest le
 - Add the 1.4x after light improves for distant static birds, perched raptors, or record shots.
 - For blast-offs, start wider than expected. The flock shape and sky are often the image.
 - For cranes landing or taking off, leave space in the frame for wing spread and direction of motion.
-- For Sony flight, prioritize the 100-400mm f/4.5 if available; otherwise use the 200-600mm. For Canon flight, prioritize the RF 100-500mm.
+- For Sony flight, prioritize the 200-600mm for reach or the 100-400mm f/4.5-5.6 for lighter close-pass handling. For Canon flight, prioritize the RF 100-500mm.
 - For distant groups or perched subjects in good light, use Sony 400-800 or Canon RF 200-800.
 - Keep the 24-105 ready for landscapes, flock scale, reflections, habitat, and weather context.
 - Carry a 70-200mm f/2.8 only when the fourth-lens slot is worth the extra handling for portraits, close birds, low-light compression, and non-refuge scenes.
