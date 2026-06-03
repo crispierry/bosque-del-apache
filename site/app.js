@@ -131,6 +131,186 @@ const sources = [
     url: "https://www.fws.gov/media/snow-geese-fly-overhead-bosque-del-apache-refuge",
     checked: "2026-06-03",
   },
+  {
+    topic: "Media",
+    title: "Evie Wilder - Sandhill Crane Migration",
+    url: "https://eviewilder.com/blog/sandhill-crane-migration-bosque-del-apache-winter/",
+    checked: "2026-06-03",
+  },
+  {
+    topic: "Media",
+    title: "The Quite Wild - Bird Photography for Beginners at Bosque del Apache",
+    url: "https://thequitewild.com/bird-photography-for-beginners-bosque-del-apache/",
+    checked: "2026-06-03",
+  },
+  {
+    topic: "Media",
+    title: "Outdoor Photographer - Extreme Close-Up",
+    url: "https://www.outdoorphotographer.com/tips-techniques/wildlife-techniques/extreme-close-up/",
+    checked: "2026-06-03",
+  },
+  {
+    topic: "Media",
+    title: "WildernessShots - How to Shoot Wildlife Photography",
+    url: "https://www.wildernessshots.com/how-to-shoot-wildlife-photography",
+    checked: "2026-06-03",
+  },
+  {
+    topic: "Media",
+    title: "NANPA Bosque del Apache Regional Event",
+    url: "https://nanpa.org/eventcalendar/bosque-del-apache-national-wildlife-refuge-regional-event-december-4-7-2022/",
+    checked: "2026-06-03",
+  },
+  {
+    topic: "Media",
+    title: "BirdWatching - Best camera settings for bird photography",
+    url: "https://www.birdwatchingdaily.com/photography/how-to-photograph-birds/best-camera-settings-for-bird-photography/",
+    checked: "2026-06-03",
+  },
+  {
+    topic: "Media",
+    title: "Chasing Hippoz - Bosque del Apache photography and travel guide",
+    url: "https://www.chasinghippoz.com/travel-photo-blog/2019/11/3/wxk15i7zdi06279j8bzassi9cgs98a",
+    checked: "2026-06-03",
+  },
+  {
+    topic: "Media",
+    title: "Outdoor Photographer / OEL - Bosque del Apache National Wildlife Refuge",
+    url: "https://www.oelmag.com/bosque-del-apache-national-wildlife-refuge/",
+    checked: "2026-06-03",
+  },
+  {
+    topic: "Media",
+    title: "LifePixel - Bosque del Apache Wildlife Refuge",
+    url: "https://www.lifepixel.com/photography-locations/bosque-del-apache-wildlife-refuge",
+    checked: "2026-06-03",
+  },
+  {
+    topic: "Media",
+    title: "Luminous Landscape - Bosque del Apache",
+    url: "https://luminous-landscape.com/bosque-del-apache/",
+    checked: "2026-06-03",
+  },
+  {
+    topic: "Media",
+    title: "Cornell All About Birds - Bosque del Apache photo guide",
+    url: "https://www.allaboutbirds.org/news/bosque-del-apache-new-mexico-a-bird-photographers-playground/",
+    checked: "2026-06-03",
+  },
+  {
+    topic: "Media",
+    title: "Thom Hogan - Bosque del Apache",
+    url: "https://www.bythom.com/photographic-travel/united-states/bosque-del-apache.html",
+    checked: "2026-06-03",
+  },
+  {
+    topic: "EXIF evidence",
+    title: "Wikimedia Commons - Sandhill Crane at Bosque del Apache",
+    url: "https://commons.wikimedia.org/wiki/File:Sandhill_Crane_(Bosque_del_Apache_National_Wildlife_Refuge).jpg",
+    checked: "2026-06-03",
+  },
+  {
+    topic: "EXIF evidence",
+    title: "Wikimedia Commons - Snow Geese at Bosque del Apache",
+    url: "https://commons.wikimedia.org/wiki/File:Snow_Geese_(Bosque_del_Apache_National_Wildlife_Refuge).jpg",
+    checked: "2026-06-03",
+  },
+  {
+    topic: "EXIF evidence",
+    title: "Wikimedia Commons - Bosque Light",
+    url: "https://commons.wikimedia.org/wiki/File:Bosque_Light.jpg",
+    checked: "2026-06-03",
+  },
+  {
+    topic: "Gear specs",
+    title: "Sony - FE 100-400mm F4.5 GM OSS",
+    url: "https://electronics.sony.com/imaging/lenses/all-e-mount/p/sel100400mc",
+    checked: "2026-06-03",
+  },
+  {
+    topic: "Gear specs",
+    title: "Sony - FE 200-600mm F5.6-6.3 G OSS",
+    url: "https://www.sony.com/electronics/support/lenses-e-mount-lenses/sel200600g/specifications",
+    checked: "2026-06-03",
+  },
+  {
+    topic: "Gear specs",
+    title: "Sony - FE 400-800mm F6.3-8 G OSS",
+    url: "https://www.sony.co.uk/electronics/camera-lenses/sel400800g/specifications",
+    checked: "2026-06-03",
+  },
+  {
+    topic: "Gear specs",
+    title: "Sony - FE 24-105mm F4 G OSS",
+    url: "https://www.sony.com/electronics/support/lenses-e-mount-lenses/sel24105g/specifications",
+    checked: "2026-06-03",
+  },
+  {
+    topic: "Gear specs",
+    title: "Sony - FE 24-70mm F2.8 GM II",
+    url: "https://www.sony.com/electronics/support/lenses-e-mount-lenses/sel2470gm2/specifications",
+    checked: "2026-06-03",
+  },
+  {
+    topic: "Gear specs",
+    title: "Sony - FE 70-200mm F2.8 GM OSS II",
+    url: "https://www.sony.com/electronics/support/lenses-e-mount-lenses/sel70200gm2/specifications",
+    checked: "2026-06-03",
+  },
+  {
+    topic: "Gear specs",
+    title: "Canon - RF100-500mm F4.5-7.1 L IS USM",
+    url: "https://www.usa.canon.com/shop/p/rf100-500mm-f4-5-7-1-l-is-usm",
+    checked: "2026-06-03",
+  },
+  {
+    topic: "Gear specs",
+    title: "Canon - RF200-800mm F6.3-9 IS USM",
+    url: "https://www.usa.canon.com/shop/p/rf200-800mm-f6-3-9-is-usm",
+    checked: "2026-06-03",
+  },
+  {
+    topic: "Gear specs",
+    title: "Canon - RF24-105mm F4 L IS USM",
+    url: "https://www.usa.canon.com/shop/catalog/product/view/id/50549/s/rf24-105mm-f4-l-is-usm/",
+    checked: "2026-06-03",
+  },
+  {
+    topic: "Gear specs",
+    title: "Canon - RF24-70mm F2.8 L IS USM",
+    url: "https://www.usa.canon.com/shop/p/rf24-70mm-f2-8l-is-usm",
+    checked: "2026-06-03",
+  },
+  {
+    topic: "Gear specs",
+    title: "Canon - RF70-200mm F2.8 L IS USM",
+    url: "https://www.usa.canon.com/shop/p/rf70-200mm-f2-8-l-is-usm",
+    checked: "2026-06-03",
+  },
+  {
+    topic: "Gear specs",
+    title: "Canon - RF70-200mm F2.8 L IS USM Z",
+    url: "https://www.usa.canon.com/shop/p/rf70-200mm-f2-8-l-is-usm-z",
+    checked: "2026-06-03",
+  },
+  {
+    topic: "Safari gear",
+    title: "Safari Tanzania - Safari Photography Tips",
+    url: "https://safaritanzania.com/blog/safari-photography-tips-complete-guide",
+    checked: "2026-06-03",
+  },
+  {
+    topic: "Safari gear",
+    title: "Magical Tanzania - Tanzania Safari Photography Guide 2026",
+    url: "https://magicaltanzania.com/blog/tanzania-safari-photography-guide-2026/",
+    checked: "2026-06-03",
+  },
+  {
+    topic: "Safari gear",
+    title: "Digital Camera World - Best lenses for safari photography in 2026",
+    url: "https://www.digitalcameraworld.com/buying-guides/best-lenses-for-safari-photography",
+    checked: "2026-06-03",
+  },
 ];
 
 const locations = [
@@ -326,7 +506,7 @@ const days = [
         time: "Be in position by 6:15 AM",
         place: "North Crane Pond / Highway 1 crane pools",
         goal: "Cranes and geese leaving shallow water against southeast color.",
-        gear: "Sony 200-600 + 24-105, or Canon 100-500 + 24-105",
+        gear: "Sony 100-400 f/4.5 + 24-105, or Canon 100-500 + 24-105",
         position: "Use legal crane-pond parking or pullouts. Stay off railroad, private land, shoulders, and closed areas.",
       },
       {
@@ -334,7 +514,7 @@ const days = [
         time: "9:00 AM to 11:00 AM",
         place: "Visitor Center if open, otherwise South Loop wetlands",
         goal: "Use staff intel when available, then work Dabbler Deck, Eagle Scout Deck, and wetland subjects.",
-        gear: "Sony 200-600 or 400-800, Canon 100-500 or 200-800",
+        gear: "Sony 100-400 f/4.5 or 400-800, Canon 100-500 or 200-800",
         position: "Move slowly through legal pullouts; keep vehicle as a blind.",
       },
       {
@@ -342,7 +522,7 @@ const days = [
         time: "Arrive 3:45 PM",
         place: "North Crane Pond / Highway 1 crane pools",
         goal: "Crane landings, silhouettes, reflections, and mountain bands.",
-        gear: "Sony 24-105 + 200-600, or Canon 24-105 + 100-500",
+        gear: "Sony 24-105 + 100-400 f/4.5, or Canon 24-105 + 100-500",
         position: "Park fully clear of road and pre-compose landing lanes.",
       },
     ],
@@ -356,7 +536,7 @@ const days = [
         time: "Be on platform before civil twilight",
         place: "Flight Deck / Main Pool",
         goal: "Snow goose blast-off, flock patterns, cranes, and ducks.",
-        gear: "24-105 for scale plus 200-600 or 100-500 for flight",
+        gear: "24-105 for scale plus Sony 100-400 f/4.5 or Canon 100-500 for flight",
         position: "Start wide into dawn color; switch to panning as light rises.",
       },
       {
@@ -364,7 +544,7 @@ const days = [
         time: "After fly-out",
         place: "North Loop / Farm Deck crop fields",
         goal: "Feeding cranes/geese, harriers, bald eagles, and flight lines.",
-        gear: "Sony 200-600 handheld or 400-800; Canon 100-500 or 200-800",
+        gear: "Sony 100-400 f/4.5 handheld or 400-800; Canon 100-500 or 200-800",
         position: "Use legal pullouts around crop fields; do not block road.",
       },
       {
@@ -372,7 +552,7 @@ const days = [
         time: "Arrive 3:45 PM",
         place: "South Crane Pond pullouts",
         goal: "Crane family groups returning to shallow water.",
-        gear: "Sony 200-600, Canon 100-500, wide zoom for sky/reflection",
+        gear: "Sony 100-400 f/4.5, Canon 100-500, wide zoom for sky/reflection",
         position: "Choose lower angle only where safe and legal.",
       },
     ],
@@ -386,7 +566,7 @@ const days = [
         time: "Be in position by 6:15 AM",
         place: "South Crane Pond / Highway 1 pool",
         goal: "Takeoff runs, cold-air breath, reflections, and smaller crane groups.",
-        gear: "Sony 200-600 no TC, Canon 100-500 no TC",
+        gear: "Sony 100-400 f/4.5 no TC, Canon 100-500 no TC",
         position: "Adjust along legal pullouts for wind; birds depart into wind.",
       },
       {
@@ -394,7 +574,7 @@ const days = [
         time: "9:15 AM to 11:30 AM",
         place: "Willow Deck and Coyote Deck",
         goal: "Wetland views, ducks, cranes/geese, raptors, and passerines.",
-        gear: "Sony 400-800 or 200-600; Canon 200-800 or 100-500",
+        gear: "Sony 400-800 or 100-400 f/4.5; Canon 200-800 or 100-500",
         position: "Keep tripod footprint compact on shared deck space.",
       },
       {
@@ -416,7 +596,7 @@ const days = [
         time: "Be near loop entrance by 6:20 AM",
         place: "South Loop first wetland stretch",
         goal: "Rim light, mist, reeds, ducks, geese, cranes, and harriers.",
-        gear: "Sony 200-600, Canon 100-500, 24-105 for habitat",
+        gear: "Sony 100-400 f/4.5, Canon 100-500, 24-105 for habitat",
         position: "Work slowly toward Dabbler and Diver Deck. Pull fully aside.",
       },
       {
@@ -432,7 +612,7 @@ const days = [
         time: "Arrive 3:40 PM",
         place: "North Loop fields near Farm Deck",
         goal: "Crane/geese staging before roost flights.",
-        gear: "Sony 200-600 or 400-800; Canon 100-500 or 200-800",
+        gear: "Sony 100-400 f/4.5 or 400-800; Canon 100-500 or 200-800",
         position: "Confirm gates same day. Warm side light favors darker backgrounds.",
       },
     ],
@@ -454,7 +634,7 @@ const days = [
         time: "9:00 AM to 11:00 AM",
         place: "Visitor Center / Desert Arboretum / central two-way road",
         goal: "Roadrunner, Gambel's quail, sparrows, phoebes, Cooper's hawk.",
-        gear: "Sony 200-600 or 24-105; Canon 100-500 or 24-105",
+        gear: "Sony 100-400 f/4.5 or 24-105; Canon 100-500 or 24-105",
         position: "Stay in or near the vehicle and do not approach wildlife.",
       },
       {
@@ -462,7 +642,7 @@ const days = [
         time: "Arrive 3:40 PM",
         place: "Highway 1 crane-pool finale",
         goal: "Pick one clean composition: landing reflection, mountain bands, or wide sky punctuation.",
-        gear: "Sony 24-105 + 200-600; Canon 24-105 + 100-500",
+        gear: "Sony 24-105 + 100-400 f/4.5; Canon 24-105 + 100-500",
         position: "Stay until legal light allows; birds may return after sunset.",
       },
     ],
@@ -556,30 +736,327 @@ const inspiration = [
   },
 ];
 
+const mediaArticles = [
+  {
+    date: "2026-04-19",
+    source: "Evie Wilder",
+    title: "Sandhill Crane Migration",
+    url: "https://eviewilder.com/blog/sandhill-crane-migration-bosque-del-apache-winter/",
+    kind: "Fieldcraft",
+    summary:
+      "Recent crane field story with practical advice for bitter cold, snow, condensation, batteries, and being ready before first light.",
+    lens:
+      "Recommends a 70-600mm range, tripod or monopod, extra batteries, continuous autofocus, burst mode, and 1/1600 or faster for freezing flight.",
+    apply:
+      "Treat dawn as a cold-weather workflow problem: gloves, batteries, lens protection, and the long lens ready before the first crane movement.",
+  },
+  {
+    date: "2025-11-01",
+    source: "The Quite Wild",
+    title: "15 Essential Tips for Bird Photography for Beginners at Bosque del Apache",
+    url: "https://thequitewild.com/bird-photography-for-beginners-bosque-del-apache/",
+    kind: "Guide",
+    summary:
+      "Structured beginner guide covering season, locations, camera settings, autofocus, exposure, telephoto choices, and support.",
+    lens:
+      "Recommends 100-400mm, 150-600mm, and 200-600mm zooms; notes 1.4x teleconverters help only when autofocus remains reliable.",
+    apply:
+      "Use it as a pre-trip settings checklist, then tune shutter speed, ISO, and autofocus behavior against the actual light.",
+  },
+  {
+    date: "2024-06-03 updated",
+    source: "Outdoor Photographer",
+    title: "Extreme Close-Up",
+    url: "https://www.outdoorphotographer.com/tips-techniques/wildlife-techniques/extreme-close-up/",
+    kind: "Lens Evidence",
+    summary:
+      "Long-lens technique article that uses Bosque as a major bird-in-flight example and stresses support discipline.",
+    lens:
+      "Bosque snow goose example uses a Canon EOS-1D X, EF 400mm f/2.8L II, and EF 2x III for 800mm on full frame.",
+    apply:
+      "Extreme reach can make tight action images, but it is a specialized setup; keep the flexible zoom as the default.",
+  },
+  {
+    date: "2024-04-21 updated / 2023-11-22 published",
+    source: "WildernessShots",
+    title: "How to Shoot Wildlife Photography",
+    url: "https://www.wildernessshots.com/how-to-shoot-wildlife-photography",
+    kind: "Technique",
+    summary:
+      "Broad wildlife tutorial with Bosque examples for action, light, shutter speed, panning, support, behavior, and focus.",
+    lens:
+      "Explains why telephoto zooms are often more practical than primes and why teleconverters cost light and image quality.",
+    apply:
+      "Supports using a flexible flight zoom first: Sony 100-400mm f/4.5 if available, Sony 200-600mm as the fallback, and Canon RF 100-500mm.",
+  },
+  {
+    date: "2022-12",
+    source: "NANPA",
+    title: "Bosque del Apache National Wildlife Refuge Regional Event",
+    url: "https://nanpa.org/eventcalendar/bosque-del-apache-national-wildlife-refuge-regional-event-december-4-7-2022/",
+    kind: "Guide",
+    summary:
+      "Photo-tour planning page with likely locations, car-based shooting expectations, winter weather notes, and gear guidance.",
+    lens:
+      "Recommends 100-400mm and longer, 400mm or larger when possible, optional teleconverters, and sturdy tripod/gimbal support.",
+    apply:
+      "Bring both wide and long options. Most work is from a vehicle or short walk, so a long lens and support are practical.",
+  },
+  {
+    date: "2021-07/08",
+    source: "BirdWatching / Rick Sammon",
+    title: "The best camera settings for bird photography",
+    url: "https://www.birdwatchingdaily.com/photography/how-to-photograph-birds/best-camera-settings-for-bird-photography/",
+    kind: "Settings",
+    summary:
+      "Settings article covering shutter speed, autofocus, exposure, frame rate, mood, and environmental bird photography.",
+    lens:
+      "Names Canon RF 100-500mm as a go-to wildlife zoom and shows a Bosque sunrise made with a Canon 5D Mark III and 24-105mm.",
+    apply:
+      "Carry the 24-105mm. Wide story frames are part of the Bosque shot list, not merely backup coverage.",
+  },
+  {
+    date: "2019-11-03 URL date",
+    source: "Chasing Hippoz",
+    title: "My Photography & Travel Guide to Bosque Del Apache, NM",
+    url: "https://www.chasinghippoz.com/travel-photo-blog/2019/11/3/wxk15i7zdi06279j8bzassi9cgs98a",
+    kind: "Guide",
+    summary:
+      "Travel and photography guide covering when to go, lodging, locations, light, backgrounds, clothing, and gear.",
+    lens:
+      "Recommends 500mm, 600mm, or 800mm for isolation, but calls the Canon RF 100-500mm an excellent flexible Bosque option.",
+    apply:
+      "Use a two-body strategy when possible: long zoom for birds, 24-105mm or short telephoto for scale and environment.",
+  },
+  {
+    date: "2019-07-02",
+    source: "Outdoor Photographer / OEL",
+    title: "Bosque del Apache National Wildlife Refuge",
+    url: "https://www.oelmag.com/bosque-del-apache-national-wildlife-refuge/",
+    kind: "Location",
+    summary:
+      "Concise location feature on winter subjects, weather, mist, low-angle perspective, panning, slow shutters, and environment.",
+    lens:
+      "No strict lens prescription; reinforces mixing action, flock, and landscape compositions.",
+    apply:
+      "Do not only chase full-frame birds. Work low where safe and legal, simplify backgrounds, and include mountains and sky.",
+  },
+  {
+    date: "2016-12-21",
+    source: "LifePixel / Bob Coates",
+    title: "Bosque del Apache Wildlife Refuge",
+    url: "https://www.lifepixel.com/photography-locations/bosque-del-apache-wildlife-refuge",
+    kind: "Lens Evidence",
+    summary:
+      "Field-based guide focused on crane flight, behavior, support, local intel, and anticipation.",
+    lens:
+      "Uses a Panasonic Lumix GX85 with 100-400mm, equivalent to an 800mm full-frame field of view.",
+    apply:
+      "Reach helps, but the strongest lesson is behavior reading: watch posture and repeated flight paths before action happens.",
+  },
+  {
+    date: "2009-01-13",
+    source: "Luminous Landscape",
+    title: "Bosque del Apache",
+    url: "https://luminous-landscape.com/bosque-del-apache/",
+    kind: "Lens Evidence",
+    summary:
+      "Classic early-digital Bosque photo essay emphasizing focal length, crop factor, and abundant migratory bird subjects.",
+    lens:
+      "Most images were made with a Canon 400mm f/4 DO IS on a Canon D30, giving a 640mm effective field of view.",
+    apply:
+      "The long-running Bosque sweet spot sits around 400-600mm equivalent or a little longer, depending on position.",
+  },
+  {
+    date: "2008-07-15",
+    source: "Cornell All About Birds / Marie Read",
+    title: "Bosque Del Apache, New Mexico: A Bird Photographer's Playground",
+    url: "https://www.allaboutbirds.org/news/bosque-del-apache-new-mexico-a-bird-photographers-playground/",
+    kind: "Technique",
+    summary:
+      "Bosque-specific field guide covering Main Pool, Old Highway 1, flight cues, wind/light alignment, exposure, and panning.",
+    lens:
+      "Says 300-400mm can be enough for flight, 500-600mm benefits from support, and wide or short telephoto lenses work for habitat.",
+    apply:
+      "Start wider for blast-offs and switch longer as birds separate. Wind and light direction should drive position.",
+  },
+  {
+    date: "2008 original / current site",
+    source: "Thom Hogan",
+    title: "Bosque del Apache",
+    url: "https://www.bythom.com/photographic-travel/united-states/bosque-del-apache.html",
+    kind: "Fieldcraft",
+    summary:
+      "Counterpoint to gear obsession, arguing for prediction, discipline, position, and knowing the image you are trying to make.",
+    lens:
+      "Describes useful work with a 70-300mm and notes that a 600mm f/4 can be too much for some bird-plus-moon compositions.",
+    apply:
+      "Decide the shot first. For bird plus moon, flock shape, or sky scale, too much focal length can hurt.",
+  },
+];
+
+const exifEvidence = [
+  {
+    source: "Wikimedia Commons",
+    subject: "Sandhill crane",
+    evidence: "Canon EOS 60D, 350mm EXIF",
+    url: "https://commons.wikimedia.org/wiki/File:Sandhill_Crane_(Bosque_del_Apache_National_Wildlife_Refuge).jpg",
+    takeaway: "Good position can make crane images viable below 500mm.",
+  },
+  {
+    source: "Wikimedia Commons",
+    subject: "Snow geese",
+    evidence: "Canon EOS 60D, 100mm EXIF",
+    url: "https://commons.wikimedia.org/wiki/File:Snow_Geese_(Bosque_del_Apache_National_Wildlife_Refuge).jpg",
+    takeaway: "Wide and short telephoto frames matter for flock scale.",
+  },
+  {
+    source: "Wikimedia Commons",
+    subject: "Bosque light",
+    evidence: "Nikon D7000, 135mm EXIF / 202mm equivalent",
+    url: "https://commons.wikimedia.org/wiki/File:Bosque_Light.jpg",
+    takeaway: "Mid-telephoto works for light, water, mountains, and habitat.",
+  },
+  {
+    source: "Luminous Landscape",
+    subject: "Migratory birds",
+    evidence: "Canon 400mm f/4 DO IS, 640mm effective field of view",
+    url: "https://luminous-landscape.com/bosque-del-apache/",
+    takeaway: "Classic Bosque bird work fits the 400-600mm-equivalent range and supports the split Sony kit.",
+  },
+  {
+    source: "LifePixel",
+    subject: "Crane flight",
+    evidence: "Panasonic GX85 with 100-400mm, 200-800mm equivalent",
+    url: "https://www.lifepixel.com/photography-locations/bosque-del-apache-wildlife-refuge",
+    takeaway: "Long reach helps most when light and handling are under control.",
+  },
+  {
+    source: "BirdWatching",
+    subject: "Bosque sunrise",
+    evidence: "Canon EOS 5D Mark III with 24-105mm",
+    url: "https://www.birdwatchingdaily.com/photography/how-to-photograph-birds/best-camera-settings-for-bird-photography/",
+    takeaway: "Carry the wide zoom for story, sky, and place.",
+  },
+];
+
 const gearCards = [
   {
-    name: "Long wildlife kit",
-    uses: "Crane pools, feeding fields, decks",
-    sony: "200-600 for moving birds; 400-800 for distance in good light",
-    canon: "100-500 for moving birds; 200-800 for distance in good light",
+    name: "Sony premium kit",
+    uses: "3 lenses plus Sony 1.4x teleconverter",
+    items: [
+      "FE 24-105mm F4 G OSS for flock scale, sky, reflections, weather, mountains, and habitat.",
+      "FE 100-400mm F4.5 GM OSS as the dawn, flight, and close-pass wildlife lens.",
+      "FE 400-800mm F6.3-8 G OSS for distant birds in good light.",
+      "SEL14TC only after light improves; it is not the pre-sunrise default.",
+    ],
+    note: "Leave the 200-600mm home in this kit. Use it only as the fallback if the new 100-400mm f/4.5 or 400-800mm is not available.",
   },
   {
-    name: "Wide flock kit",
-    uses: "Blast-offs, reflections, mountain bands",
-    sony: "24-105 plus 200-600",
-    canon: "24-105 plus 100-500",
+    name: "Canon kit",
+    uses: "3 lenses plus Canon RF 1.4x extender",
+    items: [
+      "RF 24-105mm F4 L IS USM for flock scale, sky, reflections, landscapes, and habitat.",
+      "RF 100-500mm F4.5-7.1 L IS USM as the primary wildlife lens.",
+      "RF 200-800mm F6.3-9 IS USM for distant birds in good light.",
+      "RF 1.4x extender only after light improves; on the RF 100-500mm it works from 300-500mm only.",
+    ],
+    note: "The RF 100-500mm stays first for flight. The RF 200-800mm is reach, not the dawn default.",
   },
   {
-    name: "Low-light rule",
-    uses: "Pre-dawn and last color",
-    sony: "No 1.4x except static silhouettes",
-    canon: "No 1.4x except static silhouettes",
+    name: "24-105mm vs 24-70mm",
+    uses: "Standard zoom decision",
+    items: [
+      "Choose 24-105mm f/4 for Bosque.",
+      "The extra 70-105mm range matters for flocks crossing water, mountain bands, and environmental compression.",
+      "Use 24-70mm f/2.8 only as a swap for people, events, night scenes, or shallow-depth-of-field work outside the refuge plan.",
+    ],
+    note: "Do not carry both standard zooms for the refuge days.",
   },
   {
-    name: "Field support",
-    uses: "Vehicle work, deck sessions, highway pullouts",
-    sony: "Beanbag/monopod for vehicle and deck work",
-    canon: "Tripod only where it does not block shared space",
+    name: "70-200mm f/2.8",
+    uses: "Optional fourth lens",
+    items: [
+      "Consider it for close birds, compressed environmental frames, portraits, mammals, travel details, and low-light static subjects.",
+      "Do not use it as the main Bosque bird lens; 200mm is short for most bird portraits and distant field work.",
+      "It cannot replace the 24-105mm for big fly-outs, sky, weather, or landscape scale.",
+      "Sony: FE 70-200mm F2.8 GM OSS II works with the Sony 1.4x teleconverter, but 98-280mm f/4 still does not replace the 100-400mm f/4.5.",
+      "Canon: RF 70-200mm F2.8 L IS USM is the compact travel option; RF 70-200mm F2.8 L IS USM Z is the extender-compatible option.",
+    ],
+    note: "If we stay at three lenses, skip it. If we allow four lenses, this is the fourth lens.",
+  },
+];
+
+const tanzaniaCards = [
+  {
+    name: "What Tanzania changes",
+    uses: "Shared Bosque + safari logic",
+    items: [
+      "The 70-200mm f/2.8 becomes much more useful for close mammals, portraits, low-light behavior, camp life, and vehicle-side subjects.",
+      "The 100-400mm or 100-500mm class zoom becomes the safari backbone because animals can move from close to far while the vehicle position is fixed.",
+      "The 400-800mm or 200-800mm reach lens stays valuable for Bosque birds, Tanzania birds, distant cats, and very distant wildlife, but it is less automatic than it is for Bosque.",
+      "Dust favors two bodies and fewer lens changes: pre-mount the standard zoom on one body and the main wildlife zoom on the other.",
+      "Small-aircraft or bush-flight baggage limits may force the super-reach lens out before the 70-200mm.",
+    ],
+    note: "For Bosque, protect reach. For Tanzania, protect flexible mammal coverage.",
+  },
+  {
+    name: "Sony shared kit",
+    uses: "4 lenses plus Sony 1.4x teleconverter",
+    items: [
+      "FE 24-105mm F4 G OSS for landscapes, vehicle/camp life, close elephants, and environmental wildlife.",
+      "FE 70-200mm F2.8 GM OSS II for close mammals, portraits, low-light compression, cubs/family behavior, and travel images.",
+      "FE 100-400mm F4.5 GM OSS as the main Tanzania wildlife lens and Bosque dawn/flight lens.",
+      "FE 400-800mm F6.3-8 G OSS for Bosque reach, Tanzania birds, distant cats, and long-compression work.",
+      "SEL14TC for good-light reach, but avoid frequent mounting and unmounting in dust.",
+    ],
+    note: "Three-lens Tanzania cut: keep 24-105 + 70-200 f/2.8 + 100-400. Leave 400-800 behind unless birds or distant wildlife are a major goal.",
+  },
+  {
+    name: "Canon shared kit",
+    uses: "4 lenses plus Canon RF 1.4x extender",
+    items: [
+      "RF 24-105mm F4 L IS USM for landscapes, vehicle/camp life, close mammals, and environmental wildlife.",
+      "RF 70-200mm F2.8 L IS USM for compact travel, or RF 70-200mm F2.8 L IS USM Z if extender compatibility matters.",
+      "RF 100-500mm F4.5-7.1 L IS USM as the main Tanzania wildlife lens and Bosque flight/default wildlife lens.",
+      "RF 200-800mm F6.3-9 IS USM for Bosque reach, Tanzania birds, distant cats, and long-compression work.",
+      "RF 1.4x extender for good light; remember the RF 100-500mm extender caveat from 300-500mm only.",
+    ],
+    note: "Three-lens Tanzania cut: keep 24-105 + 70-200 f/2.8 + RF 100-500. Leave RF 200-800 behind unless birds or distant wildlife are a priority.",
+  },
+];
+
+const supportCards = [
+  {
+    name: "Vehicle support",
+    uses: "Auto loop and road pullouts",
+    items: [
+      "Bring a beanbag or window support. It is fast, quiet, and more useful than a tripod inside the vehicle loop.",
+      "Keep one wide lens and one wildlife lens ready so fly-outs do not become lens-change emergencies.",
+    ],
+    note: "Use the vehicle as a blind and stay fully clear of road edges.",
+  },
+  {
+    name: "Tripod and head",
+    uses: "Flight Deck, pools, decks, and static compositions",
+    items: [
+      "Bring sturdy carbon legs that can handle a body plus 200-600mm, 400-800mm, or RF 200-800mm class lens without extending the center column.",
+      "Use a gimbal for extended long-lens flight tracking.",
+      "Use a ball head for 24-105mm landscapes, locked reflections, and static compositions.",
+      "Carry a monopod when decks or pullouts are too crowded for tripod legs.",
+    ],
+    note: "Standardize long lenses with Arca-Swiss plates or feet before travel.",
+  },
+  {
+    name: "Remote shutter and flash",
+    uses: "Small accessories with clear rules",
+    items: [
+      "Bring a compatible remote shutter release for tripod landscapes, reflections, static telephoto frames, moon/bird alignment, and slow-shutter flock experiments.",
+      "Use the remote for locked-off work, not hand-held birds in flight.",
+      "Do not bring flash for wildlife. It will not help at normal refuge distances and adds disturbance risk.",
+      "Refuge rules prohibit using spotlights, automotive headlights, or other artificial light to spot, locate, or take animals.",
+    ],
+    note: "Pack the remote. Leave wildlife flash out of the field kit.",
   },
 ];
 
@@ -682,8 +1159,8 @@ function renderOverview() {
         </section>
         <section class="panel">
           <p class="eyebrow">Gear bias</p>
-          <h3>Keep Sony and Canon for now</h3>
-          <p class="card-copy">The final camera system is still open. Keep both branches in the plan, then pick one 24-105 plus one flexible long zoom before packing.</p>
+          <h3>Fast flight zoom, one system at a time</h3>
+          <p class="card-copy">The final camera system is still open. Keep both branches in the plan, but for moving birds favor Sony 100-400 f/4.5 or Canon 100-500 before the longest option.</p>
         </section>
       </aside>
     </div>`;
@@ -821,10 +1298,10 @@ function renderGear() {
   root.innerHTML = `
     <div class="section-title">
       <div>
-        <p class="eyebrow">Lens configuration</p>
+        <p class="eyebrow">Camera kit</p>
         <h2>Gear</h2>
       </div>
-      <p>The camera system is intentionally still open. Keep both Sony and Canon branches until the final pack list is chosen.</p>
+      <p>The camera system is intentionally still open. Keep both Sony and Canon branches until the final pack list is chosen. Bosque rewards long reach; Tanzania makes the 70-200mm f/2.8 much more important.</p>
     </div>
     <section class="panel compact-note">
       <p class="eyebrow">Carry rule</p>
@@ -836,8 +1313,52 @@ function renderGear() {
           (card) => `<article class="gear-card">
             <h3>${card.name}</h3>
             <p class="muted">${card.uses}</p>
-            <p><b>Sony:</b> ${card.sony}</p>
-            <p><b>Canon:</b> ${card.canon}</p>
+            <ul class="kit-list">
+              ${card.items.map((item) => `<li>${item}</li>`).join("")}
+            </ul>
+            <p class="card-copy">${card.note}</p>
+          </article>`
+        )
+        .join("")}
+    </div>
+    <div class="section-title compact-title support-title">
+      <div>
+        <p class="eyebrow">Shared safari kit</p>
+        <h2>Bosque + Tanzania</h2>
+      </div>
+      <p>A Tanzania safari shifts the priority from distant birds toward vehicle-based mammal flexibility. The four-lens kit works best; the travel cut drops super-reach before it drops the 70-200mm.</p>
+    </div>
+    <div class="grid-2">
+      ${tanzaniaCards
+        .map(
+          (card) => `<article class="gear-card">
+            <h3>${card.name}</h3>
+            <p class="muted">${card.uses}</p>
+            <ul class="kit-list">
+              ${card.items.map((item) => `<li>${item}</li>`).join("")}
+            </ul>
+            <p class="card-copy">${card.note}</p>
+          </article>`
+        )
+        .join("")}
+    </div>
+    <div class="section-title compact-title support-title">
+      <div>
+        <p class="eyebrow">Supports</p>
+        <h2>Tripods, Heads, Gimbals</h2>
+      </div>
+      <p>Support should make the field day calmer, not slower. Vehicle support comes first; tripod and gimbal support matter most for long waits and heavy lenses.</p>
+    </div>
+    <div class="grid-2">
+      ${supportCards
+        .map(
+          (card) => `<article class="gear-card">
+            <h3>${card.name}</h3>
+            <p class="muted">${card.uses}</p>
+            <ul class="kit-list">
+              ${card.items.map((item) => `<li>${item}</li>`).join("")}
+            </ul>
+            <p class="card-copy">${card.note}</p>
           </article>`
         )
         .join("")}
@@ -901,6 +1422,91 @@ function renderInspiration() {
         )
         .join("")}
     </div>`;
+}
+
+function renderMedia() {
+  const root = document.querySelector("#media");
+  root.innerHTML = `
+    <div class="section-title">
+      <div>
+        <p class="eyebrow">Articles, EXIF, and field guidance</p>
+        <h2>Media</h2>
+      </div>
+      <p>A research archive for Bosque del Apache photography articles, lens guidance, and auditable focal-length evidence. Articles are sorted newest first where dates are available.</p>
+    </div>
+    <section class="panel media-decision">
+      <div>
+        <p class="eyebrow">Lens decision</p>
+        <h3>Sony 100-400 f/4.5 first if available. Canon RF 100-500 first.</h3>
+        <p class="card-copy">Use the Sony FE 100-400mm F4.5 GM OSS for dawn, flight, and close passes, then the Sony 400-800mm for distant birds in good light. If the new 100-400mm is not available, the Sony 200-600mm remains the practical fallback. Keep 24-105 ready on either system for fly-outs, flock scale, mountains, reflections, weather, and habitat.</p>
+      </div>
+      <div class="media-counts" aria-label="Media counts">
+        <span><b>${mediaArticles.length}</b> articles</span>
+        <span><b>${exifEvidence.length}</b> evidence notes</span>
+      </div>
+    </section>
+    <div class="filter-row media-filters">
+      <button class="chip is-active" data-filter="All">All</button>
+      <button class="chip" data-filter="Guide">Guides</button>
+      <button class="chip" data-filter="Technique">Technique</button>
+      <button class="chip" data-filter="Lens Evidence">Lens Evidence</button>
+      <button class="chip" data-filter="Location">Location</button>
+      <button class="chip" data-filter="Fieldcraft">Fieldcraft</button>
+      <button class="chip" data-filter="Settings">Settings</button>
+    </div>
+    <div class="media-grid" id="media-results"></div>
+    <section class="evidence-section">
+      <div class="section-title compact-title">
+        <div>
+          <p class="eyebrow">Separate from article advice</p>
+          <h2>EXIF Evidence</h2>
+        </div>
+        <p>These notes come from public metadata or published photo captions. They support the lens decision but do not replace field judgement.</p>
+      </div>
+      <div class="evidence-grid">
+        ${exifEvidence
+          .map(
+            (item) => `<article class="evidence-card">
+              <p class="eyebrow">${item.source}</p>
+              <h3>${item.subject}</h3>
+              <p><b>${item.evidence}</b></p>
+              <p class="card-copy">${item.takeaway}</p>
+              <a href="${item.url}" target="_blank" rel="noreferrer">Open evidence</a>
+            </article>`
+          )
+          .join("")}
+      </div>
+    </section>`;
+
+  const results = root.querySelector("#media-results");
+  const draw = (filter) => {
+    const articles = filter === "All" ? mediaArticles : mediaArticles.filter((item) => item.kind === filter);
+    results.innerHTML = articles
+      .map(
+        (item) => `<article class="media-card">
+          <div class="media-meta">
+            <span>${item.date}</span>
+            <span>${item.kind}</span>
+          </div>
+          <h3><a href="${item.url}" target="_blank" rel="noreferrer">${item.title}</a></h3>
+          <p class="muted">${item.source}</p>
+          <p class="card-copy">${item.summary}</p>
+          <p><b>Lens / camera:</b> ${item.lens}</p>
+          <p><b>Apply:</b> ${item.apply}</p>
+        </article>`
+      )
+      .join("");
+  };
+
+  root.querySelectorAll(".media-filters .chip").forEach((button) => {
+    button.addEventListener("click", () => {
+      root.querySelectorAll(".media-filters .chip").forEach((item) => item.classList.remove("is-active"));
+      button.classList.add("is-active");
+      draw(button.dataset.filter);
+    });
+  });
+
+  draw("All");
 }
 
 function renderSources() {
@@ -1022,5 +1628,6 @@ renderLodging();
 renderGear();
 renderPractice();
 renderInspiration();
+renderMedia();
 renderSources();
 initTabs();

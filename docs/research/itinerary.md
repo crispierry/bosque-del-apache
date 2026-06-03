@@ -85,8 +85,9 @@ The camera system is intentionally not finalized. Keep both Sony and Canon optio
 ### Sony-Only Default
 
 - Wide/context: Sony 24-105mm f/4.
-- Primary wildlife/flight: Sony 200-600mm.
+- Primary wildlife/flight: Sony 100-400mm f/4.5, if available.
 - Extra reach in good light: Sony 400-800mm.
+- Fallback wildlife zoom: Sony 200-600mm if the 100-400mm f/4.5 or 400-800mm is not available.
 
 ### Canon-Only Default
 
@@ -96,7 +97,7 @@ The camera system is intentionally not finalized. Keep both Sony and Canon optio
 
 ### If Both Systems Are Used
 
-Pick one primary dawn/sunset system and avoid duplicate long-zoom carry. A practical mixed plan is either Sony 24-105 + Sony 200-600, or Canon 24-105 + Canon 100-500, with the longest zoom reserved for bright mid-morning field/deck work.
+Pick one primary dawn/sunset system and avoid duplicate long-zoom carry. A practical mixed plan is either Sony 24-105 + Sony 100-400mm f/4.5, or Canon 24-105 + Canon 100-500, with the longest zoom reserved for bright mid-morning field/deck work.
 
 ### Teleconverter Rule
 
@@ -106,41 +107,41 @@ Avoid the 1.4x teleconverter before sunrise except for static silhouettes. Add i
 
 | Slot | Where To Be | Why | Lens / Position |
 |---|---|---|---|
-| Early morning / sunrise | North Crane Pond / Highway 1 crane pools. Use legal crane-pond parking or pullouts north of the refuge loop. | Birds roost in shallow water and depart near dawn. Likely cranes, snow/Ross's geese, and ducks. | Shoot southeast dawn color as silhouettes or pan departing cranes against low sky. Use the flexible long zoom plus 24-105. Watch highway traffic and railroad; stay off tracks and out of closed/private areas. |
-| Mid-morning | If the visitor center is closed, scout South Loop: Dabbler Deck, Eagle Scout Deck, and nearby wetland pullouts. If open, start with staff intel first. | Good for ducks, geese loafing, coots, herons, meadowlarks, and Say's phoebe. | Morning side/back light can make reflections and rim light. Use the primary long zoom; use the longest zoom only once light is strong. Respect one-way road sections. |
-| Sunset | North Crane Pond / Highway 1 crane-pool pullout with the most active roosting birds. | Cranes may land into shallow water with mountains and sky behind. Good for silhouettes, reflections, and landing poses. | Arrive 60-75 minutes before sunset and park completely clear of the road. Use 24-105 for landscape flocks plus the flexible long zoom. |
+| Early morning / sunrise | North Crane Pond / Highway 1 crane pools. Use legal crane-pond parking or pullouts north of the refuge loop. | Birds roost in shallow water and depart near dawn. Likely cranes, snow/Ross's geese, and ducks. | Shoot southeast dawn color as silhouettes or pan departing cranes against low sky. Sony 100-400mm f/4.5 + 24-105, or Canon 100-500 + 24-105. Watch highway traffic and railroad; stay off tracks and out of closed/private areas. |
+| Mid-morning | If the visitor center is closed, scout South Loop: Dabbler Deck, Eagle Scout Deck, and nearby wetland pullouts. If open, start with staff intel first. | Good for ducks, geese loafing, coots, herons, meadowlarks, and Say's phoebe. | Morning side/back light can make reflections and rim light. Use Sony 100-400mm f/4.5 or 400-800; Canon 100-500 or 200-800. Use 1.4x only for distant static birds after light improves. Respect one-way road sections. |
+| Sunset | North Crane Pond / Highway 1 crane-pool pullout with the most active roosting birds. | Cranes may land into shallow water with mountains and sky behind. Good for silhouettes, reflections, and landing poses. | Arrive 60-75 minutes before sunset and park completely clear of the road. Use 24-105 for landscape flocks plus Sony 100-400mm f/4.5 or Canon 100-500. |
 
 ## Day 2
 
 | Slot | Where To Be | Why | Lens / Position |
 |---|---|---|---|
-| Early morning / sunrise | Flight Deck / Main Pool, if visitor center or scouting confirms water and birds. | Classic snow goose blast-off, cranes, ducks, and wide flock patterns. | Shoot into eastern dawn for silhouettes, then switch to panning as light rises. Can be crowded; Main Pool conditions vary with water management. |
-| Mid-morning | Visitor Center for current intel, then North Loop / Farm Deck crop-field area. | Birds move from roosts to farm fields after fly-out. Likely cranes/geese in flight, feeding groups, harriers, and bald eagles. | Morning light can favor views looking west/north. Farm Extension may be gated/closed; obey maintenance and closed-road signs. |
+| Early morning / sunrise | Flight Deck / Main Pool, if visitor center or scouting confirms water and birds. | Classic snow goose blast-off, cranes, ducks, and wide flock patterns. | Shoot into eastern dawn for silhouettes, then switch to panning as light rises. Can be crowded; Main Pool conditions vary with water management. Use 24-105 for scale plus Sony 100-400mm f/4.5 or Canon 100-500 for flight. |
+| Mid-morning | Visitor Center for current intel, then North Loop / Farm Deck crop-field area. | Birds move from roosts to farm fields after fly-out. Likely cranes/geese in flight, feeding groups, harriers, and bald eagles. | Morning light can favor views looking west/north. Farm Extension may be gated/closed; obey maintenance and closed-road signs. Use Sony 100-400mm f/4.5 handheld or 400-800 for distant groups; Canon 100-500 for flight or 200-800 for distance. |
 | Sunset | South Crane Pond / Highway 1 crane-pool pullout. | Repeat the strongest roost from Day 1 with a lower angle and pre-composed landing lanes. | Use west-southwest sunset backlight for water and mountain silhouettes. Wide zoom for sky/reflection frames; flexible long zoom for landing birds. |
 
 ## Day 3
 
 | Slot | Where To Be | Why | Lens / Position |
 |---|---|---|---|
-| Early morning / sunrise | South Crane Pond / west Highway 1 pool. | Crane-focused alternative to Flight Deck. Cranes often leave in smaller, more photographable groups than goose blast-offs. | Shoot takeoff runs, cold-air breath, and reflections. Birds take off into wind; adjust only within legal pullouts. No teleconverter until light improves. |
-| Mid-morning | North Loop: Willow Deck and Coyote Deck. | Clearer wetland views from the north tour route. Likely ducks, cranes/geese, raptors, and passerines in cottonwoods. | Morning light from southeast can front/side-light west and north views. Shared tripod spots; keep gear compact. |
-| Sunset | Flight Deck return flight, if birds are using Main Pool. | Good for geese returning to water and cranes crossing last light. | Compose wider than instinct; flock shape over color is often the drama. Scout at midday because Main Pool bird use can change. |
+| Early morning / sunrise | South Crane Pond / west Highway 1 pool. | Crane-focused alternative to Flight Deck. Cranes often leave in smaller, more photographable groups than goose blast-offs. | Shoot takeoff runs, cold-air breath, and reflections. Birds take off into wind; adjust only within legal pullouts. Use Sony 100-400mm f/4.5 or Canon 100-500 without teleconverter until light improves. |
+| Mid-morning | North Loop: Willow Deck and Coyote Deck. | Clearer wetland views from the north tour route. Likely ducks, cranes/geese, raptors, and passerines in cottonwoods. | Morning light from southeast can front/side-light west and north views. Shared tripod spots; keep gear compact. Use Sony 400-800 or 100-400mm f/4.5; Canon 200-800 or 100-500. |
+| Sunset | Flight Deck return flight, if birds are using Main Pool. | Good for geese returning to water and cranes crossing last light. | Compose wider than instinct; flock shape over color is often the drama. Scout at midday because Main Pool bird use can change. Use wide zoom plus flexible long zoom. |
 
 ## Day 4
 
 | Slot | Where To Be | Why | Lens / Position |
 |---|---|---|---|
-| Early morning / sunrise | South Loop first wetland stretch to Dabbler Deck and Eagle Scout Deck. | Likely ducks, geese, cranes lifting from nearby ponds, and harriers quartering marsh. | Low southeast light can give rim/backlit mist and reeds. Two-way early stretch becomes one-way farther along; pull fully aside. |
-| Mid-morning | Rio Viejo / Bike Trail restroom area and nearby open trailhead/pullouts. | Change of pace for marsh birds, cattails, coots, ducks, sparrows, quail, roadrunner, deer, or coyote. | Use the vehicle as a blind, then short walks only where open. Restroom nearby; potable water not assumed on the loop. |
-| Sunset | North Loop fields near Farm Deck / Phil Norton Observation Blind area, if open. | Watch cranes/geese staging from feeding fields before roost flights. Warm side light can light birds against darker bosque/desert backgrounds. | North loop/gates can close for maintenance or burns; confirm same day. Use flexible long zoom for flight, longest zoom for distant groups in good light. |
+| Early morning / sunrise | South Loop first wetland stretch to Dabbler Deck and Eagle Scout Deck. | Likely ducks, geese, cranes lifting from nearby ponds, and harriers quartering marsh. | Low southeast light can give rim/backlit mist and reeds. Two-way early stretch becomes one-way farther along; pull fully aside. Use Sony 100-400mm f/4.5 or Canon 100-500, with 24-105 for habitat frames. |
+| Mid-morning | Rio Viejo / Bike Trail restroom area and nearby open trailhead/pullouts. | Change of pace for marsh birds, cattails, coots, ducks, sparrows, quail, roadrunner, deer, or coyote. | Use the vehicle as a blind, then short walks only where open. Restroom nearby; potable water not assumed on the loop. Use long zoom or 24-105 depending on subject distance. |
+| Sunset | North Loop fields near Farm Deck / Phil Norton Observation Blind area, if open. | Watch cranes/geese staging from feeding fields before roost flights. Warm side light can light birds against darker bosque/desert backgrounds. | North loop/gates can close for maintenance or burns; confirm same day. Use Sony 100-400mm f/4.5 or Canon 100-500 for flight; Sony 400-800 or Canon 200-800 for distant groups in good light. |
 
 ## Day 5
 
 | Slot | Where To Be | Why | Lens / Position |
 |---|---|---|---|
 | Early morning / sunrise | Best current roost repeat: Flight Deck for geese or Highway 1 crane pools for cranes. | The highest-yield final morning is usually the roost with water, birds, and favorable wind rather than a brand-new location. | Arrive early; best color may be 30 minutes before sunrise. Use wide plus flexible long zoom; no teleconverter in dim light. |
-| Mid-morning | Visitor Center / Desert Arboretum / central two-way road. | Good for roadrunners warming up, Gambel's quail, sparrows, phoebes, Cooper's hawk, and road-edge portraits. | Lower-pressure close-subject session before travel or final sunset. Use vehicle-blind etiquette and do not approach wildlife on foot. |
-| Sunset | Highway 1 crane-pool grand finale. | Choose one clean composition: cranes landing into reflection, cranes crossing mountain bands, or wide sky with birds as punctuation. | West-southwest light is strongest for sky/reflection silhouettes. Stay until legal light allows, since birds may return after sunset. |
+| Mid-morning | Visitor Center / Desert Arboretum / central two-way road. | Good for roadrunners warming up, Gambel's quail, sparrows, phoebes, Cooper's hawk, and road-edge portraits. | Lower-pressure close-subject session before travel or final sunset. Use vehicle-blind etiquette and do not approach wildlife on foot. Use Sony 100-400mm f/4.5 or 24-105; Canon 100-500 or 24-105. |
+| Sunset | Highway 1 crane-pool grand finale. | Choose one clean composition: cranes landing into reflection, cranes crossing mountain bands, or wide sky with birds as punctuation. | West-southwest light is strongest for sky/reflection silhouettes. Stay until legal light allows, since birds may return after sunset. Use Sony 24-105 + 100-400mm f/4.5, or Canon 24-105 + 100-500. |
 
 ## Field Rules Of Thumb
 
