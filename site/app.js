@@ -1,4 +1,5 @@
 const checkedDate = "2026-06-03";
+const gearCheckedDate = "2026-06-04";
 
 const assets = {
   geese: "./assets/snow-geese-gary-stolz-usfws-1800.jpg",
@@ -68,6 +69,36 @@ const sources = [
     title: "Canon RF lens specifications",
     url: "https://www.usa.canon.com/shop/cameras/lenses",
     checked: checkedDate,
+  },
+  {
+    topic: "Camera body",
+    title: "Sony ILCE-7RM6 / Alpha 7R VI specifications",
+    url: "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7rm6/specifications",
+    checked: gearCheckedDate,
+  },
+  {
+    topic: "Sigma E-mount gear",
+    title: "Sigma 60-600mm F4.5-6.3 DG DN OS | Sports",
+    url: "https://www.sigma-global.com/en/lenses/s023_60_600_45_63/",
+    checked: gearCheckedDate,
+  },
+  {
+    topic: "Sigma E-mount gear",
+    title: "Sigma 150-600mm F5-6.3 DG DN OS | Sports",
+    url: "https://www.sigma-global.com/en/lenses/s021_150_600_5_63/",
+    checked: gearCheckedDate,
+  },
+  {
+    topic: "Sigma E-mount gear",
+    title: "Sigma 500mm F5.6 DG DN OS | Sports",
+    url: "https://www.sigma-global.com/en/lenses/s024_500_56/",
+    checked: gearCheckedDate,
+  },
+  {
+    topic: "Sigma teleconverters",
+    title: "Sigma TELE CONVERTER TC-1411 / TC-2011 compatibility",
+    url: "https://www.sigma-global.com/en/support/download/SIGMA-TELE-CONVERTER-TC1411_TC2011_EN_240220.pdf",
+    checked: gearCheckedDate,
   },
   {
     topic: "Safari lens research",
@@ -389,7 +420,7 @@ const flightOptions = [
     route: "San Jose to Albuquerque",
     recommendation: "South Bay fallback, likely connection-first.",
     detail:
-      "Southwest's current San Jose to Albuquerque route page did not show a daily nonstop pattern in the research pass. Use it if the connection is better than driving to SFO/OAK.",
+      "Southwest's current San Jose to Albuquerque route page does not show the same nonstop confidence as SFO or OAK. Use it if the connection is better than driving to SFO/OAK.",
     source: "https://www.southwest.com/routes/flights-from-san-jose-ca-to-albuquerque",
   },
   {
@@ -707,6 +738,9 @@ const gearItems = [
       filter: "77 mm",
       length: "113.3 mm",
       weight: "663 g",
+      minFocus: "0.38 m",
+      teleconverter: "No",
+      introduced: "2017",
       stabilization: "Optical SteadyShot",
       zoomFocus: "Extending zoom; internal focus",
       weather: "Dust and moisture resistant design; fluorine front coating",
@@ -730,6 +764,9 @@ const gearItems = [
       filter: "82 mm",
       length: "119.9 mm",
       weight: "695 g",
+      minFocus: "0.21-0.30 m AF",
+      teleconverter: "No",
+      introduced: "2022",
       stabilization: "No lens OSS; body-integrated stabilization",
       zoomFocus: "Extending zoom; floating focus with XD linear motors",
       weather: "Dust and moisture resistant design; fluorine front coating",
@@ -752,6 +789,9 @@ const gearItems = [
       filter: "77 mm",
       length: "200 mm",
       weight: "1,045 g without tripod mount",
+      minFocus: "0.40-0.82 m",
+      teleconverter: "SEL14TC / SEL20TC",
+      introduced: "2021",
       stabilization: "Optical SteadyShot",
       zoomFocus: "Internal zoom; inner focus",
       weather: "Sealed seams, rubber gaskets, rubber mount ring; fluorine front coating",
@@ -774,6 +814,9 @@ const gearItems = [
       filter: "77 mm",
       length: "205 mm",
       weight: "1,395 g without tripod mount",
+      minFocus: "0.98 m",
+      teleconverter: "SEL14TC / SEL20TC",
+      introduced: "2017",
       stabilization: "Optical SteadyShot",
       zoomFocus: "Extending zoom with torque adjuster; floating focus",
       weather: "Dust and moisture resistant design for light rain or windy conditions",
@@ -796,6 +839,9 @@ const gearItems = [
       filter: "95 mm",
       length: "318 mm",
       weight: "2,115 g",
+      minFocus: "2.4 m",
+      teleconverter: "SEL14TC / SEL20TC",
+      introduced: "2019",
       stabilization: "Optical SteadyShot",
       zoomFocus: "Internal zoom; DDSSM autofocus",
       weather: "Dust and moisture resistant design; fluorine front coating",
@@ -805,7 +851,7 @@ const gearItems = [
     source:
       "https://www.sony.com/electronics/support/lenses-e-mount-lenses/sel200600g/specifications",
     note:
-      "Correction to the earlier plan: this should be a first-class recommendation, not a fallback. It is the cleanest Sony one-body wildlife lens for Tanzania and a strong Bosque bird lens.",
+      "A first-class Sony wildlife recommendation for Bosque and Tanzania. It is the cleanest Sony one-body long lens when birds, distant mammals, and vehicle-based field positions matter.",
   },
   {
     system: "Sony",
@@ -817,6 +863,9 @@ const gearItems = [
       filter: "105 mm",
       length: "346 mm",
       weight: "2,475 g",
+      minFocus: "1.7-3.5 m",
+      teleconverter: "SEL14TC / SEL20TC",
+      introduced: "2025",
       stabilization: "Optical SteadyShot",
       zoomFocus: "Internal zoom; linear motor focus group",
       weather: "Internal zoom plus dust and moisture resistant design; fluorine front coating",
@@ -838,6 +887,9 @@ const gearItems = [
       filter: "None",
       length: "33.6 mm",
       weight: "167 g",
+      minFocus: "Lens dependent",
+      teleconverter: "N/A",
+      introduced: "2016",
       stabilization: "N/A; lens/body stabilization still matters",
       zoomFocus: "No zoom or focus; mounts between body and compatible lens",
       weather: "No public sealing claim; avoid swaps in dust, rain, or snow",
@@ -847,6 +899,72 @@ const gearItems = [
     source: "https://electronics.sony.com/imaging/lenses/all-e-mount/p/sel14tc",
     note:
       "Use after light improves. Avoid frequent mounting in dust, and do not make it the dawn default.",
+  },
+  {
+    system: "Sigma E",
+    name: "Sigma 60-600mm F4.5-6.3 DG DN OS | Sports",
+    role: "One-lens Sony E wildlife range from flock context to 600mm reach",
+    specs: {
+      aperture: "f/4.5-6.3 to f/22-32",
+      filter: "105 mm",
+      length: "281.2 mm",
+      weight: "2,485 g",
+      minFocus: "0.45-2.6 m",
+      teleconverter: "L-Mount only; no Sigma TC on Sony E",
+      introduced: "2023",
+      stabilization: "Sigma OS2, up to 7 stops wide / 6 stops tele",
+      zoomFocus: "Extending dual-action zoom; HLA autofocus",
+      weather: "Dust and splash resistant structure; water/oil repellent coating",
+    },
+    photo: "https://www.sigma-global.com/en/lenses/s023_60_600_45_63/",
+    photoLabel: "Sigma product/spec page",
+    source: "https://www.sigma-global.com/en/lenses/s023_60_600_45_63/",
+    note:
+      "A credible A7R VI-compatible E-mount wildlife option when avoiding lens changes matters more than weight. For Bosque, it is useful from vehicle pullouts, but it is heavier than the Sony 200-600 and has no Sony E-mount teleconverter path.",
+  },
+  {
+    system: "Sigma E",
+    name: "Sigma 150-600mm F5-6.3 DG DN OS | Sports",
+    role: "Sony E-mount long wildlife zoom alternative",
+    specs: {
+      aperture: "f/5-6.3 to f/22-29",
+      filter: "95 mm",
+      length: "265.6 mm",
+      weight: "2,100 g with tripod socket",
+      minFocus: "0.58-2.8 m",
+      teleconverter: "L-Mount only; no Sigma TC on Sony E",
+      introduced: "2021",
+      stabilization: "Sigma OS with Mode 1 / Mode 2",
+      zoomFocus: "Extending dual-action zoom; stepping motor AF",
+      weather: "Dust and splash resistant structure; water/oil repellent front coating",
+    },
+    photo: "https://www.sigma-global.com/en/lenses/s021_150_600_5_63/",
+    photoLabel: "Sigma product/spec page",
+    source: "https://www.sigma-global.com/en/lenses/s021_150_600_5_63/",
+    note:
+      "The closest Sigma alternative to the Sony 200-600 for Bosque birds. It fits Sony E-mount full-frame bodies, including the Alpha 7R VI, but Sigma's TC-1411/TC-2011 support is L-Mount-only.",
+  },
+  {
+    system: "Sigma E",
+    name: "Sigma 500mm F5.6 DG DN OS | Sports",
+    role: "Compact prime for high-resolution Sony E bird work",
+    specs: {
+      aperture: "f/5.6 to f/32",
+      filter: "95 mm",
+      length: "236.6 mm",
+      weight: "1,365 g",
+      minFocus: "3.2 m",
+      teleconverter: "L-Mount only; no Sigma TC on Sony E",
+      introduced: "2024",
+      stabilization: "Sigma OS2, up to 5 stops",
+      zoomFocus: "Prime; HLA autofocus",
+      weather: "Dust and splash resistant Sports-line structure; water/oil repellent coating",
+    },
+    photo: "https://www.sigma-global.com/en/lenses/s024_500_56/",
+    photoLabel: "Sigma product/spec page",
+    source: "https://www.sigma-global.com/en/lenses/s024_500_56/",
+    note:
+      "The sharp, lighter Sigma bird option for a high-resolution Sony body when fixed 500mm framing is acceptable. For Bosque, pair it with a second body or a 24-105 because it cannot zoom out when a flock erupts close.",
   },
   {
     system: "Canon",
@@ -859,6 +977,9 @@ const gearItems = [
       filter: "77 mm",
       length: "107.3 mm",
       weight: "700 g",
+      minFocus: "0.45 m",
+      teleconverter: "No",
+      introduced: "2018",
       stabilization: "Optical IS, up to 5 stops",
       zoomFocus: "Extending zoom; Nano USM autofocus",
       weather: "L-series dust/weather resistance; fluorine coating",
@@ -882,6 +1003,9 @@ const gearItems = [
       filter: "82 mm",
       length: "125.7 mm",
       weight: "900 g",
+      minFocus: "0.21-0.38 m",
+      teleconverter: "No",
+      introduced: "2019",
       stabilization: "Optical IS, up to 5 stops",
       zoomFocus: "Extending zoom; Nano USM autofocus",
       weather: "L-series dust/weather resistance; fluorine coating",
@@ -903,6 +1027,9 @@ const gearItems = [
       filter: "77 mm",
       length: "146 mm",
       weight: "1,070 g without tripod mount",
+      minFocus: "0.7 m",
+      teleconverter: "No",
+      introduced: "2019",
       stabilization: "Optical IS, up to 5 stops",
       zoomFocus: "Extending compact zoom; independent Nano USM autofocus",
       weather: "Dust/weather-resistant construction at mount, switch panel, and rings; fluorine coatings",
@@ -925,6 +1052,9 @@ const gearItems = [
       filter: "82 mm",
       length: "199 mm",
       weight: "1,110-1,115 g",
+      minFocus: "0.49-0.68 m",
+      teleconverter: "Extender RF 1.4x / 2x",
+      introduced: "2024",
       stabilization: "Optical IS modes 1, 2, 3",
       zoomFocus: "Internal zoom and internal focus; dual Nano USM autofocus",
       weather: "L-series weather-resistant construction; sealed rings/switch panel; fluorine coating",
@@ -948,6 +1078,9 @@ const gearItems = [
       filter: "77 mm",
       length: "207.6 mm short / 297.6 mm long",
       weight: "1,365 g without tripod mount",
+      minFocus: "0.9-1.2 m",
+      teleconverter: "Extender RF 1.4x / 2x at 300-500 mm",
+      introduced: "2020",
       stabilization: "Optical IS, up to 5 stops",
       zoomFocus: "Extending zoom; Dual Nano USM autofocus",
       weather: "L-series dust/weather resistance; fluorine front and rear coatings",
@@ -969,6 +1102,9 @@ const gearItems = [
       filter: "95 mm",
       length: "314.1 mm at 200 mm",
       weight: "2,050 g",
+      minFocus: "0.8-3.3 m",
+      teleconverter: "Extender RF 1.4x / 2x",
+      introduced: "2023",
       stabilization: "Optical IS, up to 5.5 stops",
       zoomFocus: "Extending zoom; Nano USM autofocus",
       weather: "Dust/weather-resistant construction at mount, switches, buttons, and rings",
@@ -990,6 +1126,9 @@ const gearItems = [
       filter: "None",
       length: "20.3 mm",
       weight: "225 g",
+      minFocus: "Lens dependent",
+      teleconverter: "N/A",
+      introduced: "2020",
       stabilization: "N/A; lens/body stabilization still matters",
       zoomFocus: "No zoom or focus; mounts between body and compatible lens",
       weather: "No public sealing claim; avoid swaps in dust, rain, or snow",
@@ -1010,6 +1149,9 @@ const gearItems = [
       filter: "N/A",
       length: "Model dependent",
       weight: "Usually 1-3 lb empty; fill locally if possible",
+      minFocus: "N/A",
+      teleconverter: "N/A",
+      introduced: "Product dependent",
       stabilization: "Mechanical support",
       zoomFocus: "N/A",
       weather: "Use a rain cover; keep fabric dry before packing",
@@ -1030,6 +1172,9 @@ const gearItems = [
       filter: "N/A",
       length: "Model dependent",
       weight: "Choose based on airline and lens load",
+      minFocus: "N/A",
+      teleconverter: "N/A",
+      introduced: "Product dependent",
       stabilization: "Mechanical support",
       zoomFocus: "N/A",
       weather: "Use leg locks carefully in dust; dry before collapsing",
@@ -1046,7 +1191,7 @@ const kitRecommendations = [
   {
     title: "Bosque Sony default",
     summary:
-      "Treat the Sony 200-600 as a primary long wildlife lens, not a fallback.",
+      "Treat the Sony 200-600 as the primary long wildlife zoom unless weight or close-pass handling points to the 100-400.",
     items: [
       "Body 1: FE 200-600mm for cranes, geese, distant ducks, and repeatable flight lanes.",
       "Body 2: FE 24-105mm for blast-off scale, mountain bands, reflections, weather, and story frames.",
@@ -1055,9 +1200,20 @@ const kitRecommendations = [
     ],
   },
   {
+    title: "Sigma E-mount alternatives",
+    summary:
+      "Sony Alpha 7R VI is an E-mount body, and Sigma's DG DN E-mount wildlife lenses fit that mount. Do not plan on Sigma teleconverters for Sony E-mount.",
+    items: [
+      "Best Sigma value/reach: 150-600mm F5-6.3 DG DN OS | Sports for cranes, geese, ducks, raptors, and distant fields.",
+      "Best one-lens range: 60-600mm F4.5-6.3 DG DN OS | Sports when avoiding lens changes matters more than carrying extra weight.",
+      "Best compact prime: 500mm F5.6 DG DN OS | Sports when sharp 500mm work and lighter handling matter more than zoom flexibility.",
+      "Teleconverter note: Sigma TC-1411/TC-2011 support is L-Mount-only, so Sony E-mount Sigma reach should come from focal length and crop, not a TC.",
+    ],
+  },
+  {
     title: "Tanzania Sony two-body default",
     summary:
-      "This is where the 200-600 challenge matters most: it belongs clearly in the plan.",
+      "For future safari use, the 200-600 belongs clearly in the long-lens slot.",
     items: [
       "Body 1: FE 200-600mm as the classic Sony wildlife lens for Serengeti, Ngorongoro, birds, distant cats, and fixed vehicle positions.",
       "Body 2: FE 70-200mm F2.8 for close mammals, cubs, portraits, low light, camp life, and environmental compression.",
@@ -1091,7 +1247,7 @@ const filterGuidance = [
   {
     title: "Skip buying giant CPLs for birds",
     note:
-      "95 mm and 105 mm filters fit the 200-600 / RF 200-800 and Sony 400-800. They are expensive and cost light. Use lens hoods, rain sleeves, blower, and microfiber instead.",
+      "95 mm and 105 mm filters fit the Sony 200-600, Sony 400-800, Canon RF 200-800, and the Sigma wildlife zooms/primes. They are expensive and cost light. Use lens hoods, rain sleeves, blower, and microfiber instead.",
   },
   {
     title: "Use polarizers selectively",
@@ -1161,7 +1317,7 @@ const mediaArticles = [
     url: "https://thequitewild.com/bird-photography-for-beginners-bosque-del-apache/",
     kind: "Technique",
     summary: [
-      "This is the most direct beginner-to-field guide in the current research set. It frames Bosque as a practical classroom because the subjects are repeated, the roads and decks create accessible positions, and the dawn/sunset rhythm gives multiple chances to improve.",
+      "This is the most direct beginner-to-field guide in the source set. It frames Bosque as a practical classroom because the subjects are repeated, the roads and decks create accessible positions, and the dawn/sunset rhythm gives multiple chances to improve.",
       "The settings advice is immediately useful: fast shutter speeds for geese and cranes in flight, continuous autofocus, zone/wide AF when birds are erratic, and intentional exposure control for white birds and backlit silhouettes.",
       "For this plan, the article becomes the baseline practice checklist. Before travel, rehearse 1/2000-1/3200 flight settings, 1/60-1/250 panning, back-button focus, and histogram review for white birds against dark and bright backgrounds.",
     ],
@@ -1638,9 +1794,9 @@ function renderOverview() {
   root.innerHTML = `
     <section class="hero">
       <div class="hero-copy">
-        <p class="eyebrow">Photography plan</p>
+        <p class="eyebrow">Field plan</p>
         <h2>Bosque del Apache <span class="hero-date">Dec 6-12, 2026</span></h2>
-        <p>Arrive Sunday, scout if there is light, shoot five full on-site days from Monday through Friday, and leave Saturday with backups complete. The plan is organized around light windows so the day can adapt to water, wind, crowds, and bird movement.</p>
+        <p>Arrive Sunday, scout if there is light, shoot five full on-site days from Monday through Friday, and leave Saturday with backups complete. The field guide is organized around light windows so each day can adapt to water, wind, crowds, and bird movement. Have the $5 daily private vehicle entrance fee or pass ready before dawn.</p>
         <div class="hero-actions">
           <button class="button-link" data-jump="itinerary">Open itinerary</button>
           <button class="button-link secondary" data-jump="map">Check map</button>
@@ -1658,15 +1814,14 @@ function renderOverview() {
       <article class="stat"><b>Dec 12</b><span>Departure and backups</span></article>
       <article class="stat"><b>6:10 AM</b><span>Typical target parking time</span></article>
       <article class="stat"><b>3:35 PM</b><span>Typical sunset arrival time</span></article>
-      <article class="stat"><b>12 mi</b><span>Auto Tour Loop planning distance</span></article>
+      <article class="stat"><b>12 mi</b><span>Auto Tour Loop distance</span></article>
       <article class="stat"><b>1 hr before</b><span>Auto loop opens before sunrise</span></article>
-      <article class="stat"><b>$5</b><span>Daily private vehicle entrance fee</span></article>
     </section>
     <section class="dashboard">
       <article class="panel">
         <p class="eyebrow">First morning</p>
         <h3>Be parked by 6:10 AM with a roost target already chosen.</h3>
-        <p>Use the arrival scout to choose between the crane ponds, Flight Deck/Main Pool, and the strongest current roost. If the birds or wind disagree with the plan, switch locations early instead of chasing during peak light.</p>
+        <p>Use the arrival scout to choose between the crane ponds, Flight Deck/Main Pool, and the strongest current roost. Have the $5 daily private vehicle entrance fee or pass ready before dawn. If the birds or wind disagree with the plan, switch locations early instead of chasing during peak light.</p>
       </article>
       <article class="panel">
         <p class="eyebrow">Pack tonight</p>
@@ -1693,7 +1848,7 @@ async function renderGuide() {
     </div>
     <section class="panel guide-loader">
       <p class="eyebrow">Loading article</p>
-      <p class="card-copy">Opening the complete guide inside the Bosque planning workspace.</p>
+      <p class="card-copy">Opening the complete guide inside the Bosque field experience.</p>
     </section>`;
 
   try {
@@ -1708,14 +1863,6 @@ async function renderGuide() {
         <a class="button-link secondary" href="./complete-photographers-guide.html">Open reader page</a>
       </div>
       ${article.outerHTML}`;
-    root.querySelectorAll(".guide-toc a[href^='#']").forEach((link) => {
-      link.addEventListener("click", (event) => {
-        const target = root.querySelector(link.getAttribute("href"));
-        if (!target) return;
-        event.preventDefault();
-        target.scrollIntoView({ behavior: "smooth", block: "start" });
-      });
-    });
   } catch (error) {
     root.innerHTML = `
       <div class="section-title">
@@ -1892,7 +2039,7 @@ function renderWindows() {
   root.innerHTML = `
     <div class="section-title">
       <div>
-        <p class="eyebrow">Replan by light</p>
+        <p class="eyebrow">Choose by light</p>
         <h2>Photo Windows</h2>
       </div>
       <p>Use this when conditions override the day-by-day itinerary. Each window now carries more daily context so it works as a field decision tool.</p>
@@ -1946,7 +2093,7 @@ async function renderTravel() {
       <div>
         <p class="eyebrow">Airport default</p>
         <h3>Fly Bay Area to ABQ, then drive south.</h3>
-        <p class="card-copy">Albuquerque International Sunport is the planning default. From ABQ, rent a car, take I-25 south toward Socorro, then follow the official FWS route via exit 139, US 380, and NM-1 to the refuge visitor center.</p>
+        <p class="card-copy">Albuquerque International Sunport is the practical airport. From ABQ, rent a car, take I-25 south toward Socorro, then follow the official FWS route via exit 139, US 380, and NM-1 to the refuge visitor center.</p>
       </div>
       <div class="media-counts">
         <span><b>SFO / OAK / SJC</b> Bay Area options</span>
@@ -2042,13 +2189,14 @@ async function renderTravel() {
 
 function renderGear() {
   const root = document.querySelector("#gear");
-  const systems = ["Sony", "Canon", "Support", "Compare"];
+  const systems = ["Sony", "Sigma E", "Canon", "Support", "Compare"];
   const gearByName = (name) => gearItems.find((item) => item.name === name);
-  const lensCell = (item) => {
-    if (!item) return "<td>Not configured</td>";
-    return `<td>
+  const lensCell = (item, label) => {
+    if (!item) return `<td data-label="${label}">Not configured</td>`;
+    return `<td data-label="${label}">
       <strong>${item.name}</strong>
       <span>${item.specs.aperture}; ${item.specs.length}; ${item.specs.weight}; ${item.specs.filter}</span>
+      <span>Min focus: ${item.specs.minFocus}; TC: ${item.specs.teleconverter}; introduced: ${item.specs.introduced}</span>
       <span>${item.specs.zoomFocus}</span>
       <span>${item.specs.weather}</span>
       ${externalLink(item.source, "Specs")}
@@ -2060,17 +2208,17 @@ function renderGear() {
         <p class="eyebrow">Camera kit</p>
         <h2>Gear</h2>
       </div>
-      <p>Every current gear item now has size/weight/filter/aperture/stabilization/weather information where applicable, plus a photo or official photo reference link.</p>
+      <p>Each lens and support item includes size, weight, aperture, stabilization, weather notes, minimum focusing distance, teleconverter support, and year introduced where applicable.</p>
     </div>
     <section class="panel media-decision">
       <div>
-        <p class="eyebrow">Lens decision update</p>
-        <h3>The Sony 200-600 is a real recommendation.</h3>
-        <p class="card-copy">For Bosque, it should sit beside the 100-400 and 400-800 as a primary long-lens option. For Tanzania, the clean default is one body with the 200-600 and a second body with the 70-200 f/2.8 or 24-105 depending the day.</p>
+        <p class="eyebrow">Sony and Sigma compatibility</p>
+        <h3>Sony Alpha 7R VI is the current A7R name to use.</h3>
+        <p class="card-copy">Sony's official support pages list the Alpha 7R VI as model ILCE-7RM6 with E-mount. Sigma's full-frame DG DN lenses listed here are available in Sony E-mount, but Sigma's TC-1411 and TC-2011 teleconverters are L-Mount-only, so the Sony E-mount Sigma options should be evaluated without a teleconverter.</p>
       </div>
       <div class="media-counts">
         <span><b>${gearItems.length}</b> gear items</span>
-        <span><b>77 / 82 / 95 / 105</b> filter sizes</span>
+        <span><b>${gearCheckedDate}</b> Sony/Sigma check</span>
       </div>
     </section>
     <div class="filter-row gear-filters">
@@ -2084,7 +2232,7 @@ function renderGear() {
       </div>
       <p>These recommendations are tuned for Bosque first and Tanzania second.</p>
     </div>
-    <div class="grid-3">
+    <div class="grid-4">
       ${kitRecommendations
         .map(
           (card) => `<article class="gear-card">
@@ -2126,9 +2274,9 @@ function renderGear() {
                 const canon = gearByName(row.canon);
                 return `<tr>
                   <th scope="row">${row.category}</th>
-                  ${lensCell(sony)}
-                  ${lensCell(canon)}
-                  <td>${row.note}</td>
+                  ${lensCell(sony, "Sony")}
+                  ${lensCell(canon, "Canon")}
+                  <td data-label="Takeaway">${row.note}</td>
                 </tr>`;
               })
               .join("")}
@@ -2157,9 +2305,12 @@ function renderGear() {
               <p class="card-copy">${item.role}</p>
               <dl class="spec-grid">
                 <div><dt>Length</dt><dd>${item.specs.length}</dd></div>
-                <div><dt>Filter</dt><dd>${item.specs.filter}</dd></div>
                 <div><dt>Weight</dt><dd>${item.specs.weight}</dd></div>
+                <div><dt>Min focus</dt><dd>${item.specs.minFocus}</dd></div>
+                <div><dt>Filter</dt><dd>${item.specs.filter}</dd></div>
                 <div><dt>Aperture</dt><dd>${item.specs.aperture}</dd></div>
+                <div><dt>TC</dt><dd>${item.specs.teleconverter}</dd></div>
+                <div><dt>Introduced</dt><dd>${item.specs.introduced}</dd></div>
                 <div><dt>Stabilization</dt><dd>${item.specs.stabilization}</dd></div>
                 <div><dt>Zoom / focus</dt><dd>${item.specs.zoomFocus}</dd></div>
                 <div><dt>Weather</dt><dd>${item.specs.weather}</dd></div>
@@ -2278,7 +2429,7 @@ function renderMedia() {
         <div class="media-hero-copy">
           <p class="eyebrow">Articles, EXIF, and field guidance</p>
           <h2>Media</h2>
-          <p>The research library is organized as a field decision tool: the recommendation first, then source guidance, EXIF evidence, practical implications, and citations.</p>
+          <p>The library is organized as a field decision tool: the recommendation first, then source guidance, EXIF evidence, practical implications, and citations.</p>
         </div>
         <aside class="recommendation-summary">
           <p class="eyebrow">Primary takeaway</p>
@@ -2373,9 +2524,9 @@ function renderMedia() {
         <div class="media-section-header">
           <div>
             <p class="eyebrow">Practical field implications</p>
-            <h3>How this changes the plan</h3>
+            <h3>Field implications</h3>
           </div>
-          <p>These are the operational decisions the research supports.</p>
+          <p>These are the operational decisions supported by the source set.</p>
         </div>
         <div class="implication-grid">
           ${fieldImplications

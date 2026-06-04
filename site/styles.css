@@ -29,6 +29,7 @@ html {
 
 body {
   margin: 0;
+  overflow-x: hidden;
   background: var(--bg);
   color: var(--text);
   font-family:
@@ -65,7 +66,7 @@ a:hover {
   top: 0;
   z-index: 50;
   display: grid;
-  grid-template-columns: minmax(180px, 0.48fr) minmax(0, 2.4fr);
+  grid-template-columns: minmax(180px, 0.48fr) minmax(0, 2.4fr) auto;
   gap: 18px;
   align-items: center;
   border-bottom: 1px solid var(--line-soft);
@@ -97,7 +98,42 @@ a:hover {
   justify-content: flex-start;
   gap: 5px;
   overflow-x: auto;
+  padding-bottom: 2px;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x proximity;
   scrollbar-width: thin;
+}
+
+.brand-block,
+.top-tabs {
+  min-width: 0;
+}
+
+.site-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 6px;
+}
+
+.site-links a {
+  display: inline-flex;
+  min-height: 36px;
+  align-items: center;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 8px 10px;
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.site-links a:hover {
+  border-color: var(--accent);
+  background: var(--accent);
+  color: #ffffff;
 }
 
 .tab,
@@ -121,6 +157,7 @@ a:hover {
   padding: 8px 9px;
   color: var(--muted);
   font-size: 0.84rem;
+  scroll-snap-align: start;
   text-decoration: none;
 }
 
@@ -336,37 +373,6 @@ main {
   gap: 28px;
 }
 
-.guide-toc {
-  border: 1px solid var(--line-soft);
-  border-radius: 8px;
-  background: var(--surface);
-  padding: clamp(16px, 3vw, 24px);
-  box-shadow: var(--shadow);
-}
-
-.guide-toc div {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-top: 12px;
-}
-
-.guide-toc a {
-  border: 1px solid var(--line);
-  border-radius: 999px;
-  padding: 7px 10px;
-  color: var(--muted);
-  font-size: 0.82rem;
-  font-weight: 650;
-  text-decoration: none;
-}
-
-.guide-toc a:hover {
-  border-color: var(--accent);
-  background: var(--accent);
-  color: #ffffff;
-}
-
 .guide-prose {
   max-width: 82ch;
   margin: 0 auto;
@@ -576,6 +582,25 @@ main {
   flex-wrap: wrap;
   gap: 7px;
   margin-top: 12px;
+}
+
+.tag-row a {
+  display: inline-flex;
+  min-height: 34px;
+  align-items: center;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 7px 10px;
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.tag-row a:hover {
+  border-color: var(--accent);
+  background: var(--accent);
+  color: #ffffff;
 }
 
 .tag {
@@ -1234,6 +1259,10 @@ main {
   padding: 16px;
 }
 
+.gear-detail-copy {
+  min-width: 0;
+}
+
 .spec-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(118px, 1fr));
@@ -1390,6 +1419,10 @@ main {
     justify-content: start;
   }
 
+  .site-links {
+    justify-content: flex-start;
+  }
+
   .hero-copy,
   .hero-photo {
     min-height: 380px;
@@ -1416,7 +1449,27 @@ main {
 
 @media (max-width: 680px) {
   .app-shell {
+    gap: 10px;
     padding: 12px;
+  }
+
+  .top-tabs,
+  .site-links {
+    margin-inline: -2px;
+    padding-inline: 2px;
+  }
+
+  .tab,
+  .chip,
+  .day-tab,
+  .window-tab,
+  .button-link,
+  .site-links a {
+    min-height: 44px;
+  }
+
+  .tab {
+    padding-inline: 12px;
   }
 
   .view {
@@ -1431,22 +1484,13 @@ main {
     justify-content: flex-start;
   }
 
-  .guide-toc div {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-
-  .guide-toc a {
-    border-radius: 6px;
-  }
-
   .guide-prose {
     font-size: 0.98rem;
   }
 
   .guide-prose h1 {
     max-width: none;
-    font-size: clamp(3rem, 15vw, 4.4rem);
+    font-size: 3.1rem;
   }
 
   .guide-prose th,
@@ -1464,7 +1508,11 @@ main {
   }
 
   .hero-copy h2 {
-    font-size: clamp(2.8rem, 16vw, 4.4rem);
+    font-size: 3.05rem;
+  }
+
+  .section-title h2 {
+    font-size: 2.55rem;
   }
 
   .section-title {
@@ -1528,6 +1576,73 @@ main {
   .practice-card {
     gap: 10px;
   }
+
+  .gear-detail-card {
+    gap: 12px;
+    padding: 12px;
+  }
+
+  .gear-photo {
+    min-height: 170px;
+    margin-bottom: 0;
+  }
+
+  .gear-photo img {
+    padding: 12px;
+  }
+
+  .comparison-table-wrap {
+    overflow: visible;
+    border: 0;
+    background: transparent;
+  }
+
+  .comparison-table {
+    min-width: 0;
+    border-collapse: separate;
+    border-spacing: 0 12px;
+  }
+
+  .comparison-table thead {
+    display: none;
+  }
+
+  .comparison-table tr {
+    display: block;
+    border: 1px solid var(--line-soft);
+    border-radius: 8px;
+    background: var(--surface);
+    padding: 12px;
+    box-shadow: var(--shadow);
+  }
+
+  .comparison-table th,
+  .comparison-table td {
+    display: block;
+    border-bottom: 0;
+    padding: 0;
+  }
+
+  .comparison-table th[scope="row"] {
+    margin-bottom: 10px;
+    color: var(--text);
+    font-size: 1rem;
+  }
+
+  .comparison-table td + td {
+    margin-top: 12px;
+  }
+
+  .comparison-table td::before {
+    content: attr(data-label);
+    display: block;
+    margin-bottom: 5px;
+    color: var(--accent-hover);
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
 }
 
 @media print {
@@ -1552,6 +1667,7 @@ main {
   }
 
   .top-tabs,
+  .site-links,
   .hero-actions {
     display: none;
   }
