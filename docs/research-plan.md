@@ -17,6 +17,7 @@ Research refresh completed June 3, 2026.
 - Exact Dec 6-12, 2026 Expedia snapshots were captured for the leading Socorro hotels and the Los Lunas Bonvoy option; direct brand-page attempts were documented, but direct-booking totals, cancellation windows, and recent room-specific reviews must still be checked before purchase.
 - Gear recommendations intentionally keep both Sony and Canon options because the camera system has not been chosen.
 - Current website images are public-domain USFWS assets, with source-page credit/license evidence recorded; any additional images still need per-file license checks before publication.
+- Visual expansion added June 4, 2026: generated planning previews are labeled as generated, third-party hotel/product/article imagery is link-only, and `docs/research/visual-asset-manifest.md` tracks prompts, provenance, alt text, rights notes, and placement.
 - New requested work is tracked in the standalone work log at `docs/work-log.md`.
 - Kindle/eBook availability was manually rechecked where practical, with secondary Kindle catalog evidence separated from verified non-Kindle eBook availability. Amazon checkout still needs a final purchase-time check because direct Kindle pages were not reliably accessible.
 - Website prototype passed desktop and mobile browser QA; mobile source-link wrapping and section-header layout were refined.
@@ -72,6 +73,7 @@ Do this again after dates are confirmed, then again during the final week before
 - `docs/research/books-to-buy.md`
 - `docs/research/lodging.md`
 - `docs/research/inspiration-photos.md`
+- `docs/research/visual-asset-manifest.md`
 - `docs/research/sources.md`
 - `docs/research/finalization-checklist.md`
 - `docs/work-log.md`

@@ -24,10 +24,12 @@ Deployment details live in `docs/site/deployment.md`.
 Use top tabs for the major workspaces:
 
 - Overview
+- Gallery
+- Guide
 - Map
 - Itinerary
 - Photo Windows
-- Lodging
+- Travel
 - Gear
 - Practice
 - Inspiration
@@ -41,7 +43,14 @@ Use top tabs for the major workspaces:
 - Lodging base.
 - Weather/light alerts placeholder.
 - Today's plan card during trip dates.
-- Quick links to Map, Day 1-5, Gear, Practice, Lodging, and Sources.
+- Quick links to Map, Day 1-5, Gear, Practice, Travel, and Sources.
+
+## Gallery
+
+- Generated planning-preview contact sheets for the major shot-list ideas.
+- Each contact sheet is labeled as generated, not an actual Bosque field photo.
+- Cards include five expected frame types, prompt/provenance summary, rights notes, and intended section placement.
+- Keep public-domain and generated assets visually separate from link-only external references.
 
 ## Map
 
