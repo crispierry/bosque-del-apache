@@ -152,6 +152,55 @@ Each practice item should use this structure:
 - Gear: full trip kit, including clothing and bag.
 - Field note: the checklist should be physical or phone-accessible without digging through the bag.
 
+## Filter Kit And Practice Drills
+
+Filters should be rehearsed as field-handling tools, not left on every lens by default. For cranes and geese in flight, the normal action setup is hood on, no filter, fast shutter speed protected, and lens cleaning supplies close at hand.
+
+### What To Bring
+
+| Filter / Accessory | Bring It For | Avoid It When |
+|---|---|---|
+| 77 mm circular polarizer | The shared useful size: Sony 24-105, Sony 70-200, Sony 100-400, Canon RF 24-105, Canon RF 70-200 compact, and Canon RF 100-500. Use for water glare, reflection control, and richer sky/wetland scenes after sunrise. | Predawn roosts, fast flight, dim sunset, and any moment where the lost light weakens shutter speed or autofocus confidence. |
+| 82 mm circular polarizer | Sony 24-70 GM II, Canon RF 24-70, and Canon RF 70-200 Z if those lenses are traveling. Useful for travel, landscape, and water-reflection work. | Do not buy/carry it if no 82 mm lens is in the bag. Do not make it a dawn bird-action default. |
+| 3-stop or 6-stop ND | Intentional shutter-drag, water movement, panning practice, and gray-day creative work after safe sharp frames are captured. | First crane takeoff, goose blast-off, low-light action, and any sequence where the decisive frame still needs a high shutter speed. |
+| Clear/protective filter | Dust, snow, rain, blowing grit, travel handling, or times when cleaning the filter is safer than cleaning the front element. | Shooting into low sun, flare-prone scenes, or any frame where contrast drops or ghosting appears. |
+| 77-to-82 mm step-up ring | Reducing duplicate filters if both 77 mm and 82 mm lenses are used. | Predawn cold if it has not been practiced. Rings are small, easy to fumble, and awkward with gloves. |
+| Blower, microfiber, filter pouch | Keeping filters and front elements clean without digging through the bag. | Avoid loose cloth in dusty wind; pouch and cap everything before driving. |
+
+### Drills
+
+#### CPL Glare And Reflection Drill
+
+- Home location: pond, lake, river, or reflective urban water.
+- Setup: 24-105 or 70-200 class lens with CPL.
+- Exercise: photograph the same water/reflection scene at full polarization, partial polarization, and no visible polarization effect.
+- Success standard: know by sight when the CPL improves the image and when it makes the scene look uneven or costs too much light.
+
+#### ND Shutter-Drag Drill
+
+- Home location: pond birds, gulls, cyclists, cars, or moving water.
+- Setup: 3-stop or 6-stop ND, shutter priority or manual exposure.
+- Exercise: after safe sharp frames, make intentional motion frames at 1/250, 1/125, and 1/60.
+- Success standard: produce at least 10 frames where motion blur looks intentional and the main subject still has a readable anchor point.
+
+#### Protective Filter And Flare Drill
+
+- Home location: low sun over water, road, or field.
+- Setup: same lens with clear/protective filter on and off.
+- Exercise: shoot toward low sun, then inspect contrast, ghosts, and veiling flare on a larger screen.
+- Success standard: decide when the protective filter helps with weather/dust and when it should come off.
+
+#### Step-Up Ring And Cold-Hands Drill
+
+- Home location: driveway or dark room.
+- Setup: filter pouch, 77-to-82 mm step-up ring, liner gloves, microfiber, blower.
+- Exercise: thread and unthread the ring, mount/remove the filter, clean it, pouch it, and reset the kit without dropping anything.
+- Success standard: complete the full sequence smoothly with gloves in under two minutes.
+
+### Field Rule
+
+If a filter costs the shutter speed needed for bird action, remove it. If weather or blowing dust makes a clear filter useful, use it deliberately and check for flare. If the scene is about water, reflection, sky, or motion rather than fast action, filters become creative tools after the safe frames are made.
+
 ## Six-Week Practice Cadence
 
 ### Six Weeks Out

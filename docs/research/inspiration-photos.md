@@ -4,6 +4,8 @@
 
 Rechecked June 3, 2026. The three images currently used by the website prototype are public-domain USFWS assets and are safe publication candidates with credit recommended. The FWS source pages were re-opened and confirmed to list both the creator credit and `Public Domain` license. Any additional image must still be checked on its own source page before publication.
 
+Visual expansion note, June 4, 2026: generated planning previews now live in `site/assets/generated/` and are tracked in `docs/research/visual-asset-manifest.md`. Gear product photos are documented official product references. External inspiration, hotel, article, eBird, Flickr, and 500px imagery remains link-only unless a compatible license or permission is recorded.
+
 ## Use Policy
 
 - Public-domain or clearly permissive-license images may be candidates for the website.

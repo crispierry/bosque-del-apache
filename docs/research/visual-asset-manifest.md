@@ -1,0 +1,121 @@
+# Visual Asset Manifest
+
+Checked June 4, 2026. This manifest is the publishing guardrail for the Bosque del Apache visual expansion.
+
+## Rights Modes
+
+| Mode | Use | Publishing Rule |
+|---|---|---|
+| `generated_planning_preview` | AI-generated contact sheets and travel/lodging previews created from this project's shot descriptions, season, light, field position, gear, logistics, and constraints. | May be stored in `site/assets/generated/`; must be labeled as generated planning/training/lodging previews, not actual Bosque field photos or actual hotel/property photos. |
+| `cached_public_domain` | Source-checked public-domain USFWS images already used by the prototype. | May be stored in `site/assets/` with source URL, creator, credit line, and public-domain note. |
+| `official_product_image` | Manufacturer or product-maker images used only in the Gear section to identify the listed equipment. | May be rendered as a contained image when the product/spec page and image source are recorded here. Keep the image linked to the official product/spec page and do not claim project ownership. |
+| `link_only` | Hotel galleries, articles, portfolios, search results, eBird/Flickr/500px, and other third-party creative photos without recorded permission. | Do not cache or republish the image. Render a text/source card or link to the official page. |
+| `linked_thumbnail` | Low-resolution thumbnail from an explicitly licensed/embeddable source. | Not used in the current implementation. Add only after the exact thumbnail URL, license, and attribution are recorded here. |
+
+Public-page language: copyrighted article, portfolio, hotel, and checklist photos are linked for reference only and are not reused as project assets unless a license or permission is recorded. Gear product images are the documented exception: they appear only on Gear cards as source-linked official product references.
+
+## Generated Planning Previews
+
+All generated images were created with the built-in image generation tool on June 4, 2026, copied from `/Users/cris/.codex/generated_images/019e9338-98b4-7760-bd77-8abb14e50a2f/`, converted to JPEG, and stored in `site/assets/generated/`. Each contact sheet contains five planning or training frames.
+
+| ID | Local Path | Original Generated File | Alt Text | Placement | Prompt / Provenance | Rights Note |
+|---|---|---|---|---|---|---|
+| `crane-roost-dawn` | `site/assets/generated/crane-roost-dawn-contact-sheet.jpg` | `ig_0c64f51e3b3baad2016a219833b9a48191ae699c5e3cc8c509.png` | Generated five-frame planning preview of sandhill crane dawn roost scenes at Bosque del Apache. | Gallery, Itinerary, Photo Windows, Sources | Early-December sandhill crane roost, cold predawn light, shallow water, distant mountain bands, crane silhouettes, cold breath, reflections, takeoff run, wide roost. | Generated planning preview; not an actual field photo. |
+| `snow-goose-blastoff` | `site/assets/generated/snow-goose-blastoff-contact-sheet.jpg` | `ig_0c64f51e3b3baad2016a219890b4fc81918747ed40b5ba0314.png` | Generated five-frame planning preview of snow goose roost and blast-off scenes at Bosque del Apache. | Gallery, Itinerary, Photo Windows, Media, Inspiration | Main Pool / Flight Deck style wetland, cold dawn, still roost, first flock wave, mass blast-off, overhead flock texture, separated goose groups. | Generated planning preview; not an actual field photo. |
+| `crane-evening-return` | `site/assets/generated/crane-evening-return-contact-sheet.jpg` | `ig_0c64f51e3b3baad2016a2198cb1dd88191bd0b954869a00828.png` | Generated five-frame planning preview of sandhill crane landing and evening return scenes at Bosque del Apache. | Gallery, Itinerary, Photo Windows | Highway 1 crane ponds, shallow water, winter evening, landing posture, paired cranes, family groups, reflection ripples, dusky mountain bands. | Generated planning preview; not an actual field photo. |
+| `farm-field-feeding` | `site/assets/generated/farm-field-feeding-contact-sheet.jpg` | `ig_0c64f51e3b3baad2016a2199056a34819193584269bd43e7b4.png` | Generated five-frame planning preview of cranes, geese, and raptors in Bosque del Apache managed farm fields. | Gallery, Itinerary, Photo Windows, Media, Sources | Managed crop fields, legal roadside/vehicle-blind perspective, feeding cranes, mixed geese, raptor crossing, flock lift, winter mid-morning sun. | Generated planning preview; not an actual field photo. |
+| `wetland-deck` | `site/assets/generated/wetland-deck-contact-sheet.jpg` | `ig_0c64f51e3b3baad2016a219947756c81919114722ef0c56388.png` | Generated five-frame planning preview of ducks, reeds, water texture, and wetland deck scenes at Bosque del Apache. | Gallery, Itinerary, Photo Windows | Dabbler/Eagle Scout/Willow/Coyote Deck style wetlands, reeds, ducks, coots, distant cranes, water texture, mid-morning glare. | Generated planning preview; not an actual field photo. |
+| `desert-edge-details` | `site/assets/generated/desert-edge-details-contact-sheet.jpg` | `ig_0c64f51e3b3baad2016a2199883b6481919ab27b3a2059a6d0.png` | Generated five-frame planning preview of roadrunner, quail, sparrows, tracks, and dry Bosque del Apache habitat details. | Gallery, Itinerary, Photo Windows | Rio Viejo / bike trail style refuge edge, dry grasses, roadrunner, quail, sparrow on seedhead, tracks, cottonwoods, trail habitat. | Generated planning preview; not an actual field photo. |
+| `weather-motion-fallback` | `site/assets/generated/weather-motion-fallback-contact-sheet.jpg` | `ig_0c64f51e3b3baad2016a2199bfab8c8191b24b009bfea3b1d2.png` | Generated five-frame planning preview of mist, gray light, panning blur, snow-dusted reeds, and silhouettes at Bosque del Apache. | Gallery, Itinerary, Photo Windows, Practice | Cold gray wetland weather, light mist/snow, cranes and geese, high-key water, intentional panning blur, silhouettes, restrained winter color. | Generated planning preview; not an actual field photo. |
+| `filter-practice` | `site/assets/generated/filter-practice-contact-sheet.jpg` | `ig_0c64f51e3b3baad2016a219a18f08881919da061145f012286.png` | Generated five-frame planning preview of circular polarizer, neutral-density, protective filter, step-up ring, and cold-weather filter practice. | Gallery, Practice, Gear, Media, Sources | Local pond/filter practice, CPL water glare, no-filter flight, ND shutter drag, clear filter cleaning kit, gloved step-up ring handling. | Generated planning preview; not an actual field photo. |
+| `travel-workflow` | `site/assets/generated/travel-workflow-contact-sheet.jpg` | `ig_0c64f51e3b3baad2016a219a5f9e8c8191ab5230d4145d760f.png` | Generated five-frame planning preview of hotel room battery charging, staged camera bodies, rental SUV cargo, route check, and memory-card backup. | Gallery, Itinerary, Travel, Sources | Modest hotel room, batteries/cards, staged long lens and 24-105, rental SUV cargo, predawn route check, evening backup and field notebook. | Generated planning preview; not an actual field photo. |
+
+## Generated Practice Previews
+
+These generated contact sheets illustrate the nine numbered practice modules in the website Practice section. They are training previews, not actual Bosque field photos.
+
+| ID | Local Path | Original Generated File | Alt Text | Placement | Prompt / Provenance | Rights Note |
+|---|---|---|---|---|---|---|
+| `practice-camera-setup` | `site/assets/generated/practice-camera-setup-contact-sheet.jpg` | `ig_0c64f51e3b3baad2016a21a38c95048191a58e43f29f080003.png` | Generated five-frame training preview of two-camera staging, camera controls, batteries, cards, and reset practice. | Practice item 1 | Two-body staging, camera controls, non-readable screen review, batteries/cards, gloves, and quick reset practice. | Generated training preview; not an actual field photo. |
+| `practice-exposure-modes` | `site/assets/generated/practice-exposure-modes-contact-sheet.jpg` | `ig_0c64f51e3b3baad2016a21a3f2576881919150a6ca2fbc1175.png` | Generated five-frame training preview of aperture priority, shutter priority, manual exposure, silhouettes, and exposure review. | Practice item 2 | Static bird, moving bird, silhouette, exposure controls, and non-readable camera review at a local wetland. | Generated training preview; not an actual field photo. |
+| `practice-shutter-speed` | `site/assets/generated/practice-shutter-speed-contact-sheet.jpg` | `ig_0c64f51e3b3baad2016a21a444da6881919a44b160c49627e5.png` | Generated five-frame training preview of frozen flight, wing blur, panning blur, flock blur, and motion review. | Practice item 3 | Frozen bird flight, controlled wing blur, panning, slow flock blur, and field review at a winter pond. | Generated training preview; not an actual field photo. |
+| `practice-handholding` | `site/assets/generated/practice-handholding-contact-sheet.jpg` | `ig_0c64f51e3b3baad2016a21a499f9d88191bceb98fe1eaf28ec.png` | Generated five-frame training preview of long-lens stance, hip rotation, lens support, acquisition, and short burst practice. | Practice item 4 | Stable stance, hip rotation, left-hand support, wider acquisition, and short burst posture with a long lens. | Generated training preview; not an actual field photo. |
+| `practice-support` | `site/assets/generated/practice-support-contact-sheet.jpg` | `ig_0c64f51e3b3baad2016a21a4f29a9081918e89bebf0ca227be.png` | Generated five-frame training preview of beanbag, tripod, gimbal, monopod, deck, and handheld long-lens support practice. | Practice item 5 | Beanbag from vehicle, tripod/gimbal at a pullout, monopod and compact tripod footprint on a deck, and handheld pivot. | Generated training preview; not an actual field photo. |
+| `practice-white-birds-exposure` | `site/assets/generated/practice-white-birds-exposure-contact-sheet.jpg` | `ig_0c64f51e3b3baad2016a21a56306dc81919a7e252204dde917.png` | Generated five-frame training preview of white birds against dark reeds, bright water, pale sky, camera review, and exposure checking. | Practice item 6 | White birds against dark, bright, and pale backgrounds, non-readable exposure review, and highlight-detail checking. | Generated training preview; not an actual field photo. |
+| `practice-behavior-prediction` | `site/assets/generated/practice-behavior-prediction-contact-sheet.jpg` | `ig_0c64f51e3b3baad2016a21a5b6879481918f89b12aaf3d3ec2.png` | Generated five-frame training preview of crane and goose pre-flight cues, wind-aware movement, and quiet observation. | Practice item 7 | Crane neck stretch, wing stretch, goose agitation, wind-oriented movement, and quiet long-lens observation. | Generated training preview; not an actual field photo. |
+| `practice-cold-dust-workflow` | `site/assets/generated/practice-cold-dust-workflow-contact-sheet.jpg` | `ig_0c64f51e3b3baad2016a21a60d87048191a711bd9374ae7c7c.png` | Generated five-frame training preview of batteries, gloves, mounted lens, blower kit, rain sleeve, and dust-safe handling. | Practice item 8 | Batteries in warm pocket, lens mounted before departure, rain sleeve/blower kit, predawn gloves, and dust-safe handling. | Generated training preview; not an actual field photo. |
+| `practice-readiness-checklist` | `site/assets/generated/practice-readiness-checklist-contact-sheet.jpg` | `ig_0c64f51e3b3baad2016a21a66c6e7481919b750da7d3a1e218.png` | Generated five-frame training preview of local bird practice, intentional blur, card backup, packed bag, and two-camera staging. | Practice item 9 | Local bird-in-flight session, intentional blur, card backup, field bag pack, and final two-camera setup before departure. | Generated training preview; not an actual field photo. |
+
+## Generated Lodging Previews
+
+These generated previews illustrate lodging and travel-workflow expectations for the Travel section. As of June 4, 2026, the hotel-specific lodging previews were regenerated from checked hotel/property photo references where accessible, rather than from generic hotel prompts. They are still not actual hotel/property photos and must remain paired with official gallery/property links for booking checks.
+
+| ID | Local Path | Original Generated File | Alt Text | Placement | Prompt / Provenance | Rights Note |
+|---|---|---|---|---|---|---|
+| `lodging-comfort-inn` | `site/assets/generated/lodging-comfort-inn-preview.jpg` | `ig_09b2233eba7d409d016a21d8f5f3c4819185b52668ae6c6e2c.png` | Reference-based generated preview of the Comfort Inn Socorro exterior, room, breakfast area, and dawn photographer departure workflow. | Travel lodging card | Based on official Choice Hotels gallery cues: tan facade, arched windows, covered portico, neutral double-queen room, and wood-cabinet breakfast counter. | Reference-based generated lodging preview; not an actual hotel or property photo. |
+| `lodging-best-western` | `site/assets/generated/lodging-best-western-preview.jpg` | `ig_09b2233eba7d409d016a21d9353c8c8191a41ff0c42fb0fb15.png` | Reference-based generated preview of the Best Western Socorro exterior, fireplace lobby, room, and indoor-pool amenity. | Travel lodging card | Based on public property-photo cues: practical exterior, warm fireplace lobby, spacious room/work area, breakfast, and indoor pool. Official Best Western page blocked automated inspection on June 4, 2026, so recheck visually before booking. | Reference-based generated lodging preview; not an actual hotel or property photo. |
+| `lodging-holiday-inn` | `site/assets/generated/lodging-holiday-inn-preview.jpg` | `ig_09b2233eba7d409d016a21d97279e481918be6edbe53c5fecf.png` | Reference-based generated preview of the Holiday Inn Express Socorro exterior, green-accent guest room, breakfast bar, and indoor pool. | Travel lodging card | Based on official IHG gallery cues: columned curved-canopy exterior, green-accent rooms, striped carpet, dark-cabinet breakfast bar, and indoor pool. | Reference-based generated lodging preview; not an actual hotel or property photo. |
+| `lodging-econo-lodge` | `site/assets/generated/lodging-econo-lodge-preview.jpg` | `ig_09b2233eba7d409d016a21d9b08e60819184616a0df24a84ee.png` | Reference-based generated preview of the Econo Lodge Socorro exterior, teal-accent room, lobby, and breakfast room. | Travel lodging card | Based on official Choice Hotels gallery cues: teal bed runners, wood-look floor, compact room amenities, simple lobby, and wood-cabinet breakfast room. | Reference-based generated lodging preview; not an actual hotel or property photo. |
+| `lodging-casa-blanca` | `site/assets/generated/lodging-casa-blanca-preview.jpg` | `ig_09b2233eba7d409d016a21da04b9788191b1949fe2f6f110ee.png` | Reference-based generated preview of Casa Blanca Bed and Breakfast as a historic adobe house, guest room, breakfast table, and quiet predawn veranda. | Travel lodging card | Based on public property details for Casa Blanca: historic double-adobe house, tin roof, spacious veranda, warm guest-room atmosphere, homemade breakfast, and close-commute departure. Site returned a Cloudflare 526 certificate error on June 4, 2026; recheck directly before booking. | Reference-based generated lodging preview; not an actual hotel or property photo. |
+| `lodging-fairfield-los-lunas` | `site/assets/generated/lodging-fairfield-los-lunas-preview.jpg` | `ig_09b2233eba7d409d016a21da62aa6c8191b7f968986d01bd84.png` | Reference-based generated preview of Fairfield Los Lunas exterior, modern guest room, breakfast area, and long-commute packing workflow. | Travel lodging card | Based on official Marriott exterior image and gallery-category description: orange/tan facade, white tower, dark accent bay, white canopy, stone pillar, modern rooms/dining, and long-commute prep. | Reference-based generated lodging preview; not an actual hotel or property photo. |
+
+## Cached Public-Domain Assets
+
+| Local Path | Source URL | Creator / Credit | License / Rights | Alt Text | Placement |
+|---|---|---|---|---|---|
+| `site/assets/snow-geese-gary-stolz-usfws-1800.jpg` | https://www.fws.gov/media/snow-geese-bosque-del-apache-national-wildlife-refuge | Gary Stolz / USFWS | Public Domain, checked June 3, 2026 | Snow geese in wetland scale at Bosque del Apache. | Inspiration |
+| `site/assets/sandhill-cranes-ryan-hagerty-usfws-1800.jpg` | https://www.fws.gov/media/sandhill-cranes-6 | Ryan Hagerty / USFWS | Public Domain, checked June 3, 2026 | Sandhill crane pair standing in water at Bosque del Apache. | Inspiration |
+| `site/assets/snow-geese-flyout-lynne-braden-usfws-1800.jpg` | https://www.fws.gov/media/snow-geese-fly-overhead-bosque-del-apache-refuge | Lynne Braden / USFWS volunteer | Public Domain, checked June 3, 2026 | Snow geese flying over photographers at Bosque del Apache. | Overview hero, Inspiration |
+
+## Official Hotel Gallery Links
+
+Checked June 4, 2026. Actual hotel/brand/property photos remain `link_only`; no official hotel photos are cached or republished. The Travel cards use separate generated lodging previews for context and must not be mistaken for real property photos.
+
+| Hotel | Official Gallery / Property Link | Site Placement | Rights Note |
+|---|---|---|---|
+| Comfort Inn & Suites Socorro | https://www.choicehotels.com/new-mexico/socorro/comfort-inn-hotels/nm126 | Travel lodging card | Link only; Choice images are not cached or republished without permission. |
+| Best Western Socorro Hotel & Suites | https://www.bestwestern.com/en_US/book/hotels-in-socorro/best-western-socorro-hotel-suites/propertyCode.32105.html | Travel lodging card | Link only; Best Western images are not cached or republished without permission. |
+| Holiday Inn Express Socorro by IHG | https://www.ihg.com/holidayinnexpress/hotels/us/en/socorro/socnm/hoteldetail/gallery | Travel lodging card | Link only; IHG images are not cached or republished without permission. |
+| Econo Lodge Inn & Suites Socorro | https://www.choicehotels.com/new-mexico/socorro/econo-lodge-hotels/nm066 | Travel lodging card | Link only; Choice images are not cached or republished without permission. |
+| Casa Blanca Bed and Breakfast | https://casablancabedandbreakfast.com/ | Travel lodging card | Link only; recheck site integrity before booking because the current footer showed unrelated spam/casino links during June 4 audit. |
+| Fairfield by Marriott Inn & Suites Los Lunas | https://www.marriott.com/en-us/hotels/abqlf-fairfield-inn-and-suites-los-lunas/photos/ | Travel lodging card | Link only; Marriott images are not cached or republished without permission. |
+
+## Official Gear Product Photos
+
+Checked June 4, 2026. Gear cards use `official_product_image` so the teaching view shows the actual lenses/support items. The images stay inside Gear cards, are contained rather than cropped, and link to the official product/spec page.
+
+| Item | Product / Spec Link | Image Source | Placement | Rights Note |
+|---|---|---|---|---|
+| Sony FE 24-105mm F4 G OSS | https://www.sony.com/electronics/support/lenses-e-mount-lenses/sel24105g/specifications | Sony official product CDN image | Gear / Sony | Official product image reference; source-linked. |
+| Sony FE 24-70mm F2.8 GM II | https://electronics.sony.com/imaging/lenses/all-e-mount/p/sel2470gm2 | Sony official product CDN image | Gear / Sony | Official product image reference; source-linked. |
+| Sony FE 70-200mm F2.8 GM OSS II | https://electronics.sony.com/imaging/lenses/all-e-mount/p/sel70200gm2 | Sony official product CDN image | Gear / Sony | Official product image reference; source-linked. |
+| Sony FE 100-400mm F4.5-5.6 GM OSS | https://electronics.sony.com/imaging/lenses/all-e-mount/p/sel100400gm | Sony official product CDN image | Gear / Sony | Official product image reference; source-linked. |
+| Sony FE 200-600mm F5.6-6.3 G OSS | https://electronics.sony.com/imaging/lenses/all-e-mount/p/sel200600g | Sony official product CDN image | Gear / Sony | Official product image reference; source-linked. |
+| Sony FE 400-800mm F6.3-8 G OSS | https://www.sony.co.uk/electronics/camera-lenses/sel400800g/specifications | `site/assets/sony-fe-400-800-g-oss.jpg` | Gear / Sony | Existing public-site product asset restored for local build parity; keep tied to official Sony spec page. |
+| Sony SEL14TC 1.4x Teleconverter | https://electronics.sony.com/imaging/lenses/all-e-mount/p/sel14tc | Sony official product CDN image | Gear / Sony | Official product image reference; source-linked. |
+| Sigma 60-600mm F4.5-6.3 DG DN OS Sports | https://www.sigma-global.com/en/lenses/s023_60_600_45_63/ | Sigma official product image | Gear / Sigma E | Official product image reference; source-linked. |
+| Sigma 150-600mm F5-6.3 DG DN OS Sports | https://www.sigma-global.com/en/lenses/s021_150_600_5_63/ | Sigma official product image | Gear / Sigma E | Official product image reference; source-linked. |
+| Sigma 500mm F5.6 DG DN OS Sports | https://www.sigma-global.com/en/lenses/s024_500_56/ | Sigma official product image | Gear / Sigma E | Official product image reference; source-linked. |
+| Canon RF 24-105mm F4 L IS USM | https://www.usa.canon.com/shop/catalog/product/view/id/50549/s/rf24-105mm-f4-l-is-usm/ | Canon Scene7 official product image | Gear / Canon | Official product image reference; source-linked. |
+| Canon RF 24-70mm F2.8 L IS USM | https://www.usa.canon.com/shop/p/rf24-70mm-f2-8l-is-usm | Canon Scene7 official product image | Gear / Canon | Official product image reference; source-linked. |
+| Canon RF 70-200mm F2.8 L IS USM | https://www.usa.canon.com/shop/p/rf70-200mm-f2-8-l-is-usm | Canon Scene7 official product image | Gear / Canon | Official product image reference; source-linked. |
+| Canon RF 70-200mm F2.8 L IS USM Z | https://www.usa.canon.com/shop/p/lens-rf70-200mm-f2-8-l-is-usm-z-white | Canon Scene7 official product image | Gear / Canon | Official product image reference; source-linked. |
+| Canon RF 100-500mm F4.5-7.1 L IS USM | https://www.usa.canon.com/shop/p/rf100-500mm-f4-5-7-1-l-is-usm | Canon Scene7 official product image | Gear / Canon | Official product image reference; source-linked. |
+| Canon RF 200-800mm F6.3-9 IS USM | https://www.usa.canon.com/shop/p/rf200-800mm-f6-3-9-is-usm | Canon Scene7 official product image | Gear / Canon | Official product image reference; source-linked. |
+| Canon Extender RF 1.4x | https://www.usa.canon.com/shop/p/extender-rf1-4x | Canon Scene7 official product image | Gear / Canon | Official product image reference; source-linked. |
+| LensCoat LensSack Pro Jr example | https://www.lenscoat.com/collections/featured-products/products/lenscoat-lenssack-pro-jr | LensCoat official product image | Gear / Support | Official product image reference; source-linked. |
+| Wimberley WH-200 example | https://tripodhead.com/products/WH-Specs.cfm | Wimberley product image | Gear / Support | Official product image reference; source-linked. |
+
+## Link-Only References
+
+External inspiration, media articles, hotel galleries, eBird/Flickr/500px searches, and source-log cards use either link-only source badges or generated topic previews. No copyrighted third-party article, portfolio, hotel/property, or checklist image is cached.
+
+Fair-use rationale for any future `linked_thumbnail`: low-resolution linked thumbnail used only to identify and comment on the referenced source in a research index; not cached as a reusable project asset, not decorative, not enlarged, not downloadable, and links directly to the source with credit. Fair use is fact-specific and this rationale is not a license.
+
+## Recheck Rules
+
+- Recheck every cached public-domain or licensed image before production publication.
+- Add any new generated image here before referencing it in `site/app.js`.
+- Add any future Creative Commons image with exact file page URL, creator, license URL, attribution text, and transformation note.
+- Keep actual hotel, article, search, and portfolio imagery link-only unless written permission or a compatible license is recorded.
+- Keep Gear product photos tied to recorded product/spec links and recheck them before production publication.

@@ -1,10 +1,760 @@
 const checkedDate = "2026-06-03";
 const gearCheckedDate = "2026-06-04";
+const visualCheckedDate = "2026-06-04";
 
 const assets = {
   geese: "./assets/snow-geese-gary-stolz-usfws-1800.jpg",
   cranes: "./assets/sandhill-cranes-ryan-hagerty-usfws-1800.jpg",
   flyout: "./assets/snow-geese-flyout-lynne-braden-usfws-1800.jpg",
+};
+
+const generatedVisuals = [
+  {
+    id: "crane-roost-dawn",
+    title: "Dawn Crane Roost",
+    src: "./assets/generated/crane-roost-dawn-contact-sheet.jpg",
+    sourceFile:
+      "/Users/cris/.codex/generated_images/019e9338-98b4-7760-bd77-8abb14e50a2f/ig_0c64f51e3b3baad2016a219833b9a48191ae699c5e3cc8c509.png",
+    category: "Sunrise",
+    alt:
+      "Generated five-frame planning preview of sandhill crane dawn roost scenes at Bosque del Apache",
+    caption:
+      "Generated planning preview for crane-pool sunrise work; not an actual Bosque field photograph.",
+    rights:
+      "AI-generated project planning preview from this guide's shot descriptions. Use as expectation-setting only.",
+    placement: ["Gallery", "Itinerary", "Photo Windows", "Sources"],
+    examples: [
+      "Crane silhouettes before sunrise",
+      "Cold breath and shallow-water atmosphere",
+      "Reflection pair in calm water",
+      "Takeoff run with wing stretch",
+      "Wide mountain-band roost scene",
+    ],
+    promptSummary:
+      "Early-December sandhill crane roost, cold predawn light, shallow water, mountain bands, five realistic frames.",
+  },
+  {
+    id: "snow-goose-blastoff",
+    title: "Snow Goose Blast-Off",
+    src: "./assets/generated/snow-goose-blastoff-contact-sheet.jpg",
+    sourceFile:
+      "/Users/cris/.codex/generated_images/019e9338-98b4-7760-bd77-8abb14e50a2f/ig_0c64f51e3b3baad2016a219890b4fc81918747ed40b5ba0314.png",
+    category: "Sunrise",
+    alt:
+      "Generated five-frame planning preview of snow goose roost and blast-off scenes at Bosque del Apache",
+    caption:
+      "Generated planning preview for Flight Deck or Main Pool blast-off decisions; not an actual Bosque field photograph.",
+    rights:
+      "AI-generated project planning preview from this guide's shot descriptions. Use as expectation-setting only.",
+    placement: ["Gallery", "Itinerary", "Photo Windows", "Media"],
+    examples: [
+      "Still roost before lift-off",
+      "First flock wave rising low",
+      "Wide mass blast-off over water",
+      "Overhead flock texture",
+      "Separated goose groups against pastel dawn",
+    ],
+    promptSummary:
+      "Main Pool style snow goose roost and lift-off, cold dawn, realistic flock behavior, five realistic frames.",
+  },
+  {
+    id: "crane-evening-return",
+    title: "Crane Evening Return",
+    src: "./assets/generated/crane-evening-return-contact-sheet.jpg",
+    sourceFile:
+      "/Users/cris/.codex/generated_images/019e9338-98b4-7760-bd77-8abb14e50a2f/ig_0c64f51e3b3baad2016a2198cb1dd88191bd0b954869a00828.png",
+    category: "Sunset",
+    alt:
+      "Generated five-frame planning preview of sandhill crane landing and evening return scenes at Bosque del Apache",
+    caption:
+      "Generated planning preview for crane-pool sunset work; not an actual Bosque field photograph.",
+    rights:
+      "AI-generated project planning preview from this guide's shot descriptions. Use as expectation-setting only.",
+    placement: ["Gallery", "Itinerary", "Photo Windows"],
+    examples: [
+      "Final approach with feet down",
+      "Paired cranes in warm side light",
+      "Family group landing",
+      "Reflection landing with ripples",
+      "Wide flock against dusky mountain bands",
+    ],
+    promptSummary:
+      "Highway 1 crane ponds, shallow water, winter sunset, landing posture, reflections, five realistic frames.",
+  },
+  {
+    id: "farm-field-feeding",
+    title: "Farm-Field Feeding",
+    src: "./assets/generated/farm-field-feeding-contact-sheet.jpg",
+    sourceFile:
+      "/Users/cris/.codex/generated_images/019e9338-98b4-7760-bd77-8abb14e50a2f/ig_0c64f51e3b3baad2016a2199056a34819193584269bd43e7b4.png",
+    category: "Mid-morning",
+    alt:
+      "Generated five-frame planning preview of cranes, geese, and raptors in Bosque del Apache managed farm fields",
+    caption:
+      "Generated planning preview for field-feeding and vehicle-blind work; not an actual Bosque field photograph.",
+    rights:
+      "AI-generated project planning preview from this guide's shot descriptions. Use as expectation-setting only.",
+    placement: ["Gallery", "Itinerary", "Photo Windows", "Media", "Sources"],
+    examples: [
+      "Feeding cranes in winter crop rows",
+      "Mixed geese and cranes with mountains",
+      "Raptor crossing a field edge",
+      "Flock lifting from crop rows",
+      "Quiet vehicle-blind perspective from a legal pullout",
+    ],
+    promptSummary:
+      "Managed refuge fields, legal roadside perspective, cranes, geese, raptor, winter mid-morning sun, five realistic frames.",
+  },
+  {
+    id: "wetland-deck",
+    title: "Wetland Deck Details",
+    src: "./assets/generated/wetland-deck-contact-sheet.jpg",
+    sourceFile:
+      "/Users/cris/.codex/generated_images/019e9338-98b4-7760-bd77-8abb14e50a2f/ig_0c64f51e3b3baad2016a219947756c81919114722ef0c56388.png",
+    category: "Mid-morning",
+    alt:
+      "Generated five-frame planning preview of ducks, reeds, water texture, and wetland deck scenes at Bosque del Apache",
+    caption:
+      "Generated planning preview for Dabbler, Eagle Scout, Willow, and Coyote Deck work; not an actual Bosque field photograph.",
+    rights:
+      "AI-generated project planning preview from this guide's shot descriptions. Use as expectation-setting only.",
+    placement: ["Gallery", "Itinerary", "Photo Windows"],
+    examples: [
+      "Ducks in reed reflections",
+      "Coots and water texture",
+      "Distant cranes compressed through reeds",
+      "Backlit cattail and sparkle",
+      "Quiet wetland layers with birds small in frame",
+    ],
+    promptSummary:
+      "Public deck perspective, winter reeds, ducks, coots, reflections, mid-morning glare, five realistic frames.",
+  },
+  {
+    id: "desert-edge-details",
+    title: "Desert-Edge Details",
+    src: "./assets/generated/desert-edge-details-contact-sheet.jpg",
+    sourceFile:
+      "/Users/cris/.codex/generated_images/019e9338-98b4-7760-bd77-8abb14e50a2f/ig_0c64f51e3b3baad2016a2199883b6481919ab27b3a2059a6d0.png",
+    category: "Mid-morning",
+    alt:
+      "Generated five-frame planning preview of roadrunner, quail, sparrows, tracks, and dry Bosque del Apache habitat details",
+    caption:
+      "Generated planning preview for Rio Viejo, trail, and habitat-detail work; not an actual Bosque field photograph.",
+    rights:
+      "AI-generated project planning preview from this guide's shot descriptions. Use as expectation-setting only.",
+    placement: ["Gallery", "Itinerary", "Photo Windows"],
+    examples: [
+      "Roadrunner on a gravel edge",
+      "Small quail group in winter brush",
+      "Sparrow on a dried seedhead",
+      "Tracks and frosty dust",
+      "Quiet trail habitat with cottonwoods",
+    ],
+    promptSummary:
+      "Rio Viejo style refuge edge, dry winter grasses, roadrunner, quail, sparrow, tracks, five realistic frames.",
+  },
+  {
+    id: "weather-motion-fallback",
+    title: "Weather And Motion Fallbacks",
+    src: "./assets/generated/weather-motion-fallback-contact-sheet.jpg",
+    sourceFile:
+      "/Users/cris/.codex/generated_images/019e9338-98b4-7760-bd77-8abb14e50a2f/ig_0c64f51e3b3baad2016a2199bfab8c8191b24b009bfea3b1d2.png",
+    category: "Fallback",
+    alt:
+      "Generated five-frame planning preview of mist, gray light, panning blur, snow-dusted reeds, and silhouettes at Bosque del Apache",
+    caption:
+      "Generated planning preview for gray-day and slow-shutter fallback work; not an actual Bosque field photograph.",
+    rights:
+      "AI-generated project planning preview from this guide's shot descriptions. Use as expectation-setting only.",
+    placement: ["Gallery", "Itinerary", "Photo Windows", "Practice"],
+    examples: [
+      "Cranes in light mist",
+      "High-key geese over gray water",
+      "Intentional panning blur",
+      "Snow-dusted reeds with distant birds",
+      "Dark flock silhouettes against a pale sky",
+    ],
+    promptSummary:
+      "Cold gray Bosque weather, mist, light snow, slow shutter panning, silhouette fallback frames, five realistic frames.",
+  },
+  {
+    id: "filter-practice",
+    title: "Filter Practice",
+    src: "./assets/generated/filter-practice-contact-sheet.jpg",
+    sourceFile:
+      "/Users/cris/.codex/generated_images/019e9338-98b4-7760-bd77-8abb14e50a2f/ig_0c64f51e3b3baad2016a219a18f08881919da061145f012286.png",
+    category: "Practice",
+    alt:
+      "Generated five-frame planning preview of circular polarizer, neutral-density, protective filter, step-up ring, and cold-weather filter practice",
+    caption:
+      "Generated planning preview for filter rehearsals; not an actual Bosque field photograph.",
+    rights:
+      "AI-generated project planning preview from this guide's shot descriptions. Use as expectation-setting only.",
+    placement: ["Gallery", "Practice", "Sources"],
+    examples: [
+      "CPL glare test over water",
+      "Fast bird flight with no filter",
+      "ND shutter-drag practice",
+      "Protective filter and cleaning kit",
+      "Gloved step-up ring handling",
+    ],
+    promptSummary:
+      "Practical local filter training, water glare, no-filter flight, ND blur, clear filter cleaning, cold hands, five realistic frames.",
+  },
+  {
+    id: "travel-workflow",
+    title: "Travel Workflow",
+    src: "./assets/generated/travel-workflow-contact-sheet.jpg",
+    sourceFile:
+      "/Users/cris/.codex/generated_images/019e9338-98b4-7760-bd77-8abb14e50a2f/ig_0c64f51e3b3baad2016a219a5f9e8c8191ab5230d4145d760f.png",
+    category: "Travel",
+    alt:
+      "Generated five-frame planning preview of hotel room battery charging, staged camera bodies, rental SUV cargo, route check, and memory-card backup",
+    caption:
+      "Generated planning preview for travel and field-workflow preparation; not an actual Bosque field photograph.",
+    rights:
+      "AI-generated project planning preview from this guide's shot descriptions. Use as expectation-setting only.",
+    placement: ["Gallery", "Itinerary", "Travel", "Sources"],
+    examples: [
+      "Hotel battery and card charging",
+      "Two bodies staged before dawn",
+      "Rental SUV cargo organized",
+      "Predawn route check",
+      "Evening backup and field notebook",
+    ],
+    promptSummary:
+      "Socorro hotel workflow, two cameras, rental SUV cargo, predawn route check, backup routine, five realistic frames.",
+  },
+];
+
+const practiceVisuals = [
+  {
+    id: "practice-camera-setup",
+    title: "Camera Setup Baseline Practice",
+    src: "./assets/generated/practice-camera-setup-contact-sheet.jpg",
+    sourceFile:
+      "/Users/cris/.codex/generated_images/019e9338-98b4-7760-bd77-8abb14e50a2f/ig_0c64f51e3b3baad2016a21a38c95048191a58e43f29f080003.png",
+    category: "Practice",
+    alt:
+      "Generated five-frame training preview of two-camera staging, camera controls, batteries, cards, and reset practice",
+    caption:
+      "Generated training preview for practice item 1, Camera Setup Baseline; not an actual Bosque field photograph.",
+    rights:
+      "AI-generated practice preview from this guide's training notes. Use as expectation-setting only.",
+    placement: ["Practice", "Visual Asset Manifest"],
+    promptSummary:
+      "Two-body staging, camera controls, non-readable screen review, batteries/cards, gloves, and quick reset practice.",
+  },
+  {
+    id: "practice-exposure-modes",
+    title: "Exposure Modes Practice",
+    src: "./assets/generated/practice-exposure-modes-contact-sheet.jpg",
+    sourceFile:
+      "/Users/cris/.codex/generated_images/019e9338-98b4-7760-bd77-8abb14e50a2f/ig_0c64f51e3b3baad2016a21a3f2576881919150a6ca2fbc1175.png",
+    category: "Practice",
+    alt:
+      "Generated five-frame training preview of aperture priority, shutter priority, manual exposure, silhouettes, and exposure review",
+    caption:
+      "Generated training preview for practice item 2, Aperture Priority, Shutter Priority, and Manual; not an actual Bosque field photograph.",
+    rights:
+      "AI-generated practice preview from this guide's training notes. Use as expectation-setting only.",
+    placement: ["Practice", "Visual Asset Manifest"],
+    promptSummary:
+      "Static bird, moving bird, silhouette, exposure controls, and non-readable camera review at a local wetland.",
+  },
+  {
+    id: "practice-shutter-speed",
+    title: "Shutter Speed Ladder Practice",
+    src: "./assets/generated/practice-shutter-speed-contact-sheet.jpg",
+    sourceFile:
+      "/Users/cris/.codex/generated_images/019e9338-98b4-7760-bd77-8abb14e50a2f/ig_0c64f51e3b3baad2016a21a444da6881919a44b160c49627e5.png",
+    category: "Practice",
+    alt:
+      "Generated five-frame training preview of frozen flight, wing blur, panning blur, flock blur, and motion review",
+    caption:
+      "Generated training preview for practice item 3, Shutter Speed Ladder; not an actual Bosque field photograph.",
+    rights:
+      "AI-generated practice preview from this guide's training notes. Use as expectation-setting only.",
+    placement: ["Practice", "Visual Asset Manifest"],
+    promptSummary:
+      "Frozen bird flight, controlled wing blur, panning, slow flock blur, and field review at a winter pond.",
+  },
+  {
+    id: "practice-handholding",
+    title: "Handholding Mechanics Practice",
+    src: "./assets/generated/practice-handholding-contact-sheet.jpg",
+    sourceFile:
+      "/Users/cris/.codex/generated_images/019e9338-98b4-7760-bd77-8abb14e50a2f/ig_0c64f51e3b3baad2016a21a499f9d88191bceb98fe1eaf28ec.png",
+    category: "Practice",
+    alt:
+      "Generated five-frame training preview of long-lens stance, hip rotation, lens support, acquisition, and short burst practice",
+    caption:
+      "Generated training preview for practice item 4, Handholding and Body Mechanics; not an actual Bosque field photograph.",
+    rights:
+      "AI-generated practice preview from this guide's training notes. Use as expectation-setting only.",
+    placement: ["Practice", "Visual Asset Manifest"],
+    promptSummary:
+      "Stable stance, hip rotation, left-hand support, wider acquisition, and short burst posture with a long lens.",
+  },
+  {
+    id: "practice-support",
+    title: "Support Choice Practice",
+    src: "./assets/generated/practice-support-contact-sheet.jpg",
+    sourceFile:
+      "/Users/cris/.codex/generated_images/019e9338-98b4-7760-bd77-8abb14e50a2f/ig_0c64f51e3b3baad2016a21a4f29a9081918e89bebf0ca227be.png",
+    category: "Practice",
+    alt:
+      "Generated five-frame training preview of beanbag, tripod, gimbal, monopod, deck, and handheld long-lens support practice",
+    caption:
+      "Generated training preview for practice item 5, Tripod, Gimbal, Monopod, and Beanbag; not an actual Bosque field photograph.",
+    rights:
+      "AI-generated practice preview from this guide's training notes. Use as expectation-setting only.",
+    placement: ["Practice", "Visual Asset Manifest"],
+    promptSummary:
+      "Beanbag from vehicle, tripod/gimbal at a pullout, monopod and compact tripod footprint on a deck, and handheld pivot.",
+  },
+  {
+    id: "practice-white-birds-exposure",
+    title: "White Birds Exposure Practice",
+    src: "./assets/generated/practice-white-birds-exposure-contact-sheet.jpg",
+    sourceFile:
+      "/Users/cris/.codex/generated_images/019e9338-98b4-7760-bd77-8abb14e50a2f/ig_0c64f51e3b3baad2016a21a56306dc81919a7e252204dde917.png",
+    category: "Practice",
+    alt:
+      "Generated five-frame training preview of white birds against dark reeds, bright water, pale sky, camera review, and exposure checking",
+    caption:
+      "Generated training preview for practice item 6, White Birds and Exposure; not an actual Bosque field photograph.",
+    rights:
+      "AI-generated practice preview from this guide's training notes. Use as expectation-setting only.",
+    placement: ["Practice", "Visual Asset Manifest"],
+    promptSummary:
+      "White birds against dark, bright, and pale backgrounds, non-readable exposure review, and highlight-detail checking.",
+  },
+  {
+    id: "practice-behavior-prediction",
+    title: "Behavior Prediction Practice",
+    src: "./assets/generated/practice-behavior-prediction-contact-sheet.jpg",
+    sourceFile:
+      "/Users/cris/.codex/generated_images/019e9338-98b4-7760-bd77-8abb14e50a2f/ig_0c64f51e3b3baad2016a21a5b6879481918f89b12aaf3d3ec2.png",
+    category: "Practice",
+    alt:
+      "Generated five-frame training preview of crane and goose pre-flight cues, wind-aware movement, and quiet observation",
+    caption:
+      "Generated training preview for practice item 7, Behavior Prediction; not an actual Bosque field photograph.",
+    rights:
+      "AI-generated practice preview from this guide's training notes. Use as expectation-setting only.",
+    placement: ["Practice", "Visual Asset Manifest"],
+    promptSummary:
+      "Crane neck stretch, wing stretch, goose agitation, wind-oriented movement, and quiet long-lens observation.",
+  },
+  {
+    id: "practice-cold-dust-workflow",
+    title: "Cold And Dust Workflow Practice",
+    src: "./assets/generated/practice-cold-dust-workflow-contact-sheet.jpg",
+    sourceFile:
+      "/Users/cris/.codex/generated_images/019e9338-98b4-7760-bd77-8abb14e50a2f/ig_0c64f51e3b3baad2016a21a60d87048191a711bd9374ae7c7c.png",
+    category: "Practice",
+    alt:
+      "Generated five-frame training preview of batteries, gloves, mounted lens, blower kit, rain sleeve, and dust-safe handling",
+    caption:
+      "Generated training preview for practice item 8, Cold and Dust Workflow; not an actual Bosque field photograph.",
+    rights:
+      "AI-generated practice preview from this guide's training notes. Use as expectation-setting only.",
+    placement: ["Practice", "Visual Asset Manifest"],
+    promptSummary:
+      "Batteries in warm pocket, lens mounted before departure, rain sleeve/blower kit, predawn gloves, and dust-safe handling.",
+  },
+  {
+    id: "practice-readiness-checklist",
+    title: "Pre-trip Readiness Practice",
+    src: "./assets/generated/practice-readiness-checklist-contact-sheet.jpg",
+    sourceFile:
+      "/Users/cris/.codex/generated_images/019e9338-98b4-7760-bd77-8abb14e50a2f/ig_0c64f51e3b3baad2016a21a66c6e7481919b750da7d3a1e218.png",
+    category: "Practice",
+    alt:
+      "Generated five-frame training preview of local bird practice, intentional blur, card backup, packed bag, and two-camera staging",
+    caption:
+      "Generated training preview for practice item 9, Pre-trip Readiness Checklist; not an actual Bosque field photograph.",
+    rights:
+      "AI-generated practice preview from this guide's training notes. Use as expectation-setting only.",
+    placement: ["Practice", "Visual Asset Manifest"],
+    promptSummary:
+      "Local bird-in-flight session, intentional blur, card backup, field bag pack, and final two-camera setup before departure.",
+  },
+];
+
+const lodgingVisuals = [
+  {
+    id: "lodging-comfort-inn",
+    title: "Comfort Inn Lodging Preview",
+    src: "./assets/generated/lodging-comfort-inn-preview.jpg",
+    sourceFile:
+      "/Users/cris/.codex/generated_images/019e9338-98b4-7760-bd77-8abb14e50a2f/ig_09b2233eba7d409d016a21d8f5f3c4819185b52668ae6c6e2c.png",
+    category: "Travel",
+    alt:
+      "Reference-based generated preview of the Comfort Inn Socorro exterior, room, breakfast area, and dawn photographer departure workflow",
+    caption:
+      "Reference-based generated lodging preview for the Comfort Inn planning card, grounded in official Choice Hotels exterior, room, and breakfast photos; not an actual hotel photograph.",
+    rights:
+      "AI-generated lodging preview based on checked official hotel-gallery references. Official hotel photos remain link-only.",
+    placement: ["Travel", "Visual Asset Manifest"],
+    promptSummary:
+      "Comfort Inn Socorro reference cues: tan exterior with arched windows and portico, neutral double-queen room, wood-cabinet breakfast counter, and predawn gear loading.",
+  },
+  {
+    id: "lodging-best-western",
+    title: "Best Western Lodging Preview",
+    src: "./assets/generated/lodging-best-western-preview.jpg",
+    sourceFile:
+      "/Users/cris/.codex/generated_images/019e9338-98b4-7760-bd77-8abb14e50a2f/ig_09b2233eba7d409d016a21d9353c8c8191a41ff0c42fb0fb15.png",
+    category: "Travel",
+    alt:
+      "Reference-based generated preview of the Best Western Socorro exterior, fireplace lobby, room, and indoor-pool amenity",
+    caption:
+      "Reference-based generated lodging preview for the Best Western planning card, grounded in known public property-photo cues; not an actual hotel photograph.",
+    rights:
+      "AI-generated lodging preview based on checked public hotel-gallery references. Official hotel photos remain link-only.",
+    placement: ["Travel", "Visual Asset Manifest"],
+    promptSummary:
+      "Best Western Socorro reference cues: practical exterior, warm fireplace lobby, spacious room/work area, breakfast and indoor pool amenities.",
+  },
+  {
+    id: "lodging-holiday-inn",
+    title: "Holiday Inn Express Lodging Preview",
+    src: "./assets/generated/lodging-holiday-inn-preview.jpg",
+    sourceFile:
+      "/Users/cris/.codex/generated_images/019e9338-98b4-7760-bd77-8abb14e50a2f/ig_09b2233eba7d409d016a21d97279e481918be6edbe53c5fecf.png",
+    category: "Travel",
+    alt:
+      "Reference-based generated preview of the Holiday Inn Express Socorro exterior, green-accent guest room, breakfast bar, and indoor pool",
+    caption:
+      "Reference-based generated lodging preview for the Holiday Inn Express planning card, grounded in official IHG exterior, room, breakfast, and pool photos; not an actual hotel photograph.",
+    rights:
+      "AI-generated lodging preview based on checked official hotel-gallery references. Official hotel photos remain link-only.",
+    placement: ["Travel", "Visual Asset Manifest"],
+    promptSummary:
+      "Holiday Inn Express Socorro reference cues: columned curved-canopy exterior, green-accent room, striped carpet, dark-cabinet breakfast bar, and indoor pool.",
+  },
+  {
+    id: "lodging-econo-lodge",
+    title: "Econo Lodge Lodging Preview",
+    src: "./assets/generated/lodging-econo-lodge-preview.jpg",
+    sourceFile:
+      "/Users/cris/.codex/generated_images/019e9338-98b4-7760-bd77-8abb14e50a2f/ig_09b2233eba7d409d016a21d9b08e60819184616a0df24a84ee.png",
+    category: "Travel",
+    alt:
+      "Reference-based generated preview of the Econo Lodge Socorro exterior, teal-accent room, lobby, and breakfast room",
+    caption:
+      "Reference-based generated lodging preview for the Econo Lodge planning card, grounded in official Choice Hotels room, lobby, and breakfast photos; not an actual hotel photograph.",
+    rights:
+      "AI-generated lodging preview based on checked official hotel-gallery references. Official hotel photos remain link-only.",
+    placement: ["Travel", "Visual Asset Manifest"],
+    promptSummary:
+      "Econo Lodge Socorro reference cues: teal bed runners, wood-look floor, compact room amenities, simple lobby, and wood-cabinet breakfast room.",
+  },
+  {
+    id: "lodging-casa-blanca",
+    title: "Casa Blanca Lodging Preview",
+    src: "./assets/generated/lodging-casa-blanca-preview.jpg",
+    sourceFile:
+      "/Users/cris/.codex/generated_images/019e9338-98b4-7760-bd77-8abb14e50a2f/ig_09b2233eba7d409d016a21da04b9788191b1949fe2f6f110ee.png",
+    category: "Travel",
+    alt:
+      "Reference-based generated preview of Casa Blanca Bed and Breakfast as a historic adobe house, guest room, breakfast table, and quiet predawn veranda",
+    caption:
+      "Reference-based generated lodging preview for the Casa Blanca planning card, grounded in known historic adobe B&B property details; not an actual property photograph.",
+    rights:
+      "AI-generated lodging preview based on checked public property references. Official property photos remain link-only.",
+    placement: ["Travel", "Visual Asset Manifest"],
+    promptSummary:
+      "Casa Blanca reference cues: historic double-adobe house, tin roof, spacious veranda, warm guest room, homemade breakfast, and quiet short-commute departure.",
+  },
+  {
+    id: "lodging-fairfield-los-lunas",
+    title: "Fairfield Los Lunas Lodging Preview",
+    src: "./assets/generated/lodging-fairfield-los-lunas-preview.jpg",
+    sourceFile:
+      "/Users/cris/.codex/generated_images/019e9338-98b4-7760-bd77-8abb14e50a2f/ig_09b2233eba7d409d016a21da62aa6c8191b7f968986d01bd84.png",
+    category: "Travel",
+    alt:
+      "Reference-based generated preview of Fairfield Los Lunas exterior, modern guest room, breakfast area, and long-commute packing workflow",
+    caption:
+      "Reference-based generated lodging preview for the Fairfield Los Lunas planning card, grounded in the official Marriott exterior image and gallery categories; not an actual hotel photograph.",
+    rights:
+      "AI-generated lodging preview based on checked official hotel-gallery references. Official hotel photos remain link-only.",
+    placement: ["Travel", "Visual Asset Manifest"],
+    promptSummary:
+      "Fairfield Los Lunas reference cues: orange/tan exterior, white tower, dark accent bay, white canopy, stone pillar, modern rooms/dining, and long-commute prep.",
+  },
+];
+
+const visualById = new Map(
+  [...generatedVisuals, ...practiceVisuals, ...lodgingVisuals].map((visual) => [visual.id, visual])
+);
+
+const galleryLessons = {
+  "crane-roost-dawn": {
+    supposedLocation:
+      "North Loop crane roost pool or another active shallow-water roost visible from a legal pullout.",
+    lens: "Sony FE 200-600mm, Canon RF 200-800mm, or similar long wildlife zoom.",
+    focalLength: "500-700mm for individual cranes; 200-350mm when the roost, water, and mountains matter more than one bird.",
+    aperture: "f/6.3-f/8",
+    shutterSpeed: "1/1000-1/2000 sec for takeoff; 1/250-1/500 sec for quiet pre-sunrise silhouettes.",
+    technique:
+      "Arrive before dawn, expose for the sky and water highlights, keep the birds as clean silhouettes until the light rises, and leave space in front of cranes that begin to stretch or run.",
+  },
+  "snow-goose-blastoff": {
+    supposedLocation:
+      "Flight Deck, Main Pool, or the current goose roost selected after the arrival scout.",
+    lens: "100-400mm or 200-600mm class zoom, with a 24-105mm ready if the flock erupts close.",
+    focalLength: "100-300mm for the full white cloud of geese; 400-600mm once birds separate into readable patterns.",
+    aperture: "f/7.1-f/9",
+    shutterSpeed: "1/2000-1/3200 sec",
+    technique:
+      "Pre-compose wider than feels necessary, protect white feathers from clipping, start tracking before the first wave lifts, and switch from mass pattern to individual birds only after the flock opens up.",
+  },
+  "crane-evening-return": {
+    supposedLocation:
+      "Highway 1 crane ponds, South Loop wetlands, or the evening pool where birds are returning into the wind.",
+    lens: "Long wildlife zoom on a beanbag, monopod, or tripod/gimbal.",
+    focalLength: "400-700mm for landing cranes; 200-300mm for wider sunset lines and mountain context.",
+    aperture: "f/6.3-f/8",
+    shutterSpeed: "1/1600-1/2500 sec",
+    technique:
+      "Use wind direction to predict the landing lane, focus on the head and front shoulder, pan through touchdown, and keep enough room below the feet for reflections and splash.",
+  },
+  "farm-field-feeding": {
+    supposedLocation:
+      "Managed farm fields along the Auto Tour Loop or a roadside pullout where cranes and geese are feeding legally within view.",
+    lens: "200-600mm, 200-800mm, or 100-500mm class zoom from the vehicle.",
+    focalLength: "300-600mm for feeding groups; 700-800mm for raptors or distant behavior.",
+    aperture: "f/6.3-f/8",
+    shutterSpeed: "1/1000-1/2500 sec",
+    technique:
+      "Use the vehicle as a blind, move slowly, watch behavior instead of chasing distance, and include rows, dust, or mountains when the bird action alone is too static.",
+  },
+  "wetland-deck": {
+    supposedLocation:
+      "Dabbler Deck, Eagle Scout Deck, Willow Deck, Coyote Deck, or another public wetland viewing point.",
+    lens: "100-400mm, 200-600mm, or 200-800mm depending on distance and how much habitat should stay in frame.",
+    focalLength: "300-800mm for birds through reeds; 100-250mm for layered habitat and reflections.",
+    aperture: "f/8-f/11",
+    shutterSpeed: "1/500-1/2000 sec",
+    technique:
+      "Build layered compositions through reeds, wait for clean head angles, use exposure compensation for bright water, and use a circular polarizer only when glare control is worth the shutter-speed cost.",
+  },
+  "desert-edge-details": {
+    supposedLocation:
+      "Rio Viejo Trail, visitor-center edges, dry brush margins, or quiet pullouts where desert habitat meets refuge water.",
+    lens: "Long zoom for wildlife, plus 24-105mm for habitat textures and tracks.",
+    focalLength: "400-800mm for roadrunner, quail, or sparrows; 50-105mm for tracks and habitat detail.",
+    aperture: "f/6.3-f/8 for wildlife; f/8-f/11 for habitat details.",
+    shutterSpeed: "1/1000-1/2000 sec for wildlife; 1/125-1/500 sec for still details.",
+    technique:
+      "Slow down after the morning spectacle, scan edges before stepping forward, get lower when possible, and use clean backgrounds so small subjects do not disappear into brush.",
+  },
+  "weather-motion-fallback": {
+    supposedLocation:
+      "Any legal loop pullout, deck, or roost edge when fog, overcast, wind, snow, or flat light changes the original plan.",
+    lens: "200-600mm or 100-500mm zoom, handheld or on a support that allows smooth panning.",
+    focalLength: "200-500mm for panning and flock motion; 500-800mm for compressed gray-weather studies.",
+    aperture: "f/6.3-f/9",
+    shutterSpeed: "1/30-1/250 sec for intentional blur; 1/1000 sec or faster when the goal is still sharp action.",
+    technique:
+      "Turn bad light into a motion study: pan with heads, shoot bursts through the smoothest part of the swing, and use high-key exposure when gray water and white birds dominate.",
+  },
+  "filter-practice": {
+    supposedLocation:
+      "Practice pond, wetland deck, or Bosque water edge where glare and reflections can be tested without risking peak bird action.",
+    lens: "24-105mm for controlled tests; 100-400mm or 200-600mm only when the filter is already mounted and shutter speed remains adequate.",
+    focalLength: "24-200mm for filter tests; avoid stacking filters at extreme telephoto lengths during action.",
+    aperture: "f/8-f/11",
+    shutterSpeed: "1/250-1/1000 sec with a CPL if subjects are static; 1/15-1/60 sec with ND for deliberate water or wing blur.",
+    technique:
+      "Practice rotating the CPL while watching water glare, rehearse removing filters quickly for flight, and use ND only for intentional motion experiments, not surprise bird action.",
+  },
+  "travel-workflow": {
+    supposedLocation:
+      "Socorro hotel room, rental SUV cargo area, and the predawn staging routine before driving to the refuge.",
+    lens: "24-105mm or phone/documentary camera for planning and gear-reference frames.",
+    focalLength: "24-50mm",
+    aperture: "f/4-f/5.6",
+    shutterSpeed: "1/60-1/125 sec",
+    technique:
+      "Photograph the setup as a checklist: charged batteries, empty cards, two camera roles, packed layers, route notes, and the evening backup station before anything gets repacked.",
+  },
+};
+
+const practiceLessons = {
+  "filter-practice": {
+    supposedLocation:
+      "Local pond, refuge wetland edge, or any safe water surface where glare, reflection, and slow-shutter experiments can be repeated.",
+    lens: "24-105mm for controlled filter tests; 100-400mm or 200-600mm only after shutter speed is still safe.",
+    focalLength: "24-200mm for CPL and ND practice; 300-600mm only for deliberate long-lens glare tests.",
+    aperture: "f/8-f/11",
+    shutterSpeed: "1/250-1/1000 sec with CPL; 1/15-1/60 sec with ND for intentional blur.",
+    technique:
+      "Rotate the CPL while watching water glare, compare with and without the clear filter into low sun, and remove filters before fast bird action unless weather protection is truly needed.",
+  },
+  "practice-camera-setup": {
+    supposedLocation:
+      "Home desk, hotel-room staging table, vehicle cargo area, and a nearby test target before the first refuge morning.",
+    lens: "24-105mm for setup documentation; long wildlife zoom mounted for the final readiness test.",
+    focalLength: "24-50mm for setup frames; 400-600mm for the target-acquisition check.",
+    aperture: "f/4-f/8",
+    shutterSpeed: "1/60-1/125 sec for setup frames; 1/2000 sec for the flight preset test.",
+    technique:
+      "Build three camera states, rehearse the reset path, then prove the setup by going from bag/vehicle to correct flight settings in under 30 seconds.",
+  },
+  "practice-exposure-modes": {
+    supposedLocation:
+      "Local pond, park field, or roadside bird practice area with subjects crossing bright and dark backgrounds.",
+    lens: "100-400mm, 200-600mm, or similar wildlife zoom.",
+    focalLength: "300-600mm",
+    aperture: "f/5.6-f/8",
+    shutterSpeed: "1/500-1/2500 sec depending on whether the subject is static, walking, or flying.",
+    technique:
+      "Shoot the same subject in Aperture Priority, Shutter Priority, Manual with Auto ISO, and full Manual so the failure mode of each exposure approach is visible before the trip.",
+  },
+  "practice-shutter-speed": {
+    supposedLocation:
+      "Local birds, cyclists, cars, or any repeatable moving subject with safe space to pan.",
+    lens: "100-400mm or 200-600mm class zoom.",
+    focalLength: "300-600mm",
+    aperture: "f/5.6-f/8",
+    shutterSpeed: "1/3200, 1/2500, 1/1600, 1/800, 1/250, 1/125, and 1/60 sec ladder.",
+    technique:
+      "Capture safe sharp frames first, then slow the shutter in steps and judge each file by head sharpness, wing blur, and background streak quality.",
+  },
+  "practice-handholding": {
+    supposedLocation:
+      "Open park, shoreline, driveway, or local bird area where subjects can be acquired repeatedly.",
+    lens: "Long wildlife zoom handheld, ideally the same lens planned for Bosque.",
+    focalLength: "300-600mm; start wider, acquire, then zoom tighter after focus is stable.",
+    aperture: "f/5.6-f/8",
+    shutterSpeed: "1/1600-1/3200 sec for flight drills; 1/500-1/1000 sec for slower tracking.",
+    technique:
+      "Set feet first, rotate from the hips, support the lens under the foot or zoom ring, and fire short controlled bursts instead of holding the shutter down.",
+  },
+  "practice-support": {
+    supposedLocation:
+      "Vehicle window, deck rail, backyard target, or local pond where support styles can be compared back-to-back.",
+    lens: "200-600mm, 400-800mm, RF 200-800mm, or the longest travel wildlife lens.",
+    focalLength: "400-800mm",
+    aperture: "f/6.3-f/8",
+    shutterSpeed: "1/250-1/2000 sec, recorded separately for beanbag, monopod, tripod/gimbal, and handheld.",
+    technique:
+      "Test the same subject from each support, record the slowest shutter you trust, and decide before the trip which support belongs in each field position.",
+  },
+  "practice-white-birds-exposure": {
+    supposedLocation:
+      "Bright local birds, white practice target, sunlit water, or any high-contrast scene that can reveal clipped highlights.",
+    lens: "100-400mm or 200-600mm wildlife zoom.",
+    focalLength: "300-600mm",
+    aperture: "f/6.3-f/8",
+    shutterSpeed: "1/1000-1/2500 sec",
+    technique:
+      "Use zebras or highlight alerts, watch the RGB histogram, start with modest negative exposure compensation in direct sun, and preserve feather texture over overall brightness.",
+  },
+  "practice-behavior-prediction": {
+    supposedLocation:
+      "Local pond, park, or refuge-like bird area where repeated takeoff and landing cues can be watched calmly.",
+    lens: "100-400mm, 200-600mm, or binoculars first before the camera comes up.",
+    focalLength: "300-600mm",
+    aperture: "f/5.6-f/8",
+    shutterSpeed: "1/1600-1/3200 sec once the predicted movement starts.",
+    technique:
+      "Watch for posture, head-bobbing, crouch, wing tension, and wind direction, then start tracking before the bird actually launches.",
+  },
+  "practice-cold-dust-workflow": {
+    supposedLocation:
+      "Driveway, hotel-room simulation, vehicle cargo area, or predawn staging routine before entering the refuge.",
+    lens: "24-105mm for workflow documentation; long zoom already mounted before leaving shelter.",
+    focalLength: "24-50mm for setup frames; 400-600mm for the final readiness target.",
+    aperture: "f/4-f/8",
+    shutterSpeed: "1/60-1/125 sec for setup; 1/1000-1/2000 sec for readiness test.",
+    technique:
+      "Keep batteries warm, mount lenses before dust and cold, practice glove changes, and keep cleaning/weather gear reachable without unpacking the bag.",
+  },
+  "practice-readiness-checklist": {
+    supposedLocation:
+      "Final local bird session, home backup station, packed field bag, and two-camera staging area before departure.",
+    lens: "Long wildlife zoom for the proof session; 24-105mm for setup and pack-list documentation.",
+    focalLength: "300-600mm for birds; 24-50mm for workflow frames.",
+    aperture: "f/5.6-f/8 for birds; f/4-f/5.6 for setup images.",
+    shutterSpeed: "1/2000-1/3200 sec for flight; 1/60-1/250 sec for backup and packing documentation.",
+    technique:
+      "Prove readiness with flight frames, intentional blur frames, a tested backup routine, and a packed bag that has already been edited down.",
+  },
+};
+
+const lodgingLessons = {
+  "lodging-comfort-inn": {
+    supposedLocation:
+      "Comfort Inn Socorro reference-based exterior, room, breakfast counter, and dawn departure workflow, used to think through safe parking, gear loading, and a short refuge commute.",
+    lens: "24-70mm, 24-105mm, or phone wide lens for travel-documentation context.",
+    focalLength: "24-35mm",
+    aperture: "f/5.6-f/8",
+    shutterSpeed: "1/30-1/125 sec on a stabilized camera; raise ISO if handholding before sunrise.",
+    technique:
+      "Use the official gallery as the truth source, then read the generated frame as a logistics exercise: car-to-door path, room reset space, breakfast access, light level, and departure path.",
+  },
+  "lodging-best-western": {
+    supposedLocation:
+      "Best Western Socorro reference-based exterior, fireplace lobby, room/work area, and indoor-pool/breakfast amenity set, used to plan what can be handled before the first photo window.",
+    lens: "24-70mm, 24-105mm, or a compact wide-normal travel lens.",
+    focalLength: "28-45mm",
+    aperture: "f/4-f/5.6",
+    shutterSpeed: "1/60-1/160 sec",
+    technique:
+      "Treat the generated frame as a source-grounded checklist, not booking proof: fireplace/lobby comfort, room work surface, indoor amenity value, coffee, gloves, tripod, bag, and exit route.",
+  },
+  "lodging-holiday-inn": {
+    supposedLocation:
+      "Holiday Inn Express Socorro reference-based exterior, green-accent guest room, breakfast bar, and indoor-pool workflow, used to plan battery charging, card handling, clothing layers, and a two-camera reset.",
+    lens: "24-105mm travel zoom or 20-35mm wide zoom for tight interiors.",
+    focalLength: "24-35mm",
+    aperture: "f/4-f/5.6",
+    shutterSpeed: "1/30-1/100 sec on a stabilized camera or tripod.",
+    technique:
+      "Photograph the room like a readiness checklist: batteries visible, cards contained, long lens protected, layers ready, and nothing essential hidden in a drawer.",
+  },
+  "lodging-econo-lodge": {
+    supposedLocation:
+      "Econo Lodge Socorro reference-based room, lobby, breakfast room, and dawn parking workflow, used to evaluate value, parking convenience, and basic departure logistics.",
+    lens: "24-70mm or 24-105mm travel zoom.",
+    focalLength: "28-50mm",
+    aperture: "f/5.6-f/8",
+    shutterSpeed: "1/60-1/250 sec",
+    technique:
+      "Use the frame to separate practical value from comfort risk: show the car-to-room distance, lighting, gear exposure, and how quickly you can leave quietly before sunrise.",
+  },
+  "lodging-casa-blanca": {
+    supposedLocation:
+      "Casa Blanca Bed and Breakfast reference-based historic adobe house, guest room, breakfast table, and quiet predawn veranda, used to imagine a closer, quieter base with smaller-inventory constraints.",
+    lens: "24-70mm, 24-105mm, or 35mm prime.",
+    focalLength: "24-40mm",
+    aperture: "f/5.6-f/8",
+    shutterSpeed: "1/30-1/125 sec",
+    technique:
+      "Balance atmosphere with evidence: use the official/property references for facts, then use the generated frame to test entry path, dawn light, cold cues, staged bag, and the close commute.",
+  },
+  "lodging-fairfield-los-lunas": {
+    supposedLocation:
+      "Fairfield Los Lunas reference-based modern exterior, guest room, breakfast area, and packed long-commute workflow, used to plan whether loyalty/status value is worth the longer drive.",
+    lens: "24-70mm or 24-105mm travel zoom.",
+    focalLength: "24-50mm",
+    aperture: "f/4-f/5.6",
+    shutterSpeed: "1/30-1/125 sec",
+    technique:
+      "Make the long-commute story visible: packed luggage, route planning, alarm discipline, and gear ready to carry straight to the car. Then check actual maps and official hotel photos before treating it as a viable base.",
+  },
+};
+
+const visualLessons = {
+  ...galleryLessons,
+  ...practiceLessons,
+  ...lodgingLessons,
 };
 
 const leafletAssets = {
@@ -303,9 +1053,12 @@ const lodgingLocations = [
     drive: "25-30 min",
     price: "Dec 6-12 snapshot: from $722 total",
     best: "Best safe/value default",
-    image:
-      "https://www.choicehotels.com/en-xl/new-mexico/socorro/comfort-inn-hotels/nm126",
-    imageLabel: "Official hotel photos",
+    visualId: "lodging-comfort-inn",
+    galleryUrl:
+      "https://www.choicehotels.com/new-mexico/socorro/comfort-inn-hotels/nm126",
+    galleryLabel: "Official Choice photos",
+    galleryRights:
+      "Link only. Choice hotel images are not cached or republished without permission.",
     note:
       "Interior-corridor chain option with breakfast, Wi-Fi, parking, microwave/fridge, indoor pool/hot tub, and the strongest value fit in the current snapshot.",
     watch:
@@ -320,9 +1073,12 @@ const lodgingLocations = [
     drive: "25-30 min",
     price: "Dec 6-12 snapshot: from $726 total",
     best: "Strong value backup",
-    image:
-      "https://www.bestwestern.com/en_US/book/socorro/hotel-rooms/best-western-socorro-hotel-suites/propertyCode.32105.html",
-    imageLabel: "Official hotel gallery",
+    visualId: "lodging-best-western",
+    galleryUrl:
+      "https://www.bestwestern.com/en_US/book/hotels-in-socorro/best-western-socorro-hotel-suites/propertyCode.32105.html",
+    galleryLabel: "Official Best Western gallery",
+    galleryRights:
+      "Link only. Best Western images are not cached or republished without permission.",
     note:
       "Free breakfast and parking, indoor pool, pet-friendly rooms available, and convenient Socorro fuel/food access.",
     watch:
@@ -337,9 +1093,12 @@ const lodgingLocations = [
     drive: "25-30 min",
     price: "Dec 6-12 snapshot: from $1,181 total",
     best: "Cleanest low-friction chain choice",
-    image:
-      "https://digital.ihg.com/is/image/ihg/holiday-inn-express-socorro-6484441509-4x3?wid=733",
-    imageLabel: "IHG room photo",
+    visualId: "lodging-holiday-inn",
+    galleryUrl:
+      "https://www.ihg.com/holidayinnexpress/hotels/us/en/socorro/socnm/hoteldetail/gallery",
+    galleryLabel: "Official IHG gallery",
+    galleryRights:
+      "Link only. IHG images are not cached or republished without permission.",
     note:
       "Reliable chain experience, breakfast listed 6:00-9:30 AM, indoor pool, free Wi-Fi, and easy Socorro logistics.",
     watch:
@@ -354,9 +1113,12 @@ const lodgingLocations = [
     drive: "25-30 min",
     price: "Dec 6-12 snapshot: from $631 total",
     best: "Cheapest acceptable fallback",
-    image:
-      "https://www.expedia.com/Socorro-Hotels-Econo-Lodge-Socorro.h13443.Hotel-Information",
-    imageLabel: "Expedia hotel photos",
+    visualId: "lodging-econo-lodge",
+    galleryUrl:
+      "https://www.choicehotels.com/new-mexico/socorro/econo-lodge-hotels/nm066",
+    galleryLabel: "Official Choice photos",
+    galleryRights:
+      "Link only. Choice hotel images are not cached or republished without permission.",
     note:
       "Budget fallback with free parking and breakfast. It keeps the dawn drive reasonable if prices jump elsewhere.",
     watch:
@@ -371,8 +1133,11 @@ const lodgingLocations = [
     drive: "12-15 min",
     price: "Posted $100-$120/night; direct availability required",
     best: "Closest birding-oriented base",
-    image: "https://casablancabedandbreakfast.com/",
-    imageLabel: "Property website",
+    visualId: "lodging-casa-blanca",
+    galleryUrl: "https://casablancabedandbreakfast.com/",
+    galleryLabel: "Official property website",
+    galleryRights:
+      "Link only. Property photos are not cached or republished without permission; recheck site integrity before booking.",
     note:
       "Closest lodging option, refuge-savvy hosts, and very short pre-dawn commute if the room and terms work.",
     watch:
@@ -388,9 +1153,12 @@ const lodgingLocations = [
     drive: "~1 hr 20 min",
     price: "Dec 6-12 snapshot: from $1,003 total",
     best: "Marriott Bonvoy tradeoff",
-    image:
-      "https://www.marriott.com/en-gb/hotels/abqlf-fairfield-inn-and-suites-los-lunas/photos/",
-    imageLabel: "Marriott photo gallery",
+    visualId: "lodging-fairfield-los-lunas",
+    galleryUrl:
+      "https://www.marriott.com/en-us/hotels/abqlf-fairfield-inn-and-suites-los-lunas/photos/",
+    galleryLabel: "Official Marriott gallery",
+    galleryRights:
+      "Link only. Marriott images are not cached or republished without permission.",
     note:
       "Closest practical Bonvoy option found, with free breakfast, free parking, fitness center, and newer-property appeal.",
     watch:
@@ -726,17 +1494,235 @@ const tripDays = [
   },
 ];
 
+const itineraryVisualPlan = [
+  {
+    key: "Sun Dec 6|Afternoon|Socorro hotel / San Antonio route check",
+    visualId: "travel-workflow",
+    expected: [
+      "Hotel-room charging and card staging",
+      "Two-body dawn kit laid out before sleep",
+      "Rental vehicle cargo organized for quiet access",
+      "Fuel, snacks, water, and layers staged",
+      "Daylight route note for the first sunrise drive",
+    ],
+  },
+  {
+    key: "Sun Dec 6|Sunset|North or South Crane Pond",
+    visualId: "crane-evening-return",
+    expected: [
+      "Crane pool roost scout with mountain background",
+      "Returning crane family groups",
+      "Warm side-light wing shapes",
+      "Reflection and ripple tests",
+      "Parking, wind, and crowd-position reference frames",
+    ],
+  },
+  {
+    key: "Mon Dec 7|Sunrise|Highway 1 crane pools",
+    visualId: "crane-roost-dawn",
+    expected: [
+      "Crane silhouettes before sunrise",
+      "Cold breath over shallow water",
+      "Takeoff runs and wing tension",
+      "Low reflection pairs",
+      "Wide roost scene with mountain bands",
+    ],
+  },
+  {
+    key: "Mon Dec 7|Mid-morning|Visitor Center, Dabbler Deck, Eagle Scout Deck",
+    visualId: "wetland-deck",
+    expected: [
+      "Ducks and coots in reed reflections",
+      "Bright-water exposure practice",
+      "Distant cranes layered through habitat",
+      "Backlit reeds and water texture",
+      "Visitor-center intel translated into deck tests",
+    ],
+  },
+  {
+    key: "Mon Dec 7|Sunset|Best active crane pool",
+    visualId: "crane-evening-return",
+    expected: [
+      "Crane landings with feet down",
+      "Paired cranes crossing warm light",
+      "Family groups returning to water",
+      "Mountain-band silhouettes",
+      "Locked reflection frame after safe action frames",
+    ],
+  },
+  {
+    key: "Tue Dec 8|Sunrise|Flight Deck / Main Pool or strongest roost repeat",
+    visualId: "snow-goose-blastoff",
+    expected: [
+      "Still snow-goose roost before lift-off",
+      "First white flock wave rising",
+      "Wide mass blast-off over water",
+      "Overhead flock texture",
+      "Separated goose groups in pastel dawn",
+    ],
+  },
+  {
+    key: "Tue Dec 8|Mid-morning|North Loop fields / Farm Deck",
+    visualId: "farm-field-feeding",
+    expected: [
+      "Feeding cranes in winter crop rows",
+      "Mixed geese and cranes with mountain context",
+      "Raptor crossing a field edge",
+      "Flock lift from crop rows",
+      "Vehicle-blind frame from a legal pullout",
+    ],
+  },
+  {
+    key: "Tue Dec 8|Sunset|South Crane Pond pullouts",
+    visualId: "crane-evening-return",
+    expected: [
+      "Landing posture with space ahead of the bird",
+      "Wing shape in warm side light",
+      "Paired crane approach",
+      "Reflection landing with ripples",
+      "Wide roost scale as light fades",
+    ],
+  },
+  {
+    key: "Wed Dec 9|Sunrise|Best crane-pool repeat",
+    visualId: "crane-roost-dawn",
+    expected: [
+      "Behavior cue sequence before takeoff",
+      "Head and neck focus in low light",
+      "Controlled panning burst",
+      "Cold-air atmosphere over water",
+      "Repeatable flight lane from the learned position",
+    ],
+  },
+  {
+    key: "Wed Dec 9|Mid-morning|Willow Deck and Coyote Deck",
+    visualId: "wetland-deck",
+    expected: [
+      "Wetland compression through reeds",
+      "Duck portraits with clean reflections",
+      "Distant crane layers",
+      "Raptor or goose passing behind habitat",
+      "Minimal-footprint deck composition",
+    ],
+  },
+  {
+    key: "Wed Dec 9|Sunset|Flight Deck if active, otherwise crane pools",
+    visualId: "weather-motion-fallback",
+    expected: [
+      "Safe sharp return-flight frame",
+      "Slow flock movement over last color",
+      "1/250 panning experiment",
+      "1/125 or 1/60 abstract wing blur",
+      "Silhouette fallback if light goes flat",
+    ],
+  },
+  {
+    key: "Thu Dec 10|Sunrise|South Loop wetland stretch",
+    visualId: "weather-motion-fallback",
+    expected: [
+      "Mist and reeds before full sun",
+      "Ducks or geese in muted habitat",
+      "Harrier or raptor crossing gray light",
+      "Wide weather-and-water scene",
+      "Slow careful frame on layered habitat",
+    ],
+  },
+  {
+    key: "Thu Dec 10|Mid-morning|Rio Viejo / Bike Trail area",
+    visualId: "desert-edge-details",
+    expected: [
+      "Roadrunner or quail on dry edge habitat",
+      "Sparrows and seedheads",
+      "Tracks, frost, and dust detail",
+      "Cattails and cottonwood texture",
+      "Small subject in a wider habitat frame",
+    ],
+  },
+  {
+    key: "Thu Dec 10|Sunset|North Loop fields near Farm Deck",
+    visualId: "farm-field-feeding",
+    expected: [
+      "Field staging in warm side light",
+      "Feeding cranes against darker backgrounds",
+      "Birds crossing over crop rows",
+      "Distant raptor or flock movement",
+      "Fallback return-to-roost decision frame",
+    ],
+  },
+  {
+    key: "Fri Dec 11|Sunrise|Best current roost repeat",
+    visualId: "crane-roost-dawn",
+    expected: [
+      "Final learned sunrise composition",
+      "Wind-aligned takeoff lane",
+      "Clean background crane action",
+      "Wide roost context before departure",
+      "One deliberate improvement over earlier mornings",
+    ],
+  },
+  {
+    key: "Fri Dec 11|Mid-morning|Visitor Center / central road / strongest deck",
+    visualId: "desert-edge-details",
+    expected: [
+      "Missing subject fill: roadrunner, quail, or raptor",
+      "Quiet portrait with clean background",
+      "Environmental wide frame",
+      "Roadside habitat detail",
+      "Final checklist gap frame",
+    ],
+  },
+  {
+    key: "Fri Dec 11|Sunset|Highway 1 crane-pool finale",
+    visualId: "crane-evening-return",
+    expected: [
+      "Reflection landing finale",
+      "Mountain-band crane silhouette",
+      "Wide sky punctuation",
+      "Late legal-light return sequence",
+      "Closing frame that matches the trip story",
+    ],
+  },
+  {
+    key: "Sat Dec 12|Morning|Hotel / optional short loop",
+    visualId: "travel-workflow",
+    expected: [
+      "Card backup verification",
+      "Lens cleaning and dust check",
+      "Field notes written before memory fades",
+      "Packed vehicle with gear out of sight",
+      "Optional short-loop scout only if travel margin is real",
+    ],
+  },
+];
+
+const itineraryVisualsByKey = new Map(itineraryVisualPlan.map((item) => [item.key, item]));
+
+function itinerarySlotKey(day, slot) {
+  return `${day.date}|${slot.window}|${slot.place}`;
+}
+
+function visualPlanForSlot(day, slot) {
+  return itineraryVisualsByKey.get(itinerarySlotKey(day, slot)) || {
+    visualId: "crane-roost-dawn",
+    expected: visualById.get("crane-roost-dawn").examples,
+  };
+}
+
+const photoWindowVisuals = {
+  Sunrise: ["crane-roost-dawn", "snow-goose-blastoff"],
+  "Mid-morning": ["farm-field-feeding", "wetland-deck", "desert-edge-details"],
+  Sunset: ["crane-evening-return", "weather-motion-fallback"],
+};
+
 const gearItems = [
   {
     system: "Sony",
     name: "FE 24-105mm F4 G OSS",
     role: "Wide story, habitat, weather, flock scale",
-    image:
-      "https://d1ncau8tqf99kp.cloudfront.net/converted/78666_original_local_1200x1050_v3_converted.webp",
     specs: {
       aperture: "f/4-f/22",
       filter: "77 mm",
-      length: "113.3 mm",
+      length: "113.3 mm retracted / 163.2 mm extended",
       weight: "663 g",
       minFocus: "0.38 m",
       teleconverter: "No",
@@ -748,6 +1734,8 @@ const gearItems = [
     photo:
       "https://www.sony.com/electronics/support/lenses-e-mount-lenses/sel24105g/specifications",
     photoLabel: "Sony product/spec page",
+    image:
+      "https://d1ncau8tqf99kp.cloudfront.net/converted/78666_original_local_1200x1050_v3_converted.webp",
     source:
       "https://www.sony.com/electronics/support/lenses-e-mount-lenses/sel24105g/specifications",
     note:
@@ -757,12 +1745,10 @@ const gearItems = [
     system: "Sony",
     name: "FE 24-70mm F2.8 GM II",
     role: "Travel, people, low light, shallow depth of field",
-    image:
-      "https://d1ncau8tqf99kp.cloudfront.net/converted/102462_original_local_1200x1050_v3_converted.webp",
     specs: {
       aperture: "f/2.8-f/22",
       filter: "82 mm",
-      length: "119.9 mm",
+      length: "119.9 mm retracted / 158.4 mm extended",
       weight: "695 g",
       minFocus: "0.21-0.30 m AF",
       teleconverter: "No",
@@ -773,6 +1759,8 @@ const gearItems = [
     },
     photo: "https://electronics.sony.com/imaging/lenses/all-e-mount/p/sel2470gm2",
     photoLabel: "Sony product photo",
+    image:
+      "https://d1ncau8tqf99kp.cloudfront.net/converted/102462_original_local_1200x1050_v3_converted.webp",
     source:
       "https://www.sony.com/electronics/support/lenses-e-mount-lenses/sel2470gm2/specifications",
     note:
@@ -782,8 +1770,6 @@ const gearItems = [
     system: "Sony",
     name: "FE 70-200mm F2.8 GM OSS II",
     role: "Close wildlife, portraits, camp/travel compression, Tanzania second body",
-    image:
-      "https://d1ncau8tqf99kp.cloudfront.net/converted/92317_original_local_1200x1050_v3_converted.webp",
     specs: {
       aperture: "f/2.8-f/22",
       filter: "77 mm",
@@ -798,6 +1784,8 @@ const gearItems = [
     },
     photo: "https://electronics.sony.com/imaging/lenses/all-e-mount/p/sel70200gm2",
     photoLabel: "Sony product photo",
+    image:
+      "https://d1ncau8tqf99kp.cloudfront.net/converted/92317_original_local_1200x1050_v3_converted.webp",
     source:
       "https://www.sony.com/electronics/support/lenses-e-mount-lenses/sel70200gm2/specifications",
     note:
@@ -807,12 +1795,10 @@ const gearItems = [
     system: "Sony",
     name: "FE 100-400mm F4.5-5.6 GM OSS",
     role: "Lighter handheld flight zoom and close-pass lens",
-    image:
-      "https://d1ncau8tqf99kp.cloudfront.net/converted/101425_original_local_1200x1050_v3_converted.webp",
     specs: {
       aperture: "f/4.5-5.6 to f/32-40",
       filter: "77 mm",
-      length: "205 mm",
+      length: "205 mm retracted / 289.6 mm extended",
       weight: "1,395 g without tripod mount",
       minFocus: "0.98 m",
       teleconverter: "SEL14TC / SEL20TC",
@@ -823,6 +1809,8 @@ const gearItems = [
     },
     photo: "https://electronics.sony.com/imaging/lenses/all-e-mount/p/sel100400gm",
     photoLabel: "Sony product photo",
+    image:
+      "https://d1ncau8tqf99kp.cloudfront.net/converted/101425_original_local_1200x1050_v3_converted.webp",
     source:
       "https://www.sony.com/electronics/support/lenses-e-mount-lenses/sel100400gm/specifications",
     note:
@@ -832,8 +1820,6 @@ const gearItems = [
     system: "Sony",
     name: "FE 200-600mm F5.6-6.3 G OSS",
     role: "Primary Sony wildlife reach for Bosque and classic Tanzania setup",
-    image:
-      "https://d1ncau8tqf99kp.cloudfront.net/converted/101592_original_local_1200x1050_v3_converted.webp",
     specs: {
       aperture: "f/5.6-6.3 to f/32-36",
       filter: "95 mm",
@@ -848,6 +1834,8 @@ const gearItems = [
     },
     photo: "https://electronics.sony.com/imaging/lenses/all-e-mount/p/sel200600g",
     photoLabel: "Sony product photo",
+    image:
+      "https://d1ncau8tqf99kp.cloudfront.net/converted/101592_original_local_1200x1050_v3_converted.webp",
     source:
       "https://www.sony.com/electronics/support/lenses-e-mount-lenses/sel200600g/specifications",
     note:
@@ -857,7 +1845,6 @@ const gearItems = [
     system: "Sony",
     name: "FE 400-800mm F6.3-8 G OSS",
     role: "Distant birds, distant cats, and bright-good-light reach",
-    image: "assets/sony-fe-400-800-g-oss.jpg",
     specs: {
       aperture: "f/6.3-8 to f/36-45",
       filter: "105 mm",
@@ -872,6 +1859,7 @@ const gearItems = [
     },
     photo: "https://www.sony.co.uk/electronics/camera-lenses/sel400800g/specifications",
     photoLabel: "Sony product/spec page",
+    image: "assets/sony-fe-400-800-g-oss.jpg",
     source: "https://www.sony.co.uk/electronics/camera-lenses/sel400800g/specifications",
     note:
       "A specialized long-reach lens. Excellent for Bosque distance and birds, but too narrow and slow to be the automatic Tanzania primary.",
@@ -880,8 +1868,6 @@ const gearItems = [
     system: "Sony",
     name: "SEL14TC 1.4x Teleconverter",
     role: "Good-light reach extension",
-    image:
-      "https://d1ncau8tqf99kp.cloudfront.net/converted/81413_original_local_1200x1050_v3_converted.webp",
     specs: {
       aperture: "Loses 1 stop",
       filter: "None",
@@ -896,6 +1882,8 @@ const gearItems = [
     },
     photo: "https://electronics.sony.com/imaging/lenses/all-e-mount/p/sel14tc",
     photoLabel: "Sony product photo",
+    image:
+      "https://d1ncau8tqf99kp.cloudfront.net/converted/81413_original_local_1200x1050_v3_converted.webp",
     source: "https://electronics.sony.com/imaging/lenses/all-e-mount/p/sel14tc",
     note:
       "Use after light improves. Avoid frequent mounting in dust, and do not make it the dawn default.",
@@ -907,7 +1895,7 @@ const gearItems = [
     specs: {
       aperture: "f/4.5-6.3 to f/22-32",
       filter: "105 mm",
-      length: "281.2 mm",
+      length: "281.2 mm retracted / 385.4 mm extended",
       weight: "2,485 g",
       minFocus: "0.45-2.6 m",
       teleconverter: "L-Mount only; no Sigma TC on Sony E",
@@ -918,6 +1906,7 @@ const gearItems = [
     },
     photo: "https://www.sigma-global.com/en/lenses/s023_60_600_45_63/",
     photoLabel: "Sigma product/spec page",
+    image: "https://www.sigma-global.com/lenses/s023_60_600_45_63_product_img01.png",
     source: "https://www.sigma-global.com/en/lenses/s023_60_600_45_63/",
     note:
       "A credible A7R VI-compatible E-mount wildlife option when avoiding lens changes matters more than weight. For Bosque, it is useful from vehicle pullouts, but it is heavier than the Sony 200-600 and has no Sony E-mount teleconverter path.",
@@ -929,7 +1918,7 @@ const gearItems = [
     specs: {
       aperture: "f/5-6.3 to f/22-29",
       filter: "95 mm",
-      length: "265.6 mm",
+      length: "265.6 mm retracted / 370 mm extended",
       weight: "2,100 g with tripod socket",
       minFocus: "0.58-2.8 m",
       teleconverter: "L-Mount only; no Sigma TC on Sony E",
@@ -940,6 +1929,7 @@ const gearItems = [
     },
     photo: "https://www.sigma-global.com/en/lenses/s021_150_600_5_63/",
     photoLabel: "Sigma product/spec page",
+    image: "https://www.sigma-global.com/lenses/s021_150_600_5_63_product_img01.png",
     source: "https://www.sigma-global.com/en/lenses/s021_150_600_5_63/",
     note:
       "The closest Sigma alternative to the Sony 200-600 for Bosque birds. It fits Sony E-mount full-frame bodies, including the Alpha 7R VI, but Sigma's TC-1411/TC-2011 support is L-Mount-only.",
@@ -962,6 +1952,7 @@ const gearItems = [
     },
     photo: "https://www.sigma-global.com/en/lenses/s024_500_56/",
     photoLabel: "Sigma product/spec page",
+    image: "https://www.sigma-global.com/lenses/s024_500_56_product_img01.png",
     source: "https://www.sigma-global.com/en/lenses/s024_500_56/",
     note:
       "The sharp, lighter Sigma bird option for a high-resolution Sony body when fixed 500mm framing is acceptable. For Bosque, pair it with a second body or a 24-105 because it cannot zoom out when a flock erupts close.",
@@ -970,12 +1961,10 @@ const gearItems = [
     system: "Canon",
     name: "RF 24-105mm F4 L IS USM",
     role: "Wide story, habitat, weather, flock scale",
-    image:
-      "https://s7d1.scene7.com/is/image/canon/2963C002_rf-24-105mm-f4-l-is-usm_primary2?fmt=webp-alpha",
     specs: {
       aperture: "f/4",
       filter: "77 mm",
-      length: "107.3 mm",
+      length: "107.3 mm retracted / 159.1 mm extended",
       weight: "700 g",
       minFocus: "0.45 m",
       teleconverter: "No",
@@ -987,6 +1976,8 @@ const gearItems = [
     photo:
       "https://www.usa.canon.com/shop/catalog/product/view/id/50549/s/rf24-105mm-f4-l-is-usm/",
     photoLabel: "Canon product photo",
+    image:
+      "https://s7d1.scene7.com/is/image/canon/2963C002_rf-24-105mm-f4-l-is-usm_primary2?fmt=webp-alpha&wid=760",
     source:
       "https://www.usa.canon.com/shop/catalog/product/view/id/50549/s/rf24-105mm-f4-l-is-usm/",
     note:
@@ -996,12 +1987,10 @@ const gearItems = [
     system: "Canon",
     name: "RF 24-70mm F2.8 L IS USM",
     role: "Travel, people, low light, shallow depth of field",
-    image:
-      "https://s7d1.scene7.com/is/image/canon/3680C002_rf-24-70mm-f2.8-l-is-usm_primary?fmt=webp-alpha",
     specs: {
       aperture: "f/2.8",
       filter: "82 mm",
-      length: "125.7 mm",
+      length: "125.7 mm retracted / 161.4 mm extended",
       weight: "900 g",
       minFocus: "0.21-0.38 m",
       teleconverter: "No",
@@ -1012,6 +2001,8 @@ const gearItems = [
     },
     photo: "https://www.usa.canon.com/shop/p/rf24-70mm-f2-8l-is-usm",
     photoLabel: "Canon product photo",
+    image:
+      "https://s7d1.scene7.com/is/image/canon/3680C002_rf-24-70mm-f2.8-l-is-usm_primary?fmt=webp-alpha&wid=760",
     source: "https://www.usa.canon.com/shop/p/rf24-70mm-f2-8l-is-usm",
     note:
       "A strong travel/event lens, but for the refuge it loses the useful 70-105 mm range.",
@@ -1020,12 +2011,10 @@ const gearItems = [
     system: "Canon",
     name: "RF 70-200mm F2.8 L IS USM",
     role: "Compact close wildlife and travel telephoto",
-    image:
-      "https://s7d1.scene7.com/is/image/canon/3792C002_rf70-200mm-f2.8-l-is-usm_primary?fmt=webp",
     specs: {
       aperture: "f/2.8",
       filter: "77 mm",
-      length: "146 mm",
+      length: "146 mm retracted / 211.9 mm extended",
       weight: "1,070 g without tripod mount",
       minFocus: "0.7 m",
       teleconverter: "No",
@@ -1036,6 +2025,8 @@ const gearItems = [
     },
     photo: "https://www.usa.canon.com/shop/p/rf70-200mm-f2-8-l-is-usm",
     photoLabel: "Canon product photo",
+    image:
+      "https://s7d1.scene7.com/is/image/canon/3792C002_rf70-200mm-f2.8-l-is-usm_primary?fmt=webp-alpha&wid=760",
     source:
       "https://downloads.canon.com/nw/camera/products/lenses/rf-70-200mm-f2-8-l-is-usm/specs/rf-70-200mm-f2-8-l-is-usm-specifications.pdf",
     note:
@@ -1045,8 +2036,6 @@ const gearItems = [
     system: "Canon",
     name: "RF 70-200mm F2.8 L IS USM Z",
     role: "Extender-compatible 70-200 for Canon",
-    image:
-      "https://s7d1.scene7.com/is/image/canon/6594C002-RF70-200MM-F2-8-L-IS-USM-Z-White-primary?fmt=webp-alpha",
     specs: {
       aperture: "f/2.8-f/22",
       filter: "82 mm",
@@ -1062,6 +2051,8 @@ const gearItems = [
     photo:
       "https://www.usa.canon.com/shop/p/lens-rf70-200mm-f2-8-l-is-usm-z-white",
     photoLabel: "Canon product photo",
+    image:
+      "https://s7d1.scene7.com/is/image/canon/6594C002-RF70-200MM-F2-8-L-IS-USM-Z-White-primary?fmt=webp-alpha&wid=760",
     source:
       "https://s7d1.scene7.com/is/content/canon/RF70-200mm_F2.8_L_IS_UZ_Specspdf",
     note:
@@ -1071,12 +2062,10 @@ const gearItems = [
     system: "Canon",
     name: "RF 100-500mm F4.5-7.1 L IS USM",
     role: "Primary Canon flight and flexible wildlife lens",
-    image:
-      "https://s7d1.scene7.com/is/image/canon/4112C002_rf100-500mm-f45-71-l-is-usm_primary?fmt=webp",
     specs: {
       aperture: "f/4.5-7.1 to f/32-54",
       filter: "77 mm",
-      length: "207.6 mm short / 297.6 mm long",
+      length: "207.6 mm retracted / 304.7 mm extended",
       weight: "1,365 g without tripod mount",
       minFocus: "0.9-1.2 m",
       teleconverter: "Extender RF 1.4x / 2x at 300-500 mm",
@@ -1087,6 +2076,8 @@ const gearItems = [
     },
     photo: "https://www.usa.canon.com/shop/p/rf100-500mm-f4-5-7-1-l-is-usm",
     photoLabel: "Canon product photo",
+    image:
+      "https://s7d1.scene7.com/is/image/canon/4112C002_rf100-500mm-f45-71-l-is-usm_primary?fmt=webp-alpha&wid=760",
     source: "https://www.usa.canon.com/shop/p/rf100-500mm-f4-5-7-1-l-is-usm",
     note:
       "The Canon default for Bosque and Tanzania because it balances reach, handling, and close-pass flexibility.",
@@ -1095,12 +2086,10 @@ const gearItems = [
     system: "Canon",
     name: "RF 200-800mm F6.3-9 IS USM",
     role: "Canon distant bird and long-reach wildlife lens",
-    image:
-      "https://s7d1.scene7.com/is/image/canon/6263C002_RF200_800mm_primary?fmt=webp-alpha&wid=760",
     specs: {
       aperture: "f/6.3-9 to f/54",
       filter: "95 mm",
-      length: "314.1 mm at 200 mm",
+      length: "314.1 mm retracted / 410.8 mm extended",
       weight: "2,050 g",
       minFocus: "0.8-3.3 m",
       teleconverter: "Extender RF 1.4x / 2x",
@@ -1111,6 +2100,8 @@ const gearItems = [
     },
     photo: "https://www.usa.canon.com/shop/p/rf200-800mm-f6-3-9-is-usm",
     photoLabel: "Canon product photo",
+    image:
+      "https://s7d1.scene7.com/is/image/canon/6263C002_RF200_800mm_primary?fmt=webp-alpha&wid=760",
     source: "https://www.usa.canon.com/shop/p/rf200-800mm-f6-3-9-is-usm",
     note:
       "Excellent for distant Bosque birds and distant wildlife, but slower than the 100-500 and less flexible close to the vehicle.",
@@ -1119,8 +2110,6 @@ const gearItems = [
     system: "Canon",
     name: "Extender RF 1.4x",
     role: "Good-light reach extension",
-    image:
-      "https://s7d1.scene7.com/is/image/canon/4113C002_extender-rf14x_primary?fmt=webp",
     specs: {
       aperture: "Loses 1 stop",
       filter: "None",
@@ -1135,6 +2124,8 @@ const gearItems = [
     },
     photo: "https://www.usa.canon.com/shop/p/extender-rf1-4x",
     photoLabel: "Canon product photo",
+    image:
+      "https://s7d1.scene7.com/is/image/canon/4113C002_extender-rf14x_primary?fmt=webp-alpha&wid=760",
     source: "https://www.usa.canon.com/shop/p/extender-rf1-4x",
     note:
       "Works with compatible RF lenses. On RF 100-500, remember the extender mounts only in the 300-500 mm zoom range.",
@@ -1143,7 +2134,6 @@ const gearItems = [
     system: "Support",
     name: "Beanbag or window support",
     role: "Vehicle blind stability",
-    image: "https://www.lenscoat.com/cdn/shop/files/lspjbk.jpg?v=1735901881&width=1080",
     specs: {
       aperture: "N/A",
       filter: "N/A",
@@ -1158,6 +2148,7 @@ const gearItems = [
     },
     photo: "https://www.lenscoat.com/collections/featured-products/products/lenscoat-lenssack-pro-jr",
     photoLabel: "LensCoat product example",
+    image: "https://www.lenscoat.com/cdn/shop/files/lspjM5b.jpg?v=1735901881",
     source: "https://www.lenscoat.com/collections/featured-products/products/lenscoat-lenssack-pro-jr",
     note:
       "The fastest support for the auto loop. It is quieter and more practical than deploying tripod legs from the car.",
@@ -1166,7 +2157,6 @@ const gearItems = [
     system: "Support",
     name: "Tripod, gimbal, and monopod",
     role: "Long waits, heavy lenses, decks, and locked compositions",
-    image: "https://tripodhead.com/images/wh-200-web.jpg",
     specs: {
       aperture: "N/A",
       filter: "N/A",
@@ -1181,6 +2171,7 @@ const gearItems = [
     },
     photo: "https://tripodhead.com/products/WH-Specs.cfm",
     photoLabel: "Wimberley product example",
+    image: "https://tripodhead.com/images/wh-200-large.jpg",
     source: "https://tripodhead.com/products/WH-Specs.cfm",
     note:
       "Bring sturdy legs if using 200-600, 400-800, or RF 200-800 for long waits. A monopod is the low-footprint deck fallback.",
@@ -1235,24 +2226,79 @@ const kitRecommendations = [
 
 const filterGuidance = [
   {
-    title: "Bring 77 mm basics",
+    title: "77 mm shared basics",
     note:
-      "77 mm covers the Sony 24-105, 70-200, 100-400 and Canon RF 24-105, RF 70-200 compact, RF 100-500. This is the most useful shared filter size.",
+      "77 mm covers Sony 24-105, Sony 70-200, Sony 100-400, Canon RF 24-105, Canon RF 70-200 compact, and Canon RF 100-500. This is the most useful shared CPL/clear filter size.",
   },
   {
-    title: "Bring 82 mm if using fast standard/Canon Z glass",
+    title: "82 mm fast-zoom branch",
     note:
-      "82 mm covers Sony 24-70 GM II, Canon RF 24-70, and Canon RF 70-200 Z. Useful for travel/landscape CPL work, not for dawn birds.",
+      "82 mm covers Sony 24-70 GM II, Canon RF 24-70, and Canon RF 70-200 Z. Bring it only if that glass is in the bag and you expect travel, landscape, or water-glare work.",
   },
   {
-    title: "Skip buying giant CPLs for birds",
+    title: "95 mm and 105 mm caution",
     note:
-      "95 mm and 105 mm filters fit the Sony 200-600, Sony 400-800, Canon RF 200-800, and the Sigma wildlife zooms/primes. They are expensive and cost light. Use lens hoods, rain sleeves, blower, and microfiber instead.",
+      "95 mm fits Sony 200-600, Canon RF 200-800, Sigma 150-600, and Sigma 500. 105 mm fits Sony 400-800 and Sigma 60-600. These filters are expensive and cost light, so avoid giant CPLs for dawn birds unless a specific water/reflection use justifies them.",
   },
   {
-    title: "Use polarizers selectively",
+    title: "Circular polarizer",
     note:
-      "A circular polarizer can help water/reflection/sky scenes after sunrise. Remove it for flight, predawn, and any moment when shutter speed is the priority.",
+      "Use a CPL after sunrise for glare, water, sky, and wetland reflections. Remove it for predawn, flight, fast action, and any moment where shutter speed or autofocus confidence matters more.",
+  },
+  {
+    title: "Neutral-density filter",
+    note:
+      "A 3-stop or 6-stop ND belongs in the practice kit for intentional shutter-drag water, flock blur, and panning experiments. It is not a first-light bird-action filter.",
+  },
+  {
+    title: "Protective or clear filter",
+    note:
+      "Use clear/protective filters selectively for blowing dust, snow, rain, and travel handling. Remove them if flare, ghosting, or contrast loss appears, especially shooting toward low sun.",
+  },
+  {
+    title: "Step-up rings",
+    note:
+      "A 77-to-82 mm step-up ring can reduce duplicate filters if 82 mm lenses are in the kit. Practice threading rings with gloves before the trip; do not learn this in predawn cold.",
+  },
+  {
+    title: "No-filter default for action",
+    note:
+      "The default for cranes and geese in flight is hood on, no filter unless weather protection is truly needed. Light, shutter speed, and clean autofocus are the priority.",
+  },
+];
+
+const filterPracticePlan = [
+  {
+    title: "CPL glare and reflection drill",
+    bring: "77 mm CPL first; 82 mm only if the fast standard or Canon Z lens is traveling.",
+    rehearse:
+      "At a pond or lake, rotate from maximum glare reduction to no effect and photograph the same water, sky, and reed reflection.",
+    avoid:
+      "Do not leave the CPL on for bird flight, predawn scenes, or any setup where the lost light forces a weak shutter speed.",
+  },
+  {
+    title: "ND shutter-drag drill",
+    bring: "3-stop or 6-stop ND in the filter wallet, ideally in the shared 77 mm size.",
+    rehearse:
+      "After safe sharp frames, make 1/250, 1/125, and 1/60 panning frames of birds, cyclists, or cars at a local practice site.",
+    avoid:
+      "Do not use ND for the first crane takeoff or goose blast-off; capture the safe sequence before experimenting.",
+  },
+  {
+    title: "Clear-filter weather drill",
+    bring: "Clear/protective filter only for the lenses that will actually face dust, snow, or blowing grit.",
+    rehearse:
+      "Shoot toward low sun with and without the clear filter, then inspect flare, ghosting, and contrast on a larger screen.",
+    avoid:
+      "Do not assume a protective filter is harmless. Remove it when flare appears or when every bit of contrast matters.",
+  },
+  {
+    title: "Step-up and cold-hands drill",
+    bring: "77-to-82 mm step-up ring, filter pouch, blower, microfiber, and thin liner gloves.",
+    rehearse:
+      "Thread, unthread, pouch, and clean filters with gloves on, then reset the kit in the dark without dropping anything.",
+    avoid:
+      "Do not swap giant filters in windblown dust or over open water. If it feels clumsy at home, it will feel worse at Bosque.",
   },
 ];
 
@@ -1294,6 +2340,220 @@ const gearComparisonRows = [
     note: "Sony is internal-zoom and better sealed around zoom movement; Canon starts wider and weighs less.",
   },
 ];
+
+function parsePhysicalLength(lengthText) {
+  const values = [...String(lengthText || "").matchAll(/(\d+(?:\.\d+)?)\s*mm/g)].map((match) =>
+    Number(match[1])
+  );
+  if (!values.length) return null;
+
+  const primary = values[0];
+  const extended = /(short|retracted|extended|full extension|long)/i.test(lengthText)
+    ? Math.max(...values)
+    : null;
+  return {
+    primary,
+    extended: extended && extended > primary ? extended : null,
+  };
+}
+
+function parseWeightGrams(weightText) {
+  const text = String(weightText || "");
+  const range = text.match(/(\d[\d,]*(?:\.\d+)?)\s*-\s*(\d[\d,]*(?:\.\d+)?)\s*g\b/i);
+  const toNumber = (value) => Number(value.replace(/,/g, ""));
+  if (range) {
+    const low = toNumber(range[1]);
+    const high = toNumber(range[2]);
+    return {
+      primary: low,
+      total: Math.max(low, high),
+      label: `${low.toLocaleString()}-${high.toLocaleString()} g`,
+    };
+  }
+
+  const values = [...text.matchAll(/(\d[\d,]*(?:\.\d+)?)\s*g\b/gi)].map((match) =>
+    toNumber(match[1])
+  );
+  if (!values.length) return null;
+
+  const total = Math.max(...values);
+  return {
+    primary: values[0],
+    total,
+    label: `${total.toLocaleString()} g`,
+  };
+}
+
+function shortLensLabel(name) {
+  return name
+    .replace("Sigma ", "")
+    .replace(" DG DN OS | Sports", "")
+    .replace(" F4.5-5.6", "")
+    .replace(" F4.5-7.1", "")
+    .replace(" F4.5-6.3", "")
+    .replace(" F5-6.3", "")
+    .replace(" F5.6-6.3", "")
+    .replace(" F6.3-8", "")
+    .replace(" F6.3-9", "")
+    .replace(" F2.8", "")
+    .replace(" F4", "")
+    .replace(" L IS USM Z", " Z")
+    .replace(" L IS USM", "")
+    .replace(" GM OSS II", " GM II")
+    .replace(" G OSS", " G")
+    .replace("1.4x Teleconverter", "1.4x TC")
+    .replace("Extender RF 1.4x", "RF 1.4x TC");
+}
+
+function getLensScaleTrackWidth(itemCount) {
+  const axisWidth = 78;
+  const columnWidth = 78;
+  const columnGap = 14;
+  return axisWidth + itemCount * columnWidth + Math.max(0, itemCount - 1) * columnGap;
+}
+
+function renderLensLengthScale() {
+  const scaleMax = 430;
+  const ticks = [400, 350, 300, 200, 100, 0];
+  const opticalItems = gearItems
+    .filter((item) => item.system !== "Support")
+    .map((item) => {
+      const length = parsePhysicalLength(item.specs.length);
+      if (!length) return null;
+      return {
+        type: item.name.includes("Teleconverter") || item.name.includes("Extender") ? "teleconverter" : "lens",
+        system: item.system,
+        name: item.name,
+        label: shortLensLabel(item.name),
+        primaryMm: length.primary,
+        extendedMm: length.extended,
+      };
+    })
+    .filter(Boolean);
+  const referenceItem = {
+    type: "reference",
+    system: "Reference",
+    name: "12-inch ruler reference",
+    label: "12 in ruler",
+    primaryMm: 305,
+    extendedMm: null,
+  };
+  const items = [...opticalItems, referenceItem].sort((a, b) => {
+    const aMax = a.extendedMm || a.primaryMm;
+    const bMax = b.extendedMm || b.primaryMm;
+    return bMax - aMax;
+  });
+  const renderItem = (item) => {
+    const primaryPercent = Math.min((item.primaryMm / scaleMax) * 100, 100);
+    const extensionPercent = item.extendedMm ? ((item.extendedMm - item.primaryMm) / scaleMax) * 100 : 0;
+    const totalMm = item.extendedMm || item.primaryMm;
+    const ariaLength = item.extendedMm
+      ? `${item.primaryMm} millimeters retracted, ${item.extendedMm} millimeters extended`
+      : `${item.primaryMm} millimeters`;
+    return `<article class="lens-scale-column lens-scale-${item.system.toLowerCase().replace(/\s+/g, "-")} ${item.type === "teleconverter" ? "is-teleconverter" : ""} ${item.type === "reference" ? "is-reference" : ""}" data-scale="length" data-kind="${item.type}" data-system="${item.system}" data-primary-mm="${item.primaryMm}" data-total-mm="${totalMm}"${item.extendedMm ? ` data-extended-mm="${item.extendedMm}"` : ""} aria-label="${item.name}: ${ariaLength}">
+      <div class="lens-scale-bar-stack" style="--bar-height: ${primaryPercent.toFixed(2)}; --extension-height: ${extensionPercent.toFixed(2)};">
+        ${item.extendedMm ? `<span class="lens-scale-extension" title="${item.name} extended length: ${item.extendedMm} mm"></span>` : ""}
+        <span class="lens-scale-bar" title="${item.name}: ${ariaLength}"></span>
+      </div>
+      <div class="lens-scale-label">
+        <strong>${item.label}</strong>
+        <span>${item.primaryMm}${item.extendedMm ? `-${item.extendedMm}` : ""} mm</span>
+      </div>
+    </article>`;
+  };
+
+  return `<section class="lens-scale-section" aria-labelledby="lens-scale-title">
+    <div class="section-title compact-title">
+      <div>
+        <p class="eyebrow">Physical scale</p>
+        <h2 id="lens-scale-title">Lens Length Scale</h2>
+      </div>
+      <p>Published compact length and sourced full-extension length in millimeters, standing from a shared baseline. The gray bar is a 12-inch ruler reference; striped caps mark extending zoom barrels.</p>
+    </div>
+    <div class="lens-scale-legend" aria-label="Lens scale legend">
+      <span><i class="legend-chip sony"></i>Sony</span>
+      <span><i class="legend-chip sigma"></i>Sigma E</span>
+      <span><i class="legend-chip canon"></i>Canon</span>
+      <span><i class="legend-chip reference"></i>12 in reference</span>
+      <span><i class="legend-chip extended"></i>Full-extension length</span>
+    </div>
+    <div class="lens-scale-chart" style="--lens-scale-track-width: ${getLensScaleTrackWidth(items.length)}px;" role="img" aria-label="Vertical bar chart comparing physical lens length in millimeters">
+      <div class="lens-scale-grid" aria-hidden="true">
+        ${ticks.map((tick) => `<span class="lens-scale-tick" style="--tick: ${((tick / scaleMax) * 100).toFixed(2)};"><em>${tick} mm</em></span>`).join("")}
+      </div>
+      <div class="lens-scale-bars">
+        ${items.map(renderItem).join("")}
+      </div>
+    </div>
+    <p class="muted lens-scale-note">Sorted by longest known physical length. Solid bars show the compact listed length; striped caps show sourced full-extension measurements for externally extending zooms.</p>
+  </section>`;
+}
+
+function renderLensWeightScale() {
+  const scaleMax = 2600;
+  const ticks = [2500, 2000, 1500, 1000, 500, 0];
+  const opticalItems = gearItems
+    .filter((item) => item.system !== "Support")
+    .map((item) => {
+      const weight = parseWeightGrams(item.specs.weight);
+      if (!weight) return null;
+      return {
+        type: item.name.includes("Teleconverter") || item.name.includes("Extender") ? "teleconverter" : "lens",
+        system: item.system,
+        name: item.name,
+        label: shortLensLabel(item.name),
+        weightG: weight.total,
+        weightLabel: weight.label,
+      };
+    })
+    .filter(Boolean);
+  const referenceItem = {
+    type: "reference",
+    system: "Reference",
+    name: "1-liter water reference",
+    label: "1 L water",
+    weightG: 1000,
+    weightLabel: "1,000 g",
+  };
+  const items = [...opticalItems, referenceItem].sort((a, b) => b.weightG - a.weightG);
+  const renderItem = (item) => {
+    const barPercent = Math.min((item.weightG / scaleMax) * 100, 100);
+    return `<article class="lens-scale-column lens-scale-${item.system.toLowerCase().replace(/\s+/g, "-")} ${item.type === "teleconverter" ? "is-teleconverter" : ""} ${item.type === "reference" ? "is-reference" : ""}" data-scale="weight" data-kind="${item.type}" data-system="${item.system}" data-weight-g="${item.weightG}" aria-label="${item.name}: ${item.weightLabel}">
+      <div class="lens-scale-bar-stack" style="--bar-height: ${barPercent.toFixed(2)}; --extension-height: 0;">
+        <span class="lens-scale-bar" title="${item.name}: ${item.weightLabel}"></span>
+      </div>
+      <div class="lens-scale-label">
+        <strong>${item.label}</strong>
+        <span>${item.weightLabel}</span>
+      </div>
+    </article>`;
+  };
+
+  return `<section class="lens-scale-section weight-scale-section" aria-labelledby="weight-scale-title">
+    <div class="section-title compact-title">
+      <div>
+        <p class="eyebrow">Carry weight</p>
+        <h2 id="weight-scale-title">Lens Weight Scale</h2>
+      </div>
+      <p>Listed lens and teleconverter weights in grams, standing from a shared baseline. The gray bar is a 1-liter water reference at 1,000 grams.</p>
+    </div>
+    <div class="lens-scale-legend" aria-label="Lens weight scale legend">
+      <span><i class="legend-chip sony"></i>Sony</span>
+      <span><i class="legend-chip sigma"></i>Sigma E</span>
+      <span><i class="legend-chip canon"></i>Canon</span>
+      <span><i class="legend-chip reference"></i>1 L water reference</span>
+    </div>
+    <div class="lens-scale-chart weight-scale-chart" style="--lens-scale-track-width: ${getLensScaleTrackWidth(items.length)}px;" role="img" aria-label="Vertical bar chart comparing lens and teleconverter weight in grams">
+      <div class="lens-scale-grid" aria-hidden="true">
+        ${ticks.map((tick) => `<span class="lens-scale-tick" style="--tick: ${((tick / scaleMax) * 100).toFixed(2)};"><em>${tick.toLocaleString()} g</em></span>`).join("")}
+      </div>
+      <div class="lens-scale-bars">
+        ${items.map(renderItem).join("")}
+      </div>
+    </div>
+    <p class="muted lens-scale-note">Sorted by listed weight. Where a manufacturer lists a small weight range, the chart uses the higher listed value and keeps the range in the label.</p>
+  </section>`;
+}
 
 const mediaArticles = [
   {
@@ -1466,6 +2726,16 @@ const mediaArticles = [
   },
 ];
 
+function visualIdForMedia(item) {
+  const sourceText = `${item.source} ${item.title} ${item.kind}`;
+  if (/crane|Evie|LifePixel/i.test(sourceText)) return "crane-roost-dawn";
+  if (/goose|Cornell|BirdWatching|Extreme/i.test(sourceText)) return "snow-goose-blastoff";
+  if (/field|Chasing|NANPA|Location/i.test(sourceText)) return "farm-field-feeding";
+  if (/settings|Technique|Wilderness/i.test(sourceText)) return "filter-practice";
+  if (/Hogan|Luminous|Lens/i.test(sourceText)) return "weather-motion-fallback";
+  return "wetland-deck";
+}
+
 const exifEvidence = [
   {
     group: "Wide and Environmental",
@@ -1551,6 +2821,7 @@ const fieldImplications = [
 const practiceModules = [
   {
     title: "Camera Setup Baseline",
+    visualId: "practice-camera-setup",
     goal:
       "Build three ready-to-use camera states before the trip: flight, perched/static, and silhouette/sky.",
     steps: [
@@ -1564,6 +2835,7 @@ const practiceModules = [
   },
   {
     title: "Aperture Priority, Shutter Priority, and Manual",
+    visualId: "practice-exposure-modes",
     goal:
       "Know which mode to use when light and subject behavior change quickly.",
     steps: [
@@ -1577,6 +2849,7 @@ const practiceModules = [
   },
   {
     title: "Shutter Speed Ladder",
+    visualId: "practice-shutter-speed",
     goal:
       "Know the difference between frozen action, controlled wing blur, and artistic pan blur before the refuge.",
     steps: [
@@ -1590,6 +2863,7 @@ const practiceModules = [
   },
   {
     title: "Handholding and Body Mechanics",
+    visualId: "practice-handholding",
     goal:
       "Acquire birds without fighting the lens.",
     steps: [
@@ -1603,6 +2877,7 @@ const practiceModules = [
   },
   {
     title: "Tripod, Gimbal, Monopod, and Beanbag",
+    visualId: "practice-support",
     goal:
       "Choose the support that matches the field position instead of carrying support as decoration.",
     steps: [
@@ -1616,6 +2891,7 @@ const practiceModules = [
   },
   {
     title: "White Birds and Exposure",
+    visualId: "practice-white-birds-exposure",
     goal:
       "Stop blowing snow-goose detail without making the whole scene look dead.",
     steps: [
@@ -1629,6 +2905,7 @@ const practiceModules = [
   },
   {
     title: "Behavior Prediction",
+    visualId: "practice-behavior-prediction",
     goal:
       "Start tracking before the decisive moment.",
     steps: [
@@ -1642,6 +2919,7 @@ const practiceModules = [
   },
   {
     title: "Cold and Dust Workflow",
+    visualId: "practice-cold-dust-workflow",
     goal:
       "Be ready within two minutes of parking in predawn cold.",
     steps: [
@@ -1655,6 +2933,7 @@ const practiceModules = [
   },
   {
     title: "Pre-trip Readiness Checklist",
+    visualId: "practice-readiness-checklist",
     goal:
       "Arrive with the muscle memory already built.",
     steps: [
@@ -1701,30 +2980,35 @@ const inspirationLinks = [
   {
     title: "Cornell / Marie Read Bosque article",
     url: "https://www.allaboutbirds.org/news/bosque-del-apache-new-mexico-a-bird-photographers-playground/",
+    sourceLabel: "Cornell",
     note:
       "Inspiration-only photos and excellent field examples. Do not reuse images without permission.",
   },
   {
     title: "USFWS Bosque media library",
     url: "https://www.fws.gov/media-library?search=Bosque%20del%20Apache",
+    sourceLabel: "USFWS",
     note:
       "Best place to look for public-domain or agency-credit refuge images.",
   },
   {
     title: "eBird Bosque del Apache illustrated checklist",
     url: "https://ebird.org/hotspot/L130166",
+    sourceLabel: "eBird",
     note:
       "Use for subject inspiration and seasonal expectations; image licensing varies by contributor.",
   },
   {
     title: "Flickr search: Bosque del Apache cranes",
     url: "https://www.flickr.com/search/?text=Bosque%20del%20Apache%20sandhill%20cranes",
+    sourceLabel: "Flickr",
     note:
       "Inspiration only unless a specific image has a compatible Creative Commons license.",
   },
   {
     title: "500px search: Bosque del Apache",
     url: "https://500px.com/search?q=Bosque%20del%20Apache&type=photos",
+    sourceLabel: "500px",
     note:
       "Good for composition study. Treat as inspiration-only.",
   },
@@ -1746,6 +3030,154 @@ function el(tag, className = "", html = "") {
 
 function externalLink(url, label = "Source") {
   return `<a href="${url}" target="_blank" rel="noreferrer">${label}</a>`;
+}
+
+function sourceInitials(text) {
+  return text
+    .split(/\s+/)
+    .filter(Boolean)
+    .slice(0, 2)
+    .map((part) => part[0])
+    .join("")
+    .toUpperCase();
+}
+
+function renderGeneratedPreview(id, options = {}) {
+  const visual = visualById.get(id) || generatedVisuals[0];
+  const classes = ["planning-preview", options.className || ""].filter(Boolean).join(" ");
+  const caption = options.caption || visual.caption;
+  const label = options.label || "Generated planning preview";
+  return `<figure class="${classes}">
+    <img src="${visual.src}" alt="${visual.alt}" width="1536" height="1024" loading="${options.loading || "lazy"}" decoding="async" />
+    <figcaption>
+      <span>${label}</span>
+      ${caption}
+    </figcaption>
+  </figure>`;
+}
+
+function renderVisualLightbox(titleId = "visual-lightbox-title") {
+  return `<div class="gallery-lightbox" hidden role="dialog" aria-modal="true" aria-labelledby="${titleId}">
+    <div class="gallery-lightbox-backdrop" data-gallery-close></div>
+    <article class="gallery-lightbox-panel">
+      <div class="gallery-lightbox-image-wrap">
+        <img class="gallery-lightbox-image" alt="" width="1536" height="1024" />
+      </div>
+      <aside class="gallery-lightbox-copy">
+        <button class="gallery-lightbox-close" type="button" data-gallery-close aria-label="Close full image">Close</button>
+        <p class="eyebrow">Generated teaching image</p>
+        <h3 class="gallery-lightbox-title" id="${titleId}"></h3>
+        <p class="gallery-lightbox-note"></p>
+        <dl class="gallery-tech-list">
+          <div><dt>Scenario / location</dt><dd data-gallery-field="supposedLocation"></dd></div>
+          <div><dt>Lens</dt><dd data-gallery-field="lens"></dd></div>
+          <div><dt>Focal length</dt><dd data-gallery-field="focalLength"></dd></div>
+          <div><dt>Aperture</dt><dd data-gallery-field="aperture"></dd></div>
+          <div><dt>Shutter speed</dt><dd data-gallery-field="shutterSpeed"></dd></div>
+        </dl>
+        <section class="gallery-technique">
+          <h4>Technique</h4>
+          <p data-gallery-field="technique"></p>
+        </section>
+        <a class="button-link gallery-open-original" href="#" target="_blank" rel="noreferrer">Open full image</a>
+      </aside>
+    </article>
+  </div>`;
+}
+
+function renderVisualTechMeta(id, options = {}) {
+  const lesson = visualLessons[id];
+  if (!lesson) return "";
+  const classes = ["visual-tech-meta", options.compact ? "is-compact" : ""].filter(Boolean).join(" ");
+  const fields = [
+    ["Lens", lesson.lens],
+    ["Focal length", lesson.focalLength],
+    ["Aperture", lesson.aperture],
+    ["Shutter speed", lesson.shutterSpeed],
+    ["Technique", lesson.technique],
+  ];
+  return `<dl class="${classes}">
+    ${fields
+      .map(
+        ([label, value]) => `<div class="${label === "Technique" ? "is-technique" : ""}">
+          <dt>${label}</dt>
+          <dd>${value}</dd>
+        </div>`
+      )
+      .join("")}
+  </dl>`;
+}
+
+function renderTeachingPreview(id, options = {}) {
+  const visual = visualById.get(id) || generatedVisuals[0];
+  const classes = ["planning-preview", "teaching-preview", options.className || ""]
+    .filter(Boolean)
+    .join(" ");
+  const caption = options.caption || visual.caption;
+  const label = options.label || "Generated teaching preview";
+  return `<figure class="${classes}">
+    <button class="visual-expand-button" type="button" data-visual-id="${id}" aria-label="Open full image: ${visual.title}">
+      <img src="${visual.src}" alt="${visual.alt}" width="1536" height="1024" loading="${options.loading || "lazy"}" decoding="async" />
+      <span class="visual-expand-cue">Open full image</span>
+    </button>
+    <figcaption>
+      <span>${label}</span>
+      ${caption}
+      ${renderVisualTechMeta(id, { compact: options.compact })}
+    </figcaption>
+  </figure>`;
+}
+
+function renderLodgingPreview(item) {
+  const visual = visualById.get(item.visualId);
+  if (!visual) {
+    return `<a class="hotel-photo hotel-photo-link" href="${item.galleryUrl}" target="_blank" rel="noreferrer">
+      ${renderLinkOnlyVisual(item.name, item.galleryLabel, "Official gallery link")}
+    </a>`;
+  }
+
+  return `<figure class="hotel-photo hotel-generated-photo">
+    <a class="visual-expand-button hotel-preview-button" href="${visual.src}" target="_blank" rel="noreferrer" data-visual-id="${visual.id}" aria-label="Open generated lodging preview: ${visual.title}">
+      <img src="${visual.src}" alt="${visual.alt}" width="1536" height="1024" loading="lazy" decoding="async" />
+      <span class="visual-expand-cue">Open full image</span>
+    </a>
+    <figcaption>
+      <span>Reference-based generated preview</span>
+      ${visual.caption}
+    </figcaption>
+  </figure>`;
+}
+
+function renderVisualMini(id, note = "Generated planning preview") {
+  const visual = visualById.get(id) || generatedVisuals[0];
+  return `<div class="visual-mini">
+    <img src="${visual.src}" alt="${visual.alt}" width="1536" height="1024" loading="lazy" decoding="async" />
+    <span>${note}</span>
+  </div>`;
+}
+
+function renderLinkOnlyVisual(title, label, note = "Link only") {
+  return `<div class="link-only-visual" aria-label="${title}">
+    <span>${sourceInitials(label || title)}</span>
+    <strong>${label || title}</strong>
+    <em>${note}</em>
+  </div>`;
+}
+
+function renderGearPhoto(item) {
+  if (!item.image) {
+    return `<a class="gear-photo gear-photo-link" href="${item.photo}" target="_blank" rel="noreferrer">
+      ${renderLinkOnlyVisual(item.name, item.photoLabel, "Product photo link")}
+    </a>`;
+  }
+
+  return `<a class="gear-photo gear-photo-image" href="${item.photo}" target="_blank" rel="noreferrer" aria-label="Open official product page for ${item.name}">
+    <img src="${item.image}" alt="${item.name}" width="760" height="520" loading="lazy" decoding="async" onerror="this.closest('.gear-photo-image')?.classList.add('is-broken')" />
+    <span class="gear-photo-source">${item.photoLabel}</span>
+    <div class="gear-photo-fallback">
+      ${renderLinkOnlyVisual(item.name, item.photoLabel, "Product photo link")}
+    </div>
+  </a>`;
 }
 
 function loadStylesheetOnce(href) {
@@ -1834,6 +3266,100 @@ function renderOverview() {
         <p>Some mornings want tight 500-800mm action. Others want geese, sky, water, mountains, and sound in one frame. Keep the plan flexible enough to make both kinds of image.</p>
       </article>
     </section>`;
+}
+
+function renderGallery() {
+  const root = document.querySelector("#gallery");
+  root.innerHTML = `
+    <div class="section-title">
+      <div>
+        <p class="eyebrow">Generated inspiration gallery</p>
+        <h2>Gallery</h2>
+      </div>
+      <p>Generated teaching images for shot inspiration. Open any image for the full version, supposed field location, camera settings, and the technique to practice.</p>
+    </div>
+    <div class="generated-photo-gallery" aria-label="Generated Bosque inspiration photos">
+      ${generatedVisuals
+        .map(
+          (visual) => {
+            const lesson = galleryLessons[visual.id];
+            return `<button class="generated-photo-card" type="button" data-visual-id="${visual.id}" aria-label="Open ${visual.title}">
+              <img src="${visual.src}" alt="${visual.alt}" width="1536" height="1024" loading="eager" decoding="async" />
+              <span class="generated-photo-caption">
+                <b>${visual.title}</b>
+                <span>${lesson.supposedLocation}</span>
+              </span>
+            </button>`;
+          }
+        )
+        .join("")}
+    </div>
+    ${renderVisualLightbox("gallery-lightbox-title")}`;
+  setupVisualLightbox(root);
+}
+
+function setupVisualLightbox(root) {
+  const overlay = root.querySelector(".gallery-lightbox");
+  if (!overlay) return;
+
+  root.querySelectorAll("[data-visual-id], [data-gallery-id]").forEach((trigger) => {
+    if (trigger.dataset.lightboxBound === "true") return;
+    trigger.dataset.lightboxBound = "true";
+    trigger.addEventListener("click", (event) => {
+      const visualId = trigger.getAttribute("data-visual-id") || trigger.getAttribute("data-gallery-id");
+      if (visualId && openVisualLightbox(overlay, visualId)) {
+        event.preventDefault();
+        event.stopPropagation();
+      }
+    });
+  });
+
+  const close = () => {
+    overlay.hidden = true;
+    document.body.classList.remove("gallery-lock");
+  };
+
+  overlay.querySelectorAll("[data-gallery-close]").forEach((button) => {
+    button.addEventListener("click", close);
+  });
+  overlay.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") close();
+  });
+}
+
+function openVisualLightbox(overlay, id) {
+  const visual = visualById.get(id);
+  const lesson = visualLessons[id];
+  if (!overlay || !visual || !lesson) return false;
+
+  const image = overlay.querySelector(".gallery-lightbox-image");
+  const title = overlay.querySelector(".gallery-lightbox-title");
+  const note = overlay.querySelector(".gallery-lightbox-note");
+  const originalLink = overlay.querySelector(".gallery-open-original");
+  const fields = {
+    supposedLocation: overlay.querySelector('[data-gallery-field="supposedLocation"]'),
+    lens: overlay.querySelector('[data-gallery-field="lens"]'),
+    focalLength: overlay.querySelector('[data-gallery-field="focalLength"]'),
+    aperture: overlay.querySelector('[data-gallery-field="aperture"]'),
+    shutterSpeed: overlay.querySelector('[data-gallery-field="shutterSpeed"]'),
+    technique: overlay.querySelector('[data-gallery-field="technique"]'),
+  };
+
+  image.src = visual.src;
+  image.alt = visual.alt;
+  title.textContent = visual.title;
+  note.textContent =
+    visual.category === "Travel"
+      ? `${visual.caption} Use this as a planning and teaching reference, not proof of actual hotel or property conditions.`
+      : `${visual.caption} Use this as inspiration and a practice target, not proof of actual December 2026 field conditions.`;
+  Object.entries(fields).forEach(([key, node]) => {
+    if (node) node.textContent = lesson[key];
+  });
+  originalLink.href = visual.src;
+  overlay.hidden = false;
+  document.body.classList.add("gallery-lock");
+  overlay.querySelector(".gallery-lightbox-close")?.focus();
+  return true;
 }
 
 async function renderGuide() {
@@ -2009,6 +3535,7 @@ function renderItinerary() {
         <p>${day.detail}</p>
       </section>`;
     day.slots.forEach((slot) => {
+      const visualPlan = visualPlanForSlot(day, slot);
       timeline.append(
         el(
           "article",
@@ -2025,6 +3552,13 @@ function renderItinerary() {
           <div>
             <h3>Position</h3>
             <p class="card-copy">${slot.position}</p>
+          </div>
+          <div class="slot-visual">
+            ${renderGeneratedPreview(visualPlan.visualId, { className: "slot-preview" })}
+            <h4>Five expected photo types</h4>
+            <ol class="expected-list">
+              ${visualPlan.expected.map((item) => `<li>${item}</li>`).join("")}
+            </ol>
           </div>`
         )
       );
@@ -2049,7 +3583,7 @@ function renderWindows() {
       <button class="window-tab" data-window="Mid-morning">Mid-morning</button>
       <button class="window-tab" data-window="Sunset">Sunset</button>
     </div>
-    <div class="grid-2" id="window-results"></div>`;
+    <div id="window-results"></div>`;
   const result = root.querySelector("#window-results");
   const draw = (windowName) => {
     const matches = tripDays.flatMap((day) =>
@@ -2057,17 +3591,28 @@ function renderWindows() {
         .filter((slot) => slot.window === windowName)
         .map((slot) => ({ ...slot, date: day.date, label: day.label, theme: day.theme }))
     );
-    result.innerHTML = matches
-      .map(
-        (slot) => `<article class="gear-card">
+    result.innerHTML = `
+      <section class="window-visual-grid" aria-label="${windowName} generated examples">
+        ${(photoWindowVisuals[windowName] || [])
+          .map((visualId) => renderGeneratedPreview(visualId, { className: "window-preview" }))
+          .join("")}
+      </section>
+      <div class="grid-2">
+        ${matches
+          .map((slot) => {
+            const day = tripDays.find((item) => item.date === slot.date);
+            const visualPlan = visualPlanForSlot(day, slot);
+            return `<article class="gear-card window-card">
+          ${renderVisualMini(visualPlan.visualId)}
           <p class="eyebrow">${slot.date} / ${slot.label}</p>
           <h3>${slot.place}</h3>
           <p class="card-copy">${slot.goal}</p>
           <p><b>Field note:</b> ${slot.position}</p>
           <div class="tag-row"><span class="tag ${windowName === "Sunrise" ? "sunrise" : windowName === "Sunset" ? "sunset" : ""}">${windowName}</span><span class="tag">${slot.theme}</span></div>
-        </article>`
-      )
-      .join("");
+        </article>`;
+          })
+          .join("")}
+      </div>`;
   };
   root.querySelectorAll(".window-tab").forEach((button) => {
     button.addEventListener("click", () => {
@@ -2137,22 +3682,23 @@ async function renderTravel() {
       </div>
       <p>Socorro remains the photography-first base. The hotel-specific map stays here, separate from the main photography map.</p>
     </div>
+    <section class="panel rights-callout">
+      <div>
+        <p class="eyebrow">Hotel photo policy</p>
+        <h3>Reference-based previews here; real hotel photos stay linked.</h3>
+        <p class="card-copy">The lodging cards use generated previews grounded in checked hotel/property photo references, so the travel section has visual context without republishing copyrighted hotel imagery. Use the official gallery or property link on each card to inspect the literal rooms, exterior, and amenities before booking.</p>
+      </div>
+      ${renderGeneratedPreview("travel-workflow", { className: "callout-preview" })}
+    </section>
     <div class="grid-2">
       ${lodgingLocations
         .map((item) => {
-          const isImage = /\.(jpg|jpeg|png|webp)(\?|$)/i.test(item.image) || item.image.includes("/is/image/");
           return `<article class="lodging-card" data-rank="${item.rank}">
             <div class="rank-line">
               <span class="rank">${item.rank}</span>
               ${item.badge ? `<span class="meta-pill">${item.badge}</span>` : ""}
             </div>
-            <a class="hotel-photo ${isImage ? "" : "hotel-photo-link"}" href="${item.image}" target="_blank" rel="noreferrer">
-              ${
-                isImage
-                  ? `<img src="${item.image}" alt="${item.name}" loading="lazy" decoding="async" />`
-                  : `<span>${item.imageLabel}</span>`
-              }
-            </a>
+            ${renderLodgingPreview(item)}
             <h3>${item.name}</h3>
             <div class="lodging-meta">
               <span class="meta-pill">${item.area}</span>
@@ -2162,7 +3708,8 @@ async function renderTravel() {
             <p><b>${item.best}</b></p>
             <p class="card-copy">${item.note}</p>
             <p class="muted">${item.watch}</p>
-            ${externalLink(item.image, item.imageLabel)}
+            <p class="muted">${item.galleryRights}</p>
+            ${externalLink(item.galleryUrl, item.galleryLabel)}
           </article>`;
         })
         .join("")}
@@ -2176,7 +3723,9 @@ async function renderTravel() {
         <p>This map is intentionally lodging-only, with the refuge visitor center as the reference point.</p>
       </div>
       <div id="lodging-map-host"></div>
-    </section>`;
+    </section>
+    ${renderVisualLightbox("travel-lightbox-title")}`;
+  setupVisualLightbox(root);
   await renderMapInto("#lodging-map-host", lodgingLocations, {
     mapId: "lodging-map",
     globalName: "lodgingMapState",
@@ -2252,7 +3801,9 @@ function renderGear() {
           </article>`
         )
         .join("")}
-    </div>`;
+    </div>
+    ${renderLensLengthScale()}
+    ${renderLensWeightScale()}`;
 
   const results = root.querySelector(".gear-results");
   const draw = (system) => {
@@ -2290,15 +3841,8 @@ function renderGear() {
     results.innerHTML = `<div class="gear-detail-grid">
       ${items
         .map((item) => {
-          const hasImage = item.image;
           return `<article class="gear-detail-card">
-            <a class="gear-photo ${hasImage ? "" : "gear-photo-link"}" href="${item.photo}" target="_blank" rel="noreferrer">
-              ${
-                hasImage
-                  ? `<img src="${item.image}" alt="${item.name}" loading="lazy" decoding="async" />`
-                  : `<span>${item.photoLabel}</span>`
-              }
-            </a>
+            ${renderGearPhoto(item)}
             <div class="gear-detail-copy">
               <p class="eyebrow">${item.system}</p>
               <h3>${item.name}</h3>
@@ -2345,7 +3889,7 @@ function renderPractice() {
         <p class="eyebrow">Beginning to end</p>
         <h2>Practice</h2>
       </div>
-      <p>This section now works like a pre-flight curriculum: camera setup, modes, shutter speeds, physical handling, support, exposure, behavior, cold workflow, and homework.</p>
+      <p>A teaching hub for the nine pre-trip techniques. Open any card for the full lesson, and open any generated image for the full-size teaching view with lens, focal length, aperture, shutter speed, and technique notes.</p>
     </div>
     <section class="panel">
       <p class="eyebrow">Reading stack</p>
@@ -2353,21 +3897,126 @@ function renderPractice() {
         ${bookStack.map((book) => `<span class="tag">${book}</span>`).join("")}
       </div>
     </section>
-    <div class="practice-list">
+    <section class="filter-practice-section dedicated-filter-section">
+      <div class="section-title compact-title">
+        <div>
+          <p class="eyebrow">Dedicated filter practice</p>
+          <h2>Filter Kit And Drills</h2>
+        </div>
+        <p>Practice filters as handling tools, not as permanent glass on every lens. The default for fast bird action is hood on and no filter unless weather protection is genuinely needed.</p>
+      </div>
+      <div class="filter-practice-layout">
+        ${renderTeachingPreview("filter-practice", {
+          className: "filter-preview",
+          label: "Generated filter teaching preview",
+          loading: "eager",
+        })}
+        <div>
+          <div class="filter-kit-grid">
+            ${filterGuidance
+              .map(
+                (item) => `<article class="filter-kit-card">
+                  <h3>${item.title}</h3>
+                  <p class="card-copy">${item.note}</p>
+                </article>`
+              )
+              .join("")}
+          </div>
+          <div class="filter-drill-grid">
+            ${filterPracticePlan
+              .map(
+                (item) => `<article class="filter-drill-card">
+                  <h3>${item.title}</h3>
+                  <p><b>Bring:</b> ${item.bring}</p>
+                  <p><b>Rehearse:</b> ${item.rehearse}</p>
+                  <p class="muted"><b>Avoid:</b> ${item.avoid}</p>
+                </article>`
+              )
+              .join("")}
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="section-title compact-title practice-technique-title">
+      <div>
+        <p class="eyebrow">1 to 9</p>
+        <h2>Nine Technique Cards</h2>
+      </div>
+      <p>Use this as the quick table of contents. Each card opens a deeper lesson with the image larger and the steps separated for practice.</p>
+    </div>
+    <div class="practice-list practice-card-grid">
       ${practiceModules
         .map(
-          (module, index) => `<article class="practice-card">
-            <div class="practice-number">${index + 1}</div>
-            <div>
-              <h3>${module.title}</h3>
-              <p class="card-copy">${module.goal}</p>
-              <ul class="kit-list">${module.steps.map((step) => `<li>${step}</li>`).join("")}</ul>
-              <p class="homework"><b>Homework:</b> ${module.homework}</p>
+          (practiceModule, index) => `<article class="practice-card">
+            <div class="practice-card-header">
+              <div class="practice-number">${index + 1}</div>
+              <div>
+                <p class="eyebrow">Technique ${index + 1}</p>
+                <h3>${practiceModule.title}</h3>
+              </div>
+            </div>
+            ${practiceModule.visualId ? `<div class="practice-visual-wrap">${renderTeachingPreview(practiceModule.visualId, { className: "practice-illustration", label: "Generated technique preview", compact: true, loading: "eager" })}</div>` : ""}
+            <div class="practice-card-copy">
+              <p class="card-copy">${practiceModule.goal}</p>
+              <button class="button-link practice-open-button" type="button" data-jump="practice-${index + 1}">Open lesson</button>
             </div>
           </article>`
         )
         .join("")}
-    </div>`;
+    </div>
+    ${renderVisualLightbox("practice-lightbox-title")}`;
+  setupVisualLightbox(root);
+}
+
+function renderPracticeDetail(index) {
+  const practiceModule = practiceModules[index];
+  const root = document.querySelector(`#practice-${index + 1}`);
+  if (!root || !practiceModule) return;
+
+  const lesson = visualLessons[practiceModule.visualId];
+  root.innerHTML = `
+    <button class="button-link secondary practice-back-button" type="button" data-jump="practice">Back to Practice</button>
+    <section class="practice-detail-hero">
+      <div class="practice-detail-copy">
+        <p class="eyebrow">Technique ${index + 1} of ${practiceModules.length}</p>
+        <h2>${practiceModule.title}</h2>
+        <p>${practiceModule.goal}</p>
+        <dl class="visual-tech-meta practice-detail-meta">
+          <div><dt>Lens</dt><dd>${lesson.lens}</dd></div>
+          <div><dt>Focal length</dt><dd>${lesson.focalLength}</dd></div>
+          <div><dt>Aperture</dt><dd>${lesson.aperture}</dd></div>
+          <div><dt>Shutter speed</dt><dd>${lesson.shutterSpeed}</dd></div>
+          <div class="is-technique"><dt>Technique</dt><dd>${lesson.technique}</dd></div>
+        </dl>
+      </div>
+      <div class="practice-detail-visual">
+        ${renderTeachingPreview(practiceModule.visualId, {
+          className: "practice-detail-preview",
+          label: "Generated high-resolution teaching preview",
+          loading: "eager",
+        })}
+      </div>
+    </section>
+    <section class="practice-detail-grid">
+      <article class="panel">
+        <p class="eyebrow">Field steps</p>
+        <h3>What to rehearse</h3>
+        <ol class="kit-list practice-step-list">${practiceModule.steps.map((step) => `<li>${step}</li>`).join("")}</ol>
+      </article>
+      <article class="panel">
+        <p class="eyebrow">Homework</p>
+        <h3>Proof before travel</h3>
+        <p class="card-copy">${practiceModule.homework}</p>
+      </article>
+      <article class="panel">
+        <p class="eyebrow">How to read the image</p>
+        <h3>Use the generated preview as a checklist.</h3>
+        <p class="card-copy">${lesson.supposedLocation}</p>
+        <p class="homework"><b>Look for:</b> whether the image gives you a repeatable target for stance, timing, exposure, motion, or workflow. The goal is not to copy the generated frame; it is to know what decision you are practicing.</p>
+      </article>
+    </section>
+    ${renderVisualLightbox(`practice-${index + 1}-lightbox-title`)}`;
+  setupVisualLightbox(root);
 }
 
 function renderInspiration() {
@@ -2398,6 +4047,14 @@ function renderInspiration() {
         )
         .join("")}
     </div>
+    <section class="panel rights-callout inspiration-policy">
+      <div>
+        <p class="eyebrow">Thumbnail discipline</p>
+        <h3>External references stay link-only unless a license is recorded.</h3>
+        <p class="card-copy">Copyrighted article, portfolio, product, hotel, and checklist photos are linked for reference only and are not reused as project assets unless a license or permission is recorded. Search-style cards below identify the source without caching its images.</p>
+      </div>
+      ${renderGeneratedPreview("snow-goose-blastoff", { className: "callout-preview" })}
+    </section>
     <div class="section-title compact-title support-title">
       <div>
         <p class="eyebrow">More places to look</p>
@@ -2408,7 +4065,10 @@ function renderInspiration() {
     <div class="grid-2">
       ${inspirationLinks
         .map(
-          (item) => `<article class="evidence-card">
+          (item) => `<article class="evidence-card link-reference-card">
+            <a href="${item.url}" target="_blank" rel="noreferrer" class="reference-thumb">
+              ${renderLinkOnlyVisual(item.title, item.sourceLabel, "Inspiration link")}
+            </a>
             <h3>${item.title}</h3>
             <p class="card-copy">${item.note}</p>
             ${externalLink(item.url, "Open reference")}
@@ -2468,6 +4128,7 @@ function renderMedia() {
           ${primarySources
             .map(
               (item, index) => `<article class="priority-source-card ${index === 0 ? "is-lead" : ""}">
+                ${renderVisualMini(visualIdForMedia(item), "Generated preview; source photo not reused")}
                 <div class="media-meta">
                   <span>${item.date}</span>
                   <span>${item.kind}</span>
@@ -2546,7 +4207,7 @@ function renderMedia() {
             <p class="eyebrow">Links and citations</p>
             <h3>Source index</h3>
           </div>
-          <p>Article photos remain inspiration-only unless the source license explicitly permits reuse.</p>
+          <p>Article photos remain inspiration-only unless the source license explicitly permits reuse. The thumbnails in this tab are generated planning previews or link-only source cards, not scraped article images.</p>
         </div>
         <div class="citation-list">
           ${mediaArticles
@@ -2569,6 +4230,7 @@ function renderMedia() {
       .map(
         (item, index) => `<article class="media-card article-card ${index === 0 && filter === "All" ? "is-featured" : ""}">
           <div class="article-kicker">
+            ${renderVisualMini(visualIdForMedia(item), "Generated preview; source photo not reused")}
             <div class="media-meta">
               <span>${item.date}</span>
               <span>${item.kind}</span>
@@ -2596,6 +4258,16 @@ function renderMedia() {
   draw("All");
 }
 
+function visualIdForSource(source) {
+  const text = `${source.topic} ${source.title}`;
+  if (/lodging|hotel|travel|flight|rental|airport/i.test(text)) return "travel-workflow";
+  if (/gear|lens|camera|specs|filter|book/i.test(text)) return "filter-practice";
+  if (/crane|festival/i.test(text)) return "crane-roost-dawn";
+  if (/goose|image license|photo guide|media/i.test(text)) return "snow-goose-blastoff";
+  if (/map|loop|auto tour|field|safari/i.test(text)) return "farm-field-feeding";
+  return "wetland-deck";
+}
+
 function renderSources() {
   const root = document.querySelector("#sources");
   root.innerHTML = `
@@ -2606,10 +4278,15 @@ function renderSources() {
       </div>
       <p>Current access, travel, lodging, pricing, specs, road, and bird-location notes should be rechecked after final booking and again in the week before travel.</p>
     </div>
+    <section class="panel source-policy">
+      <p class="eyebrow">Visual source cards</p>
+      <p class="card-copy">Thumbnails here are generated planning previews chosen by source topic. They help recognize source categories; they are not screenshots, scraped article photos, or hotel/product images.</p>
+    </section>
     <div class="timeline">
       ${sources
         .map(
           (source) => `<article class="source-row">
+            <div class="source-thumb">${renderVisualMini(visualIdForSource(source), "Topic preview")}</div>
             <div><span class="tag">${source.topic}</span></div>
             <div>
               <h3><a href="${source.url}" target="_blank" rel="noreferrer">${source.title}</a></h3>
@@ -2629,6 +4306,7 @@ const viewAliases = {
 
 const viewRenderers = {
   overview: renderOverview,
+  gallery: renderGallery,
   guide: renderGuide,
   map: renderMap,
   itinerary: renderItinerary,
@@ -2640,6 +4318,10 @@ const viewRenderers = {
   media: renderMedia,
   sources: renderSources,
 };
+
+practiceModules.forEach((_, index) => {
+  viewRenderers[`practice-${index + 1}`] = () => renderPracticeDetail(index);
+});
 
 const renderedViews = new Map();
 
@@ -2706,14 +4388,19 @@ function syncViewUrls(id, mode = "push") {
 
 async function showView(id, options = {}) {
   const viewId = normalizeViewId(id);
+  const activeTabId = viewId.startsWith("practice-") ? "practice" : viewId;
   document.querySelectorAll(".tab").forEach((tab) => {
-    const active = tab.dataset.view === viewId;
+    const active = tab.dataset.view === activeTabId;
     tab.classList.toggle("is-active", active);
     if (active) {
       tab.setAttribute("aria-current", "page");
     } else {
       tab.removeAttribute("aria-current");
     }
+  });
+  document.querySelector(`.tab[data-view="${activeTabId}"]`)?.scrollIntoView({
+    block: "nearest",
+    inline: "center",
   });
   document.querySelectorAll(".view").forEach((view) => {
     view.classList.toggle("is-active", view.id === viewId);
@@ -2727,6 +4414,8 @@ async function showView(id, options = {}) {
   } catch (error) {
     console.error(`Could not render ${viewId} view`, error);
   }
+
+  window.scrollTo({ top: 0, left: 0, behavior: "auto" });
 
   setTimeout(() => {
     window.dispatchEvent(new Event("resize"));
@@ -2747,6 +4436,16 @@ function initTabs() {
   });
   document.addEventListener("click", (event) => {
     if (!(event.target instanceof Element)) return;
+    const visualTrigger = event.target.closest("[data-visual-id], [data-gallery-id]");
+    if (visualTrigger) {
+      const root = visualTrigger.closest(".view");
+      const overlay = root?.querySelector(".gallery-lightbox");
+      const visualId = visualTrigger.getAttribute("data-visual-id") || visualTrigger.getAttribute("data-gallery-id");
+      if (overlay && visualId && openVisualLightbox(overlay, visualId)) {
+        event.preventDefault();
+        return;
+      }
+    }
     const trigger = event.target.closest("[data-jump]");
     if (!trigger) return;
     event.preventDefault();

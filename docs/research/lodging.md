@@ -46,6 +46,19 @@ Checked June 3, 2026. Direct brand pages were attempted for the preferred Decemb
 
 Conclusion: use the Expedia exact-date snapshot for planning and then do a final direct booking-page check manually in the browser before purchase. Do not treat any total as locked until the chosen direct booking page shows the room type, taxes/fees, payment timing, and cancellation deadline.
 
+## Official Photo / Gallery Links
+
+Checked June 4, 2026. Hotel photos are useful for screening room condition and property expectations, but brand/property photos are copyrighted third-party material unless permission says otherwise. The website uses reference-based generated lodging previews for visual context and links to official galleries or property pages for literal hotel photos; do not cache or republish hotel images.
+
+| Place | Official Photo / Gallery Link | Publishing Treatment | Current Caveat |
+|---|---|---|---|
+| Comfort Inn & Suites Socorro | [Choice official property photos](https://www.choicehotels.com/new-mexico/socorro/comfort-inn-hotels/nm126) | Reference-based generated preview plus official link | Preview regenerated from checked Choice exterior, room, and breakfast photo cues; Choice images are not republished. |
+| Best Western Socorro Hotel & Suites | [Best Western official property page](https://www.bestwestern.com/en_US/book/hotels-in-socorro/best-western-socorro-hotel-suites/propertyCode.32105.html) | Conservative reference-based generated preview plus official link | Official Best Western page blocked automated inspection on June 4, 2026; recheck visually in browser before booking. |
+| Holiday Inn Express Socorro by IHG | [IHG official gallery](https://www.ihg.com/holidayinnexpress/hotels/us/en/socorro/socnm/hoteldetail/gallery) | Reference-based generated preview plus official link | Preview regenerated from checked IHG exterior, guest-room, breakfast, and pool photo cues. |
+| Econo Lodge Inn & Suites Socorro | [Choice official property photos](https://www.choicehotels.com/new-mexico/socorro/econo-lodge-hotels/nm066) | Reference-based generated preview plus official link | Preview regenerated from checked Choice room, lobby, and breakfast photo cues; Choice images are not republished. |
+| Casa Blanca Bed and Breakfast | [Official property website](https://casablancabedandbreakfast.com/) | Reference-based generated preview plus official link | Site returned a Cloudflare 526 certificate error on June 4, 2026; preview is based on public property details and should be rechecked directly before booking. |
+| Fairfield by Marriott Inn & Suites Los Lunas | [Marriott official gallery](https://www.marriott.com/en-us/hotels/abqlf-fairfield-inn-and-suites-los-lunas/photos/) | Reference-based generated preview plus official link | Preview regenerated from the official Marriott exterior image and gallery category description; use the `en-us` gallery URL. |
+
 What current sources do support:
 
 - Holiday Inn Express Socorro: Expedia shows 9.0/10 from about 491 verified reviews, free parking, breakfast, indoor pool, no pets except service animals, and Dec 6-12 dated cards from $1,181 total. IHG confirms standard rooms/suites with king or two queen beds, mini refrigerator, microwave, Wi-Fi, and smoke-free/pet-free guest rooms.
