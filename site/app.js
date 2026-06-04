@@ -2405,6 +2405,13 @@ function shortLensLabel(name) {
     .replace("Extender RF 1.4x", "RF 1.4x TC");
 }
 
+function getLensScaleTrackWidth(itemCount) {
+  const axisWidth = 78;
+  const columnWidth = 78;
+  const columnGap = 14;
+  return axisWidth + itemCount * columnWidth + Math.max(0, itemCount - 1) * columnGap;
+}
+
 function renderLensLengthScale() {
   const scaleMax = 430;
   const ticks = [400, 350, 300, 200, 100, 0];
@@ -2470,7 +2477,7 @@ function renderLensLengthScale() {
       <span><i class="legend-chip reference"></i>12 in reference</span>
       <span><i class="legend-chip extended"></i>Full-extension length</span>
     </div>
-    <div class="lens-scale-chart" role="img" aria-label="Vertical bar chart comparing physical lens length in millimeters">
+    <div class="lens-scale-chart" style="--lens-scale-track-width: ${getLensScaleTrackWidth(items.length)}px;" role="img" aria-label="Vertical bar chart comparing physical lens length in millimeters">
       <div class="lens-scale-grid" aria-hidden="true">
         ${ticks.map((tick) => `<span class="lens-scale-tick" style="--tick: ${((tick / scaleMax) * 100).toFixed(2)};"><em>${tick} mm</em></span>`).join("")}
       </div>
@@ -2536,7 +2543,7 @@ function renderLensWeightScale() {
       <span><i class="legend-chip canon"></i>Canon</span>
       <span><i class="legend-chip reference"></i>1 L water reference</span>
     </div>
-    <div class="lens-scale-chart weight-scale-chart" role="img" aria-label="Vertical bar chart comparing lens and teleconverter weight in grams">
+    <div class="lens-scale-chart weight-scale-chart" style="--lens-scale-track-width: ${getLensScaleTrackWidth(items.length)}px;" role="img" aria-label="Vertical bar chart comparing lens and teleconverter weight in grams">
       <div class="lens-scale-grid" aria-hidden="true">
         ${ticks.map((tick) => `<span class="lens-scale-tick" style="--tick: ${((tick / scaleMax) * 100).toFixed(2)};"><em>${tick.toLocaleString()} g</em></span>`).join("")}
       </div>
@@ -3940,17 +3947,17 @@ function renderPractice() {
     <div class="practice-list practice-card-grid">
       ${practiceModules
         .map(
-          (module, index) => `<article class="practice-card">
+          (practiceModule, index) => `<article class="practice-card">
             <div class="practice-card-header">
               <div class="practice-number">${index + 1}</div>
               <div>
                 <p class="eyebrow">Technique ${index + 1}</p>
-                <h3>${module.title}</h3>
+                <h3>${practiceModule.title}</h3>
               </div>
             </div>
-            ${module.visualId ? `<div class="practice-visual-wrap">${renderTeachingPreview(module.visualId, { className: "practice-illustration", label: "Generated technique preview", compact: true, loading: "eager" })}</div>` : ""}
+            ${practiceModule.visualId ? `<div class="practice-visual-wrap">${renderTeachingPreview(practiceModule.visualId, { className: "practice-illustration", label: "Generated technique preview", compact: true, loading: "eager" })}</div>` : ""}
             <div class="practice-card-copy">
-              <p class="card-copy">${module.goal}</p>
+              <p class="card-copy">${practiceModule.goal}</p>
               <button class="button-link practice-open-button" type="button" data-jump="practice-${index + 1}">Open lesson</button>
             </div>
           </article>`
@@ -3962,18 +3969,18 @@ function renderPractice() {
 }
 
 function renderPracticeDetail(index) {
-  const module = practiceModules[index];
+  const practiceModule = practiceModules[index];
   const root = document.querySelector(`#practice-${index + 1}`);
-  if (!root || !module) return;
+  if (!root || !practiceModule) return;
 
-  const lesson = visualLessons[module.visualId];
+  const lesson = visualLessons[practiceModule.visualId];
   root.innerHTML = `
     <button class="button-link secondary practice-back-button" type="button" data-jump="practice">Back to Practice</button>
     <section class="practice-detail-hero">
       <div class="practice-detail-copy">
         <p class="eyebrow">Technique ${index + 1} of ${practiceModules.length}</p>
-        <h2>${module.title}</h2>
-        <p>${module.goal}</p>
+        <h2>${practiceModule.title}</h2>
+        <p>${practiceModule.goal}</p>
         <dl class="visual-tech-meta practice-detail-meta">
           <div><dt>Lens</dt><dd>${lesson.lens}</dd></div>
           <div><dt>Focal length</dt><dd>${lesson.focalLength}</dd></div>
@@ -3983,7 +3990,7 @@ function renderPracticeDetail(index) {
         </dl>
       </div>
       <div class="practice-detail-visual">
-        ${renderTeachingPreview(module.visualId, {
+        ${renderTeachingPreview(practiceModule.visualId, {
           className: "practice-detail-preview",
           label: "Generated high-resolution teaching preview",
           loading: "eager",
@@ -3994,12 +4001,12 @@ function renderPracticeDetail(index) {
       <article class="panel">
         <p class="eyebrow">Field steps</p>
         <h3>What to rehearse</h3>
-        <ol class="kit-list practice-step-list">${module.steps.map((step) => `<li>${step}</li>`).join("")}</ol>
+        <ol class="kit-list practice-step-list">${practiceModule.steps.map((step) => `<li>${step}</li>`).join("")}</ol>
       </article>
       <article class="panel">
         <p class="eyebrow">Homework</p>
         <h3>Proof before travel</h3>
-        <p class="card-copy">${module.homework}</p>
+        <p class="card-copy">${practiceModule.homework}</p>
       </article>
       <article class="panel">
         <p class="eyebrow">How to read the image</p>

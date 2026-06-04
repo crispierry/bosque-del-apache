@@ -2,6 +2,19 @@
 
 This file tracks requested project work that has not yet been implemented, verified, and published.
 
+## 2026-06-04 - Code Review Follow-Up Fixes
+
+Status: completed and validated June 4, 2026.
+
+Goal: fix review findings discovered after the visual teaching, lodging, and Gear scale updates.
+
+Completion notes:
+
+- Replaced the hard-coded Gear scale track width with an item-count-driven calculation so both Lens Length Scale and Lens Weight Scale remain aligned if the comparison set changes.
+- Renamed a Practice renderer local variable that collided with the main website's Next.js lint rules when the static artifact is imported.
+- Preserved the 18-column lens/teleconverter/reference comparison and existing horizontal chart scrolling behavior.
+- Rebuilt and revalidated the website artifact after the fix.
+
 ## 2026-06-04 - Gear Lens Weight Scale
 
 Status: completed and validated June 4, 2026.
