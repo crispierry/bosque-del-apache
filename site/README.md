@@ -18,14 +18,17 @@ http://localhost:4173
 
 ## Publishing Direction
 
-Configured publishing path:
+Canonical publishing path:
 
-- Netlify publish directory: `site`
-- Public website route: `/projects/bosque-del-apache`
-- Keep this as a standalone project app until research and layout stabilize.
-- Mount it through the main personal website by either copying the static output into the website's project area or proxying the standalone Netlify site from the main website.
+- Source repo: `/Users/cris/Documents/github/Bosque del Apache`
+- Website repo: `/Users/cris/Documents/github/cris pierry website`
+- Website import command: `npm run build:bosque`
+- Website artifact: `public/projects/bosque-del-apache/`
+- Public website route: `https://crispierry.com/projects/bosque-del-apache`
 
 See `../docs/site/deployment.md` for the full procedure.
+
+Direct Netlify publishing from this repo is optional preview or fallback hosting. The production `crispierry.com` route is published through the main website repo.
 
 ## Map Note
 

@@ -40,6 +40,18 @@ Core research has been refreshed as of June 3, 2026. The trip plan now uses the 
 - `site/` - static website prototype.
 - `site/bosque-del-apache-photo-plan.pdf` - offline iPad-readable PDF booklet generated from the website.
 
+## Repository Map
+
+| Surface | Location |
+| --- | --- |
+| Source repo | `/Users/cris/Documents/github/Bosque del Apache` |
+| GitHub repo | `https://github.com/crispierry/bosque-del-apache` |
+| Website repo | `/Users/cris/Documents/github/cris pierry website` |
+| Website artifact | `public/projects/bosque-del-apache/` |
+| Website route | `/projects/bosque-del-apache` |
+| Import command | `npm run build:bosque` |
+| Worktree override | `BOSQUE_DEL_APACHE_ROOT=/path/to/worktree` |
+
 ## Website Preview
 
 The prototype is currently static and can be previewed locally:
@@ -54,14 +66,56 @@ Then open:
 http://localhost:4173
 ```
 
-## Deployment
+## Publishing To crispierry.com
+
+This repository is the source of truth for the Bosque static site. The personal website publishes a committed copy of `site/` under `public/projects/bosque-del-apache/`.
+
+After changing this repo:
+
+```bash
+cd "/Users/cris/Documents/github/Bosque del Apache"
+python3 -m http.server 4173 --directory site
+git add .
+git commit -m "Describe the Bosque change"
+git push origin main
+```
+
+Then refresh the website artifact and publish the site:
+
+```bash
+cd "/Users/cris/Documents/github/cris pierry website"
+npm run build:bosque
+npm run build
+git add public/projects/bosque-del-apache data/knowledge-graph.json data/knowledge-graph-sources.json data/ama/cris/public-content-knowledge.json
+git commit -m "Update Bosque del Apache project"
+git push origin main
+```
+
+If the source change lives in a worktree instead of the canonical sibling checkout, point the website importer at that worktree:
+
+```bash
+cd "/Users/cris/Documents/github/cris pierry website"
+BOSQUE_DEL_APACHE_ROOT="/path/to/bosque worktree" npm run build:bosque
+```
+
+After the website push, wait for the Netlify production deploy for the pushed website commit to reach `ready`, then verify:
+
+```text
+https://crispierry.com/projects/bosque-del-apache
+https://crispierry.com/projects/bosque-del-apache/index.html
+https://crispierry.com/projects/bosque-del-apache/app.js
+```
+
+## Standalone Deployment
 
 This repository is configured for Netlify in `netlify.toml`.
 
 - Publish directory: `site`
 - Build command: leave blank
-- Production route: `https://crispierry.com/projects/bosque-del-apache`
+- Canonical production route: `https://crispierry.com/projects/bosque-del-apache`
 - Deployment procedure: `docs/site/deployment.md`
+
+Use standalone Netlify only for previews or fallback hosting. The canonical public production route is published through the main website repo.
 
 ## Notes
 

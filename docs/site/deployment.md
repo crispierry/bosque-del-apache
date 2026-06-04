@@ -8,17 +8,51 @@ Production URL:
 https://crispierry.com/projects/bosque-del-apache
 ```
 
-This project is a standalone static site in `site/`. The Netlify configuration in the repository root publishes that directory directly.
+This project is a standalone static site in `site/`. The canonical production route on `crispierry.com` is published by the main website repo, which copies this repo's `site/` folder into its committed public artifact.
+
+Direct Netlify hosting from this repo is useful for previews or fallback hosting, but it is not the current canonical production path.
 
 ## Current Repository Settings
 
 - Git branch: `main`
-- Netlify publish directory: `site`
-- Netlify build command: leave blank
+- Canonical website repo: `/Users/cris/Documents/github/cris pierry website`
+- Website import command: `npm run build:bosque`
+- Website artifact: `public/projects/bosque-del-apache/`
+- Website route: `/projects/bosque-del-apache`
+- Optional standalone Netlify publish directory: `site`
+- Optional standalone Netlify build command: leave blank
 - Local preview command: `python3 -m http.server 4173 --directory site`
 - Local preview URL: `http://localhost:4173/`
 
-## Netlify Site Setup
+## Canonical Website Publish
+
+1. Make and verify changes in `/Users/cris/Documents/github/Bosque del Apache`.
+2. Commit and push this repo.
+3. In `/Users/cris/Documents/github/cris pierry website`, run:
+
+```bash
+npm run build:bosque
+npm run build
+```
+
+4. Commit and push the refreshed website artifact.
+5. Wait for the website Netlify deploy to reach `ready`.
+6. Verify:
+
+```text
+https://crispierry.com/projects/bosque-del-apache
+https://crispierry.com/projects/bosque-del-apache/index.html
+https://crispierry.com/projects/bosque-del-apache/styles.css
+https://crispierry.com/projects/bosque-del-apache/app.js
+```
+
+When publishing from a nonstandard checkout or Codex worktree, run:
+
+```bash
+BOSQUE_DEL_APACHE_ROOT="/path/to/bosque-worktree" npm run build:bosque
+```
+
+## Optional Standalone Netlify Site Setup
 
 1. Push this repository to the chosen Git provider.
 2. In Netlify, create a new site from that Git repository.
@@ -41,9 +75,9 @@ The public route belongs to the main `crispierry.com` website, not DNS. A URL pa
 
 Use one of these patterns.
 
-## Option A: Publish Inside The Main Website
+## Current Pattern: Publish Inside The Main Website
 
-Use this if the main website repository should own the project page directly.
+Use this for production.
 
 1. Copy or build the files from this repository's `site/` folder into the main website's public/static output at:
 
@@ -62,7 +96,7 @@ https://crispierry.com/projects/bosque-del-apache/styles.css
 https://crispierry.com/projects/bosque-del-apache/app.js
 ```
 
-## Option B: Proxy This Netlify Site From The Main Website
+## Fallback Pattern: Proxy This Netlify Site From The Main Website
 
 Use this only if this repository remains a separate Netlify site and the main website only exposes it under the project path. This is not the current production pattern when the main website embeds `/projects/bosque-del-apache/index.html` through a Next.js route.
 

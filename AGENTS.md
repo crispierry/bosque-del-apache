@@ -39,6 +39,29 @@ When research begins:
 - Keep photography book purchase recommendations in `docs/research/books-to-buy.md`.
 - Do not overwrite user notes without checking their purpose first.
 
+## Website Publishing Contract
+
+This repository is the source of truth for the Bosque del Apache project. The main website repo publishes a committed static artifact copied from `site/`.
+
+- Source repo: `/Users/cris/Documents/github/Bosque del Apache`
+- Website repo: `/Users/cris/Documents/github/cris pierry website`
+- Published artifact in website repo: `public/projects/bosque-del-apache/`
+- Website route: `/projects/bosque-del-apache`
+- Import command in website repo: `npm run build:bosque`
+- Worktree override: `BOSQUE_DEL_APACHE_ROOT=/path/to/bosque-worktree`
+
+For a production update:
+
+1. Make and verify source changes in this repo.
+2. Commit and push this repo.
+3. In the website repo, run `npm run build:bosque`.
+4. Run `npm run build` in the website repo.
+5. Commit and push the refreshed website artifact.
+6. Wait for the website Netlify deploy to be `ready`.
+7. Verify `https://crispierry.com/projects/bosque-del-apache` and the relevant static files.
+
+If source changes live in a worktree, use `BOSQUE_DEL_APACHE_ROOT` when running the website import so the intended checkout is published.
+
 ## Naming
 
 Use "Bosque del Apache" unless the user confirms a different intended destination.
