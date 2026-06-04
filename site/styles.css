@@ -74,7 +74,8 @@ a:hover {
   backdrop-filter: blur(14px);
 }
 
-.brand-block h1 {
+.brand-block h1,
+.brand-title {
   margin: 3px 0 0;
   font-family: "Instrument Serif", Georgia, serif;
   font-size: clamp(1.45rem, 2vw, 2rem);
@@ -120,6 +121,7 @@ a:hover {
   padding: 8px 9px;
   color: var(--muted);
   font-size: 0.84rem;
+  text-decoration: none;
 }
 
 .button-link {
@@ -315,6 +317,164 @@ main {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 16px;
+}
+
+.guide-page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: clamp(28px, 5vw, 64px) clamp(16px, 5vw, 54px) 90px;
+}
+
+.guide-view-header {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 16px;
+}
+
+.guide-article {
+  display: grid;
+  gap: 28px;
+}
+
+.guide-toc {
+  border: 1px solid var(--line-soft);
+  border-radius: 8px;
+  background: var(--surface);
+  padding: clamp(16px, 3vw, 24px);
+  box-shadow: var(--shadow);
+}
+
+.guide-toc div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.guide-toc a {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 7px 10px;
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 650;
+  text-decoration: none;
+}
+
+.guide-toc a:hover {
+  border-color: var(--accent);
+  background: var(--accent);
+  color: #ffffff;
+}
+
+.guide-prose {
+  max-width: 82ch;
+  margin: 0 auto;
+  color: var(--text);
+  font-size: 1.02rem;
+  line-height: 1.76;
+}
+
+.guide-prose h1,
+.guide-prose h2,
+.guide-prose h3 {
+  color: var(--text);
+  line-height: 1.05;
+}
+
+.guide-prose h1 {
+  max-width: 760px;
+  margin: 0 0 18px;
+  font-family: "Instrument Serif", Georgia, serif;
+  font-size: clamp(3.2rem, 6vw, 5.2rem);
+  font-weight: 400;
+  line-height: 0.98;
+  letter-spacing: 0;
+}
+
+.guide-prose h2 {
+  margin: 54px 0 14px;
+  padding-top: 8px;
+  border-top: 1px solid var(--line-soft);
+  font-family: "Instrument Serif", Georgia, serif;
+  font-size: clamp(2rem, 4vw, 3.4rem);
+  font-weight: 400;
+  letter-spacing: 0;
+  scroll-margin-top: 96px;
+}
+
+.guide-prose h3 {
+  margin: 30px 0 10px;
+  font-size: 1.25rem;
+}
+
+.guide-prose p,
+.guide-prose li {
+  color: #333333;
+}
+
+.guide-prose p {
+  margin: 0 0 1rem;
+}
+
+.guide-prose ul,
+.guide-prose ol {
+  margin: 0 0 1.2rem;
+  padding-left: 1.25rem;
+}
+
+.guide-prose li + li {
+  margin-top: 0.32rem;
+}
+
+.guide-prose table {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  margin: 22px 0 30px;
+  overflow-x: auto;
+  border: 1px solid var(--line-soft);
+  border-radius: 8px;
+  border-spacing: 0;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.guide-prose thead {
+  background: var(--surface-soft);
+}
+
+.guide-prose th,
+.guide-prose td {
+  min-width: 150px;
+  border-bottom: 1px solid var(--line-soft);
+  padding: 12px 14px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.guide-prose tr:last-child td {
+  border-bottom: 0;
+}
+
+.guide-prose th {
+  color: var(--text);
+  font-size: 0.84rem;
+}
+
+.guide-prose td {
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+
+.guide-prose a {
+  font-weight: 650;
+}
+
+.guide-loader {
+  max-width: 720px;
+  margin: 0 auto;
 }
 
 .panel {
@@ -1235,6 +1395,14 @@ main {
     min-height: 380px;
   }
 
+  .guide-page {
+    padding-top: 34px;
+  }
+
+  .guide-prose {
+    max-width: none;
+  }
+
   .grid-3,
   .grid-4,
   .spec-grid {
@@ -1253,6 +1421,37 @@ main {
 
   .view {
     padding: 18px 14px 56px;
+  }
+
+  .guide-page {
+    padding: 22px 14px 64px;
+  }
+
+  .guide-view-header {
+    justify-content: flex-start;
+  }
+
+  .guide-toc div {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .guide-toc a {
+    border-radius: 6px;
+  }
+
+  .guide-prose {
+    font-size: 0.98rem;
+  }
+
+  .guide-prose h1 {
+    max-width: none;
+    font-size: clamp(3rem, 15vw, 4.4rem);
+  }
+
+  .guide-prose th,
+  .guide-prose td {
+    min-width: 220px;
   }
 
   .hero-copy {

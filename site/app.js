@@ -1593,6 +1593,7 @@ function renderOverview() {
         <h2>Bosque del Apache <span class="hero-date">Dec 6-12, 2026</span></h2>
         <p>Arrive Sunday, scout if there is light, shoot five full on-site days from Monday through Friday, and leave Saturday with backups complete. The plan is organized around sunrise, mid-morning, and sunset because the refuge changes faster than a fixed schedule.</p>
         <div class="hero-actions">
+          <button class="button-link" data-jump="guide">Read the complete guide</button>
           <a href="./bosque-del-apache-photo-plan.pdf" class="button-link">Open PDF booklet</a>
           <button class="button-link secondary" data-jump="gear">Review gear</button>
         </div>
@@ -1629,6 +1630,58 @@ function renderOverview() {
         <p>The practice section now starts with camera modes and ends with homework, backups, cold-weather readiness, and explicit standards before departure.</p>
       </article>
     </section>`;
+}
+
+async function renderGuide() {
+  const root = document.querySelector("#guide");
+  root.innerHTML = `
+    <div class="section-title">
+      <div>
+        <p class="eyebrow">Field guide</p>
+        <h2>Complete Photographer's Guide</h2>
+      </div>
+      <p>A long-form, practical guide to seasons, field positions, behavior, settings, gear, scouting, ethics, logistics, and shot planning.</p>
+    </div>
+    <section class="panel guide-loader">
+      <p class="eyebrow">Loading article</p>
+      <p class="card-copy">Opening the complete guide inside the Bosque planning workspace.</p>
+    </section>`;
+
+  try {
+    const response = await fetch("./complete-photographers-guide.html", { cache: "no-store" });
+    if (!response.ok) throw new Error(`Guide request failed: ${response.status}`);
+    const html = await response.text();
+    const doc = new DOMParser().parseFromString(html, "text/html");
+    const article = doc.querySelector(".guide-article");
+    if (!article) throw new Error("Guide article markup missing");
+    root.innerHTML = `
+      <div class="guide-view-header">
+        <a class="button-link secondary" href="./complete-photographers-guide.html">Open reader page</a>
+      </div>
+      ${article.outerHTML}`;
+    root.querySelectorAll(".guide-toc a[href^='#']").forEach((link) => {
+      link.addEventListener("click", (event) => {
+        const target = root.querySelector(link.getAttribute("href"));
+        if (!target) return;
+        event.preventDefault();
+        target.scrollIntoView({ behavior: "smooth", block: "start" });
+      });
+    });
+  } catch (error) {
+    root.innerHTML = `
+      <div class="section-title">
+        <div>
+          <p class="eyebrow">Field guide</p>
+          <h2>Complete Photographer's Guide</h2>
+        </div>
+        <p>The guide is available as a standalone page in this Bosque project.</p>
+      </div>
+      <section class="panel">
+        <h3>Open the guide</h3>
+        <p class="card-copy">The in-page article loader could not fetch the guide content in this environment.</p>
+        <a class="button-link" href="./complete-photographers-guide.html">Open reader page</a>
+      </section>`;
+  }
 }
 
 function renderMapInto(rootId, places, options = {}) {
@@ -2474,6 +2527,7 @@ function initTabs() {
 }
 
 renderOverview();
+renderGuide();
 renderMap();
 renderItinerary();
 renderWindows();

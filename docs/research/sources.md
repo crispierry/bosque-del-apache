@@ -16,6 +16,7 @@ Research refreshed June 3, 2026. Current access, lodging, pricing, road, water, 
 
 | Date Checked | Topic | Source | URL | Notes |
 |---|---|---|---|---|
+| 2026-06-03 | Complete photographer guide source audit | Project file | docs/research/complete-photographers-guide-source-audit.md | Expanded source inventory, gap analysis, newly added sources, and outdated/unreliable source notes for `The Complete Photographer's Guide to Bosque del Apache`. |
 | 2026-06-03 | Wildlife seasonality | U.S. Fish and Wildlife Service, Bosque del Apache species | https://www.fws.gov/refuge/bosque-del-apache/species | Supports early November through late January as highest bird-number period. |
 | 2026-06-03 | Access, fees, visitor center, address, restrooms | U.S. Fish and Wildlife Service, Visit Us | https://www.fws.gov/refuge/bosque-del-apache/visit-us | Visitor Center `33.804777, -106.890917`; Visitor Center and Nature Store Thursday-Monday, 9 AM-4 PM; refuge lands daily one hour before sunrise to one hour after sunset; visitor-center flush toilets 8 AM-4 PM; vault toilets at Flight Deck and Rio Viejo/Bike Trails open when the loop is open. |
 | 2026-06-03 | Auto tour access | U.S. Fish and Wildlife Service, Auto Tour | https://www.fws.gov/refuge/bosque-del-apache/visit-us/activities/auto-tour | Auto Tour Loop about 12 miles, bisected by two-way road; one-way signs, designated turnouts, 25 mph max with some 10 mph sections. |
