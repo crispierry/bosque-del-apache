@@ -1,5 +1,11 @@
 # Project Instructions
 
+## Codex Project Setup Convention
+
+When initializing any project, create the necessary documentation files at the start instead of waiting until the project is already underway.
+
+Every project should have a standalone work log. Use `docs/work-log.md` by default unless the project already has an established documentation convention. The work log should track requested work, status, implementation notes, and acceptance criteria so future Codex sessions can continue cleanly.
+
 ## Scope
 
 This project supports planning a photography-focused trip to Bosque del Apache National Wildlife Refuge.
@@ -37,6 +43,7 @@ When research begins:
 - Keep website structure under `docs/site/`.
 - Keep pre-trip photography practice drills in `docs/research/practice-techniques.md`.
 - Keep photography book purchase recommendations in `docs/research/books-to-buy.md`.
+- Keep requested work and follow-up implementation notes in `docs/work-log.md`.
 - Do not overwrite user notes without checking their purpose first.
 
 ## Website Publishing Contract
