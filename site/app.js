@@ -101,13 +101,13 @@ const sources = [
     checked: gearCheckedDate,
   },
   {
-    topic: "Safari lens research",
+    topic: "Safari lens guidance",
     title: "Digital Camera World - Best lenses for safari photography in 2026",
     url: "https://www.digitalcameraworld.com/buying-guides/best-lenses-for-safari-photography",
     checked: checkedDate,
   },
   {
-    topic: "Safari lens research",
+    topic: "Safari lens guidance",
     title: "Drew Sproule - African photo safari gear",
     url: "https://drewsproule.com/blog/the-best-camera-gear-to-pack-for-an-african-photo-safari",
     checked: checkedDate,
@@ -197,7 +197,7 @@ const photoLocations = [
     lat: 33.8593284,
     lon: -106.8766304,
     windows: ["sunrise", "sunset"],
-    confidence: "planning pin",
+    confidence: "field pin",
     note:
       "Primary crane-pool scout for dawn lift-off and evening returns. Verify legal pullouts, signs, wind direction, and active birds each day.",
   },
@@ -207,7 +207,7 @@ const photoLocations = [
     lat: 33.8545263,
     lon: -106.8778053,
     windows: ["sunrise", "sunset"],
-    confidence: "planning pin",
+    confidence: "field pin",
     note:
       "Alternate crane-pool angle for reflection, landing lanes, and mountain bands. Use only legal parking, and stay clear of the railroad and shoulders.",
   },
@@ -217,7 +217,7 @@ const photoLocations = [
     lat: 33.8515291,
     lon: -106.8785379,
     windows: ["sunrise", "sunset"],
-    confidence: "planning pin",
+    confidence: "field pin",
     note:
       "Good for adjusting against wind and light when the north pullout is crowded or the birds stage farther south.",
   },
@@ -227,7 +227,7 @@ const photoLocations = [
     lat: 33.8048326,
     lon: -106.8844325,
     windows: ["sunrise", "sunset"],
-    confidence: "planning pin",
+    confidence: "field pin",
     note:
       "Classic snow-goose blast-off position when Main Pool has water and birds. Scout the afternoon before committing a sunrise here.",
   },
@@ -237,7 +237,7 @@ const photoLocations = [
     lat: 33.7903825,
     lon: -106.8922801,
     windows: ["mid-morning"],
-    confidence: "planning pin",
+    confidence: "field pin",
     note:
       "South Loop ducks, coots, reeds, reflections, slower practice, and clean habitat frames after the first fly-out.",
   },
@@ -247,7 +247,7 @@ const photoLocations = [
     lat: 33.7992911,
     lon: -106.8842161,
     windows: ["mid-morning"],
-    confidence: "planning pin",
+    confidence: "field pin",
     note:
       "A calmer wetland viewpoint for ducks, geese, reeds, reflections, and exposure practice on bright birds.",
   },
@@ -257,7 +257,7 @@ const photoLocations = [
     lat: 33.8127697,
     lon: -106.8618949,
     windows: ["mid-morning"],
-    confidence: "planning pin",
+    confidence: "field pin",
     note:
       "North Loop wetland work with long-lens compression. Keep tripod legs compact if other visitors are present.",
   },
@@ -267,7 +267,7 @@ const photoLocations = [
     lat: 33.8158514,
     lon: -106.8611816,
     windows: ["mid-morning"],
-    confidence: "planning pin",
+    confidence: "field pin",
     note:
       "Pair with Willow Deck for ducks, distant cranes, raptors, and habitat images when the crop-field action slows.",
   },
@@ -277,7 +277,7 @@ const photoLocations = [
     lat: 33.8326838,
     lon: -106.8610046,
     windows: ["mid-morning", "sunset"],
-    confidence: "planning pin",
+    confidence: "field pin",
     note:
       "Use after fly-out for feeding cranes/geese, raptors, and flight lines. Field access and bird placement change with management activity.",
   },
@@ -287,7 +287,7 @@ const photoLocations = [
     lat: 33.7946779,
     lon: -106.8733529,
     windows: ["mid-morning"],
-    confidence: "planning pin",
+    confidence: "field pin",
     note:
       "Short-walk change of pace for marsh birds, passerines, quail, roadrunner, and texture work. Potable water is not assumed on the loop.",
   },

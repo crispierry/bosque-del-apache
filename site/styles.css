@@ -100,6 +100,7 @@ a:hover {
   overflow-x: auto;
   padding-bottom: 2px;
   -webkit-overflow-scrolling: touch;
+  overscroll-behavior-inline: contain;
   scroll-snap-type: x proximity;
   scrollbar-width: thin;
 }
@@ -1327,6 +1328,7 @@ main {
 .comparison-table td strong,
 .comparison-table td span {
   display: block;
+  overflow-wrap: anywhere;
 }
 
 .comparison-table td strong {
@@ -1453,10 +1455,29 @@ main {
     padding: 12px;
   }
 
+  .brand-block h1,
+  .brand-title {
+    font-size: 1.38rem;
+  }
+
   .top-tabs,
   .site-links {
     margin-inline: -2px;
+    max-width: 100%;
+    overflow-x: auto;
     padding-inline: 2px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .top-tabs::-webkit-scrollbar,
+  .site-links::-webkit-scrollbar {
+    display: none;
+  }
+
+  .site-links {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
   }
 
   .tab,
