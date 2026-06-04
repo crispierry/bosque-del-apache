@@ -6,6 +6,14 @@ const assets = {
   flyout: "./assets/snow-geese-flyout-lynne-braden-usfws-1800.jpg",
 };
 
+const leafletAssets = {
+  css: "https://unpkg.com/leaflet@1.9.4/dist/leaflet.css",
+  js: "https://unpkg.com/leaflet@1.9.4/dist/leaflet.js",
+  integrity: "sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=",
+};
+
+let leafletLoadPromise;
+
 const sources = [
   {
     topic: "Official refuge",
@@ -1584,6 +1592,47 @@ function externalLink(url, label = "Source") {
   return `<a href="${url}" target="_blank" rel="noreferrer">${label}</a>`;
 }
 
+function loadStylesheetOnce(href) {
+  if (document.querySelector(`link[href="${href}"]`)) return;
+  const link = document.createElement("link");
+  link.rel = "stylesheet";
+  link.href = href;
+  link.crossOrigin = "";
+  document.head.append(link);
+}
+
+function ensureLeaflet() {
+  if (window.L) return Promise.resolve(true);
+  if (leafletLoadPromise) return leafletLoadPromise;
+
+  loadStylesheetOnce(leafletAssets.css);
+  leafletLoadPromise = new Promise((resolve) => {
+    const existingScript = document.querySelector(`script[src="${leafletAssets.js}"]`);
+    const script = existingScript || document.createElement("script");
+
+    const finish = () => resolve(Boolean(window.L));
+    script.addEventListener("load", finish, { once: true });
+    script.addEventListener(
+      "error",
+      () => {
+        console.warn("Leaflet failed to load; map lists will remain available.");
+        resolve(false);
+      },
+      { once: true }
+    );
+
+    if (!existingScript) {
+      script.src = leafletAssets.js;
+      script.integrity = leafletAssets.integrity;
+      script.crossOrigin = "";
+      script.defer = true;
+      document.head.append(script);
+    }
+  });
+
+  return leafletLoadPromise;
+}
+
 function renderOverview() {
   const root = document.querySelector("#overview");
   root.innerHTML = `
@@ -1591,15 +1640,15 @@ function renderOverview() {
       <div class="hero-copy">
         <p class="eyebrow">Photography plan</p>
         <h2>Bosque del Apache <span class="hero-date">Dec 6-12, 2026</span></h2>
-        <p>Arrive Sunday, scout if there is light, shoot five full on-site days from Monday through Friday, and leave Saturday with backups complete. The plan is organized around sunrise, mid-morning, and sunset because the refuge changes faster than a fixed schedule.</p>
+        <p>Arrive Sunday, scout if there is light, shoot five full on-site days from Monday through Friday, and leave Saturday with backups complete. The plan is organized around light windows so the day can adapt to water, wind, crowds, and bird movement.</p>
         <div class="hero-actions">
-          <button class="button-link" data-jump="guide">Read the complete guide</button>
-          <a href="./bosque-del-apache-photo-plan.pdf" class="button-link">Open PDF booklet</a>
-          <button class="button-link secondary" data-jump="gear">Review gear</button>
+          <button class="button-link" data-jump="itinerary">Open itinerary</button>
+          <button class="button-link secondary" data-jump="map">Check map</button>
+          <a href="./complete-photographers-guide.html" class="button-link secondary">Read field guide</a>
         </div>
       </div>
       <figure class="hero-photo">
-        <img src="${assets.flyout}" alt="Snow geese flying over photographers at Bosque del Apache" />
+        <img src="${assets.flyout}" alt="Snow geese flying over photographers at Bosque del Apache" width="1800" height="1440" decoding="async" fetchpriority="high" />
         <figcaption>Lynne Braden / USFWS volunteer, Public Domain</figcaption>
       </figure>
     </section>
@@ -1615,19 +1664,19 @@ function renderOverview() {
     </section>
     <section class="dashboard">
       <article class="panel">
-        <p class="eyebrow">Primary decision</p>
-        <h3>Sony 200-600 is back in the center of the recommendation.</h3>
-        <p>The earlier plan underweighted the Sony FE 200-600mm. Current wildlife and safari research supports treating it as the classic Sony long wildlife lens, especially for Tanzania. For Bosque it is a strong primary long zoom; for Tanzania it pairs naturally with a 70-200mm f/2.8 on a second body.</p>
+        <p class="eyebrow">First morning</p>
+        <h3>Be parked by 6:10 AM with a roost target already chosen.</h3>
+        <p>Use the arrival scout to choose between the crane ponds, Flight Deck/Main Pool, and the strongest current roost. If the birds or wind disagree with the plan, switch locations early instead of chasing during peak light.</p>
       </article>
       <article class="panel">
-        <p class="eyebrow">Site architecture</p>
-        <h3>Photography map and lodging map are separate.</h3>
-        <p>The main map now only shows photo-relevant refuge locations. Hotel comparisons and a hotel-distance map live under Lodging, where they belong.</p>
+        <p class="eyebrow">Pack tonight</p>
+        <h3>Stage two camera roles before sleep.</h3>
+        <p>Mount the long wildlife zoom for crane and goose action, keep the 24-105 ready for flock scale and place, and set out layers, hand warmers, cards, batteries, lens cloth, beanbag, water, and snacks.</p>
       </article>
       <article class="panel">
-        <p class="eyebrow">Practice</p>
-        <h3>Train the whole workflow.</h3>
-        <p>The practice section now starts with camera modes and ends with homework, backups, cold-weather readiness, and explicit standards before departure.</p>
+        <p class="eyebrow">Field rule</p>
+        <h3>Choose the photograph before choosing the lens.</h3>
+        <p>Some mornings want tight 500-800mm action. Others want geese, sky, water, mountains, and sound in one frame. Keep the plan flexible enough to make both kinds of image.</p>
       </article>
     </section>`;
 }
@@ -1684,9 +1733,9 @@ async function renderGuide() {
   }
 }
 
-function renderMapInto(rootId, places, options = {}) {
+async function renderMapInto(rootId, places, options = {}) {
   const root = document.querySelector(rootId);
-  const hasMap = Boolean(window.L);
+  const hasMap = await ensureLeaflet();
   const mapId = options.mapId || "trip-map";
   const listClass = options.listClass || "map-list";
   const renderPlace = (place) => {
@@ -1716,11 +1765,12 @@ function renderMapInto(rootId, places, options = {}) {
     return;
   }
 
-  const map = L.map(mapId, { scrollWheelZoom: false }).setView(
+  const LRef = window.L;
+  const map = LRef.map(mapId, { scrollWheelZoom: false }).setView(
     options.center || [33.804777, -106.890917],
     options.zoom || 12
   );
-  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+  LRef.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
     maxZoom: 18,
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
   }).addTo(map);
@@ -1738,12 +1788,12 @@ function renderMapInto(rootId, places, options = {}) {
   }
 
   markerPlaces.forEach((place) => {
-    const marker = L.marker([place.lat, place.lon]).addTo(map);
+    const marker = LRef.marker([place.lat, place.lon]).addTo(map);
     marker.bindPopup(`<b>${place.name}</b><br>${place.note}<br><small>${place.confidence || place.drive || ""}</small>`);
     markers.set(place.name, marker);
   });
 
-  const bounds = L.latLngBounds(markerPlaces.map((place) => [place.lat, place.lon]));
+  const bounds = LRef.latLngBounds(markerPlaces.map((place) => [place.lat, place.lon]));
   map.fitBounds(bounds, { padding: [28, 28] });
 
   root.querySelectorAll(".map-item").forEach((button) => {
@@ -1760,7 +1810,7 @@ function renderMapInto(rootId, places, options = {}) {
   }
 }
 
-function renderMap() {
+async function renderMap() {
   const root = document.querySelector("#map");
   root.innerHTML = `
     <div class="section-title">
@@ -1771,7 +1821,7 @@ function renderMap() {
       <p>Lodging has been removed from this map. This tab is for sunrise, mid-morning, sunset, field-position, and refuge-logistics decisions only.</p>
     </div>
     <div id="photo-map-host"></div>`;
-  renderMapInto("#photo-map-host", photoLocations, {
+  await renderMapInto("#photo-map-host", photoLocations, {
     mapId: "trip-map",
     globalName: "photoMapState",
     center: [33.82, -106.88],
@@ -1882,7 +1932,7 @@ function renderWindows() {
   draw("Sunrise");
 }
 
-function renderTravel() {
+async function renderTravel() {
   const root = document.querySelector("#travel");
   root.innerHTML = `
     <div class="section-title">
@@ -1980,7 +2030,7 @@ function renderTravel() {
       </div>
       <div id="lodging-map-host"></div>
     </section>`;
-  renderMapInto("#lodging-map-host", lodgingLocations, {
+  await renderMapInto("#lodging-map-host", lodgingLocations, {
     mapId: "lodging-map",
     globalName: "lodgingMapState",
     includeRefugeMarker: true,
@@ -2426,10 +2476,39 @@ const viewAliases = {
   lodging: "travel",
 };
 
+const viewRenderers = {
+  overview: renderOverview,
+  guide: renderGuide,
+  map: renderMap,
+  itinerary: renderItinerary,
+  windows: renderWindows,
+  travel: renderTravel,
+  gear: renderGear,
+  practice: renderPractice,
+  inspiration: renderInspiration,
+  media: renderMedia,
+  sources: renderSources,
+};
+
+const renderedViews = new Map();
+
 function normalizeViewId(id) {
   const resolvedId = viewAliases[id] || id;
   const view = document.getElementById(resolvedId || "");
   return view?.classList.contains("view") ? resolvedId : defaultView;
+}
+
+function ensureViewRendered(viewId) {
+  if (renderedViews.has(viewId)) return renderedViews.get(viewId);
+  const renderer = viewRenderers[viewId];
+  if (!renderer) return Promise.resolve();
+
+  const renderPromise = Promise.resolve(renderer()).catch((error) => {
+    renderedViews.delete(viewId);
+    throw error;
+  });
+  renderedViews.set(viewId, renderPromise);
+  return renderPromise;
 }
 
 function getParentWindow() {
@@ -2474,7 +2553,7 @@ function syncViewUrls(id, mode = "push") {
   }
 }
 
-function showView(id, options = {}) {
+async function showView(id, options = {}) {
   const viewId = normalizeViewId(id);
   document.querySelectorAll(".tab").forEach((tab) => {
     const active = tab.dataset.view === viewId;
@@ -2491,6 +2570,13 @@ function showView(id, options = {}) {
   if (options.updateUrl) {
     syncViewUrls(viewId, options.replace ? "replace" : "push");
   }
+
+  try {
+    await ensureViewRendered(viewId);
+  } catch (error) {
+    console.error(`Could not render ${viewId} view`, error);
+  }
+
   setTimeout(() => {
     window.dispatchEvent(new Event("resize"));
     if (viewId === "map" && window.photoMapState) {
@@ -2508,8 +2594,12 @@ function initTabs() {
   document.querySelectorAll(".tab").forEach((button) => {
     button.addEventListener("click", () => showView(button.dataset.view, { updateUrl: true }));
   });
-  document.querySelectorAll("[data-jump]").forEach((button) => {
-    button.addEventListener("click", () => showView(button.dataset.jump, { updateUrl: true }));
+  document.addEventListener("click", (event) => {
+    if (!(event.target instanceof Element)) return;
+    const trigger = event.target.closest("[data-jump]");
+    if (!trigger) return;
+    event.preventDefault();
+    showView(trigger.dataset.jump, { updateUrl: true });
   });
   const syncFromUrl = () => {
     const viewId = requestedView();
@@ -2526,15 +2616,4 @@ function initTabs() {
   showView(requestedView(), { updateUrl: Boolean(window.location.hash || parentWindow?.location.hash), replace: true });
 }
 
-renderOverview();
-renderGuide();
-renderMap();
-renderItinerary();
-renderWindows();
-renderTravel();
-renderGear();
-renderPractice();
-renderInspiration();
-renderMedia();
-renderSources();
-initTabs();
+ensureViewRendered("overview").then(initTabs);
