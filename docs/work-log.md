@@ -2,6 +2,29 @@
 
 This file tracks requested project work that has not yet been implemented, verified, and published.
 
+## 2026-06-05 - Restore Main Website Navigation On Production Route
+
+Status: completed and validated June 5, 2026.
+
+Goal: fix the production regression where `https://crispierry.com/projects/bosque-del-apache` was serving the raw Bosque static artifact instead of the Cristiano Pierry website wrapper, which hid the main website navigation bar.
+
+Requested requirements:
+
+- Keep the Cristiano Pierry website navigation visible for the Bosque del Apache project.
+- Restore the prior wrapper behavior instead of duplicating website navigation inside the Bosque static artifact.
+- Commit, push, and publish to production.
+
+Implementation notes:
+
+- Keep `site/index.html` as the source/local static entry point in this repository.
+- In the main website repo, publish that source entry as `planner.html` and remove `public/projects/bosque-del-apache/index.html` so it cannot shadow the Next.js project route.
+- Redirect legacy `/projects/bosque-del-apache/index.html` requests back to the website-owned wrapper.
+
+Completion notes:
+
+- Validated Bosque source syntax, static QA, website lint, website typecheck, full website production build, and desktop/mobile browser checks.
+- Confirmed the website route keeps the Cristiano Pierry navigation visible while loading the Bosque planner inside the iframe.
+
 ## 2026-06-05 - Retire Gallery And Reference Hash Aliases
 
 Status: completed and validated June 5, 2026.

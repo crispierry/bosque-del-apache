@@ -8,7 +8,7 @@ Production URL:
 https://crispierry.com/projects/bosque-del-apache
 ```
 
-This project is a standalone static site in `site/`. The canonical production route on `crispierry.com` is published by the main website repo, which copies this repo's `site/` folder into its committed public artifact.
+This project is a standalone static site in `site/`. The canonical production route on `crispierry.com` is published by the main website repo, which copies this repo's `site/` folder into its committed public artifact. During import, the website publishes `site/index.html` as `planner.html` so the website-owned `/projects/bosque-del-apache` route is not shadowed by a public static `index.html`.
 
 Direct Netlify hosting from this repo is useful for previews or fallback hosting, but it is not the current canonical production path.
 
@@ -41,7 +41,7 @@ npm run build
 
 ```text
 https://crispierry.com/projects/bosque-del-apache
-https://crispierry.com/projects/bosque-del-apache/index.html
+https://crispierry.com/projects/bosque-del-apache/planner.html
 https://crispierry.com/projects/bosque-del-apache/complete-photographers-guide.html
 https://crispierry.com/projects/bosque-del-apache/styles.css
 https://crispierry.com/projects/bosque-del-apache/data.js
@@ -75,7 +75,7 @@ Netlify's current docs confirm that Git deploys connect a repository to a site a
 
 ## Main Website Route
 
-The public route belongs to the main `crispierry.com` website, not DNS. The canonical parent page is `/projects/bosque-del-apache`; the full static planner remains available at `/projects/bosque-del-apache/index.html`.
+The public route belongs to the main `crispierry.com` website, not DNS. The canonical parent page is `/projects/bosque-del-apache`; the full static planner is embedded by that wrapper and remains available as the website artifact at `/projects/bosque-del-apache/planner.html`. The legacy `/projects/bosque-del-apache/index.html` URL should redirect back to the wrapper so the main website navigation remains visible.
 
 Use one of these patterns.
 
@@ -89,13 +89,13 @@ Use this for production.
 /projects/bosque-del-apache/
 ```
 
-2. Add or keep the main website route at `app/projects/bosque-del-apache/page.tsx` so `/projects/bosque-del-apache` has crawlable project content and links to the static planner at `/projects/bosque-del-apache/index.html`.
+2. Add or keep the main website route at `app/projects/bosque-del-apache/page.tsx` so `/projects/bosque-del-apache` has crawlable project content and embeds the static planner at `/projects/bosque-del-apache/planner.html`.
 3. Deploy the main website normally.
 4. Confirm these URLs load:
 
 ```text
 https://crispierry.com/projects/bosque-del-apache
-https://crispierry.com/projects/bosque-del-apache/index.html
+https://crispierry.com/projects/bosque-del-apache/planner.html
 https://crispierry.com/projects/bosque-del-apache/complete-photographers-guide.html
 https://crispierry.com/projects/bosque-del-apache/styles.css
 https://crispierry.com/projects/bosque-del-apache/data.js
@@ -104,7 +104,7 @@ https://crispierry.com/projects/bosque-del-apache/app.js
 
 ## Fallback Pattern: Proxy This Netlify Site From The Main Website
 
-Use this only if this repository remains a separate Netlify site and the main website only exposes it under the project path. This is not the current production pattern when the main website embeds `/projects/bosque-del-apache/index.html` through a Next.js route.
+Use this only if this repository remains a separate Netlify site and the main website only exposes it under the project path. This is not the current production pattern when the main website embeds `/projects/bosque-del-apache/planner.html` through a Next.js route.
 
 Add this to the main `crispierry.com` site's `netlify.toml`, replacing the Netlify subdomain with the real one:
 
@@ -147,7 +147,9 @@ netlify deploy --prod --dir=site
 ## Post-Deploy Checklist
 
 - Open `https://crispierry.com/projects/bosque-del-apache`.
+- Confirm the Cristiano Pierry website navigation is visible on the project route.
 - Confirm CSS and JavaScript load from the project path.
+- Confirm `https://crispierry.com/projects/bosque-del-apache/index.html` redirects back to the website wrapper instead of serving the raw static planner.
 - Confirm browser refresh works from the project path.
 - Confirm `https://crispierry.com/sitemap.xml` includes `https://crispierry.com/projects/bosque-del-apache` and `https://crispierry.com/projects/bosque-del-apache/complete-photographers-guide.html`.
 - Confirm `https://crispierry.com/robots.txt` does not block `/projects/bosque-del-apache`.

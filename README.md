@@ -68,7 +68,7 @@ http://localhost:4173
 
 ## Publishing To crispierry.com
 
-This repository is the source of truth for the Bosque static site. The personal website publishes a committed copy of `site/` under `public/projects/bosque-del-apache/`.
+This repository is the source of truth for the Bosque static site. The personal website publishes a committed copy of `site/` under `public/projects/bosque-del-apache/`, with `site/index.html` renamed to `planner.html` so the website-owned `/projects/bosque-del-apache` route keeps the Cristiano Pierry navigation visible.
 
 After changing this repo:
 
@@ -102,13 +102,15 @@ After the website push, wait for the Netlify production deploy for the pushed we
 
 ```text
 https://crispierry.com/projects/bosque-del-apache
-https://crispierry.com/projects/bosque-del-apache/index.html
+https://crispierry.com/projects/bosque-del-apache/planner.html
 https://crispierry.com/projects/bosque-del-apache/complete-photographers-guide.html
 https://crispierry.com/projects/bosque-del-apache/data.js
 https://crispierry.com/projects/bosque-del-apache/app.js
 https://crispierry.com/sitemap.xml
 https://crispierry.com/robots.txt
 ```
+
+The legacy `/projects/bosque-del-apache/index.html` URL should redirect back to `/projects/bosque-del-apache` instead of serving the static planner directly.
 
 ## Standalone Deployment
 
