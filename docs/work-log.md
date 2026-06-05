@@ -40,11 +40,11 @@ Notes:
 
 Progress notes:
 
-- Regenerated and wired the first two Gallery stories, `crane-roost-dawn` and `snow-goose-blastoff`, as ten standalone 1920x1080 generated photos under `site/assets/generated/gallery-hd/`.
+- Regenerated and wired the first three Gallery stories, `crane-roost-dawn`, `snow-goose-blastoff`, and `crane-evening-return`, as fifteen standalone 1920x1080 generated photos under `site/assets/generated/gallery-hd/`.
 - Replaced the active Gallery renderer with true clickable mosaic sections that exclude the old split `gallery-standalone` fragments until each story is regenerated.
-- Documented the first ten regenerated Gallery photos in the visual asset manifest.
-- Validated desktop and 390px mobile for the current Gallery slice: 10 active mosaic images, two active mosaic groups, no old `gallery-standalone` sources in the active Gallery, no split-contact-sheet copy, no broken active images, no horizontal overflow, and working lightbox metadata.
-- Remaining Gallery stories still to regenerate before this item can be marked complete: `crane-evening-return`, `farm-field-feeding`, `wetland-deck`, `desert-edge-details`, `weather-motion-fallback`, `filter-practice`, and `travel-workflow`.
+- Documented the first fifteen regenerated Gallery photos in the visual asset manifest.
+- Validated desktop and 390px mobile for the current Gallery slice: 15 active mosaic images, three active mosaic groups, no old `gallery-standalone` sources in the active Gallery, no split-contact-sheet copy, no broken active images, no horizontal overflow, and working lightbox metadata.
+- Remaining Gallery stories still to regenerate before this item can be marked complete: `farm-field-feeding`, `wetland-deck`, `desert-edge-details`, `weather-motion-fallback`, `filter-practice`, and `travel-workflow`.
 
 ## 2026-06-05 - Guide Purpose-Built Hero Illustration Correction Request
 

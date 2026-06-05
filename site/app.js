@@ -724,6 +724,88 @@ const regeneratedGalleryImageGroups = {
         "Purpose-built regenerated 1080p planning photo for post-blast-off flock separation, layered groups, pastel sky, and wetland context.",
     },
   ],
+  "crane-evening-return": [
+    {
+      id: "crane-evening-return-01",
+      parentId: "crane-evening-return",
+      title: "Final approach with feet down",
+      src: "./assets/generated/gallery-hd/crane-evening-return-01.jpg",
+      category: "Sunset",
+      alt:
+        "Generated standalone 1080p planning photo of a sandhill crane on final approach with feet down at a Bosque del Apache crane pond",
+      caption:
+        "Generated standalone 1080p planning photo for crane final approach and landing technique; not an actual Bosque field photograph.",
+      rights:
+        "AI-generated project planning photo from this guide's shot descriptions. Use as expectation-setting only.",
+      placement: ["Gallery", "Visual Asset Manifest"],
+      description:
+        "Purpose-built regenerated 1080p planning photo for evening crane final approach, feet-down posture, warm side light, and landing room.",
+    },
+    {
+      id: "crane-evening-return-02",
+      parentId: "crane-evening-return",
+      title: "Paired cranes in warm side light",
+      src: "./assets/generated/gallery-hd/crane-evening-return-02.jpg",
+      category: "Sunset",
+      alt:
+        "Generated standalone 1080p planning photo of paired sandhill cranes in warm side light at Bosque del Apache",
+      caption:
+        "Generated standalone 1080p planning photo for paired crane behavior in evening light; not an actual Bosque field photograph.",
+      rights:
+        "AI-generated project planning photo from this guide's shot descriptions. Use as expectation-setting only.",
+      placement: ["Gallery", "Visual Asset Manifest"],
+      description:
+        "Purpose-built regenerated 1080p planning photo for paired crane behavior, clean reflections, golden side light, and calm pond framing.",
+    },
+    {
+      id: "crane-evening-return-03",
+      parentId: "crane-evening-return",
+      title: "Family group landing",
+      src: "./assets/generated/gallery-hd/crane-evening-return-03.jpg",
+      category: "Sunset",
+      alt:
+        "Generated standalone 1080p planning photo of a sandhill crane family group landing together at Bosque del Apache",
+      caption:
+        "Generated standalone 1080p planning photo for crane family-group landing behavior; not an actual Bosque field photograph.",
+      rights:
+        "AI-generated project planning photo from this guide's shot descriptions. Use as expectation-setting only.",
+      placement: ["Gallery", "Visual Asset Manifest"],
+      description:
+        "Purpose-built regenerated 1080p planning photo for group landing lanes, family behavior, sunset water, and touchdown timing.",
+    },
+    {
+      id: "crane-evening-return-04",
+      parentId: "crane-evening-return",
+      title: "Reflection landing with ripples",
+      src: "./assets/generated/gallery-hd/crane-evening-return-04.jpg",
+      category: "Sunset",
+      alt:
+        "Generated standalone 1080p planning photo of a sandhill crane touching down with rippled reflection in Bosque del Apache sunset water",
+      caption:
+        "Generated standalone 1080p planning photo for crane reflection landing work; not an actual Bosque field photograph.",
+      rights:
+        "AI-generated project planning photo from this guide's shot descriptions. Use as expectation-setting only.",
+      placement: ["Gallery", "Visual Asset Manifest"],
+      description:
+        "Purpose-built regenerated 1080p planning photo for reflection, touchdown ripples, shallow water, and precise evening action framing.",
+    },
+    {
+      id: "crane-evening-return-05",
+      parentId: "crane-evening-return",
+      title: "Wide flock against dusky mountain bands",
+      src: "./assets/generated/gallery-hd/crane-evening-return-05.jpg",
+      category: "Sunset",
+      alt:
+        "Generated standalone 1080p planning photo of sandhill cranes returning at dusk over Bosque del Apache water and mountain bands",
+      caption:
+        "Generated standalone 1080p planning photo for wide evening crane-return context; not an actual Bosque field photograph.",
+      rights:
+        "AI-generated project planning photo from this guide's shot descriptions. Use as expectation-setting only.",
+      placement: ["Gallery", "Visual Asset Manifest"],
+      description:
+        "Purpose-built regenerated 1080p planning photo for wide sunset crane return, dusky mountain bands, roost scale, and environmental framing.",
+    },
+  ],
 };
 
 const regeneratedGalleryVisuals = Object.values(regeneratedGalleryImageGroups).flat();
