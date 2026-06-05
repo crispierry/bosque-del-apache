@@ -294,7 +294,7 @@ Completion notes:
 
 ## 2026-06-05 - Practice Technique Image And Teaching Layout Correction Request
 
-Status: requested; not yet implemented.
+Status: completed and validated June 5, 2026.
 
 Goal: correct the Practice page so each of the nine pre-trip techniques has a meaningful, original, high-quality image and enough page space/instructional depth for a photographer to actually learn the technique.
 
@@ -324,6 +324,15 @@ Notes:
 
 - This correction supersedes the previous Practice visual implementation that reused cropped/split or poorly matched generated images.
 - The priority is a better learning experience: high-quality technique-specific images plus enough layout space and explanation for each technique to teach well.
+
+Completion notes:
+
+- Generated and integrated nine purpose-built standalone 1920x1080 Practice technique images under `site/assets/generated/practice-hd/`, one for each pre-trip technique.
+- Replaced the active core Practice technique visuals so the main Practice page and individual practice-detail pages use the regenerated `practice-hd` images instead of `practice-standalone` split fragments or contact-sheet crops.
+- Redesigned the main Practice technique area from a compact multi-column card directory into nine full-width teaching lessons with a large image, goal, all practice steps, a success check, and preserved "Open lesson" navigation.
+- Added full lightbox metadata for each regenerated Practice image by linking it to the existing technique lesson metadata.
+- Documented all nine regenerated Practice images in the visual asset manifest with local path, original generated source file, alt text, placement, prompt/provenance summary, and rights note; old practice contact sheets and split frames are now marked as legacy.
+- Validated desktop and 390px mobile: nine active Practice lesson cards, nine unique `practice-hd` image sources, zero old split/contact-sheet/Gallery sources in the active core Practice lessons, nine step blocks, nine success checks, no missing asset references, no browser console errors, working full-image metadata, working practice-detail navigation, no page-level horizontal overflow, and exact 1920x1080 file dimensions.
 
 ## 2026-06-05 - Inspiration High-Resolution Generated Photo Set Request
 

@@ -1962,6 +1962,153 @@ const photoWindowGeneratedVisuals = [
   },
 ];
 
+const practiceTechniqueVisuals = [
+  {
+    id: "practice-hd-camera-setup-baseline",
+    parentLessonId: "practice-camera-setup",
+    title: "Camera setup baseline",
+    src: "./assets/generated/practice-hd/practice-01-camera-setup-baseline.jpg",
+    category: "Practice",
+    alt:
+      "Generated 1080p Practice teaching image of cameras lenses batteries cards gloves and three setup states staged before a Bosque del Apache trip",
+    caption:
+      "Purpose-built generated Practice image for building flight, perched/static, and silhouette camera setup states; not an actual Bosque field photograph.",
+    rights:
+      "AI-generated project training image from this guide's practice lesson notes. Use as expectation-setting only.",
+    placement: ["Practice", "Visual Asset Manifest"],
+    description:
+      "Purpose-built generated Practice image for camera setup baseline, two camera roles, batteries, cards, gloves, layers, and reset rehearsal.",
+  },
+  {
+    id: "practice-hd-exposure-modes",
+    parentLessonId: "practice-exposure-modes",
+    title: "Exposure modes in changing backgrounds",
+    src: "./assets/generated/practice-hd/practice-02-exposure-modes-changing-backgrounds.jpg",
+    category: "Practice",
+    alt:
+      "Generated 1080p Practice teaching image of a long-lens exposure mode drill with a bird crossing bright water dark reeds and pale sky",
+    caption:
+      "Purpose-built generated Practice image for comparing exposure modes across changing backgrounds; not an actual Bosque field photograph.",
+    rights:
+      "AI-generated project training image from this guide's practice lesson notes. Use as expectation-setting only.",
+    placement: ["Practice", "Visual Asset Manifest"],
+    description:
+      "Purpose-built generated Practice image for Aperture Priority, Shutter Priority, Manual with Auto ISO, and full Manual practice against changing backgrounds.",
+  },
+  {
+    id: "practice-hd-shutter-speed-ladder",
+    parentLessonId: "practice-shutter-speed",
+    title: "Shutter speed ladder practice",
+    src: "./assets/generated/practice-hd/practice-03-shutter-speed-ladder.jpg",
+    category: "Practice",
+    alt:
+      "Generated 1080p Practice teaching image of slow-shutter bird panning with sharp head cue and motion-blurred wings over water",
+    caption:
+      "Purpose-built generated Practice image for shutter-speed ladder and panning blur practice; not an actual Bosque field photograph.",
+    rights:
+      "AI-generated project training image from this guide's practice lesson notes. Use as expectation-setting only.",
+    placement: ["Practice", "Visual Asset Manifest"],
+    description:
+      "Purpose-built generated Practice image for frozen action, controlled wing blur, and slow-shutter panning experiments after safe frames.",
+  },
+  {
+    id: "practice-hd-handholding-body-mechanics",
+    parentLessonId: "practice-handholding",
+    title: "Handholding and body mechanics",
+    src: "./assets/generated/practice-hd/practice-04-handholding-body-mechanics.jpg",
+    category: "Practice",
+    alt:
+      "Generated 1080p Practice teaching image of a photographer handholding a long wildlife lens with correct stance while tracking a bird",
+    caption:
+      "Purpose-built generated Practice image for handholding stance, lens support, and smooth subject acquisition; not an actual Bosque field photograph.",
+    rights:
+      "AI-generated project training image from this guide's practice lesson notes. Use as expectation-setting only.",
+    placement: ["Practice", "Visual Asset Manifest"],
+    description:
+      "Purpose-built generated Practice image for feet-set stance, hip rotation, left-hand lens support, wider acquisition, and short controlled bursts.",
+  },
+  {
+    id: "practice-hd-support-choices",
+    parentLessonId: "practice-support",
+    title: "Support choices for field positions",
+    src: "./assets/generated/practice-hd/practice-05-support-choices.jpg",
+    category: "Practice",
+    alt:
+      "Generated 1080p Practice teaching image of vehicle beanbag tripod gimbal monopod and long lens support choices near a wetland pullout",
+    caption:
+      "Purpose-built generated Practice image for choosing beanbag, tripod/gimbal, monopod, or handheld support by field position; not an actual Bosque field photograph.",
+    rights:
+      "AI-generated project training image from this guide's practice lesson notes. Use as expectation-setting only.",
+    placement: ["Practice", "Visual Asset Manifest"],
+    description:
+      "Purpose-built generated Practice image for matching vehicle loop, pool wait, deck footprint, and quick-pivot situations to the right support.",
+  },
+  {
+    id: "practice-hd-white-birds-exposure",
+    parentLessonId: "practice-white-birds-exposure",
+    title: "White birds and exposure detail",
+    src: "./assets/generated/practice-hd/practice-06-white-birds-exposure.jpg",
+    category: "Practice",
+    alt:
+      "Generated 1080p Practice teaching image of white birds with preserved feather detail against dark reeds and bright Bosque-like water",
+    caption:
+      "Purpose-built generated Practice image for protecting white-bird highlight detail; not an actual Bosque field photograph.",
+    rights:
+      "AI-generated project training image from this guide's practice lesson notes. Use as expectation-setting only.",
+    placement: ["Practice", "Visual Asset Manifest"],
+    description:
+      "Purpose-built generated Practice image for preserving snow-goose feather texture across dark reeds, bright water, and pale sky.",
+  },
+  {
+    id: "practice-hd-behavior-prediction",
+    parentLessonId: "practice-behavior-prediction",
+    title: "Behavior prediction before takeoff",
+    src: "./assets/generated/practice-hd/practice-07-behavior-prediction.jpg",
+    category: "Practice",
+    alt:
+      "Generated 1080p Practice teaching image of sandhill cranes showing neck stretch crouch wing tension and prelaunch behavior cues",
+    caption:
+      "Purpose-built generated Practice image for reading behavior cues before takeoff; not an actual Bosque field photograph.",
+    rights:
+      "AI-generated project training image from this guide's practice lesson notes. Use as expectation-setting only.",
+    placement: ["Practice", "Visual Asset Manifest"],
+    description:
+      "Purpose-built generated Practice image for recognizing neck stretch, crouch, wing tension, alert posture, wind direction, and launch-lane timing.",
+  },
+  {
+    id: "practice-hd-cold-dust-workflow",
+    parentLessonId: "practice-cold-dust-workflow",
+    title: "Cold and dust predawn workflow",
+    src: "./assets/generated/practice-hd/practice-08-cold-dust-workflow.jpg",
+    category: "Practice",
+    alt:
+      "Generated 1080p Practice teaching image of predawn cold and dust workflow with mounted long lens gloves warm batteries blower and organized vehicle cargo",
+    caption:
+      "Purpose-built generated Practice image for predawn cold, dust, battery, glove, and cleaning workflow; not an actual Bosque field photograph.",
+    rights:
+      "AI-generated project training image from this guide's practice lesson notes. Use as expectation-setting only.",
+    placement: ["Practice", "Visual Asset Manifest"],
+    description:
+      "Purpose-built generated Practice image for being ready within two minutes of parking, avoiding cold lens changes, and keeping weather/cleaning tools reachable.",
+  },
+  {
+    id: "practice-hd-readiness-checklist",
+    parentLessonId: "practice-readiness-checklist",
+    title: "Pre-trip readiness checklist",
+    src: "./assets/generated/practice-hd/practice-09-readiness-checklist.jpg",
+    category: "Practice",
+    alt:
+      "Generated 1080p Practice teaching image of an edited field bag two camera roles backup drive gloves water and closed notebook for pre-trip readiness",
+    caption:
+      "Purpose-built generated Practice image for final pre-trip readiness, backup workflow, and packed-bag edit; not an actual Bosque field photograph.",
+    rights:
+      "AI-generated project training image from this guide's practice lesson notes. Use as expectation-setting only.",
+    placement: ["Practice", "Visual Asset Manifest"],
+    description:
+      "Purpose-built generated Practice image for proving readiness with local bird sessions, backup discipline, two camera roles, and a final packed-bag edit.",
+  },
+];
+
 const practiceStandaloneVisuals = practiceVisuals.flatMap((visual) =>
   (practiceFrameExamples[visual.id] || [visual.title]).map((example, index) => {
     const frameNumber = String(index + 1).padStart(2, "0");
@@ -1989,6 +2136,7 @@ const visualById = new Map(
     ...regeneratedGalleryVisuals,
     ...itineraryGeneratedVisuals,
     ...photoWindowGeneratedVisuals,
+    ...practiceTechniqueVisuals,
     ...practiceVisuals,
     ...practiceStandaloneVisuals,
     ...travelVisuals,
@@ -2192,6 +2340,13 @@ const practiceLessons = {
   },
 };
 
+const practiceTechniqueLessons = Object.fromEntries(
+  practiceTechniqueVisuals.map((visual) => [
+    visual.id,
+    practiceLessons[visual.parentLessonId],
+  ])
+);
+
 const practiceStandaloneLessons = Object.fromEntries(
   practiceStandaloneVisuals.map((visual) => {
     const lesson = practiceLessons[visual.parentId];
@@ -2318,6 +2473,7 @@ const visualLessons = {
   ...itineraryLessons,
   ...photoWindowLessons,
   ...practiceLessons,
+  ...practiceTechniqueLessons,
   ...practiceStandaloneLessons,
   ...travelLessons,
   ...lodgingLessons,
@@ -4648,7 +4804,7 @@ const fieldImplications = [
 const practiceModules = [
   {
     title: "Camera Setup Baseline",
-    visualId: "practice-camera-setup",
+    visualId: "practice-hd-camera-setup-baseline",
     goal:
       "Build three ready-to-use camera states before the trip: flight, perched/static, and silhouette/sky.",
     steps: [
@@ -4662,7 +4818,7 @@ const practiceModules = [
   },
   {
     title: "Aperture Priority, Shutter Priority, and Manual",
-    visualId: "practice-exposure-modes",
+    visualId: "practice-hd-exposure-modes",
     goal:
       "Know which mode to use when light and subject behavior change quickly.",
     steps: [
@@ -4676,7 +4832,7 @@ const practiceModules = [
   },
   {
     title: "Shutter Speed Ladder",
-    visualId: "practice-shutter-speed",
+    visualId: "practice-hd-shutter-speed-ladder",
     goal:
       "Know the difference between frozen action, controlled wing blur, and artistic pan blur before the refuge.",
     steps: [
@@ -4690,7 +4846,7 @@ const practiceModules = [
   },
   {
     title: "Handholding and Body Mechanics",
-    visualId: "practice-handholding",
+    visualId: "practice-hd-handholding-body-mechanics",
     goal:
       "Acquire birds without fighting the lens.",
     steps: [
@@ -4704,7 +4860,7 @@ const practiceModules = [
   },
   {
     title: "Tripod, Gimbal, Monopod, and Beanbag",
-    visualId: "practice-support",
+    visualId: "practice-hd-support-choices",
     goal:
       "Choose the support that matches the field position instead of carrying support as decoration.",
     steps: [
@@ -4718,7 +4874,7 @@ const practiceModules = [
   },
   {
     title: "White Birds and Exposure",
-    visualId: "practice-white-birds-exposure",
+    visualId: "practice-hd-white-birds-exposure",
     goal:
       "Stop blowing snow-goose detail without making the whole scene look dead.",
     steps: [
@@ -4732,7 +4888,7 @@ const practiceModules = [
   },
   {
     title: "Behavior Prediction",
-    visualId: "practice-behavior-prediction",
+    visualId: "practice-hd-behavior-prediction",
     goal:
       "Start tracking before the decisive moment.",
     steps: [
@@ -4746,7 +4902,7 @@ const practiceModules = [
   },
   {
     title: "Cold and Dust Workflow",
-    visualId: "practice-cold-dust-workflow",
+    visualId: "practice-hd-cold-dust-workflow",
     goal:
       "Be ready within two minutes of parking in predawn cold.",
     steps: [
@@ -4760,7 +4916,7 @@ const practiceModules = [
   },
   {
     title: "Pre-trip Readiness Checklist",
-    visualId: "practice-readiness-checklist",
+    visualId: "practice-hd-readiness-checklist",
     goal:
       "Arrive with the muscle memory already built.",
     steps: [
@@ -6055,30 +6211,36 @@ function renderPractice() {
     <div class="section-title compact-title practice-technique-title">
       <div>
         <p class="eyebrow">1 to 9</p>
-        <h2>Nine Technique Cards</h2>
+        <h2>Nine Technique Lessons</h2>
       </div>
-      <p>Use this as the quick table of contents. Each card opens a deeper lesson with the image larger and the steps separated for practice.</p>
+      <p>Each technique gets its own generated teaching image, practice steps, and success check on the main page. Open the deeper lesson when you want the same material in a focused view.</p>
     </div>
-    <div class="practice-list practice-card-grid">
+    <div class="practice-list practice-lesson-list">
       ${practiceModules
         .map(
-          (practiceModule, index) => `<article class="practice-card">
-            <div class="practice-card-header">
-              <div class="practice-number">${index + 1}</div>
-              <div>
-                <p class="eyebrow">Technique ${index + 1}</p>
-                <h3>${practiceModule.title}</h3>
-              </div>
-            </div>
-            ${practiceModule.visualId ? `<div class="practice-visual-wrap">${renderStandaloneFrameGrid(practiceModule.visualId, {
-              className: "practice-frame-grid",
-              compact: true,
-              hideDescription: true,
+          (practiceModule, index) => `<article class="practice-card practice-teaching-card">
+            ${practiceModule.visualId ? `<div class="practice-visual-wrap">${renderStandaloneFrameCard(practiceModule.visualId, {
+              className: "practice-lead-frame",
+              hideDescription: false,
+              showLocation: false,
               loading: index < 2 ? "eager" : "lazy",
-              ariaLabel: `${practiceModule.title} standalone training frames`,
             })}</div>` : ""}
             <div class="practice-card-copy">
+              <div class="practice-card-header">
+                <div class="practice-number">${index + 1}</div>
+                <div>
+                  <p class="eyebrow">Technique ${index + 1}</p>
+                  <h3>${practiceModule.title}</h3>
+                </div>
+              </div>
               <p class="card-copy">${practiceModule.goal}</p>
+              <div class="practice-steps">
+                <h4>How to practice</h4>
+                <ol>
+                  ${practiceModule.steps.map((step) => `<li>${step}</li>`).join("")}
+                </ol>
+              </div>
+              <p class="practice-homework"><b>Success check:</b> ${practiceModule.homework}</p>
               <button class="button-link practice-open-button" type="button" data-jump="practice-${index + 1}">Open lesson</button>
             </div>
           </article>`

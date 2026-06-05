@@ -3013,6 +3013,19 @@ main {
   padding: 16px;
 }
 
+.practice-lesson-list {
+  display: grid;
+  gap: 18px;
+}
+
+.practice-teaching-card {
+  display: grid;
+  grid-template-columns: minmax(320px, 0.9fr) minmax(0, 1.1fr);
+  gap: 18px;
+  align-items: start;
+  padding: 18px;
+}
+
 .practice-card-header {
   display: flex;
   gap: 12px;
@@ -3039,6 +3052,47 @@ main {
 
 .practice-visual-wrap {
   min-width: 0;
+}
+
+.practice-lead-frame {
+  border: 0;
+  background: transparent;
+}
+
+.practice-lead-frame img {
+  border: 1px solid var(--line-soft);
+  border-radius: 8px;
+}
+
+.practice-lead-frame .visual-frame-copy {
+  padding: 10px 0 0;
+}
+
+.practice-steps {
+  border: 1px solid var(--line-soft);
+  border-radius: 8px;
+  background: var(--surface-soft);
+  padding: 12px;
+}
+
+.practice-steps h4 {
+  margin: 0 0 8px;
+  color: var(--text);
+}
+
+.practice-steps ol {
+  display: grid;
+  gap: 7px;
+  margin: 0;
+  padding-left: 20px;
+  color: var(--muted);
+  line-height: 1.42;
+}
+
+.practice-homework {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.5;
 }
 
 .practice-frame-grid {
@@ -3163,6 +3217,7 @@ main {
   .rental-car-section,
   .rights-callout,
   .filter-practice-layout,
+  .practice-teaching-card,
   .practice-detail-hero {
     grid-template-columns: 1fr;
   }
