@@ -1962,6 +1962,510 @@ const photoWindowGeneratedVisuals = [
   },
 ];
 
+const inspirationGeneratedVisuals = [
+  {
+    id: "inspiration-hd-dawn-crane-roost-silhouettes",
+    title: "Dawn crane roost silhouettes",
+    file: "inspiration-01-dawn-crane-roost-silhouettes.jpg",
+    sceneType: "Dawn roost",
+    description:
+      "Wide predawn crane-roost scene with cold water, silhouettes, mist, and the mountain band as part of the composition.",
+    location: "Highway 1 crane pools, North Loop roost pool, or the strongest legal dawn roost after scouting.",
+    lens: "100-400mm or 200-600mm wildlife zoom.",
+    focalLength: "150-350mm",
+    aperture: "f/6.3-f/8",
+    shutterSpeed: "1/250-1/500 sec before first movement",
+    iso: "ISO 800-3200",
+    technique:
+      "Expose for sky and water color, let cranes read as clean silhouettes, and leave enough habitat for the image to feel like Bosque rather than a generic bird pond.",
+  },
+  {
+    id: "inspiration-hd-cold-crane-breath",
+    title: "Cold crane breath",
+    file: "inspiration-02-cold-crane-breath.jpg",
+    sceneType: "Cold morning behavior",
+    description:
+      "Medium telephoto crane group with frost, breath, and quiet first-light behavior at the water edge.",
+    location: "Active crane roost or shallow wetland edge with legal roadside viewing.",
+    lens: "200-600mm, 200-800mm, or similar long wildlife zoom.",
+    focalLength: "400-600mm",
+    aperture: "f/6.3-f/8",
+    shutterSpeed: "1/500-1/1250 sec",
+    iso: "ISO 1600-6400",
+    technique:
+      "Wait for calling, breath, and head-angle moments before the action starts; use the cold atmosphere as the subject instead of rushing into burst mode.",
+  },
+  {
+    id: "inspiration-hd-crane-takeoff-splash",
+    title: "Crane takeoff splash",
+    file: "inspiration-03-crane-takeoff-splash.jpg",
+    sceneType: "Takeoff action",
+    description:
+      "Sandhill crane starting its takeoff run through shallow water with wing shape, spray, and sunrise side light.",
+    location: "Crane pool or roost edge where wind creates a predictable takeoff lane.",
+    lens: "Long wildlife zoom with flexible framing.",
+    focalLength: "500-700mm",
+    aperture: "f/6.3-f/8",
+    shutterSpeed: "1/1600-1/2500 sec",
+    iso: "ISO 800-3200",
+    technique:
+      "Track the run before the bird leaves the water, leave space in front of the motion, and avoid zooming so tight that the first wingbeat clips.",
+  },
+  {
+    id: "inspiration-hd-crane-reflection-pair",
+    title: "Crane reflection pair",
+    file: "inspiration-04-crane-reflection-pair.jpg",
+    sceneType: "Reflection portrait",
+    description:
+      "Quiet crane pair with full reflections and cottonwood/wetland habitat carrying the calm part of the story.",
+    location: "Still wetland channel, crane pool edge, or deck viewpoint with clean reflective water.",
+    lens: "100-400mm or 200-600mm wildlife zoom.",
+    focalLength: "300-500mm",
+    aperture: "f/7.1-f/9",
+    shutterSpeed: "1/500-1/1000 sec",
+    iso: "ISO 400-1600",
+    technique:
+      "Compose the reflection first, then wait for a small posture change. Protect the bottom edge so feet and reflected heads are not cut off.",
+  },
+  {
+    id: "inspiration-hd-wide-predawn-roost-mountains",
+    title: "Wide predawn roost and mountains",
+    file: "inspiration-05-wide-predawn-roost-mountains.jpg",
+    sceneType: "Environmental roost",
+    description:
+      "Broad blue-hour roost image that uses cranes, water, sky, and mountains as a layered place photograph.",
+    location: "Any legal roost view where the mountain band and water are stronger than an individual bird.",
+    lens: "70-200mm, 100-400mm, or the short end of a long zoom.",
+    focalLength: "100-220mm",
+    aperture: "f/7.1-f/9",
+    shutterSpeed: "1/250-1/800 sec",
+    iso: "ISO 800-3200",
+    technique:
+      "Resist over-tightening. Use bird bands, water color, and mountains as the design, then tighten only when behavior becomes the stronger photograph.",
+  },
+  {
+    id: "inspiration-hd-snow-geese-pre-blastoff-roost",
+    title: "Snow geese pre-blastoff roost",
+    file: "inspiration-06-snow-geese-pre-blastoff-roost.jpg",
+    sceneType: "Goose roost tension",
+    description:
+      "Dense snow-goose roost before launch, with white-flock texture, shallow water, and morning haze.",
+    location: "Flight Deck, Main Pool, or current snow-goose roost confirmed by scouting.",
+    lens: "100-400mm or 200-600mm wildlife zoom.",
+    focalLength: "200-400mm",
+    aperture: "f/7.1-f/9",
+    shutterSpeed: "1/800-1/1600 sec before launch",
+    iso: "ISO 800-3200",
+    technique:
+      "Frame the still flock before the eruption. Watch for raised heads and flock tension, and set exposure for white feathers before the action begins.",
+  },
+  {
+    id: "inspiration-hd-first-wave-goose-lift",
+    title: "First wave goose lift",
+    file: "inspiration-07-first-wave-goose-lift.jpg",
+    sceneType: "First flock wave",
+    description:
+      "The first low sheet of geese lifting from the roost, with water, mist, and wing rhythm still readable.",
+    location: "Flight Deck, Main Pool, or a legal view of the active goose roost.",
+    lens: "100-400mm or 200-600mm zoom.",
+    focalLength: "150-350mm",
+    aperture: "f/7.1-f/9",
+    shutterSpeed: "1/2000-1/3200 sec",
+    iso: "ISO 800-3200",
+    technique:
+      "Start wider than instinct suggests, pan with the first wave, and preserve enough water context for the viewer to feel the launch.",
+  },
+  {
+    id: "inspiration-hd-mass-goose-blastoff-wide",
+    title: "Mass goose blastoff wide",
+    file: "inspiration-08-mass-goose-blastoff-wide.jpg",
+    sceneType: "Flock spectacle",
+    description:
+      "Wide white-cloud blastoff with a full flock arc, refuge water, reeds, and mountains anchoring the spectacle.",
+    location: "Flight Deck, Main Pool, or another active goose roost from a legal viewing position.",
+    lens: "24-105mm, 70-200mm, or the wide end of a 100-400mm.",
+    focalLength: "70-180mm",
+    aperture: "f/7.1-f/9",
+    shutterSpeed: "1/2000-1/3200 sec",
+    iso: "ISO 800-3200",
+    technique:
+      "Choose the mass-shape photograph before the flock lifts. Keep the whole cloud and the refuge context rather than chasing one bird too early.",
+  },
+  {
+    id: "inspiration-hd-overhead-goose-pattern",
+    title: "Overhead goose pattern",
+    file: "inspiration-09-overhead-goose-pattern.jpg",
+    sceneType: "Graphic flock pattern",
+    description:
+      "Overhead geese against clean sky, useful for studying spacing, wing positions, and negative-space rhythm.",
+    location: "Any legal pullout or deck when geese cross high overhead after a lift-off.",
+    lens: "100-400mm or 200-600mm zoom.",
+    focalLength: "300-500mm",
+    aperture: "f/7.1-f/9",
+    shutterSpeed: "1/2500-1/3200 sec",
+    iso: "ISO 400-1600",
+    technique:
+      "Stop hunting for a single subject and treat the flock as pattern. Keep shutter speed high enough for wing detail and wait for clean spacing.",
+  },
+  {
+    id: "inspiration-hd-minimal-goose-pastel-sky",
+    title: "Minimal geese in pastel sky",
+    file: "inspiration-10-minimal-goose-pastel-sky.jpg",
+    sceneType: "Minimal sky frame",
+    description:
+      "Small separated group of geese in a pastel dawn sky, emphasizing restraint, timing, and clean negative space.",
+    location: "Roost or field edge after the main flock separates into smaller groups.",
+    lens: "100-400mm or long wildlife zoom.",
+    focalLength: "350-600mm",
+    aperture: "f/7.1-f/8",
+    shutterSpeed: "1/2000-1/3200 sec",
+    iso: "ISO 400-1600",
+    technique:
+      "Use small groups after the chaos. Place birds against clean sky and let the color gradient do the quiet work.",
+  },
+  {
+    id: "inspiration-hd-evening-crane-final-approach",
+    title: "Evening crane final approach",
+    file: "inspiration-11-evening-crane-final-approach.jpg",
+    sceneType: "Sunset fly-in",
+    description:
+      "Cranes descending into a warm roost lane with feet down, staggered positions, and reflective water.",
+    location: "Active crane pool, South Crane Pond, or Highway 1 crane pool with legal sunset access.",
+    lens: "200-600mm, 200-800mm, or similar long zoom.",
+    focalLength: "400-650mm",
+    aperture: "f/6.3-f/8",
+    shutterSpeed: "1/1600-1/2500 sec",
+    iso: "ISO 800-3200",
+    technique:
+      "Pick a landing lane based on wind, pre-frame open air and water below the birds, and pan through the legs-down glide.",
+  },
+  {
+    id: "inspiration-hd-paired-crane-landing-side-light",
+    title: "Paired crane landing side light",
+    file: "inspiration-12-paired-crane-landing-side-light.jpg",
+    sceneType: "Paired landing",
+    description:
+      "Two cranes landing in warm side light, built around synchronized wing shape and waterline context.",
+    location: "Wind-aligned crane landing lane at an active sunset pool.",
+    lens: "Long wildlife zoom on beanbag, monopod, or gimbal.",
+    focalLength: "500-700mm",
+    aperture: "f/6.3-f/8",
+    shutterSpeed: "1/2000-1/2500 sec",
+    iso: "ISO 800-3200",
+    technique:
+      "Track the lead bird but keep enough width for the second crane. The keeper is wing shape plus spacing, not maximum subject size.",
+  },
+  {
+    id: "inspiration-hd-crane-family-landing-group",
+    title: "Crane family landing group",
+    file: "inspiration-13-crane-family-landing-group.jpg",
+    sceneType: "Family behavior",
+    description:
+      "Small crane family or group landing together, useful for behavior, spacing, and storytelling beyond single-bird action.",
+    location: "Crane pool, roost edge, or field-adjacent landing zone after sunset scouting.",
+    lens: "200-600mm or 100-500mm wildlife zoom.",
+    focalLength: "350-550mm",
+    aperture: "f/7.1-f/8",
+    shutterSpeed: "1/1600-1/2500 sec",
+    iso: "ISO 800-3200",
+    technique:
+      "Widen slightly for groups. Preserve the relationship among birds and avoid cutting off the trailing subject during the landing sequence.",
+  },
+  {
+    id: "inspiration-hd-crane-touchdown-reflection",
+    title: "Crane touchdown reflection",
+    file: "inspiration-14-crane-touchdown-reflection.jpg",
+    sceneType: "Touchdown reflection",
+    description:
+      "Single crane touching down in copper water with reflection, splash, and full wing posture.",
+    location: "Calm crane-pool edge with clean sunset water and predictable landing direction.",
+    lens: "Long wildlife zoom.",
+    focalLength: "500-700mm",
+    aperture: "f/6.3-f/8",
+    shutterSpeed: "1/2000-1/2500 sec",
+    iso: "ISO 800-3200",
+    technique:
+      "Keep the bird isolated and leave reflection room. The moment is the instant feet touch, not only the glide above the pool.",
+  },
+  {
+    id: "inspiration-hd-wide-dusk-crane-return",
+    title: "Wide dusk crane return",
+    file: "inspiration-15-wide-dusk-crane-return.jpg",
+    sceneType: "Dusk roost return",
+    description:
+      "Wide dusk return with crane lines, glowing water, mountains, and the end-of-day refuge mood.",
+    location: "Broad crane-pool view or legal pullout where the roost and mountain bands align.",
+    lens: "70-200mm, 100-400mm, or short end of a wildlife zoom.",
+    focalLength: "100-250mm",
+    aperture: "f/7.1-f/9",
+    shutterSpeed: "1/500-1/1600 sec",
+    iso: "ISO 800-3200",
+    technique:
+      "When individual action slows, widen the frame and let flock lines, water color, and mountains finish the day.",
+  },
+  {
+    id: "inspiration-hd-farm-field-crane-feeding",
+    title: "Farm-field crane feeding",
+    file: "inspiration-16-farm-field-crane-feeding.jpg",
+    sceneType: "Field feeding",
+    description:
+      "Cranes feeding in managed winter crop rows, with field geometry and mountains adding structure.",
+    location: "North Loop fields, Farm Deck area, or another legal vehicle-blind field position.",
+    lens: "200-600mm, 100-500mm, or 200-800mm zoom.",
+    focalLength: "300-600mm",
+    aperture: "f/6.3-f/8",
+    shutterSpeed: "1/1000-1/2000 sec",
+    iso: "ISO 400-1600",
+    technique:
+      "Use rows and spacing when behavior is quiet. Stay with the vehicle-blind approach and do not walk birds off food.",
+  },
+  {
+    id: "inspiration-hd-mixed-geese-cranes-field-mountains",
+    title: "Mixed geese and cranes in fields",
+    file: "inspiration-17-mixed-geese-cranes-field-mountains.jpg",
+    sceneType: "Mixed flock field scene",
+    description:
+      "Snow geese and cranes feeding in a winter field, with mountains and cottonwoods explaining the setting.",
+    location: "North Loop or managed field edge where mixed flocks are feeding from legal pullouts.",
+    lens: "100-400mm or 200-600mm wildlife zoom.",
+    focalLength: "200-450mm",
+    aperture: "f/7.1-f/9",
+    shutterSpeed: "1/1000-1/2000 sec",
+    iso: "ISO 400-1600",
+    technique:
+      "Layer species, field rows, and mountains. This is a habitat-and-behavior frame, so do not crop away the place.",
+  },
+  {
+    id: "inspiration-hd-harrier-field-edge-hunt",
+    title: "Harrier field-edge hunt",
+    file: "inspiration-18-harrier-field-edge-hunt.jpg",
+    sceneType: "Raptor field edge",
+    description:
+      "Northern-harrier-style raptor low over winter field habitat, broadening the set beyond cranes and geese.",
+    location: "Field margins, marsh edges, or North Loop habitat where raptors quarter low.",
+    lens: "Long wildlife zoom with responsive tracking.",
+    focalLength: "500-700mm",
+    aperture: "f/6.3-f/8",
+    shutterSpeed: "1/2000-1/3200 sec",
+    iso: "ISO 800-3200",
+    technique:
+      "Pre-focus on a clean field-edge band and wait for the raptor to bank; avoid chasing it across cluttered backgrounds.",
+  },
+  {
+    id: "inspiration-hd-field-liftoff-dust",
+    title: "Field lift-off dust",
+    file: "inspiration-19-field-liftoff-dust.jpg",
+    sceneType: "Field movement and dust",
+    description:
+      "Cranes and geese lifting from crop rows with dust, warm light, and field geometry.",
+    location: "Legal field pullout where feeding birds begin moving toward evening roosts.",
+    lens: "100-400mm or 200-600mm zoom.",
+    focalLength: "200-450mm",
+    aperture: "f/7.1-f/9",
+    shutterSpeed: "1/1600-1/2500 sec",
+    iso: "ISO 400-1600",
+    technique:
+      "Watch the whole field, not one bird. When dust and wing movement begin, include the rows and backlight instead of zooming away the story.",
+  },
+  {
+    id: "inspiration-hd-vehicle-blind-field-context",
+    title: "Vehicle-blind field context",
+    file: "inspiration-20-vehicle-blind-field-context.jpg",
+    sceneType: "Fieldcraft context",
+    description:
+      "Legal pullout and vehicle-blind context showing how field photography often happens without disturbing feeding birds.",
+    location: "Auto Tour Loop pullout beside active fields, with birds kept distant and undisturbed.",
+    lens: "24-105mm or 70-200mm for fieldcraft context.",
+    focalLength: "50-120mm",
+    aperture: "f/5.6-f/8",
+    shutterSpeed: "1/250-1/1000 sec",
+    iso: "ISO 200-800",
+    technique:
+      "Use the vehicle as a blind and show safe distance. The photograph teaches behavior and ethics as much as subject matter.",
+  },
+  {
+    id: "inspiration-hd-duck-portrait-reeds-reflection",
+    title: "Duck portrait in reeds",
+    file: "inspiration-21-duck-portrait-reeds-reflection.jpg",
+    sceneType: "Duck portrait",
+    description:
+      "Quiet duck portrait with reed framing, clean reflection, and morning water color.",
+    location: "Dabbler Deck, Eagle Scout Deck, Willow Deck, or another public wetland edge.",
+    lens: "200-600mm, 100-500mm, or 200-800mm wildlife zoom.",
+    focalLength: "500-800mm",
+    aperture: "f/6.3-f/8",
+    shutterSpeed: "1/500-1/1600 sec",
+    iso: "ISO 400-1600",
+    technique:
+      "Use ducks to practice bright-water exposure and head-angle patience after the main sunrise action has passed.",
+  },
+  {
+    id: "inspiration-hd-wetland-layers-through-reeds",
+    title: "Wetland layers through reeds",
+    file: "inspiration-22-wetland-layers-through-reeds.jpg",
+    sceneType: "Layered wetland composition",
+    description:
+      "Compressed reeds, water, distant birds, cottonwoods, and mountains for a slower place-based wetland frame.",
+    location: "Willow Deck, Coyote Deck, Dabbler Deck, or a legal wetland pullout with layered reeds.",
+    lens: "100-400mm or 200-600mm zoom.",
+    focalLength: "200-500mm",
+    aperture: "f/8-f/11",
+    shutterSpeed: "1/500-1/1600 sec",
+    iso: "ISO 400-1600",
+    technique:
+      "Compose through habitat and wait for birds to become punctuation. This is about layering, not filling the frame.",
+  },
+  {
+    id: "inspiration-hd-cottonwood-cattail-habitat",
+    title: "Cottonwood and cattail habitat",
+    file: "inspiration-23-cottonwood-cattail-habitat.jpg",
+    sceneType: "Habitat detail",
+    description:
+      "Winter cattails, cottonwoods, reflective water, and distant birds as an environmental detail image.",
+    location: "Wetland edge, boardwalk, deck, or roadside habitat where plants and water carry the scene.",
+    lens: "70-200mm, 100-400mm, or 24-105mm for wider habitat.",
+    focalLength: "70-180mm",
+    aperture: "f/8-f/11",
+    shutterSpeed: "1/125-1/500 sec",
+    iso: "ISO 200-800",
+    technique:
+      "Make a place image when wildlife is quiet. Use repeating cattails and cottonwood structure to keep the portfolio from becoming only portraits.",
+  },
+  {
+    id: "inspiration-hd-desert-edge-roadrunner",
+    title: "Desert-edge roadrunner",
+    file: "inspiration-24-desert-edge-roadrunner.jpg",
+    sceneType: "Desert-edge subject",
+    description:
+      "Roadrunner-style desert-edge portrait with scrub, sandy ground, mountains, and dry winter texture.",
+    location: "Visitor Center area, Rio Viejo Trail edge, Desert Arboretum, or another legal dry-margin habitat.",
+    lens: "Long zoom for shy small wildlife.",
+    focalLength: "500-800mm",
+    aperture: "f/6.3-f/8",
+    shutterSpeed: "1/1000-1/2000 sec",
+    iso: "ISO 400-1600",
+    technique:
+      "Move slowly, choose a clean background before the bird appears, and keep enough habitat to show the dry-side Bosque story.",
+  },
+  {
+    id: "inspiration-hd-seedhead-songbird-field-edge",
+    title: "Seedhead songbird field edge",
+    file: "inspiration-25-seedhead-songbird-field-edge.jpg",
+    sceneType: "Small-bird detail",
+    description:
+      "Small winter bird among seedheads with soft wetland and mountain context behind it.",
+    location: "Field margins, visitor-center edges, Rio Viejo, or quiet brushy habitat after the morning spectacle.",
+    lens: "Long wildlife zoom or 500mm-plus setup.",
+    focalLength: "500-800mm",
+    aperture: "f/6.3-f/8",
+    shutterSpeed: "1/1000-1/2000 sec",
+    iso: "ISO 400-1600",
+    technique:
+      "Treat small subjects as real targets. Wait for a clean perch, visible eye, and seedhead frame instead of forcing a busy brush photograph.",
+  },
+  {
+    id: "inspiration-hd-high-key-mist-waterbirds",
+    title: "High-key mist waterbirds",
+    file: "inspiration-26-high-key-mist-waterbirds.jpg",
+    sceneType: "Weather fallback",
+    description:
+      "High-key mist, pale water, cranes, and geese for a gray-day image where weather becomes the subject.",
+    location: "Any legal wetland pullout or deck where mist, fog, or pale water simplifies the scene.",
+    lens: "100-400mm or 200-600mm zoom.",
+    focalLength: "200-500mm",
+    aperture: "f/7.1-f/9",
+    shutterSpeed: "1/500-1/1600 sec",
+    iso: "ISO 800-3200",
+    technique:
+      "Expose high-key without losing bird shape, use reeds as structure, and let mist reduce the frame instead of fighting flat light.",
+  },
+  {
+    id: "inspiration-hd-panning-crane-motion-blur",
+    title: "Panning crane motion blur",
+    file: "inspiration-27-panning-crane-motion-blur.jpg",
+    sceneType: "Intentional motion",
+    description:
+      "Slow-shutter panning frame with partially sharp crane bodies, wing blur, and horizontal background streaks.",
+    location: "Crane pool, Flight Deck, or wetland edge after safe sharp frames are already made.",
+    lens: "200-600mm or 100-500mm zoom on a support that pans smoothly.",
+    focalLength: "300-500mm",
+    aperture: "f/7.1-f/11",
+    shutterSpeed: "1/60-1/125 sec",
+    iso: "ISO 100-800",
+    technique:
+      "Use this only after the safe frames. Pan through the bird, judge the result by head/body hints and background streak quality, and accept a low keeper rate.",
+  },
+  {
+    id: "inspiration-hd-sunset-crane-silhouettes",
+    title: "Sunset crane silhouettes",
+    file: "inspiration-28-sunset-crane-silhouettes.jpg",
+    sceneType: "Graphic silhouette",
+    description:
+      "Cranes crossing a warm sunset sky with low water, mountains, and reed silhouettes.",
+    location: "Roost approach or legal pullout with clean birds against the sunset sky.",
+    lens: "100-400mm or 200-600mm zoom.",
+    focalLength: "200-450mm",
+    aperture: "f/7.1-f/9",
+    shutterSpeed: "1/1000-1/2500 sec",
+    iso: "ISO 400-1600",
+    technique:
+      "Expose for the sky, not the bird. Make sure crane shapes separate cleanly so the silhouette remains readable.",
+  },
+  {
+    id: "inspiration-hd-flight-formations-mountains",
+    title: "Flight formations and mountains",
+    file: "inspiration-29-flight-formations-mountains.jpg",
+    sceneType: "Formation landscape",
+    description:
+      "Crane and goose formations over layered New Mexico mountains and refuge habitat.",
+    location: "Open field, roost approach, or deck where flight lines cross a clean mountain background.",
+    lens: "70-200mm, 100-400mm, or short end of a wildlife zoom.",
+    focalLength: "100-300mm",
+    aperture: "f/7.1-f/9",
+    shutterSpeed: "1/1600-1/2500 sec",
+    iso: "ISO 400-1600",
+    technique:
+      "Use formations as design. Choose a lens that preserves the mountain stack instead of isolating one bird from the place.",
+  },
+  {
+    id: "inspiration-hd-blue-hour-moon-cranes",
+    title: "Blue-hour moon cranes",
+    file: "inspiration-30-blue-hour-moon-cranes.jpg",
+    sceneType: "Blue-hour mood",
+    description:
+      "Blue-hour cranes, moon, still water, and mountain silhouettes as a quiet closing image.",
+    location: "Legal roost view or wetland edge within official access hours.",
+    lens: "70-200mm, 100-400mm, or normal-to-short telephoto zoom.",
+    focalLength: "100-250mm",
+    aperture: "f/5.6-f/8",
+    shutterSpeed: "1/125-1/500 sec",
+    iso: "ISO 1600-6400",
+    technique:
+      "Stay within legal hours and let the last image be restrained: moon placement, silhouettes, reflections, and a stable horizon matter more than action.",
+  },
+].map((item) => ({
+  id: item.id,
+  title: item.title,
+  src: `./assets/generated/inspiration-hd/${item.file}`,
+  category: "Inspiration",
+  alt: `Generated 1080p Bosque del Apache inspiration image of ${item.title.toLowerCase()}`,
+  caption: `Purpose-built generated Inspiration image for ${item.sceneType.toLowerCase()}; not an actual Bosque field photograph.`,
+  rights:
+    "AI-generated project inspiration/planning photo from this guide's Bosque del Apache shot descriptions. Use as expectation-setting only.",
+  placement: ["Inspiration", "Media", "Visual Asset Manifest"],
+  description: item.description,
+  sceneType: item.sceneType,
+  lesson: {
+    supposedLocation: item.location,
+    lens: item.lens,
+    focalLength: item.focalLength,
+    aperture: item.aperture,
+    shutterSpeed: item.shutterSpeed,
+    iso: item.iso,
+    technique: item.technique,
+  },
+}));
+
 const practiceTechniqueVisuals = [
   {
     id: "practice-hd-camera-setup-baseline",
@@ -2136,6 +2640,7 @@ const visualById = new Map(
     ...regeneratedGalleryVisuals,
     ...itineraryGeneratedVisuals,
     ...photoWindowGeneratedVisuals,
+    ...inspirationGeneratedVisuals,
     ...practiceTechniqueVisuals,
     ...practiceVisuals,
     ...practiceStandaloneVisuals,
@@ -2368,6 +2873,10 @@ const photoWindowLessons = Object.fromEntries(
   photoWindowGeneratedVisuals.map((visual) => [visual.id, visual.lesson])
 );
 
+const inspirationLessons = Object.fromEntries(
+  inspirationGeneratedVisuals.map((visual) => [visual.id, visual.lesson])
+);
+
 const standaloneGalleryLessons = Object.fromEntries(
   standaloneGalleryVisuals.map((visual) => {
     const lesson = galleryLessons[visual.parentId];
@@ -2472,6 +2981,7 @@ const visualLessons = {
   ...standaloneGalleryLessons,
   ...itineraryLessons,
   ...photoWindowLessons,
+  ...inspirationLessons,
   ...practiceLessons,
   ...practiceTechniqueLessons,
   ...practiceStandaloneLessons,
@@ -4709,14 +5219,24 @@ const mediaArticles = [
   },
 ];
 
+const mediaVisualSequence = [
+  "inspiration-hd-cold-crane-breath",
+  "inspiration-hd-panning-crane-motion-blur",
+  "inspiration-hd-mass-goose-blastoff-wide",
+  "inspiration-hd-vehicle-blind-field-context",
+  "inspiration-hd-overhead-goose-pattern",
+  "inspiration-hd-crane-takeoff-splash",
+  "inspiration-hd-farm-field-crane-feeding",
+  "inspiration-hd-minimal-goose-pastel-sky",
+  "inspiration-hd-high-key-mist-waterbirds",
+  "inspiration-hd-crane-family-landing-group",
+  "inspiration-hd-flight-formations-mountains",
+  "inspiration-hd-sunset-crane-silhouettes",
+];
+
 function visualIdForMedia(item) {
-  const sourceText = `${item.source} ${item.title} ${item.kind}`;
-  if (/crane|Evie|LifePixel/i.test(sourceText)) return "crane-roost-dawn";
-  if (/goose|Cornell|BirdWatching|Extreme/i.test(sourceText)) return "snow-goose-blastoff";
-  if (/field|Chasing|NANPA|Location/i.test(sourceText)) return "farm-field-feeding";
-  if (/settings|Technique|Wilderness/i.test(sourceText)) return "filter-practice";
-  if (/Hogan|Luminous|Lens/i.test(sourceText)) return "weather-motion-fallback";
-  return "wetland-deck";
+  const mediaIndex = mediaArticles.indexOf(item);
+  return mediaVisualSequence[mediaIndex % mediaVisualSequence.length];
 }
 
 const exifEvidence = [
@@ -4964,7 +5484,7 @@ const inspirationLinks = [
     title: "Cornell / Marie Read Bosque article",
     url: "https://www.allaboutbirds.org/news/bosque-del-apache-new-mexico-a-bird-photographers-playground/",
     sourceLabel: "Cornell",
-    visualId: "snow-goose-blastoff-03",
+    visualId: "inspiration-hd-mass-goose-blastoff-wide",
     description: [
       "Use this article as the editorial benchmark for how Bosque feels when bird density, sound, light, and photographer anticipation all stack together. It is especially useful for understanding why the refuge rewards a wide-to-long sequence instead of only tight bird portraits.",
       "The practical lesson is pacing: arrive early, start wider than instinct during goose lift-off, and study how behavior and light create the photograph before lens reach does. Article photos remain inspiration-only unless permission or a compatible license is recorded.",
@@ -4976,7 +5496,7 @@ const inspirationLinks = [
     title: "USFWS Bosque media library",
     url: "https://www.fws.gov/media-library?search=Bosque%20del%20Apache",
     sourceLabel: "USFWS",
-    visualId: "crane-roost-dawn-05",
+    visualId: "inspiration-hd-dawn-crane-roost-silhouettes",
     description: [
       "This is the first place to look when the project needs publishable refuge imagery because many U.S. Fish and Wildlife Service images are public domain or agency-credit material. It is also the safest reference source for habitat, roads, visitor context, and actual refuge species.",
       "Use the library to separate legally reusable visuals from inspiration-only browsing. Before publication, every selected image still needs its exact source URL, credit, and rights note recorded in the visual asset manifest.",
@@ -4988,7 +5508,7 @@ const inspirationLinks = [
     title: "eBird Bosque del Apache illustrated checklist",
     url: "https://ebird.org/hotspot/L130166",
     sourceLabel: "eBird",
-    visualId: "farm-field-feeding-02",
+    visualId: "inspiration-hd-mixed-geese-cranes-field-mountains",
     description: [
       "The hotspot checklist helps translate the photography plan into likely subjects rather than generic bird expectations. It is useful before each field window when deciding whether to prioritize cranes, geese, ducks, raptors, roadrunners, quail, sparrows, or habitat details.",
       "Treat contributor photos as inspiration and identification help, not as site assets. The main value is pattern recognition: what species appear, when they are reported, and which subjects deserve practice before the trip.",
@@ -5000,7 +5520,7 @@ const inspirationLinks = [
     title: "Flickr search: Bosque del Apache cranes",
     url: "https://www.flickr.com/search/?text=Bosque%20del%20Apache%20sandhill%20cranes",
     sourceLabel: "Flickr",
-    visualId: "crane-evening-return-01",
+    visualId: "inspiration-hd-evening-crane-final-approach",
     description: [
       "Flickr is useful for composition study because many photographers post variations on the same crane-pool themes: landing posture, reflection, side light, mountain bands, and winter water. Looking across many examples helps reveal which backgrounds repeat and which angles become cluttered.",
       "Reuse only a specific image with a compatible Creative Commons license or explicit permission, and document that decision before publication. Otherwise, keep the value at the study level: framing, timing, and field-position clues.",
@@ -5012,7 +5532,7 @@ const inspirationLinks = [
     title: "500px search: Bosque del Apache",
     url: "https://500px.com/search?q=Bosque%20del%20Apache&type=photos",
     sourceLabel: "500px",
-    visualId: "weather-motion-fallback-03",
+    visualId: "inspiration-hd-panning-crane-motion-blur",
     description: [
       "500px is best treated as a composition and mood reference, especially for polished interpretations of Bosque weather, motion, silhouettes, and graphic flock shapes. It can help identify what a finished image might feel like after the logistical plan is already sound.",
       "The licensing posture should stay conservative: browse, study, and link out, but do not cache or republish portfolio work unless usage rights are explicitly secured. Use the generated planning frame here as a rights-safe visual stand-in.",
@@ -5069,11 +5589,11 @@ function renderStandaloneFrameCard(id, options = {}) {
     .filter(Boolean)
     .join(" ");
   return `<button class="${classes}" type="button" data-visual-id="${visual.id}" aria-label="Open full image: ${visual.title}">
-    <img src="${visual.src}" alt="${visual.alt}" loading="${options.loading || "lazy"}" decoding="async" />
+    <img src="${visual.src}" alt="${visual.alt}" width="1920" height="1080" loading="${options.loading || "lazy"}" decoding="async" />
     <span class="visual-frame-copy">
       <b>${label}</b>
       ${options.hideDescription ? "" : `<span>${visual.description || visual.caption}</span>`}
-      <em>${lesson.focalLength}; ${lesson.aperture}; ${lesson.shutterSpeed}</em>
+      <em>${lesson.focalLength}; ${lesson.aperture}; ${lesson.shutterSpeed}${lesson.iso ? `; ${lesson.iso}` : ""}</em>
       ${options.showLocation ? `<small>${lesson.supposedLocation}</small>` : ""}
     </span>
   </button>`;
@@ -5132,6 +5652,7 @@ function renderVisualLightbox(titleId = "visual-lightbox-title") {
           <div><dt>Focal length</dt><dd data-gallery-field="focalLength"></dd></div>
           <div><dt>Aperture</dt><dd data-gallery-field="aperture"></dd></div>
           <div><dt>Shutter speed</dt><dd data-gallery-field="shutterSpeed"></dd></div>
+          <div data-gallery-optional="iso"><dt>ISO</dt><dd data-gallery-field="iso"></dd></div>
         </dl>
         <section class="gallery-technique">
           <h4>Technique</h4>
@@ -5152,8 +5673,9 @@ function renderVisualTechMeta(id, options = {}) {
     ["Focal length", lesson.focalLength],
     ["Aperture", lesson.aperture],
     ["Shutter speed", lesson.shutterSpeed],
+    ["ISO", lesson.iso],
     ["Technique", lesson.technique],
-  ];
+  ].filter(([, value]) => value);
   return `<dl class="${classes}">
     ${fields
       .map(
@@ -5246,7 +5768,7 @@ function renderAirportRouteMap() {
 function renderVisualMini(id, note = "Generated planning preview") {
   const visual = visualById.get(id) || generatedVisuals[0];
   return `<div class="visual-mini">
-    <img src="${visual.src}" alt="${visual.alt}" width="1536" height="1024" loading="lazy" decoding="async" />
+    <img src="${visual.src}" alt="${visual.alt}" width="1920" height="1080" loading="lazy" decoding="async" />
     <span>${note}</span>
   </div>`;
 }
@@ -5474,6 +5996,7 @@ function openVisualLightbox(overlay, id) {
     focalLength: overlay.querySelector('[data-gallery-field="focalLength"]'),
     aperture: overlay.querySelector('[data-gallery-field="aperture"]'),
     shutterSpeed: overlay.querySelector('[data-gallery-field="shutterSpeed"]'),
+    iso: overlay.querySelector('[data-gallery-field="iso"]'),
     technique: overlay.querySelector('[data-gallery-field="technique"]'),
   };
 
@@ -5486,6 +6009,10 @@ function openVisualLightbox(overlay, id) {
       : `${visual.caption} Use this as inspiration and a practice target, not proof of actual December 2026 field conditions.`;
   Object.entries(fields).forEach(([key, node]) => {
     if (node) node.textContent = lesson[key];
+  });
+  overlay.querySelectorAll("[data-gallery-optional]").forEach((node) => {
+    const key = node.getAttribute("data-gallery-optional");
+    node.hidden = !lesson[key];
   });
   originalLink.href = visual.src;
   overlay.hidden = false;
@@ -6338,12 +6865,68 @@ function renderPracticeDetail(index) {
 function renderInspiration() {
   const root = document.querySelector("#inspiration");
   root.innerHTML = `
-    <div class="section-title">
-      <div>
-        <p class="eyebrow">Visual references</p>
-        <h2>Inspiration</h2>
+    <section class="inspiration-hero-section">
+      <div class="section-title">
+        <div>
+          <p class="eyebrow">Visual references</p>
+          <h2>Inspiration</h2>
+        </div>
+        <p>Thirty purpose-built generated images show the kinds of Bosque del Apache photographs to plan for: roosts, blast-offs, fly-ins, fields, wetlands, small subjects, weather, motion, and blue hour.</p>
       </div>
-      <p>Use public-domain images directly only when the source license supports it. Everything else is inspiration-only and linked out.</p>
+      <div class="inspiration-feature-row">
+        ${renderStandaloneFrameCard("inspiration-hd-dawn-crane-roost-silhouettes", {
+          className: "inspiration-feature-frame",
+          hideDescription: false,
+          showLocation: true,
+          loading: "eager",
+        })}
+        <aside class="inspiration-feature-copy">
+          <p class="eyebrow">Generated planning set</p>
+          <h3>Use these as shot targets, not as proof of conditions.</h3>
+          <p class="card-copy">The images are rights-safe planning visuals created for this guide. Each one opens with scene notes, likely field position, technique, lens, focal length, aperture, shutter speed, and ISO.</p>
+          <p class="card-copy">The set is intentionally broad: spectacle frames sit beside quiet habitat, fieldcraft, small birds, weather fallback, and motion studies so the page teaches a portfolio, not a single postcard.</p>
+        </aside>
+      </div>
+    </section>
+    <section class="inspiration-generated-section">
+      <div class="section-title compact-title">
+        <div>
+          <p class="eyebrow">Generated Bosque shot targets</p>
+          <h3>Thirty high-resolution inspiration images</h3>
+        </div>
+        <p>Open any image for full-size review and camera-setting notes.</p>
+      </div>
+      <div class="inspiration-generated-grid">
+        ${inspirationGeneratedVisuals
+          .map((visual, index) =>
+            renderStandaloneFrameCard(visual.id, {
+              className: "inspiration-generated-card",
+              hideDescription: false,
+              showLocation: index < 6,
+              loading: index < 4 ? "eager" : "lazy",
+            })
+          )
+          .join("")}
+      </div>
+    </section>
+    <section class="panel rights-callout inspiration-policy">
+      <div>
+        <p class="eyebrow">Image rights boundary</p>
+        <h3>Study external work, but keep reused visuals rights-safe.</h3>
+        <p class="card-copy">Copyrighted article, portfolio, product, hotel, and checklist photos stay linked for reference only unless a license or permission is recorded. The generated images above and below are project planning visuals, not actual Bosque field photos.</p>
+      </div>
+      ${renderStandaloneFrameCard("inspiration-hd-overhead-goose-pattern", {
+        className: "callout-preview inspiration-callout-frame",
+        compact: true,
+        hideDescription: true,
+      })}
+    </section>
+    <div class="section-title compact-title support-title">
+      <div>
+        <p class="eyebrow">Public-domain reference photos</p>
+        <h3>Reusable source images</h3>
+      </div>
+      <p>Use public-domain images directly only when the source license supports it.</p>
     </div>
     <div class="grid-3">
       ${inspiration
@@ -6363,18 +6946,6 @@ function renderInspiration() {
         )
         .join("")}
     </div>
-    <section class="panel rights-callout inspiration-policy">
-      <div>
-        <p class="eyebrow">Image rights boundary</p>
-        <h3>Study external work, but keep reused visuals rights-safe.</h3>
-        <p class="card-copy">Copyrighted article, portfolio, product, hotel, and checklist photos stay linked for reference only unless a license or permission is recorded. The external-inspiration cards below use generated planning frames as visual treatments, then point back to the original source for study.</p>
-      </div>
-      ${renderStandaloneFrameCard("snow-goose-blastoff-03", {
-        className: "callout-preview inspiration-callout-frame",
-        compact: true,
-        hideDescription: true,
-      })}
-    </section>
     <div class="section-title compact-title support-title">
       <div>
         <p class="eyebrow">More places to look</p>

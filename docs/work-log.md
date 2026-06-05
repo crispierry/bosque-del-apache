@@ -42,6 +42,7 @@ Progress notes:
 
 - Regenerated and wired all nine Gallery stories as forty-five standalone 1920x1080 generated photos under `site/assets/generated/gallery-hd/`.
 - Replaced the active Gallery renderer with true clickable mosaic sections that exclude the old split `gallery-standalone` fragments until each story is regenerated.
+- Increased the desktop mosaic row height after design review so non-featured tiles no longer read as thin strips while preserving the true clickable mosaic structure.
 - Documented all forty-five regenerated Gallery photos in the visual asset manifest.
 - Validated desktop and 390px mobile for the completed Gallery: 45 active mosaic images, nine active mosaic groups, zero pending groups, no old `gallery-standalone` sources in the active Gallery, no split-contact-sheet copy or repair-language, no broken active images, no horizontal overflow, exact 1920x1080 file dimensions, 1920x1080 active image probes, and working lightbox metadata.
 
@@ -83,6 +84,7 @@ Completion notes:
 - Placed the image as a prominent editorial lead figure in the standalone Complete Photographer's Guide.
 - Added descriptive alt text and a generated-guide caption that clearly explains the image is editorial artwork, not an actual field photograph.
 - Documented the image prompt, provenance, rights note, and placement in the visual asset manifest.
+- Fixed the standalone Guide article after design/engineering review found seven stale `gallery-standalone` split-fragment figures; those active figures now use regenerated 1920x1080 `gallery-hd` images and the article modified date is June 5, 2026.
 - Validated the Guide image loads cleanly with no broken image, text overlap, awkward scaling, or page-level horizontal overflow on desktop and mobile.
 
 ## 2026-06-05 - Map Label Offset And Pin Alignment Correction Request
@@ -162,6 +164,7 @@ Completion notes:
 - Generated and integrated 18 purpose-built standalone 1920x1080 Itinerary images under `site/assets/generated/itinerary-hd/`, one for every visible itinerary stop from Sunday arrival through Saturday departure.
 - Replaced the live Itinerary visual renderer so each stop now uses its own dedicated lead image instead of reused Gallery groups, cropped fragments, contact sheets, or split-frame grids.
 - Added full image metadata for each Itinerary visual, including title, description, generated-planning labeling, location/scenario, lens, focal length, aperture, shutter speed, and technique notes for the full-image overlay.
+- Added explicit 1920x1080 dimensions to shared visual cards so lazy Itinerary images reserve space on mobile instead of briefly collapsing into thin strips.
 - Documented every regenerated Itinerary image in the visual asset manifest with local path, original generated source file, alt text, placement, prompt/provenance summary, and rights note.
 - Validated desktop and 390px mobile: seven day tabs, 18 total Itinerary image references, 18 unique `itinerary-hd` sources, zero old Gallery/contact-sheet sources, no missing asset references, no browser console errors, working lightbox metadata, no page-level horizontal overflow, and exact 1920x1080 file dimensions.
 
@@ -290,6 +293,7 @@ Completion notes:
 - Length reference markers show 100mm, 200mm, 300mm, and 400mm comparisons; weight reference markers show 500g, 1kg, 2kg, and 2.5kg comparisons.
 - Confirmed length charts sort longest/tallest to smallest and weight charts sort heaviest to lightest within each category.
 - Reworked category headers so descriptions sit directly under category titles instead of appearing off to the right.
+- Expanded and tightened the lens-scale label area after design review found compact chart labels clipping on desktop and mobile.
 - Validated desktop and 390px mobile: 10 reference strips, category descriptions under titles, no page-level horizontal overflow.
 
 ## 2026-06-05 - Practice Technique Image And Teaching Layout Correction Request
@@ -336,7 +340,7 @@ Completion notes:
 
 ## 2026-06-05 - Inspiration High-Resolution Generated Photo Set Request
 
-Status: requested; not yet implemented.
+Status: completed and validated June 5, 2026.
 
 Goal: correct and expand the Inspiration page with high-resolution, purpose-built, photorealistic generated images that accurately capture the kinds of photographs people typically make at Bosque del Apache. Cropped fragments from previous mosaic/contact-sheet images are not acceptable.
 
@@ -389,6 +393,16 @@ Notes:
 - This correction supersedes the previous Inspiration implementation that reused cropped/split generated frames.
 - The purpose of this page is inspiration and photographic expectation-setting, so image quality and scene credibility matter more than simply filling slots.
 
+Completion notes:
+
+- Generated and integrated 30 purpose-built standalone 1920x1080 Inspiration images under `site/assets/generated/inspiration-hd/`.
+- Rebuilt the Inspiration page so the generated set is the primary experience, with a large feature image, explanatory planning copy, a curated 30-image grid, public-domain references, and link-only external study sources.
+- Added complete image metadata for each Inspiration image: title, scene type, description, likely shooting area, lens, focal length, aperture, shutter speed, ISO, and technique notes.
+- Updated the shared lightbox and image-card metadata so ISO is shown when available and lazy images reserve 16:9 layout space before loading.
+- Replaced the External Inspiration cards and Media thumbnails with individual `inspiration-hd` images instead of older Gallery/contact-sheet frames.
+- Documented all 30 regenerated Inspiration photos in the visual asset manifest with local path, original generated source file, alt text, placement, prompt/provenance summary, and rights note.
+- Validated desktop and 390px mobile: 30 active Inspiration cards, 30 unique `inspiration-hd` sources, zero active old Gallery/contact-sheet sources on Inspiration, complete metadata with ISO, no browser console errors, no missing local asset references, no page-level horizontal overflow, exact 1920x1080 file dimensions, and visually reviewed desktop/mobile screenshots.
+
 ## 2026-06-05 - Media Disclaimer Copy Removal Request
 
 Status: completed and validated June 5, 2026.
@@ -416,6 +430,7 @@ Completion notes:
 
 - Removed the repeated "Generated preview; source photo not reused" card label from the Media source cards.
 - Kept a shorter neutral generated-preview label where a small visual marker remains useful.
+- Replaced repetitive contact-sheet Media thumbnails with individual relevant `inspiration-hd` images so Media cards no longer reuse the same old contact sheets across unrelated sources.
 - Validated desktop and 390px mobile: old disclaimer phrase is absent and no page-level horizontal overflow.
 
 ## 2026-06-05 - Sources Thumbnail Relevance Cleanup Request
@@ -453,6 +468,31 @@ Completion notes:
 - Reframed Sources as a source-first index focused on topic, title, URL, and date checked.
 - Removed now-unused source-thumbnail mapping code and related CSS.
 - Validated desktop and 390px mobile: 27 source rows, zero source thumbnails, no confusing repeated visuals, and no page-level horizontal overflow.
+
+## 2026-06-05 - Design And Engineering Review Follow-Up
+
+Status: completed and validated June 5, 2026.
+
+Goal: address review findings after the June 5 work-log correction pass and make the site closer to publish-ready.
+
+Findings fixed:
+
+- Guide still used seven stale `gallery-standalone` split/cropped images in `site/complete-photographers-guide.html`.
+- Guide SEO/article freshness metadata still said June 3, 2026 despite June 5 publication-facing updates.
+- Itinerary lazy images could briefly collapse on mobile because shared visual cards did not reserve image dimensions.
+- Media cards reused repetitive contact-sheet thumbnails instead of source-relevant visuals.
+- Gear scale labels could clip in compact chart columns.
+- Gallery desktop mosaic rows could make non-featured 16:9 images read as too thin.
+- Publish-readiness checks were mostly manual.
+
+Completion notes:
+
+- Replaced the active Guide split-fragment figures with regenerated 1920x1080 `gallery-hd` figures and updated Guide modified metadata/date to June 5, 2026.
+- Added 1920x1080 dimensions to shared visual cards and added ISO to the shared visual metadata/lightbox path.
+- Replaced Media thumbnail mapping with individual `inspiration-hd` visuals.
+- Expanded lens-scale label space and increased Gallery mosaic row height.
+- Added `scripts/qa-static.mjs` and documented the static QA commands in `site/README.md`.
+- Validated with `node --check site/app.js`, `node scripts/qa-static.mjs`, `git diff --check`, in-app browser desktop/mobile DOM audits for Inspiration, Guide, Media, Gear, Itinerary, and Gallery, plus visual screenshots for Inspiration desktop/mobile, Guide mobile, and Gallery desktop.
 
 ## 2026-06-04 - Gallery Standalone HD Image Request
 
