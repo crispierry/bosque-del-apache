@@ -530,7 +530,7 @@ const travelVisuals = [
     alt:
       "Generated editorial illustration of a rental SUV cargo area organized for predawn wildlife photography",
     caption:
-      "Generated rental-car workflow preview for Travel planning; no real rental company, vehicle brand, or camera brand is represented.",
+      "Generated rental car setup illustration for Travel planning; no real rental company, vehicle brand, or camera brand is represented.",
     rights:
       "AI-generated travel-planning illustration created for this project. Use as a logistics visual, not as a literal vehicle or rental-company recommendation.",
     placement: ["Travel", "Visual Asset Manifest"],
@@ -1088,8 +1088,10 @@ const photoLocations = [
     lon: -106.890917,
     windows: ["mid-morning", "intel"],
     confidence: "official FWS",
+    labelShortMobile: "Visitor",
     labelDirection: "left",
-    labelOffset: [-10, -45],
+    labelOffset: [-42, 54],
+    labelOffsetMobile: [-42, 46],
     note:
       "Start here when open for current water, road, roost, and closure intelligence. Visitor Center hours currently show Thu-Mon, 9 AM-4 PM.",
   },
@@ -1100,8 +1102,9 @@ const photoLocations = [
     lon: -106.8766304,
     windows: ["sunrise", "sunset"],
     confidence: "field pin",
-    labelDirection: "right",
-    labelOffset: [-20, -8],
+    labelShortMobile: "North Crane",
+    labelDirection: "left",
+    labelOffset: [-38, -8],
     note:
       "Primary crane-pool scout for dawn lift-off and evening returns. Verify legal pullouts, signs, wind direction, and active birds each day.",
   },
@@ -1112,8 +1115,9 @@ const photoLocations = [
     lon: -106.8778053,
     windows: ["sunrise", "sunset"],
     confidence: "field pin",
+    labelShortMobile: "South Crane N",
     labelDirection: "left",
-    labelOffset: [8, 10],
+    labelOffset: [-38, 10],
     note:
       "Alternate crane-pool angle for reflection, landing lanes, and mountain bands. Use only legal parking, and stay clear of the railroad and shoulders.",
   },
@@ -1124,8 +1128,9 @@ const photoLocations = [
     lon: -106.8785379,
     windows: ["sunrise", "sunset"],
     confidence: "field pin",
-    labelDirection: "bottom",
-    labelOffset: [0, 12],
+    labelShortMobile: "South Crane S",
+    labelDirection: "left",
+    labelOffset: [-38, 30],
     note:
       "Good for adjusting against wind and light when the north pullout is crowded or the birds stage farther south.",
   },
@@ -1136,8 +1141,10 @@ const photoLocations = [
     lon: -106.8844325,
     windows: ["sunrise", "sunset"],
     confidence: "field pin",
-    labelDirection: "right",
-    labelOffset: [10, 0],
+    labelShortMobile: "Flight Deck",
+    labelDirection: "left",
+    labelOffset: [-42, -30],
+    labelOffsetMobile: [-42, -62],
     note:
       "Classic snow-goose blast-off position when Main Pool has water and birds. Scout the afternoon before committing a sunrise here.",
   },
@@ -1148,8 +1155,10 @@ const photoLocations = [
     lon: -106.8922801,
     windows: ["mid-morning"],
     confidence: "field pin",
+    labelShortMobile: "Dabbler",
     labelDirection: "left",
-    labelOffset: [-10, 48],
+    labelOffset: [-38, 22],
+    labelOffsetMobile: [-42, 76],
     note:
       "South Loop ducks, coots, reeds, reflections, slower practice, and clean habitat frames after the first fly-out.",
   },
@@ -1160,8 +1169,10 @@ const photoLocations = [
     lon: -106.8842161,
     windows: ["mid-morning"],
     confidence: "field pin",
+    labelShortMobile: "Eagle Scout",
     labelDirection: "left",
-    labelOffset: [-10, -4],
+    labelOffset: [-42, -38],
+    labelOffsetMobile: [-42, -8],
     note:
       "A calmer wetland viewpoint for ducks, geese, reeds, reflections, and exposure practice on bright birds.",
   },
@@ -1172,10 +1183,9 @@ const photoLocations = [
     lon: -106.8618949,
     windows: ["mid-morning"],
     confidence: "field pin",
-    labelDirection: "top",
-    labelDirectionMobile: "left",
-    labelOffset: [0, -36],
-    labelOffsetMobile: [-12, -75],
+    labelShortMobile: "Willow",
+    labelDirection: "right",
+    labelOffset: [42, -30],
     note:
       "North Loop wetland work with long-lens compression. Keep tripod legs compact if other visitors are present.",
   },
@@ -1186,8 +1196,9 @@ const photoLocations = [
     lon: -106.8611816,
     windows: ["mid-morning"],
     confidence: "field pin",
+    labelShortMobile: "Coyote",
     labelDirection: "right",
-    labelOffset: [12, 8],
+    labelOffset: [42, 28],
     note:
       "Pair with Willow Deck for ducks, distant cranes, raptors, and habitat images when the crop-field action slows.",
   },
@@ -1198,8 +1209,9 @@ const photoLocations = [
     lon: -106.8610046,
     windows: ["mid-morning", "sunset"],
     confidence: "field pin",
-    labelDirection: "top",
-    labelOffset: [0, 58],
+    labelShortMobile: "Farm Deck",
+    labelDirection: "right",
+    labelOffset: [38, 0],
     note:
       "Use after fly-out for feeding cranes/geese, raptors, and flight lines. Field access and bird placement change with management activity.",
   },
@@ -1210,8 +1222,10 @@ const photoLocations = [
     lon: -106.8733529,
     windows: ["mid-morning"],
     confidence: "field pin",
+    labelShortMobile: "Rio Viejo",
     labelDirection: "left",
-    labelOffset: [-10, 8],
+    labelOffset: [-38, 8],
+    labelOffsetMobile: [-42, -64],
     note:
       "Short-walk change of pace for marsh birds, passerines, quail, roadrunner, and texture work. Potable water is not assumed on the loop.",
   },
@@ -2586,6 +2600,35 @@ function getLensScaleTrackWidth(itemCount) {
   return axisWidth + itemCount * columnWidth + Math.max(0, itemCount - 1) * columnGap;
 }
 
+const lensLengthReferences = [
+  { value: 100, label: "100 mm", note: "small travel zoom length" },
+  { value: 200, label: "200 mm", note: "70-200 class reach" },
+  { value: 300, label: "300 mm", note: "compact wildlife length" },
+  { value: 400, label: "400 mm", note: "large long-lens body" },
+];
+
+const lensWeightReferences = [
+  { value: 500, label: "500 g", note: "light carry" },
+  { value: 1000, label: "1 kg", note: "daypack threshold" },
+  { value: 2000, label: "2 kg", note: "long-lens carry" },
+  { value: 2500, label: "2.5 kg", note: "heavy handheld" },
+];
+
+function renderScaleReferences(references, scaleMax, scaleType) {
+  return `<div class="lens-scale-reference-strip" aria-label="${scaleType === "weight" ? "Weight" : "Length"} reference comparisons">
+    ${references
+      .map((reference) => {
+        const pct = Math.max(8, Math.min((reference.value / scaleMax) * 100, 100));
+        return `<article class="scale-reference-card ${scaleType === "weight" ? "is-weight" : "is-length"}">
+          <span class="scale-reference-visual" style="--reference-size: ${pct.toFixed(2)};"></span>
+          <strong>${reference.label}</strong>
+          <em>${reference.note}</em>
+        </article>`;
+      })
+      .join("")}
+  </div>`;
+}
+
 const gearScaleBrands = [
   { label: "Sony", system: "Sony" },
   { label: "Sigma", system: "Sigma E" },
@@ -2659,7 +2702,7 @@ function renderGearScaleControls(selectedSystems) {
   </section>`;
 }
 
-function renderScaleCategoryCharts({ items, scaleMax, ticks, scaleType, chartClass, ariaLabel, renderItem }) {
+function renderScaleCategoryCharts({ items, scaleMax, ticks, scaleType, chartClass, ariaLabel, references, renderItem }) {
   const categories = gearScaleCategories
     .map((category) => ({
       ...category,
@@ -2680,6 +2723,7 @@ function renderScaleCategoryCharts({ items, scaleMax, ticks, scaleType, chartCla
             <h3>${category.title}</h3>
             <p>${category.description}</p>
           </div>
+          ${renderScaleReferences(references, scaleMax, scaleType)}
           <div class="lens-scale-chart ${chartClass || ""}" style="--lens-scale-track-width: ${getLensScaleTrackWidth(chartItems.length)}px;" role="img" aria-label="${ariaLabel}: ${category.title}">
             <div class="lens-scale-grid" aria-hidden="true">
               ${ticks
@@ -2762,6 +2806,7 @@ function renderLensLengthScale(selectedSystems = new Set(gearScaleBrands.map((br
       scaleMax,
       ticks,
       scaleType: "length",
+      references: lensLengthReferences,
       ariaLabel: "Vertical bar chart comparing physical lens length in millimeters",
       renderItem,
     })}
@@ -2822,6 +2867,7 @@ function renderLensWeightScale(selectedSystems = new Set(gearScaleBrands.map((br
       ticks,
       scaleType: "weight",
       chartClass: "weight-scale-chart",
+      references: lensWeightReferences,
       ariaLabel: "Vertical bar chart comparing lens and teleconverter weight in grams",
       renderItem,
     })}
@@ -3866,9 +3912,25 @@ async function renderMapInto(rootId, places, options = {}) {
     };
   };
 
+  const getFitBoundsOptions = () => {
+    if (!options.showPinLabels) return { padding: [28, 28] };
+    const isCompactMap = window.matchMedia?.("(max-width: 680px)")?.matches;
+    const horizontalPadding = isCompactMap ? 88 : 172;
+    const verticalPadding = isCompactMap ? 38 : 44;
+    return {
+      paddingTopLeft: [horizontalPadding, verticalPadding],
+      paddingBottomRight: [horizontalPadding, verticalPadding],
+    };
+  };
+
+  const getTooltipText = (place) => {
+    const isCompactMap = window.matchMedia?.("(max-width: 680px)")?.matches;
+    return isCompactMap && place.labelShortMobile ? place.labelShortMobile : place.name;
+  };
+
   const bindPinLabel = (marker, place) => {
     marker.unbindTooltip();
-    marker.bindTooltip(place.name, getTooltipOptions(place));
+    marker.bindTooltip(getTooltipText(place), getTooltipOptions(place));
   };
 
   markerPlaces.forEach((place) => {
@@ -3882,7 +3944,7 @@ async function renderMapInto(rootId, places, options = {}) {
   });
 
   const bounds = LRef.latLngBounds(markerPlaces.map((place) => [place.lat, place.lon]));
-  map.fitBounds(bounds, { padding: [28, 28] });
+  map.fitBounds(bounds, getFitBoundsOptions());
 
   if (options.showPinLabels) {
     let wasCompactMap = window.matchMedia?.("(max-width: 680px)")?.matches;
@@ -3895,7 +3957,7 @@ async function renderMapInto(rootId, places, options = {}) {
           map.invalidateSize();
           const isCompactMap = window.matchMedia?.("(max-width: 680px)")?.matches;
           if (isCompactMap !== wasCompactMap) {
-            map.fitBounds(bounds, { padding: [28, 28] });
+            map.fitBounds(bounds, getFitBoundsOptions());
             labelMarkers.forEach(({ marker, place }) => bindPinLabel(marker, place));
             wasCompactMap = isCompactMap;
           }
@@ -4127,28 +4189,28 @@ async function renderTravel() {
       </div>
       <p>The best car is not fancy; it is easy to load quietly in the dark, stable on winter highways, and practical on gravel pullouts.</p>
     </div>
-    <section class="panel rights-callout rental-car-visual-panel">
-      <div>
-        <p class="eyebrow">Rental workflow</p>
-        <h3>Book for cargo access, not status.</h3>
-        <p class="card-copy">The rental-car visual is a generated planning illustration: long lens protected, support reachable, water and layers visible, route notes handy, and valuables hidden when parked. Use it as a packing checklist before choosing the actual class at ABQ.</p>
-      </div>
+    <section class="panel rental-car-section">
       ${renderTeachingPreview("travel-rental-car-cargo", {
-        className: "callout-preview rental-car-preview",
-        label: "Generated rental-car planning illustration",
+        className: "rental-car-preview",
+        label: "Generated rental car illustration",
         loading: "lazy",
       })}
+      <div class="rental-car-copy">
+        <p class="eyebrow">Rental car setup</p>
+        <h3>Book for cargo access, not status.</h3>
+        <p class="card-copy">The approved rental car illustration shows the practical decision: long lens protected, support reachable, water and layers visible, route notes handy, and valuables hidden when parked. Use it as a packing checklist before choosing the actual class at ABQ.</p>
+        <div class="rental-car-guidance-list">
+          ${rentalCarGuidance
+            .map(
+              (item) => `<article class="travel-card">
+                <h4>${item.title}</h4>
+                <p class="card-copy">${item.note}</p>
+              </article>`
+            )
+            .join("")}
+        </div>
+      </div>
     </section>
-    <div class="grid-3">
-      ${rentalCarGuidance
-        .map(
-          (item) => `<article class="travel-card">
-            <h3>${item.title}</h3>
-            <p class="card-copy">${item.note}</p>
-          </article>`
-        )
-        .join("")}
-    </div>
     <div class="section-title compact-title support-title">
       <div>
         <p class="eyebrow">Hotels and commute</p>
@@ -4676,7 +4738,7 @@ function renderMedia() {
           ${primarySources
             .map(
               (item, index) => `<article class="priority-source-card ${index === 0 ? "is-lead" : ""}">
-                ${renderVisualMini(visualIdForMedia(item), "Generated preview; source photo not reused")}
+                ${renderVisualMini(visualIdForMedia(item), "Generated preview")}
                 <div class="media-meta">
                   <span>${item.date}</span>
                   <span>${item.kind}</span>
@@ -4778,7 +4840,7 @@ function renderMedia() {
       .map(
         (item, index) => `<article class="media-card article-card ${index === 0 && filter === "All" ? "is-featured" : ""}">
           <div class="article-kicker">
-            ${renderVisualMini(visualIdForMedia(item), "Generated preview; source photo not reused")}
+            ${renderVisualMini(visualIdForMedia(item), "Generated preview")}
             <div class="media-meta">
               <span>${item.date}</span>
               <span>${item.kind}</span>
@@ -4806,16 +4868,6 @@ function renderMedia() {
   draw("All");
 }
 
-function visualIdForSource(source) {
-  const text = `${source.topic} ${source.title}`;
-  if (/lodging|hotel|travel|flight|rental|airport/i.test(text)) return "travel-workflow";
-  if (/gear|lens|camera|specs|filter|book/i.test(text)) return "filter-practice";
-  if (/crane|festival/i.test(text)) return "crane-roost-dawn";
-  if (/goose|image license|photo guide|media/i.test(text)) return "snow-goose-blastoff";
-  if (/map|loop|auto tour|field|safari/i.test(text)) return "farm-field-feeding";
-  return "wetland-deck";
-}
-
 function renderSources() {
   const root = document.querySelector("#sources");
   root.innerHTML = `
@@ -4827,14 +4879,13 @@ function renderSources() {
       <p>Current access, travel, lodging, pricing, specs, road, and bird-location notes should be rechecked after final booking and again in the week before travel.</p>
     </div>
     <section class="panel source-policy">
-      <p class="eyebrow">Visual source cards</p>
-      <p class="card-copy">Thumbnails here are generated planning previews chosen by source topic. They help recognize source categories; they are not screenshots, scraped article photos, or hotel/product images.</p>
+      <p class="eyebrow">Source-first index</p>
+      <p class="card-copy">This page prioritizes source quality, date checked, topic, and direct links. Repetitive generic thumbnails have been removed unless a future source-specific visual genuinely helps the citation.</p>
     </section>
     <div class="timeline">
       ${sources
         .map(
           (source) => `<article class="source-row">
-            <div class="source-thumb">${renderVisualMini(visualIdForSource(source), "Topic preview")}</div>
             <div><span class="tag">${source.topic}</span></div>
             <div>
               <h3><a href="${source.url}" target="_blank" rel="noreferrer">${source.title}</a></h3>

@@ -4,7 +4,7 @@ This file tracks requested project work that has not yet been implemented, verif
 
 ## 2026-06-05 - Gallery True Mosaic Regeneration Correction Request
 
-Status: requested; not yet implemented.
+Status: completed and validated June 5, 2026.
 
 Goal: correct the Gallery implementation. The cropped-contact-sheet approach is not acceptable. Regenerate the individual Gallery images as true standalone, high-resolution generated photos, and present them in a real clickable mosaic.
 
@@ -68,9 +68,17 @@ Notes:
 - This correction supersedes the earlier Guide illustration implementation where existing cropped/generated assets were reused.
 - The corrected requirement is not to fill the Guide with leftover visuals; it is to create a dedicated high-quality Guide image for its own purpose.
 
+Completion notes:
+
+- Generated a new purpose-built Guide hero image for the long-form field guide rather than reusing cropped contact-sheet frames or scrapped gallery artwork.
+- Placed the image as a prominent editorial lead figure in the standalone Complete Photographer's Guide.
+- Added descriptive alt text and a generated-guide caption that clearly explains the image is editorial artwork, not an actual field photograph.
+- Documented the image prompt, provenance, rights note, and placement in the visual asset manifest.
+- Validated the Guide image loads cleanly with no broken image, text overlap, awkward scaling, or page-level horizontal overflow on desktop and mobile.
+
 ## 2026-06-05 - Map Label Offset And Pin Alignment Correction Request
 
-Status: requested; not yet implemented.
+Status: completed and validated June 5, 2026.
 
 Goal: correct the Refuge Shooting Map label placement so labels are clearly aligned with their pins and no longer sit awkwardly over the map or visually detach from the peg/pin they describe.
 
@@ -97,6 +105,13 @@ Notes:
 
 - The prior permanent-label implementation added the labels, but the current placement needs a dedicated alignment pass.
 - Do not treat this as completed until the label offsets and anchor directions have been visually checked against the live map.
+
+Completion notes:
+
+- Reworked permanent map-label offsets so left-side pins bias left and right-side pins bias right.
+- Added horizontal map-fit gutters for the photography map so permanent labels are not clipped at the map edges.
+- Added mobile-specific short labels and offsets for dense clusters while preserving full labels on desktop.
+- Validated desktop and 390px mobile: 11 labels, no label collisions, no clipped labels, no page-level horizontal overflow.
 
 ## 2026-06-05 - Itinerary Purpose-Built Regenerated Image Correction Request
 
@@ -174,7 +189,7 @@ Notes:
 
 ## 2026-06-05 - Travel Rental Car Section Layout And Label Correction Request
 
-Status: requested; not yet implemented.
+Status: completed and validated June 5, 2026.
 
 Goal: improve the Travel page rental-car section. The generated rental car illustration is successful and should be kept, but the section should not be framed as a "rental workflow." It should clearly read as a rental car section, and the layout needs to be redesigned so the image and rental-car guidance work better together.
 
@@ -203,9 +218,16 @@ Notes:
 - The route/airport illustration work is approved.
 - The rental car illustration is approved; the requested change is section labeling and layout, not regenerating that image.
 
+Completion notes:
+
+- Kept the approved rental car illustration and rebuilt the Travel rental area as a dedicated rental car setup section.
+- Removed "Rental workflow" framing from the section and changed the visual caption to "Generated rental car setup illustration."
+- Moved rental-car guidance into a clearer list beside the image so the practical booking/cargo decisions are easier to scan.
+- Validated desktop and 390px mobile: one rental car section, no "Rental workflow" copy, no page-level horizontal overflow.
+
 ## 2026-06-05 - Gear Scale Reference Image And Category Layout Correction Request
 
-Status: requested; not yet implemented.
+Status: completed and validated June 5, 2026.
 
 Goal: improve the Gear page lens scale charts so they are easier to understand at a glance. The current charts are missing clear visual references, the sort order should run from largest/heaviest to smallest/lightest, and the category descriptions are mis-positioned.
 
@@ -235,6 +257,14 @@ Notes:
 
 - The existing brand/category filter concept is useful, but the scale charts need better reference context and clearer hierarchy.
 - Do not treat this as completed until the chart order, reference visuals, and category-description alignment have all been checked visually.
+
+Completion notes:
+
+- Added reference silhouette strips to every lens length and lens weight category chart.
+- Length reference markers show 100mm, 200mm, 300mm, and 400mm comparisons; weight reference markers show 500g, 1kg, 2kg, and 2.5kg comparisons.
+- Confirmed length charts sort longest/tallest to smallest and weight charts sort heaviest to lightest within each category.
+- Reworked category headers so descriptions sit directly under category titles instead of appearing off to the right.
+- Validated desktop and 390px mobile: 10 reference strips, category descriptions under titles, no page-level horizontal overflow.
 
 ## 2026-06-05 - Practice Technique Image And Teaching Layout Correction Request
 
@@ -326,7 +356,7 @@ Notes:
 
 ## 2026-06-05 - Media Disclaimer Copy Removal Request
 
-Status: requested; not yet implemented.
+Status: completed and validated June 5, 2026.
 
 Goal: clean up the Media section by removing unnecessary disclaimer copy that clutters the page.
 
@@ -347,9 +377,15 @@ Notes:
 
 - This is a copy/layout cleanup request only; it does not require regenerating Media images.
 
+Completion notes:
+
+- Removed the repeated "Generated preview; source photo not reused" card label from the Media source cards.
+- Kept a shorter neutral generated-preview label where a small visual marker remains useful.
+- Validated desktop and 390px mobile: old disclaimer phrase is absent and no page-level horizontal overflow.
+
 ## 2026-06-05 - Sources Thumbnail Relevance Cleanup Request
 
-Status: requested; not yet implemented.
+Status: completed and validated June 5, 2026.
 
 Goal: clean up the Sources page thumbnails. The current thumbnails are repetitive and do not make sense for the links they represent. Either remove the thumbnails or replace them with visuals that do justice to each linked source.
 
@@ -375,6 +411,13 @@ Notes:
 
 - The likely acceptable outcome is removing many or all source thumbnails unless a source-specific visual is genuinely useful.
 - Do not keep thumbnails simply because the Media or Inspiration sections have imagery.
+
+Completion notes:
+
+- Removed the repetitive generated thumbnails from the Sources rows.
+- Reframed Sources as a source-first index focused on topic, title, URL, and date checked.
+- Removed now-unused source-thumbnail mapping code and related CSS.
+- Validated desktop and 390px mobile: 27 source rows, zero source thumbnails, no confusing repeated visuals, and no page-level horizontal overflow.
 
 ## 2026-06-04 - Gallery Standalone HD Image Request
 

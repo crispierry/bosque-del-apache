@@ -178,6 +178,14 @@ These placements reuse standalone generated frames already documented above. The
 | Practice | `site/assets/generated/practice-standalone/*.jpg` plus `filter-practice-01` through `filter-practice-05` | Practice cards, practice detail pages, and filter drills now use individual expandable frames. |
 | Inspiration External Links | `snow-goose-blastoff-03`, `crane-roost-dawn-05`, `farm-field-feeding-02`, `crane-evening-return-01`, `weather-motion-fallback-03` | Rights-safe generated visual treatments for external inspiration links; original third-party photos remain link-only. |
 
+## Purpose-Built Guide Illustration
+
+This generated image corrects the Guide page visual treatment by using a dedicated editorial hero image instead of cropped contact-sheet fragments or reused gallery frames.
+
+| ID | Local Path | Original Generated File | Alt Text | Placement | Prompt / Provenance | Rights Note |
+|---|---|---|---|---|---|---|
+| `guide-field-hero` | `site/assets/generated/guide/guide-field-hero.jpg` | `ig_020f2f18b19667ad016a222f5e3bfc819198ad812abf4e9672.png` | Generated editorial guide hero showing a winter photographer at Bosque del Apache with cranes, geese, wetlands, dawn mist, and distant mountains. | Complete Photographer's Guide lead figure and Guide tab reader link context | Purpose-built photorealistic editorial hero for the field guide: early-December Bosque del Apache wetland roost, sandhill cranes and snow geese, legal roadside photographer silhouette/tripod, cold dawn mist, distant New Mexico mountains, no text, no logos, no contact-sheet layout. | Generated guide illustration; not an actual Bosque field photo and not proof of December 2026 field conditions. |
+
 ## Generated Travel Illustrations
 
 These generated travel illustrations support the Travel page airport and rental-car planning sections. They are original project assets, not third-party map tiles, airport logos, airline logos, rental-company imagery, or real property photos.
