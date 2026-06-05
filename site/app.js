@@ -970,6 +970,88 @@ const regeneratedGalleryImageGroups = {
         "Purpose-built regenerated 1080p planning photo for layered water, reeds, small birds, mountains, and calm mid-morning observation.",
     },
   ],
+  "desert-edge-details": [
+    {
+      id: "desert-edge-details-01",
+      parentId: "desert-edge-details",
+      title: "Roadrunner on a gravel edge",
+      src: "./assets/generated/gallery-hd/desert-edge-details-01.jpg",
+      category: "Mid-morning",
+      alt:
+        "Generated standalone 1080p planning photo of a roadrunner standing on a Bosque del Apache gravel edge",
+      caption:
+        "Generated standalone 1080p planning photo for desert-edge roadrunner work; not an actual Bosque field photograph.",
+      rights:
+        "AI-generated project planning photo from this guide's shot descriptions. Use as expectation-setting only.",
+      placement: ["Gallery", "Visual Asset Manifest"],
+      description:
+        "Purpose-built regenerated 1080p planning photo for roadrunner behavior, gravel-edge habitat, dry winter brush, and respectful distance.",
+    },
+    {
+      id: "desert-edge-details-02",
+      parentId: "desert-edge-details",
+      title: "Small quail group in winter brush",
+      src: "./assets/generated/gallery-hd/desert-edge-details-02.jpg",
+      category: "Mid-morning",
+      alt:
+        "Generated standalone 1080p planning photo of a small quail group moving through Bosque del Apache winter brush",
+      caption:
+        "Generated standalone 1080p planning photo for quail in winter brush; not an actual Bosque field photograph.",
+      rights:
+        "AI-generated project planning photo from this guide's shot descriptions. Use as expectation-setting only.",
+      placement: ["Gallery", "Visual Asset Manifest"],
+      description:
+        "Purpose-built regenerated 1080p planning photo for small quail groups, brush separation, patient edge scanning, and mid-morning detail work.",
+    },
+    {
+      id: "desert-edge-details-03",
+      parentId: "desert-edge-details",
+      title: "Sparrow on a dried seedhead",
+      src: "./assets/generated/gallery-hd/desert-edge-details-03.jpg",
+      category: "Mid-morning",
+      alt:
+        "Generated standalone 1080p planning photo of a sparrow perched on a dried seedhead at the Bosque del Apache refuge edge",
+      caption:
+        "Generated standalone 1080p planning photo for small passerine edge work; not an actual Bosque field photograph.",
+      rights:
+        "AI-generated project planning photo from this guide's shot descriptions. Use as expectation-setting only.",
+      placement: ["Gallery", "Visual Asset Manifest"],
+      description:
+        "Purpose-built regenerated 1080p planning photo for a small sparrow, dried seedhead texture, clean background, and long-lens patience.",
+    },
+    {
+      id: "desert-edge-details-04",
+      parentId: "desert-edge-details",
+      title: "Tracks and frosty dust",
+      src: "./assets/generated/gallery-hd/desert-edge-details-04.jpg",
+      category: "Mid-morning",
+      alt:
+        "Generated standalone 1080p planning photo of bird and animal tracks in frosty Bosque del Apache dust",
+      caption:
+        "Generated standalone 1080p planning photo for winter tracks and habitat-detail work; not an actual Bosque field photograph.",
+      rights:
+        "AI-generated project planning photo from this guide's shot descriptions. Use as expectation-setting only.",
+      placement: ["Gallery", "Visual Asset Manifest"],
+      description:
+        "Purpose-built regenerated 1080p planning photo for tracks, frosty dust, grasses, movement evidence, and slower habitat observation.",
+    },
+    {
+      id: "desert-edge-details-05",
+      parentId: "desert-edge-details",
+      title: "Quiet trail habitat with cottonwoods",
+      src: "./assets/generated/gallery-hd/desert-edge-details-05.jpg",
+      category: "Mid-morning",
+      alt:
+        "Generated standalone 1080p planning photo of quiet Bosque del Apache trail habitat with winter cottonwoods and dry grasses",
+      caption:
+        "Generated standalone 1080p planning photo for Rio Viejo-style trail habitat context; not an actual Bosque field photograph.",
+      rights:
+        "AI-generated project planning photo from this guide's shot descriptions. Use as expectation-setting only.",
+      placement: ["Gallery", "Visual Asset Manifest"],
+      description:
+        "Purpose-built regenerated 1080p planning photo for dry trail habitat, cottonwoods, small edge subjects, and environmental storytelling.",
+    },
+  ],
 };
 
 const regeneratedGalleryVisuals = Object.values(regeneratedGalleryImageGroups).flat();
