@@ -165,7 +165,7 @@ Lens configuration presets:
 Add a separate Bosque + Tanzania safari section:
 
 - Explain that Bosque prioritizes bird reach, while Tanzania prioritizes vehicle-based mammal flexibility.
-- Show Sony and Canon four-lens shared kits plus 1.4x teleconverter.
+- Show Sony and Canon four-lens shared kits plus 1.4x and 2x teleconverters as optional bright-light reach tools.
 - Show the three-lens Tanzania travel cut: keep 24-105mm, 70-200mm f/2.8, and 100-400mm/100-500mm; drop the 400-800mm/200-800mm unless birds or distant wildlife are a main goal.
 - Note that dust and vehicle shooting favor two bodies, fewer lens changes, and beanbag/window support.
 

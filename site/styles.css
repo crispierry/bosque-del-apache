@@ -2628,60 +2628,6 @@ main {
   line-height: 1.45;
 }
 
-.lens-scale-reference-strip {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 8px;
-}
-
-.scale-reference-card {
-  display: grid;
-  min-width: 0;
-  min-height: 82px;
-  align-content: end;
-  gap: 5px;
-  border: 1px solid var(--line-soft);
-  border-radius: 8px;
-  background: var(--surface-soft);
-  padding: 9px;
-}
-
-.scale-reference-visual {
-  display: block;
-  width: calc(var(--reference-size) * 1%);
-  min-width: 24px;
-  max-width: 100%;
-  height: 12px;
-  border: 1px solid rgba(26, 26, 26, 0.18);
-  border-radius: 999px;
-  background:
-    linear-gradient(90deg, rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0) 38%),
-    #7a8794;
-}
-
-.scale-reference-card.is-weight .scale-reference-visual {
-  width: 100%;
-  max-width: 96px;
-  height: calc(12px + var(--reference-size) * 0.32px);
-  border-radius: 6px;
-  background:
-    repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.28) 0 3px, transparent 3px 7px),
-    #8b8177;
-}
-
-.scale-reference-card strong {
-  color: var(--text);
-  font-size: 0.8rem;
-  line-height: 1.15;
-}
-
-.scale-reference-card em {
-  color: var(--muted);
-  font-size: 0.7rem;
-  font-style: normal;
-  line-height: 1.25;
-}
-
 .gear-scale-empty {
   border: 1px solid var(--line-soft);
   border-radius: 8px;
@@ -2863,12 +2809,193 @@ main {
     #8d4a4a;
 }
 
-.lens-scale-column.is-reference .lens-scale-bar {
-  border-radius: 6px;
+.lens-scale-column.is-reference .lens-scale-bar-stack {
+  width: 52px;
+}
+
+.lens-scale-reference-object {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  display: block;
+  width: 38px;
+  height: calc(var(--bar-height) * 1%);
+  min-height: 30px;
+  transform: translateX(-50%);
+}
+
+.reference-ruler {
+  width: 34px;
+  min-height: 160px;
+  border: 1px solid rgba(108, 78, 31, 0.52);
+  border-radius: 3px;
   background:
-    repeating-linear-gradient(0deg, rgba(26, 26, 26, 0.18) 0 1px, transparent 1px 22px),
-    #c8c8c8;
-  box-shadow: inset -6px 0 10px rgba(0, 0, 0, 0.1);
+    repeating-linear-gradient(
+      0deg,
+      transparent 0 9px,
+      rgba(86, 61, 26, 0.42) 9px 10px,
+      transparent 10px 18px,
+      rgba(86, 61, 26, 0.22) 18px 19px
+    ),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.36), transparent 35%),
+    #e3bd64;
+  box-shadow:
+    inset -7px 0 12px rgba(108, 78, 31, 0.16),
+    0 8px 16px rgba(26, 26, 26, 0.09);
+}
+
+.reference-ruler::before {
+  position: absolute;
+  top: 7px;
+  bottom: 7px;
+  left: 7px;
+  width: 8px;
+  content: "";
+  border-left: 1px solid rgba(86, 61, 26, 0.28);
+  border-right: 1px solid rgba(255, 255, 255, 0.38);
+}
+
+.reference-aa-battery {
+  width: 30px;
+  min-height: 42px;
+  border: 1px solid rgba(26, 26, 26, 0.25);
+  border-radius: 13px 13px 8px 8px;
+  background:
+    linear-gradient(180deg, #dadada 0 17%, #1f252c 17% 44%, #c87c37 44% 100%);
+  box-shadow:
+    inset -6px 0 9px rgba(0, 0, 0, 0.2),
+    inset 5px 0 7px rgba(255, 255, 255, 0.22),
+    0 8px 14px rgba(26, 26, 26, 0.12);
+}
+
+.reference-aa-battery::before {
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  width: 13px;
+  height: 5px;
+  content: "";
+  border: 1px solid rgba(26, 26, 26, 0.2);
+  border-bottom: 0;
+  border-radius: 5px 5px 0 0;
+  background: #d8d8d8;
+  transform: translateX(-50%);
+}
+
+.reference-aa-battery::after {
+  position: absolute;
+  top: 5px;
+  right: 0;
+  left: 0;
+  color: rgba(255, 255, 255, 0.72);
+  content: "+";
+  font-size: 0.62rem;
+  font-weight: 800;
+  line-height: 1;
+  text-align: center;
+}
+
+.reference-water-bottle,
+.reference-water-bottle-large {
+  width: 36px;
+  min-height: 112px;
+  border: 1px solid rgba(57, 102, 128, 0.32);
+  border-radius: 15px 15px 8px 8px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.72) 0 11%, rgba(157, 207, 229, 0.38) 11% 100%),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.55), transparent 38%),
+    rgba(114, 180, 210, 0.5);
+  box-shadow:
+    inset -8px 0 12px rgba(57, 102, 128, 0.16),
+    0 8px 15px rgba(26, 26, 26, 0.1);
+}
+
+.reference-water-bottle-large {
+  width: 40px;
+}
+
+.reference-water-bottle::before,
+.reference-water-bottle-large::before,
+.reference-soda-bottle::before {
+  position: absolute;
+  top: -13px;
+  left: 50%;
+  width: 16px;
+  height: 14px;
+  content: "";
+  border: 1px solid rgba(26, 26, 26, 0.18);
+  border-radius: 5px 5px 2px 2px;
+  background: #d6eaf3;
+  transform: translateX(-50%);
+}
+
+.reference-water-bottle::after,
+.reference-water-bottle-large::after {
+  position: absolute;
+  right: 4px;
+  bottom: 22%;
+  left: 4px;
+  height: 24%;
+  content: "";
+  border: 1px solid rgba(57, 102, 128, 0.2);
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.58);
+}
+
+.reference-soda-bottle {
+  width: 40px;
+  min-height: 190px;
+  border: 1px solid rgba(46, 91, 57, 0.35);
+  border-radius: 17px 17px 9px 9px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.52) 0 13%, rgba(83, 136, 92, 0.68) 13% 100%),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.45), transparent 38%),
+    #5f9668;
+  box-shadow:
+    inset -8px 0 12px rgba(46, 91, 57, 0.22),
+    0 8px 16px rgba(26, 26, 26, 0.1);
+}
+
+.reference-soda-bottle::before {
+  background: #4d8057;
+}
+
+.reference-soda-bottle::after {
+  position: absolute;
+  right: 3px;
+  bottom: 27%;
+  left: 3px;
+  height: 18%;
+  content: "";
+  border-radius: 5px;
+  background:
+    linear-gradient(90deg, rgba(255, 255, 255, 0.34), transparent 45%),
+    #b84d4d;
+}
+
+.reference-soda-can {
+  width: 36px;
+  min-height: 46px;
+  border: 1px solid rgba(100, 40, 40, 0.42);
+  border-radius: 9px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.65) 0 8%, transparent 8% 92%, rgba(0, 0, 0, 0.12) 92% 100%),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.38), transparent 35%),
+    #b84d4d;
+  box-shadow:
+    inset -7px 0 11px rgba(100, 40, 40, 0.25),
+    0 7px 13px rgba(26, 26, 26, 0.12);
+}
+
+.reference-soda-can::before {
+  position: absolute;
+  top: 5px;
+  right: 6px;
+  left: 6px;
+  height: 2px;
+  content: "";
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.56);
 }
 
 .lens-scale-column.is-teleconverter .lens-scale-bar-stack {
@@ -3302,10 +3429,6 @@ main {
     border-top: 1px solid var(--line-soft);
     padding-top: 18px;
     padding-left: 0;
-  }
-
-  .lens-scale-reference-strip {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .article-kicker {

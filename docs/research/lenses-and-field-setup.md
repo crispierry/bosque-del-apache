@@ -2,7 +2,7 @@
 
 ## Status
 
-Updated June 3, 2026. The final camera system is not confirmed, and the user wants to keep both Sony and Canon options for now. This file keeps Sony and Canon as separate branches while correcting the Sony recommendation: the Sony FE 200-600mm F5.6-6.3 G OSS is a primary wildlife recommendation, not a fallback, especially for Tanzania.
+Updated June 5, 2026. The final camera system is not confirmed, and the user wants to keep both Sony and Canon options for now. This file keeps Sony and Canon as separate branches while correcting the Sony recommendation: the Sony FE 200-600mm F5.6-6.3 G OSS is a primary wildlife recommendation, not a fallback, especially for Tanzania.
 
 ## Best Lens Decision
 
@@ -16,7 +16,7 @@ The best Sony kit is:
 2. **Sony FE 200-600mm F5.6-6.3 G OSS** - primary long wildlife lens for cranes, geese, distant ducks, and Tanzania wildlife.
 3. **Sony FE 100-400mm F4.5-5.6 GM OSS** - lighter dawn/flight/close-pass lens when acquisition speed matters more than maximum reach.
 4. **Sony FE 400-800mm F6.3-8 G OSS** - distant birds, fields, raptors, and deck work once light is good.
-5. **Sony 1.4x teleconverter** - optional reach tool, not a default pre-sunrise setup.
+5. **Sony 1.4x and 2x teleconverters** - optional reach tools, not default pre-sunrise setups.
 
 Do **not** leave the Sony 200-600mm out by default. If weight forces a Bosque cut, choose between 100-400 and 400-800 based on whether the priority is close flight handling or maximum bright-light reach. If weight forces a Tanzania cut, keep the 200-600 before the 400-800 unless distant birds are the dominant goal.
 
@@ -25,6 +25,7 @@ Teleconverter rules:
 - Sony 100-400mm f/4.5-5.6 + 1.4x gives a useful 140-560mm f/6.3-8 range, but use it after light improves.
 - Sony 400-800mm + 1.4x gives 560-1120mm f/9-11; reserve that for bright, distant, static subjects.
 - Sony 200-600mm + 1.4x gives 280-840mm f/8-9; useful for record shots, not first-light flight.
+- Sony 2x teleconverter options cost two stops. Treat them as bright-light, supported, distant-subject tools after autofocus and heat shimmer have been checked.
 
 ### Canon
 
@@ -124,7 +125,7 @@ If we allow four lenses:
 3. **Sony FE 200-600mm F5.6-6.3 G OSS** - main Tanzania wildlife lens and strong Bosque long bird lens.
 4. **Sony FE 100-400mm F4.5-5.6 GM OSS** - lighter Bosque flight and close-pass option.
 5. **Sony FE 400-800mm F6.3-8 G OSS** - Bosque reach, Tanzania birds, distant cats, rhino if relevant, and long-compression work.
-6. **Sony 1.4x teleconverter** - useful but avoid frequent mounting/unmounting in dust.
+6. **Sony 1.4x and 2x teleconverters** - useful but avoid frequent mounting/unmounting in dust.
 
 If we must reduce to three lenses for Tanzania travel weight:
 
@@ -194,8 +195,8 @@ The clearest pattern across Bosque-specific sources is not "bring the longest le
 ## General Recommendations
 
 - Before sunrise: prioritize faster handling and cleaner ISO over maximum reach.
-- Avoid the 1.4x teleconverter before sunrise except for static silhouettes.
-- Add the 1.4x after light improves for distant static birds, perched raptors, or record shots.
+- Avoid teleconverters before sunrise except for static silhouettes.
+- Add the 1.4x after light improves for distant static birds, perched raptors, or record shots; reserve the 2x for strong light and supported distant subjects.
 - For blast-offs, start wider than expected. The flock shape and sky are often the image.
 - For cranes landing or taking off, leave space in the frame for wing spread and direction of motion.
 - For Sony flight, prioritize the 200-600mm for reach or the 100-400mm f/4.5-5.6 for lighter close-pass handling. For Canon flight, prioritize the RF 100-500mm.
@@ -264,9 +265,9 @@ Do not include flash in the Bosque wildlife kit.
 - https://www.sony.com/electronics/support/lenses-e-mount-lenses/sel2470gm2/specifications
 - https://www.sony.com/electronics/support/lenses-e-mount-lenses/sel70200gm2/specifications
 - https://www.sony.co.uk/electronics/camera-lenses/sel400800g/specifications
-- https://www.usa.canon.com/shop/p/rf100-500mm-f4-5-7-1-l-is-usm
-- https://www.usa.canon.com/shop/p/rf200-800mm-f6-3-9-is-usm
-- https://www.usa.canon.com/shop/catalog/product/view/id/50549/s/rf24-105mm-f4-l-is-usm/
+- https://downloads.canon.com/nw/camera/products/lenses/rf100-500mm/RF100_500mm_USM_specifications.pdf
+- https://global.canon/en/c-museum/product/rf530.html
+- https://downloads.canon.com/nw/camera/products/lenses/rf-24-105mm-f4l-is-usm/specifications/canon-rf-24-105mm-f4l-is-usm-downloadable-specifications-chart.pdf
 - https://www.usa.canon.com/shop/p/rf24-70mm-f2-8l-is-usm
 - https://www.usa.canon.com/shop/p/rf70-200mm-f2-8-l-is-usm
 - https://www.usa.canon.com/shop/p/rf70-200mm-f2-8-l-is-usm-z

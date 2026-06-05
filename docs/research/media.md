@@ -15,7 +15,7 @@ The practical field rule: start with flexible zooms for dawn, dusk, and moving b
 
 A 70-200mm f/2.8 is worth considering only as an optional fourth lens for close birds, compression, portraits, travel details, and low-light static subjects. It should not replace the 24-105mm or the primary wildlife zoom.
 
-For the shared **Bosque + Tanzania** kit, the 70-200mm f/2.8 moves up in priority. Tanzania vehicle-based mammal work rewards close-to-mid telephoto flexibility, so the four-lens shared kit keeps 24-105mm + 70-200mm f/2.8 + 100-400mm/100-500mm + 400-800mm/200-800mm plus a 1.4x teleconverter. If Tanzania travel weight forces a three-lens cut, drop the super-reach lens before dropping the 70-200mm.
+For the shared **Bosque + Tanzania** kit, the 70-200mm f/2.8 moves up in priority. Tanzania vehicle-based mammal work rewards close-to-mid telephoto flexibility, so the four-lens shared kit keeps 24-105mm + 70-200mm f/2.8 + 100-400mm/100-500mm + 400-800mm/200-800mm plus 1.4x and optional 2x teleconverters. If Tanzania travel weight forces a three-lens cut, drop the super-reach lens before dropping the 70-200mm.
 
 ## Articles And Guides
 

@@ -1,5 +1,5 @@
 const checkedDate = "2026-06-03";
-const gearCheckedDate = "2026-06-04";
+const gearCheckedDate = "2026-06-05";
 const visualCheckedDate = "2026-06-04";
 
 const assets = {
@@ -3048,9 +3048,21 @@ const sources = [
   },
   {
     topic: "Gear specs",
+    title: "Sony SEL20TC 2x Teleconverter specifications",
+    url: "https://www.sony.com/lr/electronics/camera-lenses/sel20tc/specifications",
+    checked: gearCheckedDate,
+  },
+  {
+    topic: "Gear specs",
     title: "Canon RF lens specifications",
     url: "https://www.usa.canon.com/shop/cameras/lenses",
     checked: checkedDate,
+  },
+  {
+    topic: "Gear specs",
+    title: "Canon Extender RF 2x specifications",
+    url: "https://www.usa.canon.com/shop/p/extender-rf2x",
+    checked: gearCheckedDate,
   },
   {
     topic: "Camera body",
@@ -4250,6 +4262,29 @@ const gearItems = [
       "Use after light improves. Avoid frequent mounting in dust, and do not make it the dawn default.",
   },
   {
+    system: "Sony",
+    name: "SEL20TC 2x Teleconverter",
+    role: "Bright-light reach extension",
+    specs: {
+      aperture: "Loses 2 stops",
+      filter: "None",
+      length: "42.7 mm",
+      weight: "207 g",
+      minFocus: "Lens dependent",
+      teleconverter: "N/A",
+      introduced: "2016",
+      stabilization: "N/A; lens/body stabilization still matters",
+      zoomFocus: "No zoom or focus; mounts between body and compatible lens",
+      weather: "Use only with weather discipline; avoid swaps in dust, rain, or snow",
+    },
+    photo: "https://www.sony.com/lr/electronics/camera-lenses/sel20tc/specifications",
+    photoLabel: "Sony product/spec page",
+    image: "https://www.sony.jp/products/picture/SEL20TC.jpg",
+    source: "https://www.sony.com/lr/electronics/camera-lenses/sel20tc/specifications",
+    note:
+      "Carry as a deliberate bright-light tool for distant, static, or slow subjects. For dawn flight, the 1.4x or no teleconverter remains the safer default.",
+  },
+  {
     system: "Sigma E",
     name: "Sigma 60-600mm F4.5-6.3 DG DN OS | Sports",
     role: "One-lens Sony E wildlife range from flock context to 600mm reach",
@@ -4340,7 +4375,7 @@ const gearItems = [
     image:
       "https://s7d1.scene7.com/is/image/canon/2963C002_rf-24-105mm-f4-l-is-usm_primary2?fmt=webp-alpha&wid=760",
     source:
-      "https://www.usa.canon.com/shop/catalog/product/view/id/50549/s/rf24-105mm-f4-l-is-usm/",
+      "https://downloads.canon.com/nw/camera/products/lenses/rf-24-105mm-f4l-is-usm/specifications/canon-rf-24-105mm-f4l-is-usm-downloadable-specifications-chart.pdf",
     note:
       "The best Canon standard zoom for Bosque because it reaches beyond 70 mm for flock scale and habitat compression.",
   },
@@ -4426,7 +4461,7 @@ const gearItems = [
     specs: {
       aperture: "f/4.5-7.1 to f/32-54",
       filter: "77 mm",
-      length: "207.6 mm retracted / 304.7 mm extended",
+      length: "207.6 mm retracted / 297.6 mm extended",
       weight: "1,365 g without tripod mount",
       minFocus: "0.9-1.2 m",
       teleconverter: "Extender RF 1.4x / 2x at 300-500 mm",
@@ -4439,7 +4474,7 @@ const gearItems = [
     photoLabel: "Canon product photo",
     image:
       "https://s7d1.scene7.com/is/image/canon/4112C002_rf100-500mm-f45-71-l-is-usm_primary?fmt=webp-alpha&wid=760",
-    source: "https://www.usa.canon.com/shop/p/rf100-500mm-f4-5-7-1-l-is-usm",
+    source: "https://downloads.canon.com/nw/camera/products/lenses/rf100-500mm/RF100_500mm_USM_specifications.pdf",
     note:
       "The Canon default for Bosque and Tanzania because it balances reach, handling, and close-pass flexibility.",
   },
@@ -4448,7 +4483,7 @@ const gearItems = [
     name: "RF 200-800mm F6.3-9 IS USM",
     role: "Canon distant bird and long-reach wildlife lens",
     specs: {
-      aperture: "f/6.3-9 to f/54",
+      aperture: "f/6.3-9",
       filter: "95 mm",
       length: "314.1 mm retracted / 410.8 mm extended",
       weight: "2,050 g",
@@ -4463,7 +4498,7 @@ const gearItems = [
     photoLabel: "Canon product photo",
     image:
       "https://s7d1.scene7.com/is/image/canon/6263C002_RF200_800mm_primary?fmt=webp-alpha&wid=760",
-    source: "https://www.usa.canon.com/shop/p/rf200-800mm-f6-3-9-is-usm",
+    source: "https://global.canon/en/c-museum/product/rf530.html",
     note:
       "Excellent for distant Bosque birds and distant wildlife, but slower than the 100-500 and less flexible close to the vehicle.",
   },
@@ -4481,7 +4516,7 @@ const gearItems = [
       introduced: "2020",
       stabilization: "N/A; lens/body stabilization still matters",
       zoomFocus: "No zoom or focus; mounts between body and compatible lens",
-      weather: "No public sealing claim; avoid swaps in dust, rain, or snow",
+      weather: "Canon describes dust- and water-resistant construction; avoid swaps in dust, rain, or snow",
     },
     photo: "https://www.usa.canon.com/shop/p/extender-rf1-4x",
     photoLabel: "Canon product photo",
@@ -4492,6 +4527,30 @@ const gearItems = [
       "Works with compatible RF lenses. On RF 100-500, remember the extender mounts only in the 300-500 mm zoom range.",
   },
   {
+    system: "Canon",
+    name: "Extender RF 2x",
+    role: "Bright-light reach extension",
+    specs: {
+      aperture: "Loses 2 stops",
+      filter: "None",
+      length: "39.3 mm",
+      weight: "340 g",
+      minFocus: "Lens dependent",
+      teleconverter: "N/A",
+      introduced: "2020",
+      stabilization: "N/A; lens/body stabilization still matters",
+      zoomFocus: "No zoom or focus; mounts between body and compatible lens",
+      weather: "Canon describes dust- and water-resistant construction; avoid swaps in dust, rain, or snow",
+    },
+    photo: "https://www.usa.canon.com/shop/p/extender-rf2x",
+    photoLabel: "Canon product photo",
+    image:
+      "https://s7d1.scene7.com/is/image/canon/4114C002_extender-rf2x_primary?fmt=webp-alpha&wid=760",
+    source: "https://www.usa.canon.com/shop/p/extender-rf2x",
+    note:
+      "Use only when light, autofocus, and support are strong enough for the two-stop penalty. Check lens-specific compatibility before packing it as part of the Canon kit.",
+  },
+  {
     system: "Support",
     name: "Beanbag or window support",
     role: "Vehicle blind stability",
@@ -4499,7 +4558,7 @@ const gearItems = [
       aperture: "N/A",
       filter: "N/A",
       length: "Model dependent",
-      weight: "Usually 1-3 lb empty; fill locally if possible",
+      weight: "LensCoat Pro Jr example: 9 oz empty / 5 lb 8 oz filled with sunflower seeds",
       minFocus: "N/A",
       teleconverter: "N/A",
       introduced: "Product dependent",
@@ -4507,10 +4566,10 @@ const gearItems = [
       zoomFocus: "N/A",
       weather: "Use a rain cover; keep fabric dry before packing",
     },
-    photo: "https://www.lenscoat.com/collections/featured-products/products/lenscoat-lenssack-pro-jr",
+    photo: "https://www.lenscoat.com/products/lenscoat-lenssack-pro-jr",
     photoLabel: "LensCoat product example",
     image: "https://www.lenscoat.com/cdn/shop/files/lspjM5b.jpg?v=1735901881",
-    source: "https://www.lenscoat.com/collections/featured-products/products/lenscoat-lenssack-pro-jr",
+    source: "https://www.lenscoat.com/products/lenscoat-lenssack-pro-jr",
     note:
       "The fastest support for the auto loop. It is quieter and more practical than deploying tripod legs from the car.",
   },
@@ -4548,7 +4607,7 @@ const kitRecommendations = [
       "Body 1: FE 200-600mm for cranes, geese, distant ducks, and repeatable flight lanes.",
       "Body 2: FE 24-105mm for blast-off scale, mountain bands, reflections, weather, and story frames.",
       "Optional swap: FE 100-400mm when birds are close or you need lighter handheld acquisition.",
-      "Optional reach: FE 400-800mm only when light is strong and subjects are distant.",
+      "Optional reach: FE 400-800mm or a Sony teleconverter only when light is strong and subjects are distant.",
     ],
   },
   {
@@ -4581,6 +4640,7 @@ const kitRecommendations = [
       "Bosque: RF 100-500 for flight and general wildlife, RF 200-800 for distant birds in good light, RF 24-105 for scale.",
       "Tanzania: RF 100-500 plus RF 70-200 F2.8 covers more vehicle situations than RF 200-800 alone.",
       "RF 200-800 is excellent for birds and distant cats, but it is not the first lens for close elephants, lions near the vehicle, or dusk action.",
+      "RF 1.4x and 2x extenders are bright-light reach tools, not default sunrise flight setups.",
     ],
   },
 ];
@@ -4599,7 +4659,7 @@ const filterGuidance = [
   {
     title: "95 mm and 105 mm caution",
     note:
-      "95 mm fits Sony 200-600, Canon RF 200-800, Sigma 150-600, and Sigma 500. 105 mm fits Sony 400-800 and Sigma 60-600. These filters are expensive and cost light, so avoid giant CPLs for dawn birds unless a specific water/reflection use justifies them.",
+      "95 mm fits Sony 200-600, Canon RF 200-800, Sigma 150-600, and Sigma 500. 105 mm fits Sony 400-800 and Sigma 60-600. Giant CPLs and NDs are expensive and cost light, so avoid them for dawn birds unless a specific water/reflection or motion-blur use justifies them.",
   },
   {
     title: "Circular polarizer",
@@ -4700,6 +4760,12 @@ const gearComparisonRows = [
     canon: "RF 200-800mm F6.3-9 IS USM",
     note: "Sony is internal-zoom and better sealed around zoom movement; Canon starts wider and weighs less.",
   },
+  {
+    category: "2x teleconverter",
+    sony: "SEL20TC 2x Teleconverter",
+    canon: "Extender RF 2x",
+    note: "Both add reach with a two-stop light penalty. Treat them as bright-light, supported, distant-subject tools rather than dawn flight defaults.",
+  },
 ];
 
 function parsePhysicalLength(lengthText) {
@@ -4763,7 +4829,9 @@ function shortLensLabel(name) {
     .replace(" GM OSS II", " GM II")
     .replace(" G OSS", " G")
     .replace("1.4x Teleconverter", "1.4x TC")
-    .replace("Extender RF 1.4x", "RF 1.4x TC");
+    .replace("2x Teleconverter", "2x TC")
+    .replace("Extender RF 1.4x", "RF 1.4x TC")
+    .replace("Extender RF 2x", "RF 2x TC");
 }
 
 function getLensScaleTrackWidth(itemCount) {
@@ -4773,34 +4841,23 @@ function getLensScaleTrackWidth(itemCount) {
   return axisWidth + itemCount * columnWidth + Math.max(0, itemCount - 1) * columnGap;
 }
 
-const lensLengthReferences = [
-  { value: 100, label: "100 mm", note: "small travel zoom length" },
-  { value: 200, label: "200 mm", note: "70-200 class reach" },
-  { value: 300, label: "300 mm", note: "compact wildlife length" },
-  { value: 400, label: "400 mm", note: "large long-lens body" },
-];
+const lensLengthReferenceBarsByCategory = {
+  standard: { value: 304.8, label: "12-inch ruler", note: "305 mm", object: "ruler" },
+  "seventy-two-hundred": { value: 304.8, label: "12-inch ruler", note: "305 mm", object: "ruler" },
+  "wildlife-zooms": { value: 304.8, label: "12-inch ruler", note: "305 mm", object: "ruler" },
+  "super-zooms": { value: 304.8, label: "12-inch ruler", note: "305 mm", object: "ruler" },
+  "prime-reach": { value: 304.8, label: "12-inch ruler", note: "305 mm", object: "ruler" },
+  teleconverters: { value: 50.5, label: "AA battery", note: "about 50 mm", object: "aa-battery" },
+};
 
-const lensWeightReferences = [
-  { value: 500, label: "500 g", note: "light carry" },
-  { value: 1000, label: "1 kg", note: "daypack threshold" },
-  { value: 2000, label: "2 kg", note: "long-lens carry" },
-  { value: 2500, label: "2.5 kg", note: "heavy handheld" },
-];
-
-function renderScaleReferences(references, scaleMax, scaleType) {
-  return `<div class="lens-scale-reference-strip" aria-label="${scaleType === "weight" ? "Weight" : "Length"} reference comparisons">
-    ${references
-      .map((reference) => {
-        const pct = Math.max(8, Math.min((reference.value / scaleMax) * 100, 100));
-        return `<article class="scale-reference-card ${scaleType === "weight" ? "is-weight" : "is-length"}">
-          <span class="scale-reference-visual" style="--reference-size: ${pct.toFixed(2)};"></span>
-          <strong>${reference.label}</strong>
-          <em>${reference.note}</em>
-        </article>`;
-      })
-      .join("")}
-  </div>`;
-}
+const lensWeightReferenceBarsByCategory = {
+  standard: { value: 1000, label: "1 L water bottle", note: "about 1 kg", object: "water-bottle" },
+  "seventy-two-hundred": { value: 1000, label: "1 L water bottle", note: "about 1 kg", object: "water-bottle" },
+  "wildlife-zooms": { value: 1500, label: "1.5 L water bottle", note: "about 1.5 kg", object: "water-bottle-large" },
+  "super-zooms": { value: 2100, label: "2 L soda bottle", note: "about 2.1 kg", object: "soda-bottle" },
+  "prime-reach": { value: 1500, label: "1.5 L water bottle", note: "about 1.5 kg", object: "water-bottle-large" },
+  teleconverters: { value: 370, label: "full soda can", note: "about 370 g", object: "soda-can" },
+};
 
 const gearScaleBrands = [
   { label: "Sony", system: "Sony" },
@@ -4847,7 +4904,7 @@ function gearScaleCategoryForItem(item) {
   if (/24-105|24-70/i.test(name)) return "standard";
   if (/70-200/i.test(name)) return "seventy-two-hundred";
   if (/100-400|100-500/i.test(name)) return "wildlife-zooms";
-  if (/500mm F5\\.6/i.test(name)) return "prime-reach";
+  if (/500mm F5\.6/i.test(name)) return "prime-reach";
   return "super-zooms";
 }
 
@@ -4875,7 +4932,51 @@ function renderGearScaleControls(selectedSystems) {
   </section>`;
 }
 
-function renderScaleCategoryCharts({ items, scaleMax, ticks, scaleType, chartClass, ariaLabel, references, renderItem }) {
+function makeScaleReferenceItem(scaleType, categoryId) {
+  const reference =
+    scaleType === "weight"
+      ? lensWeightReferenceBarsByCategory[categoryId]
+      : lensLengthReferenceBarsByCategory[categoryId];
+
+  if (!reference) return null;
+
+  if (scaleType === "weight") {
+    return {
+      type: "reference",
+      system: "Reference",
+      name: reference.label,
+      label: reference.label,
+      referenceObject: reference.object,
+      weightG: reference.value,
+      weightLabel: `${reference.value.toLocaleString()} g`,
+      note: reference.note,
+    };
+  }
+
+  return {
+    type: "reference",
+    system: "Reference",
+    name: reference.label,
+    label: reference.label,
+    referenceObject: reference.object,
+    primaryMm: reference.value,
+    note: reference.note,
+  };
+}
+
+function scaleSortValue(item, scaleType) {
+  return scaleType === "weight" ? item.weightG : item.extendedMm || item.primaryMm;
+}
+
+function compareScaleItems(a, b, scaleType) {
+  const diff = scaleSortValue(b, scaleType) - scaleSortValue(a, scaleType);
+  if (diff) return diff;
+  if (a.type === "reference" && b.type !== "reference") return 1;
+  if (b.type === "reference" && a.type !== "reference") return -1;
+  return a.label.localeCompare(b.label);
+}
+
+function renderScaleCategoryCharts({ items, scaleMax, ticks, scaleType, chartClass, ariaLabel, renderItem }) {
   const categories = gearScaleCategories
     .map((category) => ({
       ...category,
@@ -4890,13 +4991,16 @@ function renderScaleCategoryCharts({ items, scaleMax, ticks, scaleType, chartCla
   return `<div class="gear-scale-category-stack">
     ${categories
       .map((category) => {
-        const chartItems = category.items;
+        const referenceItem = makeScaleReferenceItem(scaleType, category.id);
+        const chartItems = [
+          referenceItem,
+          ...category.items.sort((a, b) => compareScaleItems(a, b, scaleType)),
+        ].filter(Boolean);
         return `<section class="gear-scale-category" data-scale-category="${category.id}">
           <div class="gear-scale-category-header">
             <h3>${category.title}</h3>
             <p>${category.description}</p>
           </div>
-          ${renderScaleReferences(references, scaleMax, scaleType)}
           <div class="lens-scale-chart ${chartClass || ""}" style="--lens-scale-track-width: ${getLensScaleTrackWidth(chartItems.length)}px;" role="img" aria-label="${ariaLabel}: ${category.title}">
             <div class="lens-scale-grid" aria-hidden="true">
               ${ticks
@@ -4942,20 +5046,25 @@ function renderLensLengthScale(selectedSystems = new Set(gearScaleBrands.map((br
     });
 
   const renderItem = (item) => {
+    const isReference = item.type === "reference";
     const primaryPercent = Math.min((item.primaryMm / scaleMax) * 100, 100);
     const extensionPercent = item.extendedMm ? ((item.extendedMm - item.primaryMm) / scaleMax) * 100 : 0;
     const totalMm = item.extendedMm || item.primaryMm;
     const ariaLength = item.extendedMm
       ? `${item.primaryMm} millimeters retracted, ${item.extendedMm} millimeters extended`
       : `${item.primaryMm} millimeters`;
-    return `<article class="lens-scale-column lens-scale-${item.system.toLowerCase().replace(/\s+/g, "-")} ${item.type === "teleconverter" ? "is-teleconverter" : ""}" data-scale="length" data-kind="${item.type}" data-system="${item.system}" data-primary-mm="${item.primaryMm}" data-total-mm="${totalMm}"${item.extendedMm ? ` data-extended-mm="${item.extendedMm}"` : ""} aria-label="${item.name}: ${ariaLength}">
+    const systemClass = isReference ? "is-reference" : `lens-scale-${item.system.toLowerCase().replace(/\s+/g, "-")}`;
+    const barMarkup = isReference
+      ? `<span class="lens-scale-reference-object reference-${item.referenceObject}" title="${item.name}: ${ariaLength}"></span>`
+      : `${item.extendedMm ? `<span class="lens-scale-extension" title="${item.name} extended length: ${item.extendedMm} mm"></span>` : ""}
+        <span class="lens-scale-bar" title="${item.name}: ${ariaLength}"></span>`;
+    return `<article class="lens-scale-column ${systemClass} ${item.type === "teleconverter" ? "is-teleconverter" : ""}" data-scale="length" data-kind="${item.type}" data-system="${item.system}" data-primary-mm="${item.primaryMm}" data-total-mm="${totalMm}"${item.extendedMm ? ` data-extended-mm="${item.extendedMm}"` : ""} aria-label="${item.name}: ${ariaLength}">
       <div class="lens-scale-bar-stack" style="--bar-height: ${primaryPercent.toFixed(2)}; --extension-height: ${extensionPercent.toFixed(2)};">
-        ${item.extendedMm ? `<span class="lens-scale-extension" title="${item.name} extended length: ${item.extendedMm} mm"></span>` : ""}
-        <span class="lens-scale-bar" title="${item.name}: ${ariaLength}"></span>
+        ${barMarkup}
       </div>
       <div class="lens-scale-label">
         <strong>${item.label}</strong>
-        <span>${item.primaryMm}${item.extendedMm ? `-${item.extendedMm}` : ""} mm</span>
+        <span>${isReference ? item.note : `${item.primaryMm}${item.extendedMm ? `-${item.extendedMm}` : ""} mm`}</span>
       </div>
     </article>`;
   };
@@ -4973,17 +5082,17 @@ function renderLensLengthScale(selectedSystems = new Set(gearScaleBrands.map((br
       <span><i class="legend-chip sigma"></i>Sigma</span>
       <span><i class="legend-chip canon"></i>Canon</span>
       <span><i class="legend-chip extended"></i>Full-extension length</span>
+      <span><i class="legend-chip reference"></i>Real-world reference object</span>
     </div>
     ${renderScaleCategoryCharts({
       items,
       scaleMax,
       ticks,
       scaleType: "length",
-      references: lensLengthReferences,
       ariaLabel: "Vertical bar chart comparing physical lens length in millimeters",
       renderItem,
     })}
-    <p class="muted lens-scale-note">Each category is sorted by longest known physical length. Solid bars show compact listed length; striped caps show sourced full-extension measurements.</p>
+    <p class="muted lens-scale-note">The leftmost object is a real-world size reference. Lens columns after it are sorted by longest known physical length. Solid bars show compact listed length; striped caps show sourced full-extension measurements.</p>
   </section>`;
 }
 
@@ -5009,14 +5118,19 @@ function renderLensWeightScale(selectedSystems = new Set(gearScaleBrands.map((br
     .sort((a, b) => b.weightG - a.weightG);
 
   const renderItem = (item) => {
+    const isReference = item.type === "reference";
     const barPercent = Math.min((item.weightG / scaleMax) * 100, 100);
-    return `<article class="lens-scale-column lens-scale-${item.system.toLowerCase().replace(/\s+/g, "-")} ${item.type === "teleconverter" ? "is-teleconverter" : ""}" data-scale="weight" data-kind="${item.type}" data-system="${item.system}" data-weight-g="${item.weightG}" aria-label="${item.name}: ${item.weightLabel}">
+    const systemClass = isReference ? "is-reference" : `lens-scale-${item.system.toLowerCase().replace(/\s+/g, "-")}`;
+    const barMarkup = isReference
+      ? `<span class="lens-scale-reference-object reference-${item.referenceObject}" title="${item.name}: ${item.weightLabel}"></span>`
+      : `<span class="lens-scale-bar" title="${item.name}: ${item.weightLabel}"></span>`;
+    return `<article class="lens-scale-column ${systemClass} ${item.type === "teleconverter" ? "is-teleconverter" : ""}" data-scale="weight" data-kind="${item.type}" data-system="${item.system}" data-weight-g="${item.weightG}" aria-label="${item.name}: ${item.weightLabel}">
       <div class="lens-scale-bar-stack" style="--bar-height: ${barPercent.toFixed(2)}; --extension-height: 0;">
-        <span class="lens-scale-bar" title="${item.name}: ${item.weightLabel}"></span>
+        ${barMarkup}
       </div>
       <div class="lens-scale-label">
         <strong>${item.label}</strong>
-        <span>${item.weightLabel}</span>
+        <span>${isReference ? item.note : item.weightLabel}</span>
       </div>
     </article>`;
   };
@@ -5033,6 +5147,7 @@ function renderLensWeightScale(selectedSystems = new Set(gearScaleBrands.map((br
       <span><i class="legend-chip sony"></i>Sony</span>
       <span><i class="legend-chip sigma"></i>Sigma</span>
       <span><i class="legend-chip canon"></i>Canon</span>
+      <span><i class="legend-chip reference"></i>Real-world reference object</span>
     </div>
     ${renderScaleCategoryCharts({
       items,
@@ -5040,11 +5155,10 @@ function renderLensWeightScale(selectedSystems = new Set(gearScaleBrands.map((br
       ticks,
       scaleType: "weight",
       chartClass: "weight-scale-chart",
-      references: lensWeightReferences,
       ariaLabel: "Vertical bar chart comparing lens and teleconverter weight in grams",
       renderItem,
     })}
-    <p class="muted lens-scale-note">Each category is sorted by listed weight. Where a manufacturer lists a small weight range, the chart uses the higher listed value and keeps the range in the label.</p>
+    <p class="muted lens-scale-note">The leftmost object is a real-world weight reference. Gear columns after it are sorted by listed weight. Where a manufacturer lists a small weight range, the chart uses the higher listed value and keeps the range in the label.</p>
   </section>`;
 }
 

@@ -2,6 +2,35 @@
 
 This file tracks requested project work that has not yet been implemented, verified, and published.
 
+## 2026-06-05 - Gear Scale Reference And 2x Teleconverter Follow-Up
+
+Status: completed and validated June 5, 2026.
+
+Goal: finish the missed Gear scale-chart requirements by making reference objects part of the actual charts, adding Sony and Canon 2x teleconverters, and using familiar category-appropriate references rather than abstract measurements.
+
+Requested requirements:
+
+- Sort length charts from longest to smallest and weight charts from heaviest to lightest.
+- Put reference objects inside the charts themselves, not only in a separate reference strip.
+- Use references that fit the chart category, so teleconverter charts get smaller references than wildlife zoom charts.
+- Use familiar objects the reader can picture, such as a 12-inch ruler and AA battery, instead of invented references like 9-inch or 14-inch markers.
+- Put the reference object as the leftmost item in every chart, then sort the actual gear after it.
+- Render the reference object visually, not as a generic gray bar.
+- Add Sony and Canon 2x teleconverters to the Gear list and include them in both length and weight scales.
+- Preserve source links and product-photo documentation for the new gear items.
+
+Completion notes:
+
+- Added Sony SEL20TC 2x Teleconverter and Canon Extender RF 2x to the Gear data, cards, Compare table, length scale, and weight scale.
+- Added official source records and product-photo manifest rows for the new 2x teleconverters.
+- Replaced the old separate reference strips with illustrated in-chart reference objects pinned to the left of every chart.
+- Added length references using a 12-inch ruler for lens categories and an AA battery for teleconverters.
+- Added weight references using 1 L water bottle, 1.5 L water bottle, 2 L soda bottle, and full soda can objects where they fit the category.
+- Added CSS-rendered reference illustrations in the site's restrained field-guide style: ruler, AA battery, water bottles, soda bottle, and soda can.
+- Fixed the Sigma 500mm F5.6 category so it appears in Prime Reach instead of Super-Zooms.
+- Bumped the site asset version to `20260605-gear-scale-v5` so the browser loads the updated Gear scripts/styles.
+- Validated with static checks plus desktop and 390px mobile browser audits: reference objects are leftmost, actual gear after each reference sorts descending, teleconverters use AA-battery and soda-can references, old reference strips are gone, Sony/Canon 2x entries appear, Canon product image loads, and there is no page-level horizontal overflow.
+
 ## 2026-06-05 - Gallery True Mosaic Regeneration Correction Request
 
 Status: completed and validated June 5, 2026.
@@ -1066,3 +1095,26 @@ Goal: make the Bosque del Apache trip guide much more visual while keeping image
 - Restored Gear as the product-photo exception: Gear cards may show recorded official product images while keeping product/spec links visible.
 - Added `docs/research/visual-asset-manifest.md` as the visual publishing guardrail.
 - Validation: `wt bootstrap`, `node --check site/app.js`, local preview at `http://localhost:4173/`, desktop/mobile in-app browser QA, itinerary day-tab QA, broken-image checks, console-error checks, and mobile overflow checks.
+
+## 2026-06-05 - Gear Page Verification Audit
+
+Status: completed June 5, 2026.
+
+Goal: independently verify Gear page links, focal lengths, f-stops, internal/external zoom notes, and filter sizes before publishing.
+
+Completion notes:
+
+- Asked three independent sub-agents to audit `site/app.js` Gear data against current official or reliable product/spec sources.
+- All three confirmed the core lens names, focal lengths, filter sizes, major aperture values, and internal/extending zoom classifications for Sony, Sigma E, Canon, and the filter-size guidance.
+- Rechecked the Canon RF 200-800 aperture display after the previous stopped-down wording missed the intended Gear-page convention; updated it to the variable maximum aperture `f/6.3-9`.
+- Corrected Canon RF 100-500 official extended length from `304.7 mm` to `297.6 mm`.
+- Updated Canon Extender RF 1.4x weather wording to reflect Canon's dust- and water-resistant construction claim.
+- Updated the LensCoat LensSack Pro Jr example weight from generic empty-weight wording to the linked product's 9 oz empty / 5 lb 8 oz filled specification.
+- Switched visible Canon RF 24-105 and RF 100-500 Specs links to direct Canon spec PDFs; switched the RF 200-800 Specs link to Canon Camera Museum for the official lens name, filter size, dimensions, and supporting aperture details.
+- Noted that some displayed full-extension measurements for extending zooms are not always published on manufacturer pages; no broader site change was made because the core user-requested fields verified cleanly.
+
+Acceptance criteria:
+
+- Gear links resolve to official product/spec pages or official product images.
+- Published focal lengths, f-stops, internal/external zoom notes, and filter sizes are checked against source links.
+- Any verified mismatches are either corrected or documented as lower-priority source limitations.

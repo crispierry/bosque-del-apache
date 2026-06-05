@@ -374,7 +374,7 @@ Checked June 4, 2026. Actual hotel/brand/property photos remain `link_only`; no 
 
 ## Official Gear Product Photos
 
-Checked June 4, 2026. Gear cards use `official_product_image` so the teaching view shows the actual lenses/support items. The images stay inside Gear cards, are contained rather than cropped, and link to the official product/spec page.
+Checked June 4, 2026; newly added 2x teleconverter product records checked June 5, 2026. Gear cards use `official_product_image` so the teaching view shows the actual lenses/support items. The images stay inside Gear cards, are contained rather than cropped, and link to the official product/spec page.
 
 | Item | Product / Spec Link | Image Source | Placement | Rights Note |
 |---|---|---|---|---|
@@ -385,6 +385,7 @@ Checked June 4, 2026. Gear cards use `official_product_image` so the teaching vi
 | Sony FE 200-600mm F5.6-6.3 G OSS | https://electronics.sony.com/imaging/lenses/all-e-mount/p/sel200600g | Sony official product CDN image | Gear / Sony | Official product image reference; source-linked. |
 | Sony FE 400-800mm F6.3-8 G OSS | https://www.sony.co.uk/electronics/camera-lenses/sel400800g/specifications | `site/assets/sony-fe-400-800-g-oss.jpg` | Gear / Sony | Existing public-site product asset restored for local build parity; keep tied to official Sony spec page. |
 | Sony SEL14TC 1.4x Teleconverter | https://electronics.sony.com/imaging/lenses/all-e-mount/p/sel14tc | Sony official product CDN image | Gear / Sony | Official product image reference; source-linked. |
+| Sony SEL20TC 2x Teleconverter | https://www.sony.com/lr/electronics/camera-lenses/sel20tc/specifications | Sony official product image | Gear / Sony | Official product image reference; source-linked. |
 | Sigma 60-600mm F4.5-6.3 DG DN OS Sports | https://www.sigma-global.com/en/lenses/s023_60_600_45_63/ | Sigma official product image | Gear / Sigma E | Official product image reference; source-linked. |
 | Sigma 150-600mm F5-6.3 DG DN OS Sports | https://www.sigma-global.com/en/lenses/s021_150_600_5_63/ | Sigma official product image | Gear / Sigma E | Official product image reference; source-linked. |
 | Sigma 500mm F5.6 DG DN OS Sports | https://www.sigma-global.com/en/lenses/s024_500_56/ | Sigma official product image | Gear / Sigma E | Official product image reference; source-linked. |
@@ -395,7 +396,8 @@ Checked June 4, 2026. Gear cards use `official_product_image` so the teaching vi
 | Canon RF 100-500mm F4.5-7.1 L IS USM | https://www.usa.canon.com/shop/p/rf100-500mm-f4-5-7-1-l-is-usm | Canon Scene7 official product image | Gear / Canon | Official product image reference; source-linked. |
 | Canon RF 200-800mm F6.3-9 IS USM | https://www.usa.canon.com/shop/p/rf200-800mm-f6-3-9-is-usm | Canon Scene7 official product image | Gear / Canon | Official product image reference; source-linked. |
 | Canon Extender RF 1.4x | https://www.usa.canon.com/shop/p/extender-rf1-4x | Canon Scene7 official product image | Gear / Canon | Official product image reference; source-linked. |
-| LensCoat LensSack Pro Jr example | https://www.lenscoat.com/collections/featured-products/products/lenscoat-lenssack-pro-jr | LensCoat official product image | Gear / Support | Official product image reference; source-linked. |
+| Canon Extender RF 2x | https://www.usa.canon.com/shop/p/extender-rf2x | Canon Scene7 official product image | Gear / Canon | Official product image reference; source-linked. |
+| LensCoat LensSack Pro Jr example | https://www.lenscoat.com/products/lenscoat-lenssack-pro-jr | LensCoat official product image | Gear / Support | Official product image reference; source-linked. |
 | Wimberley WH-200 example | https://tripodhead.com/products/WH-Specs.cfm | Wimberley product image | Gear / Support | Official product image reference; source-linked. |
 
 ## Link-Only References
