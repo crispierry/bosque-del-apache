@@ -2,6 +2,155 @@
 
 This file tracks requested project work that has not yet been implemented, verified, and published.
 
+## 2026-06-05 - Sources Link Descriptions
+
+Status: completed and validated June 5, 2026.
+
+Goal: make every Sources row explain why the linked source is included.
+
+Requested requirements:
+
+- Add a paragraph-long description to each Sources link.
+- Keep the Sources page useful as a source-first index rather than a bare list of links.
+
+Completion notes:
+
+- Added a visitor-facing `description` to every record in the `sources` array in `site/data.js`.
+- Rendered each description beneath the source title in `site/app.js`.
+- Added `.source-description` styling in `site/styles.css` so descriptions read as supporting context rather than metadata clutter.
+- Added static QA checks to require one description per source and verify the renderer prints them.
+- Bumped the app, data, and stylesheet asset versions to `20260605-sources-descriptions-v1`.
+
+## 2026-06-05 - Sources Row Date Cleanup
+
+Status: completed and validated June 5, 2026.
+
+Goal: remove low-value repeated date fields from the visitor-facing Sources list.
+
+Requested requirements:
+
+- Remove the per-source date field because it does not add useful meaning to the row.
+- Keep the page focused on source quality, topic, and direct links.
+
+Completion notes:
+
+- Removed the repeated `${source.checked}` column from Sources rows in `site/app.js`.
+- Updated Sources explanatory copy so it no longer promises per-source checked dates.
+- Changed the Sources row layout from three columns to two columns in `site/styles.css`.
+- Added a static QA guard so the repeated checked-date column does not return.
+- Bumped the app, data, and stylesheet asset versions to `20260605-sources-cleanup-v1`.
+
+## 2026-06-05 - Site-Wide General Guide Framing
+
+Status: completed and validated June 5, 2026.
+
+Goal: make the copy consistently present the site as a general Bosque del Apache photography guide with a proposed Dec 6-12, 2026 worked example.
+
+Requested requirements:
+
+- Ensure the site is consistently framed as a general guide usable by anyone.
+- Keep the proposed trip date for the week of December 6 visible as a worked example, not as the whole purpose of the site.
+- Make the message consistent across all pages of the guide.
+
+Completion notes:
+
+- Added `guideFraming` in `site/data.js` as the single source of truth for publication date, proposed trip window, and the general-guide/proposed-date message.
+- Added `renderGuideScopeNote()` in `site/app.js` and reused it across Overview, Gallery, Map, Itinerary, Photo Windows, Travel, Gear, Practice, Practice detail pages, Inspiration, Media, and Sources. The Guide article carries the same framing in its lead paragraph, and the fallback Guide view uses the shared note.
+- Reworded Itinerary to say the date-specific plan is a worked example.
+- Updated the static Overview shell and standalone `complete-photographers-guide.html` with the same framing.
+- Updated the source Markdown for the standalone guide.
+- Added static QA checks so the centralized framing copy and standalone/static pages are verified.
+- Bumped the app, data, and stylesheet asset versions to `20260605-guide-framing-v2`.
+
+## 2026-06-05 - Map Provenance Tag Cleanup
+
+Status: completed and validated June 5, 2026.
+
+Goal: remove low-value provenance labels from the visitor-facing Refuge Shooting Map.
+
+Requested requirements:
+
+- Remove `official FWS` and `field pin` labels from the Map cards because they do not serve the page experience.
+
+Completion notes:
+
+- Made the shared map renderer's provenance/drive-time tag optional.
+- Disabled those metadata tags on the Refuge Shooting Map while preserving useful window tags such as sunrise, sunset, mid-morning, and intel.
+- Removed the same low-value metadata line from Refuge Shooting Map pin popups.
+- Left the shared renderer able to show drive-time metadata where it remains useful, such as the lodging map.
+- Bumped the app and stylesheet asset versions to `20260605-map-tags-v1`.
+
+## 2026-06-05 - Guide Standalone Button Label
+
+Status: completed and validated June 5, 2026.
+
+Goal: make the Guide page's secondary button destination clear.
+
+Requested requirements:
+
+- Clarify what the `Open reader page` button does.
+
+Completion notes:
+
+- Confirmed the button opens `complete-photographers-guide.html`, the standalone long-form version of the guide.
+- Renamed the button to `Open standalone guide` in both the loaded-guide header and fallback panel.
+- Bumped the app and stylesheet asset versions to `20260605-guide-button-v1`.
+
+## 2026-06-05 - Gallery Status Strip Removal
+
+Status: completed and validated June 5, 2026.
+
+Goal: remove implementation/progress language from the public Gallery page.
+
+Requested requirements:
+
+- Delete the Gallery status strip that says how many standalone photos and curated visual stories were generated.
+
+Completion notes:
+
+- Removed the Gallery regeneration status block from the renderer.
+- Reworded the Gallery intro so it describes the LRA as a learning reference album instead of using production metrics.
+- Removed the Gallery section eyebrow so production wording does not sit above the page title.
+- Removed unused desktop and mobile CSS for the deleted status strip.
+- Bumped the app and stylesheet asset versions to `20260605-gallery-title-v1`.
+
+## 2026-06-05 - Gallery Lightbox Detail Scroll Fix
+
+Status: completed and validated June 5, 2026.
+
+Goal: make the Gallery lightbox metadata column readable when the details exceed the visible viewport height.
+
+Requested requirements:
+
+- Fix the Gallery overlay where the right-side detail column is clipped and cannot be scrolled.
+
+Completion notes:
+
+- Gave the shared lightbox panel a definite viewport-bounded height so its children can size correctly.
+- Allowed the lightbox copy pane to shrink inside the grid and scroll independently.
+- Added visible, contained scrollbar styling for the dark metadata pane.
+- Bumped the stylesheet asset version to `20260605-lightbox-scroll-v1`.
+
+## 2026-06-05 - Overview General Reference Date Treatment
+
+Status: completed and validated June 5, 2026.
+
+Goal: make the Overview read as a durable Bosque del Apache photography reference, while keeping the Dec 6-12, 2026 dates clearly framed as the proposed trip window.
+
+Requested requirements:
+
+- Remove the proposed trip dates from the persistent site header.
+- Replace the hero date with a labeled publication/update date for the reference.
+- Add text near the timing cards explaining that Dec 6-12, 2026 is the proposed trip window for a classic five-day photography plan.
+- Clarify that target parking, sunrise, and sunset times are tied to that proposed window and should be rechecked for different travel dates.
+
+Completion notes:
+
+- Removed the date eyebrow from the brand header so the site title works as a general reference.
+- Changed the hero date label to `Publication date: June 5, 2026`.
+- Added proposed-trip context under the Overview timing cards in both the static shell and rendered app.
+- Updated page description metadata and JSON-LD date fields to remove date-specific positioning from the site summary.
+
 ## 2026-06-05 - Principal Engineering Review Fixes
 
 Status: completed and validated June 5, 2026.

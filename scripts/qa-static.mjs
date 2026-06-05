@@ -89,6 +89,30 @@ assert(
   /function disposeRenderedView/.test(app) && /trimRenderedViews\(viewId\)/.test(app),
   "showView should trim non-active rendered views"
 );
+assert(
+  "guide framing copy has one source of truth",
+  /const guideFraming = \{/.test(data) && /function renderGuideScopeNote/.test(app),
+  "general guide + proposed trip window copy should stay centralized"
+);
+const guideScopeUses = [...app.matchAll(/renderGuideScopeNote\(/g)].length;
+assert("guide framing is reused across app views", guideScopeUses >= 12, String(guideScopeUses));
+const sourcesBlock = data.match(/const sources = \[([\s\S]*?)\];\n\nconst photoLocations/);
+assert("sources data block exists", Boolean(sourcesBlock), "site/data.js");
+const sourceRecordCount = [...sourcesBlock[1].matchAll(/\n  \{/g)].length;
+const sourceDescriptionCount = [...sourcesBlock[1].matchAll(/\n    description:/g)].length;
+assert("every source has a visitor description", sourceDescriptionCount === sourceRecordCount, `${sourceDescriptionCount}/${sourceRecordCount}`);
+assert("sources renderer prints descriptions", /source\.description/.test(app), "source.description");
+assert(
+  "static pages include guide framing",
+  index.includes("General guide + proposed trip window") &&
+    guide.includes("This is a general Bosque del Apache photography guide for any reader"),
+  "index.html and complete-photographers-guide.html"
+);
+assert(
+  "sources rows omit repeated checked-date column",
+  !app.includes("${source.checked}"),
+  "Sources keeps freshness at the page level"
+);
 
 assert(
   "index has canonical URL",

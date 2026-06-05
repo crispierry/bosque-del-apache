@@ -3,6 +3,15 @@
 const checkedDate = "2026-06-03";
 const gearCheckedDate = "2026-06-05";
 const visualCheckedDate = "2026-06-04";
+const guideFraming = {
+  publicationDate: "June 5, 2026",
+  proposedTripWindow: "Dec 6-12, 2026",
+  title: "General guide + proposed trip window",
+  short:
+    "This is a general Bosque del Apache photography guide. The worked example uses proposed trip dates of Dec 6-12, 2026; recheck date-specific sunrise, sunset, access, lodging, pricing, and field conditions for your own dates.",
+  overview:
+    "This site is a general Bosque del Apache photography guide for any reader. The worked example uses proposed trip dates of Dec 6-12, 2026, with a classic five-day rhythm: arrive and scout on Sunday, photograph Monday through Friday, and leave Saturday with backups complete. Target parking, sunrise, and sunset arrival times are tied to that proposed window, so recheck them if you travel at another time.",
+};
 
 const assets = {
   geese: "./assets/snow-geese-gary-stolz-usfws-1800.jpg",
@@ -3005,174 +3014,232 @@ const sources = [
     title: "USFWS Bosque del Apache Visit Us",
     url: "https://www.fws.gov/refuge/bosque-del-apache/visit-us",
     checked: checkedDate,
+    description:
+      "Use this as the official starting point for refuge logistics: visitor center context, access basics, fees, hours, restrooms, and the refuge's own visitor guidance. It is the authority to recheck before relying on any older field note.",
   },
   {
     topic: "Official refuge",
     title: "USFWS Auto Tour",
     url: "https://www.fws.gov/refuge/bosque-del-apache/visit-us/activities/auto-tour",
     checked: checkedDate,
+    description:
+      "This supports the driving-loop parts of the guide: road behavior, Auto Tour Loop expectations, and how photographers move between ponds, fields, decks, and pullouts without treating the map as a hiking route.",
   },
   {
     topic: "Official refuge",
     title: "USFWS Rules and Policies",
     url: "https://www.fws.gov/refuge/bosque-del-apache/visit-us/rules-policies",
     checked: checkedDate,
+    description:
+      "Use this for the non-negotiable field rules: closed areas, drones, harassment, off-road driving, camping, overnight parking, and other access limits. It keeps the photography plan grounded in legal and ethical refuge behavior.",
   },
   {
     topic: "Official refuge",
     title: "USFWS Species and Seasons",
     url: "https://www.fws.gov/refuge/bosque-del-apache/species",
     checked: checkedDate,
+    description:
+      "This is the official seasonal wildlife reference for the guide. It supports the early-winter timing logic, the expected crane and goose emphasis, and the reminder that actual bird locations still vary with water, farming, weather, and disturbance.",
   },
   {
     topic: "Field guide",
     title: "Cornell All About Birds - Bosque del Apache",
     url: "https://www.allaboutbirds.org/news/bosque-del-apache-new-mexico-a-bird-photographers-playground/",
     checked: checkedDate,
+    description:
+      "Cornell's photographer-oriented Bosque article is useful for stable fieldcraft: wind and light alignment, manual exposure, panning, lens variety, and why Main Pool conditions can change. It is not used as a current logistics authority.",
   },
   {
     topic: "Field guide",
     title: "The Quite Wild - Bird Photography for Beginners at Bosque del Apache",
     url: "https://thequitewild.com/bird-photography-for-beginners-bosque-del-apache/",
     checked: checkedDate,
+    description:
+      "This recent beginner field guide helps translate Bosque into practical camera decisions: lens classes, focus approach, exposure, settings, and approachable locations. The logistics still need to be cross-checked against official refuge pages.",
   },
   {
     topic: "Field guide",
     title: "Evie Wilder - Sandhill Crane Migration",
     url: "https://eviewilder.com/blog/sandhill-crane-migration-bosque-del-apache-winter/",
     checked: checkedDate,
+    description:
+      "This field report supports the crane-focused parts of the plan, especially cold-weather preparation, long-lens use, shutter speeds, autofocus, and the feel of winter migration work at Bosque.",
   },
   {
     topic: "Gear specs",
     title: "Sony support lens specifications",
     url: "https://www.sony.com/electronics/support/lenses-e-mount-lenses",
     checked: checkedDate,
+    description:
+      "This is the broad Sony lens specification entry point used to verify product pages and manufacturer data for E-mount lenses in the gear list. It helps keep size, weight, compatibility, and support claims tied to official sources.",
   },
   {
     topic: "Gear specs",
     title: "Sony SEL20TC 2x Teleconverter specifications",
     url: "https://www.sony.com/lr/electronics/camera-lenses/sel20tc/specifications",
     checked: gearCheckedDate,
+    description:
+      "This source verifies the Sony 2x teleconverter entry, including the dimensions and weight used in the Gear comparison charts. It also supports the compatibility notes around long Sony wildlife lenses.",
   },
   {
     topic: "Gear specs",
     title: "Canon RF lens specifications",
     url: "https://www.usa.canon.com/shop/cameras/lenses",
     checked: checkedDate,
+    description:
+      "This Canon lens catalog is the official entry point for RF lens specifications and product pages. It supports the Canon-side gear comparisons and helps separate manufacturer specs from retailer summaries.",
   },
   {
     topic: "Gear specs",
     title: "Canon Extender RF 2x specifications",
     url: "https://www.usa.canon.com/shop/p/extender-rf2x",
     checked: gearCheckedDate,
+    description:
+      "This official Canon product page verifies the RF 2x extender's size, weight, and compatibility context for the Gear page. It is the reference behind the teleconverter scale entry and comparison notes.",
   },
   {
     topic: "Camera body",
     title: "Sony ILCE-7RM6 / Alpha 7R VI specifications",
     url: "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7rm6/specifications",
     checked: gearCheckedDate,
+    description:
+      "This is the official Sony body-spec source for the Alpha 7R VI assumptions in the guide. It supports camera-body context for resolution, handling, and system planning rather than refuge-specific field logistics.",
   },
   {
     topic: "Sigma E-mount gear",
     title: "Sigma 60-600mm F4.5-6.3 DG DN OS | Sports",
     url: "https://www.sigma-global.com/en/lenses/s023_60_600_45_63/",
     checked: gearCheckedDate,
+    description:
+      "This official Sigma page verifies the 60-600mm Sports lens data used in the gear tables and scale charts. It supports the superzoom tradeoff discussion around reach, weight, handling, and flexibility.",
   },
   {
     topic: "Sigma E-mount gear",
     title: "Sigma 150-600mm F5-6.3 DG DN OS | Sports",
     url: "https://www.sigma-global.com/en/lenses/s021_150_600_5_63/",
     checked: gearCheckedDate,
+    description:
+      "This official Sigma page supports the 150-600mm Sports lens entry, including size, weight, focal range, and field handling assumptions. It is used for gear comparison rather than photography advice by itself.",
   },
   {
     topic: "Sigma E-mount gear",
     title: "Sigma 500mm F5.6 DG DN OS | Sports",
     url: "https://www.sigma-global.com/en/lenses/s024_500_56/",
     checked: gearCheckedDate,
+    description:
+      "This manufacturer page verifies the Sigma 500mm prime data in the comparison set. It supports the reach-versus-portability discussion for a lighter fixed wildlife lens option.",
   },
   {
     topic: "Sigma teleconverters",
     title: "Sigma TELE CONVERTER TC-1411 / TC-2011 compatibility",
     url: "https://www.sigma-global.com/en/support/download/SIGMA-TELE-CONVERTER-TC1411_TC2011_EN_240220.pdf",
     checked: gearCheckedDate,
+    description:
+      "This compatibility PDF is the source for Sigma teleconverter support notes. It keeps the guide from assuming teleconverter behavior across lenses where the manufacturer only supports specific combinations.",
   },
   {
     topic: "Safari lens guidance",
     title: "Digital Camera World - Best lenses for safari photography in 2026",
     url: "https://www.digitalcameraworld.com/buying-guides/best-lenses-for-safari-photography",
     checked: checkedDate,
+    description:
+      "This broader wildlife-lens roundup is useful as an outside comparison point for long-lens travel decisions. It helps sanity-check the Bosque/Tanzania gear discussion, but manufacturer pages remain the source for specs.",
   },
   {
     topic: "Safari lens guidance",
     title: "Drew Sproule - African photo safari gear",
     url: "https://drewsproule.com/blog/the-best-camera-gear-to-pack-for-an-african-photo-safari",
     checked: checkedDate,
+    description:
+      "This field-oriented safari gear article supports the travel-wildlife side of the gear conversation: how much reach to carry, when flexibility matters, and why handling may beat maximum focal length in real conditions.",
   },
   {
     topic: "Lodging photos",
     title: "Holiday Inn Express Socorro Gallery",
     url: "https://www.ihg.com/holidayinnexpress/hotels/us/en/socorro/socnm/hoteldetail/gallery",
     checked: checkedDate,
+    description:
+      "This official hotel gallery is used as the visual and booking-reference link for the Socorro Holiday Inn Express option. It lets readers inspect the actual property photos without the site republishing hotel imagery.",
   },
   {
     topic: "Lodging photos",
     title: "Comfort Inn & Suites Socorro",
     url: "https://www.choicehotels.com/en-xl/new-mexico/socorro/comfort-inn-hotels/nm126",
     checked: checkedDate,
+    description:
+      "This direct property page supports the Comfort Inn lodging option and gives readers the authoritative place to recheck room photos, amenities, current rates, taxes, breakfast, parking, and cancellation terms.",
   },
   {
     topic: "Lodging photos",
     title: "Best Western Socorro Hotel & Suites",
     url: "https://www.bestwestern.com/en_US/book/socorro/hotel-rooms/best-western-socorro-hotel-suites/propertyCode.32105.html",
     checked: checkedDate,
+    description:
+      "This direct Best Western page is used for the Socorro lodging comparison and property-photo reference. It should be checked before booking because rates, room types, and cancellation details can change quickly.",
   },
   {
     topic: "Lodging photos",
     title: "Fairfield by Marriott Inn & Suites Los Lunas Photos",
     url: "https://www.marriott.com/en-gb/hotels/abqlf-fairfield-inn-and-suites-los-lunas/photos/",
     checked: checkedDate,
+    description:
+      "This Marriott photo page supports the Los Lunas backup lodging option, especially if a reader wants to stay closer to Albuquerque. It is included for property inspection, not as a claim that Los Lunas is the best photography base.",
   },
   {
     topic: "Travel",
     title: "ABQ Sunport facts and airlines",
     url: "https://www.abqsunport.com/facts-figures/",
     checked: checkedDate,
+    description:
+      "This airport source supports the recommendation to use Albuquerque International Sunport as the practical air gateway. Flight availability still needs to be checked directly with airlines for the traveler's exact dates.",
   },
   {
     topic: "Travel",
     title: "ABQ Sunport rental cars",
     url: "https://www.abqsunport.com/rental-cars/",
     checked: checkedDate,
+    description:
+      "This is the airport's rental-car reference for planning the pickup side of the trip. It supports the travel workflow around renting a practical vehicle for dawn departures, gear, winter roads, and refuge access.",
   },
   {
     topic: "Travel",
     title: "SFO nonstop destinations",
     url: "https://www.flysfo.org/nonstop/where-we-fly-united-states",
     checked: checkedDate,
+    description:
+      "This SFO route page supports the flight-planning comparison from the Bay Area to Albuquerque. It is a route-availability signal only; schedules, fares, and operating carriers should be checked before booking.",
   },
   {
     topic: "Travel",
     title: "Southwest Oakland to Albuquerque",
     url: "https://www.southwest.com/en/flights/flights-from-oakland-to-albuquerque",
     checked: checkedDate,
+    description:
+      "This route page is included because Oakland can be a practical Bay Area departure option for Albuquerque. It supports the travel alternatives section, with final timing and price left to current airline search.",
   },
   {
     topic: "Travel",
     title: "Southwest San Jose to Albuquerque",
     url: "https://www.southwest.com/routes/flights-from-san-jose-ca-to-albuquerque",
     checked: checkedDate,
+    description:
+      "This route page covers the San Jose-to-Albuquerque alternative for travelers choosing among Bay Area airports. It helps compare convenience, but the guide still treats exact flight schedules as date-specific.",
   },
   {
     topic: "Travel",
     title: "New Mexico Tourism - Bosque del Apache",
     url: "https://www.newmexico.org/places-to-visit/regions/southwest/bosque-del-apache/",
     checked: checkedDate,
+    description:
+      "This state tourism page provides regional context for Bosque del Apache, Socorro, San Antonio, and the broader trip setting. It is useful background, while official refuge pages remain the authority for access and rules.",
   },
   {
     topic: "Travel",
     title: "NMDOT winter travel information",
     url: "https://www.nmroads.com/",
     checked: checkedDate,
+    description:
+      "This road-condition source belongs in the final pre-trip and in-trip checklist. Use it close to travel for winter weather, closures, incidents, and driving conditions between Albuquerque, Socorro, and the refuge.",
   },
 ];
 

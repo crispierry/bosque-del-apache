@@ -1,6 +1,6 @@
 # The Complete Photographer's Guide to Bosque del Apache
 
-Drafted June 3, 2026. Current logistics in this draft are verified against official or current sources as of June 3, 2026 and should be rechecked before travel.
+Updated June 5, 2026. This is a general Bosque del Apache photography guide for any reader. The worked example uses proposed trip dates of December 6-12, 2026; recheck date-specific sunrise, sunset, access, lodging, pricing, and field conditions for your own dates. Current logistics are verified against official or current sources as of June 3, 2026 and should be rechecked before travel.
 
 Bosque del Apache National Wildlife Refuge is one of North America's great winter wildlife photography places because it combines spectacle with access. In a single cold morning you can photograph sandhill cranes standing in shallow water before sunrise, snow geese lifting in a white wall of wings, ducks sliding through managed wetlands, harriers quartering low over fields, cottonwoods along the Rio Grande, and desert mountains catching first light. The reason it works so well for photographers is not just that the birds are present. It is that Bosque is a managed refuge with wetlands, crop fields, auto-tour roads, viewing decks, and repeatable dawn and dusk movement.
 

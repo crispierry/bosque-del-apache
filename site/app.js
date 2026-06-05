@@ -11,6 +11,11 @@ function externalLink(url, label = "Source") {
   return `<a href="${url}" target="_blank" rel="noreferrer">${label}</a>`;
 }
 
+function renderGuideScopeNote(variant = "short") {
+  const message = variant === "overview" ? guideFraming.overview : guideFraming.short;
+  return `<p class="guide-scope-note"><strong>${guideFraming.title}.</strong> ${message}</p>`;
+}
+
 function sourceInitials(text) {
   return text
     .split(/\s+/)
@@ -295,8 +300,8 @@ function renderOverview() {
     <section class="hero">
       <div class="hero-copy">
         <p class="eyebrow">Field plan</p>
-        <h2>Bosque del Apache <span class="hero-date">Dec 6-12, 2026</span></h2>
-        <p>Arrive Sunday, scout if there is light, shoot five full on-site days from Monday through Friday, and leave Saturday with backups complete. The field guide is organized around light windows so each day can adapt to water, wind, crowds, and bird movement. Have the $5 daily private vehicle entrance fee or pass ready before dawn.</p>
+        <h2>Bosque del Apache <span class="hero-date">Publication date: June 5, 2026</span></h2>
+        <p>A classic five-day photography field guide for Bosque del Apache National Wildlife Refuge, organized around sunrise, mid-morning, and sunset field decisions. The example trip window can adapt to water, wind, crowds, and bird movement; have the $5 daily private vehicle entrance fee or pass ready before dawn.</p>
         <div class="hero-actions">
           <button class="button-link" data-jump="itinerary">Open itinerary</button>
           <button class="button-link secondary" data-jump="map">Check map</button>
@@ -317,6 +322,7 @@ function renderOverview() {
       <article class="stat"><b>12 mi</b><span>Auto Tour Loop distance</span></article>
       <article class="stat"><b>1 hr before</b><span>Auto loop opens before sunrise</span></article>
     </section>
+    ${renderGuideScopeNote("overview")}
     <section class="dashboard">
       <article class="panel">
         <p class="eyebrow">First morning</p>
@@ -348,15 +354,11 @@ function renderGallery() {
   root.innerHTML = `
     <div class="section-title">
       <div>
-        <p class="eyebrow">Regenerated standalone planning photos</p>
         <h2>Gallery</h2>
       </div>
-      <p>Forty-five purpose-built 1080p generated planning photos arranged as true clickable mosaics. Open any tile for the full image, field location, camera settings, and technique notes.</p>
+      <p>The LRA is a learning reference album: a set of generated visual examples that turns the shot plan into something you can study before the trip. Use it to recognize light, subject behavior, field positions, lens choices, and technique tradeoffs before comparing those ideas with real conditions at Bosque.</p>
     </div>
-    <div class="gallery-regeneration-status">
-      <strong>${regeneratedGalleryVisuals.length} standalone 1080p photos</strong>
-      <span>${regeneratedGroups.length} curated visual stories, each built from individual image files.</span>
-    </div>
+    ${renderGuideScopeNote()}
     ${regeneratedGroups
       .map(
         (group) => `<section class="gallery-mosaic-section" aria-labelledby="gallery-${group.id}">
@@ -496,7 +498,7 @@ async function renderGuide() {
     if (!article) throw new Error("Guide article markup missing");
     root.innerHTML = `
       <div class="guide-view-header">
-        <a class="button-link secondary" href="./complete-photographers-guide.html">Open reader page</a>
+        <a class="button-link secondary" href="./complete-photographers-guide.html">Open standalone guide</a>
       </div>
       ${article.outerHTML}`;
   } catch (error) {
@@ -508,10 +510,11 @@ async function renderGuide() {
         </div>
         <p>The guide is available as a standalone page in this Bosque project.</p>
       </div>
+      ${renderGuideScopeNote()}
       <section class="panel">
         <h3>Open the guide</h3>
         <p class="card-copy">The in-page article loader could not fetch the guide content in this environment.</p>
-        <a class="button-link" href="./complete-photographers-guide.html">Open reader page</a>
+        <a class="button-link" href="./complete-photographers-guide.html">Open standalone guide</a>
       </section>`;
   }
 }
@@ -521,15 +524,17 @@ async function renderMapInto(rootId, places, options = {}) {
   const hasMap = await ensureLeaflet();
   const mapId = options.mapId || "trip-map";
   const listClass = options.listClass || "map-list";
+  const showMetaTag = options.showMetaTag !== false;
   const renderPlace = (place) => {
     const tag = hasMap ? "button" : "article";
     const attr = hasMap ? ` data-location="${place.name}"` : "";
+    const metaLabel = place.confidence || place.drive;
     return `<${tag} class="map-item${hasMap ? "" : " is-static"}"${attr}>
       <h3>${place.rank ? `${place.rank}. ` : ""}${place.name}</h3>
       <p>${place.note}</p>
       <div class="tag-row">
         ${(place.windows || [place.area || place.type]).map((item) => `<span class="tag">${item}</span>`).join("")}
-        <span class="tag verify">${place.confidence || place.drive}</span>
+        ${showMetaTag && metaLabel ? `<span class="tag verify">${metaLabel}</span>` : ""}
       </div>
     </${tag}>`;
   };
@@ -609,7 +614,9 @@ async function renderMapInto(rootId, places, options = {}) {
 
   markerPlaces.forEach((place) => {
     const marker = LRef.marker([place.lat, place.lon]).addTo(map);
-    marker.bindPopup(`<b>${place.name}</b><br>${place.note}<br><small>${place.confidence || place.drive || ""}</small>`);
+    const metaLabel = place.confidence || place.drive;
+    const metaMarkup = showMetaTag && metaLabel ? `<br><small>${metaLabel}</small>` : "";
+    marker.bindPopup(`<b>${place.name}</b><br>${place.note}${metaMarkup}`);
     if (options.showPinLabels) {
       bindPinLabel(marker, place);
       labelMarkers.push({ marker, place });
@@ -663,6 +670,7 @@ async function renderMap() {
       </div>
       <p>Lodging has been removed from this map. This tab is for sunrise, mid-morning, sunset, field-position, and refuge-logistics decisions only.</p>
     </div>
+    ${renderGuideScopeNote()}
     <div id="photo-map-host"></div>`;
   await renderMapInto("#photo-map-host", photoLocations, {
     mapId: "trip-map",
@@ -670,6 +678,7 @@ async function renderMap() {
     center: [33.82, -106.88],
     zoom: 12,
     showPinLabels: true,
+    showMetaTag: false,
   });
 }
 
@@ -681,8 +690,9 @@ function renderItinerary() {
         <p class="eyebrow">Calendar plan</p>
         <h2>Itinerary</h2>
       </div>
-      <p>Arrive December 6, shoot five full days, and leave December 12. Each day includes the purpose of the day so the plan adapts cleanly to water, wind, crowds, and bird movement.</p>
+      <p>Worked example: arrive December 6, shoot five full days, and leave December 12. Each day includes the purpose of the day so the plan adapts cleanly to water, wind, crowds, and bird movement.</p>
     </div>
+    ${renderGuideScopeNote()}
     <div class="day-tabs"></div>
     <div class="timeline"></div>
     ${renderVisualLightbox("itinerary-lightbox-title")}`;
@@ -759,6 +769,7 @@ function renderWindows() {
       </div>
       <p>Use this when conditions override the day-by-day itinerary. Each window now has purpose-built generated planning images and a calmer decision layout for field use.</p>
     </div>
+    ${renderGuideScopeNote()}
     <div class="window-tabs">
       ${windowNames
         .map(
@@ -845,6 +856,7 @@ async function renderTravel() {
       </div>
       <p>Use Albuquerque as the practical airport, choose a car around dawn photography logistics, and keep Socorro as the photography-first hotel base.</p>
     </div>
+    ${renderGuideScopeNote()}
     <section class="panel media-decision airport-route-section">
       <div>
         <p class="eyebrow">Airport default</p>
@@ -984,6 +996,7 @@ function renderGear() {
       </div>
       <p>Each lens and support item includes size, weight, aperture, stabilization, weather notes, minimum focusing distance, teleconverter support, and year introduced where applicable.</p>
     </div>
+    ${renderGuideScopeNote()}
     <section class="panel media-decision">
       <div>
         <p class="eyebrow">Sony and Sigma compatibility</p>
@@ -1140,6 +1153,7 @@ function renderPractice() {
       </div>
       <p>A teaching hub for the nine pre-trip techniques. Open any card for the full lesson, and open any generated image for the full-size teaching view with lens, focal length, aperture, shutter speed, and technique notes.</p>
     </div>
+    ${renderGuideScopeNote()}
     <section class="panel">
       <p class="eyebrow">Reading stack</p>
       <div class="tag-row">
@@ -1270,6 +1284,7 @@ function renderPracticeDetail(index) {
         <p class="eyebrow">Technique ${index + 1} of ${practiceModules.length}</p>
         <h2>${practiceModule.title}</h2>
         <p>${practiceModule.goal}</p>
+        ${renderGuideScopeNote()}
         <dl class="visual-tech-meta practice-detail-meta">
           <div><dt>Lens</dt><dd>${lesson.lens}</dd></div>
           <div><dt>Focal length</dt><dd>${lesson.focalLength}</dd></div>
@@ -1322,6 +1337,7 @@ function renderInspiration() {
         </div>
         <p>Thirty purpose-built generated images show the kinds of Bosque del Apache photographs to plan for: roosts, blast-offs, fly-ins, fields, wetlands, small subjects, weather, motion, and blue hour.</p>
       </div>
+      ${renderGuideScopeNote()}
       <div class="inspiration-feature-row">
         ${renderStandaloneFrameCard("inspiration-hd-dawn-crane-roost-silhouettes", {
           className: "inspiration-feature-frame",
@@ -1442,6 +1458,7 @@ function renderMedia() {
           <p>The Sony 200-600 is a primary wildlife recommendation. The 24-105 stays ready for flock scale and place. The 100-400 and 400-800 are situational choices for handling or bright-light reach.</p>
         </aside>
       </section>
+      ${renderGuideScopeNote()}
 
       <section class="media-brief-grid" aria-label="Research summary">
         <article class="brief-card is-primary">
@@ -1613,9 +1630,10 @@ function renderSources() {
       </div>
       <p>Current access, travel, lodging, pricing, specs, road, and bird-location notes should be rechecked after final booking and again in the week before travel.</p>
     </div>
+    ${renderGuideScopeNote()}
     <section class="panel source-policy">
       <p class="eyebrow">Source-first index</p>
-      <p class="card-copy">This page prioritizes source quality, date checked, topic, and direct links. Repetitive generic thumbnails have been removed unless a future source-specific visual genuinely helps the citation.</p>
+      <p class="card-copy">This page prioritizes source quality, topic, and direct links. Repetitive generic thumbnails and repeated per-source date stamps have been removed unless a future source-specific visual genuinely helps the citation.</p>
     </section>
     <div class="timeline">
       ${sources
@@ -1624,9 +1642,9 @@ function renderSources() {
             <div><span class="tag">${source.topic}</span></div>
             <div>
               <h3><a href="${source.url}" target="_blank" rel="noreferrer">${source.title}</a></h3>
+              <p class="source-description">${source.description}</p>
               <p class="muted">${source.url}</p>
             </div>
-            <div class="muted">${source.checked}</div>
           </article>`
         )
         .join("")}
