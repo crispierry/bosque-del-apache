@@ -1134,6 +1134,88 @@ const regeneratedGalleryImageGroups = {
         "Purpose-built regenerated 1080p planning photo for silhouette shapes, pale overcast sky, diagonal flock movement, and minimal color.",
     },
   ],
+  "filter-practice": [
+    {
+      id: "filter-practice-01",
+      parentId: "filter-practice",
+      title: "CPL glare test over water",
+      src: "./assets/generated/gallery-hd/filter-practice-01.jpg",
+      category: "Practice",
+      alt:
+        "Generated standalone 1080p planning photo of a circular polarizer glare test over reflective wetland water",
+      caption:
+        "Generated standalone 1080p planning photo for CPL glare testing; not an actual Bosque field photograph.",
+      rights:
+        "AI-generated project planning photo from this guide's shot descriptions. Use as expectation-setting only.",
+      placement: ["Gallery", "Visual Asset Manifest"],
+      description:
+        "Purpose-built regenerated 1080p planning photo for testing a circular polarizer against wetland glare, reflection, and shutter-speed tradeoffs.",
+    },
+    {
+      id: "filter-practice-02",
+      parentId: "filter-practice",
+      title: "Fast bird flight with no filter",
+      src: "./assets/generated/gallery-hd/filter-practice-02.jpg",
+      category: "Practice",
+      alt:
+        "Generated standalone 1080p planning photo of a fast bird in flight used to show no-filter shutter-speed practice",
+      caption:
+        "Generated standalone 1080p planning photo for no-filter bird-flight practice; not an actual Bosque field photograph.",
+      rights:
+        "AI-generated project planning photo from this guide's shot descriptions. Use as expectation-setting only.",
+      placement: ["Gallery", "Visual Asset Manifest"],
+      description:
+        "Purpose-built regenerated 1080p planning photo for fast bird flight, clean backgrounds, and preserving shutter speed by removing filters.",
+    },
+    {
+      id: "filter-practice-03",
+      parentId: "filter-practice",
+      title: "ND shutter-drag practice",
+      src: "./assets/generated/gallery-hd/filter-practice-03.jpg",
+      category: "Practice",
+      alt:
+        "Generated standalone 1080p planning photo of neutral-density shutter-drag practice with intentional waterbird motion blur",
+      caption:
+        "Generated standalone 1080p planning photo for ND shutter-drag experiments; not an actual Bosque field photograph.",
+      rights:
+        "AI-generated project planning photo from this guide's shot descriptions. Use as expectation-setting only.",
+      placement: ["Gallery", "Visual Asset Manifest"],
+      description:
+        "Purpose-built regenerated 1080p planning photo for deliberate slow-shutter blur, ND use, water movement, and controlled motion practice.",
+    },
+    {
+      id: "filter-practice-04",
+      parentId: "filter-practice",
+      title: "Protective filter and cleaning kit",
+      src: "./assets/generated/gallery-hd/filter-practice-04.jpg",
+      category: "Practice",
+      alt:
+        "Generated standalone 1080p planning photo of a protective filter and cleaning kit staged before a Bosque del Apache field day",
+      caption:
+        "Generated standalone 1080p planning photo for protective filter and cleaning-kit readiness; not an actual Bosque field photograph.",
+      rights:
+        "AI-generated project planning photo from this guide's shot descriptions. Use as expectation-setting only.",
+      placement: ["Gallery", "Visual Asset Manifest"],
+      description:
+        "Purpose-built regenerated 1080p planning photo for dust/cold readiness, protective filter choices, blower, cloth, brush, and organized field workflow.",
+    },
+    {
+      id: "filter-practice-05",
+      parentId: "filter-practice",
+      title: "Gloved step-up ring handling",
+      src: "./assets/generated/gallery-hd/filter-practice-05.jpg",
+      category: "Practice",
+      alt:
+        "Generated standalone 1080p planning photo of gloved hands handling a step-up ring before a cold Bosque del Apache field session",
+      caption:
+        "Generated standalone 1080p planning photo for cold-weather step-up ring handling; not an actual Bosque field photograph.",
+      rights:
+        "AI-generated project planning photo from this guide's shot descriptions. Use as expectation-setting only.",
+      placement: ["Gallery", "Visual Asset Manifest"],
+      description:
+        "Purpose-built regenerated 1080p planning photo for gloved filter handling, step-up ring dexterity, and cold predawn gear practice.",
+    },
+  ],
 };
 
 const regeneratedGalleryVisuals = Object.values(regeneratedGalleryImageGroups).flat();
