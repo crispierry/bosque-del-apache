@@ -167,7 +167,7 @@ Completion notes:
 
 ## 2026-06-05 - Photo Windows High-Resolution Image And Layout Correction Request
 
-Status: requested; not yet implemented.
+Status: completed and validated June 5, 2026.
 
 Goal: correct the Photo Windows page. The current implementation uses cropped/split images derived from earlier generated mosaics/contact sheets, which is not acceptable. The page also feels too crowded and needs a cleaner layout that gives the photography windows and high-quality images room to breathe.
 
@@ -203,6 +203,15 @@ Notes:
 
 - This correction supersedes the previous Photo Windows implementation that reused cropped standalone frames extracted from mosaics/contact sheets.
 - The priority is the high-resolution regenerated images; the layout redesign should support those images instead of competing with them.
+
+Completion notes:
+
+- Generated and integrated eight purpose-built standalone 1920x1080 Photo Windows images under `site/assets/generated/photo-windows-hd/`.
+- Rebuilt the Photo Windows layout around four calmer decision tabs: Sunrise, Mid-morning, Sunset, and Weather fallback.
+- Replaced the prior reused-frame grid and repeated itinerary thumbnail cards with two large window-specific images plus text-only related itinerary moments for each tab.
+- Added full lightbox metadata for every Photo Windows image, including location/scenario, lens, focal length, aperture, shutter speed, and technique guidance.
+- Documented all eight regenerated Photo Windows images in the visual asset manifest with local path, original generated source file, alt text, placement, prompt/provenance summary, and rights note.
+- Validated desktop and 390px mobile: four window tabs, eight total Photo Windows image references, eight unique `photo-windows-hd` sources, zero Gallery/contact-sheet/Itinerary reused image sources, no missing asset references, no browser console errors, working full-image metadata, no page-level horizontal overflow, and exact 1920x1080 file dimensions.
 
 ## 2026-06-05 - Travel Rental Car Section Layout And Label Correction Request
 

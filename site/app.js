@@ -8,6 +8,10 @@ const assets = {
   flyout: "./assets/snow-geese-flyout-lynne-braden-usfws-1800.jpg",
 };
 
+function slugify(value) {
+  return value.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+}
+
 const generatedVisuals = [
   {
     id: "crane-roost-dawn",
@@ -1755,6 +1759,209 @@ const itineraryGeneratedVisuals = [
   },
 ];
 
+const photoWindowGeneratedVisuals = [
+  {
+    id: "photo-window-sunrise-roost-silhouettes",
+    title: "Sunrise roost silhouettes and first movement",
+    src: "./assets/generated/photo-windows-hd/window-01-sunrise-roost-silhouettes.jpg",
+    category: "Photo Windows",
+    alt:
+      "Generated 1080p Photo Windows image of sandhill crane roost silhouettes and first movement at Bosque del Apache sunrise",
+    caption:
+      "Purpose-built generated Photo Windows image for sunrise roost silhouettes, first movement, and behavior cues; not an actual Bosque field photograph.",
+    rights:
+      "AI-generated project planning image from this guide's photo-window notes. Use as expectation-setting only.",
+    placement: ["Photo Windows", "Visual Asset Manifest"],
+    description:
+      "Purpose-built generated Photo Windows image for blue-hour crane roosts, cold mist, silhouettes, reflections, first movement, and the choice between quiet composition and action.",
+    lesson: {
+      supposedLocation:
+        "Active crane roost pool, Highway 1 crane pools, or another legal pullout chosen before first light.",
+      lens: "200-600mm, 200-800mm, or a similar long wildlife zoom.",
+      focalLength: "300-600mm",
+      aperture: "f/6.3-f/8",
+      shutterSpeed: "1/500-1/1600 sec",
+      technique:
+        "Arrive before first light, expose for sky and water, watch wing stretch and run cues, and decide early whether the frame is a quiet silhouette/reflection or a faster takeoff sequence.",
+    },
+  },
+  {
+    id: "photo-window-sunrise-goose-blastoff-exposure",
+    title: "Sunrise snow-goose blastoff exposure",
+    src: "./assets/generated/photo-windows-hd/window-02-sunrise-goose-blastoff-exposure.jpg",
+    category: "Photo Windows",
+    alt:
+      "Generated 1080p Photo Windows image of a wide snow-goose blastoff at Bosque del Apache sunrise",
+    caption:
+      "Purpose-built generated Photo Windows image for sunrise snow-goose blastoff exposure control; not an actual Bosque field photograph.",
+    rights:
+      "AI-generated project planning image from this guide's photo-window notes. Use as expectation-setting only.",
+    placement: ["Photo Windows", "Visual Asset Manifest"],
+    description:
+      "Purpose-built generated Photo Windows image for wide pre-composition, white-feather highlight protection, first flock waves, and separated dawn goose groups.",
+    lesson: {
+      supposedLocation:
+        "Flight Deck, Main Pool, or the current snow-goose roost after confirming bird position from the latest scout.",
+      lens: "100-400mm or 200-600mm class zoom, with a wider camera ready if the flock erupts close.",
+      focalLength: "100-300mm for the mass lift-off; 400-600mm when groups separate.",
+      aperture: "f/7.1-f/9",
+      shutterSpeed: "1/2000-1/3200 sec",
+      technique:
+        "Pre-compose wider than feels natural, protect white feathers from clipping, start tracking before the first wave lifts, and tighten only after the flock separates into readable groups.",
+    },
+  },
+  {
+    id: "photo-window-midmorning-field-behavior",
+    title: "Mid-morning field behavior from the vehicle",
+    src: "./assets/generated/photo-windows-hd/window-03-midmorning-field-behavior.jpg",
+    category: "Photo Windows",
+    alt:
+      "Generated 1080p Photo Windows image of cranes and geese feeding in Bosque del Apache crop rows from a vehicle-blind viewpoint",
+    caption:
+      "Purpose-built generated Photo Windows image for mid-morning field behavior and vehicle-blind work; not an actual Bosque field photograph.",
+    rights:
+      "AI-generated project planning image from this guide's photo-window notes. Use as expectation-setting only.",
+    placement: ["Photo Windows", "Visual Asset Manifest"],
+    description:
+      "Purpose-built generated Photo Windows image for feeding behavior, crop-row geometry, field-edge raptors, and slower vehicle-blind decisions after peak sunrise.",
+    lesson: {
+      supposedLocation:
+        "North Loop fields, Farm Deck area, or another legal pullout with active feeding birds.",
+      lens: "200-600mm, 200-800mm, or 100-500mm class zoom from the vehicle.",
+      focalLength: "300-600mm",
+      aperture: "f/6.3-f/8",
+      shutterSpeed: "1/1000-1/2500 sec",
+      technique:
+        "Use the vehicle as a blind, include crop rows and mountains when behavior is quiet, and scan field edges for raptors or flock lift before changing position.",
+    },
+  },
+  {
+    id: "photo-window-midmorning-wetland-glare-reeds",
+    title: "Mid-morning wetland glare and reed layers",
+    src: "./assets/generated/photo-windows-hd/window-04-midmorning-wetland-glare-reeds.jpg",
+    category: "Photo Windows",
+    alt:
+      "Generated 1080p Photo Windows image of reeds ducks bright water and wetland deck glare at Bosque del Apache mid-morning",
+    caption:
+      "Purpose-built generated Photo Windows image for mid-morning wetland glare, reeds, and deck composition; not an actual Bosque field photograph.",
+    rights:
+      "AI-generated project planning image from this guide's photo-window notes. Use as expectation-setting only.",
+    placement: ["Photo Windows", "Visual Asset Manifest"],
+    description:
+      "Purpose-built generated Photo Windows image for bright water, reed layers, duck reflections, distant cranes, clean head angles, and circular-polarizer tradeoffs.",
+    lesson: {
+      supposedLocation:
+        "Dabbler Deck, Eagle Scout Deck, Willow Deck, Coyote Deck, or another public wetland viewpoint.",
+      lens: "100-400mm, 200-600mm, or 200-800mm depending on distance and habitat scale.",
+      focalLength: "200-600mm",
+      aperture: "f/8-f/11",
+      shutterSpeed: "1/500-1/2000 sec",
+      technique:
+        "Manage bright water before chasing birds: use reeds as layers, wait for clean head angles, and mount a circular polarizer only when glare control is worth the shutter-speed cost.",
+    },
+  },
+  {
+    id: "photo-window-sunset-crane-landing-lane",
+    title: "Sunset crane landing lane",
+    src: "./assets/generated/photo-windows-hd/window-05-sunset-crane-landing-lane.jpg",
+    category: "Photo Windows",
+    alt:
+      "Generated 1080p Photo Windows image of sandhill cranes landing into a warm Bosque del Apache sunset lane with reflections",
+    caption:
+      "Purpose-built generated Photo Windows image for sunset crane landing lanes; not an actual Bosque field photograph.",
+    rights:
+      "AI-generated project planning image from this guide's photo-window notes. Use as expectation-setting only.",
+    placement: ["Photo Windows", "Visual Asset Manifest"],
+    description:
+      "Purpose-built generated Photo Windows image for wind-aligned landings, warm side light, head-and-shoulder focus, touchdown panning, and reflection space.",
+    lesson: {
+      supposedLocation:
+        "Active crane pool, South Crane Pond, Highway 1 crane ponds, or the current legal return lane after late-day scouting.",
+      lens: "Long wildlife zoom on a beanbag, monopod, or tripod/gimbal.",
+      focalLength: "400-700mm",
+      aperture: "f/6.3-f/8",
+      shutterSpeed: "1/1600-1/2500 sec",
+      technique:
+        "Use wind direction to choose the landing lane, focus on the head and front shoulder, pan through touchdown, and keep enough room below the feet for reflection and splash.",
+    },
+  },
+  {
+    id: "photo-window-sunset-wide-roost-silhouette",
+    title: "Sunset wide roost silhouette",
+    src: "./assets/generated/photo-windows-hd/window-06-sunset-wide-roost-silhouette.jpg",
+    category: "Photo Windows",
+    alt:
+      "Generated 1080p Photo Windows image of a wide Bosque del Apache sunset roost silhouette with cranes water and mountains",
+    caption:
+      "Purpose-built generated Photo Windows image for wide sunset roost silhouettes; not an actual Bosque field photograph.",
+    rights:
+      "AI-generated project planning image from this guide's photo-window notes. Use as expectation-setting only.",
+    placement: ["Photo Windows", "Visual Asset Manifest"],
+    description:
+      "Purpose-built generated Photo Windows image for wide sunset story frames, negative sky and water space, mountain bands, crane silhouettes, and closing-scene restraint.",
+    lesson: {
+      supposedLocation:
+        "Broad crane pond, roost edge, or legal pullout where the place itself is stronger than a tight action frame.",
+      lens: "100-400mm or the short end of a long wildlife zoom.",
+      focalLength: "150-350mm",
+      aperture: "f/7.1-f/9",
+      shutterSpeed: "1/500-1/1600 sec",
+      technique:
+        "When action slows, widen the frame and balance sky, water, birds, and mountain bands. Let silhouettes and reflections carry the last-light story.",
+    },
+  },
+  {
+    id: "photo-window-weather-mist-high-key-water",
+    title: "Weather fallback mist and high-key water",
+    src: "./assets/generated/photo-windows-hd/window-07-weather-mist-high-key-water.jpg",
+    category: "Photo Windows",
+    alt:
+      "Generated 1080p Photo Windows image of mist high-key water reeds and birds in a gray Bosque del Apache weather fallback scene",
+    caption:
+      "Purpose-built generated Photo Windows image for misty high-key weather fallback work; not an actual Bosque field photograph.",
+    rights:
+      "AI-generated project planning image from this guide's photo-window notes. Use as expectation-setting only.",
+    placement: ["Photo Windows", "Visual Asset Manifest"],
+    description:
+      "Purpose-built generated Photo Windows image for flat light, mist, high-key water, reeds, subtle silhouettes, and weather-driven composition.",
+    lesson: {
+      supposedLocation:
+        "Any legal wetland pullout, deck, or roost edge where fog, mist, overcast, or pale water changes the original plan.",
+      lens: "200-600mm, 100-500mm, or 100-400mm depending on how much habitat should remain visible.",
+      focalLength: "200-500mm",
+      aperture: "f/6.3-f/9",
+      shutterSpeed: "1/500-1/1600 sec",
+      technique:
+        "Stop fighting flat light. Expose high-key without losing birds, use reeds and water texture as structure, and let mist simplify the frame.",
+    },
+  },
+  {
+    id: "photo-window-weather-panning-blur",
+    title: "Weather fallback panning blur",
+    src: "./assets/generated/photo-windows-hd/window-08-weather-panning-blur.jpg",
+    category: "Photo Windows",
+    alt:
+      "Generated 1080p Photo Windows image of intentional panning blur with cranes over Bosque del Apache water in flat light",
+    caption:
+      "Purpose-built generated Photo Windows image for slow-shutter weather fallback panning; not an actual Bosque field photograph.",
+    rights:
+      "AI-generated project planning image from this guide's photo-window notes. Use as expectation-setting only.",
+    placement: ["Photo Windows", "Visual Asset Manifest"],
+    description:
+      "Purpose-built generated Photo Windows image for deliberate panning blur, slower shutter experiments, partially sharp head or body cues, and background streak quality.",
+    lesson: {
+      supposedLocation:
+        "Crane pool, Flight Deck, or wetland edge after safe sharp frames are already captured and light turns flat.",
+      lens: "200-600mm or 100-500mm zoom, handheld or on a support that allows smooth panning.",
+      focalLength: "200-500mm",
+      aperture: "f/6.3-f/9",
+      shutterSpeed: "1/250, 1/125, or 1/60 sec after sharp safety frames.",
+      technique:
+        "Slow the shutter only after the safe frames are done, pan smoothly through the bird, and judge success by head sharpness, wing smear, and clean background streaks.",
+    },
+  },
+];
+
 const practiceStandaloneVisuals = practiceVisuals.flatMap((visual) =>
   (practiceFrameExamples[visual.id] || [visual.title]).map((example, index) => {
     const frameNumber = String(index + 1).padStart(2, "0");
@@ -1781,6 +1988,7 @@ const visualById = new Map(
     ...standaloneGalleryVisuals,
     ...regeneratedGalleryVisuals,
     ...itineraryGeneratedVisuals,
+    ...photoWindowGeneratedVisuals,
     ...practiceVisuals,
     ...practiceStandaloneVisuals,
     ...travelVisuals,
@@ -2001,6 +2209,10 @@ const itineraryLessons = Object.fromEntries(
   itineraryGeneratedVisuals.map((visual) => [visual.id, visual.lesson])
 );
 
+const photoWindowLessons = Object.fromEntries(
+  photoWindowGeneratedVisuals.map((visual) => [visual.id, visual.lesson])
+);
+
 const standaloneGalleryLessons = Object.fromEntries(
   standaloneGalleryVisuals.map((visual) => {
     const lesson = galleryLessons[visual.parentId];
@@ -2104,6 +2316,7 @@ const visualLessons = {
   ...galleryLessons,
   ...standaloneGalleryLessons,
   ...itineraryLessons,
+  ...photoWindowLessons,
   ...practiceLessons,
   ...practiceStandaloneLessons,
   ...travelLessons,
@@ -3112,10 +3325,88 @@ function visualPlanForSlot(day, slot) {
   };
 }
 
-const photoWindowVisuals = {
-  Sunrise: ["crane-roost-dawn", "snow-goose-blastoff"],
-  "Mid-morning": ["farm-field-feeding", "wetland-deck", "desert-edge-details"],
-  Sunset: ["crane-evening-return", "weather-motion-fallback"],
+const photoWindowPlans = {
+  Sunrise: {
+    eyebrow: "Before and just after first light",
+    title: "Start wider than the action, then tighten after the first decision.",
+    summary:
+      "Sunrise is the highest-risk window because the best behavior can happen before the light feels comfortable. Arrive with a roost already chosen, protect highlights, and decide whether the morning is about still water, silhouettes, or explosive lift-off.",
+    visualIds: [
+      "photo-window-sunrise-roost-silhouettes",
+      "photo-window-sunrise-goose-blastoff-exposure",
+    ],
+    decisions: [
+      "Park before the first audible movement, not when the light looks pretty.",
+      "Expose for water, sky, and white feathers before birds launch.",
+      "Keep one frame wide enough for flock scale, sound, mountains, and water.",
+    ],
+    slotWindows: ["Sunrise"],
+  },
+  "Mid-morning": {
+    eyebrow: "After peak action",
+    title: "Slow down, use habitat, and make the field decision visible.",
+    summary:
+      "Mid-morning is where the trip can become more than blast-offs and landings. Use the vehicle as a blind in the fields, work decks carefully, and treat glare, reeds, crop rows, and small subjects as part of the photograph.",
+    visualIds: [
+      "photo-window-midmorning-field-behavior",
+      "photo-window-midmorning-wetland-glare-reeds",
+    ],
+    decisions: [
+      "Let bird behavior and legal pullouts determine whether you stay in the fields or move to a deck.",
+      "Use rows, reeds, and reflections when the birds themselves are quiet.",
+      "Mount a CPL only when glare control is worth the shutter-speed penalty.",
+    ],
+    slotWindows: ["Mid-morning"],
+  },
+  Sunset: {
+    eyebrow: "Return flights and closing frames",
+    title: "Read wind first, then choose tight action or a wider ending.",
+    summary:
+      "Sunset rewards patience if you know where the birds want to land. Use wind to predict approach lanes, make the sharp action frames first, then widen for silhouettes, water, and mountain bands when the action slows.",
+    visualIds: [
+      "photo-window-sunset-crane-landing-lane",
+      "photo-window-sunset-wide-roost-silhouette",
+    ],
+    decisions: [
+      "Choose position by wind direction, not only by the prettiest color.",
+      "Leave room ahead of landing cranes and below them for reflections.",
+      "When action fades, stop forcing tight frames and build the closing scene.",
+    ],
+    slotWindows: ["Sunset"],
+  },
+  "Weather fallback": {
+    eyebrow: "Fog, gray light, wind, and low contrast",
+    title: "Make the weather the subject instead of treating it as a failure.",
+    summary:
+      "Weather and flat light should change the assignment, not end it. Use mist, high-key water, reeds, and slow panning experiments after the safe frames are already made.",
+    visualIds: [
+      "photo-window-weather-mist-high-key-water",
+      "photo-window-weather-panning-blur",
+    ],
+    decisions: [
+      "Use fog and pale water to simplify the frame rather than hunting for saturated color.",
+      "Bank a sharp record frame before experimenting with slow shutter speeds.",
+      "Judge motion experiments by head sharpness, wing smear, and background streak quality.",
+    ],
+    relatedStops: [
+      {
+        date: "Wed Dec 9",
+        label: "On-site Day 3",
+        window: "Sunset",
+        place: "Flight Deck if active, otherwise crane pools",
+        goal:
+          "Use the fallback window for safe sharp frames first, then deliberate panning and silhouette experiments.",
+      },
+      {
+        date: "Thu Dec 10",
+        label: "On-site Day 4",
+        window: "Sunrise",
+        place: "South Loop wetland stretch",
+        goal:
+          "Use mist, reeds, gray water, and quiet birds as the composition instead of chasing action in weak light.",
+      },
+    ],
+  },
 };
 
 const gearItems = [
@@ -5327,62 +5618,78 @@ function renderItinerary() {
 
 function renderWindows() {
   const root = document.querySelector("#windows");
+  const windowNames = Object.keys(photoWindowPlans);
   root.innerHTML = `
     <div class="section-title">
       <div>
         <p class="eyebrow">Choose by light</p>
         <h2>Photo Windows</h2>
       </div>
-      <p>Use this when conditions override the day-by-day itinerary. Each window now carries more daily context so it works as a field decision tool.</p>
+      <p>Use this when conditions override the day-by-day itinerary. Each window now has purpose-built generated planning images and a calmer decision layout for field use.</p>
     </div>
     <div class="window-tabs">
-      <button class="window-tab is-active" data-window="Sunrise">Sunrise</button>
-      <button class="window-tab" data-window="Mid-morning">Mid-morning</button>
-      <button class="window-tab" data-window="Sunset">Sunset</button>
+      ${windowNames
+        .map(
+          (windowName, index) =>
+            `<button class="window-tab ${index === 0 ? "is-active" : ""}" data-window="${windowName}">${windowName}</button>`
+        )
+        .join("")}
     </div>
     <div id="window-results"></div>
     ${renderVisualLightbox("windows-lightbox-title")}`;
   const result = root.querySelector("#window-results");
   const draw = (windowName) => {
-    const matches = tripDays.flatMap((day) =>
+    const plan = photoWindowPlans[windowName];
+    const matches = plan.relatedStops || tripDays.flatMap((day) =>
       day.slots
-        .filter((slot) => slot.window === windowName)
+        .filter((slot) => (plan.slotWindows || [windowName]).includes(slot.window))
         .map((slot) => ({ ...slot, date: day.date, label: day.label, theme: day.theme }))
     );
     result.innerHTML = `
-      <section class="window-visual-grid standalone-window-grid" aria-label="${windowName} standalone generated examples">
-        ${(photoWindowVisuals[windowName] || [])
-          .flatMap((visualId) => standaloneFrameIdsFor(visualId))
-          .map((visualId) =>
-            renderStandaloneFrameCard(visualId, {
-              compact: true,
-              showLocation: true,
-              hideDescription: false,
-            })
+      <section class="photo-window-focus" aria-labelledby="window-focus-${slugify(windowName)}">
+        <div class="photo-window-copy">
+          <p class="eyebrow">${plan.eyebrow}</p>
+          <h3 id="window-focus-${slugify(windowName)}">${plan.title}</h3>
+          <p>${plan.summary}</p>
+          <div class="window-decision-list">
+            <h4>Field decisions</h4>
+            <ul>
+              ${plan.decisions.map((item) => `<li>${item}</li>`).join("")}
+            </ul>
+          </div>
+        </div>
+        <div class="photo-window-visuals" aria-label="${windowName} purpose-built generated planning images">
+          ${plan.visualIds
+            .map((visualId) =>
+              renderStandaloneFrameCard(visualId, {
+                className: "photo-window-frame",
+                showLocation: true,
+                hideDescription: false,
+                loading: "lazy",
+              })
+            )
+            .join("")}
+        </div>
+      </section>
+      <section class="window-related">
+        <div class="window-related-heading">
+          <p class="eyebrow">Related itinerary moments</p>
+          <h3>${windowName} decisions in the plan</h3>
+        </div>
+        <div class="window-stop-grid">
+        ${matches
+          .map(
+            (slot) => `<article class="window-stop">
+              <p class="eyebrow">${slot.date} / ${slot.label}</p>
+              <h4>${slot.place}</h4>
+              <p>${slot.goal}</p>
+              ${slot.position ? `<p><b>Field note:</b> ${slot.position}</p>` : ""}
+              <div class="tag-row"><span class="tag ${windowName === "Sunrise" ? "sunrise" : windowName === "Sunset" ? "sunset" : ""}">${slot.window || windowName}</span>${slot.theme ? `<span class="tag">${slot.theme}</span>` : ""}</div>
+            </article>`
           )
           .join("")}
-      </section>
-      <div class="grid-2">
-        ${matches
-          .map((slot) => {
-            const day = tripDays.find((item) => item.date === slot.date);
-            const visualPlan = visualPlanForSlot(day, slot);
-            const leadFrame = standaloneFrameIdsFor(visualPlan.visualId)[0];
-            return `<article class="gear-card window-card">
-          ${renderStandaloneFrameCard(leadFrame, {
-            compact: true,
-            hideDescription: true,
-            className: "window-card-frame",
-          })}
-          <p class="eyebrow">${slot.date} / ${slot.label}</p>
-          <h3>${slot.place}</h3>
-          <p class="card-copy">${slot.goal}</p>
-          <p><b>Field note:</b> ${slot.position}</p>
-          <div class="tag-row"><span class="tag ${windowName === "Sunrise" ? "sunrise" : windowName === "Sunset" ? "sunset" : ""}">${windowName}</span><span class="tag">${slot.theme}</span></div>
-        </article>`;
-          })
-          .join("")}
-      </div>`;
+        </div>
+      </section>`;
     setupVisualLightbox(root);
   };
   root.querySelectorAll(".window-tab").forEach((button) => {
@@ -5392,7 +5699,7 @@ function renderWindows() {
       draw(button.dataset.window);
     });
   });
-  draw("Sunrise");
+  draw(windowNames[0]);
   setupVisualLightbox(root);
 }
 
