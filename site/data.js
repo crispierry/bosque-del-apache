@@ -6,11 +6,11 @@ const visualCheckedDate = "2026-06-04";
 const guideFraming = {
   publicationDate: "June 5, 2026",
   proposedTripWindow: "Dec 6-12, 2026",
-  title: "General guide + proposed trip window",
+  title: "Guide scope",
   short:
-    "This is a general Bosque del Apache photography guide. The worked example uses proposed trip dates of Dec 6-12, 2026; recheck date-specific sunrise, sunset, access, lodging, pricing, and field conditions for your own dates.",
+    "This is a general Bosque del Apache photography guide with a dated planning example for Dec 6-12, 2026. Recheck sunrise, sunset, access, lodging, pricing, and field conditions for your own travel dates.",
   overview:
-    "This site is a general Bosque del Apache photography guide for any reader. The worked example uses proposed trip dates of Dec 6-12, 2026, with a classic five-day rhythm: arrive and scout on Sunday, photograph Monday through Friday, and leave Saturday with backups complete. Target parking, sunrise, and sunset arrival times are tied to that proposed window, so recheck them if you travel at another time.",
+    "Use this as a general Bosque del Apache photography guide, then adapt the dated example to your own trip. The example window is Dec 6-12, 2026: arrive and scout on Sunday, photograph Monday through Friday, and leave Saturday with backups complete. Parking targets, sunrise times, and sunset arrivals are tied to that week, so recheck them if you travel at another time.",
 };
 
 const assets = {
@@ -32,7 +32,7 @@ const generatedVisuals = [
     alt:
       "Generated five-frame planning preview of sandhill crane dawn roost scenes at Bosque del Apache",
     caption:
-      "Generated planning preview for crane-pool sunrise work; not an actual Bosque field photograph.",
+      "Planning preview for crane-pool sunrise work; not a field photograph from Bosque.",
     rights:
       "AI-generated project planning preview from this guide's shot descriptions. Use as expectation-setting only.",
     placement: ["Gallery", "Itinerary", "Photo Windows", "Sources"],
@@ -54,7 +54,7 @@ const generatedVisuals = [
     alt:
       "Generated five-frame planning preview of snow goose roost and blast-off scenes at Bosque del Apache",
     caption:
-      "Generated planning preview for Flight Deck or Main Pool blast-off decisions; not an actual Bosque field photograph.",
+      "Planning preview for Flight Deck or Main Pool blast-off decisions; not a field photograph from Bosque.",
     rights:
       "AI-generated project planning preview from this guide's shot descriptions. Use as expectation-setting only.",
     placement: ["Gallery", "Itinerary", "Photo Windows", "Media"],
@@ -76,7 +76,7 @@ const generatedVisuals = [
     alt:
       "Generated five-frame planning preview of sandhill crane landing and evening return scenes at Bosque del Apache",
     caption:
-      "Generated planning preview for crane-pool sunset work; not an actual Bosque field photograph.",
+      "Planning preview for crane-pool sunset work; not a field photograph from Bosque.",
     rights:
       "AI-generated project planning preview from this guide's shot descriptions. Use as expectation-setting only.",
     placement: ["Gallery", "Itinerary", "Photo Windows"],
@@ -98,7 +98,7 @@ const generatedVisuals = [
     alt:
       "Generated five-frame planning preview of cranes, geese, and raptors in Bosque del Apache managed farm fields",
     caption:
-      "Generated planning preview for field-feeding and vehicle-blind work; not an actual Bosque field photograph.",
+      "Planning preview for field-feeding and vehicle-blind work; not a field photograph from Bosque.",
     rights:
       "AI-generated project planning preview from this guide's shot descriptions. Use as expectation-setting only.",
     placement: ["Gallery", "Itinerary", "Photo Windows", "Media", "Sources"],
@@ -120,7 +120,7 @@ const generatedVisuals = [
     alt:
       "Generated five-frame planning preview of ducks, reeds, water texture, and wetland deck scenes at Bosque del Apache",
     caption:
-      "Generated planning preview for Dabbler, Eagle Scout, Willow, and Coyote Deck work; not an actual Bosque field photograph.",
+      "Planning preview for Dabbler, Eagle Scout, Willow, and Coyote Deck work; not a field photograph from Bosque.",
     rights:
       "AI-generated project planning preview from this guide's shot descriptions. Use as expectation-setting only.",
     placement: ["Gallery", "Itinerary", "Photo Windows"],
@@ -142,7 +142,7 @@ const generatedVisuals = [
     alt:
       "Generated five-frame planning preview of roadrunner, quail, sparrows, tracks, and dry Bosque del Apache habitat details",
     caption:
-      "Generated planning preview for Rio Viejo, trail, and habitat-detail work; not an actual Bosque field photograph.",
+      "Planning preview for Rio Viejo, trail, and habitat-detail work; not a field photograph from Bosque.",
     rights:
       "AI-generated project planning preview from this guide's shot descriptions. Use as expectation-setting only.",
     placement: ["Gallery", "Itinerary", "Photo Windows"],
@@ -164,7 +164,7 @@ const generatedVisuals = [
     alt:
       "Generated five-frame planning preview of mist, gray light, panning blur, snow-dusted reeds, and silhouettes at Bosque del Apache",
     caption:
-      "Generated planning preview for gray-day and slow-shutter fallback work; not an actual Bosque field photograph.",
+      "Planning preview for gray-day and slow-shutter fallback work; not a field photograph from Bosque.",
     rights:
       "AI-generated project planning preview from this guide's shot descriptions. Use as expectation-setting only.",
     placement: ["Gallery", "Itinerary", "Photo Windows", "Practice"],
@@ -186,7 +186,7 @@ const generatedVisuals = [
     alt:
       "Generated five-frame planning preview of circular polarizer, neutral-density, protective filter, step-up ring, and cold-weather filter practice",
     caption:
-      "Generated planning preview for filter rehearsals; not an actual Bosque field photograph.",
+      "Planning preview for filter rehearsals; not a field photograph from Bosque.",
     rights:
       "AI-generated project planning preview from this guide's shot descriptions. Use as expectation-setting only.",
     placement: ["Gallery", "Practice", "Sources"],
@@ -208,10 +208,10 @@ const generatedVisuals = [
     alt:
       "Generated five-frame planning preview of hotel room battery charging, staged camera bodies, rental SUV cargo, route check, and memory-card backup",
     caption:
-      "Generated planning preview for travel and field-workflow preparation; not an actual Bosque field photograph.",
+      "Planning preview for travel and field-workflow preparation; not a field photograph from Bosque.",
     rights:
       "AI-generated project planning preview from this guide's shot descriptions. Use as expectation-setting only.",
-    placement: ["Gallery", "Itinerary", "Travel", "Sources"],
+    placement: ["Itinerary", "Travel"],
     examples: [
       "Hotel battery and card charging",
       "Two bodies staged before dawn",
@@ -233,7 +233,7 @@ const practiceVisuals = [
     alt:
       "Generated five-frame training preview of two-camera staging, camera controls, batteries, cards, and reset practice",
     caption:
-      "Generated training preview for practice item 1, Camera Setup Baseline; not an actual Bosque field photograph.",
+      "Generated training preview for practice item 1, Camera Setup Baseline; not a field photograph from Bosque.",
     rights:
       "AI-generated practice preview from this guide's training notes. Use as expectation-setting only.",
     placement: ["Practice", "Visual Asset Manifest"],
@@ -248,7 +248,7 @@ const practiceVisuals = [
     alt:
       "Generated five-frame training preview of aperture priority, shutter priority, manual exposure, silhouettes, and exposure review",
     caption:
-      "Generated training preview for practice item 2, Aperture Priority, Shutter Priority, and Manual; not an actual Bosque field photograph.",
+      "Generated training preview for practice item 2, Aperture Priority, Shutter Priority, and Manual; not a field photograph from Bosque.",
     rights:
       "AI-generated practice preview from this guide's training notes. Use as expectation-setting only.",
     placement: ["Practice", "Visual Asset Manifest"],
@@ -263,7 +263,7 @@ const practiceVisuals = [
     alt:
       "Generated five-frame training preview of frozen flight, wing blur, panning blur, flock blur, and motion review",
     caption:
-      "Generated training preview for practice item 3, Shutter Speed Ladder; not an actual Bosque field photograph.",
+      "Generated training preview for practice item 3, Shutter Speed Ladder; not a field photograph from Bosque.",
     rights:
       "AI-generated practice preview from this guide's training notes. Use as expectation-setting only.",
     placement: ["Practice", "Visual Asset Manifest"],
@@ -278,7 +278,7 @@ const practiceVisuals = [
     alt:
       "Generated five-frame training preview of long-lens stance, hip rotation, lens support, acquisition, and short burst practice",
     caption:
-      "Generated training preview for practice item 4, Handholding and Body Mechanics; not an actual Bosque field photograph.",
+      "Generated training preview for practice item 4, Handholding and Body Mechanics; not a field photograph from Bosque.",
     rights:
       "AI-generated practice preview from this guide's training notes. Use as expectation-setting only.",
     placement: ["Practice", "Visual Asset Manifest"],
@@ -293,7 +293,7 @@ const practiceVisuals = [
     alt:
       "Generated five-frame training preview of beanbag, tripod, gimbal, monopod, deck, and handheld long-lens support practice",
     caption:
-      "Generated training preview for practice item 5, Tripod, Gimbal, Monopod, and Beanbag; not an actual Bosque field photograph.",
+      "Generated training preview for practice item 5, Tripod, Gimbal, Monopod, and Beanbag; not a field photograph from Bosque.",
     rights:
       "AI-generated practice preview from this guide's training notes. Use as expectation-setting only.",
     placement: ["Practice", "Visual Asset Manifest"],
@@ -308,7 +308,7 @@ const practiceVisuals = [
     alt:
       "Generated five-frame training preview of white birds against dark reeds, bright water, pale sky, camera review, and exposure checking",
     caption:
-      "Generated training preview for practice item 6, White Birds and Exposure; not an actual Bosque field photograph.",
+      "Generated training preview for practice item 6, White Birds and Exposure; not a field photograph from Bosque.",
     rights:
       "AI-generated practice preview from this guide's training notes. Use as expectation-setting only.",
     placement: ["Practice", "Visual Asset Manifest"],
@@ -323,7 +323,7 @@ const practiceVisuals = [
     alt:
       "Generated five-frame training preview of crane and goose pre-flight cues, wind-aware movement, and quiet observation",
     caption:
-      "Generated training preview for practice item 7, Behavior Prediction; not an actual Bosque field photograph.",
+      "Generated training preview for practice item 7, Behavior Prediction; not a field photograph from Bosque.",
     rights:
       "AI-generated practice preview from this guide's training notes. Use as expectation-setting only.",
     placement: ["Practice", "Visual Asset Manifest"],
@@ -338,7 +338,7 @@ const practiceVisuals = [
     alt:
       "Generated five-frame training preview of batteries, gloves, mounted lens, blower kit, rain sleeve, and dust-safe handling",
     caption:
-      "Generated training preview for practice item 8, Cold and Dust Workflow; not an actual Bosque field photograph.",
+      "Generated training preview for practice item 8, Cold and Dust Workflow; not a field photograph from Bosque.",
     rights:
       "AI-generated practice preview from this guide's training notes. Use as expectation-setting only.",
     placement: ["Practice", "Visual Asset Manifest"],
@@ -353,7 +353,7 @@ const practiceVisuals = [
     alt:
       "Generated five-frame training preview of local bird practice, intentional blur, card backup, packed bag, and two-camera staging",
     caption:
-      "Generated training preview for practice item 9, Pre-trip Readiness Checklist; not an actual Bosque field photograph.",
+      "Generated training preview for practice item 9, Pre-trip Readiness Checklist; not a field photograph from Bosque.",
     rights:
       "AI-generated practice preview from this guide's training notes. Use as expectation-setting only.",
     placement: ["Practice", "Visual Asset Manifest"],
@@ -545,7 +545,7 @@ const travelVisuals = [
     alt:
       "Generated editorial illustration of a rental SUV cargo area organized for predawn wildlife photography",
     caption:
-      "Generated rental car setup illustration for Travel planning; no real rental company, vehicle brand, or camera brand is represented.",
+      "Rental car setup illustration for travel planning; no real rental company, vehicle brand, or camera brand is represented.",
     rights:
       "AI-generated travel-planning illustration created for this project. Use as a logistics visual, not as a literal vehicle or rental-company recommendation.",
     placement: ["Travel", "Visual Asset Manifest"],
@@ -565,7 +565,7 @@ const standaloneGalleryVisuals = generatedVisuals.flatMap((visual) =>
       category: visual.category,
       alt: `Generated standalone planning preview of ${example.toLowerCase()} at Bosque del Apache`,
       caption:
-        `${example}. Standalone HD planning frame separated from the ${visual.title} generated contact sheet; not an actual Bosque field photograph.`,
+        `${example}. Standalone HD planning frame separated from the ${visual.title} generated contact sheet; not a field photograph from Bosque.`,
       rights: visual.rights,
       placement: ["Gallery", "Visual Asset Manifest"],
       description:
@@ -585,7 +585,7 @@ const regeneratedGalleryImageGroups = {
       alt:
         "Generated standalone 1080p planning photo of sandhill crane silhouettes in a Bosque del Apache roost pool before sunrise",
       caption:
-        "Generated standalone 1080p planning photo for crane-pool sunrise work; not an actual Bosque field photograph.",
+        "Generated standalone 1080p planning photo for crane-pool sunrise work; not a field photograph from Bosque.",
       rights:
         "AI-generated project planning photo from this guide's shot descriptions. Use as expectation-setting only.",
       placement: ["Gallery", "Visual Asset Manifest"],
@@ -601,7 +601,7 @@ const regeneratedGalleryImageGroups = {
       alt:
         "Generated standalone 1080p planning photo of sandhill cranes with visible cold breath in shallow Bosque del Apache roost water",
       caption:
-        "Generated standalone 1080p planning photo for cold dawn roost atmosphere; not an actual Bosque field photograph.",
+        "Generated standalone 1080p planning photo for cold dawn roost atmosphere; not a field photograph from Bosque.",
       rights:
         "AI-generated project planning photo from this guide's shot descriptions. Use as expectation-setting only.",
       placement: ["Gallery", "Visual Asset Manifest"],
@@ -617,7 +617,7 @@ const regeneratedGalleryImageGroups = {
       alt:
         "Generated standalone 1080p planning photo of a pair of sandhill cranes reflected in calm Bosque del Apache sunrise water",
       caption:
-        "Generated standalone 1080p planning photo for quiet crane reflection work; not an actual Bosque field photograph.",
+        "Generated standalone 1080p planning photo for quiet crane reflection work; not a field photograph from Bosque.",
       rights:
         "AI-generated project planning photo from this guide's shot descriptions. Use as expectation-setting only.",
       placement: ["Gallery", "Visual Asset Manifest"],
@@ -633,7 +633,7 @@ const regeneratedGalleryImageGroups = {
       alt:
         "Generated standalone 1080p planning photo of a sandhill crane beginning a takeoff run across shallow Bosque del Apache water",
       caption:
-        "Generated standalone 1080p planning photo for crane takeoff behavior; not an actual Bosque field photograph.",
+        "Generated standalone 1080p planning photo for crane takeoff behavior; not a field photograph from Bosque.",
       rights:
         "AI-generated project planning photo from this guide's shot descriptions. Use as expectation-setting only.",
       placement: ["Gallery", "Visual Asset Manifest"],
@@ -649,7 +649,7 @@ const regeneratedGalleryImageGroups = {
       alt:
         "Generated standalone 1080p planning photo of a wide Bosque del Apache crane roost scene with winter water and distant mountains",
       caption:
-        "Generated standalone 1080p planning photo for wide roost context; not an actual Bosque field photograph.",
+        "Generated standalone 1080p planning photo for wide roost context; not a field photograph from Bosque.",
       rights:
         "AI-generated project planning photo from this guide's shot descriptions. Use as expectation-setting only.",
       placement: ["Gallery", "Visual Asset Manifest"],
@@ -667,7 +667,7 @@ const regeneratedGalleryImageGroups = {
       alt:
         "Generated standalone 1080p planning photo of snow geese resting on Bosque del Apache water before dawn lift-off",
       caption:
-        "Generated standalone 1080p planning photo for snow goose roost anticipation; not an actual Bosque field photograph.",
+        "Generated standalone 1080p planning photo for snow goose roost anticipation; not a field photograph from Bosque.",
       rights:
         "AI-generated project planning photo from this guide's shot descriptions. Use as expectation-setting only.",
       placement: ["Gallery", "Visual Asset Manifest"],
@@ -683,7 +683,7 @@ const regeneratedGalleryImageGroups = {
       alt:
         "Generated standalone 1080p planning photo of the first wave of snow geese lifting low from a Bosque del Apache roost",
       caption:
-        "Generated standalone 1080p planning photo for the first low flock wave; not an actual Bosque field photograph.",
+        "Generated standalone 1080p planning photo for the first low flock wave; not a field photograph from Bosque.",
       rights:
         "AI-generated project planning photo from this guide's shot descriptions. Use as expectation-setting only.",
       placement: ["Gallery", "Visual Asset Manifest"],
@@ -699,7 +699,7 @@ const regeneratedGalleryImageGroups = {
       alt:
         "Generated standalone 1080p planning photo of a wide mass snow goose blast-off over Bosque del Apache wetland water",
       caption:
-        "Generated standalone 1080p planning photo for mass snow goose blast-off; not an actual Bosque field photograph.",
+        "Generated standalone 1080p planning photo for mass snow goose blast-off; not a field photograph from Bosque.",
       rights:
         "AI-generated project planning photo from this guide's shot descriptions. Use as expectation-setting only.",
       placement: ["Gallery", "Visual Asset Manifest"],
@@ -715,7 +715,7 @@ const regeneratedGalleryImageGroups = {
       alt:
         "Generated standalone 1080p planning photo of snow geese passing overhead in layered flock texture at Bosque del Apache",
       caption:
-        "Generated standalone 1080p planning photo for overhead flock pattern work; not an actual Bosque field photograph.",
+        "Generated standalone 1080p planning photo for overhead flock pattern work; not a field photograph from Bosque.",
       rights:
         "AI-generated project planning photo from this guide's shot descriptions. Use as expectation-setting only.",
       placement: ["Gallery", "Visual Asset Manifest"],
@@ -731,7 +731,7 @@ const regeneratedGalleryImageGroups = {
       alt:
         "Generated standalone 1080p planning photo of separated snow goose groups flying against pastel dawn at Bosque del Apache",
       caption:
-        "Generated standalone 1080p planning photo for separated dawn flock composition; not an actual Bosque field photograph.",
+        "Generated standalone 1080p planning photo for separated dawn flock composition; not a field photograph from Bosque.",
       rights:
         "AI-generated project planning photo from this guide's shot descriptions. Use as expectation-setting only.",
       placement: ["Gallery", "Visual Asset Manifest"],
@@ -749,7 +749,7 @@ const regeneratedGalleryImageGroups = {
       alt:
         "Generated standalone 1080p planning photo of a sandhill crane on final approach with feet down at a Bosque del Apache crane pond",
       caption:
-        "Generated standalone 1080p planning photo for crane final approach and landing technique; not an actual Bosque field photograph.",
+        "Generated standalone 1080p planning photo for crane final approach and landing technique; not a field photograph from Bosque.",
       rights:
         "AI-generated project planning photo from this guide's shot descriptions. Use as expectation-setting only.",
       placement: ["Gallery", "Visual Asset Manifest"],
@@ -765,7 +765,7 @@ const regeneratedGalleryImageGroups = {
       alt:
         "Generated standalone 1080p planning photo of paired sandhill cranes in warm side light at Bosque del Apache",
       caption:
-        "Generated standalone 1080p planning photo for paired crane behavior in evening light; not an actual Bosque field photograph.",
+        "Generated standalone 1080p planning photo for paired crane behavior in evening light; not a field photograph from Bosque.",
       rights:
         "AI-generated project planning photo from this guide's shot descriptions. Use as expectation-setting only.",
       placement: ["Gallery", "Visual Asset Manifest"],
@@ -781,7 +781,7 @@ const regeneratedGalleryImageGroups = {
       alt:
         "Generated standalone 1080p planning photo of a sandhill crane family group landing together at Bosque del Apache",
       caption:
-        "Generated standalone 1080p planning photo for crane family-group landing behavior; not an actual Bosque field photograph.",
+        "Generated standalone 1080p planning photo for crane family-group landing behavior; not a field photograph from Bosque.",
       rights:
         "AI-generated project planning photo from this guide's shot descriptions. Use as expectation-setting only.",
       placement: ["Gallery", "Visual Asset Manifest"],
@@ -797,7 +797,7 @@ const regeneratedGalleryImageGroups = {
       alt:
         "Generated standalone 1080p planning photo of a sandhill crane touching down with rippled reflection in Bosque del Apache sunset water",
       caption:
-        "Generated standalone 1080p planning photo for crane reflection landing work; not an actual Bosque field photograph.",
+        "Generated standalone 1080p planning photo for crane reflection landing work; not a field photograph from Bosque.",
       rights:
         "AI-generated project planning photo from this guide's shot descriptions. Use as expectation-setting only.",
       placement: ["Gallery", "Visual Asset Manifest"],
@@ -813,7 +813,7 @@ const regeneratedGalleryImageGroups = {
       alt:
         "Generated standalone 1080p planning photo of sandhill cranes returning at dusk over Bosque del Apache water and mountain bands",
       caption:
-        "Generated standalone 1080p planning photo for wide evening crane-return context; not an actual Bosque field photograph.",
+        "Generated standalone 1080p planning photo for wide evening crane-return context; not a field photograph from Bosque.",
       rights:
         "AI-generated project planning photo from this guide's shot descriptions. Use as expectation-setting only.",
       placement: ["Gallery", "Visual Asset Manifest"],
@@ -831,7 +831,7 @@ const regeneratedGalleryImageGroups = {
       alt:
         "Generated standalone 1080p planning photo of sandhill cranes feeding in winter crop rows at Bosque del Apache",
       caption:
-        "Generated standalone 1080p planning photo for farm-field crane feeding; not an actual Bosque field photograph.",
+        "Generated standalone 1080p planning photo for farm-field crane feeding; not a field photograph from Bosque.",
       rights:
         "AI-generated project planning photo from this guide's shot descriptions. Use as expectation-setting only.",
       placement: ["Gallery", "Visual Asset Manifest"],
@@ -847,7 +847,7 @@ const regeneratedGalleryImageGroups = {
       alt:
         "Generated standalone 1080p planning photo of mixed snow geese and sandhill cranes feeding in a Bosque del Apache field with mountains",
       caption:
-        "Generated standalone 1080p planning photo for mixed field flocks and mountain context; not an actual Bosque field photograph.",
+        "Generated standalone 1080p planning photo for mixed field flocks and mountain context; not a field photograph from Bosque.",
       rights:
         "AI-generated project planning photo from this guide's shot descriptions. Use as expectation-setting only.",
       placement: ["Gallery", "Visual Asset Manifest"],
@@ -863,7 +863,7 @@ const regeneratedGalleryImageGroups = {
       alt:
         "Generated standalone 1080p planning photo of a raptor crossing low over a Bosque del Apache farm-field edge",
       caption:
-        "Generated standalone 1080p planning photo for low raptor tracking over field edges; not an actual Bosque field photograph.",
+        "Generated standalone 1080p planning photo for low raptor tracking over field edges; not a field photograph from Bosque.",
       rights:
         "AI-generated project planning photo from this guide's shot descriptions. Use as expectation-setting only.",
       placement: ["Gallery", "Visual Asset Manifest"],
@@ -879,7 +879,7 @@ const regeneratedGalleryImageGroups = {
       alt:
         "Generated standalone 1080p planning photo of cranes and geese lifting from Bosque del Apache winter crop rows",
       caption:
-        "Generated standalone 1080p planning photo for farm-field lift-off action; not an actual Bosque field photograph.",
+        "Generated standalone 1080p planning photo for farm-field lift-off action; not a field photograph from Bosque.",
       rights:
         "AI-generated project planning photo from this guide's shot descriptions. Use as expectation-setting only.",
       placement: ["Gallery", "Visual Asset Manifest"],
@@ -895,7 +895,7 @@ const regeneratedGalleryImageGroups = {
       alt:
         "Generated standalone 1080p planning photo of a quiet vehicle-blind perspective from a legal Bosque del Apache pullout with distant feeding birds",
       caption:
-        "Generated standalone 1080p planning photo for legal vehicle-blind field work; not an actual Bosque field photograph.",
+        "Generated standalone 1080p planning photo for legal vehicle-blind field work; not a field photograph from Bosque.",
       rights:
         "AI-generated project planning photo from this guide's shot descriptions. Use as expectation-setting only.",
       placement: ["Gallery", "Visual Asset Manifest"],
@@ -913,7 +913,7 @@ const regeneratedGalleryImageGroups = {
       alt:
         "Generated standalone 1080p planning photo of ducks moving through reed reflections at Bosque del Apache",
       caption:
-        "Generated standalone 1080p planning photo for wetland duck and reed-reflection work; not an actual Bosque field photograph.",
+        "Generated standalone 1080p planning photo for wetland duck and reed-reflection work; not a field photograph from Bosque.",
       rights:
         "AI-generated project planning photo from this guide's shot descriptions. Use as expectation-setting only.",
       placement: ["Gallery", "Visual Asset Manifest"],
@@ -929,7 +929,7 @@ const regeneratedGalleryImageGroups = {
       alt:
         "Generated standalone 1080p planning photo of coots and ducks moving through textured Bosque del Apache wetland water",
       caption:
-        "Generated standalone 1080p planning photo for coots, ducks, and bright-water texture; not an actual Bosque field photograph.",
+        "Generated standalone 1080p planning photo for coots, ducks, and bright-water texture; not a field photograph from Bosque.",
       rights:
         "AI-generated project planning photo from this guide's shot descriptions. Use as expectation-setting only.",
       placement: ["Gallery", "Visual Asset Manifest"],
@@ -945,7 +945,7 @@ const regeneratedGalleryImageGroups = {
       alt:
         "Generated standalone 1080p planning photo of distant sandhill cranes compressed through foreground reeds in mid-morning Bosque del Apache light",
       caption:
-        "Generated standalone 1080p planning photo for long-lens compression through reeds; not an actual Bosque field photograph.",
+        "Generated standalone 1080p planning photo for long-lens compression through reeds; not a field photograph from Bosque.",
       rights:
         "AI-generated project planning photo from this guide's shot descriptions. Use as expectation-setting only.",
       placement: ["Gallery", "Visual Asset Manifest"],
@@ -961,7 +961,7 @@ const regeneratedGalleryImageGroups = {
       alt:
         "Generated standalone 1080p planning photo of backlit cattails and sparkling Bosque del Apache wetland water",
       caption:
-        "Generated standalone 1080p planning photo for backlit cattail and water-sparkle studies; not an actual Bosque field photograph.",
+        "Generated standalone 1080p planning photo for backlit cattail and water-sparkle studies; not a field photograph from Bosque.",
       rights:
         "AI-generated project planning photo from this guide's shot descriptions. Use as expectation-setting only.",
       placement: ["Gallery", "Visual Asset Manifest"],
@@ -977,7 +977,7 @@ const regeneratedGalleryImageGroups = {
       alt:
         "Generated standalone 1080p planning photo of layered Bosque del Apache wetland habitat with birds small in frame",
       caption:
-        "Generated standalone 1080p planning photo for quiet wetland habitat layers; not an actual Bosque field photograph.",
+        "Generated standalone 1080p planning photo for quiet wetland habitat layers; not a field photograph from Bosque.",
       rights:
         "AI-generated project planning photo from this guide's shot descriptions. Use as expectation-setting only.",
       placement: ["Gallery", "Visual Asset Manifest"],
@@ -995,7 +995,7 @@ const regeneratedGalleryImageGroups = {
       alt:
         "Generated standalone 1080p planning photo of a roadrunner standing on a Bosque del Apache gravel edge",
       caption:
-        "Generated standalone 1080p planning photo for desert-edge roadrunner work; not an actual Bosque field photograph.",
+        "Generated standalone 1080p planning photo for desert-edge roadrunner work; not a field photograph from Bosque.",
       rights:
         "AI-generated project planning photo from this guide's shot descriptions. Use as expectation-setting only.",
       placement: ["Gallery", "Visual Asset Manifest"],
@@ -1011,7 +1011,7 @@ const regeneratedGalleryImageGroups = {
       alt:
         "Generated standalone 1080p planning photo of a small quail group moving through Bosque del Apache winter brush",
       caption:
-        "Generated standalone 1080p planning photo for quail in winter brush; not an actual Bosque field photograph.",
+        "Generated standalone 1080p planning photo for quail in winter brush; not a field photograph from Bosque.",
       rights:
         "AI-generated project planning photo from this guide's shot descriptions. Use as expectation-setting only.",
       placement: ["Gallery", "Visual Asset Manifest"],
@@ -1027,7 +1027,7 @@ const regeneratedGalleryImageGroups = {
       alt:
         "Generated standalone 1080p planning photo of a sparrow perched on a dried seedhead at the Bosque del Apache refuge edge",
       caption:
-        "Generated standalone 1080p planning photo for small passerine edge work; not an actual Bosque field photograph.",
+        "Generated standalone 1080p planning photo for small passerine edge work; not a field photograph from Bosque.",
       rights:
         "AI-generated project planning photo from this guide's shot descriptions. Use as expectation-setting only.",
       placement: ["Gallery", "Visual Asset Manifest"],
@@ -1043,7 +1043,7 @@ const regeneratedGalleryImageGroups = {
       alt:
         "Generated standalone 1080p planning photo of bird and animal tracks in frosty Bosque del Apache dust",
       caption:
-        "Generated standalone 1080p planning photo for winter tracks and habitat-detail work; not an actual Bosque field photograph.",
+        "Generated standalone 1080p planning photo for winter tracks and habitat-detail work; not a field photograph from Bosque.",
       rights:
         "AI-generated project planning photo from this guide's shot descriptions. Use as expectation-setting only.",
       placement: ["Gallery", "Visual Asset Manifest"],
@@ -1059,7 +1059,7 @@ const regeneratedGalleryImageGroups = {
       alt:
         "Generated standalone 1080p planning photo of quiet Bosque del Apache trail habitat with winter cottonwoods and dry grasses",
       caption:
-        "Generated standalone 1080p planning photo for Rio Viejo-style trail habitat context; not an actual Bosque field photograph.",
+        "Generated standalone 1080p planning photo for Rio Viejo-style trail habitat context; not a field photograph from Bosque.",
       rights:
         "AI-generated project planning photo from this guide's shot descriptions. Use as expectation-setting only.",
       placement: ["Gallery", "Visual Asset Manifest"],
@@ -1077,7 +1077,7 @@ const regeneratedGalleryImageGroups = {
       alt:
         "Generated standalone 1080p planning photo of sandhill cranes in light mist over Bosque del Apache shallow water",
       caption:
-        "Generated standalone 1080p planning photo for misty crane weather fallback work; not an actual Bosque field photograph.",
+        "Generated standalone 1080p planning photo for misty crane weather fallback work; not a field photograph from Bosque.",
       rights:
         "AI-generated project planning photo from this guide's shot descriptions. Use as expectation-setting only.",
       placement: ["Gallery", "Visual Asset Manifest"],
@@ -1093,7 +1093,7 @@ const regeneratedGalleryImageGroups = {
       alt:
         "Generated standalone 1080p planning photo of snow geese flying low over gray Bosque del Apache water in high-key light",
       caption:
-        "Generated standalone 1080p planning photo for high-key white-bird exposure; not an actual Bosque field photograph.",
+        "Generated standalone 1080p planning photo for high-key white-bird exposure; not a field photograph from Bosque.",
       rights:
         "AI-generated project planning photo from this guide's shot descriptions. Use as expectation-setting only.",
       placement: ["Gallery", "Visual Asset Manifest"],
@@ -1109,7 +1109,7 @@ const regeneratedGalleryImageGroups = {
       alt:
         "Generated standalone 1080p planning photo of a Bosque del Apache bird rendered with intentional panning blur against streaked wetland reeds",
       caption:
-        "Generated standalone 1080p planning photo for intentional panning blur; not an actual Bosque field photograph.",
+        "Generated standalone 1080p planning photo for intentional panning blur; not a field photograph from Bosque.",
       rights:
         "AI-generated project planning photo from this guide's shot descriptions. Use as expectation-setting only.",
       placement: ["Gallery", "Visual Asset Manifest"],
@@ -1125,7 +1125,7 @@ const regeneratedGalleryImageGroups = {
       alt:
         "Generated standalone 1080p planning photo of snow-dusted Bosque del Apache reeds with distant cranes or geese",
       caption:
-        "Generated standalone 1080p planning photo for snow-dusted reed and weather texture work; not an actual Bosque field photograph.",
+        "Generated standalone 1080p planning photo for snow-dusted reed and weather texture work; not a field photograph from Bosque.",
       rights:
         "AI-generated project planning photo from this guide's shot descriptions. Use as expectation-setting only.",
       placement: ["Gallery", "Visual Asset Manifest"],
@@ -1141,7 +1141,7 @@ const regeneratedGalleryImageGroups = {
       alt:
         "Generated standalone 1080p planning photo of a dark Bosque del Apache flock silhouetted against a pale winter sky",
       caption:
-        "Generated standalone 1080p planning photo for pale-sky flock silhouettes; not an actual Bosque field photograph.",
+        "Generated standalone 1080p planning photo for pale-sky flock silhouettes; not a field photograph from Bosque.",
       rights:
         "AI-generated project planning photo from this guide's shot descriptions. Use as expectation-setting only.",
       placement: ["Gallery", "Visual Asset Manifest"],
@@ -1159,7 +1159,7 @@ const regeneratedGalleryImageGroups = {
       alt:
         "Generated standalone 1080p planning photo of a circular polarizer glare test over reflective wetland water",
       caption:
-        "Generated standalone 1080p planning photo for CPL glare testing; not an actual Bosque field photograph.",
+        "Generated standalone 1080p planning photo for CPL glare testing; not a field photograph from Bosque.",
       rights:
         "AI-generated project planning photo from this guide's shot descriptions. Use as expectation-setting only.",
       placement: ["Gallery", "Visual Asset Manifest"],
@@ -1175,7 +1175,7 @@ const regeneratedGalleryImageGroups = {
       alt:
         "Generated standalone 1080p planning photo of a fast bird in flight used to show no-filter shutter-speed practice",
       caption:
-        "Generated standalone 1080p planning photo for no-filter bird-flight practice; not an actual Bosque field photograph.",
+        "Generated standalone 1080p planning photo for no-filter bird-flight practice; not a field photograph from Bosque.",
       rights:
         "AI-generated project planning photo from this guide's shot descriptions. Use as expectation-setting only.",
       placement: ["Gallery", "Visual Asset Manifest"],
@@ -1191,7 +1191,7 @@ const regeneratedGalleryImageGroups = {
       alt:
         "Generated standalone 1080p planning photo of neutral-density shutter-drag practice with intentional waterbird motion blur",
       caption:
-        "Generated standalone 1080p planning photo for ND shutter-drag experiments; not an actual Bosque field photograph.",
+        "Generated standalone 1080p planning photo for ND shutter-drag experiments; not a field photograph from Bosque.",
       rights:
         "AI-generated project planning photo from this guide's shot descriptions. Use as expectation-setting only.",
       placement: ["Gallery", "Visual Asset Manifest"],
@@ -1207,7 +1207,7 @@ const regeneratedGalleryImageGroups = {
       alt:
         "Generated standalone 1080p planning photo of a protective filter and cleaning kit staged before a Bosque del Apache field day",
       caption:
-        "Generated standalone 1080p planning photo for protective filter and cleaning-kit readiness; not an actual Bosque field photograph.",
+        "Generated standalone 1080p planning photo for protective filter and cleaning-kit readiness; not a field photograph from Bosque.",
       rights:
         "AI-generated project planning photo from this guide's shot descriptions. Use as expectation-setting only.",
       placement: ["Gallery", "Visual Asset Manifest"],
@@ -1223,7 +1223,7 @@ const regeneratedGalleryImageGroups = {
       alt:
         "Generated standalone 1080p planning photo of gloved hands handling a step-up ring before a cold Bosque del Apache field session",
       caption:
-        "Generated standalone 1080p planning photo for cold-weather step-up ring handling; not an actual Bosque field photograph.",
+        "Generated standalone 1080p planning photo for cold-weather step-up ring handling; not a field photograph from Bosque.",
       rights:
         "AI-generated project planning photo from this guide's shot descriptions. Use as expectation-setting only.",
       placement: ["Gallery", "Visual Asset Manifest"],
@@ -1241,10 +1241,10 @@ const regeneratedGalleryImageGroups = {
       alt:
         "Generated standalone 1080p planning photo of camera batteries and memory cards organized for a Bosque del Apache hotel-room reset",
       caption:
-        "Generated standalone 1080p planning photo for evening hotel-room charging and card management; not an actual Bosque field photograph.",
+        "Generated standalone 1080p planning photo for evening hotel-room charging and card management; not a field photograph from Bosque.",
       rights:
         "AI-generated project planning photo from this guide's shot descriptions. Use as expectation-setting only.",
-      placement: ["Gallery", "Visual Asset Manifest"],
+      placement: ["Travel", "Visual Asset Manifest"],
       description:
         "Purpose-built regenerated 1080p planning photo for battery charging, memory-card organization, notebook checks, and evening reset discipline.",
     },
@@ -1257,10 +1257,10 @@ const regeneratedGalleryImageGroups = {
       alt:
         "Generated standalone 1080p planning photo of two camera bodies staged with different lens roles before a Bosque del Apache predawn departure",
       caption:
-        "Generated standalone 1080p planning photo for two-camera predawn staging; not an actual Bosque field photograph.",
+        "Generated standalone 1080p planning photo for two-camera predawn staging; not a field photograph from Bosque.",
       rights:
         "AI-generated project planning photo from this guide's shot descriptions. Use as expectation-setting only.",
-      placement: ["Gallery", "Visual Asset Manifest"],
+      placement: ["Travel visual archive", "Visual Asset Manifest"],
       description:
         "Purpose-built regenerated 1080p planning photo for two camera roles, long-lens readiness, mid-range context, and quick predawn departure.",
     },
@@ -1276,7 +1276,7 @@ const regeneratedGalleryImageGroups = {
         "Generated standalone 1080p planning photo for rental SUV cargo organization; not an actual vehicle or rental-company recommendation.",
       rights:
         "AI-generated project planning photo from this guide's shot descriptions. Use as expectation-setting only.",
-      placement: ["Gallery", "Visual Asset Manifest"],
+      placement: ["Travel visual archive", "Visual Asset Manifest"],
       description:
         "Purpose-built regenerated 1080p planning photo for safe cargo setup, long lens protection, layers, water, route notes, and predawn logistics.",
     },
@@ -1292,7 +1292,7 @@ const regeneratedGalleryImageGroups = {
         "Generated standalone 1080p planning photo for predawn route and first-target checks; not a navigational map.",
       rights:
         "AI-generated project planning photo from this guide's shot descriptions. Use as expectation-setting only.",
-      placement: ["Gallery", "Visual Asset Manifest"],
+      placement: ["Travel visual archive", "Visual Asset Manifest"],
       description:
         "Purpose-built regenerated 1080p planning photo for non-readable route review, first shooting target, headlamp, keys, water, and field bag.",
     },
@@ -1305,10 +1305,10 @@ const regeneratedGalleryImageGroups = {
       alt:
         "Generated standalone 1080p planning photo of an evening backup drive and field notebook workflow after a Bosque del Apache field day",
       caption:
-        "Generated standalone 1080p planning photo for evening backup and field-note discipline; not an actual hotel or field photograph.",
+        "Generated standalone 1080p planning photo for evening backup and field-note discipline; not a hotel or field photograph.",
       rights:
         "AI-generated project planning photo from this guide's shot descriptions. Use as expectation-setting only.",
-      placement: ["Gallery", "Visual Asset Manifest"],
+      placement: ["Travel visual archive", "Visual Asset Manifest"],
       description:
         "Purpose-built regenerated 1080p planning photo for card backup, portable drive workflow, field notebook, batteries, and repacking discipline.",
     },
@@ -1326,12 +1326,12 @@ const itineraryGeneratedVisuals = [
     alt:
       "Generated 1080p itinerary planning image of a Socorro hotel-room route check and camera staging desk before Bosque del Apache",
     caption:
-      "Purpose-built generated Itinerary image for arrival logistics, route checks, camera setup, and predawn readiness; not an actual Bosque field photograph.",
+      "Planning image for arrival logistics, route checks, camera setup, and predawn readiness; not a field photograph from Bosque.",
     rights:
       "AI-generated project planning image from this guide's itinerary notes. Use as expectation-setting only.",
     placement: ["Itinerary", "Visual Asset Manifest"],
     description:
-      "Purpose-built generated Itinerary image for Sunday arrival, hotel-room charging, card staging, route notes, layers, and two-camera dawn readiness.",
+      "Planning image for Sunday arrival, hotel-room charging, card staging, route notes, layers, and two-camera dawn readiness.",
     lesson: {
       supposedLocation:
         "Socorro hotel room or staging table before the first Bosque del Apache scout.",
@@ -1351,12 +1351,12 @@ const itineraryGeneratedVisuals = [
     alt:
       "Generated 1080p itinerary planning image of sandhill cranes at a Bosque del Apache crane pond sunset scout",
     caption:
-      "Purpose-built generated Itinerary image for the first sunset crane-pond scout; not an actual Bosque field photograph.",
+      "Planning image for the first sunset crane-pond scout; not a field photograph from Bosque.",
     rights:
       "AI-generated project planning image from this guide's itinerary notes. Use as expectation-setting only.",
     placement: ["Itinerary", "Visual Asset Manifest"],
     description:
-      "Purpose-built generated Itinerary image for checking crane roost activity, wind, parking angle, reflections, and safe crowd position on the first sunset.",
+      "Planning image for checking crane roost activity, wind, parking angle, reflections, and safe crowd position on the first sunset.",
     lesson: {
       supposedLocation:
         "North or South Crane Pond, using the first evening as a scout rather than a pressure shoot.",
@@ -1376,12 +1376,12 @@ const itineraryGeneratedVisuals = [
     alt:
       "Generated 1080p itinerary planning image of sandhill cranes at a Highway 1 crane pool sunrise with mist and reflections",
     caption:
-      "Purpose-built generated Itinerary image for a Highway 1 crane-pool sunrise; not an actual Bosque field photograph.",
+      "Planning image for a Highway 1 crane-pool sunrise; not a field photograph from Bosque.",
     rights:
       "AI-generated project planning image from this guide's itinerary notes. Use as expectation-setting only.",
     placement: ["Itinerary", "Visual Asset Manifest"],
     description:
-      "Purpose-built generated Itinerary image for sunrise silhouettes, cold breath, takeoff cues, low reflections, and roost context.",
+      "Planning image for sunrise silhouettes, cold breath, takeoff cues, low reflections, and roost context.",
     lesson: {
       supposedLocation:
         "Highway 1 crane pools or the current legal pullout with the strongest active morning roost.",
@@ -1401,12 +1401,12 @@ const itineraryGeneratedVisuals = [
     alt:
       "Generated 1080p itinerary planning image of a Bosque del Apache wetland deck with reeds ducks and distant cranes",
     caption:
-      "Purpose-built generated Itinerary image for visitor-center and deck-based wetland tests; not an actual Bosque field photograph.",
+      "Planning image for visitor-center and deck-based wetland tests; not a field photograph from Bosque.",
     rights:
       "AI-generated project planning image from this guide's itinerary notes. Use as expectation-setting only.",
     placement: ["Itinerary", "Visual Asset Manifest"],
     description:
-      "Purpose-built generated Itinerary image for translating visitor-center intel into Dabbler Deck, Eagle Scout Deck, and bright-water exposure tests.",
+      "Planning image for translating visitor-center intel into Dabbler Deck, Eagle Scout Deck, and bright-water exposure tests.",
     lesson: {
       supposedLocation:
         "Visitor Center, Dabbler Deck, Eagle Scout Deck, or the public wetland deck with the best current bird activity.",
@@ -1426,12 +1426,12 @@ const itineraryGeneratedVisuals = [
     alt:
       "Generated 1080p itinerary planning image of sandhill cranes landing in warm sunset light at an active Bosque del Apache crane pool",
     caption:
-      "Purpose-built generated Itinerary image for active crane-pool sunset landings; not an actual Bosque field photograph.",
+      "Planning image for active crane-pool sunset landings; not a field photograph from Bosque.",
     rights:
       "AI-generated project planning image from this guide's itinerary notes. Use as expectation-setting only.",
     placement: ["Itinerary", "Visual Asset Manifest"],
     description:
-      "Purpose-built generated Itinerary image for crane landing posture, warm side light, paired birds, family groups, and reflection frames.",
+      "Planning image for crane landing posture, warm side light, paired birds, family groups, and reflection frames.",
     lesson: {
       supposedLocation:
         "Best active crane pool after the first scout, favoring a legal pullout with wind-aligned landing lanes.",
@@ -1451,12 +1451,12 @@ const itineraryGeneratedVisuals = [
     alt:
       "Generated 1080p itinerary planning image of snow geese lifting from water at Bosque del Apache Flight Deck at dawn",
     caption:
-      "Purpose-built generated Itinerary image for a Flight Deck snow-goose blastoff; not an actual Bosque field photograph.",
+      "Planning image for a Flight Deck snow-goose blastoff; not a field photograph from Bosque.",
     rights:
       "AI-generated project planning image from this guide's itinerary notes. Use as expectation-setting only.",
     placement: ["Itinerary", "Visual Asset Manifest"],
     description:
-      "Purpose-built generated Itinerary image for still roost, first flock wave, mass blastoff, overhead texture, and separated dawn groups.",
+      "Planning image for still roost, first flock wave, mass blastoff, overhead texture, and separated dawn groups.",
     lesson: {
       supposedLocation:
         "Flight Deck, Main Pool, or the current goose roost confirmed by the previous evening and morning scout.",
@@ -1476,12 +1476,12 @@ const itineraryGeneratedVisuals = [
     alt:
       "Generated 1080p itinerary planning image of cranes and geese feeding in Bosque del Apache North Loop winter crop rows",
     caption:
-      "Purpose-built generated Itinerary image for North Loop field feeding from a vehicle-blind position; not an actual Bosque field photograph.",
+      "Planning image for North Loop field feeding from a vehicle-blind position; not a field photograph from Bosque.",
     rights:
       "AI-generated project planning image from this guide's itinerary notes. Use as expectation-setting only.",
     placement: ["Itinerary", "Visual Asset Manifest"],
     description:
-      "Purpose-built generated Itinerary image for feeding cranes, mixed geese, field-edge raptors, crop-row lift, and legal vehicle-blind work.",
+      "Planning image for feeding cranes, mixed geese, field-edge raptors, crop-row lift, and legal vehicle-blind work.",
     lesson: {
       supposedLocation:
         "North Loop fields, Farm Deck area, or another legal pullout with active winter crop-row feeding.",
@@ -1501,12 +1501,12 @@ const itineraryGeneratedVisuals = [
     alt:
       "Generated 1080p itinerary planning image of cranes approaching a South Crane Pond landing lane at Bosque del Apache sunset",
     caption:
-      "Purpose-built generated Itinerary image for South Crane Pond pullout landings; not an actual Bosque field photograph.",
+      "Planning image for South Crane Pond pullout landings; not a field photograph from Bosque.",
     rights:
       "AI-generated project planning image from this guide's itinerary notes. Use as expectation-setting only.",
     placement: ["Itinerary", "Visual Asset Manifest"],
     description:
-      "Purpose-built generated Itinerary image for landing posture, wing shape, paired crane approach, reflection landings, and wide roost scale.",
+      "Planning image for landing posture, wing shape, paired crane approach, reflection landings, and wide roost scale.",
     lesson: {
       supposedLocation:
         "South Crane Pond pullouts or the current active legal sunset approach lane.",
@@ -1526,12 +1526,12 @@ const itineraryGeneratedVisuals = [
     alt:
       "Generated 1080p itinerary planning image of sandhill crane behavior cues before takeoff at a Bosque del Apache sunrise pool",
     caption:
-      "Purpose-built generated Itinerary image for a learned crane-pool repeat morning; not an actual Bosque field photograph.",
+      "Planning image for a learned crane-pool repeat morning; not a field photograph from Bosque.",
     rights:
       "AI-generated project planning image from this guide's itinerary notes. Use as expectation-setting only.",
     placement: ["Itinerary", "Visual Asset Manifest"],
     description:
-      "Purpose-built generated Itinerary image for behavior-cue sequences, head and neck focus, controlled bursts, cold air, and learned flight lanes.",
+      "Planning image for behavior-cue sequences, head and neck focus, controlled bursts, cold air, and learned flight lanes.",
     lesson: {
       supposedLocation:
         "Best crane-pool repeat after two mornings of field notes, using the learned takeoff lane and legal position.",
@@ -1551,12 +1551,12 @@ const itineraryGeneratedVisuals = [
     alt:
       "Generated 1080p itinerary planning image of compressed wetland layers through reeds at Bosque del Apache Willow and Coyote deck viewpoints",
     caption:
-      "Purpose-built generated Itinerary image for Willow and Coyote deck wetland compression; not an actual Bosque field photograph.",
+      "Planning image for Willow and Coyote deck wetland compression; not a field photograph from Bosque.",
     rights:
       "AI-generated project planning image from this guide's itinerary notes. Use as expectation-setting only.",
     placement: ["Itinerary", "Visual Asset Manifest"],
     description:
-      "Purpose-built generated Itinerary image for duck portraits, reed layers, distant cranes, passing birds, and minimal-footprint deck composition.",
+      "Planning image for duck portraits, reed layers, distant cranes, passing birds, and minimal-footprint deck composition.",
     lesson: {
       supposedLocation:
         "Willow Deck, Coyote Deck, or a similar public wetland viewpoint with layered reeds and open water.",
@@ -1576,12 +1576,12 @@ const itineraryGeneratedVisuals = [
     alt:
       "Generated 1080p itinerary planning image of intentional panning blur with cranes or geese over Bosque del Apache water at sunset",
     caption:
-      "Purpose-built generated Itinerary image for a sunset motion fallback; not an actual Bosque field photograph.",
+      "Planning image for a sunset motion fallback; not a field photograph from Bosque.",
     rights:
       "AI-generated project planning image from this guide's itinerary notes. Use as expectation-setting only.",
     placement: ["Itinerary", "Visual Asset Manifest"],
     description:
-      "Purpose-built generated Itinerary image for safe sharp frames, slow flock movement, 1/250 panning, 1/125 or 1/60 abstract wing blur, and flat-light fallback.",
+      "Planning image for safe sharp frames, slow flock movement, 1/250 panning, 1/125 or 1/60 abstract wing blur, and flat-light fallback.",
     lesson: {
       supposedLocation:
         "Flight Deck if active, otherwise the crane pools or another legal pullout when sunset light goes flat.",
@@ -1601,12 +1601,12 @@ const itineraryGeneratedVisuals = [
     alt:
       "Generated 1080p itinerary planning image of mist and reeds in a Bosque del Apache South Loop wetland before sunrise",
     caption:
-      "Purpose-built generated Itinerary image for a South Loop mist and reeds morning; not an actual Bosque field photograph.",
+      "Planning image for a South Loop mist and reeds morning; not a field photograph from Bosque.",
     rights:
       "AI-generated project planning image from this guide's itinerary notes. Use as expectation-setting only.",
     placement: ["Itinerary", "Visual Asset Manifest"],
     description:
-      "Purpose-built generated Itinerary image for muted wetland weather, ducks or geese in habitat, raptor crossings, and slow layered compositions.",
+      "Planning image for muted wetland weather, ducks or geese in habitat, raptor crossings, and slow layered compositions.",
     lesson: {
       supposedLocation:
         "South Loop wetland stretch or another legal pullout where mist, reeds, and gray water are strongest before full sun.",
@@ -1626,12 +1626,12 @@ const itineraryGeneratedVisuals = [
     alt:
       "Generated 1080p itinerary planning image of a roadrunner in Rio Viejo desert-edge habitat at Bosque del Apache",
     caption:
-      "Purpose-built generated Itinerary image for Rio Viejo and Bike Trail desert-edge details; not an actual Bosque field photograph.",
+      "Planning image for Rio Viejo and Bike Trail desert-edge details; not a field photograph from Bosque.",
     rights:
       "AI-generated project planning image from this guide's itinerary notes. Use as expectation-setting only.",
     placement: ["Itinerary", "Visual Asset Manifest"],
     description:
-      "Purpose-built generated Itinerary image for roadrunner or quail, sparrows and seedheads, tracks, frost, dust, cattails, and cottonwood texture.",
+      "Planning image for roadrunner or quail, sparrows and seedheads, tracks, frost, dust, cattails, and cottonwood texture.",
     lesson: {
       supposedLocation:
         "Rio Viejo Trail, Bike Trail area, visitor-center edge, or another quiet dry-margin habitat.",
@@ -1651,12 +1651,12 @@ const itineraryGeneratedVisuals = [
     alt:
       "Generated 1080p itinerary planning image of cranes staging in Bosque del Apache North Loop fields at warm sunset",
     caption:
-      "Purpose-built generated Itinerary image for North Loop field staging at sunset; not an actual Bosque field photograph.",
+      "Planning image for North Loop field staging at sunset; not a field photograph from Bosque.",
     rights:
       "AI-generated project planning image from this guide's itinerary notes. Use as expectation-setting only.",
     placement: ["Itinerary", "Visual Asset Manifest"],
     description:
-      "Purpose-built generated Itinerary image for warm side-light field staging, feeding cranes, birds crossing crop rows, distant raptor or flock movement, and return-to-roost decisions.",
+      "Planning image for warm side-light field staging, feeding cranes, birds crossing crop rows, distant raptor or flock movement, and return-to-roost decisions.",
     lesson: {
       supposedLocation:
         "North Loop fields near Farm Deck or the current legal field edge with birds staging before roost return.",
@@ -1676,12 +1676,12 @@ const itineraryGeneratedVisuals = [
     alt:
       "Generated 1080p itinerary planning image of a final learned sandhill crane roost sunrise composition at Bosque del Apache",
     caption:
-      "Purpose-built generated Itinerary image for the final learned roost sunrise; not an actual Bosque field photograph.",
+      "Planning image for the final learned roost sunrise; not a field photograph from Bosque.",
     rights:
       "AI-generated project planning image from this guide's itinerary notes. Use as expectation-setting only.",
     placement: ["Itinerary", "Visual Asset Manifest"],
     description:
-      "Purpose-built generated Itinerary image for final learned composition, wind-aligned takeoff, clean background action, and wide roost context.",
+      "Planning image for final learned composition, wind-aligned takeoff, clean background action, and wide roost context.",
     lesson: {
       supposedLocation:
         "Best current roost repeat, chosen from the week's actual bird movement and legal shooting position.",
@@ -1701,12 +1701,12 @@ const itineraryGeneratedVisuals = [
     alt:
       "Generated 1080p itinerary planning image of a roadrunner-style final subject gap-fill opportunity near Bosque del Apache central road habitat",
     caption:
-      "Purpose-built generated Itinerary image for central-road or deck-based final subject gap fill; not an actual Bosque field photograph.",
+      "Planning image for central-road or deck-based final subject gap fill; not a field photograph from Bosque.",
     rights:
       "AI-generated project planning image from this guide's itinerary notes. Use as expectation-setting only.",
     placement: ["Itinerary", "Visual Asset Manifest"],
     description:
-      "Purpose-built generated Itinerary image for missing-subject fill, quiet portrait work, environmental frames, roadside habitat details, and final checklist gaps.",
+      "Planning image for missing-subject fill, quiet portrait work, environmental frames, roadside habitat details, and final checklist gaps.",
     lesson: {
       supposedLocation:
         "Visitor Center area, central road, strongest public deck, or roadside habitat where the remaining shot-list gap is plausible.",
@@ -1726,12 +1726,12 @@ const itineraryGeneratedVisuals = [
     alt:
       "Generated 1080p itinerary planning image of a final Highway 1 crane-pool sunset with cranes reflections and mountain bands",
     caption:
-      "Purpose-built generated Itinerary image for the Highway 1 crane-pool finale; not an actual Bosque field photograph.",
+      "Planning image for the Highway 1 crane-pool finale; not a field photograph from Bosque.",
     rights:
       "AI-generated project planning image from this guide's itinerary notes. Use as expectation-setting only.",
     placement: ["Itinerary", "Visual Asset Manifest"],
     description:
-      "Purpose-built generated Itinerary image for reflection landing finale, mountain-band silhouette, wide sky punctuation, late legal-light returns, and closing story frame.",
+      "Planning image for reflection landing finale, mountain-band silhouette, wide sky punctuation, late legal-light returns, and closing story frame.",
     lesson: {
       supposedLocation:
         "Highway 1 crane-pool finale or the current strongest legal last-light crane return.",
@@ -1751,12 +1751,12 @@ const itineraryGeneratedVisuals = [
     alt:
       "Generated 1080p itinerary planning image of camera card backup lens cleaning and packed vehicle workflow after a Bosque del Apache trip",
     caption:
-      "Purpose-built generated Itinerary image for Saturday departure backup, lens cleaning, field notes, and packed-cargo checks; not an actual hotel or field photograph.",
+      "Planning image for Saturday departure backup, lens cleaning, field notes, and packed-cargo checks; not a hotel or field photograph.",
     rights:
       "AI-generated project planning image from this guide's itinerary notes. Use as expectation-setting only.",
     placement: ["Itinerary", "Visual Asset Manifest"],
     description:
-      "Purpose-built generated Itinerary image for card backup verification, lens dust check, field notes, packed vehicle organization, and departure discipline.",
+      "Planning image for card backup verification, lens dust check, field notes, packed vehicle organization, and departure discipline.",
     lesson: {
       supposedLocation:
         "Socorro hotel room and vehicle staging area before departing, with any optional short loop treated as secondary to travel margin.",
@@ -1779,12 +1779,12 @@ const photoWindowGeneratedVisuals = [
     alt:
       "Generated 1080p Photo Windows image of sandhill crane roost silhouettes and first movement at Bosque del Apache sunrise",
     caption:
-      "Purpose-built generated Photo Windows image for sunrise roost silhouettes, first movement, and behavior cues; not an actual Bosque field photograph.",
+      "Planning image for sunrise roost silhouettes, first movement, and behavior cues; not a field photograph from Bosque.",
     rights:
       "AI-generated project planning image from this guide's photo-window notes. Use as expectation-setting only.",
     placement: ["Photo Windows", "Visual Asset Manifest"],
     description:
-      "Purpose-built generated Photo Windows image for blue-hour crane roosts, cold mist, silhouettes, reflections, first movement, and the choice between quiet composition and action.",
+      "Planning image for blue-hour crane roosts, cold mist, silhouettes, reflections, first movement, and the choice between quiet composition and action.",
     lesson: {
       supposedLocation:
         "Active crane roost pool, Highway 1 crane pools, or another legal pullout chosen before first light.",
@@ -1804,12 +1804,12 @@ const photoWindowGeneratedVisuals = [
     alt:
       "Generated 1080p Photo Windows image of a wide snow-goose blastoff at Bosque del Apache sunrise",
     caption:
-      "Purpose-built generated Photo Windows image for sunrise snow-goose blastoff exposure control; not an actual Bosque field photograph.",
+      "Planning image for sunrise snow-goose blastoff exposure control; not a field photograph from Bosque.",
     rights:
       "AI-generated project planning image from this guide's photo-window notes. Use as expectation-setting only.",
     placement: ["Photo Windows", "Visual Asset Manifest"],
     description:
-      "Purpose-built generated Photo Windows image for wide pre-composition, white-feather highlight protection, first flock waves, and separated dawn goose groups.",
+      "Planning image for wide pre-composition, white-feather highlight protection, first flock waves, and separated dawn goose groups.",
     lesson: {
       supposedLocation:
         "Flight Deck, Main Pool, or the current snow-goose roost after confirming bird position from the latest scout.",
@@ -1829,12 +1829,12 @@ const photoWindowGeneratedVisuals = [
     alt:
       "Generated 1080p Photo Windows image of cranes and geese feeding in Bosque del Apache crop rows from a vehicle-blind viewpoint",
     caption:
-      "Purpose-built generated Photo Windows image for mid-morning field behavior and vehicle-blind work; not an actual Bosque field photograph.",
+      "Planning image for mid-morning field behavior and vehicle-blind work; not a field photograph from Bosque.",
     rights:
       "AI-generated project planning image from this guide's photo-window notes. Use as expectation-setting only.",
     placement: ["Photo Windows", "Visual Asset Manifest"],
     description:
-      "Purpose-built generated Photo Windows image for feeding behavior, crop-row geometry, field-edge raptors, and slower vehicle-blind decisions after peak sunrise.",
+      "Planning image for feeding behavior, crop-row geometry, field-edge raptors, and slower vehicle-blind decisions after peak sunrise.",
     lesson: {
       supposedLocation:
         "North Loop fields, Farm Deck area, or another legal pullout with active feeding birds.",
@@ -1854,12 +1854,12 @@ const photoWindowGeneratedVisuals = [
     alt:
       "Generated 1080p Photo Windows image of reeds ducks bright water and wetland deck glare at Bosque del Apache mid-morning",
     caption:
-      "Purpose-built generated Photo Windows image for mid-morning wetland glare, reeds, and deck composition; not an actual Bosque field photograph.",
+      "Planning image for mid-morning wetland glare, reeds, and deck composition; not a field photograph from Bosque.",
     rights:
       "AI-generated project planning image from this guide's photo-window notes. Use as expectation-setting only.",
     placement: ["Photo Windows", "Visual Asset Manifest"],
     description:
-      "Purpose-built generated Photo Windows image for bright water, reed layers, duck reflections, distant cranes, clean head angles, and circular-polarizer tradeoffs.",
+      "Planning image for bright water, reed layers, duck reflections, distant cranes, clean head angles, and circular-polarizer tradeoffs.",
     lesson: {
       supposedLocation:
         "Dabbler Deck, Eagle Scout Deck, Willow Deck, Coyote Deck, or another public wetland viewpoint.",
@@ -1879,12 +1879,12 @@ const photoWindowGeneratedVisuals = [
     alt:
       "Generated 1080p Photo Windows image of sandhill cranes landing into a warm Bosque del Apache sunset lane with reflections",
     caption:
-      "Purpose-built generated Photo Windows image for sunset crane landing lanes; not an actual Bosque field photograph.",
+      "Planning image for sunset crane landing lanes; not a field photograph from Bosque.",
     rights:
       "AI-generated project planning image from this guide's photo-window notes. Use as expectation-setting only.",
     placement: ["Photo Windows", "Visual Asset Manifest"],
     description:
-      "Purpose-built generated Photo Windows image for wind-aligned landings, warm side light, head-and-shoulder focus, touchdown panning, and reflection space.",
+      "Planning image for wind-aligned landings, warm side light, head-and-shoulder focus, touchdown panning, and reflection space.",
     lesson: {
       supposedLocation:
         "Active crane pool, South Crane Pond, Highway 1 crane ponds, or the current legal return lane after late-day scouting.",
@@ -1904,12 +1904,12 @@ const photoWindowGeneratedVisuals = [
     alt:
       "Generated 1080p Photo Windows image of a wide Bosque del Apache sunset roost silhouette with cranes water and mountains",
     caption:
-      "Purpose-built generated Photo Windows image for wide sunset roost silhouettes; not an actual Bosque field photograph.",
+      "Planning image for wide sunset roost silhouettes; not a field photograph from Bosque.",
     rights:
       "AI-generated project planning image from this guide's photo-window notes. Use as expectation-setting only.",
     placement: ["Photo Windows", "Visual Asset Manifest"],
     description:
-      "Purpose-built generated Photo Windows image for wide sunset story frames, negative sky and water space, mountain bands, crane silhouettes, and closing-scene restraint.",
+      "Planning image for wide sunset story frames, negative sky and water space, mountain bands, crane silhouettes, and closing-scene restraint.",
     lesson: {
       supposedLocation:
         "Broad crane pond, roost edge, or legal pullout where the place itself is stronger than a tight action frame.",
@@ -1929,12 +1929,12 @@ const photoWindowGeneratedVisuals = [
     alt:
       "Generated 1080p Photo Windows image of mist high-key water reeds and birds in a gray Bosque del Apache weather fallback scene",
     caption:
-      "Purpose-built generated Photo Windows image for misty high-key weather fallback work; not an actual Bosque field photograph.",
+      "Planning image for misty high-key weather fallback work; not a field photograph from Bosque.",
     rights:
       "AI-generated project planning image from this guide's photo-window notes. Use as expectation-setting only.",
     placement: ["Photo Windows", "Visual Asset Manifest"],
     description:
-      "Purpose-built generated Photo Windows image for flat light, mist, high-key water, reeds, subtle silhouettes, and weather-driven composition.",
+      "Planning image for flat light, mist, high-key water, reeds, subtle silhouettes, and weather-driven composition.",
     lesson: {
       supposedLocation:
         "Any legal wetland pullout, deck, or roost edge where fog, mist, overcast, or pale water changes the original plan.",
@@ -1954,12 +1954,12 @@ const photoWindowGeneratedVisuals = [
     alt:
       "Generated 1080p Photo Windows image of intentional panning blur with cranes over Bosque del Apache water in flat light",
     caption:
-      "Purpose-built generated Photo Windows image for slow-shutter weather fallback panning; not an actual Bosque field photograph.",
+      "Planning image for slow-shutter weather fallback panning; not a field photograph from Bosque.",
     rights:
       "AI-generated project planning image from this guide's photo-window notes. Use as expectation-setting only.",
     placement: ["Photo Windows", "Visual Asset Manifest"],
     description:
-      "Purpose-built generated Photo Windows image for deliberate panning blur, slower shutter experiments, partially sharp head or body cues, and background streak quality.",
+      "Planning image for deliberate panning blur, slower shutter experiments, partially sharp head or body cues, and background streak quality.",
     lesson: {
       supposedLocation:
         "Crane pool, Flight Deck, or wetland edge after safe sharp frames are already captured and light turns flat.",
@@ -2460,7 +2460,7 @@ const inspirationGeneratedVisuals = [
   src: `./assets/generated/inspiration-hd/${item.file}`,
   category: "Inspiration",
   alt: `Generated 1080p Bosque del Apache inspiration image of ${item.title.toLowerCase()}`,
-  caption: `Purpose-built generated Inspiration image for ${item.sceneType.toLowerCase()}; not an actual Bosque field photograph.`,
+  caption: `Planning image for ${item.sceneType.toLowerCase()}; not a field photograph from Bosque.`,
   rights:
     "AI-generated project inspiration/planning photo from this guide's Bosque del Apache shot descriptions. Use as expectation-setting only.",
   placement: ["Inspiration", "Media", "Visual Asset Manifest"],
@@ -2487,12 +2487,12 @@ const practiceTechniqueVisuals = [
     alt:
       "Generated 1080p Practice teaching image of cameras lenses batteries cards gloves and three setup states staged before a Bosque del Apache trip",
     caption:
-      "Purpose-built generated Practice image for building flight, perched/static, and silhouette camera setup states; not an actual Bosque field photograph.",
+      "Practice planning image for building flight, perched/static, and silhouette camera setup states; not a field photograph from Bosque.",
     rights:
       "AI-generated project training image from this guide's practice lesson notes. Use as expectation-setting only.",
     placement: ["Practice", "Visual Asset Manifest"],
     description:
-      "Purpose-built generated Practice image for camera setup baseline, two camera roles, batteries, cards, gloves, layers, and reset rehearsal.",
+      "Practice planning image for camera setup baseline, two camera roles, batteries, cards, gloves, layers, and reset rehearsal.",
   },
   {
     id: "practice-hd-exposure-modes",
@@ -2503,12 +2503,12 @@ const practiceTechniqueVisuals = [
     alt:
       "Generated 1080p Practice teaching image of a long-lens exposure mode drill with a bird crossing bright water dark reeds and pale sky",
     caption:
-      "Purpose-built generated Practice image for comparing exposure modes across changing backgrounds; not an actual Bosque field photograph.",
+      "Practice planning image for comparing exposure modes across changing backgrounds; not a field photograph from Bosque.",
     rights:
       "AI-generated project training image from this guide's practice lesson notes. Use as expectation-setting only.",
     placement: ["Practice", "Visual Asset Manifest"],
     description:
-      "Purpose-built generated Practice image for Aperture Priority, Shutter Priority, Manual with Auto ISO, and full Manual practice against changing backgrounds.",
+      "Practice planning image for Aperture Priority, Shutter Priority, Manual with Auto ISO, and full Manual practice against changing backgrounds.",
   },
   {
     id: "practice-hd-shutter-speed-ladder",
@@ -2519,12 +2519,12 @@ const practiceTechniqueVisuals = [
     alt:
       "Generated 1080p Practice teaching image of slow-shutter bird panning with sharp head cue and motion-blurred wings over water",
     caption:
-      "Purpose-built generated Practice image for shutter-speed ladder and panning blur practice; not an actual Bosque field photograph.",
+      "Practice planning image for shutter-speed ladder and panning blur practice; not a field photograph from Bosque.",
     rights:
       "AI-generated project training image from this guide's practice lesson notes. Use as expectation-setting only.",
     placement: ["Practice", "Visual Asset Manifest"],
     description:
-      "Purpose-built generated Practice image for frozen action, controlled wing blur, and slow-shutter panning experiments after safe frames.",
+      "Practice planning image for frozen action, controlled wing blur, and slow-shutter panning experiments after safe frames.",
   },
   {
     id: "practice-hd-handholding-body-mechanics",
@@ -2535,12 +2535,12 @@ const practiceTechniqueVisuals = [
     alt:
       "Generated 1080p Practice teaching image of a photographer handholding a long wildlife lens with correct stance while tracking a bird",
     caption:
-      "Purpose-built generated Practice image for handholding stance, lens support, and smooth subject acquisition; not an actual Bosque field photograph.",
+      "Practice planning image for handholding stance, lens support, and smooth subject acquisition; not a field photograph from Bosque.",
     rights:
       "AI-generated project training image from this guide's practice lesson notes. Use as expectation-setting only.",
     placement: ["Practice", "Visual Asset Manifest"],
     description:
-      "Purpose-built generated Practice image for feet-set stance, hip rotation, left-hand lens support, wider acquisition, and short controlled bursts.",
+      "Practice planning image for feet-set stance, hip rotation, left-hand lens support, wider acquisition, and short controlled bursts.",
   },
   {
     id: "practice-hd-support-choices",
@@ -2551,12 +2551,12 @@ const practiceTechniqueVisuals = [
     alt:
       "Generated 1080p Practice teaching image of vehicle beanbag tripod gimbal monopod and long lens support choices near a wetland pullout",
     caption:
-      "Purpose-built generated Practice image for choosing beanbag, tripod/gimbal, monopod, or handheld support by field position; not an actual Bosque field photograph.",
+      "Practice planning image for choosing beanbag, tripod/gimbal, monopod, or handheld support by field position; not a field photograph from Bosque.",
     rights:
       "AI-generated project training image from this guide's practice lesson notes. Use as expectation-setting only.",
     placement: ["Practice", "Visual Asset Manifest"],
     description:
-      "Purpose-built generated Practice image for matching vehicle loop, pool wait, deck footprint, and quick-pivot situations to the right support.",
+      "Practice planning image for matching vehicle loop, pool wait, deck footprint, and quick-pivot situations to the right support.",
   },
   {
     id: "practice-hd-white-birds-exposure",
@@ -2567,12 +2567,12 @@ const practiceTechniqueVisuals = [
     alt:
       "Generated 1080p Practice teaching image of white birds with preserved feather detail against dark reeds and bright Bosque-like water",
     caption:
-      "Purpose-built generated Practice image for protecting white-bird highlight detail; not an actual Bosque field photograph.",
+      "Practice planning image for protecting white-bird highlight detail; not a field photograph from Bosque.",
     rights:
       "AI-generated project training image from this guide's practice lesson notes. Use as expectation-setting only.",
     placement: ["Practice", "Visual Asset Manifest"],
     description:
-      "Purpose-built generated Practice image for preserving snow-goose feather texture across dark reeds, bright water, and pale sky.",
+      "Practice planning image for preserving snow-goose feather texture across dark reeds, bright water, and pale sky.",
   },
   {
     id: "practice-hd-behavior-prediction",
@@ -2583,12 +2583,12 @@ const practiceTechniqueVisuals = [
     alt:
       "Generated 1080p Practice teaching image of sandhill cranes showing neck stretch crouch wing tension and prelaunch behavior cues",
     caption:
-      "Purpose-built generated Practice image for reading behavior cues before takeoff; not an actual Bosque field photograph.",
+      "Practice planning image for reading behavior cues before takeoff; not a field photograph from Bosque.",
     rights:
       "AI-generated project training image from this guide's practice lesson notes. Use as expectation-setting only.",
     placement: ["Practice", "Visual Asset Manifest"],
     description:
-      "Purpose-built generated Practice image for recognizing neck stretch, crouch, wing tension, alert posture, wind direction, and launch-lane timing.",
+      "Practice planning image for recognizing neck stretch, crouch, wing tension, alert posture, wind direction, and launch-lane timing.",
   },
   {
     id: "practice-hd-cold-dust-workflow",
@@ -2599,12 +2599,12 @@ const practiceTechniqueVisuals = [
     alt:
       "Generated 1080p Practice teaching image of predawn cold and dust workflow with mounted long lens gloves warm batteries blower and organized vehicle cargo",
     caption:
-      "Purpose-built generated Practice image for predawn cold, dust, battery, glove, and cleaning workflow; not an actual Bosque field photograph.",
+      "Practice planning image for predawn cold, dust, battery, glove, and cleaning workflow; not a field photograph from Bosque.",
     rights:
       "AI-generated project training image from this guide's practice lesson notes. Use as expectation-setting only.",
     placement: ["Practice", "Visual Asset Manifest"],
     description:
-      "Purpose-built generated Practice image for being ready within two minutes of parking, avoiding cold lens changes, and keeping weather/cleaning tools reachable.",
+      "Practice planning image for being ready within two minutes of parking, avoiding cold lens changes, and keeping weather/cleaning tools reachable.",
   },
   {
     id: "practice-hd-readiness-checklist",
@@ -2615,12 +2615,12 @@ const practiceTechniqueVisuals = [
     alt:
       "Generated 1080p Practice teaching image of an edited field bag two camera roles backup drive gloves water and closed notebook for pre-trip readiness",
     caption:
-      "Purpose-built generated Practice image for final pre-trip readiness, backup workflow, and packed-bag edit; not an actual Bosque field photograph.",
+      "Practice planning image for final pre-trip readiness, backup workflow, and packed-bag edit; not a field photograph from Bosque.",
     rights:
       "AI-generated project training image from this guide's practice lesson notes. Use as expectation-setting only.",
     placement: ["Practice", "Visual Asset Manifest"],
     description:
-      "Purpose-built generated Practice image for proving readiness with local bird sessions, backup discipline, two camera roles, and a final packed-bag edit.",
+      "Practice planning image for proving readiness with local bird sessions, backup discipline, two camera roles, and a final packed-bag edit.",
   },
 ];
 
@@ -2635,7 +2635,7 @@ const practiceStandaloneVisuals = practiceVisuals.flatMap((visual) =>
       category: "Practice",
       alt: `Generated standalone training preview of ${example.toLowerCase()}`,
       caption:
-        `${example}. Standalone training frame separated from the ${visual.title} contact sheet; not an actual Bosque field photograph.`,
+        `${example}. Standalone training frame separated from the ${visual.title} contact sheet; not a field photograph from Bosque.`,
       rights: visual.rights,
       placement: ["Practice", "Visual Asset Manifest"],
       description:
@@ -3104,6 +3104,70 @@ const sources = [
     checked: gearCheckedDate,
     description:
       "This is the official Sony body-spec source for the Alpha 7R VI assumptions in the guide. It supports camera-body context for resolution, handling, and system planning rather than refuge-specific field logistics.",
+  },
+  {
+    topic: "Camera body",
+    title: "Sony ILCE-1M2 / Alpha 1 II specifications",
+    url: "https://www.sony.com/electronics/support/e-mount-body-ilce-1-series/ilce-1m2/specifications",
+    checked: gearCheckedDate,
+    description:
+      "This official Sony support page verifies the Alpha 1 II body comparison, including its 50.1 MP stacked sensor, card slots, NP-FZ100 battery, weight, autofocus recognition targets, and action-oriented role.",
+  },
+  {
+    topic: "Camera body",
+    title: "Canon EOS R5 Mark II product specifications",
+    url: "https://www.usa.canon.com/shop/p/eos-r5-mark-ii",
+    checked: gearCheckedDate,
+    description:
+      "This official Canon product page verifies the R5 Mark II body comparison, including the 45 MP stacked sensor, 30 fps electronic-shutter positioning, LP-E6P battery, card-slot ecosystem, and wildlife autofocus context.",
+  },
+  {
+    topic: "Camera body",
+    title: "Canon EOS R6 Mark III product specifications",
+    url: "https://www.usa.canon.com/shop/p/eos-r6-mark-iii",
+    checked: gearCheckedDate,
+    description:
+      "This official Canon product page verifies the current R6 Mark body requested for comparison: the EOS R6 Mark III, its 32.5 MP sensor, 40 fps action claim, pre-continuous shooting note, LP-E6P battery, and card slots.",
+  },
+  {
+    topic: "Backpack fit",
+    title: "Think Tank Photo BackLight Long Lens",
+    url: "https://www.thinktankphoto.com/products/backlight-long-lens",
+    checked: gearCheckedDate,
+    description:
+      "This official product page supports the long-lens backpack recommendation, especially the claim that the bag is designed around a mounted 600mm f/4 or 800mm f/5.6-class rig with room for field accessories.",
+  },
+  {
+    topic: "Backpack fit",
+    title: "Gura Gear Kiboko V2.0 30L",
+    url: "https://guragear.com/products/kiboko-v2-0-30l",
+    checked: gearCheckedDate,
+    description:
+      "This official product page supports the lightweight wildlife-travel backpack recommendation, including super-telephoto fit language, two-body/multi-lens capacity notes, rain cover, weight, and the no-laptop-sleeve caveat.",
+  },
+  {
+    topic: "Backpack fit",
+    title: "Shimoda Action X50 V2 Backpack",
+    url: "https://shimodadesigns.com/action-x50-v2-backpack-black/",
+    checked: gearCheckedDate,
+    description:
+      "This official product page supports the modular adventure-backpack comparison. It is included for hiking comfort, core-unit flexibility, laptop/tablet carry, and mixed personal/camera packing rather than as the strongest mounted super-telephoto option.",
+  },
+  {
+    topic: "Backpack fit",
+    title: "Lowepro Pro Trekker BP 650 AW II",
+    url: "https://www.lowepro.com/us-en/pro-trekker-bp-650-aw-ii-lp37481-pww/",
+    checked: gearCheckedDate,
+    description:
+      "This official product page supports the large expedition backpack recommendation, especially its wildlife-assignment positioning, up-to-800mm fit language, modular carry, tripod attachment, and support-gear capacity.",
+  },
+  {
+    topic: "Backpack fit",
+    title: "Vanguard ALTA SKY 68",
+    url: "https://www.vanguardworld.co.uk/products/alta-sky-68",
+    checked: gearCheckedDate,
+    description:
+      "This official product page supports the maximum-capacity backpack recommendation, including the 34L volume, attached 800mm f/5.6-class super-telephoto language, additional lens capacity, and 16-inch laptop/tablet carry.",
   },
   {
     topic: "Sigma E-mount gear",
@@ -4667,6 +4731,290 @@ const gearItems = [
   },
 ];
 
+const cameraBodies = [
+  {
+    system: "Sony",
+    name: "Sony Alpha 7R VI",
+    model: "ILCE-7RM6",
+    role: "High-resolution crop latitude for Bosque birds and distant habitat details",
+    specs: {
+      sensor: "66.8 MP effective full-frame stacked Exmor RS CMOS",
+      burst: "30 fps electronic / 10 fps mechanical",
+      stabilization: "8.5 stops center / 7.0 stops periphery",
+      autofocus: "Human, animal, bird, insect, vehicle, train, and airplane recognition",
+      cards: "Dual slots: SD UHS-I/II or CFexpress Type A",
+      battery: "NP-SA100",
+      weight: "713 g with battery and memory card",
+    },
+    source:
+      "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7rm6/specifications",
+    note:
+      "Best if the priority is feather detail, cropping room, and one carefully chosen long zoom. It uses the NP-SA100 battery, so plan its battery pool separately from an Alpha 1 II kit.",
+    verdict:
+      "Bosque pick for maximum detail and crop flexibility when action speed is still strong enough.",
+  },
+  {
+    system: "Sony",
+    name: "Sony Alpha 1 II",
+    model: "ILCE-1M2",
+    role: "Fast flagship body for birds in flight, mixed action, and future safari overlap",
+    specs: {
+      sensor: "50.1 MP effective full-frame stacked Exmor RS CMOS",
+      burst: "30 fps electronic / 10 fps mechanical",
+      stabilization: "8.5 stops center / 7.0 stops periphery",
+      autofocus: "Human, animal, bird, insect, vehicle, train, and airplane recognition",
+      cards: "Dual slots: SD UHS-I/II or CFexpress Type A",
+      battery: "NP-FZ100",
+      weight: "743 g with battery and memory card",
+    },
+    source:
+      "https://www.sony.com/electronics/support/e-mount-body-ilce-1-series/ilce-1m2/specifications",
+    note:
+      "The faster all-purpose Sony wildlife body. It gives up resolution to the A7R VI but keeps enough pixels for cropping and has the most balanced action role.",
+    verdict:
+      "Sony pick if flight action, future safari, and one-body versatility matter more than maximum crop resolution.",
+  },
+  {
+    system: "Canon",
+    name: "Canon EOS R5 Mark II",
+    model: "R5 Mark II",
+    role: "High-resolution Canon body with strong action and balanced wildlife files",
+    specs: {
+      sensor: "45 MP effective full-frame back-illuminated stacked CMOS",
+      burst: "30 fps electronic with pre-continuous shooting",
+      stabilization: "In-body IS with coordinated lens IS support",
+      autofocus: "Dual Pixel CMOS AF with animal detection for birds and wildlife",
+      cards: "CFexpress Type B plus UHS-II SD",
+      battery: "LP-E6P",
+      weight: "670 g with battery and SD card",
+    },
+    source: "https://www.usa.canon.com/shop/p/eos-r5-mark-ii",
+    note:
+      "The Canon high-resolution choice for Bosque. It pairs naturally with the RF 100-500 for flight and the RF 200-800 when distance dominates.",
+    verdict:
+      "Canon pick for resolution plus serious action if the budget can support the body and fast cards.",
+  },
+  {
+    system: "Canon",
+    name: "Canon EOS R6 Mark III",
+    model: "R6 Mark III",
+    role: "Fast lower-resolution Canon action body for flight, low light, and cost control",
+    specs: {
+      sensor: "32.5 MP full-frame CMOS",
+      burst: "40 fps with 20 frames of pre-continuous shooting",
+      stabilization: "Up to 8.5 stops center / 7.5 stops periphery",
+      autofocus: "Dual Pixel CMOS AF II with people, animal, and vehicle detection",
+      cards: "CFexpress Type B plus UHS-II SD",
+      battery: "LP-E6P",
+      weight: "699 g with battery and one card",
+    },
+    source: "https://www.usa.canon.com/shop/p/eos-r6-mark-iii",
+    note:
+      "A pragmatic Canon wildlife body if burst speed, low-light handling, and cost matter more than deep cropping. The 32.5 MP file puts more pressure on field position and focal length than the R5 Mark II.",
+    verdict:
+      "Canon value/action pick, especially as the second body beside an R5 Mark II.",
+  },
+];
+
+const cameraBodyComparisonRows = [
+  {
+    category: "Bosque priority",
+    sonyA7r: "Maximum crop detail for distant birds and environmental files.",
+    sonyA1: "Best Sony action balance for flight and future safari.",
+    canonR5: "Best Canon resolution/action balance.",
+    canonR6: "Best Canon speed/value body if crop latitude is less important.",
+    takeaway:
+      "For one body, pick resolution if Bosque is the main trip; pick the faster flagship/action body if Tanzania and birds-in-flight dominate future use.",
+  },
+  {
+    category: "Battery planning",
+    sonyA7r: "NP-SA100",
+    sonyA1: "NP-FZ100",
+    canonR5: "LP-E6P",
+    canonR6: "LP-E6P",
+    takeaway:
+      "Canon bodies can share the LP-E6P pool. The Sony A7R VI and Alpha 1 II need separate battery pools, which matters for chargers and nightly hotel workflow.",
+  },
+  {
+    category: "Cards",
+    sonyA7r: "Dual SD UHS-II / CFexpress Type A slots",
+    sonyA1: "Dual SD UHS-II / CFexpress Type A slots",
+    canonR5: "CFexpress Type B + UHS-II SD",
+    canonR6: "CFexpress Type B + UHS-II SD",
+    takeaway:
+      "Buy cards by body, not by habit. Sony Type A and Canon Type B are different ecosystems, and the Canon second slot is SD.",
+  },
+  {
+    category: "Best two-body pairing",
+    sonyA7r: "A7R VI on 200-600 or 400-800",
+    sonyA1: "Alpha 1 II on 70-200 or 100-400",
+    canonR5: "R5 Mark II on RF 100-500 or RF 200-800",
+    canonR6: "R6 Mark III on RF 24-105 or RF 70-200",
+    takeaway:
+      "Two bodies reduce dust-sensitive lens changes: long lens stays ready, wider or close-pass lens stays ready.",
+  },
+];
+
+const backpackOptions = [
+  {
+    maker: "Think Tank Photo",
+    name: "BackLight Long Lens",
+    type: "Dedicated long-lens backpack",
+    bestFor: "One mounted super-telephoto rig when the long lens is the day",
+    source: "https://www.thinktankphoto.com/products/backlight-long-lens",
+    photoLabel: "Think Tank product page",
+    image:
+      "https://www.thinktankphoto.com/cdn/shop/files/BackLight-Long-Lens-Hero-Gear-2_1200x1200.jpg?v=1750693988",
+    verifiedFit:
+      "Designed around a 600mm f/4 or 800mm f/5.6 attached to a gripped body, with 7L of personal-gear pocket space.",
+    oneBodyThreeLenses:
+      "Excellent if one large zoom or prime stays mounted and the other two lenses are smaller support/story lenses.",
+    twoBodiesFourLenses:
+      "Possible only if the second body and extra lenses are secondary to the mounted long lens. Less flexible than a true large-kit pack.",
+    verdict:
+      "Best for Bosque if the main requirement is protecting a ready-to-shoot long rig from car to deck.",
+  },
+  {
+    maker: "Gura Gear",
+    name: "Kiboko V2.0 30L",
+    type: "Lightweight wildlife travel backpack",
+    bestFor: "Airline-conscious wildlife kit with fast side-by-side access",
+    source: "https://guragear.com/products/kiboko-v2-0-30l",
+    photoLabel: "Gura Gear product page",
+    image:
+      "https://guragear.com/cdn/shop/products/221109_GURAGEAR_30L_U_A-V2-Final-3000.jpg?v=1762526421",
+    verifiedFit:
+      "Carries super-telephoto lenses as large as 800mm f/5.6, weighs 3.9 lb, and is described as holding two bodies and multiple lenses.",
+    oneBodyThreeLenses:
+      "Strong default for one body, a 200-600 or RF 100-500 class lens, 24-105, 70-200, cards, batteries, and rain cover.",
+    twoBodiesFourLenses:
+      "Strong if no laptop is needed; the maker explicitly notes no laptop sleeve on this 30L version.",
+    verdict:
+      "Best all-around wildlife travel pick when weight and access matter more than laptop carry.",
+  },
+  {
+    maker: "Shimoda",
+    name: "Action X50 V2",
+    type: "Modular adventure camera backpack",
+    bestFor: "Hiking comfort, modular camera cores, and personal gear mixed with camera gear",
+    source: "https://shimodadesigns.com/action-x50-v2-backpack-black/",
+    photoLabel: "Shimoda product page",
+    image:
+      "https://cdn11.bigcommerce.com/s-qocvgxy3yl/products/592/images/282623/hfdq34d2lvnznptd8emz__87787.1712823903.386.513.jpg?c=2",
+    verifiedFit:
+      "Accepts Small, Medium, and Large DSLR Core Units and has front and rear sleeves for laptops or tablets up to 16 inches.",
+    oneBodyThreeLenses:
+      "Good if the large zoom is packed broken down and hiking comfort matters. Not the cleanest option for a mounted 600/800mm-class rig.",
+    twoBodiesFourLenses:
+      "Good with the right core unit for mixed camera/personal carry, but less direct than Gura, Lowepro, or Vanguard for super-telephoto packing.",
+    verdict:
+      "Best modern adventure-carry option, not the first choice if the bag must swallow a mounted long wildlife lens.",
+  },
+  {
+    maker: "Lowepro",
+    name: "Pro Trekker BP 650 AW II",
+    type: "Large expedition wildlife backpack",
+    bestFor: "Two-body wildlife assignments, support gear, and a serious long lens",
+    source: "https://www.lowepro.com/us-en/pro-trekker-bp-650-aw-ii-lp37481-pww/",
+    photoLabel: "Lowepro product page",
+    image:
+      "https://cdn.lowepro.com/media/catalog/product/cache/0f95ebaf441f5da7295fca54fb88d543/b/a/backpack-lowepro-trekker-lp37481-pww-front-without-top-modular.jpg",
+    verifiedFit:
+      "The official page describes it as wildlife-assignment specific and fitting up to an 800mm lens, with modular parts and tripod attachment.",
+    oneBodyThreeLenses:
+      "More bag than the basic Bosque kit needs, but excellent if the long lens, support, layers, and accessories all travel together.",
+    twoBodiesFourLenses:
+      "One of the strongest two-body/four-lens choices because it is built for big telephoto assignments and support accessories.",
+    verdict:
+      "Best big-kit expedition option if size and airline carry constraints are acceptable.",
+  },
+  {
+    maker: "Vanguard",
+    name: "ALTA SKY 68",
+    type: "Super-telephoto backpack",
+    bestFor: "Maximum long-lens capacity with laptop/tablet carry",
+    source: "https://www.vanguardworld.co.uk/products/alta-sky-68",
+    photoLabel: "Vanguard product page",
+    image:
+      "https://www.vanguardworld.jp/cdn/shop/products/4948271763148-5.jpg?v=1646877691",
+    verifiedFit:
+      "The maker describes a 34L pack for a super-telephoto lens up to 800mm f/5.6 attached to a pro DSLR or mirrorless body, plus up to seven additional lenses and a 16-inch laptop.",
+    oneBodyThreeLenses:
+      "Very strong but larger than necessary unless laptop, layers, and support gear must be in the same backpack.",
+    twoBodiesFourLenses:
+      "The clearest maximum-capacity answer for two bodies, four lenses, laptop, and a mounted long lens.",
+    verdict:
+      "Best maximum-capacity fit answer, with the tradeoff that it is a large dedicated gear hauler.",
+  },
+];
+
+const supportGearChecklist = [
+  {
+    category: "Body power",
+    priority: "Critical",
+    items: [
+      "Sony Alpha 7R VI: build the kit around NP-SA100 batteries and the matching charger.",
+      "Sony Alpha 1 II: build the kit around NP-FZ100 batteries and a charger that supports that pack.",
+      "Canon R5 Mark II and R6 Mark III: standardize on LP-E6P batteries and LC-E6-compatible charging.",
+      "Bring at least three charged batteries per active body for cold dawns, long waits, and evening return sessions.",
+    ],
+  },
+  {
+    category: "Charging workflow",
+    priority: "Critical",
+    items: [
+      "Use one labeled charger path per battery type, plus a USB-C PD wall charger and a compact power strip for hotel nights.",
+      "Carry a vehicle USB-C charger for top-ups between morning and evening windows.",
+      "Pack short labeled cables and one small pouch so chargers do not migrate around the room.",
+    ],
+  },
+  {
+    category: "Cards and backup",
+    priority: "Critical",
+    items: [
+      "Sony bodies here use CFexpress Type A or UHS-II SD; Canon bodies use CFexpress Type B plus UHS-II SD.",
+      "Bring enough cards to avoid deleting in the field, plus a card reader that matches the actual card type.",
+      "Back up every night to a portable SSD and keep used cards separate from blank cards.",
+    ],
+  },
+  {
+    category: "Predawn safety",
+    priority: "Critical",
+    items: [
+      "Bring a rechargeable headlamp with a low mode, plus a second small light or backup battery.",
+      "Keep gloves thin enough to operate camera controls and filters before sunrise.",
+      "Add hand warmers for long, still waiting periods at decks or vehicle pullouts.",
+    ],
+  },
+  {
+    category: "Dust and weather",
+    priority: "Critical",
+    items: [
+      "Pack blower, microfiber cloths, lens tissues, sensor swabs, and a small towel for vehicle/hotel cleanup.",
+      "Carry rain covers for body/lens combinations and a dry bag or zip pouch for wet accessories.",
+      "Minimize lens changes in dust; two bodies are a practical weather-control strategy, not just convenience.",
+    ],
+  },
+  {
+    category: "Support and tools",
+    priority: "Recommended",
+    items: [
+      "Use a beanbag or window support for vehicle work, and make sure the long-lens foot is Arca-compatible before travel.",
+      "Bring tripod/gimbal or monopod only when the planned field position justifies setup time and bulk.",
+      "Pack the correct hex keys, lens-foot screws, spare quick-release plates, and a small multi-tool.",
+    ],
+  },
+  {
+    category: "Field comfort",
+    priority: "Recommended",
+    items: [
+      "Carry water, snacks, sun protection, a warm layer, and a compact sitting/kneeling pad.",
+      "Keep a small notebook or voice-note habit for location, wind, light, and missed-shot notes.",
+      "Use a simple car staging routine: long lens ready, wide/standard lens ready, batteries/cards in the same place every morning.",
+    ],
+  },
+];
+
 const kitRecommendations = [
   {
     title: "Bosque Sony default",
@@ -5718,7 +6066,7 @@ const inspirationLinks = [
     visualId: "inspiration-hd-panning-crane-motion-blur",
     description: [
       "500px is best treated as a composition and mood reference, especially for polished interpretations of Bosque weather, motion, silhouettes, and graphic flock shapes. It can help identify what a finished image might feel like after the logistical plan is already sound.",
-      "The licensing posture should stay conservative: browse, study, and link out, but do not cache or republish portfolio work unless usage rights are explicitly secured. Use the generated planning frame here as a rights-safe visual stand-in.",
+      "Browse, study, and link out, but do not cache or republish portfolio work unless usage rights are explicitly secured. Use the local planning frame here as a visual cue while the original source remains the reference.",
     ],
     note:
       "Good for composition study. Treat as inspiration-only.",

@@ -51,6 +51,23 @@ const appBundle = `${data}\n${app}`;
 const index = read("site/index.html");
 const guide = read("site/complete-photographers-guide.html");
 const styles = read("site/styles.css");
+const expectedNavLabels = [
+  "Overview",
+  "Field Guide",
+  "5-Day Itinerary",
+  "Best Photo Windows",
+  "Map &amp; Locations",
+  "Gear",
+  "Photo Techniques",
+  "Travel Logistics",
+  "Shot Inspiration",
+  "Resources &amp; References",
+];
+
+function navLabels(source) {
+  const nav = source.match(/<nav[^>]*class="top-tabs"[\s\S]*?<\/nav>/)?.[0] || "";
+  return [...nav.matchAll(/<a\b[^>]*>([^<]+)<\/a>/g)].map((match) => match[1].trim());
+}
 
 const refs = [
   ...localAssetReferences("site/index.html"),
@@ -82,6 +99,16 @@ assert(
 
 const scriptOrder = [...index.matchAll(/<script src="\.\/(data|app)\.js[^"]*"/g)].map((match) => match[1]);
 assert("index loads data before app", scriptOrder.join(",") === "data,app", scriptOrder.join(","));
+assert(
+  "index nav uses editorial labels and order",
+  navLabels(index).join("|") === expectedNavLabels.join("|"),
+  navLabels(index).join(" | ")
+);
+assert(
+  "standalone guide nav uses editorial labels and order",
+  navLabels(guide).join("|") === expectedNavLabels.join("|"),
+  navLabels(guide).join(" | ")
+);
 
 assert("data and renderer are split", !/function el\(/.test(data) && /function el\(/.test(app), "site/data.js + site/app.js");
 assert(
@@ -92,26 +119,109 @@ assert(
 assert(
   "guide framing copy has one source of truth",
   /const guideFraming = \{/.test(data) && /function renderGuideScopeNote/.test(app),
-  "general guide + proposed trip window copy should stay centralized"
+  "guide-scope copy should stay centralized"
 );
 const guideScopeUses = [...app.matchAll(/renderGuideScopeNote\(/g)].length;
-assert("guide framing is reused across app views", guideScopeUses >= 12, String(guideScopeUses));
+assert("guide framing is reused across planning views", guideScopeUses >= 11, String(guideScopeUses));
 const sourcesBlock = data.match(/const sources = \[([\s\S]*?)\];\n\nconst photoLocations/);
 assert("sources data block exists", Boolean(sourcesBlock), "site/data.js");
 const sourceRecordCount = [...sourcesBlock[1].matchAll(/\n  \{/g)].length;
 const sourceDescriptionCount = [...sourcesBlock[1].matchAll(/\n    description:/g)].length;
 assert("every source has a visitor description", sourceDescriptionCount === sourceRecordCount, `${sourceDescriptionCount}/${sourceRecordCount}`);
-assert("sources renderer prints descriptions", /source\.description/.test(app), "source.description");
+assert(
+  "resources page includes reference descriptions",
+  /function renderReferenceIndex/.test(app) && /source\.description/.test(app),
+  "renderReferenceIndex + source.description"
+);
 assert(
   "static pages include guide framing",
-  index.includes("General guide + proposed trip window") &&
-    guide.includes("This is a general Bosque del Apache photography guide for any reader"),
+  index.includes("Guide scope") &&
+    guide.includes("Use this as a general Bosque del Apache photography guide"),
   "index.html and complete-photographers-guide.html"
+);
+const bannedReaderPhrases = [
+  "Sony Alpha 7R VI is the current A7R name to use",
+  "The old Sony/Sigma/Canon/Support/Compare strip",
+  "Compare the thing you are choosing now",
+  "Still being corrected",
+  "approved rental car illustration",
+  "Repetitive generic thumbnails",
+  "repeated per-source date stamps",
+];
+const readerFacingBundle = `${index}\n${guide}\n${app}\n${data}`;
+const bannedCopyHits = bannedReaderPhrases.filter((phrase) => readerFacingBundle.includes(phrase));
+assert(
+  "reader-facing copy avoids internal implementation language",
+  bannedCopyHits.length === 0,
+  bannedCopyHits.join(", ")
+);
+assert(
+  "reader-facing copy avoids unexplained gallery acronyms",
+  !/\bLRA\b/.test(readerFacingBundle),
+  "Write out the Gallery concept instead of using LRA"
 );
 assert(
   "sources rows omit repeated checked-date column",
   !app.includes("${source.checked}"),
   "Sources keeps freshness at the page level"
+);
+assert(
+  "resources routes resolve to combined resources page",
+  /"external-resources": "media"/.test(app) &&
+    /"resources-references": "media"/.test(app) &&
+    !/sources: renderSources/.test(app),
+  "Resources & References should remain the combined reader-facing page"
+);
+assert(
+  "retired gallery and citation aliases stay removed",
+  !/gallery: "inspiration"/.test(app) &&
+    !/references: "media"/.test(app) &&
+    !/source: "media"/.test(app) &&
+    !/sources: "media"/.test(app),
+  "Old Gallery/References/Source hashes should not land at unrelated page tops"
+);
+assert(
+  "gallery content remains nested under shot inspiration",
+  /function renderGalleryStudySection/.test(app) && !/gallery: renderGallery/.test(app),
+  "Gallery should be nested under Shot Inspiration"
+);
+assert(
+  "practice detail pages omit guide-scope note",
+  !/function renderPracticeDetail[\s\S]*?renderGuideScopeNote\(\)[\s\S]*?function renderInspiration/.test(app),
+  "Technique lessons should stay focused on practice"
+);
+assert(
+  "shot inspiration gallery excludes travel workflow images",
+  /shotInspirationGalleryExcludedGroups = new Set\(\["travel-workflow"\]\)/.test(app) &&
+    /!shotInspirationGalleryExcludedGroups\.has\(group\.id\)/.test(app),
+  "Travel workflow visuals belong on Travel Logistics"
+);
+assert(
+  "gear uses top-level workspaces",
+  /data-gear-workspace/.test(app) &&
+    ["Lenses", "Camera Bodies", "Support", "Filters", "Backpacks"].every((label) => app.includes(label)),
+  "Gear should separate different planning decisions"
+);
+assert(
+  "lens brand filters stay inside lens workspace",
+  /data-lens-system/.test(app) && !/data-system="\$\{system\}"/.test(app),
+  "Lens brand controls should stay scoped to the lens workspace"
+);
+assert(
+  "gear data includes body and backpack comparisons",
+  /const cameraBodies = \[/.test(data) &&
+    [...data.matchAll(/\n  \{\n    system: "(?:Sony|Canon)",\n    name: "(?:Sony|Canon)/g)].length >= 4 &&
+    /const backpackOptions = \[/.test(data) &&
+    [...data.matchAll(/\n  \{\n    maker: "/g)].length >= 5,
+  "cameraBodies + backpackOptions"
+);
+assert(
+  "expanded support checklist is present",
+  /const supportGearChecklist = \[/.test(data) &&
+    ["Body power", "Charging workflow", "Cards and backup", "Predawn safety", "Dust and weather"].every((label) =>
+      data.includes(label)
+    ),
+  "supportGearChecklist"
 );
 
 assert(

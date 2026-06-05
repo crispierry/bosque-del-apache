@@ -23,17 +23,41 @@ Deployment details live in `docs/site/deployment.md`.
 Use top tabs for the major workspaces:
 
 - Overview
-- Gallery
-- Guide
-- Map
-- Itinerary
-- Photo Windows
-- Travel
+- Field Guide
+- 5-Day Itinerary
+- Best Photo Windows
+- Map & Locations
 - Gear
-- Practice
-- Inspiration
-- Media
-- Sources
+- Photo Techniques
+- Travel Logistics
+- Shot Inspiration
+- Resources & References
+
+Navigation is editorial strategy for this guide. The labels should tell a serious photographer that this is a field-planning publication with sourced logistics, not a loose gallery or generic travel blog.
+
+Rationale:
+
+| Label | Placement | Editorial decision |
+| --- | --- | --- |
+| Overview | 1 | Opens with scope, trust framing, trip assumptions, and what to read first. |
+| Field Guide | 2 | Replaces generic `Guide`; the label signals a practical field publication and belongs immediately after Overview. |
+| 5-Day Itinerary | 3 | Replaces `Itinerary`; the live content is one worked five-day plan, not multiple itinerary lengths, so `Itineraries` would overpromise. |
+| Best Photo Windows | 4 | Replaces `Photo Windows`; this better matches the reader question: when should I shoot sunrise, mid-morning, sunset, and weather fallback work? |
+| Map & Locations | 5 | Replaces `Map`; the user intent is choosing shooting locations and field positions, not only viewing a map. |
+| Gear | 6 | Already clear and photographer-specific. Keep it high because lens/support decisions shape the field plan. |
+| Photo Techniques | 7 | Replaces vague `Practice`; the section is a pre-trip technique workspace for autofocus, exposure, panning, support, filters, and workflow. |
+| Travel Logistics | 8 | Replaces `Travel`; clarifies that the section covers airports, driving, rental car, lodging, early departures, food/fuel, and access logistics. |
+| Shot Inspiration | 9 | Replaces `Inspiration` and absorbs Gallery. The label is specific to the shot-planning purpose and can carry both individual inspiration images and the larger visual study album. |
+| Resources & References | 10 | Combines reader-facing outside articles, videos if added, EXIF evidence, teaching references, useful links, and the factual citation index. One page is clearer because readers should not have to guess whether a source belongs under `Media`, `External Resources`, or `References`. |
+
+Implementation notes:
+
+- Keep all ten items top-level for now because each section has enough content and a distinct planning question.
+- Keep existing hash IDs such as `#guide`, `#itinerary`, `#windows`, `#map`, `#practice`, and `#media` stable for compatibility.
+- Retire legacy aliases such as `#gallery`, `#sources`, `#source`, and `#references`; these old labels should not redirect readers to the top of a combined page.
+- Support semantic aliases such as `#field-guide`, `#best-photo-windows`, `#map-locations`, `#photo-techniques`, `#external-resources`, and `#resources-references`.
+- Update public labels, page headings, standalone guide navigation, no-script text, deployment checks, and static QA whenever the navigation changes.
+- Do not rename `5-Day Itinerary` to `Itineraries` until the site actually contains separate 3-day, 4-day, and 5-day options.
 
 ## Overview
 
@@ -42,38 +66,15 @@ Use top tabs for the major workspaces:
 - Lodging base.
 - Current planning assumptions, field gates, and close-to-travel recheck reminders.
 - Today's plan card during trip dates.
-- Quick links to Map, Day 1-5, Gear, Practice, Travel, and Sources.
+- Quick links to Field Guide, 5-Day Itinerary, Best Photo Windows, Map & Locations, Gear, Photo Techniques, Travel Logistics, and Resources & References.
 
-## Gallery
+## Field Guide
 
-- Generated planning-preview contact sheets for the major shot-list ideas.
-- Each contact sheet is labeled as generated, not an actual Bosque field photo.
-- Cards include five expected frame types, prompt/provenance summary, rights notes, and intended section placement.
-- Keep public-domain and generated assets visually separate from link-only external references.
+- Long-form guide to seasonality, field positions, behavior, settings, gear, scouting, ethics, logistics, and shot planning.
+- Establish why the publication is trustworthy: official sources, date checks, rights boundaries, and assumptions.
+- Link back into the planning workspaces so the article does not become an isolated essay.
 
-## Map
-
-- Interactive refuge/trip map.
-- Layers:
-  - Sunrise spots.
-  - Mid-morning spots.
-  - Sunset spots.
-  - Food/fuel.
-  - Side trips.
-  - Closures/restrictions.
-- Location detail drawer:
-  - Best time window.
-  - Subjects.
-  - Lens range.
-  - Parking/access.
-  - Walking distance.
-  - Confidence/source status.
-- Desktop: full map with side list.
-- Mobile: map-first view with bottom sheet location cards.
-
-Lodging has its own hotel-distance map in the Travel section so the refuge shooting map stays photography-first.
-
-## Itinerary
+## 5-Day Itinerary
 
 Tabs:
 
@@ -109,7 +110,7 @@ Slot format:
 - Gear preset.
 - Notes/source confidence.
 
-## Photo Windows
+## Best Photo Windows
 
 Tabs:
 
@@ -127,60 +128,72 @@ Each tab ranks locations by suitability and captures:
 - Weather sensitivity.
 - Access constraints.
 
-## Lodging
+## Map & Locations
 
-- Shortlist table/cards:
-  - Name.
-  - Town/area.
-  - Distance/time to refuge.
-  - Early departure practicality.
-  - Pros/cons.
-  - Cancellation notes.
-  - Price range/date checked.
-  - Source link.
-- Compare modes:
-  - Best for convenience.
-  - Best budget.
-  - Best comfort.
-  - Best if doing side trips.
-- Base strategy section: Socorro vs San Antonio vs closer/rural options.
-- Loyalty tradeoff note: Marriott Bonvoy appears regional rather than Socorro/San Antonio based; show the closest practical Bonvoy candidate separately so it does not look like a photography-first dawn base.
+- Interactive refuge/trip map.
+- Layers:
+  - Sunrise spots.
+  - Mid-morning spots.
+  - Sunset spots.
+  - Food/fuel.
+  - Side trips.
+  - Closures/restrictions.
+- Location detail drawer:
+  - Best time window.
+  - Subjects.
+  - Lens range.
+  - Parking/access.
+  - Walking distance.
+  - Confidence/source status.
+- Desktop: full map with side list.
+- Mobile: map-first view with bottom sheet location cards.
+
+Lodging has its own hotel-distance map in the Travel Logistics section so the refuge shooting map stays photography-first.
 
 ## Gear
 
-Tabs:
+Workspaces:
 
-- Birds
-- Landscape
-- Low Light
-- Carry Plan
-
-Lens configuration presets:
-
-- Long wildlife kit.
-- Flexible vehicle-based kit.
-- Landscape/sunset kit.
-- Minimal walking kit.
-
-Add a separate Bosque + Tanzania safari section:
-
-- Explain that Bosque prioritizes bird reach, while Tanzania prioritizes vehicle-based mammal flexibility.
-- Show Sony and Canon four-lens shared kits plus 1.4x and 2x teleconverters as optional bright-light reach tools.
-- Show the three-lens Tanzania travel cut: keep 24-105mm, 70-200mm f/2.8, and 100-400mm/100-500mm; drop the 400-800mm/200-800mm unless birds or distant wildlife are a main goal.
-- Note that dust and vehicle shooting favor two bodies, fewer lens changes, and beanbag/window support.
-
-Per-slot gear suggestions:
-
-- Camera body.
-- Primary lens.
-- Secondary lens.
-- Support: tripod, monopod, or beanbag.
+- Lenses.
+- Camera Bodies.
+- Support.
 - Filters.
-- Clothing/weather items.
+- Backpacks.
 
-Include a pack-tonight checklist tied to the next day.
+Lens workspace:
 
-## Practice
+- Compare Sony, Sigma E-mount, Canon, and Sony/Canon lens categories.
+- Keep lens/filter-size guidance out of non-lens workspaces.
+- Include trip-kit recommendations for Bosque and Tanzania.
+- Include physical length and weight scale charts with brand controls.
+
+Camera Bodies workspace:
+
+- Evaluate Sony Alpha 7R VI, Sony Alpha 1 II, Canon EOS R5 Mark II, and Canon EOS R6 Mark III.
+- Compare resolution, burst, autofocus, card type, battery type, weight, and practical Bosque/Tanzania role.
+- Make battery/card incompatibilities visible before purchase.
+
+Support workspace:
+
+- Separate mechanical support from power, charging, cards, backup, headlamp, cleaning, weather, tools, and cold-weather comfort.
+- Treat two bodies as a dust-control strategy, not merely a convenience upgrade.
+
+Filters workspace:
+
+- Explain 77 mm, 82 mm, 95 mm, and 105 mm buying implications.
+- Separate CPL, ND, protective/clear, and step-up ring use cases.
+- Keep the no-filter default for fast dawn bird action.
+
+Backpacks workspace:
+
+- Compare one-body/three-lens and two-body/four-lens budgets.
+- Include source-linked official product images only when the source is documented in the visual asset manifest.
+- Treat "Stink Gear" as likely Think Tank Photo unless corrected.
+- Include Gura Gear plus three other modern backpack options that can be checked against current official sources.
+
+Include a pack-tonight checklist tied to the next day once the Gear page has enough route/date state to support it.
+
+## Photo Techniques
 
 Build this as a pre-trip training workspace, not a generic tutorial page. The section should answer: what technique should I rehearse next, what Bosque del Apache scenario does it prepare me for, and how will I know I am improving?
 
@@ -244,7 +257,26 @@ Reading List:
   - Purchase priority.
   - Source link/date checked.
 
-## Inspiration
+## Travel Logistics
+
+- Shortlist table/cards:
+  - Name.
+  - Town/area.
+  - Distance/time to refuge.
+  - Early departure practicality.
+  - Pros/cons.
+  - Cancellation notes.
+  - Price range/date checked.
+  - Source link.
+- Compare modes:
+  - Best for convenience.
+  - Best budget.
+  - Best comfort.
+  - Best if doing side trips.
+- Base strategy section: Socorro vs San Antonio vs closer/rural options.
+- Loyalty tradeoff note: Marriott Bonvoy appears regional rather than Socorro/San Antonio based; show the closest practical Bonvoy candidate separately so it does not look like a photography-first dawn base.
+
+## Shot Inspiration
 
 Organize the moodboard by:
 
@@ -263,9 +295,16 @@ Each item should include:
 - Lens/composition note.
 - Source/credit.
 
-## Media
+At the bottom of the page, include the former Gallery as a visual study album:
 
-Use the Media section as a research archive for photography articles, teaching references, and focal-length evidence.
+- True mosaic groups for the major shot-list ideas.
+- Planning images labeled as generated visual examples, not actual Bosque field photographs.
+- Five-frame story groups with prompt/provenance summary, field-reading purpose, lens/settings notes, and lightbox access.
+- Public-domain and generated assets kept visually separate from link-only external references.
+
+## Resources & References
+
+Use the Resources & References section as a combined research archive for photography articles, teaching references, videos if added, maps if reader-facing, focal-length evidence, and factual citations.
 
 Article cards should be sorted newest first and include:
 
@@ -278,9 +317,7 @@ Article cards should be sorted newest first and include:
 
 The section should also include a compact EXIF/evidence table that separates auditable photo metadata from article recommendations.
 
-## Sources
-
-Use structured notes:
+The same page should include a reference index with structured source notes:
 
 - Refuge official info.
 - Maps/access/closures.
@@ -309,11 +346,11 @@ Open today or next day, review sunrise/mid-morning/sunset slots, confirm departu
 
 ### Train Before The Trip
 
-Open Practice, pick the next drill by weak area or upcoming Bosque scenario, complete the exercise, log hit rate and misses, then move useful setup notes into Gear.
+Open Photo Techniques, pick the next drill by weak area or upcoming Bosque scenario, complete the exercise, log hit rate and misses, then move useful setup notes into Gear.
 
 ### Adjust For Conditions
 
-Start in Photo Windows, choose the relevant light window, filter by access/weather/subject, and swap a location into the day schedule.
+Start in Best Photo Windows, choose the relevant light window, filter by access/weather/subject, and swap a location into the day schedule.
 
 ### Use In The Field
 

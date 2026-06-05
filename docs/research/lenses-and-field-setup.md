@@ -214,6 +214,45 @@ The clearest pattern across Bosque-specific sources is not "bring the longest le
 - Bring a compatible remote shutter release for tripod work, reflections, landscapes, moon/bird framing, and any slow-shutter flock experiments.
 - Do not bring flash for wildlife. It is not useful at Bosque distances, it adds disturbance risk, and refuge rules prohibit using artificial light to spot, locate, or take animals.
 
+### Camera Body Comparison
+
+Checked June 5, 2026 against official Sony and Canon product/spec pages.
+
+- **Sony Alpha 7R VI / ILCE-7RM6:** best Sony body in this comparison for maximum crop latitude at Bosque. The official spec page lists a 66.8 MP effective full-frame stacked sensor, 30 fps electronic-shutter drive, dual SD/CFexpress Type A slots, and NP-SA100 battery. The battery is the practical surprise: do not assume Alpha 1 II battery sharing.
+- **Sony Alpha 1 II / ILCE-1M2:** best Sony action/wildlife balance for Bosque plus future safari use. It has less crop latitude than the A7R VI at 50.1 MP effective, but it keeps 30 fps electronic-shutter action, dual SD/CFexpress Type A slots, NP-FZ100 batteries, and a flagship action role.
+- **Canon EOS R5 Mark II:** best Canon resolution/action balance. Canon's current product page supports the 45 MP stacked sensor, up to 30 fps electronic shooting, LP-E6P battery, and CFexpress Type B plus UHS-II SD card ecosystem.
+- **Canon EOS R6 Mark III:** current R6 Mark body to evaluate. It is the Canon speed/value option with 32.5 MP, up to 40 fps, pre-continuous shooting, LP-E6P batteries, and the same CFexpress Type B plus UHS-II SD split. It asks more from field position and focal length because there is less crop latitude than the R5 Mark II.
+
+Body recommendation:
+
+- **One Sony body:** Alpha 7R VI if Bosque detail/crop is the primary goal; Alpha 1 II if action, future safari, and all-around flagship handling matter more.
+- **One Canon body:** R5 Mark II if budget allows; R6 Mark III if action speed, lower cost, and second-body use matter more than crop latitude.
+- **Two bodies:** keep the long wildlife zoom mounted on the higher-resolution body and the closer/wider lens on the faster or secondary body. This is partly about field speed and partly about avoiding dust-sensitive lens changes.
+
+### Backpack Comparison
+
+I did not find a current backpack brand named "Stink Gear" during the June 5, 2026 check, so the site treats that requested brand as **Think Tank Photo** until corrected.
+
+- **Think Tank Photo BackLight Long Lens:** best when the requirement is a ready-to-shoot mounted long rig. The official page says it is designed around 600mm f/4 or 800mm f/5.6-class long glass attached to a gripped body, with additional personal-gear pocket space. Excellent for one body plus a mounted big lens; less flexible as a two-body/four-lens general backpack.
+- **Gura Gear Kiboko V2.0 30L:** best all-around wildlife-travel choice for one body/three lenses, and still credible for two bodies/four lenses if laptop carry is not needed. The official page says it carries super-telephoto lenses as large as 800mm f/5.6, weighs 3.9 lb, and has no laptop sleeve.
+- **Shimoda Action X50 V2:** best modern adventure-carry option. It is modular and comfortable, with Large DSLR Core Unit support and laptop/tablet sleeves, but it is not the strongest dedicated mounted-super-telephoto choice.
+- **Lowepro Pro Trekker BP 650 AW II:** best large expedition option for two bodies, four lenses, tripod/support gear, and an up-to-800mm wildlife assignment. The tradeoff is size and carry-on sensitivity.
+- **Vanguard ALTA SKY 68:** best maximum-capacity answer. The official page describes a 34L backpack for an attached 800mm f/5.6-class super-telephoto, up to seven extra lenses/personal kit, and laptop/tablet carry.
+
+Backpack recommendation:
+
+- **One body and three lenses:** start with Gura Gear Kiboko 30L; choose Think Tank BackLight Long Lens if a mounted 600/800mm-class rig is the hard requirement; choose Shimoda if hiking comfort and mixed personal/camera carry matter more than mounted long-lens carry.
+- **Two bodies and four lenses:** start with Vanguard ALTA SKY 68 or Lowepro Pro Trekker BP 650 AW II. Gura can still work if the kit is disciplined and no laptop is needed.
+
+### Expanded Support Gear
+
+- **Power:** bring at least three charged batteries per active body. Sony Alpha 7R VI uses NP-SA100, Sony Alpha 1 II uses NP-FZ100, and both Canon bodies in this comparison use LP-E6P. Pack labeled chargers for every battery type.
+- **Charging:** hotel workflow needs a USB-C PD wall charger, compact power strip, vehicle USB-C charger, labeled cables, and a single charging pouch.
+- **Cards and backup:** Sony Type A and Canon Type B CFexpress cards are not interchangeable. Bring the correct reader, enough cards to avoid deleting in the field, and a portable SSD for nightly backups.
+- **Predawn:** pack a rechargeable headlamp with low mode plus a backup light, thin gloves that can operate camera controls, and hand warmers for still dawn waits.
+- **Dust/weather:** blower, microfiber, lens tissues, sensor swabs, rain covers, small towel, and dry bag/zip pouch. Two bodies are a dust-control strategy because they reduce lens changes.
+- **Tools:** Arca-compatible long-lens foot, spare plates, hex keys, remote release, and small multi-tool.
+
 ### Tripod, Ball Head, And Gimbal Recommendation
 
 Bring support, but do not overbuild the kit.
@@ -265,12 +304,21 @@ Do not include flash in the Bosque wildlife kit.
 - https://www.sony.com/electronics/support/lenses-e-mount-lenses/sel2470gm2/specifications
 - https://www.sony.com/electronics/support/lenses-e-mount-lenses/sel70200gm2/specifications
 - https://www.sony.co.uk/electronics/camera-lenses/sel400800g/specifications
+- https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7rm6/specifications
+- https://www.sony.com/electronics/support/e-mount-body-ilce-1-series/ilce-1m2/specifications
+- https://www.usa.canon.com/shop/p/eos-r5-mark-ii
+- https://www.usa.canon.com/shop/p/eos-r6-mark-iii
 - https://downloads.canon.com/nw/camera/products/lenses/rf100-500mm/RF100_500mm_USM_specifications.pdf
 - https://global.canon/en/c-museum/product/rf530.html
 - https://downloads.canon.com/nw/camera/products/lenses/rf-24-105mm-f4l-is-usm/specifications/canon-rf-24-105mm-f4l-is-usm-downloadable-specifications-chart.pdf
 - https://www.usa.canon.com/shop/p/rf24-70mm-f2-8l-is-usm
 - https://www.usa.canon.com/shop/p/rf70-200mm-f2-8-l-is-usm
 - https://www.usa.canon.com/shop/p/rf70-200mm-f2-8-l-is-usm-z
+- https://www.thinktankphoto.com/products/backlight-long-lens
+- https://guragear.com/products/kiboko-v2-0-30l
+- https://shimodadesigns.com/action-x50-v2-backpack-black/
+- https://www.lowepro.com/us-en/pro-trekker-bp-650-aw-ii-lp37481-pww/
+- https://www.vanguardworld.co.uk/products/alta-sky-68
 - https://safaritanzania.com/blog/safari-photography-tips-complete-guide
 - https://magicaltanzania.com/blog/tanzania-safari-photography-guide-2026/
 - https://www.digitalcameraworld.com/buying-guides/best-lenses-for-safari-photography

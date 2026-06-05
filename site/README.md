@@ -46,4 +46,4 @@ node scripts/qa-static.mjs
 
 Site data lives in `site/data.js`; rendering and interaction logic lives in `site/app.js`. Keep that split when adding new research-backed content.
 
-Desktop and mobile browser QA last ran on June 5, 2026. The regenerated Gallery, Guide, Itinerary, Photo Windows, Practice, Inspiration, Media, Gear scale labels, map labels, crawlable hash navigation, and no-script summary should be checked on desktop and mobile after any further content, source, image, or layout changes. Verify the main website sitemap and robots files after publishing.
+Desktop and mobile browser QA last ran on June 5, 2026. The Field Guide, 5-Day Itinerary, Best Photo Windows, Photo Techniques, Shot Inspiration with nested Gallery, Resources & References, Gear scale labels, map labels, crawlable hash navigation, and no-script summary should be checked on desktop and mobile after any further content, source, image, or layout changes. Verify the main website sitemap and robots files after publishing.

@@ -2,6 +2,228 @@
 
 This file tracks requested project work that has not yet been implemented, verified, and published.
 
+## 2026-06-05 - Retire Gallery And Reference Hash Aliases
+
+Status: completed and validated June 5, 2026.
+
+Goal: fix the route-review issue by retiring the old `#gallery`, `#references`, `#source`, and `#sources` aliases instead of preserving them as redirects to the top of combined pages.
+
+Requested requirements:
+
+- `Gallery` and `References` legacy routes can go away.
+- Avoid misleading old hash routes that land at the top of unrelated combined pages.
+
+Implementation notes:
+
+- Removed the legacy Gallery and citation aliases from the hash router.
+- Kept the current top-level `Shot Inspiration` and `Resources & References` pages.
+- Updated static QA so it protects the combined pages while ensuring the retired aliases stay removed.
+- Bumped static asset versions to `20260605-retired-hashes-v1`.
+
+Completion notes:
+
+- Validated with JavaScript syntax checks, static QA, browser route checks, and whitespace checks.
+
+## 2026-06-05 - Remove Travel Workflow Images From Shot Inspiration
+
+Status: completed and validated June 5, 2026.
+
+Goal: remove travel/logistics workflow images from the Shot Inspiration page.
+
+Requested requirements:
+
+- Do not show the Travel Workflow image group on Shot Inspiration.
+- Keep travel workflow visuals in the Travel/Itinerary context where they belong.
+
+Implementation notes:
+
+- Added a Shot Inspiration gallery exclusion for `travel-workflow`.
+- Updated data and visual-manifest placement notes so travel workflow assets are treated as Travel/Itinerary logistics assets, not inspiration-page content.
+- Added static QA coverage to keep the travel workflow group out of Shot Inspiration.
+- Bumped static asset versions to `20260605-inspiration-no-travel-v1`.
+
+Completion notes:
+
+- Validated with JavaScript syntax checks, static QA, desktop browser rendering, and mobile browser rendering.
+
+## 2026-06-05 - Remove Guide Scope Note From Technique Lessons
+
+Status: completed and validated June 5, 2026.
+
+Goal: remove the guide-scope/trip-window note from individual Photo Techniques lesson pages.
+
+Requested requirements:
+
+- Remove the planning-scope note from technique detail pages because it does not fit the lesson flow.
+- Keep the detail pages focused on the lesson goal, practice image, lens/settings metadata, field steps, homework, and image-reading checklist.
+
+Implementation notes:
+
+- Removed `renderGuideScopeNote()` from the `renderPracticeDetail()` template.
+- Added static QA coverage so technique detail pages do not reintroduce the guide-scope note.
+- Bumped static asset versions to `20260605-practice-detail-scope-v1`.
+
+Completion notes:
+
+- Validated with JavaScript syntax checks, static QA, desktop browser rendering, and mobile browser rendering.
+
+## 2026-06-05 - Combine Gallery With Shot Inspiration
+
+Status: completed and validated June 5, 2026.
+
+Goal: reduce top-level navigation by combining Gallery with Shot Inspiration.
+
+Requested requirements:
+
+- Keep `Shot Inspiration` as the top-level menu item.
+- Remove `Gallery` as a separate top-level menu item.
+- Add the Gallery content to the bottom of the Shot Inspiration page.
+
+Implementation notes:
+
+- Moved the Gallery mosaic into a new `Visual study album` section at the bottom of Shot Inspiration.
+- Removed the separate Gallery nav item and page shell.
+- Routed legacy `#gallery` links to the Shot Inspiration view.
+- Updated standalone guide nav, no-script copy, IA docs, deployment/README QA notes, static QA expectations, and asset versions.
+
+Completion notes:
+
+- Validated with syntax checks, static QA, desktop browser rendering, mobile browser rendering, and legacy `#gallery` route checks.
+
+## 2026-06-05 - Gallery Acronym Cleanup
+
+Status: completed and validated June 5, 2026.
+
+Goal: remove the unexplained `LRA` acronym from Gallery copy.
+
+Requested requirements:
+
+- Clarify what `LRA` means in the Gallery intro.
+- Avoid insider acronyms that make the page feel less editorially polished.
+
+Implementation notes:
+
+- Reworded the Gallery intro as a plain-language `visual study album`.
+- Added static QA coverage so reader-facing copy does not reintroduce `LRA`.
+- Bumped static asset versions to `20260605-gallery-acronym-v1`.
+
+Completion notes:
+
+- Validated with JavaScript syntax checks, static QA, desktop browser rendering, and mobile browser rendering.
+
+## 2026-06-05 - Combine External Resources And References
+
+Status: completed and validated June 5, 2026.
+
+Goal: combine the separate External Resources and References pages into one top-level Resources & References page.
+
+Requested requirements:
+
+- Remove the separate top-level References page.
+- Keep reader-facing outside articles, EXIF evidence, resource links, and factual citations together on one page.
+- Preserve source descriptions and reference usefulness.
+- Keep old References/Sources hash links from breaking.
+
+Implementation notes:
+
+- Renamed the top-level navigation item to `Resources & References`.
+- Removed the separate `#sources` section from the public page shell.
+- Added a reference-index section to the existing resources renderer so source descriptions now appear at the bottom of the combined page.
+- Mapped `#sources`, `#source`, and `#references` aliases to the combined `#media` view for compatibility.
+- Updated the standalone guide nav, no-script summary, IA docs, README/deployment QA notes, asset versions, and static QA expectations.
+
+Completion notes:
+
+- Validated source syntax, static QA, desktop browser rendering, mobile browser rendering, and old hash aliases.
+
+## 2026-06-05 - Site-Wide Copy Cohesion Pass
+
+Status: completed and validated June 5, 2026.
+
+Goal: review the public site copy as a publishing editor, remove internal implementation language, and make the narrative feel cohesive across Overview, Field Guide, Itinerary, Best Photo Windows, Map & Locations, Gear, Photo Techniques, Travel Logistics, Gallery, Shot Inspiration, External Resources, and References.
+
+Requested requirements:
+
+- Evaluate all reader-facing text, not only the highlighted Gear sentence.
+- Remove or rewrite copy that sounds like implementation notes, revision history, or UI explanation.
+- Make the site read as a clear field guide for serious photographers planning Bosque del Apache.
+- Keep necessary source/image transparency without letting disclosure language dominate the reader experience.
+
+Implementation notes:
+
+- Replaced the highlighted Gear copy with a concise mount-compatibility explanation.
+- Rewrote Gear section framing so it reads as field-kit strategy: lenses, camera body, support, filters, and backpack capacity.
+- Reframed the guide-scope note from `General guide + proposed trip window` to `Guide scope`.
+- Rewrote map, itinerary, photo-window, travel, gallery, inspiration, external-resource, and reference intros to remove internal phrases such as `old`, `now`, `approved`, `still being corrected`, and source-page construction details.
+- Reduced repetitive `generated image` language in visible captions and section copy, while preserving clear planning-image disclosure.
+- Added a static QA guard to block the specific internal phrases that triggered the review.
+- Bumped static asset versions to `20260605-copy-cohesion-v1`.
+
+Completion notes:
+
+- Validated with rendered browser copy audit across all top-level sections, JavaScript syntax checks, static QA, desktop browser checks, and mobile browser checks.
+
+## 2026-06-05 - Gear Workspaces, Body Comparison, And Backpack Fit
+
+Status: completed and validated June 5, 2026.
+
+Goal: reorganize the Gear page so Sony/Sigma/Canon lens filters do not leave unrelated filter/support content stuck below them, and expand the page into photographer-relevant decision areas.
+
+Requested requirements:
+
+- Replace the old Gear filter strip with clearer areas for lenses, camera bodies, support, filters, and backpacks.
+- Keep Sony/Sigma/Canon comparison inside the lens area only.
+- Evaluate Sony Alpha 7R VI, Sony Alpha 1 II, Canon EOS R5 Mark II, and the current Canon EOS R6 Mark body.
+- Add backpack research and images for a one-body/three-lens kit and a two-body/four-lens kit.
+- Include Think Tank Photo as the likely intended "Stink Gear" brand unless corrected, Gura Gear, and three other modern backpacks.
+- Expand support gear to include batteries, chargers, headlamp, cards, backup, cleaning, weather, tools, and cold-weather workflow.
+
+Implementation notes:
+
+- Restructured Gear into workspaces: Lenses, Camera Bodies, Support, Filters, and Backpacks.
+- Moved Sony/Sigma E/Canon/Compare into a Lens-only subnav.
+- Added official-source body data for Sony Alpha 7R VI, Sony Alpha 1 II, Canon EOS R5 Mark II, and Canon EOS R6 Mark III.
+- Added backpack comparison cards for Think Tank Photo BackLight Long Lens, Gura Gear Kiboko V2.0 30L, Shimoda Action X50 V2, Lowepro Pro Trekker BP 650 AW II, and Vanguard ALTA SKY 68.
+- Used source-linked official product images for backpack visuals and documented them in the visual asset manifest.
+- Added an expanded support checklist and updated research/source documentation.
+- Bumped static asset versions to `20260605-gear-workspaces-v1`.
+
+Completion notes:
+
+- Validated with JavaScript syntax checks, static QA, `git diff --check`, desktop browser workspace-click testing, and 390px mobile browser testing.
+- Confirmed Camera Bodies, Support, Filters, and Backpacks no longer show the lens-only Sony/Sigma/Canon/Compare controls or lens scale controls.
+- Confirmed Backpack cards render five source-linked product images with no broken image fallbacks after lazy-loading, and no desktop or mobile page-level horizontal overflow.
+
+## 2026-06-05 - Navigation Editorial IA Review
+
+Status: completed and validated June 5, 2026.
+
+Goal: treat the site navigation as editorial strategy for serious photographers, not merely as generic UI labels.
+
+Requested requirements:
+
+- Evaluate the proposed navigation against the actual site content and audience needs.
+- Rename vague or generic labels such as Guide, Map, Photo Windows, Travel, Practice, Inspiration, Media, and Sources.
+- Move Gallery later so core planning content comes first.
+- Keep reader-facing external resources distinct from factual citations when the content supports both.
+- Update routes, page titles, headings, metadata, internal links, and implementation notes where needed.
+
+Implementation notes:
+
+- The live content supports Field Guide, Best Photo Windows, Map & Locations, Gear, Photo Techniques, Travel Logistics, Gallery, Shot Inspiration, External Resources, and References as top-level labels.
+- The live content does not support a plural Itineraries label yet because it contains one worked five-day plan, not separate 3-day, 4-day, and 5-day alternatives. The implemented label is 5-Day Itinerary.
+- Hash route IDs remain stable for compatibility with existing links, while semantic aliases such as `#field-guide`, `#best-photo-windows`, `#map-locations`, `#photo-techniques`, `#external-resources`, and `#references` resolve to the existing views.
+
+Completion notes:
+
+- Reordered and relabeled the live static navigation and standalone guide navigation as: Overview, Field Guide, 5-Day Itinerary, Best Photo Windows, Map & Locations, Gear, Photo Techniques, Travel Logistics, Gallery, Shot Inspiration, External Resources, References.
+- Updated section headings, no-script summary copy, deployment QA notes, complete-guide internal-link guidance, and `docs/site/information-architecture.md` with the editorial navigation review and rationale.
+- Added static QA assertions for navigation labels and order on both the app shell and standalone guide shell.
+- Added semantic hash aliases while preserving existing route IDs for compatibility.
+- Fixed a map cleanup edge case found during browser QA by cancelling pending Leaflet resize work, stopping active map animation before disposal, and disabling map fit-bound animation in tabbed views.
+- Bumped static asset versions to `20260605-navigation-ia-v2`.
+- Validated with worktree bootstrap, JavaScript syntax checks, static QA, desktop browser QA, 390px mobile browser QA, alias routing checks, no page-level horizontal overflow, no tab-label clipping, and no new browser console errors.
+
 ## 2026-06-05 - Sources Link Descriptions
 
 Status: completed and validated June 5, 2026.
@@ -55,7 +277,7 @@ Requested requirements:
 Completion notes:
 
 - Added `guideFraming` in `site/data.js` as the single source of truth for publication date, proposed trip window, and the general-guide/proposed-date message.
-- Added `renderGuideScopeNote()` in `site/app.js` and reused it across Overview, Gallery, Map, Itinerary, Photo Windows, Travel, Gear, Practice, Practice detail pages, Inspiration, Media, and Sources. The Guide article carries the same framing in its lead paragraph, and the fallback Guide view uses the shared note.
+- Added `renderGuideScopeNote()` in `site/app.js` and reused it across Overview, Map, Itinerary, Photo Windows, Travel, Gear, Practice overview, Inspiration, and Media. The Guide article carries the same framing in its lead paragraph, and the fallback Guide view uses the shared note.
 - Reworded Itinerary to say the date-specific plan is a worked example.
 - Updated the static Overview shell and standalone `complete-photographers-guide.html` with the same framing.
 - Updated the source Markdown for the standalone guide.
@@ -109,7 +331,7 @@ Requested requirements:
 Completion notes:
 
 - Removed the Gallery regeneration status block from the renderer.
-- Reworded the Gallery intro so it describes the LRA as a learning reference album instead of using production metrics.
+- Reworded the Gallery intro so it describes a visual study album instead of using production metrics or unexplained acronyms.
 - Removed the Gallery section eyebrow so production wording does not sit above the page title.
 - Removed unused desktop and mobile CSS for the deleted status strip.
 - Bumped the app and stylesheet asset versions to `20260605-gallery-title-v1`.
@@ -431,7 +653,7 @@ Requested requirements:
 Acceptance criteria:
 
 - The Travel page rental section clearly reads as a rental car section, not a rental workflow section.
-- The approved rental car illustration remains in use.
+- The selected rental car illustration remains in use.
 - The layout looks intentional and balanced on desktop and mobile.
 - The image, heading, caption, and guidance copy all use consistent rental-car framing.
 - Desktop and mobile QA confirm no awkward image placement, text crowding, broken image, label confusion, or horizontal overflow.
@@ -439,11 +661,11 @@ Acceptance criteria:
 Notes:
 
 - The route/airport illustration work is approved.
-- The rental car illustration is approved; the requested change is section labeling and layout, not regenerating that image.
+- The rental car illustration is staying in place; the requested change is section labeling and layout, not regenerating that image.
 
 Completion notes:
 
-- Kept the approved rental car illustration and rebuilt the Travel rental area as a dedicated rental car setup section.
+- Kept the selected rental car illustration and rebuilt the Travel rental area as a dedicated rental car setup section.
 - Removed "Rental workflow" framing from the section and changed the visual caption to "Generated rental car setup illustration."
 - Moved rental-car guidance into a clearer list beside the image so the practical booking/cargo decisions are easier to scan.
 - Validated desktop and 390px mobile: one rental car section, no "Rental workflow" copy, no page-level horizontal overflow.

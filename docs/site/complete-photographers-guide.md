@@ -1,6 +1,6 @@
 # The Complete Photographer's Guide to Bosque del Apache
 
-Updated June 5, 2026. This is a general Bosque del Apache photography guide for any reader. The worked example uses proposed trip dates of December 6-12, 2026; recheck date-specific sunrise, sunset, access, lodging, pricing, and field conditions for your own dates. Current logistics are verified against official or current sources as of June 3, 2026 and should be rechecked before travel.
+Updated June 5, 2026. Use this as a general Bosque del Apache photography guide, then adapt the dated example to your own trip. The example window is December 6-12, 2026; recheck sunrise, sunset, access, lodging, pricing, and field conditions for your own travel dates. Current logistics are verified against official or current sources as of June 3, 2026 and should be rechecked before travel.
 
 Bosque del Apache National Wildlife Refuge is one of North America's great winter wildlife photography places because it combines spectacle with access. In a single cold morning you can photograph sandhill cranes standing in shallow water before sunrise, snow geese lifting in a white wall of wings, ducks sliding through managed wetlands, harriers quartering low over fields, cottonwoods along the Rio Grande, and desert mountains catching first light. The reason it works so well for photographers is not just that the birds are present. It is that Bosque is a managed refuge with wetlands, crop fields, auto-tour roads, viewing decks, and repeatable dawn and dusk movement.
 
@@ -269,14 +269,14 @@ Verify before leaving home: FWS hours, fees, closures, roads, maps, water condit
 ## Recommended Internal Links
 
 - Overview: link to the main planning dashboard in `site/index.html`.
-- Map: link to the Map workspace for Flight Deck, North Loop, South Loop, Dabbler Deck, Willow Deck, Farm Deck, crane ponds, food/fuel, and lodging pins.
-- Itinerary: link to the five-day Dec. 6-12, 2026 plan in `docs/research/itinerary.md`.
-- Photo Windows: link to sunrise, mid-morning, and sunset location rankings from `docs/research/photography-spots.md`.
+- Map & Locations: link to the map workspace for Flight Deck, North Loop, South Loop, Dabbler Deck, Willow Deck, Farm Deck, crane ponds, food/fuel, and lodging pins.
+- 5-Day Itinerary: link to the five-day Dec. 6-12, 2026 plan in `docs/research/itinerary.md`.
+- Best Photo Windows: link to sunrise, mid-morning, and sunset location rankings from `docs/research/photography-spots.md`.
 - Gear: link to `docs/research/lenses-and-field-setup.md`.
-- Practice: link to `docs/research/practice-techniques.md`.
-- Lodging: link to `docs/research/lodging.md`.
-- Inspiration: link to `docs/research/inspiration-photos.md`.
-- Sources: link to `docs/research/sources.md` and `docs/research/complete-photographers-guide-source-audit.md`.
+- Photo Techniques: link to `docs/research/practice-techniques.md`.
+- Travel Logistics: link to `docs/research/lodging.md`.
+- Shot Inspiration: link to `docs/research/inspiration-photos.md` and include the nested Gallery visual study album.
+- Resources & References: link to reader-facing resources plus `docs/research/sources.md` and `docs/research/complete-photographers-guide-source-audit.md`.
 
 ## Suggested SEO
 

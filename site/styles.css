@@ -3058,6 +3058,118 @@ main {
   grid-template-columns: 1fr;
 }
 
+.gear-workspace {
+  display: grid;
+  gap: 18px;
+}
+
+.gear-workspace-tabs {
+  margin-bottom: 22px;
+}
+
+.lens-system-tabs {
+  margin-top: 4px;
+}
+
+.gear-kit-grid,
+.gear-filter-drills,
+.camera-comparison-table {
+  margin-top: 18px;
+}
+
+.camera-body-grid,
+.support-checklist-grid,
+.backpack-grid {
+  display: grid;
+  gap: 16px;
+}
+
+.camera-body-grid,
+.support-checklist-grid {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+}
+
+.camera-body-card,
+.support-checklist-card,
+.backpack-card {
+  border: 1px solid var(--line-soft);
+  border-radius: 8px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.camera-body-card,
+.support-checklist-card {
+  padding: 16px;
+}
+
+.camera-body-card-header {
+  min-height: 118px;
+}
+
+.gear-verdict {
+  border-left: 2px solid var(--accent);
+  margin: 12px 0;
+  padding-left: 12px;
+  color: var(--text);
+}
+
+.camera-comparison-table .comparison-table {
+  min-width: 1180px;
+}
+
+.backpack-decision {
+  margin-bottom: 4px;
+}
+
+.backpack-grid {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 430px), 1fr));
+}
+
+.backpack-card {
+  display: grid;
+  grid-template-columns: minmax(210px, 0.42fr) minmax(0, 1fr);
+  gap: 16px;
+  padding: 16px;
+}
+
+.backpack-card .gear-photo {
+  align-self: start;
+  margin-bottom: 0;
+}
+
+.backpack-card-copy {
+  min-width: 0;
+}
+
+.backpack-fit-grid {
+  display: grid;
+  gap: 8px;
+  margin: 14px 0;
+}
+
+.backpack-fit-grid div {
+  border: 1px solid var(--line-soft);
+  border-radius: 8px;
+  background: var(--surface-soft);
+  padding: 10px;
+}
+
+.backpack-fit-grid dt {
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.backpack-fit-grid dd {
+  margin: 5px 0 0;
+  color: var(--text);
+  font-size: 0.88rem;
+  line-height: 1.45;
+}
+
 .gear-detail-card {
   display: grid;
   grid-template-columns: minmax(240px, 0.36fr) minmax(0, 1fr);
@@ -3411,7 +3523,8 @@ main {
   .rights-callout,
   .filter-practice-layout,
   .practice-teaching-card,
-  .practice-detail-hero {
+  .practice-detail-hero,
+  .backpack-card {
     grid-template-columns: 1fr;
   }
 
@@ -3762,6 +3875,10 @@ main {
     min-width: 0;
     border-collapse: separate;
     border-spacing: 0 12px;
+  }
+
+  .camera-comparison-table .comparison-table {
+    min-width: 0;
   }
 
   .comparison-table thead {

@@ -61,7 +61,7 @@ function renderStandaloneFrameGrid(parentId, options = {}) {
   const classes = ["visual-frame-grid", options.className || "", options.compact ? "is-compact" : ""]
     .filter(Boolean)
     .join(" ");
-  return `<div class="${classes}" aria-label="${options.ariaLabel || "Standalone generated image examples"}">
+  return `<div class="${classes}" aria-label="${options.ariaLabel || "Planning image examples"}">
     ${ids
       .map((id, index) =>
         renderStandaloneFrameCard(id, {
@@ -80,7 +80,7 @@ function renderGeneratedPreview(id, options = {}) {
   const visual = visualById.get(id) || generatedVisuals[0];
   const classes = ["planning-preview", options.className || ""].filter(Boolean).join(" ");
   const caption = options.caption || visual.caption;
-  const label = options.label || "Generated planning preview";
+  const label = options.label || "Planning preview";
   return `<figure class="${classes}">
     <img src="${visual.src}" alt="${visual.alt}" width="1536" height="1024" loading="${options.loading || "lazy"}" decoding="async" />
     <figcaption>
@@ -215,13 +215,13 @@ function renderAirportRouteMap() {
       <span class="visual-expand-cue">Open full image</span>
     </button>
     <figcaption>
-      <span>Generated travel illustration</span>
+      <span>Travel planning illustration</span>
       ${visual.caption} SFO, OAK, SJC, ABQ, Socorro, and Bosque labels are site-rendered for accuracy.
     </figcaption>
   </figure>`;
 }
 
-function renderVisualMini(id, note = "Generated planning preview") {
+function renderVisualMini(id, note = "Planning preview") {
   const visual = visualById.get(id) || generatedVisuals[0];
   return `<div class="visual-mini">
     <img src="${visual.src}" alt="${visual.alt}" width="1920" height="1080" loading="lazy" decoding="async" />
@@ -301,7 +301,7 @@ function renderOverview() {
       <div class="hero-copy">
         <p class="eyebrow">Field plan</p>
         <h2>Bosque del Apache <span class="hero-date">Publication date: June 5, 2026</span></h2>
-        <p>A classic five-day photography field guide for Bosque del Apache National Wildlife Refuge, organized around sunrise, mid-morning, and sunset field decisions. The example trip window can adapt to water, wind, crowds, and bird movement; have the $5 daily private vehicle entrance fee or pass ready before dawn.</p>
+        <p>A five-day photography field guide for Bosque del Apache National Wildlife Refuge, organized around sunrise, mid-morning, and sunset field decisions. Use the dated example as a field rhythm, then adjust it for water, wind, crowds, and bird movement. Have the $5 daily private vehicle entrance fee or pass ready before dawn.</p>
         <div class="hero-actions">
           <button class="button-link" data-jump="itinerary">Open itinerary</button>
           <button class="button-link secondary" data-jump="map">Check map</button>
@@ -342,23 +342,28 @@ function renderOverview() {
     </section>`;
 }
 
-function renderGallery() {
-  const root = document.querySelector("#gallery");
+const shotInspirationGalleryExcludedGroups = new Set(["travel-workflow"]);
+
+function renderGalleryStudySection() {
   const regeneratedGroups = generatedVisuals
+    .filter((group) => !shotInspirationGalleryExcludedGroups.has(group.id))
     .map((group) => ({
       ...group,
       frames: regeneratedGalleryImageGroups[group.id] || [],
     }))
     .filter((group) => group.frames.length);
-  const pendingGroups = generatedVisuals.filter((group) => !regeneratedGalleryImageGroups[group.id]);
-  root.innerHTML = `
-    <div class="section-title">
+  const pendingGroups = generatedVisuals.filter(
+    (group) => !shotInspirationGalleryExcludedGroups.has(group.id) && !regeneratedGalleryImageGroups[group.id]
+  );
+
+  return `<section class="inspiration-gallery-section" id="gallery-study-album">
+    <div class="section-title compact-title">
       <div>
-        <h2>Gallery</h2>
+        <p class="eyebrow">Gallery</p>
+        <h3>Visual study album</h3>
       </div>
-      <p>The LRA is a learning reference album: a set of generated visual examples that turns the shot plan into something you can study before the trip. Use it to recognize light, subject behavior, field positions, lens choices, and technique tradeoffs before comparing those ideas with real conditions at Bosque.</p>
+      <p>The gallery is a visual study album for the shot plan. Use these planning examples to practice reading light, subject behavior, field positions, lens choices, and technique tradeoffs before comparing the ideas with real conditions at Bosque.</p>
     </div>
-    ${renderGuideScopeNote()}
     ${regeneratedGroups
       .map(
         (group) => `<section class="gallery-mosaic-section" aria-labelledby="gallery-${group.id}">
@@ -388,9 +393,9 @@ function renderGallery() {
       .join("")}
     ${pendingGroups.length
       ? `<section class="panel gallery-generation-queue">
-          <p class="eyebrow">Still being corrected</p>
-          <h3>Remaining Gallery stories</h3>
-          <p class="card-copy">These groups are intentionally excluded from the active Gallery until their individual 1080p generated photos replace the old split fragments.</p>
+          <p class="eyebrow">Planned additions</p>
+          <h3>More visual study sets</h3>
+          <p class="card-copy">These story groups will join the gallery when they have complete, high-resolution planning images that match the rest of the guide.</p>
           <div class="gallery-pending-list">
             ${pendingGroups
               .map((group) => `<span>${group.title}</span>`)
@@ -398,8 +403,7 @@ function renderGallery() {
           </div>
         </section>`
       : ""}
-    ${renderVisualLightbox("gallery-lightbox-title")}`;
-  setupVisualLightbox(root);
+  </section>`;
 }
 
 function setupVisualLightbox(root) {
@@ -480,7 +484,7 @@ async function renderGuide() {
     <div class="section-title">
       <div>
         <p class="eyebrow">Field guide</p>
-        <h2>Complete Photographer's Guide</h2>
+        <h2>Field Guide</h2>
       </div>
       <p>A long-form, practical guide to seasons, field positions, behavior, settings, gear, scouting, ethics, logistics, and shot planning.</p>
     </div>
@@ -506,7 +510,7 @@ async function renderGuide() {
       <div class="section-title">
         <div>
           <p class="eyebrow">Field guide</p>
-          <h2>Complete Photographer's Guide</h2>
+          <h2>Field Guide</h2>
         </div>
         <p>The guide is available as a standalone page in this Bosque project.</p>
       </div>
@@ -592,13 +596,14 @@ async function renderMapInto(rootId, places, options = {}) {
   };
 
   const getFitBoundsOptions = () => {
-    if (!options.showPinLabels) return { padding: [28, 28] };
+    if (!options.showPinLabels) return { padding: [28, 28], animate: false };
     const isCompactMap = window.matchMedia?.("(max-width: 680px)")?.matches;
     const horizontalPadding = isCompactMap ? 88 : 172;
     const verticalPadding = isCompactMap ? 38 : 44;
     return {
       paddingTopLeft: [horizontalPadding, verticalPadding],
       paddingBottomRight: [horizontalPadding, verticalPadding],
+      animate: false,
     };
   };
 
@@ -628,13 +633,20 @@ async function renderMapInto(rootId, places, options = {}) {
   map.fitBounds(bounds, getFitBoundsOptions());
 
   let resizeHandler;
+  let clearResizeTimer = () => {};
   if (options.showPinLabels) {
     let wasCompactMap = window.matchMedia?.("(max-width: 680px)")?.matches;
     let resizeTimer;
-    resizeHandler = () => {
+    clearResizeTimer = () => {
       window.clearTimeout(resizeTimer);
+      resizeTimer = undefined;
+    };
+    resizeHandler = () => {
+      clearResizeTimer();
       resizeTimer = window.setTimeout(() => {
-        map.invalidateSize();
+        resizeTimer = undefined;
+        if (!root.isConnected || (options.globalName && window[options.globalName]?.map !== map)) return;
+        map.invalidateSize({ pan: false });
         const isCompactMap = window.matchMedia?.("(max-width: 680px)")?.matches;
         if (isCompactMap !== wasCompactMap) {
           map.fitBounds(bounds, getFitBoundsOptions());
@@ -656,7 +668,7 @@ async function renderMapInto(rootId, places, options = {}) {
   });
 
   if (options.globalName) {
-    window[options.globalName] = { map, bounds, resizeHandler };
+    window[options.globalName] = { map, bounds, resizeHandler, cleanup: clearResizeTimer };
   }
 }
 
@@ -666,9 +678,9 @@ async function renderMap() {
     <div class="section-title">
       <div>
         <p class="eyebrow">Photography-only map</p>
-        <h2>Refuge Shooting Map</h2>
+        <h2>Map &amp; Locations</h2>
       </div>
-      <p>Lodging has been removed from this map. This tab is for sunrise, mid-morning, sunset, field-position, and refuge-logistics decisions only.</p>
+      <p>Use this map for photography decisions: sunrise starts, mid-morning resets, sunset positions, field notes, and refuge logistics. Hotel distance belongs in Travel Logistics.</p>
     </div>
     ${renderGuideScopeNote()}
     <div id="photo-map-host"></div>`;
@@ -688,9 +700,9 @@ function renderItinerary() {
     <div class="section-title">
       <div>
         <p class="eyebrow">Calendar plan</p>
-        <h2>Itinerary</h2>
+        <h2>5-Day Itinerary</h2>
       </div>
-      <p>Worked example: arrive December 6, shoot five full days, and leave December 12. Each day includes the purpose of the day so the plan adapts cleanly to water, wind, crowds, and bird movement.</p>
+      <p>This dated example arrives December 6, photographs five full days, and leaves December 12. Each day has a clear purpose so the plan can bend around water, wind, crowds, and bird movement.</p>
     </div>
     ${renderGuideScopeNote()}
     <div class="day-tabs"></div>
@@ -765,9 +777,9 @@ function renderWindows() {
     <div class="section-title">
       <div>
         <p class="eyebrow">Choose by light</p>
-        <h2>Photo Windows</h2>
+        <h2>Best Photo Windows</h2>
       </div>
-      <p>Use this when conditions override the day-by-day itinerary. Each window now has purpose-built generated planning images and a calmer decision layout for field use.</p>
+      <p>Use this when conditions override the day-by-day itinerary. Each window pairs field decisions with planning images so you can choose by light, wind, subject behavior, and access.</p>
     </div>
     ${renderGuideScopeNote()}
     <div class="window-tabs">
@@ -801,7 +813,7 @@ function renderWindows() {
             </ul>
           </div>
         </div>
-        <div class="photo-window-visuals" aria-label="${windowName} purpose-built generated planning images">
+        <div class="photo-window-visuals" aria-label="${windowName} planning images">
           ${plan.visualIds
             .map((visualId) =>
               renderStandaloneFrameCard(visualId, {
@@ -852,7 +864,7 @@ async function renderTravel() {
     <div class="section-title">
       <div>
         <p class="eyebrow">Flights, car, hotels</p>
-        <h2>Travel</h2>
+        <h2>Travel Logistics</h2>
       </div>
       <p>Use Albuquerque as the practical airport, choose a car around dawn photography logistics, and keep Socorro as the photography-first hotel base.</p>
     </div>
@@ -889,13 +901,13 @@ async function renderTravel() {
     <section class="panel rental-car-section">
       ${renderTeachingPreview("travel-rental-car-cargo", {
         className: "rental-car-preview",
-        label: "Generated rental car illustration",
+        label: "Rental car planning illustration",
         loading: "lazy",
       })}
       <div class="rental-car-copy">
         <p class="eyebrow">Rental car setup</p>
         <h3>Book for cargo access, not status.</h3>
-        <p class="card-copy">The approved rental car illustration shows the practical decision: long lens protected, support reachable, water and layers visible, route notes handy, and valuables hidden when parked. Use it as a packing checklist before choosing the actual class at ABQ.</p>
+        <p class="card-copy">The rental car illustration shows the practical decision: long lens protected, support reachable, water and layers visible, route notes handy, and valuables hidden when parked. Use it as a packing checklist before choosing the actual class at ABQ.</p>
         <div class="rental-car-guidance-list">
           ${rentalCarGuidance
             .map(
@@ -917,9 +929,9 @@ async function renderTravel() {
     </div>
     <section class="panel rights-callout">
       <div>
-        <p class="eyebrow">Hotel photo policy</p>
-        <h3>Reference-based previews here; real hotel photos stay linked.</h3>
-        <p class="card-copy">The lodging cards use generated previews grounded in checked hotel/property photo references, so the travel section has visual context without republishing copyrighted hotel imagery. Use the official gallery or property link on each card to inspect the literal rooms, exterior, and amenities before booking.</p>
+        <p class="eyebrow">Hotel visuals</p>
+        <h3>Use previews for workflow, official galleries for booking.</h3>
+        <p class="card-copy">The lodging cards use generated previews to show the photographer's problem: predawn departure, room setup, breakfast timing, parking, and charging space. Use the official gallery or property link on each card to inspect the actual rooms, exterior, and amenities before booking.</p>
       </div>
       ${renderStandaloneFrameCard("travel-workflow-01", {
         className: "callout-preview",
@@ -975,8 +987,17 @@ async function renderTravel() {
 
 function renderGear() {
   const root = document.querySelector("#gear");
-  const systems = ["Sony", "Sigma E", "Canon", "Support", "Compare"];
+  const workspaces = [
+    { id: "lenses", label: "Lenses" },
+    { id: "bodies", label: "Camera Bodies" },
+    { id: "support", label: "Support" },
+    { id: "filters", label: "Filters" },
+    { id: "backpacks", label: "Backpacks" },
+  ];
+  const lensSystems = ["Sony", "Sigma E", "Canon", "Compare"];
   const gearByName = (name) => gearItems.find((item) => item.name === name);
+  const lensItems = gearItems.filter((item) => item.system !== "Support");
+  const supportItems = gearItems.filter((item) => item.system === "Support");
   const lensCell = (item, label) => {
     if (!item) return `<td data-label="${label}">Not configured</td>`;
     return `<td data-label="${label}">
@@ -988,47 +1009,207 @@ function renderGear() {
       ${externalLink(item.source, "Specs")}
     </td>`;
   };
-  root.innerHTML = `
-    <div class="section-title">
+
+  const renderGearDetailCards = (items) => `<div class="gear-detail-grid">
+    ${items
+      .map(
+        (item) => `<article class="gear-detail-card">
+          ${renderGearPhoto(item)}
+          <div class="gear-detail-copy">
+            <p class="eyebrow">${item.system}</p>
+            <h3>${item.name}</h3>
+            <p class="card-copy">${item.role}</p>
+            <dl class="spec-grid">
+              <div><dt>Length</dt><dd>${item.specs.length}</dd></div>
+              <div><dt>Weight</dt><dd>${item.specs.weight}</dd></div>
+              <div><dt>Min focus</dt><dd>${item.specs.minFocus}</dd></div>
+              <div><dt>Filter</dt><dd>${item.specs.filter}</dd></div>
+              <div><dt>Aperture</dt><dd>${item.specs.aperture}</dd></div>
+              <div><dt>TC</dt><dd>${item.specs.teleconverter}</dd></div>
+              <div><dt>Introduced</dt><dd>${item.specs.introduced}</dd></div>
+              <div><dt>Stabilization</dt><dd>${item.specs.stabilization}</dd></div>
+              <div><dt>Zoom / focus</dt><dd>${item.specs.zoomFocus}</dd></div>
+              <div><dt>Weather</dt><dd>${item.specs.weather}</dd></div>
+            </dl>
+            <p>${item.note}</p>
+            <div class="tag-row">
+              ${externalLink(item.photo, item.photoLabel)}
+              ${externalLink(item.source, "Specs")}
+            </div>
+          </div>
+        </article>`
+      )
+      .join("")}
+  </div>`;
+
+  const renderLensComparison = () => `<div class="comparison-table-wrap">
+    <table class="comparison-table">
+      <thead>
+        <tr>
+          <th>Category</th>
+          <th>Sony</th>
+          <th>Canon</th>
+          <th>Takeaway</th>
+        </tr>
+      </thead>
+      <tbody>
+        ${gearComparisonRows
+          .map((row) => {
+            const sony = gearByName(row.sony);
+            const canon = gearByName(row.canon);
+            return `<tr>
+              <th scope="row">${row.category}</th>
+              ${lensCell(sony, "Sony")}
+              ${lensCell(canon, "Canon")}
+              <td data-label="Takeaway">${row.note}</td>
+            </tr>`;
+          })
+          .join("")}
+      </tbody>
+    </table>
+  </div>
+  <p class="muted comparison-note">Weather sealing language is manufacturer wording, not a waterproof guarantee. For Bosque, internal-zoom lenses reduce exposed barrel movement in dust and blowing grit; extending zooms are still viable but should be wiped before retracting.</p>`;
+
+  const renderKitCards = () => `<div class="grid-4 gear-kit-grid">
+    ${kitRecommendations
+      .map(
+        (card) => `<article class="gear-card">
+          <h3>${card.title}</h3>
+          <p class="card-copy">${card.summary}</p>
+          <ul class="kit-list">${card.items.map((item) => `<li>${item}</li>`).join("")}</ul>
+        </article>`
+      )
+      .join("")}
+  </div>`;
+
+  const renderLensWorkspaceShell = () => `<section class="gear-workspace" data-gear-panel="lenses">
+    <div class="section-title compact-title">
       <div>
-        <p class="eyebrow">Camera kit</p>
-        <h2>Gear</h2>
+        <p class="eyebrow">Lenses</p>
+        <h2>Compare the glass first</h2>
       </div>
-      <p>Each lens and support item includes size, weight, aperture, stabilization, weather notes, minimum focusing distance, teleconverter support, and year introduced where applicable.</p>
+      <p>Start with the glass because the lenses determine reach, field position, filter sizes, backpack fit, and whether a second body is worth carrying.</p>
     </div>
-    ${renderGuideScopeNote()}
     <section class="panel media-decision">
       <div>
-        <p class="eyebrow">Sony and Sigma compatibility</p>
-        <h3>Sony Alpha 7R VI is the current A7R name to use.</h3>
-        <p class="card-copy">Sony's official support pages list the Alpha 7R VI as model ILCE-7RM6 with E-mount. Sigma's full-frame DG DN lenses listed here are available in Sony E-mount, but Sigma's TC-1411 and TC-2011 teleconverters are L-Mount-only, so the Sony E-mount Sigma options should be evaluated without a teleconverter.</p>
+        <p class="eyebrow">Mount compatibility</p>
+        <h3>Separate lens fit from teleconverter support.</h3>
+        <p class="card-copy">The Sony body in this plan is an E-mount camera, and Sigma's full-frame DG DN lenses listed here are available for Sony E-mount. Sigma's TC-1411 and TC-2011 teleconverters are L-Mount-only, so evaluate the Sony E-mount Sigma lenses without a Sigma teleconverter path.</p>
       </div>
       <div class="media-counts">
-        <span><b>${gearItems.length}</b> gear items</span>
-        <span><b>${gearCheckedDate}</b> Sony/Sigma check</span>
+        <span><b>${lensItems.length}</b> lens and TC items</span>
+        <span><b>${gearCheckedDate}</b> source review</span>
       </div>
     </section>
-    <div class="filter-row gear-filters">
-      ${systems.map((system, index) => `<button class="chip ${index === 0 ? "is-active" : ""}" data-system="${system}">${system}</button>`).join("")}
+    <div class="filter-row lens-system-tabs">
+      ${lensSystems
+        .map((system, index) => `<button class="chip ${index === 0 ? "is-active" : ""}" data-lens-system="${system}">${system}</button>`)
+        .join("")}
     </div>
-    <div class="gear-results"></div>
+    <div class="lens-results"></div>
     <div class="section-title compact-title support-title">
       <div>
         <p class="eyebrow">Pack guidance</p>
-        <h2>Lens and filter decisions</h2>
+        <h2>Lens decisions</h2>
       </div>
-      <p>These recommendations are tuned for Bosque first and Tanzania second.</p>
+      <p>These recommendations start with Bosque field use, with notes where the same kit overlaps future safari travel.</p>
     </div>
-    <div class="grid-4">
-      ${kitRecommendations
+    ${renderKitCards()}
+    <div class="gear-scale-area">
+      ${renderGearScaleControls(new Set(gearScaleBrands.map((brand) => brand.system)))}
+      <div class="lens-length-scale-host"></div>
+      <div class="lens-weight-scale-host"></div>
+    </div>
+  </section>`;
+
+  const renderBodyWorkspace = () => `<section class="gear-workspace" data-gear-panel="bodies">
+    <div class="section-title compact-title">
+      <div>
+        <p class="eyebrow">Camera body</p>
+        <h2>Resolution, speed, and battery planning</h2>
+      </div>
+      <p>The body choice affects crop latitude, flight capture, battery packing, card buying, and whether a second body prevents dust-sensitive lens swaps.</p>
+    </div>
+    <div class="camera-body-grid">
+      ${cameraBodies
         .map(
-          (card) => `<article class="gear-card">
-            <h3>${card.title}</h3>
-            <p class="card-copy">${card.summary}</p>
-            <ul class="kit-list">${card.items.map((item) => `<li>${item}</li>`).join("")}</ul>
+          (body) => `<article class="camera-body-card">
+            <div class="camera-body-card-header">
+              <p class="eyebrow">${body.system} / ${body.model}</p>
+              <h3>${body.name}</h3>
+              <p class="card-copy">${body.role}</p>
+            </div>
+            <dl class="spec-grid">
+              ${Object.entries(body.specs)
+                .map(([key, value]) => `<div><dt>${key}</dt><dd>${value}</dd></div>`)
+                .join("")}
+            </dl>
+            <p>${body.note}</p>
+            <p class="gear-verdict"><b>Verdict:</b> ${body.verdict}</p>
+            <div class="tag-row">${externalLink(body.source, "Official specs")}</div>
           </article>`
         )
         .join("")}
+    </div>
+    <div class="comparison-table-wrap camera-comparison-table">
+      <table class="comparison-table">
+        <thead>
+          <tr>
+            <th>Decision</th>
+            <th>Sony A7R VI</th>
+            <th>Sony Alpha 1 II</th>
+            <th>Canon R5 Mark II</th>
+            <th>Canon R6 Mark III</th>
+            <th>Takeaway</th>
+          </tr>
+        </thead>
+        <tbody>
+          ${cameraBodyComparisonRows
+            .map(
+              (row) => `<tr>
+                <th scope="row">${row.category}</th>
+                <td data-label="Sony A7R VI">${row.sonyA7r}</td>
+                <td data-label="Sony Alpha 1 II">${row.sonyA1}</td>
+                <td data-label="Canon R5 Mark II">${row.canonR5}</td>
+                <td data-label="Canon R6 Mark III">${row.canonR6}</td>
+                <td data-label="Takeaway">${row.takeaway}</td>
+              </tr>`
+            )
+            .join("")}
+        </tbody>
+      </table>
+    </div>
+  </section>`;
+
+  const renderSupportWorkspace = () => `<section class="gear-workspace" data-gear-panel="support">
+    <div class="section-title compact-title">
+      <div>
+        <p class="eyebrow">Support</p>
+        <h2>Everything that keeps the kit working</h2>
+      </div>
+      <p>Power, cards, light, cleaning, cold-weather comfort, and mechanical support are field success gear, not afterthoughts.</p>
+    </div>
+    ${renderGearDetailCards(supportItems)}
+    <div class="support-checklist-grid">
+      ${supportGearChecklist
+        .map(
+          (group) => `<article class="support-checklist-card">
+            <p class="eyebrow">${group.priority}</p>
+            <h3>${group.category}</h3>
+            <ul class="kit-list">${group.items.map((item) => `<li>${item}</li>`).join("")}</ul>
+          </article>`
+        )
+        .join("")}
+    </div>
+  </section>`;
+
+  const renderFiltersWorkspace = () => `<section class="gear-workspace" data-gear-panel="filters">
+    <div class="section-title compact-title">
+      <div>
+        <p class="eyebrow">Filters</p>
+        <h2>Sizes, use cases, and restraint</h2>
+      </div>
+      <p>Filters are handling tools for glare, weather, and intentional blur. For fast dawn bird action, the default remains hood on and no filter unless conditions justify it.</p>
     </div>
     <div class="grid-4 filter-guidance">
       ${filterGuidance
@@ -1040,105 +1221,158 @@ function renderGear() {
         )
         .join("")}
     </div>
-    <div class="gear-scale-area">
-      ${renderGearScaleControls(new Set(gearScaleBrands.map((brand) => brand.system)))}
-      <div class="lens-length-scale-host"></div>
-      <div class="lens-weight-scale-host"></div>
-    </div>`;
+    <div class="filter-drill-grid gear-filter-drills">
+      ${filterPracticePlan
+        .map(
+          (item) => `<article class="filter-drill-card">
+            <h3>${item.title}</h3>
+            <p><b>Bring:</b> ${item.bring}</p>
+            <p><b>Rehearse:</b> ${item.rehearse}</p>
+            <p class="muted"><b>Avoid:</b> ${item.avoid}</p>
+          </article>`
+        )
+        .join("")}
+    </div>
+  </section>`;
+
+  const renderBackpackWorkspace = () => `<section class="gear-workspace" data-gear-panel="backpacks">
+    <div class="section-title compact-title">
+      <div>
+        <p class="eyebrow">Backpacks</p>
+        <h2>Carry the actual long-lens kit</h2>
+      </div>
+      <p>Each option below answers a real carry problem: a mounted long lens, a disciplined travel kit, a two-body wildlife kit, or maximum capacity with laptop and support gear.</p>
+    </div>
+    <section class="panel media-decision backpack-decision">
+      <div>
+        <p class="eyebrow">Buying decision</p>
+        <h3>Match the bag to the body/lens budget.</h3>
+        <p class="card-copy"><b>One body and three lenses:</b> Gura Gear Kiboko 30L is the cleanest travel default; Think Tank wins if the mounted long lens is the whole point. <b>Two bodies and four lenses:</b> Vanguard ALTA SKY 68 and Lowepro Pro Trekker BP 650 AW II are the strongest capacity answers.</p>
+      </div>
+      <div class="media-counts">
+        <span><b>${backpackOptions.length}</b> backpacks</span>
+        <span><b>${gearCheckedDate}</b> fit review</span>
+      </div>
+    </section>
+    <div class="backpack-grid">
+      ${backpackOptions
+        .map(
+          (pack) => `<article class="backpack-card">
+            ${renderGearPhoto({
+              name: `${pack.maker} ${pack.name}`,
+              photo: pack.source,
+              photoLabel: pack.photoLabel,
+              image: pack.image,
+            })}
+            <div class="backpack-card-copy">
+              <p class="eyebrow">${pack.maker} / ${pack.type}</p>
+              <h3>${pack.name}</h3>
+              <p class="card-copy">${pack.bestFor}</p>
+              <dl class="backpack-fit-grid">
+                <div><dt>Verified fit</dt><dd>${pack.verifiedFit}</dd></div>
+                <div><dt>1 body / 3 lenses</dt><dd>${pack.oneBodyThreeLenses}</dd></div>
+                <div><dt>2 bodies / 4 lenses</dt><dd>${pack.twoBodiesFourLenses}</dd></div>
+              </dl>
+              <p class="gear-verdict"><b>Verdict:</b> ${pack.verdict}</p>
+              <div class="tag-row">${externalLink(pack.source, "Official product page")}</div>
+            </div>
+          </article>`
+        )
+        .join("")}
+    </div>
+  </section>`;
+
+  root.innerHTML = `
+    <div class="section-title">
+      <div>
+        <p class="eyebrow">Camera kit</p>
+        <h2>Gear</h2>
+      </div>
+      <p>Build the kit in the same order you would pack for the field: lenses, camera body, support, filters, and backpack capacity.</p>
+    </div>
+    ${renderGuideScopeNote()}
+    <section class="panel media-decision">
+      <div>
+        <p class="eyebrow">Field kit strategy</p>
+        <h3>Make one gear decision at a time.</h3>
+        <p class="card-copy">A Bosque kit succeeds when each part has a job: the long lens handles birds, the wider lens protects scale and place, support keeps the setup stable, filters stay selective, and the backpack fits the actual body/lens budget.</p>
+      </div>
+      <div class="media-counts">
+        <span><b>${lensItems.length}</b> optical items</span>
+        <span><b>${cameraBodies.length}</b> bodies</span>
+        <span><b>${backpackOptions.length}</b> backpacks</span>
+        <span><b>${gearCheckedDate}</b> source review</span>
+      </div>
+    </section>
+    <div class="filter-row gear-workspace-tabs">
+      ${workspaces
+        .map((workspace, index) => `<button class="chip ${index === 0 ? "is-active" : ""}" data-gear-workspace="${workspace.id}">${workspace.label}</button>`)
+        .join("")}
+    </div>
+    <div class="gear-results"></div>`;
 
   const results = root.querySelector(".gear-results");
-  const draw = (system) => {
-    if (system === "Compare") {
-      results.innerHTML = `<div class="comparison-table-wrap">
-        <table class="comparison-table">
-          <thead>
-            <tr>
-              <th>Category</th>
-              <th>Sony</th>
-              <th>Canon</th>
-              <th>Takeaway</th>
-            </tr>
-          </thead>
-          <tbody>
-            ${gearComparisonRows
-              .map((row) => {
-                const sony = gearByName(row.sony);
-                const canon = gearByName(row.canon);
-                return `<tr>
-                  <th scope="row">${row.category}</th>
-                  ${lensCell(sony, "Sony")}
-                  ${lensCell(canon, "Canon")}
-                  <td data-label="Takeaway">${row.note}</td>
-                </tr>`;
-              })
-              .join("")}
-          </tbody>
-        </table>
-      </div>
-      <p class="muted comparison-note">Weather sealing language is manufacturer wording, not a waterproof guarantee. For Bosque, internal-zoom lenses reduce exposed barrel movement in dust and blowing grit; extending zooms are still viable but should be wiped before retracting.</p>`;
+
+  const attachLensWorkspace = () => {
+    results.innerHTML = renderLensWorkspaceShell();
+    const lensResults = results.querySelector(".lens-results");
+    const drawLensSystem = (system) => {
+      lensResults.innerHTML =
+        system === "Compare" ? renderLensComparison() : renderGearDetailCards(gearItems.filter((item) => item.system === system));
+    };
+
+    results.querySelectorAll("[data-lens-system]").forEach((button) => {
+      button.addEventListener("click", () => {
+        results.querySelectorAll("[data-lens-system]").forEach((item) => item.classList.remove("is-active"));
+        button.classList.add("is-active");
+        drawLensSystem(button.dataset.lensSystem);
+      });
+    });
+
+    const scaleState = new Set(gearScaleBrands.map((brand) => brand.system));
+    const lengthHost = results.querySelector(".lens-length-scale-host");
+    const weightHost = results.querySelector(".lens-weight-scale-host");
+    const drawScales = () => {
+      lengthHost.innerHTML = renderLensLengthScale(scaleState);
+      weightHost.innerHTML = renderLensWeightScale(scaleState);
+    };
+    results.querySelectorAll("[data-scale-brand]").forEach((checkbox) => {
+      checkbox.addEventListener("change", () => {
+        if (checkbox.checked) {
+          scaleState.add(checkbox.dataset.scaleBrand);
+        } else {
+          scaleState.delete(checkbox.dataset.scaleBrand);
+        }
+        drawScales();
+      });
+    });
+    drawLensSystem("Sony");
+    drawScales();
+  };
+
+  const drawWorkspace = (workspaceId) => {
+    if (workspaceId === "lenses") {
+      attachLensWorkspace();
       return;
     }
-    const items = gearItems.filter((item) => item.system === system);
-    results.innerHTML = `<div class="gear-detail-grid">
-      ${items
-        .map((item) => {
-          return `<article class="gear-detail-card">
-            ${renderGearPhoto(item)}
-            <div class="gear-detail-copy">
-              <p class="eyebrow">${item.system}</p>
-              <h3>${item.name}</h3>
-              <p class="card-copy">${item.role}</p>
-              <dl class="spec-grid">
-                <div><dt>Length</dt><dd>${item.specs.length}</dd></div>
-                <div><dt>Weight</dt><dd>${item.specs.weight}</dd></div>
-                <div><dt>Min focus</dt><dd>${item.specs.minFocus}</dd></div>
-                <div><dt>Filter</dt><dd>${item.specs.filter}</dd></div>
-                <div><dt>Aperture</dt><dd>${item.specs.aperture}</dd></div>
-                <div><dt>TC</dt><dd>${item.specs.teleconverter}</dd></div>
-                <div><dt>Introduced</dt><dd>${item.specs.introduced}</dd></div>
-                <div><dt>Stabilization</dt><dd>${item.specs.stabilization}</dd></div>
-                <div><dt>Zoom / focus</dt><dd>${item.specs.zoomFocus}</dd></div>
-                <div><dt>Weather</dt><dd>${item.specs.weather}</dd></div>
-              </dl>
-              <p>${item.note}</p>
-              <div class="tag-row">
-                ${externalLink(item.photo, item.photoLabel)}
-                ${externalLink(item.source, "Specs")}
-              </div>
-            </div>
-          </article>`;
-        })
-        .join("")}
-    </div>`;
+    const workspaceRenderers = {
+      bodies: renderBodyWorkspace,
+      support: renderSupportWorkspace,
+      filters: renderFiltersWorkspace,
+      backpacks: renderBackpackWorkspace,
+    };
+    results.innerHTML = (workspaceRenderers[workspaceId] || renderBodyWorkspace)();
   };
 
-  root.querySelectorAll(".gear-filters .chip").forEach((button) => {
+  root.querySelectorAll("[data-gear-workspace]").forEach((button) => {
     button.addEventListener("click", () => {
-      root.querySelectorAll(".gear-filters .chip").forEach((item) => item.classList.remove("is-active"));
+      root.querySelectorAll("[data-gear-workspace]").forEach((item) => item.classList.remove("is-active"));
       button.classList.add("is-active");
-      draw(button.dataset.system);
+      drawWorkspace(button.dataset.gearWorkspace);
     });
   });
 
-  const scaleState = new Set(gearScaleBrands.map((brand) => brand.system));
-  const lengthHost = root.querySelector(".lens-length-scale-host");
-  const weightHost = root.querySelector(".lens-weight-scale-host");
-  const drawScales = () => {
-    lengthHost.innerHTML = renderLensLengthScale(scaleState);
-    weightHost.innerHTML = renderLensWeightScale(scaleState);
-  };
-  root.querySelectorAll("[data-scale-brand]").forEach((checkbox) => {
-    checkbox.addEventListener("change", () => {
-      if (checkbox.checked) {
-        scaleState.add(checkbox.dataset.scaleBrand);
-      } else {
-        scaleState.delete(checkbox.dataset.scaleBrand);
-      }
-      drawScales();
-    });
-  });
-  drawScales();
-  draw("Sony");
+  drawWorkspace("lenses");
 }
 
 function renderPractice() {
@@ -1149,9 +1383,9 @@ function renderPractice() {
     <div class="section-title">
       <div>
         <p class="eyebrow">Beginning to end</p>
-        <h2>Practice</h2>
+        <h2>Photo Techniques</h2>
       </div>
-      <p>A teaching hub for the nine pre-trip techniques. Open any card for the full lesson, and open any generated image for the full-size teaching view with lens, focal length, aperture, shutter speed, and technique notes.</p>
+      <p>A teaching hub for the nine skills to rehearse before travel. Open any lesson for practice steps, field checks, and a full-size planning image with camera-setting notes.</p>
     </div>
     ${renderGuideScopeNote()}
     <section class="panel">
@@ -1203,7 +1437,7 @@ function renderPractice() {
         <p class="eyebrow">1 to 9</p>
         <h2>Nine Technique Lessons</h2>
       </div>
-      <p>Each technique gets its own generated teaching image, practice steps, and success check on the main page. Open the deeper lesson when you want the same material in a focused view.</p>
+      <p>Each lesson connects a field problem with a concrete drill, success check, and planning image.</p>
     </div>
     <div class="practice-list practice-lesson-list">
       ${practiceModules
@@ -1278,13 +1512,12 @@ function renderPracticeDetail(index) {
 
   const lesson = visualLessons[practiceModule.visualId];
   root.innerHTML = `
-    <button class="button-link secondary practice-back-button" type="button" data-jump="practice">Back to Practice</button>
+    <button class="button-link secondary practice-back-button" type="button" data-jump="practice">Back to Photo Techniques</button>
     <section class="practice-detail-hero">
       <div class="practice-detail-copy">
         <p class="eyebrow">Technique ${index + 1} of ${practiceModules.length}</p>
         <h2>${practiceModule.title}</h2>
         <p>${practiceModule.goal}</p>
-        ${renderGuideScopeNote()}
         <dl class="visual-tech-meta practice-detail-meta">
           <div><dt>Lens</dt><dd>${lesson.lens}</dd></div>
           <div><dt>Focal length</dt><dd>${lesson.focalLength}</dd></div>
@@ -1317,7 +1550,7 @@ function renderPracticeDetail(index) {
       </article>
       <article class="panel">
         <p class="eyebrow">How to read the image</p>
-        <h3>Use the generated preview as a checklist.</h3>
+        <h3>Read the image as a field checklist.</h3>
         <p class="card-copy">${lesson.supposedLocation}</p>
         <p class="homework"><b>Look for:</b> whether the image gives you a repeatable target for stance, timing, exposure, motion, or workflow. The goal is not to copy the generated frame; it is to know what decision you are practicing.</p>
       </article>
@@ -1333,9 +1566,9 @@ function renderInspiration() {
       <div class="section-title">
         <div>
           <p class="eyebrow">Visual references</p>
-          <h2>Inspiration</h2>
+          <h2>Shot Inspiration</h2>
         </div>
-        <p>Thirty purpose-built generated images show the kinds of Bosque del Apache photographs to plan for: roosts, blast-offs, fly-ins, fields, wetlands, small subjects, weather, motion, and blue hour.</p>
+        <p>Thirty planning images show the kinds of Bosque del Apache photographs to plan for: roosts, blast-offs, fly-ins, fields, wetlands, small subjects, weather, motion, and blue hour.</p>
       </div>
       ${renderGuideScopeNote()}
       <div class="inspiration-feature-row">
@@ -1346,9 +1579,9 @@ function renderInspiration() {
           loading: "eager",
         })}
         <aside class="inspiration-feature-copy">
-          <p class="eyebrow">Generated planning set</p>
+          <p class="eyebrow">Planning image set</p>
           <h3>Use these as shot targets, not as proof of conditions.</h3>
-          <p class="card-copy">The images are rights-safe planning visuals created for this guide. Each one opens with scene notes, likely field position, technique, lens, focal length, aperture, shutter speed, and ISO.</p>
+        <p class="card-copy">The images are planning visuals created for this guide. Each one opens with scene notes, likely field position, technique, lens, focal length, aperture, shutter speed, and ISO.</p>
           <p class="card-copy">The set is intentionally broad: spectacle frames sit beside quiet habitat, fieldcraft, small birds, weather fallback, and motion studies so the page teaches a portfolio, not a single postcard.</p>
         </aside>
       </div>
@@ -1356,7 +1589,7 @@ function renderInspiration() {
     <section class="inspiration-generated-section">
       <div class="section-title compact-title">
         <div>
-          <p class="eyebrow">Generated Bosque shot targets</p>
+          <p class="eyebrow">Bosque shot targets</p>
           <h3>Thirty high-resolution inspiration images</h3>
         </div>
         <p>Open any image for full-size review and camera-setting notes.</p>
@@ -1377,8 +1610,8 @@ function renderInspiration() {
     <section class="panel rights-callout inspiration-policy">
       <div>
         <p class="eyebrow">Image rights boundary</p>
-        <h3>Study external work, but keep reused visuals rights-safe.</h3>
-        <p class="card-copy">Copyrighted article, portfolio, product, hotel, and checklist photos stay linked for reference only unless a license or permission is recorded. The generated images above and below are project planning visuals, not actual Bosque field photos.</p>
+        <h3>Study broadly, publish carefully.</h3>
+        <p class="card-copy">The planning images above are shot targets rather than field photos made on location. External article, portfolio, product, and hotel images stay linked unless their reuse rights are documented.</p>
       </div>
       ${renderStandaloneFrameCard("inspiration-hd-overhead-goose-pattern", {
         className: "callout-preview inspiration-callout-frame",
@@ -1435,8 +1668,39 @@ function renderInspiration() {
         )
         .join("")}
     </div>
+    ${renderGalleryStudySection()}
     ${renderVisualLightbox("inspiration-lightbox-title")}`;
   setupVisualLightbox(root);
+}
+
+function renderReferenceIndex() {
+  return `<section class="media-section reference-index-section" id="reference-index">
+    <div class="media-section-header">
+      <div>
+        <p class="eyebrow">Checked ${checkedDate}</p>
+        <h3>Reference index</h3>
+      </div>
+      <p>Use these source notes to understand the guide's evidence. Recheck access, lodging, pricing, road conditions, and bird locations after booking and again during the final travel week.</p>
+    </div>
+    <section class="panel source-policy">
+      <p class="eyebrow">How to use the references</p>
+      <p class="card-copy">Start with official refuge sources for rules and access, then use photographer reports, EXIF examples, product pages, lodging pages, and weather links for the decisions they are best suited to support.</p>
+    </section>
+    <div class="timeline reference-timeline">
+      ${sources
+        .map(
+          (source) => `<article class="source-row">
+            <div><span class="tag">${source.topic}</span></div>
+            <div>
+              <h3><a href="${source.url}" target="_blank" rel="noreferrer">${source.title}</a></h3>
+              <p class="source-description">${source.description}</p>
+              <p class="muted">${source.url}</p>
+            </div>
+          </article>`
+        )
+        .join("")}
+    </div>
+  </section>`;
 }
 
 function renderMedia() {
@@ -1448,9 +1712,9 @@ function renderMedia() {
     <div class="media-editorial">
       <section class="media-hero-section">
         <div class="media-hero-copy">
-          <p class="eyebrow">Articles, EXIF, and field guidance</p>
-          <h2>Media</h2>
-          <p>The library is organized as a field decision tool: the recommendation first, then source guidance, EXIF evidence, practical implications, and citations.</p>
+          <p class="eyebrow">Articles, EXIF, sources, and field guidance</p>
+          <h2>Resources &amp; References</h2>
+          <p>The library is organized as a field decision tool: the recommendation first, then source guidance, EXIF evidence, practical implications, reader-facing links, and the factual reference index.</p>
         </div>
         <aside class="recommendation-summary">
           <p class="eyebrow">Primary takeaway</p>
@@ -1463,7 +1727,7 @@ function renderMedia() {
       <section class="media-brief-grid" aria-label="Research summary">
         <article class="brief-card is-primary">
           <span>01</span>
-          <h3>Source guidance</h3>
+          <h3>Resource guidance</h3>
           <p>Use Cornell, The Quite Wild, and Thom Hogan as the decision anchors: location behavior, practical settings, and restraint against pure gear obsession.</p>
         </article>
         <article class="brief-card">
@@ -1473,24 +1737,24 @@ function renderMedia() {
         </article>
         <article class="brief-card">
           <span>03</span>
-          <h3>Field implication</h3>
-          <p>Arrive with two bodies staged: one long wildlife lens and one wide/context lens. Choose the shot first, then the focal length.</p>
+          <h3>References</h3>
+          <p>The source index stays on this same page so outside reading and factual citations support one planning workflow.</p>
         </article>
       </section>
 
       <section class="media-section">
         <div class="media-section-header">
           <div>
-            <p class="eyebrow">Source and article guidance</p>
+            <p class="eyebrow">Resource and article guidance</p>
             <h3>What to read first</h3>
           </div>
-          <p>Each article keeps its three-paragraph summary, but the layout now gives stronger weight to the most actionable sources.</p>
+          <p>Each article keeps its three-paragraph summary, but the layout gives stronger weight to the most actionable sources.</p>
         </div>
         <div class="source-priority">
           ${primarySources
             .map(
               (item, index) => `<article class="priority-source-card ${index === 0 ? "is-lead" : ""}">
-                ${renderVisualMini(visualIdForMedia(item), "Generated preview")}
+                ${renderVisualMini(visualIdForMedia(item), "Planning preview")}
                 <div class="media-meta">
                   <span>${item.date}</span>
                   <span>${item.kind}</span>
@@ -1567,9 +1831,9 @@ function renderMedia() {
         <div class="media-section-header">
           <div>
             <p class="eyebrow">Links and citations</p>
-            <h3>Source index</h3>
+            <h3>Reader-facing links</h3>
           </div>
-          <p>Article photos remain inspiration-only unless the source license explicitly permits reuse. The thumbnails in this tab are generated planning previews or link-only source cards, not scraped article images.</p>
+          <p>Use these links to study technique, fieldcraft, EXIF examples, and scouting habits. Any visuals in this section are planning previews or source cards, not article images.</p>
         </div>
         <div class="citation-list">
           ${mediaArticles
@@ -1583,6 +1847,7 @@ function renderMedia() {
             .join("")}
         </div>
       </section>
+      ${renderReferenceIndex()}
     </div>`;
 
   const results = root.querySelector("#media-results");
@@ -1592,7 +1857,7 @@ function renderMedia() {
       .map(
         (item, index) => `<article class="media-card article-card ${index === 0 && filter === "All" ? "is-featured" : ""}">
           <div class="article-kicker">
-            ${renderVisualMini(visualIdForMedia(item), "Generated preview")}
+            ${renderVisualMini(visualIdForMedia(item), "Planning preview")}
             <div class="media-meta">
               <span>${item.date}</span>
               <span>${item.kind}</span>
@@ -1620,45 +1885,29 @@ function renderMedia() {
   draw("All");
 }
 
-function renderSources() {
-  const root = document.querySelector("#sources");
-  root.innerHTML = `
-    <div class="section-title">
-      <div>
-        <p class="eyebrow">Checked ${checkedDate}</p>
-        <h2>Sources</h2>
-      </div>
-      <p>Current access, travel, lodging, pricing, specs, road, and bird-location notes should be rechecked after final booking and again in the week before travel.</p>
-    </div>
-    ${renderGuideScopeNote()}
-    <section class="panel source-policy">
-      <p class="eyebrow">Source-first index</p>
-      <p class="card-copy">This page prioritizes source quality, topic, and direct links. Repetitive generic thumbnails and repeated per-source date stamps have been removed unless a future source-specific visual genuinely helps the citation.</p>
-    </section>
-    <div class="timeline">
-      ${sources
-        .map(
-          (source) => `<article class="source-row">
-            <div><span class="tag">${source.topic}</span></div>
-            <div>
-              <h3><a href="${source.url}" target="_blank" rel="noreferrer">${source.title}</a></h3>
-              <p class="source-description">${source.description}</p>
-              <p class="muted">${source.url}</p>
-            </div>
-          </article>`
-        )
-        .join("")}
-    </div>`;
-}
-
 const defaultView = "overview";
 const viewAliases = {
+  "5-day-itinerary": "itinerary",
+  "best-photo-windows": "windows",
+  "complete-guide": "guide",
+  "external-resources": "media",
+  "field-guide": "guide",
+  "field-techniques": "practice",
+  "itineraries": "itinerary",
+  "light-timing": "windows",
   lodging: "travel",
+  locations: "map",
+  "map-locations": "map",
+  "photo-techniques": "practice",
+  "resources-references": "media",
+  shot: "inspiration",
+  "shot-inspiration": "inspiration",
+  "travel-logistics": "travel",
+  "when-to-shoot": "windows",
 };
 
 const viewRenderers = {
   overview: renderOverview,
-  gallery: renderGallery,
   guide: renderGuide,
   map: renderMap,
   itinerary: renderItinerary,
@@ -1668,7 +1917,6 @@ const viewRenderers = {
   practice: renderPractice,
   inspiration: renderInspiration,
   media: renderMedia,
-  sources: renderSources,
 };
 
 practiceModules.forEach((_, index) => {
@@ -1680,9 +1928,11 @@ const persistentViews = new Set(["overview"]);
 
 function disposeMapState(name) {
   const state = window[name];
+  state?.cleanup?.();
   if (state?.resizeHandler) {
     window.removeEventListener("resize", state.resizeHandler);
   }
+  state?.map?.stop?.();
   if (state?.map?.remove) {
     state.map.remove();
   }
@@ -1802,12 +2052,12 @@ async function showView(id, options = {}) {
   setTimeout(() => {
     window.dispatchEvent(new Event("resize"));
     if (viewId === "map" && window.photoMapState) {
-      window.photoMapState.map.invalidateSize();
-      window.photoMapState.map.fitBounds(window.photoMapState.bounds, { padding: [28, 28] });
+      window.photoMapState.map.invalidateSize({ pan: false });
+      window.photoMapState.map.fitBounds(window.photoMapState.bounds, { padding: [28, 28], animate: false });
     }
     if (viewId === "travel" && window.lodgingMapState) {
-      window.lodgingMapState.map.invalidateSize();
-      window.lodgingMapState.map.fitBounds(window.lodgingMapState.bounds, { padding: [28, 28] });
+      window.lodgingMapState.map.invalidateSize({ pan: false });
+      window.lodgingMapState.map.fitBounds(window.lodgingMapState.bounds, { padding: [28, 28], animate: false });
     }
   }, 80);
 }
