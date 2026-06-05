@@ -14,7 +14,7 @@ Configured publishing pattern:
 - Publish the canonical production version by importing `site/` into the personal website at `/projects/bosque-del-apache`.
 - Use standalone Netlify only for previews or fallback hosting with `site/` as the publish directory.
 - Treat the existing photography gallery as related but not the main home for this guide, because this project is an itinerary/map/planning tool rather than a single photo gallery entry.
-- Reuse the personal site's project-app pattern: publish the static app into the website public asset folder, then load `/projects/bosque-del-apache/index.html` inside the main website route so relative CSS, JavaScript, and image asset paths resolve correctly while the public route stays canonicalized without a trailing slash.
+- Reuse the personal site's project-app pattern: publish the static app into the website public asset folder, then make the main website route a crawlable project page that links to the standalone guide and static planner. The static planner itself remains available at `/projects/bosque-del-apache/index.html`, where relative CSS, JavaScript, and image asset paths resolve correctly.
 
 Deployment details live in `docs/site/deployment.md`.
 

@@ -40,7 +40,10 @@ Run the static guard before browser QA:
 
 ```bash
 node --check site/app.js
+node --check site/data.js
 node scripts/qa-static.mjs
 ```
+
+Site data lives in `site/data.js`; rendering and interaction logic lives in `site/app.js`. Keep that split when adding new research-backed content.
 
 Desktop and mobile browser QA last ran on June 5, 2026. The regenerated Gallery, Guide, Itinerary, Photo Windows, Practice, Inspiration, Media, Gear scale labels, map labels, crawlable hash navigation, and no-script summary should be checked on desktop and mobile after any further content, source, image, or layout changes. Verify the main website sitemap and robots files after publishing.

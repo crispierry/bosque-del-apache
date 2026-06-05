@@ -2,6 +2,22 @@
 
 This file tracks requested project work that has not yet been implemented, verified, and published.
 
+## 2026-06-05 - Principal Engineering Review Fixes
+
+Status: completed and validated June 5, 2026.
+
+Goal: fix the issues found in the principal engineering review of the Bosque del Apache website, covering SEO, maintainability, performance, publishing reliability, data maintainability, and QA guardrails.
+
+Completion notes:
+
+- Split research-backed site data from rendering and interaction code so content updates are easier to maintain.
+- Normalized canonical production URLs to `https://crispierry.com/projects/bosque-del-apache` and kept the standalone guide discoverable.
+- Added route cleanup so inactive rendered views and Leaflet maps do not keep accumulating after tab navigation.
+- Expanded static QA to check script ordering, canonical metadata, missing asset references, generated-image counts, payload budgets, and data/renderer separation.
+- Refreshed the main website artifact from the source repo and verified the crawlable wrapper, sitemap coverage, local build behavior, and desktop/mobile rendering.
+- Validated the source repo with `node --check site/data.js`, `node --check site/app.js`, and `node scripts/qa-static.mjs`.
+- Validated the website repo with `npm run lint`, `npm run typecheck`, `npm run build`, generated sitemap inspection, HTTP route checks, and in-app browser desktop/mobile audits.
+
 ## 2026-06-05 - Gear Scale Reference And 2x Teleconverter Follow-Up
 
 Status: completed and validated June 5, 2026.

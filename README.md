@@ -104,6 +104,7 @@ After the website push, wait for the Netlify production deploy for the pushed we
 https://crispierry.com/projects/bosque-del-apache
 https://crispierry.com/projects/bosque-del-apache/index.html
 https://crispierry.com/projects/bosque-del-apache/complete-photographers-guide.html
+https://crispierry.com/projects/bosque-del-apache/data.js
 https://crispierry.com/projects/bosque-del-apache/app.js
 https://crispierry.com/sitemap.xml
 https://crispierry.com/robots.txt

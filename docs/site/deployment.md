@@ -44,6 +44,7 @@ https://crispierry.com/projects/bosque-del-apache
 https://crispierry.com/projects/bosque-del-apache/index.html
 https://crispierry.com/projects/bosque-del-apache/complete-photographers-guide.html
 https://crispierry.com/projects/bosque-del-apache/styles.css
+https://crispierry.com/projects/bosque-del-apache/data.js
 https://crispierry.com/projects/bosque-del-apache/app.js
 https://crispierry.com/sitemap.xml
 https://crispierry.com/robots.txt
@@ -74,7 +75,7 @@ Netlify's current docs confirm that Git deploys connect a repository to a site a
 
 ## Main Website Route
 
-The public route belongs to the main `crispierry.com` website, not DNS. A URL path like `/projects/bosque-del-apache` must be handled by the main site's routing or by a Netlify rewrite.
+The public route belongs to the main `crispierry.com` website, not DNS. The canonical parent page is `/projects/bosque-del-apache`; the full static planner remains available at `/projects/bosque-del-apache/index.html`.
 
 Use one of these patterns.
 
@@ -88,7 +89,7 @@ Use this for production.
 /projects/bosque-del-apache/
 ```
 
-2. Add or keep the main website route at `app/projects/bosque-del-apache/page.tsx` so `/projects/bosque-del-apache` embeds `/projects/bosque-del-apache/index.html`.
+2. Add or keep the main website route at `app/projects/bosque-del-apache/page.tsx` so `/projects/bosque-del-apache` has crawlable project content and links to the static planner at `/projects/bosque-del-apache/index.html`.
 3. Deploy the main website normally.
 4. Confirm these URLs load:
 
@@ -97,6 +98,7 @@ https://crispierry.com/projects/bosque-del-apache
 https://crispierry.com/projects/bosque-del-apache/index.html
 https://crispierry.com/projects/bosque-del-apache/complete-photographers-guide.html
 https://crispierry.com/projects/bosque-del-apache/styles.css
+https://crispierry.com/projects/bosque-del-apache/data.js
 https://crispierry.com/projects/bosque-del-apache/app.js
 ```
 
