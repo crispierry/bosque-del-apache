@@ -1216,6 +1216,88 @@ const regeneratedGalleryImageGroups = {
         "Purpose-built regenerated 1080p planning photo for gloved filter handling, step-up ring dexterity, and cold predawn gear practice.",
     },
   ],
+  "travel-workflow": [
+    {
+      id: "travel-workflow-01",
+      parentId: "travel-workflow",
+      title: "Hotel battery and card charging",
+      src: "./assets/generated/gallery-hd/travel-workflow-01.jpg",
+      category: "Travel",
+      alt:
+        "Generated standalone 1080p planning photo of camera batteries and memory cards organized for a Bosque del Apache hotel-room reset",
+      caption:
+        "Generated standalone 1080p planning photo for evening hotel-room charging and card management; not an actual Bosque field photograph.",
+      rights:
+        "AI-generated project planning photo from this guide's shot descriptions. Use as expectation-setting only.",
+      placement: ["Gallery", "Visual Asset Manifest"],
+      description:
+        "Purpose-built regenerated 1080p planning photo for battery charging, memory-card organization, notebook checks, and evening reset discipline.",
+    },
+    {
+      id: "travel-workflow-02",
+      parentId: "travel-workflow",
+      title: "Two bodies staged before dawn",
+      src: "./assets/generated/gallery-hd/travel-workflow-02.jpg",
+      category: "Travel",
+      alt:
+        "Generated standalone 1080p planning photo of two camera bodies staged with different lens roles before a Bosque del Apache predawn departure",
+      caption:
+        "Generated standalone 1080p planning photo for two-camera predawn staging; not an actual Bosque field photograph.",
+      rights:
+        "AI-generated project planning photo from this guide's shot descriptions. Use as expectation-setting only.",
+      placement: ["Gallery", "Visual Asset Manifest"],
+      description:
+        "Purpose-built regenerated 1080p planning photo for two camera roles, long-lens readiness, mid-range context, and quick predawn departure.",
+    },
+    {
+      id: "travel-workflow-03",
+      parentId: "travel-workflow",
+      title: "Rental SUV cargo organized",
+      src: "./assets/generated/gallery-hd/travel-workflow-03.jpg",
+      category: "Travel",
+      alt:
+        "Generated standalone 1080p planning photo of an organized rental SUV cargo setup for Bosque del Apache predawn wildlife photography",
+      caption:
+        "Generated standalone 1080p planning photo for rental SUV cargo organization; not an actual vehicle or rental-company recommendation.",
+      rights:
+        "AI-generated project planning photo from this guide's shot descriptions. Use as expectation-setting only.",
+      placement: ["Gallery", "Visual Asset Manifest"],
+      description:
+        "Purpose-built regenerated 1080p planning photo for safe cargo setup, long lens protection, layers, water, route notes, and predawn logistics.",
+    },
+    {
+      id: "travel-workflow-04",
+      parentId: "travel-workflow",
+      title: "Predawn route check",
+      src: "./assets/generated/gallery-hd/travel-workflow-04.jpg",
+      category: "Travel",
+      alt:
+        "Generated standalone 1080p planning photo of a non-readable predawn route check before driving to Bosque del Apache",
+      caption:
+        "Generated standalone 1080p planning photo for predawn route and first-target checks; not a navigational map.",
+      rights:
+        "AI-generated project planning photo from this guide's shot descriptions. Use as expectation-setting only.",
+      placement: ["Gallery", "Visual Asset Manifest"],
+      description:
+        "Purpose-built regenerated 1080p planning photo for non-readable route review, first shooting target, headlamp, keys, water, and field bag.",
+    },
+    {
+      id: "travel-workflow-05",
+      parentId: "travel-workflow",
+      title: "Evening backup and field notebook",
+      src: "./assets/generated/gallery-hd/travel-workflow-05.jpg",
+      category: "Travel",
+      alt:
+        "Generated standalone 1080p planning photo of an evening backup drive and field notebook workflow after a Bosque del Apache field day",
+      caption:
+        "Generated standalone 1080p planning photo for evening backup and field-note discipline; not an actual hotel or field photograph.",
+      rights:
+        "AI-generated project planning photo from this guide's shot descriptions. Use as expectation-setting only.",
+      placement: ["Gallery", "Visual Asset Manifest"],
+      description:
+        "Purpose-built regenerated 1080p planning photo for card backup, portable drive workflow, field notebook, batteries, and repacking discipline.",
+    },
+  ],
 };
 
 const regeneratedGalleryVisuals = Object.values(regeneratedGalleryImageGroups).flat();
@@ -4377,11 +4459,11 @@ function renderGallery() {
         <p class="eyebrow">Regenerated standalone planning photos</p>
         <h2>Gallery</h2>
       </div>
-      <p>Purpose-built 1080p generated photos are replacing the rejected contact-sheet fragments. Open any corrected mosaic tile for the full image, field location, camera settings, and technique notes.</p>
+      <p>Forty-five purpose-built 1080p generated planning photos arranged as true clickable mosaics. Open any tile for the full image, field location, camera settings, and technique notes.</p>
     </div>
     <div class="gallery-regeneration-status">
-      <strong>${regeneratedGalleryVisuals.length} corrected photos live</strong>
-      <span>${pendingGroups.length} Gallery stories still being regenerated before publication.</span>
+      <strong>${regeneratedGalleryVisuals.length} standalone 1080p photos</strong>
+      <span>${regeneratedGroups.length} curated visual stories, each built from individual image files.</span>
     </div>
     ${regeneratedGroups
       .map(

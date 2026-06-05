@@ -4,7 +4,7 @@ This file tracks requested project work that has not yet been implemented, verif
 
 ## 2026-06-05 - Gallery True Mosaic Regeneration Correction Request
 
-Status: in progress; audited June 5, 2026 and reopened because the current implementation still uses split low-resolution contact-sheet fragments.
+Status: completed and validated June 5, 2026.
 
 Goal: correct the Gallery implementation. The cropped-contact-sheet approach is not acceptable. Regenerate the individual Gallery images as true standalone, high-resolution generated photos, and present them in a real clickable mosaic.
 
@@ -36,15 +36,14 @@ Notes:
 - This correction supersedes the prior Gallery crop/split interpretation recorded below.
 - The previous request was understood incorrectly: the desired outcome is regenerated standalone images plus a true clickable mosaic, not cropped frames extracted from a baked-in mosaic.
 - June 5 audit found the prior completion status was incorrect: `site/assets/generated/gallery-standalone/*.jpg` files are split fragments with short edges around 247-326px, and `site/app.js` still describes them as separated from contact sheets.
-- New corrected assets should live separately from the old split fragments, for example under `site/assets/generated/gallery-hd/`, and the active Gallery data should point to the regenerated files only when they exist.
+- June 5 completion uses corrected assets under `site/assets/generated/gallery-hd/`; the old split fragments remain only as legacy artifacts and are not used by the active Gallery page.
 
 Progress notes:
 
-- Regenerated and wired the first eight Gallery stories, `crane-roost-dawn`, `snow-goose-blastoff`, `crane-evening-return`, `farm-field-feeding`, `wetland-deck`, `desert-edge-details`, `weather-motion-fallback`, and `filter-practice`, as forty standalone 1920x1080 generated photos under `site/assets/generated/gallery-hd/`.
+- Regenerated and wired all nine Gallery stories as forty-five standalone 1920x1080 generated photos under `site/assets/generated/gallery-hd/`.
 - Replaced the active Gallery renderer with true clickable mosaic sections that exclude the old split `gallery-standalone` fragments until each story is regenerated.
-- Documented the first forty regenerated Gallery photos in the visual asset manifest.
-- Validated desktop and 390px mobile for the current Gallery slice: 40 active mosaic images, eight active mosaic groups, no old `gallery-standalone` sources in the active Gallery, no split-contact-sheet copy, no broken active images, no horizontal overflow, 1920x1080 active image probes, and working lightbox metadata.
-- Remaining Gallery story still to regenerate before this item can be marked complete: `travel-workflow`.
+- Documented all forty-five regenerated Gallery photos in the visual asset manifest.
+- Validated desktop and 390px mobile for the completed Gallery: 45 active mosaic images, nine active mosaic groups, zero pending groups, no old `gallery-standalone` sources in the active Gallery, no split-contact-sheet copy or repair-language, no broken active images, no horizontal overflow, exact 1920x1080 file dimensions, 1920x1080 active image probes, and working lightbox metadata.
 
 ## 2026-06-05 - Guide Purpose-Built Hero Illustration Correction Request
 
