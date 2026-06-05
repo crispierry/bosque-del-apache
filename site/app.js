@@ -502,7 +502,7 @@ async function renderGuide() {
     if (!article) throw new Error("Guide article markup missing");
     root.innerHTML = `
       <div class="guide-view-header">
-        <a class="button-link secondary" href="./complete-photographers-guide.html">Open standalone guide</a>
+        <a class="button-link secondary" href="./complete-photographers-guide.html">Read field guide</a>
       </div>
       ${article.outerHTML}`;
   } catch (error) {
@@ -518,7 +518,7 @@ async function renderGuide() {
       <section class="panel">
         <h3>Open the guide</h3>
         <p class="card-copy">The in-page article loader could not fetch the guide content in this environment.</p>
-        <a class="button-link" href="./complete-photographers-guide.html">Open standalone guide</a>
+        <a class="button-link" href="./complete-photographers-guide.html">Read field guide</a>
       </section>`;
   }
 }

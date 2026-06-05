@@ -231,6 +231,11 @@ assert(
 assert("index has meta description", /<meta\s+name="description"/.test(index));
 assert("index has Open Graph image", /property="og:image"/.test(index));
 assert("index has Open Graph URL", /property="og:url" content="https:\/\/crispierry\.com\/projects\/bosque-del-apache"/.test(index));
+assert(
+  "index omits PDF CTA",
+  !index.includes("bosque-del-apache-photo-plan.pdf") && !index.includes("Open PDF booklet"),
+  "PDF publishing is deferred from the website surface"
+);
 assert("index has JSON-LD WebPage", /\"@type\": \"WebPage\"/.test(index));
 assert(
   "standalone guide has canonical URL",

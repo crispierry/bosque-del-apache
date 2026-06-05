@@ -2,6 +2,30 @@
 
 This file tracks requested project work that has not yet been implemented, verified, and published.
 
+## 2026-06-05 - Keep Website Nav For Planner And Guide CTAs
+
+Status: completed and validated June 5, 2026.
+
+Goal: make the Bosque project home-page CTAs open website-owned planner and guide views so the Cristiano Pierry navigation bar stays visible, remove the bottom embedded full planner from the home page, and remove public PDF entry points for now.
+
+Requested requirements:
+
+- `Open Planner` and `Read Guide` should both exist without losing the website navigation bar.
+- Remove the PDF link from the website for now.
+- Remove the full embedded planner/panorama from the bottom of the Bosque project home page.
+- Add a bottom call to action that opens the planner.
+- Treat Kindle publishing as a later idea.
+
+Implementation notes:
+
+- Remove PDF CTAs from the Bosque source static overview and no-script fallback.
+- Keep the source `site/index.html` and `site/complete-photographers-guide.html` files intact for local static preview, while the website importer publishes them under iframe-only artifact names.
+
+Completion notes:
+
+- Added static QA coverage so the source overview does not reintroduce the PDF CTA.
+- Validated with JavaScript syntax checks, static QA, website lint, website typecheck, full website production build, and browser checks for the home, planner, and guide routes.
+
 ## 2026-06-05 - Restore Main Website Navigation On Production Route
 
 Status: completed and validated June 5, 2026.
