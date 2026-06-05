@@ -559,6 +559,175 @@ const standaloneGalleryVisuals = generatedVisuals.flatMap((visual) =>
   })
 );
 
+const regeneratedGalleryImageGroups = {
+  "crane-roost-dawn": [
+    {
+      id: "crane-roost-dawn-01",
+      parentId: "crane-roost-dawn",
+      title: "Crane silhouettes before sunrise",
+      src: "./assets/generated/gallery-hd/crane-roost-dawn-01.jpg",
+      category: "Sunrise",
+      alt:
+        "Generated standalone 1080p planning photo of sandhill crane silhouettes in a Bosque del Apache roost pool before sunrise",
+      caption:
+        "Generated standalone 1080p planning photo for crane-pool sunrise work; not an actual Bosque field photograph.",
+      rights:
+        "AI-generated project planning photo from this guide's shot descriptions. Use as expectation-setting only.",
+      placement: ["Gallery", "Visual Asset Manifest"],
+      description:
+        "Purpose-built regenerated 1080p planning photo for pre-sunrise crane silhouettes, shallow water, reflections, and mountain-band context.",
+    },
+    {
+      id: "crane-roost-dawn-02",
+      parentId: "crane-roost-dawn",
+      title: "Cold breath and shallow-water atmosphere",
+      src: "./assets/generated/gallery-hd/crane-roost-dawn-02.jpg",
+      category: "Sunrise",
+      alt:
+        "Generated standalone 1080p planning photo of sandhill cranes with visible cold breath in shallow Bosque del Apache roost water",
+      caption:
+        "Generated standalone 1080p planning photo for cold dawn roost atmosphere; not an actual Bosque field photograph.",
+      rights:
+        "AI-generated project planning photo from this guide's shot descriptions. Use as expectation-setting only.",
+      placement: ["Gallery", "Visual Asset Manifest"],
+      description:
+        "Purpose-built regenerated 1080p planning photo for cold breath, predawn blue light, shallow water, and calm crane behavior.",
+    },
+    {
+      id: "crane-roost-dawn-03",
+      parentId: "crane-roost-dawn",
+      title: "Reflection pair in calm water",
+      src: "./assets/generated/gallery-hd/crane-roost-dawn-03.jpg",
+      category: "Sunrise",
+      alt:
+        "Generated standalone 1080p planning photo of a pair of sandhill cranes reflected in calm Bosque del Apache sunrise water",
+      caption:
+        "Generated standalone 1080p planning photo for quiet crane reflection work; not an actual Bosque field photograph.",
+      rights:
+        "AI-generated project planning photo from this guide's shot descriptions. Use as expectation-setting only.",
+      placement: ["Gallery", "Visual Asset Manifest"],
+      description:
+        "Purpose-built regenerated 1080p planning photo for paired cranes, clean reflections, first light, and habitat context.",
+    },
+    {
+      id: "crane-roost-dawn-04",
+      parentId: "crane-roost-dawn",
+      title: "Takeoff run with wing stretch",
+      src: "./assets/generated/gallery-hd/crane-roost-dawn-04.jpg",
+      category: "Sunrise",
+      alt:
+        "Generated standalone 1080p planning photo of a sandhill crane beginning a takeoff run across shallow Bosque del Apache water",
+      caption:
+        "Generated standalone 1080p planning photo for crane takeoff behavior; not an actual Bosque field photograph.",
+      rights:
+        "AI-generated project planning photo from this guide's shot descriptions. Use as expectation-setting only.",
+      placement: ["Gallery", "Visual Asset Manifest"],
+      description:
+        "Purpose-built regenerated 1080p planning photo for wing stretch, takeoff anticipation, water splash, and action framing.",
+    },
+    {
+      id: "crane-roost-dawn-05",
+      parentId: "crane-roost-dawn",
+      title: "Wide mountain-band roost scene",
+      src: "./assets/generated/gallery-hd/crane-roost-dawn-05.jpg",
+      category: "Sunrise",
+      alt:
+        "Generated standalone 1080p planning photo of a wide Bosque del Apache crane roost scene with winter water and distant mountains",
+      caption:
+        "Generated standalone 1080p planning photo for wide roost context; not an actual Bosque field photograph.",
+      rights:
+        "AI-generated project planning photo from this guide's shot descriptions. Use as expectation-setting only.",
+      placement: ["Gallery", "Visual Asset Manifest"],
+      description:
+        "Purpose-built regenerated 1080p planning photo for environmental roost scale, scattered cranes, cold mist, and mountains.",
+    },
+  ],
+  "snow-goose-blastoff": [
+    {
+      id: "snow-goose-blastoff-01",
+      parentId: "snow-goose-blastoff",
+      title: "Still roost before lift-off",
+      src: "./assets/generated/gallery-hd/snow-goose-blastoff-01.jpg",
+      category: "Sunrise",
+      alt:
+        "Generated standalone 1080p planning photo of snow geese resting on Bosque del Apache water before dawn lift-off",
+      caption:
+        "Generated standalone 1080p planning photo for snow goose roost anticipation; not an actual Bosque field photograph.",
+      rights:
+        "AI-generated project planning photo from this guide's shot descriptions. Use as expectation-setting only.",
+      placement: ["Gallery", "Visual Asset Manifest"],
+      description:
+        "Purpose-built regenerated 1080p planning photo for a calm snow goose roost before blast-off, with water, mountains, and early light.",
+    },
+    {
+      id: "snow-goose-blastoff-02",
+      parentId: "snow-goose-blastoff",
+      title: "First flock wave rising low",
+      src: "./assets/generated/gallery-hd/snow-goose-blastoff-02.jpg",
+      category: "Sunrise",
+      alt:
+        "Generated standalone 1080p planning photo of the first wave of snow geese lifting low from a Bosque del Apache roost",
+      caption:
+        "Generated standalone 1080p planning photo for the first low flock wave; not an actual Bosque field photograph.",
+      rights:
+        "AI-generated project planning photo from this guide's shot descriptions. Use as expectation-setting only.",
+      placement: ["Gallery", "Visual Asset Manifest"],
+      description:
+        "Purpose-built regenerated 1080p planning photo for the first birds rising low, white-feather exposure, ripples, and dawn color.",
+    },
+    {
+      id: "snow-goose-blastoff-03",
+      parentId: "snow-goose-blastoff",
+      title: "Wide mass blast-off over water",
+      src: "./assets/generated/gallery-hd/snow-goose-blastoff-03.jpg",
+      category: "Sunrise",
+      alt:
+        "Generated standalone 1080p planning photo of a wide mass snow goose blast-off over Bosque del Apache wetland water",
+      caption:
+        "Generated standalone 1080p planning photo for mass snow goose blast-off; not an actual Bosque field photograph.",
+      rights:
+        "AI-generated project planning photo from this guide's shot descriptions. Use as expectation-setting only.",
+      placement: ["Gallery", "Visual Asset Manifest"],
+      description:
+        "Purpose-built regenerated 1080p planning photo for wide flock spectacle, water context, mountain scale, and white-bird exposure control.",
+    },
+    {
+      id: "snow-goose-blastoff-04",
+      parentId: "snow-goose-blastoff",
+      title: "Overhead flock texture",
+      src: "./assets/generated/gallery-hd/snow-goose-blastoff-04.jpg",
+      category: "Sunrise",
+      alt:
+        "Generated standalone 1080p planning photo of snow geese passing overhead in layered flock texture at Bosque del Apache",
+      caption:
+        "Generated standalone 1080p planning photo for overhead flock pattern work; not an actual Bosque field photograph.",
+      rights:
+        "AI-generated project planning photo from this guide's shot descriptions. Use as expectation-setting only.",
+      placement: ["Gallery", "Visual Asset Manifest"],
+      description:
+        "Purpose-built regenerated 1080p planning photo for readable overhead flock patterns, wing positions, and separated groups after lift-off.",
+    },
+    {
+      id: "snow-goose-blastoff-05",
+      parentId: "snow-goose-blastoff",
+      title: "Separated goose groups against pastel dawn",
+      src: "./assets/generated/gallery-hd/snow-goose-blastoff-05.jpg",
+      category: "Sunrise",
+      alt:
+        "Generated standalone 1080p planning photo of separated snow goose groups flying against pastel dawn at Bosque del Apache",
+      caption:
+        "Generated standalone 1080p planning photo for separated dawn flock composition; not an actual Bosque field photograph.",
+      rights:
+        "AI-generated project planning photo from this guide's shot descriptions. Use as expectation-setting only.",
+      placement: ["Gallery", "Visual Asset Manifest"],
+      description:
+        "Purpose-built regenerated 1080p planning photo for post-blast-off flock separation, layered groups, pastel sky, and wetland context.",
+    },
+  ],
+};
+
+const regeneratedGalleryVisuals = Object.values(regeneratedGalleryImageGroups).flat();
+
 const practiceStandaloneVisuals = practiceVisuals.flatMap((visual) =>
   (practiceFrameExamples[visual.id] || [visual.title]).map((example, index) => {
     const frameNumber = String(index + 1).padStart(2, "0");
@@ -583,6 +752,7 @@ const visualById = new Map(
   [
     ...generatedVisuals,
     ...standaloneGalleryVisuals,
+    ...regeneratedGalleryVisuals,
     ...practiceVisuals,
     ...practiceStandaloneVisuals,
     ...travelVisuals,
@@ -3702,31 +3872,64 @@ function renderOverview() {
 
 function renderGallery() {
   const root = document.querySelector("#gallery");
+  const regeneratedGroups = generatedVisuals
+    .map((group) => ({
+      ...group,
+      frames: regeneratedGalleryImageGroups[group.id] || [],
+    }))
+    .filter((group) => group.frames.length);
+  const pendingGroups = generatedVisuals.filter((group) => !regeneratedGalleryImageGroups[group.id]);
   root.innerHTML = `
     <div class="section-title">
       <div>
-        <p class="eyebrow">Standalone generated planning frames</p>
+        <p class="eyebrow">Regenerated standalone planning photos</p>
         <h2>Gallery</h2>
       </div>
-      <p>Forty-five standalone HD planning frames, separated from the original generated contact sheets. Open any frame for the full image, field location, camera settings, and technique notes.</p>
+      <p>Purpose-built 1080p generated photos are replacing the rejected contact-sheet fragments. Open any corrected mosaic tile for the full image, field location, camera settings, and technique notes.</p>
     </div>
-    <div class="standalone-gallery-grid" aria-label="Generated Bosque standalone planning photos">
-      ${standaloneGalleryVisuals
-        .map((visual, index) => {
-          const lesson = visualLessons[visual.id];
-          return `<button class="standalone-gallery-card" type="button" data-visual-id="${visual.id}" aria-label="Open ${visual.title}">
-            <img src="${visual.src}" alt="${visual.alt}" loading="${index < 8 ? "eager" : "lazy"}" decoding="async" />
-            <span class="standalone-gallery-copy">
-              <b>${visual.title}</b>
-              <span>${visual.description}</span>
-              <em>${lesson.focalLength}; ${lesson.aperture}; ${lesson.shutterSpeed}</em>
-              <small>${lesson.supposedLocation}</small>
-              <small><strong>Technique:</strong> ${lesson.technique}</small>
-            </span>
-          </button>`;
-        })
-        .join("")}
+    <div class="gallery-regeneration-status">
+      <strong>${regeneratedGalleryVisuals.length} corrected photos live</strong>
+      <span>${pendingGroups.length} Gallery stories still being regenerated before publication.</span>
     </div>
+    ${regeneratedGroups
+      .map(
+        (group) => `<section class="gallery-mosaic-section" aria-labelledby="gallery-${group.id}">
+          <div class="gallery-mosaic-header">
+            <div>
+              <p class="eyebrow">${group.category}</p>
+              <h3 id="gallery-${group.id}">${group.title}</h3>
+            </div>
+            <p>${group.promptSummary}</p>
+          </div>
+          <div class="true-mosaic-grid" aria-label="${group.title} regenerated standalone photos">
+            ${group.frames
+              .map((visual, index) => {
+                const lesson = visualLessons[visual.id];
+                return `<button class="true-mosaic-tile ${index === 0 ? "is-featured" : ""}" type="button" data-visual-id="${visual.id}" aria-label="Open ${visual.title}">
+                  <img src="${visual.src}" alt="${visual.alt}" width="1920" height="1080" loading="${index < 2 ? "eager" : "lazy"}" decoding="async" />
+                  <span class="true-mosaic-caption">
+                    <b>${visual.title}</b>
+                    <span>${lesson.focalLength}; ${lesson.aperture}; ${lesson.shutterSpeed}</span>
+                  </span>
+                </button>`;
+              })
+              .join("")}
+          </div>
+        </section>`
+      )
+      .join("")}
+    ${pendingGroups.length
+      ? `<section class="panel gallery-generation-queue">
+          <p class="eyebrow">Still being corrected</p>
+          <h3>Remaining Gallery stories</h3>
+          <p class="card-copy">These groups are intentionally excluded from the active Gallery until their individual 1080p generated photos replace the old split fragments.</p>
+          <div class="gallery-pending-list">
+            ${pendingGroups
+              .map((group) => `<span>${group.title}</span>`)
+              .join("")}
+          </div>
+        </section>`
+      : ""}
     ${renderVisualLightbox("gallery-lightbox-title")}`;
   setupVisualLightbox(root);
 }

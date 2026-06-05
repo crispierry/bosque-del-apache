@@ -4,7 +4,7 @@ This file tracks requested project work that has not yet been implemented, verif
 
 ## 2026-06-05 - Gallery True Mosaic Regeneration Correction Request
 
-Status: completed and validated June 5, 2026.
+Status: in progress; audited June 5, 2026 and reopened because the current implementation still uses split low-resolution contact-sheet fragments.
 
 Goal: correct the Gallery implementation. The cropped-contact-sheet approach is not acceptable. Regenerate the individual Gallery images as true standalone, high-resolution generated photos, and present them in a real clickable mosaic.
 
@@ -35,10 +35,20 @@ Notes:
 
 - This correction supersedes the prior Gallery crop/split interpretation recorded below.
 - The previous request was understood incorrectly: the desired outcome is regenerated standalone images plus a true clickable mosaic, not cropped frames extracted from a baked-in mosaic.
+- June 5 audit found the prior completion status was incorrect: `site/assets/generated/gallery-standalone/*.jpg` files are split fragments with short edges around 247-326px, and `site/app.js` still describes them as separated from contact sheets.
+- New corrected assets should live separately from the old split fragments, for example under `site/assets/generated/gallery-hd/`, and the active Gallery data should point to the regenerated files only when they exist.
+
+Progress notes:
+
+- Regenerated and wired the first two Gallery stories, `crane-roost-dawn` and `snow-goose-blastoff`, as ten standalone 1920x1080 generated photos under `site/assets/generated/gallery-hd/`.
+- Replaced the active Gallery renderer with true clickable mosaic sections that exclude the old split `gallery-standalone` fragments until each story is regenerated.
+- Documented the first ten regenerated Gallery photos in the visual asset manifest.
+- Validated desktop and 390px mobile for the current Gallery slice: 10 active mosaic images, two active mosaic groups, no old `gallery-standalone` sources in the active Gallery, no split-contact-sheet copy, no broken active images, no horizontal overflow, and working lightbox metadata.
+- Remaining Gallery stories still to regenerate before this item can be marked complete: `crane-evening-return`, `farm-field-feeding`, `wetland-deck`, `desert-edge-details`, `weather-motion-fallback`, `filter-practice`, and `travel-workflow`.
 
 ## 2026-06-05 - Guide Purpose-Built Hero Illustration Correction Request
 
-Status: requested; not yet implemented.
+Status: completed and validated June 5, 2026.
 
 Goal: correct the Guide page visual treatment. The Guide should have its own high-quality, purpose-built generated image that illustrates the guide itself; reused cropped images, split contact-sheet frames, or scrapped artwork from earlier attempts are not acceptable.
 
