@@ -806,6 +806,88 @@ const regeneratedGalleryImageGroups = {
         "Purpose-built regenerated 1080p planning photo for wide sunset crane return, dusky mountain bands, roost scale, and environmental framing.",
     },
   ],
+  "farm-field-feeding": [
+    {
+      id: "farm-field-feeding-01",
+      parentId: "farm-field-feeding",
+      title: "Feeding cranes in winter crop rows",
+      src: "./assets/generated/gallery-hd/farm-field-feeding-01.jpg",
+      category: "Mid-morning",
+      alt:
+        "Generated standalone 1080p planning photo of sandhill cranes feeding in winter crop rows at Bosque del Apache",
+      caption:
+        "Generated standalone 1080p planning photo for farm-field crane feeding; not an actual Bosque field photograph.",
+      rights:
+        "AI-generated project planning photo from this guide's shot descriptions. Use as expectation-setting only.",
+      placement: ["Gallery", "Visual Asset Manifest"],
+      description:
+        "Purpose-built regenerated 1080p planning photo for cranes feeding in crop rows, field structure, mountain context, and vehicle-based work.",
+    },
+    {
+      id: "farm-field-feeding-02",
+      parentId: "farm-field-feeding",
+      title: "Mixed geese and cranes with mountains",
+      src: "./assets/generated/gallery-hd/farm-field-feeding-02.jpg",
+      category: "Mid-morning",
+      alt:
+        "Generated standalone 1080p planning photo of mixed snow geese and sandhill cranes feeding in a Bosque del Apache field with mountains",
+      caption:
+        "Generated standalone 1080p planning photo for mixed field flocks and mountain context; not an actual Bosque field photograph.",
+      rights:
+        "AI-generated project planning photo from this guide's shot descriptions. Use as expectation-setting only.",
+      placement: ["Gallery", "Visual Asset Manifest"],
+      description:
+        "Purpose-built regenerated 1080p planning photo for mixed geese and cranes, field rows, species comparison, and mountain scale.",
+    },
+    {
+      id: "farm-field-feeding-03",
+      parentId: "farm-field-feeding",
+      title: "Raptor crossing a field edge",
+      src: "./assets/generated/gallery-hd/farm-field-feeding-03.jpg",
+      category: "Mid-morning",
+      alt:
+        "Generated standalone 1080p planning photo of a raptor crossing low over a Bosque del Apache farm-field edge",
+      caption:
+        "Generated standalone 1080p planning photo for low raptor tracking over field edges; not an actual Bosque field photograph.",
+      rights:
+        "AI-generated project planning photo from this guide's shot descriptions. Use as expectation-setting only.",
+      placement: ["Gallery", "Visual Asset Manifest"],
+      description:
+        "Purpose-built regenerated 1080p planning photo for raptor behavior, field-edge backgrounds, and long-lens tracking decisions.",
+    },
+    {
+      id: "farm-field-feeding-04",
+      parentId: "farm-field-feeding",
+      title: "Flock lifting from crop rows",
+      src: "./assets/generated/gallery-hd/farm-field-feeding-04.jpg",
+      category: "Mid-morning",
+      alt:
+        "Generated standalone 1080p planning photo of cranes and geese lifting from Bosque del Apache winter crop rows",
+      caption:
+        "Generated standalone 1080p planning photo for farm-field lift-off action; not an actual Bosque field photograph.",
+      rights:
+        "AI-generated project planning photo from this guide's shot descriptions. Use as expectation-setting only.",
+      placement: ["Gallery", "Visual Asset Manifest"],
+      description:
+        "Purpose-built regenerated 1080p planning photo for a flock lifting from crop rows, dust, action tracking, and mid-morning field behavior.",
+    },
+    {
+      id: "farm-field-feeding-05",
+      parentId: "farm-field-feeding",
+      title: "Quiet vehicle-blind perspective from a legal pullout",
+      src: "./assets/generated/gallery-hd/farm-field-feeding-05.jpg",
+      category: "Mid-morning",
+      alt:
+        "Generated standalone 1080p planning photo of a quiet vehicle-blind perspective from a legal Bosque del Apache pullout with distant feeding birds",
+      caption:
+        "Generated standalone 1080p planning photo for legal vehicle-blind field work; not an actual Bosque field photograph.",
+      rights:
+        "AI-generated project planning photo from this guide's shot descriptions. Use as expectation-setting only.",
+      placement: ["Gallery", "Visual Asset Manifest"],
+      description:
+        "Purpose-built regenerated 1080p planning photo for roadside patience, vehicle-blind etiquette, distant field birds, and undisturbed behavior.",
+    },
+  ],
 };
 
 const regeneratedGalleryVisuals = Object.values(regeneratedGalleryImageGroups).flat();
