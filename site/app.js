@@ -1052,6 +1052,88 @@ const regeneratedGalleryImageGroups = {
         "Purpose-built regenerated 1080p planning photo for dry trail habitat, cottonwoods, small edge subjects, and environmental storytelling.",
     },
   ],
+  "weather-motion-fallback": [
+    {
+      id: "weather-motion-fallback-01",
+      parentId: "weather-motion-fallback",
+      title: "Cranes in light mist",
+      src: "./assets/generated/gallery-hd/weather-motion-fallback-01.jpg",
+      category: "Fallback",
+      alt:
+        "Generated standalone 1080p planning photo of sandhill cranes in light mist over Bosque del Apache shallow water",
+      caption:
+        "Generated standalone 1080p planning photo for misty crane weather fallback work; not an actual Bosque field photograph.",
+      rights:
+        "AI-generated project planning photo from this guide's shot descriptions. Use as expectation-setting only.",
+      placement: ["Gallery", "Visual Asset Manifest"],
+      description:
+        "Purpose-built regenerated 1080p planning photo for gray morning mist, quiet cranes, restrained color, and weather-sensitive field choices.",
+    },
+    {
+      id: "weather-motion-fallback-02",
+      parentId: "weather-motion-fallback",
+      title: "High-key geese over gray water",
+      src: "./assets/generated/gallery-hd/weather-motion-fallback-02.jpg",
+      category: "Fallback",
+      alt:
+        "Generated standalone 1080p planning photo of snow geese flying low over gray Bosque del Apache water in high-key light",
+      caption:
+        "Generated standalone 1080p planning photo for high-key white-bird exposure; not an actual Bosque field photograph.",
+      rights:
+        "AI-generated project planning photo from this guide's shot descriptions. Use as expectation-setting only.",
+      placement: ["Gallery", "Visual Asset Manifest"],
+      description:
+        "Purpose-built regenerated 1080p planning photo for snow geese, gray water, white-feather exposure, and overcast high-key composition.",
+    },
+    {
+      id: "weather-motion-fallback-03",
+      parentId: "weather-motion-fallback",
+      title: "Intentional panning blur",
+      src: "./assets/generated/gallery-hd/weather-motion-fallback-03.jpg",
+      category: "Fallback",
+      alt:
+        "Generated standalone 1080p planning photo of a Bosque del Apache bird rendered with intentional panning blur against streaked wetland reeds",
+      caption:
+        "Generated standalone 1080p planning photo for intentional panning blur; not an actual Bosque field photograph.",
+      rights:
+        "AI-generated project planning photo from this guide's shot descriptions. Use as expectation-setting only.",
+      placement: ["Gallery", "Visual Asset Manifest"],
+      description:
+        "Purpose-built regenerated 1080p planning photo for slow-shutter panning, readable subject shape, streaked reeds, and flat-light creativity.",
+    },
+    {
+      id: "weather-motion-fallback-04",
+      parentId: "weather-motion-fallback",
+      title: "Snow-dusted reeds with distant birds",
+      src: "./assets/generated/gallery-hd/weather-motion-fallback-04.jpg",
+      category: "Fallback",
+      alt:
+        "Generated standalone 1080p planning photo of snow-dusted Bosque del Apache reeds with distant cranes or geese",
+      caption:
+        "Generated standalone 1080p planning photo for snow-dusted reed and weather texture work; not an actual Bosque field photograph.",
+      rights:
+        "AI-generated project planning photo from this guide's shot descriptions. Use as expectation-setting only.",
+      placement: ["Gallery", "Visual Asset Manifest"],
+      description:
+        "Purpose-built regenerated 1080p planning photo for light snow or frost, reed layers, distant birds, and quiet weather detail.",
+    },
+    {
+      id: "weather-motion-fallback-05",
+      parentId: "weather-motion-fallback",
+      title: "Dark flock silhouettes against a pale sky",
+      src: "./assets/generated/gallery-hd/weather-motion-fallback-05.jpg",
+      category: "Fallback",
+      alt:
+        "Generated standalone 1080p planning photo of a dark Bosque del Apache flock silhouetted against a pale winter sky",
+      caption:
+        "Generated standalone 1080p planning photo for pale-sky flock silhouettes; not an actual Bosque field photograph.",
+      rights:
+        "AI-generated project planning photo from this guide's shot descriptions. Use as expectation-setting only.",
+      placement: ["Gallery", "Visual Asset Manifest"],
+      description:
+        "Purpose-built regenerated 1080p planning photo for silhouette shapes, pale overcast sky, diagonal flock movement, and minimal color.",
+    },
+  ],
 };
 
 const regeneratedGalleryVisuals = Object.values(regeneratedGalleryImageGroups).flat();
