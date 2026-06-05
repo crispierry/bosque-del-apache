@@ -1302,6 +1302,459 @@ const regeneratedGalleryImageGroups = {
 
 const regeneratedGalleryVisuals = Object.values(regeneratedGalleryImageGroups).flat();
 
+const itineraryGeneratedVisuals = [
+  {
+    id: "itinerary-arrival-route-check",
+    title: "Arrival route check",
+    src: "./assets/generated/itinerary-hd/itinerary-01-arrival-route-check.jpg",
+    category: "Itinerary",
+    alt:
+      "Generated 1080p itinerary planning image of a Socorro hotel-room route check and camera staging desk before Bosque del Apache",
+    caption:
+      "Purpose-built generated Itinerary image for arrival logistics, route checks, camera setup, and predawn readiness; not an actual Bosque field photograph.",
+    rights:
+      "AI-generated project planning image from this guide's itinerary notes. Use as expectation-setting only.",
+    placement: ["Itinerary", "Visual Asset Manifest"],
+    description:
+      "Purpose-built generated Itinerary image for Sunday arrival, hotel-room charging, card staging, route notes, layers, and two-camera dawn readiness.",
+    lesson: {
+      supposedLocation:
+        "Socorro hotel room or staging table before the first Bosque del Apache scout.",
+      lens: "24-105mm or phone/documentary camera for logistics and readiness records.",
+      focalLength: "24-50mm",
+      aperture: "f/4-f/5.6",
+      shutterSpeed: "1/60-1/125 sec",
+      technique:
+        "Use the arrival evening to remove friction: charge batteries, clear cards, set two camera roles, stage water and layers, and write a non-readable route note before sleep.",
+    },
+  },
+  {
+    id: "itinerary-crane-pond-sunset-scout",
+    title: "Crane pond sunset scout",
+    src: "./assets/generated/itinerary-hd/itinerary-02-crane-pond-sunset-scout.jpg",
+    category: "Itinerary",
+    alt:
+      "Generated 1080p itinerary planning image of sandhill cranes at a Bosque del Apache crane pond sunset scout",
+    caption:
+      "Purpose-built generated Itinerary image for the first sunset crane-pond scout; not an actual Bosque field photograph.",
+    rights:
+      "AI-generated project planning image from this guide's itinerary notes. Use as expectation-setting only.",
+    placement: ["Itinerary", "Visual Asset Manifest"],
+    description:
+      "Purpose-built generated Itinerary image for checking crane roost activity, wind, parking angle, reflections, and safe crowd position on the first sunset.",
+    lesson: {
+      supposedLocation:
+        "North or South Crane Pond, using the first evening as a scout rather than a pressure shoot.",
+      lens: "100-400mm, 200-600mm, or similar wildlife zoom.",
+      focalLength: "200-400mm",
+      aperture: "f/7.1-f/8",
+      shutterSpeed: "1/1000-1/2000 sec",
+      technique:
+        "Treat the first sunset as reconnaissance: test reflection angles, note wind direction, watch how cranes enter the pool, and mark the least disruptive legal pullout.",
+    },
+  },
+  {
+    id: "itinerary-highway-one-crane-pool-sunrise",
+    title: "Highway 1 crane-pool sunrise",
+    src: "./assets/generated/itinerary-hd/itinerary-03-highway-one-crane-pool-sunrise.jpg",
+    category: "Itinerary",
+    alt:
+      "Generated 1080p itinerary planning image of sandhill cranes at a Highway 1 crane pool sunrise with mist and reflections",
+    caption:
+      "Purpose-built generated Itinerary image for a Highway 1 crane-pool sunrise; not an actual Bosque field photograph.",
+    rights:
+      "AI-generated project planning image from this guide's itinerary notes. Use as expectation-setting only.",
+    placement: ["Itinerary", "Visual Asset Manifest"],
+    description:
+      "Purpose-built generated Itinerary image for sunrise silhouettes, cold breath, takeoff cues, low reflections, and roost context.",
+    lesson: {
+      supposedLocation:
+        "Highway 1 crane pools or the current legal pullout with the strongest active morning roost.",
+      lens: "Sony FE 200-600mm, Canon RF 200-800mm, or similar long wildlife zoom.",
+      focalLength: "300-600mm",
+      aperture: "f/6.3-f/8",
+      shutterSpeed: "1/500-1/1600 sec",
+      technique:
+        "Arrive in blue hour, compose for reflections before the birds move, watch wing stretches and crouches, and raise shutter speed before the first takeoff run.",
+    },
+  },
+  {
+    id: "itinerary-visitor-center-wetland-deck-tests",
+    title: "Visitor-center wetland deck tests",
+    src: "./assets/generated/itinerary-hd/itinerary-04-visitor-center-wetland-deck-tests.jpg",
+    category: "Itinerary",
+    alt:
+      "Generated 1080p itinerary planning image of a Bosque del Apache wetland deck with reeds ducks and distant cranes",
+    caption:
+      "Purpose-built generated Itinerary image for visitor-center and deck-based wetland tests; not an actual Bosque field photograph.",
+    rights:
+      "AI-generated project planning image from this guide's itinerary notes. Use as expectation-setting only.",
+    placement: ["Itinerary", "Visual Asset Manifest"],
+    description:
+      "Purpose-built generated Itinerary image for translating visitor-center intel into Dabbler Deck, Eagle Scout Deck, and bright-water exposure tests.",
+    lesson: {
+      supposedLocation:
+        "Visitor Center, Dabbler Deck, Eagle Scout Deck, or the public wetland deck with the best current bird activity.",
+      lens: "100-400mm, 200-600mm, or 200-800mm depending on distance and habitat scale.",
+      focalLength: "200-600mm",
+      aperture: "f/8-f/11",
+      shutterSpeed: "1/500-1/2000 sec",
+      technique:
+        "Use the deck to test bright-water exposure, build layered reed compositions, wait for clean head angles, and convert visitor-center reports into specific field checks.",
+    },
+  },
+  {
+    id: "itinerary-active-crane-pool-sunset-landings",
+    title: "Active crane pool sunset landings",
+    src: "./assets/generated/itinerary-hd/itinerary-05-active-crane-pool-sunset-landings.jpg",
+    category: "Itinerary",
+    alt:
+      "Generated 1080p itinerary planning image of sandhill cranes landing in warm sunset light at an active Bosque del Apache crane pool",
+    caption:
+      "Purpose-built generated Itinerary image for active crane-pool sunset landings; not an actual Bosque field photograph.",
+    rights:
+      "AI-generated project planning image from this guide's itinerary notes. Use as expectation-setting only.",
+    placement: ["Itinerary", "Visual Asset Manifest"],
+    description:
+      "Purpose-built generated Itinerary image for crane landing posture, warm side light, paired birds, family groups, and reflection frames.",
+    lesson: {
+      supposedLocation:
+        "Best active crane pool after the first scout, favoring a legal pullout with wind-aligned landing lanes.",
+      lens: "Long wildlife zoom on a beanbag, monopod, or tripod/gimbal.",
+      focalLength: "400-700mm",
+      aperture: "f/6.3-f/8",
+      shutterSpeed: "1/1600-1/2500 sec",
+      technique:
+        "Read wind direction, pre-frame open landing space, focus on the head and leading shoulder, and keep reflection room below the feet during touchdown.",
+    },
+  },
+  {
+    id: "itinerary-flight-deck-snow-goose-blastoff",
+    title: "Flight Deck snow-goose blastoff",
+    src: "./assets/generated/itinerary-hd/itinerary-06-flight-deck-snow-goose-blastoff.jpg",
+    category: "Itinerary",
+    alt:
+      "Generated 1080p itinerary planning image of snow geese lifting from water at Bosque del Apache Flight Deck at dawn",
+    caption:
+      "Purpose-built generated Itinerary image for a Flight Deck snow-goose blastoff; not an actual Bosque field photograph.",
+    rights:
+      "AI-generated project planning image from this guide's itinerary notes. Use as expectation-setting only.",
+    placement: ["Itinerary", "Visual Asset Manifest"],
+    description:
+      "Purpose-built generated Itinerary image for still roost, first flock wave, mass blastoff, overhead texture, and separated dawn groups.",
+    lesson: {
+      supposedLocation:
+        "Flight Deck, Main Pool, or the current goose roost confirmed by the previous evening and morning scout.",
+      lens: "100-400mm or 200-600mm class zoom, with a wider lens ready if the eruption is close.",
+      focalLength: "100-300mm for mass lift-off; 400-600mm after groups separate.",
+      aperture: "f/7.1-f/9",
+      shutterSpeed: "1/2000-1/3200 sec",
+      technique:
+        "Pre-compose wider than instinct suggests, protect white feathers, start tracking before the first wave lifts, and tighten only after the flock opens into readable groups.",
+    },
+  },
+  {
+    id: "itinerary-north-loop-field-feeding",
+    title: "North Loop field feeding",
+    src: "./assets/generated/itinerary-hd/itinerary-07-north-loop-field-feeding.jpg",
+    category: "Itinerary",
+    alt:
+      "Generated 1080p itinerary planning image of cranes and geese feeding in Bosque del Apache North Loop winter crop rows",
+    caption:
+      "Purpose-built generated Itinerary image for North Loop field feeding from a vehicle-blind position; not an actual Bosque field photograph.",
+    rights:
+      "AI-generated project planning image from this guide's itinerary notes. Use as expectation-setting only.",
+    placement: ["Itinerary", "Visual Asset Manifest"],
+    description:
+      "Purpose-built generated Itinerary image for feeding cranes, mixed geese, field-edge raptors, crop-row lift, and legal vehicle-blind work.",
+    lesson: {
+      supposedLocation:
+        "North Loop fields, Farm Deck area, or another legal pullout with active winter crop-row feeding.",
+      lens: "200-600mm, 200-800mm, or 100-500mm class zoom from the vehicle.",
+      focalLength: "300-600mm",
+      aperture: "f/6.3-f/8",
+      shutterSpeed: "1/1000-1/2500 sec",
+      technique:
+        "Use the vehicle as a blind, include crop-row geometry when behavior is quiet, and watch field edges for raptors or flock lifts before moving position.",
+    },
+  },
+  {
+    id: "itinerary-south-crane-pond-landing-lane",
+    title: "South Crane Pond landing lane",
+    src: "./assets/generated/itinerary-hd/itinerary-08-south-crane-pond-landing-lane.jpg",
+    category: "Itinerary",
+    alt:
+      "Generated 1080p itinerary planning image of cranes approaching a South Crane Pond landing lane at Bosque del Apache sunset",
+    caption:
+      "Purpose-built generated Itinerary image for South Crane Pond pullout landings; not an actual Bosque field photograph.",
+    rights:
+      "AI-generated project planning image from this guide's itinerary notes. Use as expectation-setting only.",
+    placement: ["Itinerary", "Visual Asset Manifest"],
+    description:
+      "Purpose-built generated Itinerary image for landing posture, wing shape, paired crane approach, reflection landings, and wide roost scale.",
+    lesson: {
+      supposedLocation:
+        "South Crane Pond pullouts or the current active legal sunset approach lane.",
+      lens: "Long wildlife zoom on a support that allows smooth panning.",
+      focalLength: "400-700mm",
+      aperture: "f/6.3-f/8",
+      shutterSpeed: "1/1600-1/2500 sec",
+      technique:
+        "Stand where the wind makes the landing lane predictable, leave space ahead of the bird, and hold a wider fallback frame as roost scale grows near dusk.",
+    },
+  },
+  {
+    id: "itinerary-learned-crane-pool-repeat",
+    title: "Learned crane-pool repeat",
+    src: "./assets/generated/itinerary-hd/itinerary-09-learned-crane-pool-repeat.jpg",
+    category: "Itinerary",
+    alt:
+      "Generated 1080p itinerary planning image of sandhill crane behavior cues before takeoff at a Bosque del Apache sunrise pool",
+    caption:
+      "Purpose-built generated Itinerary image for a learned crane-pool repeat morning; not an actual Bosque field photograph.",
+    rights:
+      "AI-generated project planning image from this guide's itinerary notes. Use as expectation-setting only.",
+    placement: ["Itinerary", "Visual Asset Manifest"],
+    description:
+      "Purpose-built generated Itinerary image for behavior-cue sequences, head and neck focus, controlled bursts, cold air, and learned flight lanes.",
+    lesson: {
+      supposedLocation:
+        "Best crane-pool repeat after two mornings of field notes, using the learned takeoff lane and legal position.",
+      lens: "Long wildlife zoom with enough flexibility to widen if cranes shift position.",
+      focalLength: "400-700mm",
+      aperture: "f/6.3-f/8",
+      shutterSpeed: "1/1000-1/2000 sec",
+      technique:
+        "Watch posture before action: alert head angle, wing stretch, crouch, and run tension tell you when to start tracking before the bird leaves the water.",
+    },
+  },
+  {
+    id: "itinerary-willow-coyote-deck-wetland-compression",
+    title: "Willow and Coyote deck wetland compression",
+    src: "./assets/generated/itinerary-hd/itinerary-10-willow-coyote-deck-wetland-compression.jpg",
+    category: "Itinerary",
+    alt:
+      "Generated 1080p itinerary planning image of compressed wetland layers through reeds at Bosque del Apache Willow and Coyote deck viewpoints",
+    caption:
+      "Purpose-built generated Itinerary image for Willow and Coyote deck wetland compression; not an actual Bosque field photograph.",
+    rights:
+      "AI-generated project planning image from this guide's itinerary notes. Use as expectation-setting only.",
+    placement: ["Itinerary", "Visual Asset Manifest"],
+    description:
+      "Purpose-built generated Itinerary image for duck portraits, reed layers, distant cranes, passing birds, and minimal-footprint deck composition.",
+    lesson: {
+      supposedLocation:
+        "Willow Deck, Coyote Deck, or a similar public wetland viewpoint with layered reeds and open water.",
+      lens: "100-400mm, 200-600mm, or 200-800mm depending on distance.",
+      focalLength: "300-800mm",
+      aperture: "f/8-f/11",
+      shutterSpeed: "1/500-1/2000 sec",
+      technique:
+        "Compress habitat instead of chasing distance: align reeds, reflections, and clean head angles, then wait for a bird to move through the layered frame.",
+    },
+  },
+  {
+    id: "itinerary-sunset-motion-fallback-flight-deck",
+    title: "Sunset motion fallback at Flight Deck",
+    src: "./assets/generated/itinerary-hd/itinerary-11-sunset-motion-fallback-flight-deck.jpg",
+    category: "Itinerary",
+    alt:
+      "Generated 1080p itinerary planning image of intentional panning blur with cranes or geese over Bosque del Apache water at sunset",
+    caption:
+      "Purpose-built generated Itinerary image for a sunset motion fallback; not an actual Bosque field photograph.",
+    rights:
+      "AI-generated project planning image from this guide's itinerary notes. Use as expectation-setting only.",
+    placement: ["Itinerary", "Visual Asset Manifest"],
+    description:
+      "Purpose-built generated Itinerary image for safe sharp frames, slow flock movement, 1/250 panning, 1/125 or 1/60 abstract wing blur, and flat-light fallback.",
+    lesson: {
+      supposedLocation:
+        "Flight Deck if active, otherwise the crane pools or another legal pullout when sunset light goes flat.",
+      lens: "200-600mm or 100-500mm zoom, handheld or on a support that allows smooth panning.",
+      focalLength: "200-500mm",
+      aperture: "f/6.3-f/9",
+      shutterSpeed: "1/250, 1/125, or 1/60 sec for motion experiments after sharp safety frames.",
+      technique:
+        "Bank a sharp record frame first, then pan through the smoothest part of the motion and judge each file by head sharpness, wing smear, and background streak quality.",
+    },
+  },
+  {
+    id: "itinerary-south-loop-mist-and-reeds",
+    title: "South Loop mist and reeds",
+    src: "./assets/generated/itinerary-hd/itinerary-12-south-loop-mist-and-reeds.jpg",
+    category: "Itinerary",
+    alt:
+      "Generated 1080p itinerary planning image of mist and reeds in a Bosque del Apache South Loop wetland before sunrise",
+    caption:
+      "Purpose-built generated Itinerary image for a South Loop mist and reeds morning; not an actual Bosque field photograph.",
+    rights:
+      "AI-generated project planning image from this guide's itinerary notes. Use as expectation-setting only.",
+    placement: ["Itinerary", "Visual Asset Manifest"],
+    description:
+      "Purpose-built generated Itinerary image for muted wetland weather, ducks or geese in habitat, raptor crossings, and slow layered compositions.",
+    lesson: {
+      supposedLocation:
+        "South Loop wetland stretch or another legal pullout where mist, reeds, and gray water are strongest before full sun.",
+      lens: "100-400mm or 200-600mm depending on how much habitat should stay in the frame.",
+      focalLength: "100-400mm",
+      aperture: "f/8",
+      shutterSpeed: "1/500-1/1600 sec",
+      technique:
+        "When sunrise is muted, stop hunting for spectacle and make the weather visible: layer reeds, water, distant birds, and raptor movement into a slower frame.",
+    },
+  },
+  {
+    id: "itinerary-rio-viejo-desert-edge-details",
+    title: "Rio Viejo desert-edge details",
+    src: "./assets/generated/itinerary-hd/itinerary-13-rio-viejo-desert-edge-details.jpg",
+    category: "Itinerary",
+    alt:
+      "Generated 1080p itinerary planning image of a roadrunner in Rio Viejo desert-edge habitat at Bosque del Apache",
+    caption:
+      "Purpose-built generated Itinerary image for Rio Viejo and Bike Trail desert-edge details; not an actual Bosque field photograph.",
+    rights:
+      "AI-generated project planning image from this guide's itinerary notes. Use as expectation-setting only.",
+    placement: ["Itinerary", "Visual Asset Manifest"],
+    description:
+      "Purpose-built generated Itinerary image for roadrunner or quail, sparrows and seedheads, tracks, frost, dust, cattails, and cottonwood texture.",
+    lesson: {
+      supposedLocation:
+        "Rio Viejo Trail, Bike Trail area, visitor-center edge, or another quiet dry-margin habitat.",
+      lens: "Long zoom for small wildlife, plus a normal zoom for habitat texture.",
+      focalLength: "400-800mm for wildlife; 50-105mm for habitat details.",
+      aperture: "f/6.3-f/8 for wildlife; f/8-f/11 for habitat details.",
+      shutterSpeed: "1/1000-1/2000 sec for wildlife; 1/125-1/500 sec for still details.",
+      technique:
+        "Slow down after the morning spectacle, scan edges before stepping forward, and keep the background clean enough that a small subject does not disappear into brush.",
+    },
+  },
+  {
+    id: "itinerary-north-loop-field-staging-sunset",
+    title: "North Loop field staging at sunset",
+    src: "./assets/generated/itinerary-hd/itinerary-14-north-loop-field-staging-sunset.jpg",
+    category: "Itinerary",
+    alt:
+      "Generated 1080p itinerary planning image of cranes staging in Bosque del Apache North Loop fields at warm sunset",
+    caption:
+      "Purpose-built generated Itinerary image for North Loop field staging at sunset; not an actual Bosque field photograph.",
+    rights:
+      "AI-generated project planning image from this guide's itinerary notes. Use as expectation-setting only.",
+    placement: ["Itinerary", "Visual Asset Manifest"],
+    description:
+      "Purpose-built generated Itinerary image for warm side-light field staging, feeding cranes, birds crossing crop rows, distant raptor or flock movement, and return-to-roost decisions.",
+    lesson: {
+      supposedLocation:
+        "North Loop fields near Farm Deck or the current legal field edge with birds staging before roost return.",
+      lens: "200-600mm or similar wildlife zoom from a vehicle-blind or legal pullout.",
+      focalLength: "300-600mm",
+      aperture: "f/6.3-f/8",
+      shutterSpeed: "1/1000-1/2500 sec",
+      technique:
+        "Use warm side light and darker field backgrounds to separate birds from rows, then decide whether the field remains stronger than the return-to-roost route.",
+    },
+  },
+  {
+    id: "itinerary-final-learned-roost-sunrise",
+    title: "Final learned roost sunrise",
+    src: "./assets/generated/itinerary-hd/itinerary-15-final-learned-roost-sunrise.jpg",
+    category: "Itinerary",
+    alt:
+      "Generated 1080p itinerary planning image of a final learned sandhill crane roost sunrise composition at Bosque del Apache",
+    caption:
+      "Purpose-built generated Itinerary image for the final learned roost sunrise; not an actual Bosque field photograph.",
+    rights:
+      "AI-generated project planning image from this guide's itinerary notes. Use as expectation-setting only.",
+    placement: ["Itinerary", "Visual Asset Manifest"],
+    description:
+      "Purpose-built generated Itinerary image for final learned composition, wind-aligned takeoff, clean background action, and wide roost context.",
+    lesson: {
+      supposedLocation:
+        "Best current roost repeat, chosen from the week's actual bird movement and legal shooting position.",
+      lens: "200-600mm, 200-800mm, or a similar long wildlife zoom.",
+      focalLength: "300-600mm",
+      aperture: "f/6.3-f/8",
+      shutterSpeed: "1/1600-1/2500 sec",
+      technique:
+        "Use the week's notes to make one improved frame: cleaner background, better wind alignment, calmer timing, and deliberate room for water and mountain context.",
+    },
+  },
+  {
+    id: "itinerary-central-road-final-subject-gap-fill",
+    title: "Central road final subject gap fill",
+    src: "./assets/generated/itinerary-hd/itinerary-16-central-road-final-subject-gap-fill.jpg",
+    category: "Itinerary",
+    alt:
+      "Generated 1080p itinerary planning image of a roadrunner-style final subject gap-fill opportunity near Bosque del Apache central road habitat",
+    caption:
+      "Purpose-built generated Itinerary image for central-road or deck-based final subject gap fill; not an actual Bosque field photograph.",
+    rights:
+      "AI-generated project planning image from this guide's itinerary notes. Use as expectation-setting only.",
+    placement: ["Itinerary", "Visual Asset Manifest"],
+    description:
+      "Purpose-built generated Itinerary image for missing-subject fill, quiet portrait work, environmental frames, roadside habitat details, and final checklist gaps.",
+    lesson: {
+      supposedLocation:
+        "Visitor Center area, central road, strongest public deck, or roadside habitat where the remaining shot-list gap is plausible.",
+      lens: "100-400mm, 200-600mm, or 200-800mm depending on subject distance.",
+      focalLength: "300-700mm",
+      aperture: "f/6.3-f/8",
+      shutterSpeed: "1/1000-1/2500 sec",
+      technique:
+        "Use the last mid-morning for gaps, not novelty: one clean small-subject portrait, one environmental frame, and one habitat detail before packing assumptions become memory.",
+    },
+  },
+  {
+    id: "itinerary-highway-one-crane-pool-finale",
+    title: "Highway 1 crane-pool finale",
+    src: "./assets/generated/itinerary-hd/itinerary-17-highway-one-crane-pool-finale.jpg",
+    category: "Itinerary",
+    alt:
+      "Generated 1080p itinerary planning image of a final Highway 1 crane-pool sunset with cranes reflections and mountain bands",
+    caption:
+      "Purpose-built generated Itinerary image for the Highway 1 crane-pool finale; not an actual Bosque field photograph.",
+    rights:
+      "AI-generated project planning image from this guide's itinerary notes. Use as expectation-setting only.",
+    placement: ["Itinerary", "Visual Asset Manifest"],
+    description:
+      "Purpose-built generated Itinerary image for reflection landing finale, mountain-band silhouette, wide sky punctuation, late legal-light returns, and closing story frame.",
+    lesson: {
+      supposedLocation:
+        "Highway 1 crane-pool finale or the current strongest legal last-light crane return.",
+      lens: "Long wildlife zoom with enough range to include sky, water, and mountain bands.",
+      focalLength: "300-600mm",
+      aperture: "f/6.3-f/8",
+      shutterSpeed: "1/1000-1/2500 sec",
+      technique:
+        "Make the closing frame intentional: hold a little more sky and water, protect reflection space, and let late silhouettes and mountain bands carry the trip story.",
+    },
+  },
+  {
+    id: "itinerary-departure-backup-lens-cleaning",
+    title: "Departure backup and lens cleaning",
+    src: "./assets/generated/itinerary-hd/itinerary-18-departure-backup-lens-cleaning.jpg",
+    category: "Itinerary",
+    alt:
+      "Generated 1080p itinerary planning image of camera card backup lens cleaning and packed vehicle workflow after a Bosque del Apache trip",
+    caption:
+      "Purpose-built generated Itinerary image for Saturday departure backup, lens cleaning, field notes, and packed-cargo checks; not an actual hotel or field photograph.",
+    rights:
+      "AI-generated project planning image from this guide's itinerary notes. Use as expectation-setting only.",
+    placement: ["Itinerary", "Visual Asset Manifest"],
+    description:
+      "Purpose-built generated Itinerary image for card backup verification, lens dust check, field notes, packed vehicle organization, and departure discipline.",
+    lesson: {
+      supposedLocation:
+        "Socorro hotel room and vehicle staging area before departing, with any optional short loop treated as secondary to travel margin.",
+      lens: "24-105mm or phone/documentary camera for workflow reference.",
+      focalLength: "24-50mm",
+      aperture: "f/4-f/5.6",
+      shutterSpeed: "1/60-1/125 sec",
+      technique:
+        "Verify backups before memory fades, clean dust before travel, write final notes, hide gear in the packed vehicle, and skip the optional loop unless schedule margin is real.",
+    },
+  },
+];
+
 const practiceStandaloneVisuals = practiceVisuals.flatMap((visual) =>
   (practiceFrameExamples[visual.id] || [visual.title]).map((example, index) => {
     const frameNumber = String(index + 1).padStart(2, "0");
@@ -1327,6 +1780,7 @@ const visualById = new Map(
     ...generatedVisuals,
     ...standaloneGalleryVisuals,
     ...regeneratedGalleryVisuals,
+    ...itineraryGeneratedVisuals,
     ...practiceVisuals,
     ...practiceStandaloneVisuals,
     ...travelVisuals,
@@ -1543,6 +1997,10 @@ const practiceStandaloneLessons = Object.fromEntries(
   })
 );
 
+const itineraryLessons = Object.fromEntries(
+  itineraryGeneratedVisuals.map((visual) => [visual.id, visual.lesson])
+);
+
 const standaloneGalleryLessons = Object.fromEntries(
   standaloneGalleryVisuals.map((visual) => {
     const lesson = galleryLessons[visual.parentId];
@@ -1645,6 +2103,7 @@ const travelLessons = {
 const visualLessons = {
   ...galleryLessons,
   ...standaloneGalleryLessons,
+  ...itineraryLessons,
   ...practiceLessons,
   ...practiceStandaloneLessons,
   ...travelLessons,
@@ -2627,7 +3086,16 @@ const itineraryVisualPlan = [
   },
 ];
 
-const itineraryVisualsByKey = new Map(itineraryVisualPlan.map((item) => [item.key, item]));
+const itineraryVisualsByKey = new Map(
+  itineraryVisualPlan.map((item, index) => [
+    item.key,
+    {
+      ...item,
+      legacyVisualId: item.visualId,
+      visualId: itineraryGeneratedVisuals[index]?.id || item.visualId,
+    },
+  ])
+);
 
 function itinerarySlotKey(day, slot) {
   return `${day.date}|${slot.window}|${slot.place}`;
@@ -2635,8 +3103,12 @@ function itinerarySlotKey(day, slot) {
 
 function visualPlanForSlot(day, slot) {
   return itineraryVisualsByKey.get(itinerarySlotKey(day, slot)) || {
-    visualId: "crane-roost-dawn",
-    expected: visualById.get("crane-roost-dawn").examples,
+    visualId: "itinerary-highway-one-crane-pool-sunrise",
+    expected: [
+      "Purpose-built itinerary planning visual",
+      "Current field decision",
+      "Lens and exposure reference",
+    ],
   };
 }
 
@@ -4836,14 +5308,11 @@ function renderItinerary() {
             </div>
           </div>
           <div class="slot-visual">
-            ${renderStandaloneFrameGrid(visualPlan.visualId, {
-              labels: visualPlan.expected,
-              className: "itinerary-frame-grid",
-              compact: true,
-              hideDescription: true,
-              showLocation: false,
+            ${renderStandaloneFrameCard(visualPlan.visualId, {
+              className: "itinerary-lead-frame",
+              hideDescription: false,
+              showLocation: true,
               loading: "lazy",
-              ariaLabel: `${slot.place} standalone expected photo examples`,
             })}
           </div>`
         )

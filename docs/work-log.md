@@ -124,7 +124,7 @@ Completion notes:
 
 ## 2026-06-05 - Itinerary Purpose-Built Regenerated Image Correction Request
 
-Status: requested; not yet implemented.
+Status: completed and validated June 5, 2026.
 
 Goal: correct the Itinerary page visuals. The current implementation uses cropped images taken from prior generated mosaic/contact-sheet files, and the crops are not acceptable. Each itinerary visual should be regenerated as a high-quality standalone image that specifically suits the itinerary stop, time of day, subject, and field decision it is meant to illustrate.
 
@@ -156,6 +156,14 @@ Notes:
 
 - This correction supersedes the previous Itinerary implementation that reused cropped standalone frames extracted from mosaics/contact sheets.
 - The corrected requirement is to regenerate imagery for the intended illustration purpose, not to crop the old mosaics more carefully.
+
+Completion notes:
+
+- Generated and integrated 18 purpose-built standalone 1920x1080 Itinerary images under `site/assets/generated/itinerary-hd/`, one for every visible itinerary stop from Sunday arrival through Saturday departure.
+- Replaced the live Itinerary visual renderer so each stop now uses its own dedicated lead image instead of reused Gallery groups, cropped fragments, contact sheets, or split-frame grids.
+- Added full image metadata for each Itinerary visual, including title, description, generated-planning labeling, location/scenario, lens, focal length, aperture, shutter speed, and technique notes for the full-image overlay.
+- Documented every regenerated Itinerary image in the visual asset manifest with local path, original generated source file, alt text, placement, prompt/provenance summary, and rights note.
+- Validated desktop and 390px mobile: seven day tabs, 18 total Itinerary image references, 18 unique `itinerary-hd` sources, zero old Gallery/contact-sheet sources, no missing asset references, no browser console errors, working lightbox metadata, no page-level horizontal overflow, and exact 1920x1080 file dimensions.
 
 ## 2026-06-05 - Photo Windows High-Resolution Image And Layout Correction Request
 

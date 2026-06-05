@@ -1445,6 +1445,20 @@ main {
   min-width: 0;
 }
 
+.itinerary-lead-frame {
+  border: 0;
+  background: transparent;
+}
+
+.itinerary-lead-frame img {
+  border: 1px solid var(--line-soft);
+  border-radius: 8px;
+}
+
+.itinerary-lead-frame .visual-frame-copy {
+  padding: 10px 0 0;
+}
+
 .itinerary-frame-grid {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
