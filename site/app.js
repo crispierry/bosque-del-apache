@@ -888,6 +888,88 @@ const regeneratedGalleryImageGroups = {
         "Purpose-built regenerated 1080p planning photo for roadside patience, vehicle-blind etiquette, distant field birds, and undisturbed behavior.",
     },
   ],
+  "wetland-deck": [
+    {
+      id: "wetland-deck-01",
+      parentId: "wetland-deck",
+      title: "Ducks in reed reflections",
+      src: "./assets/generated/gallery-hd/wetland-deck-01.jpg",
+      category: "Mid-morning",
+      alt:
+        "Generated standalone 1080p planning photo of ducks moving through reed reflections at Bosque del Apache",
+      caption:
+        "Generated standalone 1080p planning photo for wetland duck and reed-reflection work; not an actual Bosque field photograph.",
+      rights:
+        "AI-generated project planning photo from this guide's shot descriptions. Use as expectation-setting only.",
+      placement: ["Gallery", "Visual Asset Manifest"],
+      description:
+        "Purpose-built regenerated 1080p planning photo for ducks, reed reflections, clean head angles, and layered mid-morning wetland composition.",
+    },
+    {
+      id: "wetland-deck-02",
+      parentId: "wetland-deck",
+      title: "Coots and water texture",
+      src: "./assets/generated/gallery-hd/wetland-deck-02.jpg",
+      category: "Mid-morning",
+      alt:
+        "Generated standalone 1080p planning photo of coots and ducks moving through textured Bosque del Apache wetland water",
+      caption:
+        "Generated standalone 1080p planning photo for coots, ducks, and bright-water texture; not an actual Bosque field photograph.",
+      rights:
+        "AI-generated project planning photo from this guide's shot descriptions. Use as expectation-setting only.",
+      placement: ["Gallery", "Visual Asset Manifest"],
+      description:
+        "Purpose-built regenerated 1080p planning photo for coots, ripples, bright water, exposure practice, and quiet wetland texture.",
+    },
+    {
+      id: "wetland-deck-03",
+      parentId: "wetland-deck",
+      title: "Distant cranes compressed through reeds",
+      src: "./assets/generated/gallery-hd/wetland-deck-03.jpg",
+      category: "Mid-morning",
+      alt:
+        "Generated standalone 1080p planning photo of distant sandhill cranes compressed through foreground reeds in mid-morning Bosque del Apache light",
+      caption:
+        "Generated standalone 1080p planning photo for long-lens compression through reeds; not an actual Bosque field photograph.",
+      rights:
+        "AI-generated project planning photo from this guide's shot descriptions. Use as expectation-setting only.",
+      placement: ["Gallery", "Visual Asset Manifest"],
+      description:
+        "Purpose-built regenerated 1080p planning photo for distant cranes, foreground reeds, long-lens layering, and mid-morning wetland light.",
+    },
+    {
+      id: "wetland-deck-04",
+      parentId: "wetland-deck",
+      title: "Backlit cattail and sparkle",
+      src: "./assets/generated/gallery-hd/wetland-deck-04.jpg",
+      category: "Mid-morning",
+      alt:
+        "Generated standalone 1080p planning photo of backlit cattails and sparkling Bosque del Apache wetland water",
+      caption:
+        "Generated standalone 1080p planning photo for backlit cattail and water-sparkle studies; not an actual Bosque field photograph.",
+      rights:
+        "AI-generated project planning photo from this guide's shot descriptions. Use as expectation-setting only.",
+      placement: ["Gallery", "Visual Asset Manifest"],
+      description:
+        "Purpose-built regenerated 1080p planning photo for cattail texture, backlight, water sparkle, and quiet non-spectacle composition.",
+    },
+    {
+      id: "wetland-deck-05",
+      parentId: "wetland-deck",
+      title: "Quiet wetland layers with birds small in frame",
+      src: "./assets/generated/gallery-hd/wetland-deck-05.jpg",
+      category: "Mid-morning",
+      alt:
+        "Generated standalone 1080p planning photo of layered Bosque del Apache wetland habitat with birds small in frame",
+      caption:
+        "Generated standalone 1080p planning photo for quiet wetland habitat layers; not an actual Bosque field photograph.",
+      rights:
+        "AI-generated project planning photo from this guide's shot descriptions. Use as expectation-setting only.",
+      placement: ["Gallery", "Visual Asset Manifest"],
+      description:
+        "Purpose-built regenerated 1080p planning photo for layered water, reeds, small birds, mountains, and calm mid-morning observation.",
+    },
+  ],
 };
 
 const regeneratedGalleryVisuals = Object.values(regeneratedGalleryImageGroups).flat();
