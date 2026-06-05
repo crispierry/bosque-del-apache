@@ -11,11 +11,10 @@ Likely host: `/Users/cris/Documents/github/cris pierry website`.
 Configured publishing pattern:
 
 - Build this as a small standalone project app in this repository first.
-- Publish this repository to Netlify with `site/` as the publish directory.
-- Mount it in the personal website under `/projects/bosque-del-apache`.
+- Publish the canonical production version by importing `site/` into the personal website at `/projects/bosque-del-apache`.
+- Use standalone Netlify only for previews or fallback hosting with `site/` as the publish directory.
 - Treat the existing photography gallery as related but not the main home for this guide, because this project is an itinerary/map/planning tool rather than a single photo gallery entry.
-- Reuse the personal site's project-app pattern if appropriate: publish the static app into a website public asset folder, or proxy the standalone Netlify site from that route.
-- Load the static app from `/projects/bosque-del-apache/index.html` inside the main website route so relative CSS, JavaScript, and image asset paths resolve correctly while the public route stays canonicalized without a trailing slash.
+- Reuse the personal site's project-app pattern: publish the static app into the website public asset folder, then load `/projects/bosque-del-apache/index.html` inside the main website route so relative CSS, JavaScript, and image asset paths resolve correctly while the public route stays canonicalized without a trailing slash.
 
 Deployment details live in `docs/site/deployment.md`.
 
@@ -41,7 +40,7 @@ Use top tabs for the major workspaces:
 - Five-day trip summary.
 - Best shooting windows by day.
 - Lodging base.
-- Weather/light alerts placeholder.
+- Current planning assumptions, field gates, and close-to-travel recheck reminders.
 - Today's plan card during trip dates.
 - Quick links to Map, Day 1-5, Gear, Practice, Travel, and Sources.
 
@@ -59,7 +58,6 @@ Use top tabs for the major workspaces:
   - Sunrise spots.
   - Mid-morning spots.
   - Sunset spots.
-  - Lodging.
   - Food/fuel.
   - Side trips.
   - Closures/restrictions.
@@ -72,6 +70,8 @@ Use top tabs for the major workspaces:
   - Confidence/source status.
 - Desktop: full map with side list.
 - Mobile: map-first view with bottom sheet location cards.
+
+Lodging has its own hotel-distance map in the Travel section so the refuge shooting map stays photography-first.
 
 ## Itinerary
 

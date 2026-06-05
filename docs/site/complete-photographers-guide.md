@@ -282,7 +282,7 @@ Verify before leaving home: FWS hours, fees, closures, roads, maps, water condit
 
 - SEO title: The Complete Photographer's Guide to Bosque del Apache
 - Meta description: A practical field guide to photographing Bosque del Apache: best seasons, sunrise and sunset spots, crane and snow goose behavior, gear, settings, ethics, logistics, and five-day itineraries.
-- Slug: `/projects/bosque-del-apache/complete-photographers-guide`
+- Slug: `/projects/bosque-del-apache/complete-photographers-guide.html`
 - H1: The Complete Photographer's Guide to Bosque del Apache
 
 ## Suggested Image Captions And Figure Callouts

@@ -42,8 +42,11 @@ npm run build
 ```text
 https://crispierry.com/projects/bosque-del-apache
 https://crispierry.com/projects/bosque-del-apache/index.html
+https://crispierry.com/projects/bosque-del-apache/complete-photographers-guide.html
 https://crispierry.com/projects/bosque-del-apache/styles.css
 https://crispierry.com/projects/bosque-del-apache/app.js
+https://crispierry.com/sitemap.xml
+https://crispierry.com/robots.txt
 ```
 
 When publishing from a nonstandard checkout or Codex worktree, run:
@@ -92,6 +95,7 @@ Use this for production.
 ```text
 https://crispierry.com/projects/bosque-del-apache
 https://crispierry.com/projects/bosque-del-apache/index.html
+https://crispierry.com/projects/bosque-del-apache/complete-photographers-guide.html
 https://crispierry.com/projects/bosque-del-apache/styles.css
 https://crispierry.com/projects/bosque-del-apache/app.js
 ```
@@ -131,10 +135,11 @@ netlify deploy --prod --dir=site
 
 ## Pre-Deploy Checklist
 
-- Start the local preview and check the Overview, Map, Itinerary, Lodging, Gear, Practice, Inspiration, and Sources tabs.
+- Start the local preview and check the Overview, Gallery, Guide, Map, Itinerary, Photo Windows, Travel, Gear, Practice, Inspiration, Media, and Sources tabs.
 - Confirm all local assets load from `site/assets/`.
 - Confirm the Leaflet map loads with the external Leaflet CSS and script.
 - Confirm the canonical URL in `site/index.html` points to `https://crispierry.com/projects/bosque-del-apache`.
+- Confirm the section navigation remains crawlable hash links in the static HTML and works as tabs with JavaScript enabled.
 - Commit changes before pushing.
 
 ## Post-Deploy Checklist
@@ -142,6 +147,8 @@ netlify deploy --prod --dir=site
 - Open `https://crispierry.com/projects/bosque-del-apache`.
 - Confirm CSS and JavaScript load from the project path.
 - Confirm browser refresh works from the project path.
+- Confirm `https://crispierry.com/sitemap.xml` includes `https://crispierry.com/projects/bosque-del-apache` and `https://crispierry.com/projects/bosque-del-apache/complete-photographers-guide.html`.
+- Confirm `https://crispierry.com/robots.txt` does not block `/projects/bosque-del-apache`.
 - Confirm the standalone Netlify URL still works for deploy previews.
 - If the deploy is bad, use Netlify's Deploys page to roll back to the previous successful deploy.
 

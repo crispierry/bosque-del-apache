@@ -36,4 +36,4 @@ The visitor-center coordinate is official FWS data. Deck, pullout, restroom, foo
 
 ## QA Note
 
-Desktop and mobile browser QA passed on June 3, 2026. The Festival of the Cranes date-bias update, Marriott Bonvoy lodging card, Dec 6-12 dated-rate lodging order, expanded Socorro lodging map pins, and per-image license source rows were also checked on desktop and mobile. Re-run QA after any further content, source, image, or layout changes.
+Desktop and mobile browser QA passed on June 4, 2026. The standalone Gallery and Practice frames, guide illustrations, map labels, itinerary/window image grids, Travel route/rental visuals, gear product imagery, lens length/weight scales, crawlable hash navigation, and no-script summary were checked on desktop and mobile. Re-run QA after any further content, source, image, or layout changes, and verify the main website sitemap and robots files after publishing.

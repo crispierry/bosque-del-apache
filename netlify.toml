@@ -1,8 +1,11 @@
 [build]
   publish = "site"
 
-# Supports checking this standalone Netlify site at the final mounted path too.
-# The owning crispierry.com site still needs the proxy/rewrite documented in docs/site/deployment.md.
+# Supports checking this standalone Netlify preview at the final mounted path too.
+# The redirect below is preview-only: the canonical production URL is the
+# no-trailing-slash crispierry.com route documented in docs/site/deployment.md.
+# Standalone preview needs the slash so relative CSS, JavaScript, and image paths
+# resolve from /projects/bosque-del-apache/ instead of /projects/.
 [[redirects]]
   from = "/projects/bosque-del-apache"
   to = "/projects/bosque-del-apache/"

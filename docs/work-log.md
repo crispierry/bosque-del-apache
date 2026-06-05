@@ -2,6 +2,763 @@
 
 This file tracks requested project work that has not yet been implemented, verified, and published.
 
+## 2026-06-05 - Gallery True Mosaic Regeneration Correction Request
+
+Status: requested; not yet implemented.
+
+Goal: correct the Gallery implementation. The cropped-contact-sheet approach is not acceptable. Regenerate the individual Gallery images as true standalone, high-resolution generated photos, and present them in a real clickable mosaic.
+
+Requested requirements:
+
+- Do not use crops split from the existing generated mosaic/contact-sheet files as the final Gallery images.
+- Regenerate each individual image represented in the earlier mosaic/contact-sheet concepts as its own standalone high-resolution generated photo.
+- Produce each standalone Gallery photo at true 1080p quality or better, ideally 1920x1080 for landscape frames or an equivalent high-resolution image with a minimum 1080px short edge for non-landscape framing.
+- Restore the Gallery page to a mosaic-style presentation, but make it a true mosaic assembled from individual image files, not one baked-in image with multiple photos burned into it.
+- Keep the visual grouping and storytelling value of the original mosaics/contact sheets.
+- Make every mosaic tile independently clickable.
+- Clicking any tile should open that specific standalone high-resolution image, not the whole mosaic/contact sheet.
+- Preserve or improve the title, description, technique, camera settings, lens/focal length, aperture, shutter speed, and field-location metadata for every individual image.
+- Keep the generated-planning-preview labeling clear so visitors understand these are planning visuals, not actual Bosque del Apache field photographs.
+- Update the visual asset manifest with every regenerated standalone image, including prompt/provenance, rights note, alt text, and placement.
+- Leave the current cropped assets in place only as temporary implementation artifacts until the corrected regenerated images are ready to replace them.
+
+Acceptance criteria:
+
+- The Gallery no longer relies on cropped pieces of prior contact sheets as final visual assets.
+- The Gallery displays true mosaic layouts composed of separate image files.
+- Every mosaic tile opens an individual standalone high-resolution image.
+- The full-image overlay shows the correct metadata for the selected tile.
+- The regenerated images look polished, intentional, and substantially better than the cropped contact-sheet frames.
+- Desktop and mobile QA confirm no broken images, awkward crops, text overlap, label confusion, or horizontal overflow.
+
+Notes:
+
+- This correction supersedes the prior Gallery crop/split interpretation recorded below.
+- The previous request was understood incorrectly: the desired outcome is regenerated standalone images plus a true clickable mosaic, not cropped frames extracted from a baked-in mosaic.
+
+## 2026-06-05 - Guide Purpose-Built Hero Illustration Correction Request
+
+Status: requested; not yet implemented.
+
+Goal: correct the Guide page visual treatment. The Guide should have its own high-quality, purpose-built generated image that illustrates the guide itself; reused cropped images, split contact-sheet frames, or scrapped artwork from earlier attempts are not acceptable.
+
+Requested requirements:
+
+- Do not use cropped pieces from existing generated mosaic/contact-sheet files as the final Guide illustration.
+- Do not use the previously scrapped Gallery crop artwork as Guide artwork.
+- Generate a new, polished, high-quality image specifically for the Guide page and its editorial purpose.
+- The image should feel like it belongs to a serious photography field guide for Bosque del Apache: practical, beautiful, destination-specific, and aligned with the guide's long-form publishing quality.
+- The image should illustrate the Guide as a whole, not merely recycle a single gallery frame.
+- Use the Guide's actual subject matter as creative direction: Bosque del Apache, winter bird photography, cranes/geese, dawn or dusk light, refuge wetlands, mountains, photographer field craft, and trip-planning context.
+- Make the image high-resolution and publication-ready, with no visible crop artifacts, no contact-sheet seams, no baked-in thumbnails, no awkward text, and no AI-generated labels inside the artwork.
+- Place the image thoughtfully in the Guide experience, such as a hero/editorial lead image or another prominent guide-specific placement.
+- Keep any generated-planning-preview or illustration labeling clear so visitors understand the image is generated editorial artwork, not an actual field photograph.
+- Update the visual asset manifest with the new Guide image prompt/provenance, rights note, alt text, and placement before publication.
+
+Acceptance criteria:
+
+- The Guide page includes a purpose-built high-quality generated illustration created specifically for the Guide.
+- The Guide no longer relies on cropped contact-sheet pieces or scrapped prior artwork for its primary visual treatment.
+- The image improves the editorial quality of the Guide and feels intentional, polished, and publication-ready.
+- The image has accurate alt text, caption/provenance where appropriate, and documented rights/usage notes.
+- Desktop and mobile QA confirm no broken image, awkward crop, text overlap, poor scaling, or horizontal overflow.
+
+Notes:
+
+- This correction supersedes the earlier Guide illustration implementation where existing cropped/generated assets were reused.
+- The corrected requirement is not to fill the Guide with leftover visuals; it is to create a dedicated high-quality Guide image for its own purpose.
+
+## 2026-06-05 - Map Label Offset And Pin Alignment Correction Request
+
+Status: requested; not yet implemented.
+
+Goal: correct the Refuge Shooting Map label placement so labels are clearly aligned with their pins and no longer sit awkwardly over the map or visually detach from the peg/pin they describe.
+
+Requested requirements:
+
+- Move map labels farther away from their pins where needed so they do not cover the pin, crowd nearby labels, or obscure important map context.
+- Keep every label visually aligned with its associated peg/pin.
+- Bias label placement outward by map side:
+  - Pins on the left side of the map should generally have labels placed farther to the left.
+  - Pins on the right side of the map should generally have labels placed farther to the right.
+- Maintain a clear visual relationship between each label and its exact pin, using direction, spacing, and tooltip pointer alignment.
+- Review every permanent map label, not just the most obvious overlaps.
+- Confirm the label strategy works on both desktop and mobile map sizes.
+
+Acceptance criteria:
+
+- Every map label is readable and visually connected to the correct pin.
+- Labels no longer sit directly on top of pins or awkwardly over important map areas when a better outward placement is available.
+- Left-side pins bias labels left, and right-side pins bias labels right.
+- Label pointers/anchors line up cleanly with the corresponding pins.
+- Desktop and mobile QA confirm no label collisions, bad pin-label alignment, unreadable labels, or page-level horizontal overflow.
+
+Notes:
+
+- The prior permanent-label implementation added the labels, but the current placement needs a dedicated alignment pass.
+- Do not treat this as completed until the label offsets and anchor directions have been visually checked against the live map.
+
+## 2026-06-05 - Itinerary Purpose-Built Regenerated Image Correction Request
+
+Status: requested; not yet implemented.
+
+Goal: correct the Itinerary page visuals. The current implementation uses cropped images taken from prior generated mosaic/contact-sheet files, and the crops are not acceptable. Each itinerary visual should be regenerated as a high-quality standalone image that specifically suits the itinerary stop, time of day, subject, and field decision it is meant to illustrate.
+
+Requested requirements:
+
+- Do not use crops split from existing generated mosaic/contact-sheet files as final Itinerary visuals.
+- Do not use incorrectly cropped or awkwardly framed versions of earlier generated images.
+- Regenerate the images needed for the Itinerary page as purpose-built, high-quality standalone planning visuals.
+- Each regenerated image should match the specific itinerary stop it illustrates, including:
+  - Day or itinerary phase.
+  - Sunrise, mid-morning, sunset, or travel/logistics timing.
+  - Expected subjects such as cranes, geese, ducks, wetlands, farm fields, flight decks, decks, roads, or weather fallback scenes.
+  - Photographer position and field-decision context.
+  - Lens/focal-length intent and practical shooting goal.
+- Preserve the idea of visual support for every relevant itinerary stop, but replace cropped source material with intentional regenerated artwork.
+- Keep the images labeled as generated planning previews, not actual Bosque del Apache field photographs.
+- Preserve or improve the image metadata used in cards and full-image overlays: title, description, location, technique, lens, focal length, aperture, shutter speed, and itinerary context.
+- Update the visual asset manifest with every regenerated itinerary image, including prompt/provenance, rights note, alt text, and placement.
+
+Acceptance criteria:
+
+- The Itinerary page no longer relies on cropped contact-sheet fragments as final visuals.
+- Every itinerary visual is a purpose-built regenerated image suited to the stop or field decision it supports.
+- The images look polished, correctly framed, and intentionally composed.
+- Each image opens individually with accurate full-image metadata.
+- Desktop and mobile QA confirm no broken images, awkward crops, text overlap, metadata confusion, or horizontal overflow.
+
+Notes:
+
+- This correction supersedes the previous Itinerary implementation that reused cropped standalone frames extracted from mosaics/contact sheets.
+- The corrected requirement is to regenerate imagery for the intended illustration purpose, not to crop the old mosaics more carefully.
+
+## 2026-06-05 - Photo Windows High-Resolution Image And Layout Correction Request
+
+Status: requested; not yet implemented.
+
+Goal: correct the Photo Windows page. The current implementation uses cropped/split images derived from earlier generated mosaics/contact sheets, which is not acceptable. The page also feels too crowded and needs a cleaner layout that gives the photography windows and high-quality images room to breathe.
+
+Requested requirements:
+
+- Do not use cropped pieces from existing generated mosaic/contact-sheet files as final Photo Windows visuals.
+- Do not use scraped, split, or awkwardly cropped artwork from prior attempts.
+- Generate new high-resolution images specifically for the Photo Windows page.
+- Each generated image should be purpose-built for the photo window it illustrates:
+  - Sunrise.
+  - Mid-morning.
+  - Sunset.
+  - Weather or fallback scenarios where appropriate.
+- Images should be publication-quality, correctly framed, and at least true 1080p quality or better.
+- The images should directly support the page's teaching purpose: when to shoot, what subject behavior to expect, where to stand, what lens/focal length to consider, and what photographic decision the time window requires.
+- Preserve or improve the full-image metadata for each visual: title, description, field location, technique, lens, focal length, aperture, shutter speed, and window/timing context.
+- Redesign the Photo Windows page so it is less crowded and easier to scan.
+- Find a better layout for comparing sunrise, mid-morning, sunset, and fallback windows without overwhelming the reader.
+- Give high-resolution imagery a prominent role rather than squeezing too many small cards into one dense area.
+- Keep generated-planning-preview labeling clear so visitors understand these are planning visuals, not actual Bosque del Apache field photographs.
+- Update the visual asset manifest with every regenerated Photo Windows image, including prompt/provenance, rights note, alt text, and placement.
+
+Acceptance criteria:
+
+- The Photo Windows page no longer relies on cropped contact-sheet fragments or split mosaic images as final visuals.
+- Every major photo window has one or more purpose-built high-resolution generated images.
+- The page layout feels calmer, clearer, and less crowded on desktop and mobile.
+- The redesigned page makes it easy to compare sunrise, mid-morning, sunset, and fallback shooting decisions.
+- Each image opens individually with accurate full-image metadata.
+- Desktop and mobile QA confirm no broken images, awkward crops, crowded card stacks, text overlap, metadata confusion, or horizontal overflow.
+
+Notes:
+
+- This correction supersedes the previous Photo Windows implementation that reused cropped standalone frames extracted from mosaics/contact sheets.
+- The priority is the high-resolution regenerated images; the layout redesign should support those images instead of competing with them.
+
+## 2026-06-05 - Travel Rental Car Section Layout And Label Correction Request
+
+Status: requested; not yet implemented.
+
+Goal: improve the Travel page rental-car section. The generated rental car illustration is successful and should be kept, but the section should not be framed as a "rental workflow." It should clearly read as a rental car section, and the layout needs to be redesigned so the image and rental-car guidance work better together.
+
+Requested requirements:
+
+- Keep the generated rental car illustration; the image itself is approved and should not be discarded.
+- Reframe the section language from "rental workflow" to "rental car" or another clear rental-car-specific label.
+- Avoid implying the image is a generic workflow when it is specifically about the rental car decision and cargo/field setup.
+- Redesign the rental car section layout on the Travel page.
+- Find a layout where the illustration feels integrated, polished, and useful rather than awkwardly attached to the current card flow.
+- Make the rental car guidance easier to scan and act on.
+- Preserve the practical decision content: car type, predawn logistics, cargo setup, long-lens/tripod handling, comfort, and field-readiness.
+- Confirm the section works well on both desktop and mobile.
+- Update captions, labels, alt text, and visual manifest wording if needed so they accurately describe the image as a rental car illustration.
+
+Acceptance criteria:
+
+- The Travel page rental section clearly reads as a rental car section, not a rental workflow section.
+- The approved rental car illustration remains in use.
+- The layout looks intentional and balanced on desktop and mobile.
+- The image, heading, caption, and guidance copy all use consistent rental-car framing.
+- Desktop and mobile QA confirm no awkward image placement, text crowding, broken image, label confusion, or horizontal overflow.
+
+Notes:
+
+- The route/airport illustration work is approved.
+- The rental car illustration is approved; the requested change is section labeling and layout, not regenerating that image.
+
+## 2026-06-05 - Gear Scale Reference Image And Category Layout Correction Request
+
+Status: requested; not yet implemented.
+
+Goal: improve the Gear page lens scale charts so they are easier to understand at a glance. The current charts are missing clear visual references, the sort order should run from largest/heaviest to smallest/lightest, and the category descriptions are mis-positioned.
+
+Requested requirements:
+
+- Add reference images or visual reference markers to each lens length chart so the reader understands what common sizes mean, such as 100mm, 200mm, and other meaningful reference points.
+- Add comparable reference images or visual reference markers to the weight charts so the reader understands what the listed gram weights feel like in practice.
+- Sort physical lens length charts from the longest/tallest lenses first down to the smallest lenses.
+- Sort weight charts from the heaviest lenses first down to the lightest/smallest lenses.
+- Keep the sorting consistent inside each category, including 70-200mm zooms, wildlife zooms, super-zooms, primes, and teleconverters where applicable.
+- Rework the category header layout so each category description sits directly under the category title.
+- Fix the current indentation/alignment problem where the category description appears off to the right instead of reading as part of the category heading.
+- Make the reference visuals and labels useful without making the charts feel crowded.
+- Confirm the revised scale charts work on both desktop and mobile.
+
+Acceptance criteria:
+
+- Every lens length chart includes clear reference imagery or markers for familiar size comparisons.
+- Every lens weight chart includes clear reference imagery or markers for practical weight comparisons.
+- Length charts read from longest/tallest to smallest.
+- Weight charts read from heaviest to lightest/smallest.
+- Category descriptions appear under their category titles with clean alignment.
+- The chart layout remains readable, scrollable where appropriate, and not visually crowded.
+- Desktop and mobile QA confirm no broken reference images, confusing alignment, text overlap, unreadable chart labels, or page-level horizontal overflow.
+
+Notes:
+
+- The existing brand/category filter concept is useful, but the scale charts need better reference context and clearer hierarchy.
+- Do not treat this as completed until the chart order, reference visuals, and category-description alignment have all been checked visually.
+
+## 2026-06-05 - Practice Technique Image And Teaching Layout Correction Request
+
+Status: requested; not yet implemented.
+
+Goal: correct the Practice page so each of the nine pre-trip techniques has a meaningful, original, high-quality image and enough page space/instructional depth for a photographer to actually learn the technique.
+
+Requested requirements:
+
+- Create or regenerate original high-quality images for each of the nine Practice techniques.
+- Do not use cropped contact-sheet fragments, mismatched generated leftovers, or visuals that do not clearly support the specific technique.
+- Each technique image should make immediate visual sense for the lesson it illustrates.
+- Each of the nine techniques should have its own purposeful visual direction, tied to the actual skill being taught.
+- Redesign the Practice page layout so the nine technique cards are not crammed into three dense columns.
+- Give each technique proper space on the page so it feels important and learnable.
+- Make the Practice page feel like a teaching experience, not a compact card directory.
+- Provide enough information for each technique that a person can understand what to practice, why it matters, how to practice it, and what success looks like.
+- Preserve navigation into individual practice-detail pages where useful, but improve the main page so it already communicates the lesson value.
+- Keep generated-planning-preview labeling clear where generated images are used.
+- Update the visual asset manifest with every new Practice technique image, including prompt/provenance, rights note, alt text, and placement.
+
+Acceptance criteria:
+
+- All nine Practice techniques have original high-quality images created for that specific technique.
+- No Practice technique relies on confusing, irrelevant, awkwardly cropped, or leftover imagery.
+- The Practice page layout is roomier than the current three-column cram and gives each technique appropriate visual and instructional weight.
+- Each technique includes enough teaching content for the user to learn what to do, not merely recognize the topic.
+- Desktop and mobile QA confirm no broken images, awkward crops, crowded cards, text overlap, confusing hierarchy, or horizontal overflow.
+
+Notes:
+
+- This correction supersedes the previous Practice visual implementation that reused cropped/split or poorly matched generated images.
+- The priority is a better learning experience: high-quality technique-specific images plus enough layout space and explanation for each technique to teach well.
+
+## 2026-06-05 - Inspiration High-Resolution Generated Photo Set Request
+
+Status: requested; not yet implemented.
+
+Goal: correct and expand the Inspiration page with high-resolution, purpose-built, photorealistic generated images that accurately capture the kinds of photographs people typically make at Bosque del Apache. Cropped fragments from previous mosaic/contact-sheet images are not acceptable.
+
+Requested requirements:
+
+- Do not use cropped pieces from existing generated mosaic/contact-sheet files as final Inspiration visuals.
+- Do not use awkwardly cropped, low-quality, or leftover generated artwork from prior attempts.
+- Generate a larger set of high-quality, photorealistic inspiration images for the Inspiration page.
+- Target approximately 30 generated inspiration images, unless implementation discovers a better final count that still gives the page enough breadth.
+- Base the images on typical Bosque del Apache photography subjects and scenes, such as:
+  - Sandhill cranes at dawn roosts.
+  - Snow goose blast-offs.
+  - Evening crane fly-ins.
+  - Birds reflected in calm wetlands.
+  - Backlit mist, breath, and cold morning atmosphere.
+  - Flight formations against New Mexico mountains.
+  - Farm-field feeding behavior.
+  - Ducks, raptors, cottonwoods, desert edges, and weather fallback subjects.
+  - Wide environmental scenes, tight behavior studies, silhouettes, pans, and layered flock compositions.
+- Each generated image should be high-resolution, publication-ready, and photorealistic.
+- Each image should correctly capture the Bosque del Apache setting, season, light, habitat, and photographic subject.
+- Each image should have complete technique metadata, including:
+  - Title.
+  - Description.
+  - Scene or subject type.
+  - Field location or likely shooting area.
+  - Technique used.
+  - Lens choice.
+  - Focal length.
+  - Aperture.
+  - Shutter speed.
+  - ISO if useful.
+  - Photographer position or field note where useful.
+- Redesign or extend the Inspiration page so the image set feels curated, inspiring, and useful rather than crowded.
+- Keep generated-planning-preview labeling clear so visitors understand these are generated inspiration/planning visuals, not actual Bosque del Apache field photographs.
+- Update the visual asset manifest with every generated Inspiration image, including prompt/provenance, rights note, alt text, metadata, and placement.
+
+Acceptance criteria:
+
+- The Inspiration page no longer relies on cropped contact-sheet fragments as final visuals.
+- The page includes a broad, high-quality generated inspiration set of around 30 Bosque del Apache scenes.
+- The generated images are photorealistic, well-composed, and visually credible for Bosque del Apache.
+- The image set covers a useful range of typical Bosque subjects, light windows, focal lengths, and field techniques.
+- Every image opens or presents with complete technique metadata, including focal length, aperture, shutter speed, and technique.
+- The page layout feels curated and inspirational on desktop and mobile.
+- Desktop and mobile QA confirm no broken images, awkward crops, crowded layout, text overlap, metadata confusion, or horizontal overflow.
+
+Notes:
+
+- This correction supersedes the previous Inspiration implementation that reused cropped/split generated frames.
+- The purpose of this page is inspiration and photographic expectation-setting, so image quality and scene credibility matter more than simply filling slots.
+
+## 2026-06-05 - Media Disclaimer Copy Removal Request
+
+Status: requested; not yet implemented.
+
+Goal: clean up the Media section by removing unnecessary disclaimer copy that clutters the page.
+
+Requested requirements:
+
+- Remove the small disclaimer text that says "Generated Preview Source Photo Not Reused" from the Media section.
+- Do not replace it with another similarly distracting disclaimer in the same location.
+- Keep any required source, rights, provenance, or generated-preview information in the appropriate manifest, source notes, or metadata rather than as distracting repeated card copy.
+- Preserve useful source links and media context.
+
+Acceptance criteria:
+
+- The Media section no longer shows the "Generated Preview Source Photo Not Reused" disclaimer.
+- The page remains clear about sources and generated previews without unnecessary visual clutter.
+- Desktop and mobile QA confirm no layout regressions or awkward blank space after the copy is removed.
+
+Notes:
+
+- This is a copy/layout cleanup request only; it does not require regenerating Media images.
+
+## 2026-06-05 - Sources Thumbnail Relevance Cleanup Request
+
+Status: requested; not yet implemented.
+
+Goal: clean up the Sources page thumbnails. The current thumbnails are repetitive and do not make sense for the links they represent. Either remove the thumbnails or replace them with visuals that do justice to each linked source.
+
+Requested requirements:
+
+- Review the Sources page thumbnail treatment.
+- Remove thumbnails that are repetitive, generic, confusing, or unrelated to the linked source.
+- If thumbnails remain, each one should meaningfully support the specific source it links to.
+- Avoid reusing the same generated preview repeatedly across unrelated source cards.
+- Prioritize source clarity and credibility over decorative imagery.
+- Keep the page easy to scan and focused on source quality, date checked, source type, and relevance.
+- If replacement visuals are used, document their source/provenance and rights in the visual asset manifest where needed.
+- If no suitable visual exists for a source, use a cleaner text-only or icon-like treatment instead of forcing an irrelevant thumbnail.
+
+Acceptance criteria:
+
+- The Sources page no longer shows repetitive thumbnails that make no sense for the linked sources.
+- Each source card either has no thumbnail or has a thumbnail that clearly fits the linked source.
+- The page feels more credible, less noisy, and easier to scan.
+- Desktop and mobile QA confirm no awkward blank spaces, broken images, confusing repeated visuals, text overlap, or horizontal overflow.
+
+Notes:
+
+- The likely acceptable outcome is removing many or all source thumbnails unless a source-specific visual is genuinely useful.
+- Do not keep thumbnails simply because the Media or Inspiration sections have imagery.
+
+## 2026-06-04 - Gallery Standalone HD Image Request
+
+Status: completed and validated June 4, 2026.
+
+Goal: redo the Gallery so each image currently embedded inside the generated mosaic/contact-sheet assets becomes its own standalone HD image.
+
+Requested requirements:
+
+- Replace the current gallery mosaic/contact-sheet presentation with individual images.
+- Use the existing generated gallery ideas/frames as the basis for the standalone images.
+- Make each standalone image 1024 HD size.
+- Keep each image separate rather than bundling about five frames into one mosaic.
+- For every individual gallery image, include:
+  - Title.
+  - Description.
+  - Technique.
+  - Camera settings.
+  - Field location.
+
+Acceptance criteria:
+
+- The Gallery tab no longer displays five-frame mosaic/contact-sheet images as the primary gallery assets.
+- Each former mosaic frame is represented by a standalone 1024-size image file.
+- Each gallery card and full-image view expose the required title, description, technique, camera settings, and field location.
+- Generated images remain labeled as planning previews, not actual Bosque del Apache field photographs.
+- The visual asset manifest is updated for every new standalone gallery image before publication.
+- Desktop and mobile QA confirm the gallery has no broken images, console errors, text overlap, or horizontal overflow.
+
+Completion notes:
+
+- Split the nine generated Gallery contact sheets into 45 standalone Gallery frame files under `site/assets/generated/gallery-standalone/`.
+- Rendered the Gallery tab from the standalone frame set, with zero contact-sheet images used as primary Gallery cards.
+- Added visible title, description, technique, camera settings, and field-location metadata to every Gallery card.
+- Preserved the full-image overlay and populated it with standalone image, title, description, location, lens, focal length, aperture, shutter speed, and technique.
+- Updated `docs/research/visual-asset-manifest.md` with a row for every standalone Gallery frame.
+- Validated desktop and 390px mobile: 45 Gallery cards, no broken images, no console errors, no page-level horizontal overflow, and no contact-sheet primary Gallery images.
+
+## 2026-06-04 - Guide Page Editorial Illustration Request
+
+Status: completed and validated June 4, 2026.
+
+Goal: make the Guide page feel like an eloquently illustrated publishing-house guide by placing high-quality visuals throughout the long-form content where they naturally support the writing.
+
+Requested requirements:
+
+- Add illustrations throughout the Guide page, not just in the Gallery.
+- Use the existing high-quality generated images where they fit the surrounding guide copy.
+- When the guide discusses camera gear, include relevant gear photos already available on the website.
+- When the guide discusses lodging or hotels, include relevant lodging/travel illustrations.
+- Treat the Guide as an editorial publication: images should be placed with taste, context, rhythm, and visual quality.
+- Keep images high quality and avoid filler visuals.
+
+Acceptance criteria:
+
+- Major Guide sections have relevant supporting visuals where an editor would naturally place them.
+- Gear discussion includes appropriate existing gear photos.
+- Lodging or hotel discussion includes appropriate lodging/travel illustrations.
+- Generated visuals remain clearly labeled as planning previews where needed.
+- Visual placement improves comprehension and pacing without overwhelming the text.
+- Desktop and mobile QA confirm no broken images, awkward crops, text overlap, or horizontal overflow.
+- The visual asset manifest is updated for any new image placements before publication.
+
+Completion notes:
+
+- Added 10 editorial figures throughout `site/complete-photographers-guide.html`, which also feeds the in-app `#guide` tab.
+- Used a mix of existing public-domain field imagery, standalone generated Gallery frames, a local Gear product photo, and a lodging/travel preview.
+- Placed visuals at major guide sections including seasonality, time of day, places, wildlife behavior, techniques, equipment, itinerary strategy, logistics, and shot list.
+- Added Guide figure styling for editorial captions, source/usage labels, uncropped images, and mobile-safe layout.
+- Updated the visual asset manifest with the Guide editorial placements.
+- Validated the in-app Guide and standalone guide page on desktop and 390px mobile: 10 figures, no broken images, no console errors, and no page-level horizontal overflow.
+
+## 2026-06-04 - Map Pin Label Request
+
+Status: completed and validated June 4, 2026.
+
+Goal: make the Map page easier to read by showing each pin's name directly on the map.
+
+Requested requirements:
+
+- Add the location name as an on-map label for each pin.
+- Keep labels visually connected to their corresponding pins.
+- Make sure labels do not overlap with one another.
+- Preserve map readability on desktop and mobile.
+
+Acceptance criteria:
+
+- Every map pin has a visible name label on the map itself.
+- Labels do not overlap each other or obscure important map information.
+- Labels remain legible at the intended map size and responsive breakpoints.
+- Desktop and mobile QA confirm no label collisions, text clipping, or horizontal overflow.
+
+Completion notes:
+
+- Added permanent on-map labels to the photography Map pins while leaving the Travel lodging map label-free.
+- Added per-location label direction and offset hints for dense clusters such as the crane ponds, Willow/Coyote Deck, Farm Deck, and Visitor Center.
+- Added responsive desktop/mobile label placement support where one label needed different desktop and mobile positioning.
+- Added a responsive map refresh so labels stay separated after browser resize or phone rotation.
+- Styled labels as compact one-line map callouts with connector arrows.
+- Validated desktop and 390px mobile: 11 visible Map labels, zero label collisions, zero clipped labels, no console errors, and no page-level horizontal overflow.
+
+## 2026-06-04 - Itinerary Layout And HD Image Request
+
+Status: completed and validated June 4, 2026.
+
+Goal: redesign the Itinerary page to reduce dead white space, put more emphasis on images and expected photo types, and make better use of the available layout space.
+
+Requested requirements:
+
+- Redesign the current table-like itinerary layout because it leaves too much dead white space.
+- Maximize useful space and visual density without making the page feel crowded.
+- Give more focus to the images and expected photo types for each itinerary stop.
+- Use individual image assets, not embedded five-frame contact sheets, for itinerary visuals.
+- The images may be arranged in a mosaic-style presentation, but each image must remain its own standalone image.
+- Each image should be clickable into its HD format.
+- Reuse the standalone gallery images where appropriate once those are created.
+
+Acceptance criteria:
+
+- The Itinerary page no longer feels dominated by empty table space.
+- Expected photo types are visually prominent and easy to scan.
+- Itinerary visuals are individual images, even when grouped into a mosaic-style layout.
+- Every itinerary image opens to an HD view.
+- Reused gallery images remain consistent with the Gallery metadata and visual asset manifest.
+- Desktop and mobile QA confirm the layout has no broken images, awkward crops, text overlap, or horizontal overflow.
+
+Completion notes:
+
+- Reworked the Itinerary slot cards into denser planning cards with time, place, goal, gear, position, expected photo types, and visual examples grouped without the old table-like dead space.
+- Replaced the former single contact-sheet preview with individual standalone Gallery frames for every itinerary stop.
+- Made every itinerary visual clickable into the shared full-image view with field location, lens, focal length, aperture, shutter speed, and technique metadata.
+- Updated the visual asset manifest to record reused standalone Itinerary placements.
+- Validated desktop and 390px mobile: no broken images, no contact-sheet images in the active Itinerary view, no full-image cropping trap, and no page-level horizontal overflow.
+
+## 2026-06-04 - Photo Windows Standalone Image Metadata Request
+
+Status: completed and validated June 4, 2026.
+
+Goal: update the Photo Windows page so every visual example is an individual clickable image with complete teaching metadata.
+
+Requested requirements:
+
+- Replace any mosaic/contact-sheet-style image usage with individual images.
+- Make each image clickable so the full-size version can be viewed.
+- For every image, include:
+  - Name.
+  - Description.
+  - Location.
+  - Photo technique used.
+  - Lens.
+  - Focal length.
+  - Aperture.
+  - Shutter speed.
+- Reuse the standalone gallery images where appropriate once those are created.
+
+Acceptance criteria:
+
+- The Photo Windows page uses individual image assets for each visual example.
+- Every image opens into a full-size view.
+- Every image has the requested name, description, location, technique, lens, focal length, aperture, and shutter-speed metadata.
+- Sunrise, mid-morning, sunset, and fallback windows remain easy to compare.
+- Reused images stay consistent with the Gallery and Itinerary metadata where they overlap.
+- Desktop and mobile QA confirm no broken images, awkward crops, text overlap, metadata clipping, or horizontal overflow.
+- The visual asset manifest is updated for any new or reused image placements before publication.
+
+Completion notes:
+
+- Replaced Photo Windows contact-sheet previews with individual standalone frames for sunrise, mid-morning, sunset, and fallback scenarios.
+- Made each Photo Windows visual clickable into the full-image view.
+- Populated the full-image view for each visual with name, description, field location, technique, lens, focal length, aperture, and shutter speed.
+- Kept sunrise, mid-morning, and sunset comparisons separated by window tabs while adding standalone image grids to each window.
+- Updated the visual asset manifest with reused standalone Photo Windows placements.
+- Validated desktop and 390px mobile: no broken images, no contact-sheet images in the active Photo Windows views, no metadata clipping in tested overlays, and no page-level horizontal overflow.
+
+## 2026-06-04 - Travel Airport Map And Rental Illustration Request
+
+Status: completed and validated June 4, 2026.
+
+Goal: improve the Travel page visuals so the airport and rental-car planning sections are easier to understand at a glance.
+
+Requested requirements:
+
+- Add a U.S. map at the top of the airport information section.
+- The map should show SFO, Oakland, SJC, and ABQ so the user can quickly understand the travel geography.
+- Add a small logo or illustration for each airport listed.
+- Generate airport visuals if needed, while keeping rights and provenance clear.
+- Add a polished illustration for the rental-car card or rental-car planning piece.
+- Use the same editorial illustration design pattern used and preferred for the user's website articles.
+- Keep all new visuals high quality and aligned with the Travel page's practical planning tone.
+
+Acceptance criteria:
+
+- The Travel page airport section includes a clear U.S. map with SFO, Oakland/OAK, SJC, and ABQ labeled.
+- Airport labels and visual markers do not overlap or become unreadable on desktop or mobile.
+- Each airport has an accompanying logo or illustration.
+- The rental-car section includes an illustration that matches the established website article illustration style.
+- Any generated or third-party visual assets are documented in the visual asset manifest before publication.
+- Desktop and mobile QA confirm no broken images, awkward crops, text overlap, label collisions, or horizontal overflow.
+
+Completion notes:
+
+- Generated and integrated a rights-safe editorial route-map illustration for the Travel airport section.
+- Rendered exact site-controlled labels for SFO, OAK, SJC, ABQ, Socorro, and Bosque so the map does not rely on AI-generated text.
+- Added a small code-based airport badge/illustration to each airport card.
+- Generated and integrated a rental SUV cargo-workflow illustration for the rental-car section.
+- Moved the route-map full-image control below the map artwork so it does not sit on top of mobile route labels.
+- Added both new generated travel illustrations to the visual asset manifest with original generated file IDs, prompts/provenance, and rights notes.
+- Validated desktop and 390px mobile: one route visual, one rental visual, four airport badges, six airport labels, zero label collisions, zero broken images, zero contact-sheet images in the active Travel view, and no page-level horizontal overflow.
+
+## 2026-06-04 - Gear Scale Category And Brand Toggle Request
+
+Status: completed and validated June 4, 2026.
+
+Goal: make the Lens Length Scale and Lens Weight Scale easier to compare by grouping lenses into useful categories and allowing brand-level filtering.
+
+Requested requirements:
+
+- Redesign both the Lens Length Scale and Lens Weight Scale so they are easier to read without relying on one long horizontal scroll.
+- Break the lens comparisons into categories, such as:
+  - Super-zooms.
+  - Zooms.
+  - 105mm and lower.
+- Refine category names during implementation if a clearer taxonomy fits the actual gear list better.
+- Add checkbox controls that let the user enable or disable brands.
+- Brand filters should include Sony, Sigma, and Canon.
+- Brand enable/disable controls should affect both the length and weight scales.
+- Preserve the ability to compare equivalent options across brands.
+
+Acceptance criteria:
+
+- Lens Length Scale is grouped into readable categories.
+- Lens Weight Scale is grouped into readable categories.
+- Sony, Sigma, and Canon checkboxes filter the visible items in both scales.
+- Filtering updates the comparison clearly without leaving confusing gaps or empty chart states.
+- The charts remain legible on desktop and mobile.
+- Desktop and mobile QA confirm no text overlap, broken layout, inaccessible controls, or horizontal overflow beyond intentional local chart scrolling if still needed.
+
+Completion notes:
+
+- Reworked Lens Length Scale and Lens Weight Scale into grouped category charts rather than one long undifferentiated horizontal scale.
+- Added shared Sony, Sigma, and Canon checkbox controls that update both the length and weight scales together.
+- Grouped lenses into practical comparison categories including 105mm and lower, 70-200mm zooms, wildlife zooms, super-zooms/long reach, and teleconverters.
+- Added empty-state handling when all brands are disabled.
+- Preserved local chart scrolling inside category charts while preventing page-level horizontal overflow.
+- Validated desktop and 390px mobile: three checkboxes, five populated category groups, brand filtering removes and restores the correct systems across both scales, all-brands-off state renders empty notices, and no page-level horizontal overflow.
+
+## 2026-06-04 - Practice Filter Section Reorder Request
+
+Status: completed and validated June 4, 2026.
+
+Goal: reorganize the Practice page so the filter material teaches concepts first, then sizes, with the filter kit and drills moved to the end.
+
+Requested requirements:
+
+- Move the Filter Kit and Drills section to the end of the Practice page.
+- Do not lead with the filter kit/drill material because it is not the most important part.
+- Move the explanation of what each filter type is higher on the page.
+- Make the filter-type explanations their own clear section.
+- Present filter sizes after the conceptual explanation of filter types.
+- Move the current filter-area details lower, after the core explanations and size guidance.
+- Focus first on explaining what each type of filter is.
+- Focus second on telling the user which filter sizes matter.
+
+Acceptance criteria:
+
+- Practice page filter content starts with clear explanations of filter types.
+- Filter-size guidance appears after filter-type explanations.
+- Filter Kit and Drills appears near the end of the Practice page.
+- The reordered section reads as a coherent learning sequence.
+- Desktop and mobile QA confirm the section order is clear and no layout/text overlap or horizontal overflow was introduced.
+
+Completion notes:
+
+- Reordered Practice so the filter material starts with filter-type concepts, then filter-size guidance, then the nine practice techniques, with Filter Kit And Drills moved near the end.
+- Split the existing shared filter guidance into Practice-specific concept and size sections without changing the Gear guidance data.
+- Kept the filter drills as hands-on homework after the core explanations and technique cards.
+- Validated desktop and 390px mobile: the Practice page renders in the requested learning order, with no broken images, no text overlap found in browser QA, and no page-level horizontal overflow.
+
+## 2026-06-04 - Practice Standalone Image And Full-View Request
+
+Status: completed and validated June 4, 2026.
+
+Goal: fix the Practice page image experience so each visual is a standalone image that opens fully, without cropping, and includes complete teaching metadata.
+
+Requested requirements:
+
+- Fix the "Open full image" behavior so the whole image is visible.
+- If the image is taller or larger than the viewport, provide a way to navigate or scroll up and down inside the full-image view.
+- Do not crop the full-image view in a way that hides part of the image.
+- Replace any mosaic/contact-sheet-style image usage with individual images.
+- Each Practice image must be individually clickable and open separately.
+- For every image, include:
+  - Description.
+  - Technique used.
+  - Focal length.
+  - Shutter speed.
+  - Aperture.
+  - Any other useful technical information.
+- Reuse the standalone generated image set where appropriate once those assets are created.
+
+Acceptance criteria:
+
+- Practice page visuals are individual image assets, not bundled five-frame contact sheets.
+- Every Practice image opens separately.
+- The full-image view shows the entire image or allows scrolling/panning so the full image can be inspected.
+- Every image includes description, technique, focal length, shutter speed, aperture, and relevant technical notes.
+- The same full-view fix is checked anywhere else the same overlay pattern is used.
+- Desktop and mobile QA confirm no full-view cropping trap, broken images, missing metadata, text overlap, or horizontal overflow.
+- The visual asset manifest is updated for any new standalone Practice images before publication.
+
+Completion notes:
+
+- Split the nine generated Practice contact sheets into 45 standalone Practice frame files under `site/assets/generated/practice-standalone/`.
+- Replaced Practice card and Practice detail visuals with individual clickable standalone frames.
+- Reused the already split `filter-practice-01` through `filter-practice-05` frames for the filter-practice section.
+- Hardened the shared full-image overlay so the image area contains the whole frame and the metadata side can scroll independently.
+- Added complete full-image metadata for every Practice frame by inheriting the parent lesson's description, technique, focal length, shutter speed, aperture, lens, and location notes.
+- Updated the visual asset manifest with every standalone Practice frame.
+- Validated desktop and 390px mobile: 50 Practice-page standalone frames, 5 Practice-detail frames, no contact-sheet images in active Practice views, no broken images, tested overlays with six populated metadata fields, and no page-level horizontal overflow.
+
+## 2026-06-04 - Inspiration Page Cleanup And Standalone Image Request
+
+Status: completed and validated June 4, 2026.
+
+Goal: simplify the Inspiration page and replace mosaic-style generated previews with individually clickable images.
+
+Requested requirements:
+
+- Review the section currently called "Thumbnail discipline."
+- Decide whether the "Thumbnail discipline" section is necessary; remove or redesign it if it does not serve the user.
+- Replace any generated planning preview mosaic/contact sheet with independent images.
+- Each independent image should be clickable and expandable.
+- Keep image-rights and licensing notes available where needed, but avoid making the page feel dominated by process language.
+
+Acceptance criteria:
+
+- The Inspiration page no longer includes a confusing or unnecessary "Thumbnail discipline" section.
+- Generated planning previews on the Inspiration page are individual image assets rather than five-frame mosaics.
+- Each image can be clicked and expanded.
+- Public-domain, generated, and inspiration-only image usage remains clearly distinguished.
+- Desktop and mobile QA confirm no broken images, awkward crops, text overlap, confusing image-rights presentation, or horizontal overflow.
+- The visual asset manifest is updated for any new standalone Inspiration images before publication.
+
+Completion notes:
+
+- Removed the confusing "Thumbnail discipline" presentation from the Inspiration renderer and replaced it with a clearer image-rights boundary callout.
+- Replaced generated Inspiration visual treatment with standalone Gallery frames instead of five-frame contact sheets.
+- Made generated Inspiration visuals clickable and expandable through the shared full-image view.
+- Preserved public-domain, generated, and inspiration-only distinctions in the page copy.
+- Updated the visual asset manifest with the reused standalone Inspiration placements.
+- Validated desktop and 390px mobile: five external Inspiration visual cards plus the rights-boundary visual treatment, no contact-sheet images in the active Inspiration view, no broken images, and no page-level horizontal overflow.
+
+## 2026-06-04 - Inspiration External Links Illustration And Description Request
+
+Status: completed and validated June 4, 2026.
+
+Goal: enrich the External Inspiration section with meaningful visuals and fuller editorial descriptions for each external inspiration link.
+
+Requested requirements:
+
+- Add an illustration or visual treatment for each of the five external inspiration links.
+- Consider using the same image shown in Google Search only if rights and reuse are appropriate.
+- If image reuse is not clearly allowed, generate a new illustration using the user's established website article illustration design pattern.
+- Add two paragraphs of description for each external inspiration link.
+- Make the descriptions useful for understanding why each external source matters for the Bosque del Apache photography plan.
+- Keep the page visually polished and editorial rather than link-list-like.
+
+Acceptance criteria:
+
+- Each of the five External Inspiration items has a visual treatment.
+- Any reused external image has documented rights, source, and usage rationale before publication.
+- Any generated illustration is documented in the visual asset manifest before publication.
+- Each External Inspiration item includes two clear descriptive paragraphs.
+- Descriptions explain the source's relevance, visual lessons, or field-planning value.
+- Desktop and mobile QA confirm the section has no broken images, awkward crops, text overlap, or horizontal overflow.
+
+Completion notes:
+
+- Added a rights-safe standalone generated visual treatment to each of the five External Inspiration items.
+- Kept third-party article, portfolio, search-result, and checklist photos link-only unless a future license or permission is recorded.
+- Added two descriptive paragraphs to every External Inspiration item, explaining field-planning value, visual lessons, and reuse boundaries.
+- Updated the visual asset manifest with the exact standalone frames reused for External Inspiration.
+- Validated desktop and 390px mobile: five external Inspiration cards, no broken images, no contact-sheet images in the active Inspiration view, no page-level horizontal overflow, and tested full-image overlay metadata for the generated visual treatment.
+
 ## 2026-06-04 - Code Review Follow-Up Fixes
 
 Status: completed and validated June 4, 2026.

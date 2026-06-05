@@ -13,8 +13,6 @@ const generatedVisuals = [
     id: "crane-roost-dawn",
     title: "Dawn Crane Roost",
     src: "./assets/generated/crane-roost-dawn-contact-sheet.jpg",
-    sourceFile:
-      "/Users/cris/.codex/generated_images/019e9338-98b4-7760-bd77-8abb14e50a2f/ig_0c64f51e3b3baad2016a219833b9a48191ae699c5e3cc8c509.png",
     category: "Sunrise",
     alt:
       "Generated five-frame planning preview of sandhill crane dawn roost scenes at Bosque del Apache",
@@ -37,8 +35,6 @@ const generatedVisuals = [
     id: "snow-goose-blastoff",
     title: "Snow Goose Blast-Off",
     src: "./assets/generated/snow-goose-blastoff-contact-sheet.jpg",
-    sourceFile:
-      "/Users/cris/.codex/generated_images/019e9338-98b4-7760-bd77-8abb14e50a2f/ig_0c64f51e3b3baad2016a219890b4fc81918747ed40b5ba0314.png",
     category: "Sunrise",
     alt:
       "Generated five-frame planning preview of snow goose roost and blast-off scenes at Bosque del Apache",
@@ -61,8 +57,6 @@ const generatedVisuals = [
     id: "crane-evening-return",
     title: "Crane Evening Return",
     src: "./assets/generated/crane-evening-return-contact-sheet.jpg",
-    sourceFile:
-      "/Users/cris/.codex/generated_images/019e9338-98b4-7760-bd77-8abb14e50a2f/ig_0c64f51e3b3baad2016a2198cb1dd88191bd0b954869a00828.png",
     category: "Sunset",
     alt:
       "Generated five-frame planning preview of sandhill crane landing and evening return scenes at Bosque del Apache",
@@ -85,8 +79,6 @@ const generatedVisuals = [
     id: "farm-field-feeding",
     title: "Farm-Field Feeding",
     src: "./assets/generated/farm-field-feeding-contact-sheet.jpg",
-    sourceFile:
-      "/Users/cris/.codex/generated_images/019e9338-98b4-7760-bd77-8abb14e50a2f/ig_0c64f51e3b3baad2016a2199056a34819193584269bd43e7b4.png",
     category: "Mid-morning",
     alt:
       "Generated five-frame planning preview of cranes, geese, and raptors in Bosque del Apache managed farm fields",
@@ -109,8 +101,6 @@ const generatedVisuals = [
     id: "wetland-deck",
     title: "Wetland Deck Details",
     src: "./assets/generated/wetland-deck-contact-sheet.jpg",
-    sourceFile:
-      "/Users/cris/.codex/generated_images/019e9338-98b4-7760-bd77-8abb14e50a2f/ig_0c64f51e3b3baad2016a219947756c81919114722ef0c56388.png",
     category: "Mid-morning",
     alt:
       "Generated five-frame planning preview of ducks, reeds, water texture, and wetland deck scenes at Bosque del Apache",
@@ -133,8 +123,6 @@ const generatedVisuals = [
     id: "desert-edge-details",
     title: "Desert-Edge Details",
     src: "./assets/generated/desert-edge-details-contact-sheet.jpg",
-    sourceFile:
-      "/Users/cris/.codex/generated_images/019e9338-98b4-7760-bd77-8abb14e50a2f/ig_0c64f51e3b3baad2016a2199883b6481919ab27b3a2059a6d0.png",
     category: "Mid-morning",
     alt:
       "Generated five-frame planning preview of roadrunner, quail, sparrows, tracks, and dry Bosque del Apache habitat details",
@@ -157,8 +145,6 @@ const generatedVisuals = [
     id: "weather-motion-fallback",
     title: "Weather And Motion Fallbacks",
     src: "./assets/generated/weather-motion-fallback-contact-sheet.jpg",
-    sourceFile:
-      "/Users/cris/.codex/generated_images/019e9338-98b4-7760-bd77-8abb14e50a2f/ig_0c64f51e3b3baad2016a2199bfab8c8191b24b009bfea3b1d2.png",
     category: "Fallback",
     alt:
       "Generated five-frame planning preview of mist, gray light, panning blur, snow-dusted reeds, and silhouettes at Bosque del Apache",
@@ -181,8 +167,6 @@ const generatedVisuals = [
     id: "filter-practice",
     title: "Filter Practice",
     src: "./assets/generated/filter-practice-contact-sheet.jpg",
-    sourceFile:
-      "/Users/cris/.codex/generated_images/019e9338-98b4-7760-bd77-8abb14e50a2f/ig_0c64f51e3b3baad2016a219a18f08881919da061145f012286.png",
     category: "Practice",
     alt:
       "Generated five-frame planning preview of circular polarizer, neutral-density, protective filter, step-up ring, and cold-weather filter practice",
@@ -205,8 +189,6 @@ const generatedVisuals = [
     id: "travel-workflow",
     title: "Travel Workflow",
     src: "./assets/generated/travel-workflow-contact-sheet.jpg",
-    sourceFile:
-      "/Users/cris/.codex/generated_images/019e9338-98b4-7760-bd77-8abb14e50a2f/ig_0c64f51e3b3baad2016a219a5f9e8c8191ab5230d4145d760f.png",
     category: "Travel",
     alt:
       "Generated five-frame planning preview of hotel room battery charging, staged camera bodies, rental SUV cargo, route check, and memory-card backup",
@@ -232,8 +214,6 @@ const practiceVisuals = [
     id: "practice-camera-setup",
     title: "Camera Setup Baseline Practice",
     src: "./assets/generated/practice-camera-setup-contact-sheet.jpg",
-    sourceFile:
-      "/Users/cris/.codex/generated_images/019e9338-98b4-7760-bd77-8abb14e50a2f/ig_0c64f51e3b3baad2016a21a38c95048191a58e43f29f080003.png",
     category: "Practice",
     alt:
       "Generated five-frame training preview of two-camera staging, camera controls, batteries, cards, and reset practice",
@@ -249,8 +229,6 @@ const practiceVisuals = [
     id: "practice-exposure-modes",
     title: "Exposure Modes Practice",
     src: "./assets/generated/practice-exposure-modes-contact-sheet.jpg",
-    sourceFile:
-      "/Users/cris/.codex/generated_images/019e9338-98b4-7760-bd77-8abb14e50a2f/ig_0c64f51e3b3baad2016a21a3f2576881919150a6ca2fbc1175.png",
     category: "Practice",
     alt:
       "Generated five-frame training preview of aperture priority, shutter priority, manual exposure, silhouettes, and exposure review",
@@ -266,8 +244,6 @@ const practiceVisuals = [
     id: "practice-shutter-speed",
     title: "Shutter Speed Ladder Practice",
     src: "./assets/generated/practice-shutter-speed-contact-sheet.jpg",
-    sourceFile:
-      "/Users/cris/.codex/generated_images/019e9338-98b4-7760-bd77-8abb14e50a2f/ig_0c64f51e3b3baad2016a21a444da6881919a44b160c49627e5.png",
     category: "Practice",
     alt:
       "Generated five-frame training preview of frozen flight, wing blur, panning blur, flock blur, and motion review",
@@ -283,8 +259,6 @@ const practiceVisuals = [
     id: "practice-handholding",
     title: "Handholding Mechanics Practice",
     src: "./assets/generated/practice-handholding-contact-sheet.jpg",
-    sourceFile:
-      "/Users/cris/.codex/generated_images/019e9338-98b4-7760-bd77-8abb14e50a2f/ig_0c64f51e3b3baad2016a21a499f9d88191bceb98fe1eaf28ec.png",
     category: "Practice",
     alt:
       "Generated five-frame training preview of long-lens stance, hip rotation, lens support, acquisition, and short burst practice",
@@ -300,8 +274,6 @@ const practiceVisuals = [
     id: "practice-support",
     title: "Support Choice Practice",
     src: "./assets/generated/practice-support-contact-sheet.jpg",
-    sourceFile:
-      "/Users/cris/.codex/generated_images/019e9338-98b4-7760-bd77-8abb14e50a2f/ig_0c64f51e3b3baad2016a21a4f29a9081918e89bebf0ca227be.png",
     category: "Practice",
     alt:
       "Generated five-frame training preview of beanbag, tripod, gimbal, monopod, deck, and handheld long-lens support practice",
@@ -317,8 +289,6 @@ const practiceVisuals = [
     id: "practice-white-birds-exposure",
     title: "White Birds Exposure Practice",
     src: "./assets/generated/practice-white-birds-exposure-contact-sheet.jpg",
-    sourceFile:
-      "/Users/cris/.codex/generated_images/019e9338-98b4-7760-bd77-8abb14e50a2f/ig_0c64f51e3b3baad2016a21a56306dc81919a7e252204dde917.png",
     category: "Practice",
     alt:
       "Generated five-frame training preview of white birds against dark reeds, bright water, pale sky, camera review, and exposure checking",
@@ -334,8 +304,6 @@ const practiceVisuals = [
     id: "practice-behavior-prediction",
     title: "Behavior Prediction Practice",
     src: "./assets/generated/practice-behavior-prediction-contact-sheet.jpg",
-    sourceFile:
-      "/Users/cris/.codex/generated_images/019e9338-98b4-7760-bd77-8abb14e50a2f/ig_0c64f51e3b3baad2016a21a5b6879481918f89b12aaf3d3ec2.png",
     category: "Practice",
     alt:
       "Generated five-frame training preview of crane and goose pre-flight cues, wind-aware movement, and quiet observation",
@@ -351,8 +319,6 @@ const practiceVisuals = [
     id: "practice-cold-dust-workflow",
     title: "Cold And Dust Workflow Practice",
     src: "./assets/generated/practice-cold-dust-workflow-contact-sheet.jpg",
-    sourceFile:
-      "/Users/cris/.codex/generated_images/019e9338-98b4-7760-bd77-8abb14e50a2f/ig_0c64f51e3b3baad2016a21a60d87048191a711bd9374ae7c7c.png",
     category: "Practice",
     alt:
       "Generated five-frame training preview of batteries, gloves, mounted lens, blower kit, rain sleeve, and dust-safe handling",
@@ -368,8 +334,6 @@ const practiceVisuals = [
     id: "practice-readiness-checklist",
     title: "Pre-trip Readiness Practice",
     src: "./assets/generated/practice-readiness-checklist-contact-sheet.jpg",
-    sourceFile:
-      "/Users/cris/.codex/generated_images/019e9338-98b4-7760-bd77-8abb14e50a2f/ig_0c64f51e3b3baad2016a21a66c6e7481919b750da7d3a1e218.png",
     category: "Practice",
     alt:
       "Generated five-frame training preview of local bird practice, intentional blur, card backup, packed bag, and two-camera staging",
@@ -383,13 +347,77 @@ const practiceVisuals = [
   },
 ];
 
+const practiceFrameExamples = {
+  "practice-camera-setup": [
+    "Two-camera staging table",
+    "Flight preset control check",
+    "Battery and card reset",
+    "Glove-friendly menu rehearsal",
+    "Long-lens readiness target",
+  ],
+  "practice-exposure-modes": [
+    "Aperture Priority static bird",
+    "Shutter Priority moving bird",
+    "Manual exposure silhouette",
+    "Auto ISO review check",
+    "Histogram comparison frame",
+  ],
+  "practice-shutter-speed": [
+    "Frozen flight at fast shutter",
+    "Controlled wing blur",
+    "Smooth panning pass",
+    "Slow flock blur test",
+    "Motion ladder review",
+  ],
+  "practice-handholding": [
+    "Stable long-lens stance",
+    "Hip-rotation tracking",
+    "Left-hand lens support",
+    "Wide acquisition before zoom",
+    "Short burst framing check",
+  ],
+  "practice-support": [
+    "Vehicle beanbag position",
+    "Tripod and gimbal wait",
+    "Monopod deck footprint",
+    "Compact support reset",
+    "Handheld pivot comparison",
+  ],
+  "practice-white-birds-exposure": [
+    "White subject against dark reeds",
+    "Bright-water exposure test",
+    "Pale-sky highlight check",
+    "Camera review and histogram",
+    "Feather-detail comparison",
+  ],
+  "practice-behavior-prediction": [
+    "Crane neck-stretch cue",
+    "Wing-tension preflight moment",
+    "Goose flock agitation",
+    "Wind-oriented launch lane",
+    "Quiet observation before tracking",
+  ],
+  "practice-cold-dust-workflow": [
+    "Warm battery rotation",
+    "Lens mounted before dust",
+    "Glove change rehearsal",
+    "Blower and rain-sleeve access",
+    "Predawn readiness test",
+  ],
+  "practice-readiness-checklist": [
+    "Local bird flight proof",
+    "Intentional blur homework",
+    "Travel backup station",
+    "Packed field bag edit",
+    "Final two-camera staging",
+  ],
+};
+
 const lodgingVisuals = [
   {
     id: "lodging-comfort-inn",
     title: "Comfort Inn Lodging Preview",
     src: "./assets/generated/lodging-comfort-inn-preview.jpg",
-    sourceFile:
-      "/Users/cris/.codex/generated_images/019e9338-98b4-7760-bd77-8abb14e50a2f/ig_09b2233eba7d409d016a21d8f5f3c4819185b52668ae6c6e2c.png",
     category: "Travel",
     alt:
       "Reference-based generated preview of the Comfort Inn Socorro exterior, room, breakfast area, and dawn photographer departure workflow",
@@ -405,8 +433,6 @@ const lodgingVisuals = [
     id: "lodging-best-western",
     title: "Best Western Lodging Preview",
     src: "./assets/generated/lodging-best-western-preview.jpg",
-    sourceFile:
-      "/Users/cris/.codex/generated_images/019e9338-98b4-7760-bd77-8abb14e50a2f/ig_09b2233eba7d409d016a21d9353c8c8191a41ff0c42fb0fb15.png",
     category: "Travel",
     alt:
       "Reference-based generated preview of the Best Western Socorro exterior, fireplace lobby, room, and indoor-pool amenity",
@@ -422,8 +448,6 @@ const lodgingVisuals = [
     id: "lodging-holiday-inn",
     title: "Holiday Inn Express Lodging Preview",
     src: "./assets/generated/lodging-holiday-inn-preview.jpg",
-    sourceFile:
-      "/Users/cris/.codex/generated_images/019e9338-98b4-7760-bd77-8abb14e50a2f/ig_09b2233eba7d409d016a21d97279e481918be6edbe53c5fecf.png",
     category: "Travel",
     alt:
       "Reference-based generated preview of the Holiday Inn Express Socorro exterior, green-accent guest room, breakfast bar, and indoor pool",
@@ -439,8 +463,6 @@ const lodgingVisuals = [
     id: "lodging-econo-lodge",
     title: "Econo Lodge Lodging Preview",
     src: "./assets/generated/lodging-econo-lodge-preview.jpg",
-    sourceFile:
-      "/Users/cris/.codex/generated_images/019e9338-98b4-7760-bd77-8abb14e50a2f/ig_09b2233eba7d409d016a21d9b08e60819184616a0df24a84ee.png",
     category: "Travel",
     alt:
       "Reference-based generated preview of the Econo Lodge Socorro exterior, teal-accent room, lobby, and breakfast room",
@@ -456,8 +478,6 @@ const lodgingVisuals = [
     id: "lodging-casa-blanca",
     title: "Casa Blanca Lodging Preview",
     src: "./assets/generated/lodging-casa-blanca-preview.jpg",
-    sourceFile:
-      "/Users/cris/.codex/generated_images/019e9338-98b4-7760-bd77-8abb14e50a2f/ig_09b2233eba7d409d016a21da04b9788191b1949fe2f6f110ee.png",
     category: "Travel",
     alt:
       "Reference-based generated preview of Casa Blanca Bed and Breakfast as a historic adobe house, guest room, breakfast table, and quiet predawn veranda",
@@ -473,8 +493,6 @@ const lodgingVisuals = [
     id: "lodging-fairfield-los-lunas",
     title: "Fairfield Los Lunas Lodging Preview",
     src: "./assets/generated/lodging-fairfield-los-lunas-preview.jpg",
-    sourceFile:
-      "/Users/cris/.codex/generated_images/019e9338-98b4-7760-bd77-8abb14e50a2f/ig_09b2233eba7d409d016a21da62aa6c8191b7f968986d01bd84.png",
     category: "Travel",
     alt:
       "Reference-based generated preview of Fairfield Los Lunas exterior, modern guest room, breakfast area, and long-commute packing workflow",
@@ -488,8 +506,88 @@ const lodgingVisuals = [
   },
 ];
 
+const travelVisuals = [
+  {
+    id: "travel-airport-route-map",
+    title: "Bay Area To Bosque Route Map",
+    src: "./assets/generated/travel-airport-route-map-preview.jpg",
+    category: "Travel",
+    alt:
+      "Generated editorial route-map illustration from Bay Area airports to Albuquerque and south to Bosque del Apache",
+    caption:
+      "Generated editorial route-map preview for Travel planning; labels are rendered by the site for accuracy, not baked into the image.",
+    rights:
+      "AI-generated travel-planning illustration created for this project. No third-party map tiles, logos, or airport branding are reused.",
+    placement: ["Travel", "Visual Asset Manifest"],
+    promptSummary:
+      "Simplified western U.S. route-map illustration with Bay Area origin cluster, ABQ destination, road south to Bosque del Apache, refuge wetland vignette, and no readable text or logos.",
+  },
+  {
+    id: "travel-rental-car-cargo",
+    title: "Rental SUV Cargo Workflow",
+    src: "./assets/generated/travel-rental-car-cargo-preview.jpg",
+    category: "Travel",
+    alt:
+      "Generated editorial illustration of a rental SUV cargo area organized for predawn wildlife photography",
+    caption:
+      "Generated rental-car workflow preview for Travel planning; no real rental company, vehicle brand, or camera brand is represented.",
+    rights:
+      "AI-generated travel-planning illustration created for this project. Use as a logistics visual, not as a literal vehicle or rental-company recommendation.",
+    placement: ["Travel", "Visual Asset Manifest"],
+    promptSummary:
+      "Compact rental SUV before dawn with organized long lens, camera bag, support, beanbag, layers, water, batteries, cards, route notebook, and no readable text or logos.",
+  },
+];
+
+const standaloneGalleryVisuals = generatedVisuals.flatMap((visual) =>
+  visual.examples.map((example, index) => {
+    const frameNumber = String(index + 1).padStart(2, "0");
+    return {
+      id: `${visual.id}-${frameNumber}`,
+      parentId: visual.id,
+      title: example,
+      src: `./assets/generated/gallery-standalone/${visual.id}-${frameNumber}.jpg`,
+      category: visual.category,
+      alt: `Generated standalone planning preview of ${example.toLowerCase()} at Bosque del Apache`,
+      caption:
+        `${example}. Standalone HD planning frame separated from the ${visual.title} generated contact sheet; not an actual Bosque field photograph.`,
+      rights: visual.rights,
+      placement: ["Gallery", "Visual Asset Manifest"],
+      description:
+        `${example} from the ${visual.title.toLowerCase()} planning set, separated from the original contact sheet for closer field-study use.`,
+    };
+  })
+);
+
+const practiceStandaloneVisuals = practiceVisuals.flatMap((visual) =>
+  (practiceFrameExamples[visual.id] || [visual.title]).map((example, index) => {
+    const frameNumber = String(index + 1).padStart(2, "0");
+    return {
+      id: `${visual.id}-${frameNumber}`,
+      parentId: visual.id,
+      title: example,
+      src: `./assets/generated/practice-standalone/${visual.id}-${frameNumber}.jpg`,
+      category: "Practice",
+      alt: `Generated standalone training preview of ${example.toLowerCase()}`,
+      caption:
+        `${example}. Standalone training frame separated from the ${visual.title} contact sheet; not an actual Bosque field photograph.`,
+      rights: visual.rights,
+      placement: ["Practice", "Visual Asset Manifest"],
+      description:
+        `${example} from the ${visual.title.toLowerCase()} training set, separated into an individual inspection frame for pre-trip practice.`,
+    };
+  })
+);
+
 const visualById = new Map(
-  [...generatedVisuals, ...practiceVisuals, ...lodgingVisuals].map((visual) => [visual.id, visual])
+  [
+    ...generatedVisuals,
+    ...standaloneGalleryVisuals,
+    ...practiceVisuals,
+    ...practiceStandaloneVisuals,
+    ...travelVisuals,
+    ...lodgingVisuals,
+  ].map((visual) => [visual.id, visual])
 );
 
 const galleryLessons = {
@@ -688,6 +786,32 @@ const practiceLessons = {
   },
 };
 
+const practiceStandaloneLessons = Object.fromEntries(
+  practiceStandaloneVisuals.map((visual) => {
+    const lesson = practiceLessons[visual.parentId];
+    return [
+      visual.id,
+      {
+        ...lesson,
+        technique: lesson.technique,
+      },
+    ];
+  })
+);
+
+const standaloneGalleryLessons = Object.fromEntries(
+  standaloneGalleryVisuals.map((visual) => {
+    const lesson = galleryLessons[visual.parentId];
+    return [
+      visual.id,
+      {
+        ...lesson,
+        technique: lesson.technique,
+      },
+    ];
+  })
+);
+
 const lodgingLessons = {
   "lodging-comfort-inn": {
     supposedLocation:
@@ -751,9 +875,35 @@ const lodgingLessons = {
   },
 };
 
+const travelLessons = {
+  "travel-airport-route-map": {
+    supposedLocation:
+      "Bay Area origin airports, Albuquerque International Sunport, Socorro, and Bosque del Apache as a travel-planning route, not a navigational map.",
+    lens: "Editorial infographic; no camera lens implied.",
+    focalLength: "Route-scale overview",
+    aperture: "Not applicable",
+    shutterSpeed: "Not applicable",
+    technique:
+      "Use this as an orientation graphic: choose SFO, OAK, or SJC by schedule, land at ABQ, rent the car there, and keep the final road segment focused on I-25, Socorro, and the refuge approach.",
+  },
+  "travel-rental-car-cargo": {
+    supposedLocation:
+      "ABQ rental-car pickup, Socorro hotel parking, and predawn refuge departure workflow.",
+    lens: "24-105mm or phone wide lens for documenting travel logistics.",
+    focalLength: "24-35mm",
+    aperture: "f/4-f/5.6",
+    shutterSpeed: "1/30-1/125 sec",
+    technique:
+      "Choose the vehicle for cargo access, clearance, and quiet predawn workflow: long lens protected, support gear reachable, layers and water visible, and valuables hidden when parked.",
+  },
+};
+
 const visualLessons = {
   ...galleryLessons,
+  ...standaloneGalleryLessons,
   ...practiceLessons,
+  ...practiceStandaloneLessons,
+  ...travelLessons,
   ...lodgingLessons,
 };
 
@@ -938,6 +1088,8 @@ const photoLocations = [
     lon: -106.890917,
     windows: ["mid-morning", "intel"],
     confidence: "official FWS",
+    labelDirection: "left",
+    labelOffset: [-10, -45],
     note:
       "Start here when open for current water, road, roost, and closure intelligence. Visitor Center hours currently show Thu-Mon, 9 AM-4 PM.",
   },
@@ -948,6 +1100,8 @@ const photoLocations = [
     lon: -106.8766304,
     windows: ["sunrise", "sunset"],
     confidence: "field pin",
+    labelDirection: "right",
+    labelOffset: [-20, -8],
     note:
       "Primary crane-pool scout for dawn lift-off and evening returns. Verify legal pullouts, signs, wind direction, and active birds each day.",
   },
@@ -958,6 +1112,8 @@ const photoLocations = [
     lon: -106.8778053,
     windows: ["sunrise", "sunset"],
     confidence: "field pin",
+    labelDirection: "left",
+    labelOffset: [8, 10],
     note:
       "Alternate crane-pool angle for reflection, landing lanes, and mountain bands. Use only legal parking, and stay clear of the railroad and shoulders.",
   },
@@ -968,6 +1124,8 @@ const photoLocations = [
     lon: -106.8785379,
     windows: ["sunrise", "sunset"],
     confidence: "field pin",
+    labelDirection: "bottom",
+    labelOffset: [0, 12],
     note:
       "Good for adjusting against wind and light when the north pullout is crowded or the birds stage farther south.",
   },
@@ -978,6 +1136,8 @@ const photoLocations = [
     lon: -106.8844325,
     windows: ["sunrise", "sunset"],
     confidence: "field pin",
+    labelDirection: "right",
+    labelOffset: [10, 0],
     note:
       "Classic snow-goose blast-off position when Main Pool has water and birds. Scout the afternoon before committing a sunrise here.",
   },
@@ -988,6 +1148,8 @@ const photoLocations = [
     lon: -106.8922801,
     windows: ["mid-morning"],
     confidence: "field pin",
+    labelDirection: "left",
+    labelOffset: [-10, 48],
     note:
       "South Loop ducks, coots, reeds, reflections, slower practice, and clean habitat frames after the first fly-out.",
   },
@@ -998,6 +1160,8 @@ const photoLocations = [
     lon: -106.8842161,
     windows: ["mid-morning"],
     confidence: "field pin",
+    labelDirection: "left",
+    labelOffset: [-10, -4],
     note:
       "A calmer wetland viewpoint for ducks, geese, reeds, reflections, and exposure practice on bright birds.",
   },
@@ -1008,6 +1172,10 @@ const photoLocations = [
     lon: -106.8618949,
     windows: ["mid-morning"],
     confidence: "field pin",
+    labelDirection: "top",
+    labelDirectionMobile: "left",
+    labelOffset: [0, -36],
+    labelOffsetMobile: [-12, -75],
     note:
       "North Loop wetland work with long-lens compression. Keep tripod legs compact if other visitors are present.",
   },
@@ -1018,6 +1186,8 @@ const photoLocations = [
     lon: -106.8611816,
     windows: ["mid-morning"],
     confidence: "field pin",
+    labelDirection: "right",
+    labelOffset: [12, 8],
     note:
       "Pair with Willow Deck for ducks, distant cranes, raptors, and habitat images when the crop-field action slows.",
   },
@@ -1028,6 +1198,8 @@ const photoLocations = [
     lon: -106.8610046,
     windows: ["mid-morning", "sunset"],
     confidence: "field pin",
+    labelDirection: "top",
+    labelOffset: [0, 58],
     note:
       "Use after fly-out for feeding cranes/geese, raptors, and flight lines. Field access and bird placement change with management activity.",
   },
@@ -1038,6 +1210,8 @@ const photoLocations = [
     lon: -106.8733529,
     windows: ["mid-morning"],
     confidence: "field pin",
+    labelDirection: "left",
+    labelOffset: [-10, 8],
     note:
       "Short-walk change of pace for marsh birds, passerines, quail, roadrunner, and texture work. Potable water is not assumed on the loop.",
   },
@@ -2412,16 +2586,130 @@ function getLensScaleTrackWidth(itemCount) {
   return axisWidth + itemCount * columnWidth + Math.max(0, itemCount - 1) * columnGap;
 }
 
-function renderLensLengthScale() {
+const gearScaleBrands = [
+  { label: "Sony", system: "Sony" },
+  { label: "Sigma", system: "Sigma E" },
+  { label: "Canon", system: "Canon" },
+];
+
+const gearScaleCategories = [
+  {
+    id: "standard",
+    title: "105mm And Lower",
+    description: "Story, travel, habitat, and wider refuge context lenses.",
+  },
+  {
+    id: "seventy-two-hundred",
+    title: "70-200mm Zooms",
+    description: "Fast telephoto zooms for close wildlife, travel, and future safari overlap.",
+  },
+  {
+    id: "wildlife-zooms",
+    title: "Wildlife Zooms",
+    description: "Flexible 100-500mm class lenses for flight, deck, and general wildlife work.",
+  },
+  {
+    id: "super-zooms",
+    title: "Super-Zooms And Long Reach",
+    description: "Large variable-range and long-reach zooms for distant birds and field work.",
+  },
+  {
+    id: "prime-reach",
+    title: "Prime Reach",
+    description: "Prime long-lens options where portability and sharp 500mm work matter.",
+  },
+  {
+    id: "teleconverters",
+    title: "Teleconverters",
+    description: "Reach extenders that should be compared separately from full lenses.",
+  },
+];
+
+function gearScaleCategoryForItem(item) {
+  const name = item.name;
+  if (/Teleconverter|Extender/i.test(name)) return "teleconverters";
+  if (/24-105|24-70/i.test(name)) return "standard";
+  if (/70-200/i.test(name)) return "seventy-two-hundred";
+  if (/100-400|100-500/i.test(name)) return "wildlife-zooms";
+  if (/500mm F5\\.6/i.test(name)) return "prime-reach";
+  return "super-zooms";
+}
+
+function gearScaleOpticalItems(selectedSystems) {
+  return gearItems.filter((item) => item.system !== "Support" && selectedSystems.has(item.system));
+}
+
+function renderGearScaleControls(selectedSystems) {
+  return `<section class="gear-scale-controls panel" aria-label="Gear scale brand filters">
+    <div>
+      <p class="eyebrow">Scale filters</p>
+      <h3>Compare by brand, then by category.</h3>
+      <p class="card-copy">These checkboxes update both the length and weight scales. Categories keep each chart readable without one long horizontal scroll.</p>
+    </div>
+    <div class="gear-scale-checkboxes">
+      ${gearScaleBrands
+        .map(
+          (brand) => `<label class="brand-checkbox">
+            <input type="checkbox" data-scale-brand="${brand.system}" ${selectedSystems.has(brand.system) ? "checked" : ""} />
+            <span>${brand.label}</span>
+          </label>`
+        )
+        .join("")}
+    </div>
+  </section>`;
+}
+
+function renderScaleCategoryCharts({ items, scaleMax, ticks, scaleType, chartClass, ariaLabel, renderItem }) {
+  const categories = gearScaleCategories
+    .map((category) => ({
+      ...category,
+      items: items.filter((item) => item.category === category.id),
+    }))
+    .filter((category) => category.items.length);
+
+  if (!categories.length) {
+    return `<div class="gear-scale-empty">Select at least one brand to compare lenses.</div>`;
+  }
+
+  return `<div class="gear-scale-category-stack">
+    ${categories
+      .map((category) => {
+        const chartItems = category.items;
+        return `<section class="gear-scale-category" data-scale-category="${category.id}">
+          <div class="gear-scale-category-header">
+            <h3>${category.title}</h3>
+            <p>${category.description}</p>
+          </div>
+          <div class="lens-scale-chart ${chartClass || ""}" style="--lens-scale-track-width: ${getLensScaleTrackWidth(chartItems.length)}px;" role="img" aria-label="${ariaLabel}: ${category.title}">
+            <div class="lens-scale-grid" aria-hidden="true">
+              ${ticks
+                .map((tick) => {
+                  const label = scaleType === "weight" ? `${tick.toLocaleString()} g` : `${tick} mm`;
+                  return `<span class="lens-scale-tick" style="--tick: ${((tick / scaleMax) * 100).toFixed(2)};"><em>${label}</em></span>`;
+                })
+                .join("")}
+            </div>
+            <div class="lens-scale-bars">
+              ${chartItems.map(renderItem).join("")}
+            </div>
+          </div>
+        </section>`;
+      })
+      .join("")}
+  </div>`;
+}
+
+function renderLensLengthScale(selectedSystems = new Set(gearScaleBrands.map((brand) => brand.system))) {
   const scaleMax = 430;
   const ticks = [400, 350, 300, 200, 100, 0];
-  const opticalItems = gearItems
-    .filter((item) => item.system !== "Support")
+  const items = gearScaleOpticalItems(selectedSystems)
     .map((item) => {
       const length = parsePhysicalLength(item.specs.length);
       if (!length) return null;
+      const type = item.name.includes("Teleconverter") || item.name.includes("Extender") ? "teleconverter" : "lens";
       return {
-        type: item.name.includes("Teleconverter") || item.name.includes("Extender") ? "teleconverter" : "lens",
+        type,
+        category: gearScaleCategoryForItem(item),
         system: item.system,
         name: item.name,
         label: shortLensLabel(item.name),
@@ -2429,20 +2717,13 @@ function renderLensLengthScale() {
         extendedMm: length.extended,
       };
     })
-    .filter(Boolean);
-  const referenceItem = {
-    type: "reference",
-    system: "Reference",
-    name: "12-inch ruler reference",
-    label: "12 in ruler",
-    primaryMm: 305,
-    extendedMm: null,
-  };
-  const items = [...opticalItems, referenceItem].sort((a, b) => {
-    const aMax = a.extendedMm || a.primaryMm;
-    const bMax = b.extendedMm || b.primaryMm;
-    return bMax - aMax;
-  });
+    .filter(Boolean)
+    .sort((a, b) => {
+      const aMax = a.extendedMm || a.primaryMm;
+      const bMax = b.extendedMm || b.primaryMm;
+      return bMax - aMax;
+    });
+
   const renderItem = (item) => {
     const primaryPercent = Math.min((item.primaryMm / scaleMax) * 100, 100);
     const extensionPercent = item.extendedMm ? ((item.extendedMm - item.primaryMm) / scaleMax) * 100 : 0;
@@ -2450,7 +2731,7 @@ function renderLensLengthScale() {
     const ariaLength = item.extendedMm
       ? `${item.primaryMm} millimeters retracted, ${item.extendedMm} millimeters extended`
       : `${item.primaryMm} millimeters`;
-    return `<article class="lens-scale-column lens-scale-${item.system.toLowerCase().replace(/\s+/g, "-")} ${item.type === "teleconverter" ? "is-teleconverter" : ""} ${item.type === "reference" ? "is-reference" : ""}" data-scale="length" data-kind="${item.type}" data-system="${item.system}" data-primary-mm="${item.primaryMm}" data-total-mm="${totalMm}"${item.extendedMm ? ` data-extended-mm="${item.extendedMm}"` : ""} aria-label="${item.name}: ${ariaLength}">
+    return `<article class="lens-scale-column lens-scale-${item.system.toLowerCase().replace(/\s+/g, "-")} ${item.type === "teleconverter" ? "is-teleconverter" : ""}" data-scale="length" data-kind="${item.type}" data-system="${item.system}" data-primary-mm="${item.primaryMm}" data-total-mm="${totalMm}"${item.extendedMm ? ` data-extended-mm="${item.extendedMm}"` : ""} aria-label="${item.name}: ${ariaLength}">
       <div class="lens-scale-bar-stack" style="--bar-height: ${primaryPercent.toFixed(2)}; --extension-height: ${extensionPercent.toFixed(2)};">
         ${item.extendedMm ? `<span class="lens-scale-extension" title="${item.name} extended length: ${item.extendedMm} mm"></span>` : ""}
         <span class="lens-scale-bar" title="${item.name}: ${ariaLength}"></span>
@@ -2468,37 +2749,37 @@ function renderLensLengthScale() {
         <p class="eyebrow">Physical scale</p>
         <h2 id="lens-scale-title">Lens Length Scale</h2>
       </div>
-      <p>Published compact length and sourced full-extension length in millimeters, standing from a shared baseline. The gray bar is a 12-inch ruler reference; striped caps mark extending zoom barrels.</p>
+      <p>Published compact length and sourced full-extension length in millimeters, grouped by useful lens category. Striped caps mark extending zoom barrels.</p>
     </div>
     <div class="lens-scale-legend" aria-label="Lens scale legend">
       <span><i class="legend-chip sony"></i>Sony</span>
-      <span><i class="legend-chip sigma"></i>Sigma E</span>
+      <span><i class="legend-chip sigma"></i>Sigma</span>
       <span><i class="legend-chip canon"></i>Canon</span>
-      <span><i class="legend-chip reference"></i>12 in reference</span>
       <span><i class="legend-chip extended"></i>Full-extension length</span>
     </div>
-    <div class="lens-scale-chart" style="--lens-scale-track-width: ${getLensScaleTrackWidth(items.length)}px;" role="img" aria-label="Vertical bar chart comparing physical lens length in millimeters">
-      <div class="lens-scale-grid" aria-hidden="true">
-        ${ticks.map((tick) => `<span class="lens-scale-tick" style="--tick: ${((tick / scaleMax) * 100).toFixed(2)};"><em>${tick} mm</em></span>`).join("")}
-      </div>
-      <div class="lens-scale-bars">
-        ${items.map(renderItem).join("")}
-      </div>
-    </div>
-    <p class="muted lens-scale-note">Sorted by longest known physical length. Solid bars show the compact listed length; striped caps show sourced full-extension measurements for externally extending zooms.</p>
+    ${renderScaleCategoryCharts({
+      items,
+      scaleMax,
+      ticks,
+      scaleType: "length",
+      ariaLabel: "Vertical bar chart comparing physical lens length in millimeters",
+      renderItem,
+    })}
+    <p class="muted lens-scale-note">Each category is sorted by longest known physical length. Solid bars show compact listed length; striped caps show sourced full-extension measurements.</p>
   </section>`;
 }
 
-function renderLensWeightScale() {
+function renderLensWeightScale(selectedSystems = new Set(gearScaleBrands.map((brand) => brand.system))) {
   const scaleMax = 2600;
   const ticks = [2500, 2000, 1500, 1000, 500, 0];
-  const opticalItems = gearItems
-    .filter((item) => item.system !== "Support")
+  const items = gearScaleOpticalItems(selectedSystems)
     .map((item) => {
       const weight = parseWeightGrams(item.specs.weight);
       if (!weight) return null;
+      const type = item.name.includes("Teleconverter") || item.name.includes("Extender") ? "teleconverter" : "lens";
       return {
-        type: item.name.includes("Teleconverter") || item.name.includes("Extender") ? "teleconverter" : "lens",
+        type,
+        category: gearScaleCategoryForItem(item),
         system: item.system,
         name: item.name,
         label: shortLensLabel(item.name),
@@ -2506,19 +2787,12 @@ function renderLensWeightScale() {
         weightLabel: weight.label,
       };
     })
-    .filter(Boolean);
-  const referenceItem = {
-    type: "reference",
-    system: "Reference",
-    name: "1-liter water reference",
-    label: "1 L water",
-    weightG: 1000,
-    weightLabel: "1,000 g",
-  };
-  const items = [...opticalItems, referenceItem].sort((a, b) => b.weightG - a.weightG);
+    .filter(Boolean)
+    .sort((a, b) => b.weightG - a.weightG);
+
   const renderItem = (item) => {
     const barPercent = Math.min((item.weightG / scaleMax) * 100, 100);
-    return `<article class="lens-scale-column lens-scale-${item.system.toLowerCase().replace(/\s+/g, "-")} ${item.type === "teleconverter" ? "is-teleconverter" : ""} ${item.type === "reference" ? "is-reference" : ""}" data-scale="weight" data-kind="${item.type}" data-system="${item.system}" data-weight-g="${item.weightG}" aria-label="${item.name}: ${item.weightLabel}">
+    return `<article class="lens-scale-column lens-scale-${item.system.toLowerCase().replace(/\s+/g, "-")} ${item.type === "teleconverter" ? "is-teleconverter" : ""}" data-scale="weight" data-kind="${item.type}" data-system="${item.system}" data-weight-g="${item.weightG}" aria-label="${item.name}: ${item.weightLabel}">
       <div class="lens-scale-bar-stack" style="--bar-height: ${barPercent.toFixed(2)}; --extension-height: 0;">
         <span class="lens-scale-bar" title="${item.name}: ${item.weightLabel}"></span>
       </div>
@@ -2535,23 +2809,23 @@ function renderLensWeightScale() {
         <p class="eyebrow">Carry weight</p>
         <h2 id="weight-scale-title">Lens Weight Scale</h2>
       </div>
-      <p>Listed lens and teleconverter weights in grams, standing from a shared baseline. The gray bar is a 1-liter water reference at 1,000 grams.</p>
+      <p>Listed lens and teleconverter weights in grams, grouped by the same categories as the length scale.</p>
     </div>
     <div class="lens-scale-legend" aria-label="Lens weight scale legend">
       <span><i class="legend-chip sony"></i>Sony</span>
-      <span><i class="legend-chip sigma"></i>Sigma E</span>
+      <span><i class="legend-chip sigma"></i>Sigma</span>
       <span><i class="legend-chip canon"></i>Canon</span>
-      <span><i class="legend-chip reference"></i>1 L water reference</span>
     </div>
-    <div class="lens-scale-chart weight-scale-chart" style="--lens-scale-track-width: ${getLensScaleTrackWidth(items.length)}px;" role="img" aria-label="Vertical bar chart comparing lens and teleconverter weight in grams">
-      <div class="lens-scale-grid" aria-hidden="true">
-        ${ticks.map((tick) => `<span class="lens-scale-tick" style="--tick: ${((tick / scaleMax) * 100).toFixed(2)};"><em>${tick.toLocaleString()} g</em></span>`).join("")}
-      </div>
-      <div class="lens-scale-bars">
-        ${items.map(renderItem).join("")}
-      </div>
-    </div>
-    <p class="muted lens-scale-note">Sorted by listed weight. Where a manufacturer lists a small weight range, the chart uses the higher listed value and keeps the range in the label.</p>
+    ${renderScaleCategoryCharts({
+      items,
+      scaleMax,
+      ticks,
+      scaleType: "weight",
+      chartClass: "weight-scale-chart",
+      ariaLabel: "Vertical bar chart comparing lens and teleconverter weight in grams",
+      renderItem,
+    })}
+    <p class="muted lens-scale-note">Each category is sorted by listed weight. Where a manufacturer lists a small weight range, the chart uses the higher listed value and keeps the range in the label.</p>
   </section>`;
 }
 
@@ -2981,6 +3255,11 @@ const inspirationLinks = [
     title: "Cornell / Marie Read Bosque article",
     url: "https://www.allaboutbirds.org/news/bosque-del-apache-new-mexico-a-bird-photographers-playground/",
     sourceLabel: "Cornell",
+    visualId: "snow-goose-blastoff-03",
+    description: [
+      "Use this article as the editorial benchmark for how Bosque feels when bird density, sound, light, and photographer anticipation all stack together. It is especially useful for understanding why the refuge rewards a wide-to-long sequence instead of only tight bird portraits.",
+      "The practical lesson is pacing: arrive early, start wider than instinct during goose lift-off, and study how behavior and light create the photograph before lens reach does. Article photos remain inspiration-only unless permission or a compatible license is recorded.",
+    ],
     note:
       "Inspiration-only photos and excellent field examples. Do not reuse images without permission.",
   },
@@ -2988,6 +3267,11 @@ const inspirationLinks = [
     title: "USFWS Bosque media library",
     url: "https://www.fws.gov/media-library?search=Bosque%20del%20Apache",
     sourceLabel: "USFWS",
+    visualId: "crane-roost-dawn-05",
+    description: [
+      "This is the first place to look when the project needs publishable refuge imagery because many U.S. Fish and Wildlife Service images are public domain or agency-credit material. It is also the safest reference source for habitat, roads, visitor context, and actual refuge species.",
+      "Use the library to separate legally reusable visuals from inspiration-only browsing. Before publication, every selected image still needs its exact source URL, credit, and rights note recorded in the visual asset manifest.",
+    ],
     note:
       "Best place to look for public-domain or agency-credit refuge images.",
   },
@@ -2995,6 +3279,11 @@ const inspirationLinks = [
     title: "eBird Bosque del Apache illustrated checklist",
     url: "https://ebird.org/hotspot/L130166",
     sourceLabel: "eBird",
+    visualId: "farm-field-feeding-02",
+    description: [
+      "The hotspot checklist helps translate the photography plan into likely subjects rather than generic bird expectations. It is useful before each field window when deciding whether to prioritize cranes, geese, ducks, raptors, roadrunners, quail, sparrows, or habitat details.",
+      "Treat contributor photos as inspiration and identification help, not as site assets. The main value is pattern recognition: what species appear, when they are reported, and which subjects deserve practice before the trip.",
+    ],
     note:
       "Use for subject inspiration and seasonal expectations; image licensing varies by contributor.",
   },
@@ -3002,6 +3291,11 @@ const inspirationLinks = [
     title: "Flickr search: Bosque del Apache cranes",
     url: "https://www.flickr.com/search/?text=Bosque%20del%20Apache%20sandhill%20cranes",
     sourceLabel: "Flickr",
+    visualId: "crane-evening-return-01",
+    description: [
+      "Flickr is useful for composition study because many photographers post variations on the same crane-pool themes: landing posture, reflection, side light, mountain bands, and winter water. Looking across many examples helps reveal which backgrounds repeat and which angles become cluttered.",
+      "Reuse only a specific image with a compatible Creative Commons license or explicit permission, and document that decision before publication. Otherwise, keep the value at the study level: framing, timing, and field-position clues.",
+    ],
     note:
       "Inspiration only unless a specific image has a compatible Creative Commons license.",
   },
@@ -3009,6 +3303,11 @@ const inspirationLinks = [
     title: "500px search: Bosque del Apache",
     url: "https://500px.com/search?q=Bosque%20del%20Apache&type=photos",
     sourceLabel: "500px",
+    visualId: "weather-motion-fallback-03",
+    description: [
+      "500px is best treated as a composition and mood reference, especially for polished interpretations of Bosque weather, motion, silhouettes, and graphic flock shapes. It can help identify what a finished image might feel like after the logistical plan is already sound.",
+      "The licensing posture should stay conservative: browse, study, and link out, but do not cache or republish portfolio work unless usage rights are explicitly secured. Use the generated planning frame here as a rights-safe visual stand-in.",
+    ],
     note:
       "Good for composition study. Treat as inspiration-only.",
   },
@@ -3040,6 +3339,56 @@ function sourceInitials(text) {
     .map((part) => part[0])
     .join("")
     .toUpperCase();
+}
+
+function standaloneFrameIdsFor(parentId) {
+  const visual = visualById.get(parentId);
+  if (!visual) return [];
+  if (visual.parentId) return [visual.id];
+  const frames = [...standaloneGalleryVisuals, ...practiceStandaloneVisuals].filter(
+    (item) => item.parentId === parentId
+  );
+  return frames.length ? frames.map((item) => item.id) : [parentId];
+}
+
+function renderStandaloneFrameCard(id, options = {}) {
+  const visual = visualById.get(id);
+  const lesson = visualLessons[id];
+  if (!visual || !lesson) return "";
+  const label = options.label || visual.title;
+  const classes = ["visual-frame-card", options.compact ? "is-compact" : "", options.className || ""]
+    .filter(Boolean)
+    .join(" ");
+  return `<button class="${classes}" type="button" data-visual-id="${visual.id}" aria-label="Open full image: ${visual.title}">
+    <img src="${visual.src}" alt="${visual.alt}" loading="${options.loading || "lazy"}" decoding="async" />
+    <span class="visual-frame-copy">
+      <b>${label}</b>
+      ${options.hideDescription ? "" : `<span>${visual.description || visual.caption}</span>`}
+      <em>${lesson.focalLength}; ${lesson.aperture}; ${lesson.shutterSpeed}</em>
+      ${options.showLocation ? `<small>${lesson.supposedLocation}</small>` : ""}
+    </span>
+  </button>`;
+}
+
+function renderStandaloneFrameGrid(parentId, options = {}) {
+  const ids = standaloneFrameIdsFor(parentId).slice(0, options.limit || 5);
+  const labels = options.labels || [];
+  const classes = ["visual-frame-grid", options.className || "", options.compact ? "is-compact" : ""]
+    .filter(Boolean)
+    .join(" ");
+  return `<div class="${classes}" aria-label="${options.ariaLabel || "Standalone generated image examples"}">
+    ${ids
+      .map((id, index) =>
+        renderStandaloneFrameCard(id, {
+          label: labels[index],
+          compact: options.compact,
+          hideDescription: options.hideDescription,
+          showLocation: options.showLocation,
+          loading: options.loading,
+        })
+      )
+      .join("")}
+  </div>`;
 }
 
 function renderGeneratedPreview(id, options = {}) {
@@ -3144,6 +3493,43 @@ function renderLodgingPreview(item) {
     <figcaption>
       <span>Reference-based generated preview</span>
       ${visual.caption}
+    </figcaption>
+  </figure>`;
+}
+
+function renderAirportBadge(item) {
+  return `<div class="airport-badge" aria-label="${item.airport} airport planning marker">
+    <span>${item.airport}</span>
+    <em>${item.airport === "ABQ" ? "Arrival and rental car" : "Bay Area option"}</em>
+  </div>`;
+}
+
+function renderAirportRouteMap() {
+  const visual = visualById.get("travel-airport-route-map");
+  const labels = [
+    { code: "SFO", name: "San Francisco", style: "--x: 7%; --y: 30%;" },
+    { code: "OAK", name: "Oakland", style: "--x: 16%; --y: 18%;" },
+    { code: "SJC", name: "San Jose", style: "--x: 23%; --y: 42%;" },
+    { code: "ABQ", name: "Albuquerque", style: "--x: 72%; --y: 35%;" },
+    { code: "Socorro", name: "Hotel base", style: "--x: 62%; --y: 62%;" },
+    { code: "Bosque", name: "Refuge", style: "--x: 78%; --y: 84%;" },
+  ];
+  return `<figure class="planning-preview travel-route-visual">
+    <button class="visual-expand-button travel-route-button" type="button" data-visual-id="${visual.id}" aria-label="Open full airport route illustration">
+      <img src="${visual.src}" alt="${visual.alt}" width="1536" height="1024" loading="eager" decoding="async" />
+      ${labels
+        .map(
+          (label) => `<span class="airport-map-label" style="${label.style}">
+            <b>${label.code}</b>
+            <small>${label.name}</small>
+          </span>`
+        )
+        .join("")}
+      <span class="visual-expand-cue">Open full image</span>
+    </button>
+    <figcaption>
+      <span>Generated travel illustration</span>
+      ${visual.caption} SFO, OAK, SJC, ABQ, Socorro, and Bosque labels are site-rendered for accuracy.
     </figcaption>
   </figure>`;
 }
@@ -3273,25 +3659,26 @@ function renderGallery() {
   root.innerHTML = `
     <div class="section-title">
       <div>
-        <p class="eyebrow">Generated inspiration gallery</p>
+        <p class="eyebrow">Standalone generated planning frames</p>
         <h2>Gallery</h2>
       </div>
-      <p>Generated teaching images for shot inspiration. Open any image for the full version, supposed field location, camera settings, and the technique to practice.</p>
+      <p>Forty-five standalone HD planning frames, separated from the original generated contact sheets. Open any frame for the full image, field location, camera settings, and technique notes.</p>
     </div>
-    <div class="generated-photo-gallery" aria-label="Generated Bosque inspiration photos">
-      ${generatedVisuals
-        .map(
-          (visual) => {
-            const lesson = galleryLessons[visual.id];
-            return `<button class="generated-photo-card" type="button" data-visual-id="${visual.id}" aria-label="Open ${visual.title}">
-              <img src="${visual.src}" alt="${visual.alt}" width="1536" height="1024" loading="eager" decoding="async" />
-              <span class="generated-photo-caption">
-                <b>${visual.title}</b>
-                <span>${lesson.supposedLocation}</span>
-              </span>
-            </button>`;
-          }
-        )
+    <div class="standalone-gallery-grid" aria-label="Generated Bosque standalone planning photos">
+      ${standaloneGalleryVisuals
+        .map((visual, index) => {
+          const lesson = visualLessons[visual.id];
+          return `<button class="standalone-gallery-card" type="button" data-visual-id="${visual.id}" aria-label="Open ${visual.title}">
+            <img src="${visual.src}" alt="${visual.alt}" loading="${index < 8 ? "eager" : "lazy"}" decoding="async" />
+            <span class="standalone-gallery-copy">
+              <b>${visual.title}</b>
+              <span>${visual.description}</span>
+              <em>${lesson.focalLength}; ${lesson.aperture}; ${lesson.shutterSpeed}</em>
+              <small>${lesson.supposedLocation}</small>
+              <small><strong>Technique:</strong> ${lesson.technique}</small>
+            </span>
+          </button>`;
+        })
         .join("")}
     </div>
     ${renderVisualLightbox("gallery-lightbox-title")}`;
@@ -3319,12 +3706,15 @@ function setupVisualLightbox(root) {
     document.body.classList.remove("gallery-lock");
   };
 
-  overlay.querySelectorAll("[data-gallery-close]").forEach((button) => {
-    button.addEventListener("click", close);
-  });
-  overlay.addEventListener("keydown", (event) => {
-    if (event.key === "Escape") close();
-  });
+  if (overlay.dataset.lightboxOverlayBound !== "true") {
+    overlay.dataset.lightboxOverlayBound = "true";
+    overlay.querySelectorAll("[data-gallery-close]").forEach((button) => {
+      button.addEventListener("click", close);
+    });
+    overlay.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") close();
+    });
+  }
 }
 
 function openVisualLightbox(overlay, id) {
@@ -3449,6 +3839,7 @@ async function renderMapInto(rootId, places, options = {}) {
   }).addTo(map);
 
   const markers = new Map();
+  const labelMarkers = [];
   const markerPlaces = [...places];
   if (options.includeRefugeMarker) {
     markerPlaces.push({
@@ -3460,14 +3851,59 @@ async function renderMapInto(rootId, places, options = {}) {
     });
   }
 
+  const getTooltipOptions = (place) => {
+    const isCompactMap = window.matchMedia?.("(max-width: 680px)")?.matches;
+    return {
+      permanent: true,
+      direction:
+        isCompactMap && place.labelDirectionMobile
+          ? place.labelDirectionMobile
+          : place.labelDirection || "right",
+      offset: isCompactMap && place.labelOffsetMobile ? place.labelOffsetMobile : place.labelOffset || [10, 0],
+      className: "map-pin-label",
+      opacity: 1,
+      interactive: false,
+    };
+  };
+
+  const bindPinLabel = (marker, place) => {
+    marker.unbindTooltip();
+    marker.bindTooltip(place.name, getTooltipOptions(place));
+  };
+
   markerPlaces.forEach((place) => {
     const marker = LRef.marker([place.lat, place.lon]).addTo(map);
     marker.bindPopup(`<b>${place.name}</b><br>${place.note}<br><small>${place.confidence || place.drive || ""}</small>`);
+    if (options.showPinLabels) {
+      bindPinLabel(marker, place);
+      labelMarkers.push({ marker, place });
+    }
     markers.set(place.name, marker);
   });
 
   const bounds = LRef.latLngBounds(markerPlaces.map((place) => [place.lat, place.lon]));
   map.fitBounds(bounds, { padding: [28, 28] });
+
+  if (options.showPinLabels) {
+    let wasCompactMap = window.matchMedia?.("(max-width: 680px)")?.matches;
+    let resizeTimer;
+    window.addEventListener(
+      "resize",
+      () => {
+        window.clearTimeout(resizeTimer);
+        resizeTimer = window.setTimeout(() => {
+          map.invalidateSize();
+          const isCompactMap = window.matchMedia?.("(max-width: 680px)")?.matches;
+          if (isCompactMap !== wasCompactMap) {
+            map.fitBounds(bounds, { padding: [28, 28] });
+            labelMarkers.forEach(({ marker, place }) => bindPinLabel(marker, place));
+            wasCompactMap = isCompactMap;
+          }
+        }, 160);
+      },
+      { passive: true }
+    );
+  }
 
   root.querySelectorAll(".map-item").forEach((button) => {
     button.addEventListener("click", () => {
@@ -3499,6 +3935,7 @@ async function renderMap() {
     globalName: "photoMapState",
     center: [33.82, -106.88],
     zoom: 12,
+    showPinLabels: true,
   });
 }
 
@@ -3513,7 +3950,8 @@ function renderItinerary() {
       <p>Arrive December 6, shoot five full days, and leave December 12. Each day includes the purpose of the day so the plan adapts cleanly to water, wind, crowds, and bird movement.</p>
     </div>
     <div class="day-tabs"></div>
-    <div class="timeline"></div>`;
+    <div class="timeline"></div>
+    ${renderVisualLightbox("itinerary-lightbox-title")}`;
 
   const tabs = root.querySelector(".day-tabs");
   const timeline = root.querySelector(".timeline");
@@ -3539,33 +3977,44 @@ function renderItinerary() {
       timeline.append(
         el(
           "article",
-          "slot-card",
-          `<div>
-            <div class="slot-time">${slot.window}</div>
-            <p class="muted">${slot.time}</p>
-          </div>
-          <div>
+          "slot-card itinerary-slot-card",
+          `<div class="slot-copy">
+            <div class="slot-kicker">
+              <span class="slot-time">${slot.window}</span>
+              <span>${slot.time}</span>
+            </div>
             <h3>${slot.place}</h3>
             <p class="card-copy">${slot.goal}</p>
-            <p><b>Gear:</b> ${slot.gear}</p>
-          </div>
-          <div>
-            <h3>Position</h3>
-            <p class="card-copy">${slot.position}</p>
+            <div class="slot-detail-grid">
+              <p><b>Gear</b>${slot.gear}</p>
+              <p><b>Position</b>${slot.position}</p>
+            </div>
+            <div class="slot-photo-types">
+              <h4>Expected photo types</h4>
+              <ol class="expected-list">
+                ${visualPlan.expected.map((item) => `<li>${item}</li>`).join("")}
+              </ol>
+            </div>
           </div>
           <div class="slot-visual">
-            ${renderGeneratedPreview(visualPlan.visualId, { className: "slot-preview" })}
-            <h4>Five expected photo types</h4>
-            <ol class="expected-list">
-              ${visualPlan.expected.map((item) => `<li>${item}</li>`).join("")}
-            </ol>
+            ${renderStandaloneFrameGrid(visualPlan.visualId, {
+              labels: visualPlan.expected,
+              className: "itinerary-frame-grid",
+              compact: true,
+              hideDescription: true,
+              showLocation: false,
+              loading: "lazy",
+              ariaLabel: `${slot.place} standalone expected photo examples`,
+            })}
           </div>`
         )
       );
     });
+    setupVisualLightbox(root);
   }
 
   drawDay(tripDays[0]);
+  setupVisualLightbox(root);
 }
 
 function renderWindows() {
@@ -3583,7 +4032,8 @@ function renderWindows() {
       <button class="window-tab" data-window="Mid-morning">Mid-morning</button>
       <button class="window-tab" data-window="Sunset">Sunset</button>
     </div>
-    <div id="window-results"></div>`;
+    <div id="window-results"></div>
+    ${renderVisualLightbox("windows-lightbox-title")}`;
   const result = root.querySelector("#window-results");
   const draw = (windowName) => {
     const matches = tripDays.flatMap((day) =>
@@ -3592,9 +4042,16 @@ function renderWindows() {
         .map((slot) => ({ ...slot, date: day.date, label: day.label, theme: day.theme }))
     );
     result.innerHTML = `
-      <section class="window-visual-grid" aria-label="${windowName} generated examples">
+      <section class="window-visual-grid standalone-window-grid" aria-label="${windowName} standalone generated examples">
         ${(photoWindowVisuals[windowName] || [])
-          .map((visualId) => renderGeneratedPreview(visualId, { className: "window-preview" }))
+          .flatMap((visualId) => standaloneFrameIdsFor(visualId))
+          .map((visualId) =>
+            renderStandaloneFrameCard(visualId, {
+              compact: true,
+              showLocation: true,
+              hideDescription: false,
+            })
+          )
           .join("")}
       </section>
       <div class="grid-2">
@@ -3602,8 +4059,13 @@ function renderWindows() {
           .map((slot) => {
             const day = tripDays.find((item) => item.date === slot.date);
             const visualPlan = visualPlanForSlot(day, slot);
+            const leadFrame = standaloneFrameIdsFor(visualPlan.visualId)[0];
             return `<article class="gear-card window-card">
-          ${renderVisualMini(visualPlan.visualId)}
+          ${renderStandaloneFrameCard(leadFrame, {
+            compact: true,
+            hideDescription: true,
+            className: "window-card-frame",
+          })}
           <p class="eyebrow">${slot.date} / ${slot.label}</p>
           <h3>${slot.place}</h3>
           <p class="card-copy">${slot.goal}</p>
@@ -3613,6 +4075,7 @@ function renderWindows() {
           })
           .join("")}
       </div>`;
+    setupVisualLightbox(root);
   };
   root.querySelectorAll(".window-tab").forEach((button) => {
     button.addEventListener("click", () => {
@@ -3622,6 +4085,7 @@ function renderWindows() {
     });
   });
   draw("Sunrise");
+  setupVisualLightbox(root);
 }
 
 async function renderTravel() {
@@ -3634,21 +4098,19 @@ async function renderTravel() {
       </div>
       <p>Use Albuquerque as the practical airport, choose a car around dawn photography logistics, and keep Socorro as the photography-first hotel base.</p>
     </div>
-    <section class="panel media-decision">
+    <section class="panel media-decision airport-route-section">
       <div>
         <p class="eyebrow">Airport default</p>
         <h3>Fly Bay Area to ABQ, then drive south.</h3>
         <p class="card-copy">Albuquerque International Sunport is the practical airport. From ABQ, rent a car, take I-25 south toward Socorro, then follow the official FWS route via exit 139, US 380, and NM-1 to the refuge visitor center.</p>
       </div>
-      <div class="media-counts">
-        <span><b>SFO / OAK / SJC</b> Bay Area options</span>
-        <span><b>ABQ</b> rental car center</span>
-      </div>
+      ${renderAirportRouteMap()}
     </section>
     <div class="grid-4 travel-grid">
       ${flightOptions
         .map(
           (item) => `<article class="travel-card">
+            ${renderAirportBadge(item)}
             <p class="eyebrow">${item.airport}</p>
             <h3>${item.route}</h3>
             <p><b>${item.recommendation}</b></p>
@@ -3665,6 +4127,18 @@ async function renderTravel() {
       </div>
       <p>The best car is not fancy; it is easy to load quietly in the dark, stable on winter highways, and practical on gravel pullouts.</p>
     </div>
+    <section class="panel rights-callout rental-car-visual-panel">
+      <div>
+        <p class="eyebrow">Rental workflow</p>
+        <h3>Book for cargo access, not status.</h3>
+        <p class="card-copy">The rental-car visual is a generated planning illustration: long lens protected, support reachable, water and layers visible, route notes handy, and valuables hidden when parked. Use it as a packing checklist before choosing the actual class at ABQ.</p>
+      </div>
+      ${renderTeachingPreview("travel-rental-car-cargo", {
+        className: "callout-preview rental-car-preview",
+        label: "Generated rental-car planning illustration",
+        loading: "lazy",
+      })}
+    </section>
     <div class="grid-3">
       ${rentalCarGuidance
         .map(
@@ -3688,7 +4162,11 @@ async function renderTravel() {
         <h3>Reference-based previews here; real hotel photos stay linked.</h3>
         <p class="card-copy">The lodging cards use generated previews grounded in checked hotel/property photo references, so the travel section has visual context without republishing copyrighted hotel imagery. Use the official gallery or property link on each card to inspect the literal rooms, exterior, and amenities before booking.</p>
       </div>
-      ${renderGeneratedPreview("travel-workflow", { className: "callout-preview" })}
+      ${renderStandaloneFrameCard("travel-workflow-01", {
+        className: "callout-preview",
+        compact: true,
+        showLocation: true,
+      })}
     </section>
     <div class="grid-2">
       ${lodgingLocations
@@ -3802,8 +4280,11 @@ function renderGear() {
         )
         .join("")}
     </div>
-    ${renderLensLengthScale()}
-    ${renderLensWeightScale()}`;
+    <div class="gear-scale-area">
+      ${renderGearScaleControls(new Set(gearScaleBrands.map((brand) => brand.system)))}
+      <div class="lens-length-scale-host"></div>
+      <div class="lens-weight-scale-host"></div>
+    </div>`;
 
   const results = root.querySelector(".gear-results");
   const draw = (system) => {
@@ -3878,11 +4359,32 @@ function renderGear() {
       draw(button.dataset.system);
     });
   });
+
+  const scaleState = new Set(gearScaleBrands.map((brand) => brand.system));
+  const lengthHost = root.querySelector(".lens-length-scale-host");
+  const weightHost = root.querySelector(".lens-weight-scale-host");
+  const drawScales = () => {
+    lengthHost.innerHTML = renderLensLengthScale(scaleState);
+    weightHost.innerHTML = renderLensWeightScale(scaleState);
+  };
+  root.querySelectorAll("[data-scale-brand]").forEach((checkbox) => {
+    checkbox.addEventListener("change", () => {
+      if (checkbox.checked) {
+        scaleState.add(checkbox.dataset.scaleBrand);
+      } else {
+        scaleState.delete(checkbox.dataset.scaleBrand);
+      }
+      drawScales();
+    });
+  });
+  drawScales();
   draw("Sony");
 }
 
 function renderPractice() {
   const root = document.querySelector("#practice");
+  const filterTypeGuidance = filterGuidance.slice(3);
+  const filterSizeGuidance = filterGuidance.slice(0, 3);
   root.innerHTML = `
     <div class="section-title">
       <div>
@@ -3897,44 +4399,42 @@ function renderPractice() {
         ${bookStack.map((book) => `<span class="tag">${book}</span>`).join("")}
       </div>
     </section>
-    <section class="filter-practice-section dedicated-filter-section">
+    <section class="filter-learning-section">
       <div class="section-title compact-title">
         <div>
-          <p class="eyebrow">Dedicated filter practice</p>
-          <h2>Filter Kit And Drills</h2>
+          <p class="eyebrow">Filter concepts first</p>
+          <h2>What each filter is for</h2>
         </div>
-        <p>Practice filters as handling tools, not as permanent glass on every lens. The default for fast bird action is hood on and no filter unless weather protection is genuinely needed.</p>
+        <p>Start with the photographic decision. Filters are handling tools for specific light, glare, weather, and motion problems, not default glass for every bird frame.</p>
       </div>
-      <div class="filter-practice-layout">
-        ${renderTeachingPreview("filter-practice", {
-          className: "filter-preview",
-          label: "Generated filter teaching preview",
-          loading: "eager",
-        })}
+      <div class="filter-concept-grid">
+        ${filterTypeGuidance
+          .map(
+            (item) => `<article class="filter-kit-card">
+              <h3>${item.title}</h3>
+              <p class="card-copy">${item.note}</p>
+            </article>`
+          )
+          .join("")}
+      </div>
+    </section>
+    <section class="filter-size-section">
+      <div class="section-title compact-title">
         <div>
-          <div class="filter-kit-grid">
-            ${filterGuidance
-              .map(
-                (item) => `<article class="filter-kit-card">
-                  <h3>${item.title}</h3>
-                  <p class="card-copy">${item.note}</p>
-                </article>`
-              )
-              .join("")}
-          </div>
-          <div class="filter-drill-grid">
-            ${filterPracticePlan
-              .map(
-                (item) => `<article class="filter-drill-card">
-                  <h3>${item.title}</h3>
-                  <p><b>Bring:</b> ${item.bring}</p>
-                  <p><b>Rehearse:</b> ${item.rehearse}</p>
-                  <p class="muted"><b>Avoid:</b> ${item.avoid}</p>
-                </article>`
-              )
-              .join("")}
-          </div>
+          <p class="eyebrow">Then sizes</p>
+          <h2>Which filter sizes matter</h2>
         </div>
+        <p>Buy and pack around shared sizes first. The larger telephoto filters are special-purpose tools because they cost money, light, and field speed.</p>
+      </div>
+      <div class="filter-size-grid">
+        ${filterSizeGuidance
+          .map(
+            (item) => `<article class="filter-kit-card">
+              <h3>${item.title}</h3>
+              <p class="card-copy">${item.note}</p>
+            </article>`
+          )
+          .join("")}
       </div>
     </section>
     <div class="section-title compact-title practice-technique-title">
@@ -3955,7 +4455,13 @@ function renderPractice() {
                 <h3>${practiceModule.title}</h3>
               </div>
             </div>
-            ${practiceModule.visualId ? `<div class="practice-visual-wrap">${renderTeachingPreview(practiceModule.visualId, { className: "practice-illustration", label: "Generated technique preview", compact: true, loading: "eager" })}</div>` : ""}
+            ${practiceModule.visualId ? `<div class="practice-visual-wrap">${renderStandaloneFrameGrid(practiceModule.visualId, {
+              className: "practice-frame-grid",
+              compact: true,
+              hideDescription: true,
+              loading: index < 2 ? "eager" : "lazy",
+              ariaLabel: `${practiceModule.title} standalone training frames`,
+            })}</div>` : ""}
             <div class="practice-card-copy">
               <p class="card-copy">${practiceModule.goal}</p>
               <button class="button-link practice-open-button" type="button" data-jump="practice-${index + 1}">Open lesson</button>
@@ -3964,6 +4470,36 @@ function renderPractice() {
         )
         .join("")}
     </div>
+    <section class="filter-practice-section dedicated-filter-section">
+      <div class="section-title compact-title">
+        <div>
+          <p class="eyebrow">End with kit and drills</p>
+          <h2>Filter Kit And Drills</h2>
+        </div>
+        <p>Practice filters after the concepts and sizes are clear. The default for fast bird action is hood on and no filter unless weather protection is genuinely needed.</p>
+      </div>
+      <div class="filter-practice-layout">
+        ${renderStandaloneFrameGrid("filter-practice", {
+          className: "filter-frame-grid",
+          compact: true,
+          hideDescription: true,
+          loading: "lazy",
+          ariaLabel: "Filter practice standalone training frames",
+        })}
+        <div class="filter-drill-grid">
+          ${filterPracticePlan
+            .map(
+              (item) => `<article class="filter-drill-card">
+                <h3>${item.title}</h3>
+                <p><b>Bring:</b> ${item.bring}</p>
+                <p><b>Rehearse:</b> ${item.rehearse}</p>
+                <p class="muted"><b>Avoid:</b> ${item.avoid}</p>
+              </article>`
+            )
+            .join("")}
+        </div>
+      </div>
+    </section>
     ${renderVisualLightbox("practice-lightbox-title")}`;
   setupVisualLightbox(root);
 }
@@ -3990,10 +4526,13 @@ function renderPracticeDetail(index) {
         </dl>
       </div>
       <div class="practice-detail-visual">
-        ${renderTeachingPreview(practiceModule.visualId, {
-          className: "practice-detail-preview",
-          label: "Generated high-resolution teaching preview",
+        ${renderStandaloneFrameGrid(practiceModule.visualId, {
+          className: "practice-detail-frame-grid",
+          compact: false,
+          hideDescription: false,
+          showLocation: true,
           loading: "eager",
+          ariaLabel: `${practiceModule.title} full standalone training frames`,
         })}
       </div>
     </section>
@@ -4049,11 +4588,15 @@ function renderInspiration() {
     </div>
     <section class="panel rights-callout inspiration-policy">
       <div>
-        <p class="eyebrow">Thumbnail discipline</p>
-        <h3>External references stay link-only unless a license is recorded.</h3>
-        <p class="card-copy">Copyrighted article, portfolio, product, hotel, and checklist photos are linked for reference only and are not reused as project assets unless a license or permission is recorded. Search-style cards below identify the source without caching its images.</p>
+        <p class="eyebrow">Image rights boundary</p>
+        <h3>Study external work, but keep reused visuals rights-safe.</h3>
+        <p class="card-copy">Copyrighted article, portfolio, product, hotel, and checklist photos stay linked for reference only unless a license or permission is recorded. The external-inspiration cards below use generated planning frames as visual treatments, then point back to the original source for study.</p>
       </div>
-      ${renderGeneratedPreview("snow-goose-blastoff", { className: "callout-preview" })}
+      ${renderStandaloneFrameCard("snow-goose-blastoff-03", {
+        className: "callout-preview inspiration-callout-frame",
+        compact: true,
+        hideDescription: true,
+      })}
     </section>
     <div class="section-title compact-title support-title">
       <div>
@@ -4065,17 +4608,22 @@ function renderInspiration() {
     <div class="grid-2">
       ${inspirationLinks
         .map(
-          (item) => `<article class="evidence-card link-reference-card">
-            <a href="${item.url}" target="_blank" rel="noreferrer" class="reference-thumb">
-              ${renderLinkOnlyVisual(item.title, item.sourceLabel, "Inspiration link")}
-            </a>
+          (item) => `<article class="evidence-card link-reference-card external-inspiration-card">
+            ${renderStandaloneFrameCard(item.visualId, {
+              compact: true,
+              hideDescription: true,
+              className: "external-inspiration-visual",
+            })}
             <h3>${item.title}</h3>
-            <p class="card-copy">${item.note}</p>
+            ${(item.description || [item.note]).map((paragraph) => `<p class="card-copy">${paragraph}</p>`).join("")}
+            <p class="muted">${item.note}</p>
             ${externalLink(item.url, "Open reference")}
           </article>`
         )
         .join("")}
-    </div>`;
+    </div>
+    ${renderVisualLightbox("inspiration-lightbox-title")}`;
+  setupVisualLightbox(root);
 }
 
 function renderMedia() {
@@ -4431,8 +4979,11 @@ async function showView(id, options = {}) {
 }
 
 function initTabs() {
-  document.querySelectorAll(".tab").forEach((button) => {
-    button.addEventListener("click", () => showView(button.dataset.view, { updateUrl: true }));
+  document.querySelectorAll(".tab[data-view]").forEach((button) => {
+    button.addEventListener("click", (event) => {
+      event.preventDefault();
+      showView(button.dataset.view, { updateUrl: true });
+    });
   });
   document.addEventListener("click", (event) => {
     if (!(event.target instanceof Element)) return;
