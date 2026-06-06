@@ -326,7 +326,7 @@ function renderOverview() {
         </div>
       </div>
       <figure class="hero-photo">
-        <img src="${assets.flyout}" alt="Snow geese flying over photographers at Bosque del Apache" width="1800" height="1440" decoding="async" fetchpriority="high" />
+        <img src="${assets.flyout}" alt="Snow geese flying over photographers at Bosque del Apache" width="1200" height="960" decoding="async" fetchpriority="high" />
         <figcaption><span>${visualDisclosureLabels.publicDomain}</span> Lynne Braden / USFWS volunteer, Public Domain</figcaption>
       </figure>
     </section>

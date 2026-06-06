@@ -16,7 +16,7 @@ const guideFraming = {
 const assets = {
   geese: "./assets/snow-geese-gary-stolz-usfws-1800.jpg",
   cranes: "./assets/sandhill-cranes-ryan-hagerty-usfws-1800.jpg",
-  flyout: "./assets/snow-geese-flyout-lynne-braden-usfws-1800.jpg",
+  flyout: "./assets/snow-geese-flyout-lynne-braden-usfws-1200.webp",
 };
 
 function slugify(value) {
