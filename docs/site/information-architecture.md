@@ -31,6 +31,7 @@ Use top tabs for the major workspaces:
 - Photo Techniques
 - Travel Logistics
 - Shot Inspiration
+- Image Disclosure
 - Resources & References
 
 Navigation is editorial strategy for this guide. The labels should tell a serious photographer that this is a field-planning publication with sourced logistics, not a loose gallery or generic travel blog.
@@ -48,14 +49,15 @@ Rationale:
 | Photo Techniques | 7 | Replaces vague `Practice`; the section is a pre-trip technique workspace for autofocus, exposure, panning, support, filters, and workflow. |
 | Travel Logistics | 8 | Replaces `Travel`; clarifies that the section covers airports, driving, rental car, lodging, early departures, food/fuel, and access logistics. |
 | Shot Inspiration | 9 | Replaces `Inspiration` and absorbs Gallery. The label is specific to the shot-planning purpose and can carry both individual inspiration images and the larger visual study album. |
-| Resources & References | 10 | Combines reader-facing outside articles, videos if added, EXIF evidence, teaching references, useful links, and the factual citation index. One page is clearer because readers should not have to guess whether a source belongs under `Media`, `External Resources`, or `References`. |
+| Image Disclosure | 10 | Explains the difference between AI-generated planning illustrations, public-domain field photos, official product references, and link-only external references. It is top-level because the project uses photorealistic synthetic visuals and the reader should not have to hunt for provenance language. |
+| Resources & References | 11 | Combines reader-facing outside articles, videos if added, EXIF evidence, teaching references, useful links, and the factual citation index. One page is clearer because readers should not have to guess whether a source belongs under `Media`, `External Resources`, or `References`. |
 
 Implementation notes:
 
-- Keep all ten items top-level for now because each section has enough content and a distinct planning question.
+- Keep all eleven items top-level for now because each section has enough content and a distinct planning question.
 - Keep existing hash IDs such as `#guide`, `#itinerary`, `#windows`, `#map`, `#practice`, and `#media` stable for compatibility.
 - Retire legacy aliases such as `#gallery`, `#sources`, `#source`, and `#references`; these old labels should not redirect readers to the top of a combined page.
-- Support semantic aliases such as `#field-guide`, `#best-photo-windows`, `#map-locations`, `#photo-techniques`, `#external-resources`, and `#resources-references`.
+- Support semantic aliases such as `#field-guide`, `#best-photo-windows`, `#map-locations`, `#photo-techniques`, `#image-disclosure`, `#ai-images`, `#image-notes`, `#external-resources`, and `#resources-references`.
 - Update public labels, page headings, standalone guide navigation, no-script text, deployment checks, and static QA whenever the navigation changes.
 - Do not rename `5-Day Itinerary` to `Itineraries` until the site actually contains separate 3-day, 4-day, and 5-day options.
 
@@ -66,7 +68,7 @@ Implementation notes:
 - Lodging base.
 - Current planning assumptions, field gates, and close-to-travel recheck reminders.
 - Today's plan card during trip dates.
-- Quick links to Field Guide, 5-Day Itinerary, Best Photo Windows, Map & Locations, Gear, Photo Techniques, Travel Logistics, and Resources & References.
+- Quick links to Field Guide, 5-Day Itinerary, Best Photo Windows, Map & Locations, Gear, Photo Techniques, Travel Logistics, Image Disclosure, and Resources & References.
 
 ## Field Guide
 
@@ -298,9 +300,21 @@ Each item should include:
 At the bottom of the page, include the former Gallery as a visual study album:
 
 - True mosaic groups for the major shot-list ideas.
-- Planning images labeled as generated visual examples, not actual Bosque field photographs.
+- Planning images labeled as AI-generated planning illustrations, not actual Bosque field photographs.
 - Five-frame story groups with prompt/provenance summary, field-reading purpose, lens/settings notes, and lightbox access.
 - Public-domain and generated assets kept visually separate from link-only external references.
+
+## Image Disclosure
+
+Explain the visual provenance system in plain editorial language:
+
+- AI-generated planning illustrations support shot planning, field-position thinking, technique tradeoffs, and logistics, but are not documentary photographs or evidence of current refuge conditions.
+- AI-generated training illustrations support pre-trip practice drills and should not be presented as completed Bosque field photos.
+- AI-generated lodging previews summarize photographer workflow concerns and are not actual hotel/property photographs.
+- Public-domain USFWS field photos and official product reference photos get their own source labels.
+- External article, portfolio, hotel, and checklist photos stay link-only unless reuse rights are documented.
+
+Use caption chips rather than permanent image-overlay badges. Preferred labels: `AI-generated planning illustration`, `AI-generated training illustration`, `AI-generated lodging preview`, `Public-domain field photo`, `Official product reference photo`, and `Link-only external reference`.
 
 ## Resources & References
 

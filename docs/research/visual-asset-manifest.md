@@ -6,13 +6,24 @@ Checked June 4, 2026. This manifest is the publishing guardrail for the Bosque d
 
 | Mode | Use | Publishing Rule |
 |---|---|---|
-| `generated_planning_preview` | AI-generated contact sheets and travel/lodging previews created from this project's shot descriptions, season, light, field position, gear, logistics, and constraints. | May be stored in `site/assets/generated/`; must be labeled as generated planning/training/lodging previews, not actual Bosque field photos or actual hotel/property photos. |
+| `generated_planning_preview` | AI-generated contact sheets, standalone planning images, training images, travel illustrations, and lodging previews created from this project's shot descriptions, season, light, field position, gear, logistics, and constraints. | May be stored in `site/assets/generated/`; must be labeled as AI-generated planning/training/lodging illustrations, not actual Bosque field photos or actual hotel/property photos. |
 | `cached_public_domain` | Source-checked public-domain USFWS images already used by the prototype. | May be stored in `site/assets/` with source URL, creator, credit line, and public-domain note. |
 | `official_product_image` | Manufacturer or product-maker images used only in the Gear section to identify the listed equipment. | May be rendered as a contained image when the product/spec page and image source are recorded here. Keep the image linked to the official product/spec page and do not claim project ownership. |
 | `link_only` | Hotel galleries, articles, portfolios, search results, eBird/Flickr/500px, and other third-party creative photos without recorded permission. | Do not cache or republish the image. Render a text/source card or link to the official page. |
 | `linked_thumbnail` | Low-resolution thumbnail from an explicitly licensed/embeddable source. | Not used in the current implementation. Add only after the exact thumbnail URL, license, and attribution are recorded here. |
 
-Public-page language: copyrighted article, portfolio, hotel, and checklist photos are linked for reference only and are not reused as project assets unless a license or permission is recorded. Gear product images are the documented exception: they appear only on Gear cards as source-linked official product references.
+## Public Disclosure Labels
+
+Use these public caption-chip labels consistently:
+
+- `AI-generated planning illustration` for generated shot-planning, itinerary, photo-window, travel, guide, inspiration, gallery, and media visuals.
+- `AI-generated training illustration` for generated practice-lesson visuals.
+- `AI-generated lodging preview` for generated lodging/property workflow previews.
+- `Public-domain field photo` for cached USFWS images with documented public-domain source status.
+- `Official product reference photo` for source-linked manufacturer/product images used to identify gear.
+- `Link-only external reference` for third-party article, portfolio, hotel, checklist, and inspiration sources that are not republished.
+
+Public-page language: copyrighted article, portfolio, hotel, and checklist photos are linked for reference only and are not reused as project assets unless a license or permission is recorded. Gear product images are the documented exception: they appear only on Gear cards as source-linked official product references. AI-generated visuals are planning/training/lodging illustrations, not documentary evidence of field conditions, actual hotel/property conditions, or completed Bosque photographs.
 
 ## Generated Planning Previews
 

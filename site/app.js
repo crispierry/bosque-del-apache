@@ -11,6 +11,22 @@ function externalLink(url, label = "Source") {
   return `<a href="${url}" target="_blank" rel="noreferrer">${label}</a>`;
 }
 
+const visualDisclosureLabels = {
+  planning: "AI-generated planning illustration",
+  training: "AI-generated training illustration",
+  lodging: "AI-generated lodging preview",
+  publicDomain: "Public-domain field photo",
+  product: "Official product reference photo",
+  linkOnly: "Link-only external reference",
+};
+
+function visualDisclosureLabel(visual) {
+  if (!visual) return visualDisclosureLabels.planning;
+  if (visual.id?.startsWith("lodging-")) return visualDisclosureLabels.lodging;
+  if (visual.category === "Practice") return visualDisclosureLabels.training;
+  return visualDisclosureLabels.planning;
+}
+
 function renderGuideScopeNote(variant = "short") {
   const message = variant === "overview" ? guideFraming.overview : guideFraming.short;
   return `<p class="guide-scope-note"><strong>${guideFraming.title}.</strong> ${message}</p>`;
@@ -48,6 +64,7 @@ function renderStandaloneFrameCard(id, options = {}) {
     <img src="${visual.src}" alt="${visual.alt}" width="1920" height="1080" loading="${options.loading || "lazy"}" decoding="async" />
     <span class="visual-frame-copy">
       <b>${label}</b>
+      <small class="visual-disclosure-chip">${visualDisclosureLabel(visual)}</small>
       ${options.hideDescription ? "" : `<span>${visual.description || visual.caption}</span>`}
       <em>${lesson.focalLength}; ${lesson.aperture}; ${lesson.shutterSpeed}${lesson.iso ? `; ${lesson.iso}` : ""}</em>
       ${options.showLocation ? `<small>${lesson.supposedLocation}</small>` : ""}
@@ -80,7 +97,7 @@ function renderGeneratedPreview(id, options = {}) {
   const visual = visualById.get(id) || generatedVisuals[0];
   const classes = ["planning-preview", options.className || ""].filter(Boolean).join(" ");
   const caption = options.caption || visual.caption;
-  const label = options.label || "Planning preview";
+  const label = options.label || visualDisclosureLabel(visual);
   return `<figure class="${classes}">
     <img src="${visual.src}" alt="${visual.alt}" width="1536" height="1024" loading="${options.loading || "lazy"}" decoding="async" />
     <figcaption>
@@ -99,7 +116,7 @@ function renderVisualLightbox(titleId = "visual-lightbox-title") {
       </div>
       <aside class="gallery-lightbox-copy">
         <button class="gallery-lightbox-close" type="button" data-gallery-close aria-label="Close full image">Close</button>
-        <p class="eyebrow">Generated teaching image</p>
+        <p class="eyebrow" data-gallery-disclosure></p>
         <h3 class="gallery-lightbox-title" id="${titleId}"></h3>
         <p class="gallery-lightbox-note"></p>
         <dl class="gallery-tech-list">
@@ -150,7 +167,7 @@ function renderTeachingPreview(id, options = {}) {
     .filter(Boolean)
     .join(" ");
   const caption = options.caption || visual.caption;
-  const label = options.label || "Generated teaching preview";
+  const label = options.label || visualDisclosureLabel(visual);
   return `<figure class="${classes}">
     <button class="visual-expand-button" type="button" data-visual-id="${id}" aria-label="Open full image: ${visual.title}">
       <img src="${visual.src}" alt="${visual.alt}" width="1536" height="1024" loading="${options.loading || "lazy"}" decoding="async" />
@@ -178,7 +195,7 @@ function renderLodgingPreview(item) {
       <span class="visual-expand-cue">Open full image</span>
     </a>
     <figcaption>
-      <span>Reference-based generated preview</span>
+      <span>${visualDisclosureLabel(visual)}</span>
       ${visual.caption}
     </figcaption>
   </figure>`;
@@ -215,18 +232,18 @@ function renderAirportRouteMap() {
       <span class="visual-expand-cue">Open full image</span>
     </button>
     <figcaption>
-      <span>Travel planning illustration</span>
+      <span>${visualDisclosureLabel(visual)}</span>
       ${visual.caption} SFO, OAK, SJC, ABQ, Socorro, and Bosque labels are site-rendered for accuracy.
     </figcaption>
   </figure>`;
 }
 
-function renderVisualMini(id, note = "Planning preview") {
+function renderVisualMini(id, note) {
   const visual = visualById.get(id) || generatedVisuals[0];
-  return `<div class="visual-mini">
+  return `<figure class="visual-mini">
     <img src="${visual.src}" alt="${visual.alt}" width="1920" height="1080" loading="lazy" decoding="async" />
-    <span>${note}</span>
-  </div>`;
+    <figcaption><span>${note || visualDisclosureLabel(visual)}</span></figcaption>
+  </figure>`;
 }
 
 function renderLinkOnlyVisual(title, label, note = "Link only") {
@@ -310,7 +327,7 @@ function renderOverview() {
       </div>
       <figure class="hero-photo">
         <img src="${assets.flyout}" alt="Snow geese flying over photographers at Bosque del Apache" width="1800" height="1440" decoding="async" fetchpriority="high" />
-        <figcaption>Lynne Braden / USFWS volunteer, Public Domain</figcaption>
+        <figcaption><span>${visualDisclosureLabels.publicDomain}</span> Lynne Braden / USFWS volunteer, Public Domain</figcaption>
       </figure>
     </section>
     <section class="stat-grid" aria-label="Trip facts">
@@ -382,6 +399,7 @@ function renderGalleryStudySection() {
                   <img src="${visual.src}" alt="${visual.alt}" width="1920" height="1080" loading="${index < 2 ? "eager" : "lazy"}" decoding="async" />
                   <span class="true-mosaic-caption">
                     <b>${visual.title}</b>
+                    <em>${visualDisclosureLabel(visual)}</em>
                     <span>${lesson.focalLength}; ${lesson.aperture}; ${lesson.shutterSpeed}</span>
                   </span>
                 </button>`;
@@ -444,6 +462,7 @@ function openVisualLightbox(overlay, id) {
   if (!overlay || !visual || !lesson) return false;
 
   const image = overlay.querySelector(".gallery-lightbox-image");
+  const disclosure = overlay.querySelector("[data-gallery-disclosure]");
   const title = overlay.querySelector(".gallery-lightbox-title");
   const note = overlay.querySelector(".gallery-lightbox-note");
   const originalLink = overlay.querySelector(".gallery-open-original");
@@ -459,6 +478,7 @@ function openVisualLightbox(overlay, id) {
 
   image.src = visual.src;
   image.alt = visual.alt;
+  if (disclosure) disclosure.textContent = visualDisclosureLabel(visual);
   title.textContent = visual.title;
   note.textContent =
     visual.category === "Travel"
@@ -1673,6 +1693,87 @@ function renderInspiration() {
   setupVisualLightbox(root);
 }
 
+function renderImageDisclosure() {
+  const root = document.querySelector("#disclosure");
+  root.innerHTML = `
+    <section class="image-disclosure-page">
+      <div class="section-title">
+        <div>
+          <p class="eyebrow">Visual provenance</p>
+          <h2>Image Disclosure</h2>
+        </div>
+        <p>This project uses several kinds of visual material. The labels explain what each image is doing and what a reader should not infer from it.</p>
+      </div>
+      <section class="panel rights-callout">
+        <div>
+          <p class="eyebrow">Editorial boundary</p>
+          <h3>Planning illustrations are not documentary evidence.</h3>
+          <p class="card-copy">AI-generated visuals in this guide are planning, training, lodging, or logistics illustrations. They help explain the kinds of scenes, field decisions, and preparation problems a photographer should rehearse, but they are not proof that I photographed a specific subject, stood in a specific location, saw current bird density, verified hotel conditions, or documented December 2026 refuge conditions.</p>
+          <p class="card-copy">The label appears in the caption surface instead of as a permanent badge over the image, so the picture can still work visually while the provenance stays explicit.</p>
+        </div>
+        ${renderVisualMini("inspiration-hd-dawn-crane-roost-silhouettes")}
+      </section>
+      <div class="grid-2">
+        <article class="panel">
+          <p class="eyebrow">${visualDisclosureLabels.planning}</p>
+          <h3>Used for shot planning.</h3>
+          <p class="card-copy">These are generated from this project's own shot descriptions, season, light, subject behavior, field-position notes, lens choices, and technique goals. Read them as preparation aids, not field photos from Bosque del Apache.</p>
+        </article>
+        <article class="panel">
+          <p class="eyebrow">${visualDisclosureLabels.training}</p>
+          <h3>Used for practice lessons.</h3>
+          <p class="card-copy">Training images show practice scenarios for autofocus, exposure, long-lens handling, panning, support choices, filter decisions, and cold-weather workflow. They are not examples of completed refuge photographs.</p>
+        </article>
+        <article class="panel">
+          <p class="eyebrow">${visualDisclosureLabels.lodging}</p>
+          <h3>Used for hotel decision context.</h3>
+          <p class="card-copy">Lodging previews are reference-based AI images that summarize photographer concerns such as predawn departure, parking, charging, breakfast timing, and room setup. They are not actual hotel or property photographs; official hotel galleries stay linked for booking checks.</p>
+        </article>
+        <article class="panel">
+          <p class="eyebrow">${visualDisclosureLabels.publicDomain}</p>
+          <h3>Used when reuse rights support it.</h3>
+          <p class="card-copy">USFWS images are used only when the source and public-domain status are documented. These are real field-context photos, and captions preserve creator/source credit.</p>
+        </article>
+        <article class="panel">
+          <p class="eyebrow">${visualDisclosureLabels.product}</p>
+          <h3>Used for gear identification.</h3>
+          <p class="card-copy">Official product photos appear only as source-linked gear references where the product/spec source is recorded. They identify equipment; they are not project-owned photography.</p>
+        </article>
+        <article class="panel">
+          <p class="eyebrow">${visualDisclosureLabels.linkOnly}</p>
+          <h3>Used for external inspiration.</h3>
+          <p class="card-copy">Portfolio, article, hotel, checklist, and other third-party creative photos stay as links unless a reuse license or permission is documented. Inspiration is separated from publication rights.</p>
+        </article>
+      </div>
+      <section class="media-section citation-section">
+        <div class="media-section-header">
+          <div>
+            <p class="eyebrow">Trust context</p>
+            <h3>Why the distinction matters</h3>
+          </div>
+          <p>Photorealistic synthetic media can be useful, but the reader should never have to guess what a visual claims.</p>
+        </div>
+        <div class="citation-list">
+          <a href="https://www.copyright.gov/ai/Copyright-and-Artificial-Intelligence-Part-2-Copyrightability-Report.pdf?highlight=2025" target="_blank" rel="noreferrer">
+            <span>Copyright</span>
+            <strong>U.S. Copyright Office AI copyrightability report</strong>
+            <em>Human authorship and AI-generated outputs</em>
+          </a>
+          <a href="https://www.ftc.gov/news-events/news/press-releases/2024/09/ftc-announces-crackdown-deceptive-ai-claims-schemes" target="_blank" rel="noreferrer">
+            <span>Consumer trust</span>
+            <strong>FTC deceptive AI claims enforcement</strong>
+            <em>AI claims still need to avoid misleading readers</em>
+          </a>
+          <a href="https://spec.c2pa.org/specifications/specifications/2.2/explainer/Explainer.html" target="_blank" rel="noreferrer">
+            <span>Provenance</span>
+            <strong>C2PA Content Credentials explainer</strong>
+            <em>Open provenance standards for media origin and history</em>
+          </a>
+        </div>
+      </section>
+    </section>`;
+}
+
 function renderReferenceIndex() {
   return `<section class="media-section reference-index-section" id="reference-index">
     <div class="media-section-header">
@@ -1754,7 +1855,7 @@ function renderMedia() {
           ${primarySources
             .map(
               (item, index) => `<article class="priority-source-card ${index === 0 ? "is-lead" : ""}">
-                ${renderVisualMini(visualIdForMedia(item), "Planning preview")}
+                ${renderVisualMini(visualIdForMedia(item))}
                 <div class="media-meta">
                   <span>${item.date}</span>
                   <span>${item.kind}</span>
@@ -1857,7 +1958,7 @@ function renderMedia() {
       .map(
         (item, index) => `<article class="media-card article-card ${index === 0 && filter === "All" ? "is-featured" : ""}">
           <div class="article-kicker">
-            ${renderVisualMini(visualIdForMedia(item), "Planning preview")}
+            ${renderVisualMini(visualIdForMedia(item))}
             <div class="media-meta">
               <span>${item.date}</span>
               <span>${item.kind}</span>
@@ -1888,11 +1989,14 @@ function renderMedia() {
 const defaultView = "overview";
 const viewAliases = {
   "5-day-itinerary": "itinerary",
+  "ai-images": "disclosure",
   "best-photo-windows": "windows",
   "complete-guide": "guide",
   "external-resources": "media",
   "field-guide": "guide",
   "field-techniques": "practice",
+  "image-disclosure": "disclosure",
+  "image-notes": "disclosure",
   "itineraries": "itinerary",
   "light-timing": "windows",
   lodging: "travel",
@@ -1916,6 +2020,7 @@ const viewRenderers = {
   gear: renderGear,
   practice: renderPractice,
   inspiration: renderInspiration,
+  disclosure: renderImageDisclosure,
   media: renderMedia,
 };
 

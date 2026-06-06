@@ -137,7 +137,7 @@ netlify deploy --prod --dir=site
 
 ## Pre-Deploy Checklist
 
-- Start the local preview and check the Overview, Field Guide, 5-Day Itinerary, Best Photo Windows, Map & Locations, Gear, Photo Techniques, Travel Logistics, Shot Inspiration, and Resources & References tabs.
+- Start the local preview and check the Overview, Field Guide, 5-Day Itinerary, Best Photo Windows, Map & Locations, Gear, Photo Techniques, Travel Logistics, Shot Inspiration, Image Disclosure, and Resources & References tabs.
 - Confirm all local assets load from `site/assets/`.
 - Confirm the Leaflet map loads with the external Leaflet CSS and script.
 - Confirm the canonical URL in `site/index.html` points to `https://crispierry.com/projects/bosque-del-apache`.

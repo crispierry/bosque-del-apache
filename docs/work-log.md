@@ -2,6 +2,30 @@
 
 This file tracks requested project work that has not yet been implemented, verified, and published.
 
+## 2026-06-06 - Add AI Image Disclosure Page And Caption Labels
+
+Status: completed and validated June 6, 2026.
+
+Goal: make AI-generated image use explicit without detracting from the visuals by adding a top-level Image Disclosure section and standardizing subtle caption-chip labels.
+
+Requested requirements:
+
+- Add `Image Disclosure` after `Shot Inspiration` and before `Resources & References`.
+- Add semantic aliases for `#image-disclosure`, `#ai-images`, and `#image-notes`.
+- Label generated images as `AI-generated planning illustration`, `AI-generated training illustration`, or `AI-generated lodging preview`.
+- Label real/public-domain and product images as `Public-domain field photo` or `Official product reference photo`.
+- Explain that generated visuals are planning aids, not documentary evidence of field conditions, actual hotel/property conditions, or completed Bosque photographs.
+- Use caption chips rather than image-overlay badges.
+
+Implementation notes:
+
+- Added static QA guardrails for the 11-item navigation, disclosure aliases, standalone generated-guide figure labels, and caption-based thumbnail disclosure.
+- Updated the visual asset manifest and information architecture docs with the disclosure standard.
+
+Completion notes:
+
+- Validated JavaScript syntax, static QA, desktop browser disclosure route, alias routes, generated-image lightbox labeling, mobile disclosure layout, standalone guide labels, and Travel Logistics lodging labels.
+
 ## 2026-06-05 - Keep Website Nav For Planner And Guide CTAs
 
 Status: completed and validated June 5, 2026.

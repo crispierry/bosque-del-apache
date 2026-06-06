@@ -61,6 +61,7 @@ const expectedNavLabels = [
   "Photo Techniques",
   "Travel Logistics",
   "Shot Inspiration",
+  "Image Disclosure",
   "Resources &amp; References",
 ];
 
@@ -173,6 +174,14 @@ assert(
   "Resources & References should remain the combined reader-facing page"
 );
 assert(
+  "image disclosure routes resolve to disclosure page",
+  /"ai-images": "disclosure"/.test(app) &&
+    /"image-disclosure": "disclosure"/.test(app) &&
+    /"image-notes": "disclosure"/.test(app) &&
+    /disclosure: renderImageDisclosure/.test(app),
+  "Image Disclosure route and aliases should stay available"
+);
+assert(
   "retired gallery and citation aliases stay removed",
   !/gallery: "inspiration"/.test(app) &&
     !/references: "media"/.test(app) &&
@@ -195,6 +204,42 @@ assert(
   /shotInspirationGalleryExcludedGroups = new Set\(\["travel-workflow"\]\)/.test(app) &&
     /!shotInspirationGalleryExcludedGroups\.has\(group\.id\)/.test(app),
   "Travel workflow visuals belong on Travel Logistics"
+);
+assert(
+  "generated image labels are explicit in app renderers",
+  [
+    "AI-generated planning illustration",
+    "AI-generated training illustration",
+    "AI-generated lodging preview",
+    "Public-domain field photo",
+    "Official product reference photo",
+  ].every((label) => app.includes(label)) &&
+    !/(Planning preview|Generated teaching preview|Generated teaching image|Reference-based generated preview|Travel planning illustration)/.test(app),
+  "Use disclosure labels instead of vague preview labels"
+);
+const guideGeneratedFigures = [
+  ...guide.matchAll(/<figure[^>]*>[\s\S]*?<img[^>]+src="\.\/assets\/generated\/[^"]+"[\s\S]*?<\/figure>/g),
+].map((match) => match[0]);
+const unlabeledGuideGeneratedFigures = guideGeneratedFigures.filter(
+  (figure) => !/<figcaption><span>AI-generated (?:planning illustration|training illustration|lodging preview)<\/span>/.test(figure)
+);
+assert(
+  "standalone generated guide figures disclose AI",
+  guideGeneratedFigures.length > 0 && unlabeledGuideGeneratedFigures.length === 0,
+  `${unlabeledGuideGeneratedFigures.length}/${guideGeneratedFigures.length}`
+);
+assert(
+  "standalone non-generated guide figures use source labels",
+  guide.includes("<span>Public-domain field photo</span>") &&
+    guide.includes("<span>Official product reference photo</span>"),
+  "Guide should label public-domain and official product images"
+);
+assert(
+  "thumbnail disclosure is caption-based",
+  /<figcaption><span>\$\{note \|\| visualDisclosureLabel\(visual\)\}<\/span><\/figcaption>/.test(app) &&
+    /\.visual-mini figcaption/.test(styles) &&
+    !/\.visual-mini span\s*\{[\s\S]*?position:\s*absolute/.test(styles),
+  "Visual mini disclosure should sit in a caption, not as an image overlay"
 );
 assert(
   "gear uses top-level workspaces",
