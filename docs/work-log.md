@@ -2,6 +2,32 @@
 
 This file tracks requested project work that has not yet been implemented, verified, and published.
 
+## 2026-06-06 - Expand Lens Evidence For Bosque And Tanzania
+
+Status: completed June 6, 2026.
+
+Goal: expand lens research for Bosque del Apache and Tanzania using evidence from photographer recommendations, public photo metadata, and current Sony, Sigma, and Canon lens offerings.
+
+Requested requirements:
+
+- Research Bosque del Apache lens recommendations from published photographer articles.
+- Search public web photos for Bosque del Apache metadata, especially lens and focal-length evidence.
+- Expand the comparison to Tanzania safari use so one kit can be evaluated across both trips.
+- Review Sony, Sigma, and Canon lens offerings for additional candidates.
+- Keep the research evidence-based and durable for future sessions.
+
+Implementation notes:
+
+- Added `docs/research/lens-evidence-bosque-tanzania.md` with published recommendation patterns, Wikimedia Commons metadata patterns, representative EXIF examples, and a Sony/Sigma/Canon lens matrix.
+- Updated `docs/research/lenses-and-field-setup.md` with a June 6 evidence refresh and a concise list of additional lenses to consider.
+- Updated `docs/research/sources.md` and `docs/research-plan.md` with the new evidence streams and research output.
+
+Acceptance notes:
+
+- Bosque findings support a 24-105mm story lens, a flexible long wildlife zoom, and an optional reach specialist rather than "longest lens only" thinking.
+- Tanzania findings support two-body flexibility: a close/story lens plus a 100-500mm or 200-600mm-class wildlife zoom, with extra reach only when birds/distant cats are a major goal.
+- Sigma 150-600mm, Sigma 60-600mm, Sigma 500mm f/5.6, Sony 300mm f/2.8, Canon RF 100-300mm f/2.8, and Sigma 300-600mm f/4 were added as explicit candidates to evaluate.
+
 ## 2026-06-06 - Add AI Image Disclosure Page And Caption Labels
 
 Status: completed and validated June 6, 2026.

@@ -6,7 +6,7 @@ Prepare a photography-focused five-day trip plan for Bosque del Apache, with pra
 
 ## Current Status
 
-Research refresh completed June 3, 2026.
+Core trip research refresh completed June 3, 2026. Lens evidence for Bosque del Apache and Tanzania was expanded June 6, 2026.
 
 - Official refuge access, hours, fees, tour-loop notes, and rules were rechecked.
 - Map pins were added for the visitor center, viewing decks, crane-pond pullouts, restrooms, food, fuel, and the main Socorro lodging candidates.
@@ -15,7 +15,7 @@ Research refresh completed June 3, 2026.
 - Lodging requirements are now one hotel room for two adults, with six hotel nights in either window.
 - Lodging recommendations are ranked for a safe, comfortable, not-too-expensive stay; Marriott Bonvoy has been added as a tradeoff option via Los Lunas rather than as the default sunrise base.
 - Exact Dec 6-12, 2026 Expedia snapshots were captured for the leading Socorro hotels and the Los Lunas Bonvoy option; direct brand-page attempts were documented, but direct-booking totals, cancellation windows, and recent room-specific reviews must still be checked before purchase.
-- Gear recommendations intentionally keep both Sony and Canon options because the camera system has not been chosen.
+- Gear recommendations intentionally keep Sony and Canon options because the camera system has not been chosen, with a June 6 evidence expansion that also evaluates Sigma E-mount alternatives and premium/rental Sony/Canon options.
 - Current website images are public-domain USFWS assets, with source-page credit/license evidence recorded; any additional images still need per-file license checks before publication.
 - Visual expansion added June 4, 2026: generated planning previews are labeled as generated, third-party hotel/product/article imagery is link-only, and `docs/research/visual-asset-manifest.md` tracks prompts, provenance, alt text, rights notes, and placement.
 - New requested work is tracked in the standalone work log at `docs/work-log.md`.
@@ -32,7 +32,7 @@ Research refresh completed June 3, 2026.
 | Photo locations | Sunrise, mid-morning, and sunset rankings | Drafted and map-linked |
 | Map logistics | Coordinates, pullouts, restrooms, food/fuel, one-way-road cautions | Added in `docs/research/map-logistics.md` |
 | Lodging | Ranked shortlist around Socorro and San Antonio, plus Marriott Bonvoy tradeoff | Dec 6-12 exact-date snapshot captured; direct-booking check still required before purchase |
-| Gear | Sony/Canon field setup and simplified decision logic | Keep both options until final camera decision |
+| Gear | Sony/Canon field setup, Sigma alternatives, Tanzania crossover, and evidence-backed lens decision logic | Keep both options until final camera decision |
 | Practice | Pre-trip technique drills | Drafted |
 | Books | Purchase shortlist and eBook/Kindle status | Refreshed |
 | Images | Public-domain candidates and inspiration-only notes | Refreshed |
@@ -68,6 +68,7 @@ Do this again after dates are confirmed, then again during the final week before
 - `docs/research/festival-of-the-cranes.md`
 - `docs/research/photography-spots.md`
 - `docs/research/map-logistics.md`
+- `docs/research/lens-evidence-bosque-tanzania.md`
 - `docs/research/lenses-and-field-setup.md`
 - `docs/research/practice-techniques.md`
 - `docs/research/books-to-buy.md`

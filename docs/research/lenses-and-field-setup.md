@@ -2,7 +2,18 @@
 
 ## Status
 
-Updated June 5, 2026. The final camera system is not confirmed, and the user wants to keep both Sony and Canon options for now. This file keeps Sony and Canon as separate branches while correcting the Sony recommendation: the Sony FE 200-600mm F5.6-6.3 G OSS is a primary wildlife recommendation, not a fallback, especially for Tanzania.
+Updated June 6, 2026. The final camera system is not confirmed, and the user wants to keep both Sony and Canon options for now. This file keeps Sony and Canon as separate branches while correcting the Sony recommendation: the Sony FE 200-600mm F5.6-6.3 G OSS is a primary wildlife recommendation, not a fallback, especially for Tanzania. The expanded article-and-metadata evidence is in `docs/research/lens-evidence-bosque-tanzania.md`.
+
+## June 6 Evidence Refresh
+
+The June 6 research pass expanded the lens analysis beyond the original Bosque plan by comparing published photographer recommendations, public Wikimedia Commons metadata, and current Sony/Sigma/Canon lens offerings for both Bosque del Apache and Tanzania safari use.
+
+Key findings:
+
+- Bosque evidence supports a three-band kit: 24-105mm for scale and place, a flexible 100-400mm / 100-500mm / 150-600mm / 200-600mm wildlife zoom for most bird work, and an optional reach specialist for distant fields, decks, raptors, and tight bird images.
+- Bosque Commons metadata did not point only to extreme reach. Crane examples clustered around the 300-500mm-equivalent range, flock/waterfowl images often used shorter focal lengths, and smaller/distant birds pushed toward roughly 600mm equivalent or longer.
+- Tanzania evidence shifts the kit toward two-body flexibility: a close/story lens for mammals and camp context, plus a 100-500mm or 200-600mm-class wildlife zoom. Extra reach matters most for birds, cheetahs, leopards, distant cats, and specialized assignments.
+- The best new alternatives to evaluate are Sigma's 150-600mm and 60-600mm for Sony E-mount value/range, Sigma's 500mm f/5.6 as a portable high-resolution bird option, and premium/rental lenses such as Sony 300mm f/2.8, Canon RF 100-300mm f/2.8, and Sigma 300-600mm f/4 for serious low-light/action work.
 
 ## Best Lens Decision
 
@@ -64,6 +75,17 @@ The best Canon kit is:
 - Do not carry Sony 200-600mm, Sony 100-400mm f/4.5-5.6, Sony 400-800mm, Canon 100-500mm, and Canon 200-800mm together unless there is a clear assignment for each body.
 - Pick one primary dawn/sunset system and leave the other as backup or midday reach.
 - Practical mixed carry: one 24-105, one flexible flight zoom, and optionally one longest zoom in the vehicle for bright field/deck work.
+
+## Other Lenses To Consider After The Evidence Refresh
+
+These do not replace the default recommendations, but they are worth considering because the June 6 evidence pass broadened the search to Sony, Sigma, and Canon offerings:
+
+- **Sigma 150-600mm F5-6.3 DG DN OS Sports:** closest Sigma E-mount alternative to the Sony 200-600mm. It fits both Bosque and Tanzania long-wildlife needs, but it extends while zooming and Sigma teleconverters are L-Mount-only.
+- **Sigma 60-600mm F4.5-6.3 DG DN OS Sports:** strongest one-lens range answer for dusty vehicle work and fast-changing subject distance. The caution is size, weight, 105mm filters, and slower handling.
+- **Sigma 500mm F5.6 DG DN OS Sports:** unusually portable 500mm prime for Sony E-mount. Best for high-resolution bodies, disciplined bird work, and second-body use; risky as the only long lens when flocks or safari mammals come close.
+- **Sony FE 300mm F2.8 GM OSS:** premium low-light/action option with 1.4x and 2x teleconverter paths. Consider as a rental or pro branch, not as the flexible default for Bosque flock work.
+- **Canon RF 100-300mm F2.8 L IS USM:** premium Canon low-light/action option with RF extender paths to 420mm f/4 or 600mm f/5.6. Best as a rental/pro Tanzania branch rather than a Bosque default.
+- **Sigma 300-600mm F4 DG OS Sports:** serious dedicated wildlife lens with constant f/4 reach. It is nearly 4 kg and belongs in a supported/rental assignment, not a casual travel kit.
 
 ## 24-105mm F4 vs 24-70mm F2.8
 
@@ -284,6 +306,7 @@ Do not include flash in the Bosque wildlife kit.
 
 ## Source Links
 
+- docs/research/lens-evidence-bosque-tanzania.md
 - https://www.allaboutbirds.org/news/bosque-del-apache-new-mexico-a-bird-photographers-playground/
 - https://eviewilder.com/blog/sandhill-crane-migration-bosque-del-apache-winter/
 - https://thequitewild.com/bird-photography-for-beginners-bosque-del-apache/
@@ -298,12 +321,25 @@ Do not include flash in the Bosque wildlife kit.
 - https://commons.wikimedia.org/wiki/File:Sandhill_Crane_(Bosque_del_Apache_National_Wildlife_Refuge).jpg
 - https://commons.wikimedia.org/wiki/File:Snow_Geese_(Bosque_del_Apache_National_Wildlife_Refuge).jpg
 - https://commons.wikimedia.org/wiki/File:Bosque_Light.jpg
+- https://commons.wikimedia.org/wiki/Category:Birds_of_Bosque_del_Apache_National_Wildlife_Refuge
+- https://commons.wikimedia.org/wiki/Category:Antigone_canadensis_in_Bosque_del_Apache_National_Wildlife_Refuge
+- https://commons.wikimedia.org/wiki/Category:Anseriformes_of_Bosque_del_Apache_National_Wildlife_Refuge
+- https://commons.wikimedia.org/wiki/Category:Lions_of_Serengeti_National_Park
+- https://commons.wikimedia.org/wiki/Category:Birds_of_Serengeti_National_Park
+- https://commons.wikimedia.org/wiki/Category:Mammals_of_Serengeti_National_Park
 - https://electronics.sony.com/imaging/lenses/all-e-mount/p/sel100400mc
 - https://www.sony.com/electronics/support/lenses-e-mount-lenses/sel200600g/specifications
 - https://www.sony.com/electronics/support/lenses-e-mount-lenses/sel24105g/specifications
 - https://www.sony.com/electronics/support/lenses-e-mount-lenses/sel2470gm2/specifications
 - https://www.sony.com/electronics/support/lenses-e-mount-lenses/sel70200gm2/specifications
+- https://www.sony.com/electronics/support/lenses-e-mount-lenses/sel300f28gm/specifications
 - https://www.sony.co.uk/electronics/camera-lenses/sel400800g/specifications
+- https://www.sigma-global.com/en/lenses/c020_100_400_5_63/
+- https://www.sigma-global.com/en/lenses/s021_150_600_5_63/
+- https://www.sigma-global.com/en/lenses/s023_60_600_45_63/
+- https://www.sigma-global.com/en/lenses/s024_500_56/
+- https://www.sigma-global.com/en/lenses/s025_300_600_4/
+- https://www.sigma-global.com/en/lenses/s023_70_200_28/
 - https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7rm6/specifications
 - https://www.sony.com/electronics/support/e-mount-body-ilce-1-series/ilce-1m2/specifications
 - https://www.usa.canon.com/shop/p/eos-r5-mark-ii
@@ -314,6 +350,7 @@ Do not include flash in the Bosque wildlife kit.
 - https://www.usa.canon.com/shop/p/rf24-70mm-f2-8l-is-usm
 - https://www.usa.canon.com/shop/p/rf70-200mm-f2-8-l-is-usm
 - https://www.usa.canon.com/shop/p/rf70-200mm-f2-8-l-is-usm-z
+- https://www.usa.canon.com/shop/p/rf100-300mm-f2-8-l-is-usm
 - https://www.thinktankphoto.com/products/backlight-long-lens
 - https://guragear.com/products/kiboko-v2-0-30l
 - https://shimodadesigns.com/action-x50-v2-backpack-black/
@@ -321,4 +358,7 @@ Do not include flash in the Bosque wildlife kit.
 - https://www.vanguardworld.co.uk/products/alta-sky-68
 - https://safaritanzania.com/blog/safari-photography-tips-complete-guide
 - https://magicaltanzania.com/blog/tanzania-safari-photography-guide-2026/
+- https://magicaltanzania.com/tanzania-safari-photography-gear/
+- https://www.courtwhelan.com/post/the-best-lenses-for-wildlife-photography-safaris-and-what-i-actually-pack
+- https://drewsproule.com/blog/the-best-camera-gear-to-pack-for-an-african-photo-safari
 - https://www.digitalcameraworld.com/buying-guides/best-lenses-for-safari-photography

@@ -2,7 +2,7 @@
 
 ## Status
 
-Research refreshed June 3, 2026. Current access, lodging, pricing, road, water, and bird-location notes should be checked again after final dates are confirmed and again during the final week before travel.
+Research refreshed June 3, 2026, with an expanded Bosque/Tanzania lens evidence pass added June 6, 2026. Current access, lodging, pricing, road, water, and bird-location notes should be checked again after final dates are confirmed and again during the final week before travel.
 
 ## Required Source Types
 
@@ -16,6 +16,26 @@ Research refreshed June 3, 2026. Current access, lodging, pricing, road, water, 
 
 | Date Checked | Topic | Source | URL | Notes |
 |---|---|---|---|---|
+| 2026-06-06 | Lens evidence synthesis | Project file | docs/research/lens-evidence-bosque-tanzania.md | Expanded Bosque del Apache and Tanzania lens research using photographer articles, public Commons metadata patterns, and Sony/Sigma/Canon lens specs. |
+| 2026-06-06 | Bosque photo metadata scan | Wikimedia Commons category/API scan | https://commons.wikimedia.org/wiki/Category:Birds_of_Bosque_del_Apache_National_Wildlife_Refuge | Used category members and imageinfo metadata for Bosque birds, cranes, and waterfowl; metadata is incomplete and biased toward files with exposed EXIF. |
+| 2026-06-06 | Bosque photo metadata scan | Wikimedia Commons, Sandhill cranes at Bosque category | https://commons.wikimedia.org/wiki/Category:Antigone_canadensis_in_Bosque_del_Apache_National_Wildlife_Refuge | Used for crane-specific focal-length pattern checks. |
+| 2026-06-06 | Bosque photo metadata scan | Wikimedia Commons, Anseriformes at Bosque category | https://commons.wikimedia.org/wiki/Category:Anseriformes_of_Bosque_del_Apache_National_Wildlife_Refuge | Used for geese/waterfowl focal-length pattern checks. |
+| 2026-06-06 | Bosque photo metadata scan | Wikimedia Commons, `Grus canadensis -Bosque del Apache National Wildlife Refuge, New Mexico, USA -flying-8a (1).jpg` | https://commons.wikimedia.org/wiki/File:Grus_canadensis_-Bosque_del_Apache_National_Wildlife_Refuge,_New_Mexico,_USA_-flying-8a_(1).jpg | Verified example with Canon EOS-1D Mark IV and 500mm focal length metadata. |
+| 2026-06-06 | Tanzania photo metadata scan | Wikimedia Commons category/API scan | https://commons.wikimedia.org/wiki/Category:Birds_of_Serengeti_National_Park | Used category members and imageinfo metadata for Serengeti lions, cheetahs, elephants, leopards, birds, and giraffes; metadata is incomplete and only directional. |
+| 2026-06-06 | Tanzania photo metadata scan | Wikimedia Commons, Serengeti lions category | https://commons.wikimedia.org/wiki/Category:Lions_of_Serengeti_National_Park | Used for lion-specific focal-length pattern checks. |
+| 2026-06-06 | Tanzania photo metadata scan | Wikimedia Commons, Serengeti mammals category | https://commons.wikimedia.org/wiki/Category:Mammals_of_Serengeti_National_Park | Used for mammal category discovery and cross-checking before species-specific metadata scans. |
+| 2026-06-06 | Tanzania safari lens guidance | Magical Tanzania, `Tanzania Safari Photography Gear Guide 2026` | https://magicaltanzania.com/tanzania-safari-photography-gear/ | Supports 100-400mm or 150-600mm as the most useful safari lens class, 70-200mm as very useful, standard zooms for camp/landscape work, and beanbag support. |
+| 2026-06-06 | Tanzania safari lens guidance | Court Whelan, `The Best Lenses for Wildlife Photography Safaris` | https://www.courtwhelan.com/post/the-best-lenses-for-wildlife-photography-safaris-and-what-i-actually-pack | Supports 100-400mm, 100-500mm, 150-600mm, 200-500mm, and 200-600mm as the workhorse class, with many safari images in the 400-600mm zone. |
+| 2026-06-06 | Tanzania safari lens guidance | Drew Sproule, `What Camera Gear to Pack for an African Photography Safari` | https://drewsproule.com/blog/the-best-camera-gear-to-pack-for-an-african-photo-safari | Supports 200-600mm for birds/distant wildlife, 100-400mm as an all-round range, two bodies for dust/speed, and mid-range zooms for context. |
+| 2026-06-06 | Safari lens gear | Digital Camera World, `Best lenses for safari photography in 2026` | https://www.digitalcameraworld.com/buying-guides/best-lenses-for-safari-photography | Rechecked 2026 safari lens guidance: 100-400mm/150-600mm super-telephoto zooms, shorter 70-200mm on a second body, beanbag over tripod, stabilization, weight, and weatherproofing. |
+| 2026-06-06 | Gear specs | Sony, `FE 300mm F2.8 GM OSS` | https://www.sony.com/electronics/support/lenses-e-mount-lenses/sel300f28gm/specifications | Added as a premium/rental low-light/action option with teleconverter paths. |
+| 2026-06-06 | Gear specs | Sigma, `100-400mm F5-6.3 DG DN OS` | https://www.sigma-global.com/en/lenses/c020_100_400_5_63/ | Added as a lower-cost/lightweight Sony E-mount alternative for close wildlife and travel. |
+| 2026-06-06 | Gear specs | Sigma, `150-600mm F5-6.3 DG DN OS Sports` | https://www.sigma-global.com/en/lenses/s021_150_600_5_63/ | Added as the closest Sigma E-mount alternative to Sony 200-600mm; official page confirms Sony E-mount, 2,100g weight, 95mm filter, and L-Mount-only teleconverter support. |
+| 2026-06-06 | Gear specs | Sigma, `60-600mm F4.5-6.3 DG DN OS Sports` | https://www.sigma-global.com/en/lenses/s023_60_600_45_63/ | Added as a one-lens range option for Bosque/Tanzania dust and vehicle constraints. |
+| 2026-06-06 | Gear specs | Sigma, `500mm F5.6 DG DN OS Sports` | https://www.sigma-global.com/en/lenses/s024_500_56/ | Added as a portable 500mm prime option for high-resolution Sony E-mount bird work. |
+| 2026-06-06 | Gear specs | Sigma, `300-600mm F4 DG OS Sports` | https://www.sigma-global.com/en/lenses/s025_300_600_4/ | Added as a heavy pro/rental wildlife option with constant f/4 reach. |
+| 2026-06-06 | Gear specs | Sigma, `70-200mm F2.8 DG DN OS Sports` | https://www.sigma-global.com/en/lenses/s023_70_200_28/ | Added as a Sigma E-mount value alternative for the Tanzania close-mammal/story lens. |
+| 2026-06-06 | Gear specs | Canon, `RF100-300mm F2.8 L IS USM` | https://www.usa.canon.com/shop/p/rf100-300mm-f2-8-l-is-usm | Added as a premium/rental Canon low-light/action option with RF extender paths. |
 | 2026-06-03 | Complete photographer guide source audit | Project file | docs/research/complete-photographers-guide-source-audit.md | Expanded source inventory, gap analysis, newly added sources, and outdated/unreliable source notes for `The Complete Photographer's Guide to Bosque del Apache`. |
 | 2026-06-04 | Visual asset manifest | Project file | docs/research/visual-asset-manifest.md | Tracks generated previews, public-domain cached images, official hotel gallery links, link-only references, prompts/provenance, alt text, rights notes, and placement. |
 | 2026-06-04 | Fair use guidance | U.S. Copyright Office | https://www.copyright.gov/fair-use/more-info.html | Supports conservative thumbnail policy; fair use is fact-specific and not a license. |
