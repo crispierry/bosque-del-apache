@@ -244,7 +244,8 @@ assert(
 assert(
   "gear uses top-level workspaces",
   /data-gear-workspace/.test(app) &&
-    ["Lenses", "Camera Bodies", "Support", "Filters", "Backpacks"].every((label) => app.includes(label)),
+    /\{ id: "bodies", label: "Camera Bodies" \}[\s\S]*\{ id: "lenses", label: "Lenses" \}[\s\S]*\{ id: "filters", label: "Filters" \}[\s\S]*\{ id: "support", label: "Support" \}[\s\S]*\{ id: "backpacks", label: "Backpacks" \}/.test(app) &&
+    /drawWorkspace\("bodies"\)/.test(app),
   "Gear should separate different planning decisions"
 );
 assert(
@@ -254,11 +255,25 @@ assert(
 );
 assert(
   "gear data includes body and backpack comparisons",
-  /const cameraBodies = \[/.test(data) &&
+    /const cameraBodies = \[/.test(data) &&
     [...data.matchAll(/\n  \{\n    system: "(?:Sony|Canon)",\n    name: "(?:Sony|Canon)/g)].length >= 4 &&
     /const backpackOptions = \[/.test(data) &&
-    [...data.matchAll(/\n  \{\n    maker: "/g)].length >= 5,
+    [...data.matchAll(/\n  \{\n    maker: "/g)].length >= 10 &&
+    /ALTA SKY 42/.test(data) &&
+    /FirstLight 46L\+/.test(data) &&
+    /Action X70 HD Starter Kit/.test(data) &&
+    /Axis V2 32L/.test(data),
   "cameraBodies + backpackOptions"
+);
+assert(
+  "camera body workspace compares brands in separate sections",
+  /const renderBrandBodySection/.test(app) &&
+    /data-camera-brand="\$\{brand\.toLowerCase\(\)\}"/.test(app) &&
+    /renderBrandBodySection\("Sony"\)/.test(app) &&
+    /renderBrandBodySection\("Canon"\)/.test(app) &&
+    /Compare Sony bodies/.test(app) &&
+    /Compare Canon bodies/.test(app),
+  "Camera body comparison should keep Sony and Canon sections distinct"
 );
 assert(
   "expanded support checklist is present",

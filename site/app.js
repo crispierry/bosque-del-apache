@@ -1008,10 +1008,10 @@ async function renderTravel() {
 function renderGear() {
   const root = document.querySelector("#gear");
   const workspaces = [
-    { id: "lenses", label: "Lenses" },
     { id: "bodies", label: "Camera Bodies" },
-    { id: "support", label: "Support" },
+    { id: "lenses", label: "Lenses" },
     { id: "filters", label: "Filters" },
+    { id: "support", label: "Support" },
     { id: "backpacks", label: "Backpacks" },
   ];
   const lensSystems = ["Sony", "Sigma E", "Canon", "Compare"];
@@ -1106,9 +1106,9 @@ function renderGear() {
     <div class="section-title compact-title">
       <div>
         <p class="eyebrow">Lenses</p>
-        <h2>Compare the glass first</h2>
+        <h2>Match the glass to the body</h2>
       </div>
-      <p>Start with the glass because the lenses determine reach, field position, filter sizes, backpack fit, and whether a second body is worth carrying.</p>
+      <p>Once the camera body path is clear, use the lenses to decide reach, field position, filter sizes, backpack fit, and whether a second mounted body is worth carrying.</p>
     </div>
     <section class="panel media-decision">
       <div>
@@ -1142,44 +1142,63 @@ function renderGear() {
     </div>
   </section>`;
 
-  const renderBodyWorkspace = () => `<section class="gear-workspace" data-gear-panel="bodies">
-    <div class="section-title compact-title">
-      <div>
-        <p class="eyebrow">Camera body</p>
-        <h2>Resolution, speed, and battery planning</h2>
-      </div>
-      <p>The body choice affects crop latitude, flight capture, battery packing, card buying, and whether a second body prevents dust-sensitive lens swaps.</p>
+  const renderBodyCard = (body) => `<article class="camera-body-card">
+    <div class="camera-body-card-header">
+      <p class="eyebrow">${body.system} / ${body.model}</p>
+      <h3>${body.name}</h3>
+      <p class="card-copy">${body.role}</p>
     </div>
-    <div class="camera-body-grid">
-      ${cameraBodies
-        .map(
-          (body) => `<article class="camera-body-card">
-            <div class="camera-body-card-header">
-              <p class="eyebrow">${body.system} / ${body.model}</p>
-              <h3>${body.name}</h3>
-              <p class="card-copy">${body.role}</p>
-            </div>
-            <dl class="spec-grid">
-              ${Object.entries(body.specs)
-                .map(([key, value]) => `<div><dt>${key}</dt><dd>${value}</dd></div>`)
-                .join("")}
-            </dl>
-            <p>${body.note}</p>
-            <p class="gear-verdict"><b>Verdict:</b> ${body.verdict}</p>
-            <div class="tag-row">${externalLink(body.source, "Official specs")}</div>
-          </article>`
-        )
+    <dl class="spec-grid">
+      ${Object.entries(body.specs)
+        .map(([key, value]) => `<div><dt>${key}</dt><dd>${value}</dd></div>`)
         .join("")}
-    </div>
-    <div class="comparison-table-wrap camera-comparison-table">
+    </dl>
+    <p>${body.note}</p>
+    <p class="gear-verdict"><b>Verdict:</b> ${body.verdict}</p>
+    <div class="tag-row">${externalLink(body.source, "Official specs")}</div>
+  </article>`;
+
+  const bodyBrandComparisons = {
+    Sony: {
+      eyebrow: "Sony bodies",
+      title: "Compare Sony bodies",
+      copy: "Resolve the Sony choice around crop latitude, action balance, and whether separate battery pools are worth the flexibility.",
+      columns: [
+        { label: "Sony A7R VI", key: "sonyA7r" },
+        { label: "Sony Alpha 1 II", key: "sonyA1" },
+      ],
+      takeaways: {
+        "Bosque priority": "Choose A7R VI for maximum detail and cropping; choose Alpha 1 II for the stronger all-purpose action body.",
+        "Battery planning": "These Sony bodies do not share batteries, so a two-body Sony kit needs separate spares and charging routines.",
+        Cards: "Both bodies can use SD UHS-II or CFexpress Type A, so one Sony card strategy can cover the pair.",
+        "Best two-body pairing": "Keep the high-resolution body on the long lens when detail matters and use Alpha 1 II for closer or faster action.",
+      },
+    },
+    Canon: {
+      eyebrow: "Canon bodies",
+      title: "Compare Canon bodies",
+      copy: "Resolve the Canon choice around resolution, speed, shared batteries, shared card workflow, and the long-lens role.",
+      columns: [
+        { label: "Canon R5 Mark II", key: "canonR5" },
+        { label: "Canon R6 Mark III", key: "canonR6" },
+      ],
+      takeaways: {
+        "Bosque priority": "Choose R5 Mark II for resolution plus action; choose R6 Mark III for speed, low-light handling, and cost control.",
+        "Battery planning": "Both Canon bodies use LP-E6P batteries, which simplifies spares, chargers, and hotel reset workflow.",
+        Cards: "Both Canon bodies use CFexpress Type B plus UHS-II SD, so the card-buying plan stays consistent.",
+        "Best two-body pairing": "Use R5 Mark II for the primary long wildlife lens and R6 Mark III for wider, closer, or secondary action.",
+      },
+    },
+  };
+
+  const renderBodyComparisonTable = (brand) => {
+    const comparison = bodyBrandComparisons[brand];
+    return `<div class="comparison-table-wrap camera-comparison-table">
       <table class="comparison-table">
         <thead>
           <tr>
             <th>Decision</th>
-            <th>Sony A7R VI</th>
-            <th>Sony Alpha 1 II</th>
-            <th>Canon R5 Mark II</th>
-            <th>Canon R6 Mark III</th>
+            ${comparison.columns.map((column) => `<th>${column.label}</th>`).join("")}
             <th>Takeaway</th>
           </tr>
         </thead>
@@ -1188,17 +1207,45 @@ function renderGear() {
             .map(
               (row) => `<tr>
                 <th scope="row">${row.category}</th>
-                <td data-label="Sony A7R VI">${row.sonyA7r}</td>
-                <td data-label="Sony Alpha 1 II">${row.sonyA1}</td>
-                <td data-label="Canon R5 Mark II">${row.canonR5}</td>
-                <td data-label="Canon R6 Mark III">${row.canonR6}</td>
-                <td data-label="Takeaway">${row.takeaway}</td>
+                ${comparison.columns
+                  .map((column) => `<td data-label="${column.label}">${row[column.key]}</td>`)
+                  .join("")}
+                <td data-label="Takeaway">${comparison.takeaways[row.category]}</td>
               </tr>`
             )
             .join("")}
         </tbody>
       </table>
+    </div>`;
+  };
+
+  const renderBrandBodySection = (brand) => {
+    const comparison = bodyBrandComparisons[brand];
+    return `<section class="camera-brand-section" data-camera-brand="${brand.toLowerCase()}">
+      <div class="section-title compact-title camera-brand-title">
+        <div>
+          <p class="eyebrow">${comparison.eyebrow}</p>
+          <h3>${comparison.title}</h3>
+        </div>
+        <p>${comparison.copy}</p>
+      </div>
+      <div class="camera-body-grid">
+        ${cameraBodies.filter((body) => body.system === brand).map(renderBodyCard).join("")}
+      </div>
+      ${renderBodyComparisonTable(brand)}
+    </section>`;
+  };
+
+  const renderBodyWorkspace = () => `<section class="gear-workspace" data-gear-panel="bodies">
+    <div class="section-title compact-title">
+      <div>
+        <p class="eyebrow">Camera body</p>
+        <h2>Choose the body path first</h2>
+      </div>
+      <p>The body choice sets the mount, crop latitude, flight capture, battery and card system, and whether a second body prevents dust-sensitive lens swaps.</p>
     </div>
+    ${renderBrandBodySection("Sony")}
+    ${renderBrandBodySection("Canon")}
   </section>`;
 
   const renderSupportWorkspace = () => `<section class="gear-workspace" data-gear-panel="support">
@@ -1267,11 +1314,11 @@ function renderGear() {
       <div>
         <p class="eyebrow">Buying decision</p>
         <h3>Match the bag to the body/lens budget.</h3>
-        <p class="card-copy"><b>One body and three lenses:</b> Gura Gear Kiboko 30L is the cleanest travel default; Think Tank wins if the mounted long lens is the whole point. <b>Two bodies and four lenses:</b> Vanguard ALTA SKY 68 and Lowepro Pro Trekker BP 650 AW II are the strongest capacity answers.</p>
+        <p class="card-copy"><b>One body and three lenses:</b> Gura Gear Kiboko 30L remains the clean travel default; Vanguard ALTA SKY 42 is the compact mounted-long-lens answer; Think Tank BackLight Long Lens wins when a ready super-telephoto is the whole point. <b>Two bodies and four lenses:</b> Lowepro Pro Trekker BP 650 AW II, Think Tank FirstLight 46L+, and Vanguard ALTA SKY 68 cover big-kit travel, while Tenba Axis V2 32L fits shorter 100-400/70-200 kits with laptop carry.</p>
       </div>
       <div class="media-counts">
         <span><b>${backpackOptions.length}</b> backpacks</span>
-        <span><b>${gearCheckedDate}</b> fit review</span>
+        <span><b>${backpackCheckedDate}</b> fit review</span>
       </div>
     </section>
     <div class="backpack-grid">
@@ -1308,18 +1355,18 @@ function renderGear() {
         <p class="eyebrow">Camera kit</p>
         <h2>Gear</h2>
       </div>
-      <p>Build the kit in the same order you would pack for the field: lenses, camera body, support, filters, and backpack capacity.</p>
+      <p>Build the kit from the first decision outward: camera body path, lenses, filters, support, and backpack capacity.</p>
     </div>
     ${renderGuideScopeNote()}
     <section class="panel media-decision">
       <div>
         <p class="eyebrow">Field kit strategy</p>
-        <h3>Make one gear decision at a time.</h3>
-        <p class="card-copy">A Bosque kit succeeds when each part has a job: the long lens handles birds, the wider lens protects scale and place, support keeps the setup stable, filters stay selective, and the backpack fits the actual body/lens budget.</p>
+        <h3>Start with the camera body decision.</h3>
+        <p class="card-copy">A Bosque kit succeeds when the body path is settled before the rest of the kit: the mount shapes lens choices, the sensor affects crop latitude, filters stay selective, support keeps the setup stable, and the backpack fits the actual body/lens budget.</p>
       </div>
       <div class="media-counts">
-        <span><b>${lensItems.length}</b> optical items</span>
         <span><b>${cameraBodies.length}</b> bodies</span>
+        <span><b>${lensItems.length}</b> optical items</span>
         <span><b>${backpackOptions.length}</b> backpacks</span>
         <span><b>${gearCheckedDate}</b> source review</span>
       </div>
@@ -1392,7 +1439,7 @@ function renderGear() {
     });
   });
 
-  drawWorkspace("lenses");
+  drawWorkspace("bodies");
 }
 
 function renderPractice() {

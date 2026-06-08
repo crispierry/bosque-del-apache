@@ -156,11 +156,20 @@ Lodging has its own hotel-distance map in the Travel Logistics section so the re
 
 Workspaces:
 
-- Lenses.
 - Camera Bodies.
-- Support.
+- Lenses.
 - Filters.
+- Support.
 - Backpacks.
+
+Camera Bodies workspace:
+
+- Treat camera bodies as the first gear decision point.
+- Keep Sony and Canon comparisons in two distinct sections.
+- Evaluate Sony Alpha 7R VI against Sony Alpha 1 II.
+- Evaluate Canon EOS R5 Mark II against Canon EOS R6 Mark III.
+- Compare resolution, burst, autofocus, card type, battery type, weight, and practical Bosque/Tanzania role within each brand section.
+- Make battery/card incompatibilities visible before purchase.
 
 Lens workspace:
 
@@ -168,12 +177,6 @@ Lens workspace:
 - Keep lens/filter-size guidance out of non-lens workspaces.
 - Include trip-kit recommendations for Bosque and Tanzania.
 - Include physical length and weight scale charts with brand controls.
-
-Camera Bodies workspace:
-
-- Evaluate Sony Alpha 7R VI, Sony Alpha 1 II, Canon EOS R5 Mark II, and Canon EOS R6 Mark III.
-- Compare resolution, burst, autofocus, card type, battery type, weight, and practical Bosque/Tanzania role.
-- Make battery/card incompatibilities visible before purchase.
 
 Support workspace:
 
@@ -189,9 +192,10 @@ Filters workspace:
 Backpacks workspace:
 
 - Compare one-body/three-lens and two-body/four-lens budgets.
+- Separate compact mounted-long-lens, lightweight travel, daypack-capacity, big-kit travel, expedition modular, tactical 32L, and maximum-capacity roles.
 - Include source-linked official product images only when the source is documented in the visual asset manifest.
 - Treat "Stink Gear" as likely Think Tank Photo unless corrected.
-- Include Gura Gear plus three other modern backpack options that can be checked against current official sources.
+- Maintain 10 researched backpack options, with official product pages as the source for exact fit claims.
 
 Include a pack-tonight checklist tied to the next day once the Gear page has enough route/date state to support it.
 

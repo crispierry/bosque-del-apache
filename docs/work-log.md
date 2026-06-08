@@ -2,6 +2,95 @@
 
 This file tracks requested project work that has not yet been implemented, verified, and published.
 
+## 2026-06-07 - Add Five Backpack Recommendations
+
+Status: completed and validated June 7, 2026.
+
+Goal: expand the Gear backpack comparison with five additional researched options.
+
+Requested requirements:
+
+- Add an additional five backpacks.
+- Research current recommendations before adding them.
+
+Implementation notes:
+
+- Added Vanguard ALTA SKY 42, Think Tank Photo BackLight 36L, Think Tank Photo FirstLight 46L+, Shimoda Action X70 HD Starter Kit, and Tenba Axis V2 32L to the backpack comparison.
+- Updated the buying-decision copy so one-body, mounted-long-lens, big-kit, expedition, and shorter-lens laptop-carry use cases are separated.
+- Added official source rows, recommendation-research notes, visual-source records, and static QA coverage for the expanded list.
+
+Acceptance notes:
+
+- The Backpacks workspace now shows 10 backpack options and a June 7, 2026 fit-review date.
+
+## 2026-06-07 - Move Support After Filters
+
+Status: completed and validated June 7, 2026.
+
+Goal: reorder the Gear workspace tabs so Support appears to the right of Filters.
+
+Requested requirements:
+
+- Move Support to the right of Filters in the Gear workspace tabs.
+
+Implementation notes:
+
+- Reordered Gear workspaces to Camera Bodies, Lenses, Filters, Support, and Backpacks.
+- Updated the Gear intro and strategy sentence to reflect the visible order.
+- Updated static QA and information architecture notes to preserve the tab order.
+
+Acceptance notes:
+
+- The Gear tab row displays Filters before Support.
+
+## 2026-06-07 - Add Sony 70-200mm F4 II To Lens List
+
+Status: completed and validated June 7, 2026.
+
+Goal: add the Sony FE 70-200mm F4 Macro G OSS II to the Gear lens list and confirm the Sony 100-400mm option is represented accurately.
+
+Requested requirements:
+
+- Add the Sony 70-200mm f/4 version 2 to the lens list.
+- Include the Sony 100-400 option as well.
+
+Implementation notes:
+
+- Added `FE 70-200mm F4 Macro G OSS II` to the Sony gear cards using Sony official specifications.
+- Confirmed the existing Sony `FE 100-400mm F4.5-5.6 GM OSS` card remains in the Sony list; Sony's current 100-400 is not a constant f/4 lens.
+- Added a 72 mm filter guidance note for the 70-200mm f/4 branch and clarified the 77 mm note as the f/2.8 70-200 / 100-400 branch.
+- Updated source and visual-asset ledgers.
+
+Acceptance notes:
+
+- The Sony lens workspace includes both 70-200mm options plus the 100-400mm GM.
+- The new 70-200mm f/4 card appears in the 70-200mm length/weight scale category.
+
+## 2026-06-07 - Make Camera Bodies The First Gear Decision
+
+Status: completed and validated June 7, 2026.
+
+Goal: update the Gear workspace so Camera Bodies is the first decision point and the supporting copy reflects that order.
+
+Requested requirements:
+
+- Move Camera Bodies before Lenses in the Gear workspace tabs.
+- Make Camera Bodies the default Gear workspace.
+- Update the Gear intro and workspace copy so the body path is framed as the first decision.
+
+Implementation notes:
+
+- Reordered the Gear workspaces to Camera Bodies, Lenses, Support, Filters, and Backpacks.
+- Rewrote the Gear section intro, field-kit strategy copy, Camera Bodies workspace intro, and Lenses workspace intro to make the body path the first decision.
+- Split Camera Bodies into distinct Sony and Canon comparison sections, each with its own body cards and decision table.
+- Updated static QA and information architecture documentation to preserve the body-first order.
+
+Acceptance notes:
+
+- The Gear view opens on Camera Bodies by default.
+- The body-first copy is visible before the tab controls, and the lens workspace now reads as the follow-on decision.
+- Sony and Canon body comparisons are separated instead of being mixed into one four-camera grid/table.
+
 ## 2026-06-06 - Expand Lens Evidence For Bosque And Tanzania
 
 Status: completed June 6, 2026.

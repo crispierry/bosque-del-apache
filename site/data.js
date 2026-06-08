@@ -2,6 +2,7 @@
 // Rendering and interaction logic lives in app.js.
 const checkedDate = "2026-06-03";
 const gearCheckedDate = "2026-06-05";
+const backpackCheckedDate = "2026-06-07";
 const visualCheckedDate = "2026-06-04";
 const guideFraming = {
   publicationDate: "June 5, 2026",
@@ -3170,6 +3171,62 @@ const sources = [
       "This official product page supports the maximum-capacity backpack recommendation, including the 34L volume, attached 800mm f/5.6-class super-telephoto language, additional lens capacity, and 16-inch laptop/tablet carry.",
   },
   {
+    topic: "Backpack fit",
+    title: "Vanguard ALTA SKY 42",
+    url: "https://www.vanguardworld.com/products/alta-sky-42-professional-camera-backpack",
+    checked: backpackCheckedDate,
+    description:
+      "This official product page supports the compact long-lens backpack addition, including a mirrorless body with up to a 600mm lens attached, up to four extra lenses, 12.9-inch tablet carry, tripod carry, rain cover, and 16.6L capacity.",
+  },
+  {
+    topic: "Backpack fit",
+    title: "Think Tank Photo BackLight 36L",
+    url: "https://www.thinktankphoto.com/collections/mindshift-gear/products/backlight-36l",
+    checked: backpackCheckedDate,
+    description:
+      "This official product page supports the daypack-capacity wildlife addition, including two gripped bodies with lenses attached, 4-6 standard zooms, a 600mm f/4 detached maximum lens, 11L personal-gear space, and 16-inch laptop carry.",
+  },
+  {
+    topic: "Backpack fit",
+    title: "Think Tank Photo FirstLight 46L+",
+    url: "https://www.thinktankphoto.com/products/firstlight-46l",
+    checked: backpackCheckedDate,
+    description:
+      "This official product page supports the flight-heavy big-kit travel addition, including carry-on-compatible positioning, 46-50L volume, 16-inch laptop carry, two gripped bodies with 6-8 standard zooms, and a 600mm f/4 detached or 500mm f/4 attached maximum lens.",
+  },
+  {
+    topic: "Backpack fit",
+    title: "Shimoda Action X70 HD Starter Kit",
+    url: "https://shimodadesigns.com/action-x70-hd-starter-kit-w-xl-dv-core-unit-army-green/",
+    checked: backpackCheckedDate,
+    description:
+      "This official product page supports the expedition modular backpack addition, including super-telephoto and wildlife positioning, lenses up to 600mm f/4 in the DV Core Unit system, 16-inch laptop carry, roll-top expansion, rain cover, and XL DV Core Unit kit contents.",
+  },
+  {
+    topic: "Backpack fit",
+    title: "Tenba Axis V2 32L",
+    url: "https://tenba.com/axis-v2-32l-backpack-black/",
+    checked: backpackCheckedDate,
+    description:
+      "This official product page supports the tactical 32L multi-body addition, including 1-2 mirrorless/DSLR/cine bodies, 7-9 lenses up to an attached 400mm f/2.8, 17-inch laptop carry, three-point camera access, MOLLE expansion, and Airflow harness.",
+  },
+  {
+    topic: "Backpack recommendations",
+    title: "Amateur Photographer - Best camera bags for photographers to buy in 2026",
+    url: "https://amateurphotographer.com/buying-advice/best-camera-backpacks-177271",
+    checked: backpackCheckedDate,
+    description:
+      "This 2026 buying guide identifies the Vanguard Alta Sky 42 as a strong long-lens backpack choice. Official product pages remain the source of exact fit and capacity claims.",
+  },
+  {
+    topic: "Backpack recommendations",
+    title: "Australian Photography - Review: Think Tank FirstLight 46L+",
+    url: "https://www.australianphotography.com/gear/review-think-tank-firstlight-46l",
+    checked: backpackCheckedDate,
+    description:
+      "This field review supports the FirstLight 46L+ as a travel-oriented big-kit wildlife backpack, including use with a Sony 600mm f/4, 100-400mm, 24-70mm, and two bodies.",
+  },
+  {
     topic: "Sigma E-mount gear",
     title: "Sigma 60-600mm F4.5-6.3 DG DN OS | Sports",
     url: "https://www.sigma-global.com/en/lenses/s023_60_600_45_63/",
@@ -4299,6 +4356,30 @@ const gearItems = [
   },
   {
     system: "Sony",
+    name: "FE 70-200mm F4 Macro G OSS II",
+    role: "Lightweight 70-200 option for close wildlife, travel compression, and half-macro detail",
+    specs: {
+      aperture: "f/4 to f/22",
+      filter: "72 mm",
+      length: "149 mm",
+      weight: "794 g without tripod mount",
+      minFocus: "0.26-0.42 m",
+      teleconverter: "SEL14TC / SEL20TC",
+      introduced: "2023",
+      stabilization: "Optical SteadyShot",
+      zoomFocus: "Internal zoom; floating focus",
+      weather: "Dust and moisture resistant design; fluorine front coating",
+    },
+    photo: "https://electronics.sony.com/imaging/lenses/all-e-mount/p/sel70200g2",
+    photoLabel: "Sony product photo",
+    image: "https://www.sony.jp/products/picture/SEL70200G2.jpg",
+    source:
+      "https://www.sony.com/electronics/support/lenses-e-mount-lenses/sel70200g2/specifications",
+    note:
+      "A lighter alternative to the 70-200mm f/2.8 when travel weight, macro detail, and teleconverter compatibility matter more than maximum low-light aperture.",
+  },
+  {
+    system: "Sony",
     name: "FE 100-400mm F4.5-5.6 GM OSS",
     role: "Lighter handheld flight zoom and close-pass lens",
     specs: {
@@ -4946,6 +5027,95 @@ const backpackOptions = [
     verdict:
       "Best maximum-capacity fit answer, with the tradeoff that it is a large dedicated gear hauler.",
   },
+  {
+    maker: "Vanguard",
+    name: "ALTA SKY 42",
+    type: "Compact long-lens backpack",
+    bestFor: "A mounted 600mm mirrorless setup without the bulk of the ALTA SKY 68",
+    source: "https://www.vanguardworld.com/products/alta-sky-42-professional-camera-backpack",
+    photoLabel: "Vanguard product page",
+    image: "https://www.vanguardworld.com/cdn/shop/files/Altasky42_1__1.jpg?v=1714658223",
+    verifiedFit:
+      "The official page says it carries a mirrorless camera with up to a 600mm lens attached, up to four extra lenses, a 12.9-inch tablet, tripod system, rain cover, and 16.6L capacity.",
+    oneBodyThreeLenses:
+      "Excellent compact choice for one body with Sony 200-600, Canon RF 100-500, or RF 200-800 plus a few support lenses.",
+    twoBodiesFourLenses:
+      "Possible but tight; use the ALTA SKY 68, FirstLight 46L+, or Lowepro if two mounted bodies are routine.",
+    verdict:
+      "Best smaller long-lens answer for Bosque when the mounted rig matters but maximum capacity does not.",
+  },
+  {
+    maker: "Think Tank Photo",
+    name: "BackLight 36L",
+    type: "Daypack-capacity wildlife backpack",
+    bestFor: "One or two bodies with personal layers, laptop, and a detached 600mm-class lens",
+    source: "https://www.thinktankphoto.com/collections/mindshift-gear/products/backlight-36l",
+    photoLabel: "Think Tank product page",
+    image:
+      "https://www.thinktankphoto.com/cdn/shop/files/BackLight-36L-Montane-Green-Hero-Right-Gear_655ff3ef-c25c-4422-a1ee-f60bf03c63fd_1200x1200.jpg?v=1725992670",
+    verifiedFit:
+      "The official page lists two gripped bodies with lenses attached, 4-6 standard zoom lenses plus flash, 11L of daypack space, 16-inch laptop and 10-inch tablet compartments, and a 600mm f/4 detached maximum lens.",
+    oneBodyThreeLenses:
+      "Better than needed if the Bosque kit is one body plus 100-400/200-600, but useful when water, layers, laptop, and snacks ride with camera gear.",
+    twoBodiesFourLenses:
+      "Strong mid-large choice if the biggest lens can be packed detached and the bag needs to double as a field daypack.",
+    verdict:
+      "Best upgrade from compact wildlife bags when personal carry and laptop space matter as much as lens protection.",
+  },
+  {
+    maker: "Think Tank Photo",
+    name: "FirstLight 46L+",
+    type: "Carry-on big-kit travel backpack",
+    bestFor: "Flying with a two-body wildlife kit and long glass packed securely",
+    source: "https://www.thinktankphoto.com/products/firstlight-46l",
+    photoLabel: "Think Tank product page",
+    image:
+      "https://www.thinktankphoto.com/cdn/shop/products/FirstLight-46L_-Hero-Right_1200x1200.jpg?v=1736015518",
+    verifiedFit:
+      "The official page lists 46-50L volume, carry-on-compatible design, an 11-point adjustable harness, most 16-inch laptops, two gripped DSLRs with 6-8 standard zooms, and a 600mm f/4 detached or 500mm f/4 attached.",
+    oneBodyThreeLenses:
+      "Too much bag for a light Bosque day, but excellent if the trip includes air travel with a laptop, layers, and backup bodies.",
+    twoBodiesFourLenses:
+      "Very strong if the 600mm-class lens can travel detached and the goal is one protected airport-to-field bag.",
+    verdict:
+      "Best flight-heavy big-kit choice when carry-on fit and long-lens protection outrank quick mounted-lens access.",
+  },
+  {
+    maker: "Shimoda",
+    name: "Action X70 HD Starter Kit",
+    type: "Expedition modular backpack",
+    bestFor: "Long-lens wildlife kit plus hiking comfort, laptop, water, and weather gear",
+    source: "https://shimodadesigns.com/action-x70-hd-starter-kit-w-xl-dv-core-unit-army-green/",
+    photoLabel: "Shimoda product page",
+    image:
+      "https://cdn11.bigcommerce.com/s-qocvgxy3yl/images/stencil/1600x1600/products/600/282695/ecfs6wkdg37h1syghwnf__45612.1712823610.jpg?c=2",
+    verifiedFit:
+      "The official page positions the X70 HD for larger cine/video and super-telephoto kits; its DV Core Unit system supports lenses up to 600mm f/4, with a 16-inch laptop sleeve, expandable roll-top, rain cover, and XL DV Core Unit.",
+    oneBodyThreeLenses:
+      "Much more bag than a loop-road Bosque kit needs, but sensible if the pack also carries cold-weather layers, water, and support gear.",
+    twoBodiesFourLenses:
+      "Strong expedition answer when the kit is heavy and modular carry comfort matters more than compact airport handling.",
+    verdict:
+      "Best overbuilt field-carry choice for big loads, long walks, and photographers who already like modular core units.",
+  },
+  {
+    maker: "Tenba",
+    name: "Axis V2 32L",
+    type: "Tactical multi-body backpack",
+    bestFor: "Two smaller bodies, 100-400/70-200 class lenses, laptop, drone, and fast access",
+    source: "https://tenba.com/axis-v2-32l-backpack-black/",
+    photoLabel: "Tenba product page",
+    image:
+      "https://cdn11.bigcommerce.com/s-yn9zqh9bqq/images/stencil/1600x1600/products/950/25558/pdjusqfzghe1fzzyuzmw__65699.1713589512.jpg?c=1",
+    verifiedFit:
+      "The official page says it fits 1-2 mirrorless/DSLR/cine bodies with 7-9 lenses up to an attached 400mm f/2.8, plus a laptop up to 17 inches.",
+    oneBodyThreeLenses:
+      "Very comfortable margin for Sony 100-400, 70-200, standard zoom, batteries, cards, and laptop; not the choice for a mounted 600mm/800mm rig.",
+    twoBodiesFourLenses:
+      "Good action-travel pick for two bodies and shorter wildlife glass, especially if top, side, rear access and MOLLE expansion are useful.",
+    verdict:
+      "Best tactical 32L option when the kit stops at 100-400 or 70-200 class glass and laptop carry is required.",
+  },
 ];
 
 const supportGearChecklist = [
@@ -5044,7 +5214,7 @@ const kitRecommendations = [
       "For future safari use, the 200-600 belongs clearly in the long-lens slot.",
     items: [
       "Body 1: FE 200-600mm as the classic Sony wildlife lens for Serengeti, Ngorongoro, birds, distant cats, and fixed vehicle positions.",
-      "Body 2: FE 70-200mm F2.8 for close mammals, cubs, portraits, low light, camp life, and environmental compression.",
+      "Body 2: FE 70-200mm F2.8 for close mammals, cubs, portraits, low light, camp life, and environmental compression; use the FE 70-200mm F4 Macro G OSS II if weight and close-focus detail matter more than f/2.8.",
       "Carry 24-105mm for landscapes and vehicle/camp context; mount it when the day is not wildlife-first.",
       "Do not carry both 200-600 and 400-800 unless distant birds are a top priority and baggage weight allows it.",
     ],
@@ -5066,7 +5236,12 @@ const filterGuidance = [
   {
     title: "77 mm shared basics",
     note:
-      "77 mm covers Sony 24-105, Sony 70-200, Sony 100-400, Canon RF 24-105, Canon RF 70-200 compact, and Canon RF 100-500. This is the most useful shared CPL/clear filter size.",
+      "77 mm covers Sony 24-105, Sony 70-200 f/2.8, Sony 100-400, Canon RF 24-105, Canon RF 70-200 compact, and Canon RF 100-500. This is the most useful shared CPL/clear filter size.",
+  },
+  {
+    title: "72 mm Sony 70-200 f/4 branch",
+    note:
+      "72 mm covers the Sony FE 70-200mm F4 Macro G OSS II. Buy this size only if that lighter 70-200 travels and you expect glare, water, or landscape work with it.",
   },
   {
     title: "82 mm fast-zoom branch",
@@ -5229,6 +5404,12 @@ function parseWeightGrams(weightText) {
 }
 
 function shortLensLabel(name) {
+  const exactLabels = {
+    "FE 70-200mm F2.8 GM OSS II": "FE 70-200mm F2.8 GM II",
+    "FE 70-200mm F4 Macro G OSS II": "FE 70-200mm F4 Macro G II",
+  };
+  if (exactLabels[name]) return exactLabels[name];
+
   return name
     .replace("Sigma ", "")
     .replace(" DG DN OS | Sports", "")

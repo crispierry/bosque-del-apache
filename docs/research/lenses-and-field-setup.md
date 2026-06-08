@@ -260,11 +260,16 @@ I did not find a current backpack brand named "Stink Gear" during the June 5, 20
 - **Shimoda Action X50 V2:** best modern adventure-carry option. It is modular and comfortable, with Large DSLR Core Unit support and laptop/tablet sleeves, but it is not the strongest dedicated mounted-super-telephoto choice.
 - **Lowepro Pro Trekker BP 650 AW II:** best large expedition option for two bodies, four lenses, tripod/support gear, and an up-to-800mm wildlife assignment. The tradeoff is size and carry-on sensitivity.
 - **Vanguard ALTA SKY 68:** best maximum-capacity answer. The official page describes a 34L backpack for an attached 800mm f/5.6-class super-telephoto, up to seven extra lenses/personal kit, and laptop/tablet carry.
+- **Vanguard ALTA SKY 42:** best compact long-lens answer when the bag needs to carry a mirrorless body with up to a 600mm lens attached, a few extra lenses, a tablet, tripod, and rain cover without stepping up to the ALTA SKY 68.
+- **Think Tank Photo BackLight 36L:** best daypack-capacity upgrade when personal layers, water, food, laptop/tablet carry, and a detached 600mm f/4-class lens matter as much as the camera compartment.
+- **Think Tank Photo FirstLight 46L+:** best flight-heavy big-kit backpack when a two-body wildlife kit and a detached 600mm f/4 or attached 500mm f/4-class lens need protected carry-on-style transport.
+- **Shimoda Action X70 HD Starter Kit:** best overbuilt modular expedition choice for big loads, long walks, 16-inch laptop carry, roll-top expansion, and DV Core Unit support for lenses up to 600mm f/4.
+- **Tenba Axis V2 32L:** best tactical 32L option for two smaller bodies, 100-400/70-200 class glass, laptop carry, three-point access, and MOLLE expansion; it is not the right pick for a mounted 600mm/800mm rig.
 
 Backpack recommendation:
 
-- **One body and three lenses:** start with Gura Gear Kiboko 30L; choose Think Tank BackLight Long Lens if a mounted 600/800mm-class rig is the hard requirement; choose Shimoda if hiking comfort and mixed personal/camera carry matter more than mounted long-lens carry.
-- **Two bodies and four lenses:** start with Vanguard ALTA SKY 68 or Lowepro Pro Trekker BP 650 AW II. Gura can still work if the kit is disciplined and no laptop is needed.
+- **One body and three lenses:** start with Gura Gear Kiboko 30L; choose Vanguard ALTA SKY 42 for a compact mounted-long-lens pack; choose Think Tank BackLight Long Lens if a mounted 600/800mm-class rig is the hard requirement; choose Shimoda X50 if hiking comfort and mixed personal/camera carry matter more than mounted long-lens carry.
+- **Two bodies and four lenses:** start with Vanguard ALTA SKY 68, Lowepro Pro Trekker BP 650 AW II, or Think Tank FirstLight 46L+ for big travel kits. Use BackLight 36L when personal daypack space matters and the biggest lens can travel detached; use Tenba Axis V2 32L when the kit stops at 100-400/70-200 class glass.
 
 ### Expanded Support Gear
 
@@ -356,6 +361,13 @@ Do not include flash in the Bosque wildlife kit.
 - https://shimodadesigns.com/action-x50-v2-backpack-black/
 - https://www.lowepro.com/us-en/pro-trekker-bp-650-aw-ii-lp37481-pww/
 - https://www.vanguardworld.co.uk/products/alta-sky-68
+- https://www.vanguardworld.com/products/alta-sky-42-professional-camera-backpack
+- https://www.thinktankphoto.com/collections/mindshift-gear/products/backlight-36l
+- https://www.thinktankphoto.com/products/firstlight-46l
+- https://shimodadesigns.com/action-x70-hd-starter-kit-w-xl-dv-core-unit-army-green/
+- https://tenba.com/axis-v2-32l-backpack-black/
+- https://amateurphotographer.com/buying-advice/best-camera-backpacks-177271
+- https://www.australianphotography.com/gear/review-think-tank-firstlight-46l
 - https://safaritanzania.com/blog/safari-photography-tips-complete-guide
 - https://magicaltanzania.com/blog/tanzania-safari-photography-guide-2026/
 - https://magicaltanzania.com/tanzania-safari-photography-gear/

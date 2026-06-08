@@ -392,6 +392,7 @@ Checked June 4, 2026; newly added 2x teleconverter product records checked June 
 | Sony FE 24-105mm F4 G OSS | https://www.sony.com/electronics/support/lenses-e-mount-lenses/sel24105g/specifications | Sony official product CDN image | Gear / Sony | Official product image reference; source-linked. |
 | Sony FE 24-70mm F2.8 GM II | https://electronics.sony.com/imaging/lenses/all-e-mount/p/sel2470gm2 | Sony official product CDN image | Gear / Sony | Official product image reference; source-linked. |
 | Sony FE 70-200mm F2.8 GM OSS II | https://electronics.sony.com/imaging/lenses/all-e-mount/p/sel70200gm2 | Sony official product CDN image | Gear / Sony | Official product image reference; source-linked. |
+| Sony FE 70-200mm F4 Macro G OSS II | https://www.sony.jp/ichigan/products/SEL70200G2/ | Sony official product image | Gear / Sony | Official product image reference; source-linked. Added June 7, 2026. |
 | Sony FE 100-400mm F4.5-5.6 GM OSS | https://electronics.sony.com/imaging/lenses/all-e-mount/p/sel100400gm | Sony official product CDN image | Gear / Sony | Official product image reference; source-linked. |
 | Sony FE 200-600mm F5.6-6.3 G OSS | https://electronics.sony.com/imaging/lenses/all-e-mount/p/sel200600g | Sony official product CDN image | Gear / Sony | Official product image reference; source-linked. |
 | Sony FE 400-800mm F6.3-8 G OSS | https://www.sony.co.uk/electronics/camera-lenses/sel400800g/specifications | `site/assets/sony-fe-400-800-g-oss.jpg` | Gear / Sony | Existing public-site product asset restored for local build parity; keep tied to official Sony spec page. |
@@ -415,6 +416,11 @@ Checked June 4, 2026; newly added 2x teleconverter product records checked June 
 | Shimoda Action X50 V2 Backpack | https://shimodadesigns.com/action-x50-v2-backpack-black/ | Shimoda official BigCommerce product image | Gear / Backpacks | Official product image reference; source-linked. Added June 5, 2026. |
 | Lowepro Pro Trekker BP 650 AW II | https://www.lowepro.com/us-en/pro-trekker-bp-650-aw-ii-lp37481-pww/ | Lowepro official product image CDN | Gear / Backpacks | Official product image reference; source-linked. Added June 5, 2026. |
 | Vanguard ALTA SKY 68 | https://www.vanguardworld.co.uk/products/alta-sky-68 | Vanguard official Shopify product image | Gear / Backpacks | Official product image reference; source-linked. Added June 5, 2026. |
+| Vanguard ALTA SKY 42 | https://www.vanguardworld.com/products/alta-sky-42-professional-camera-backpack | Vanguard official Shopify product image | Gear / Backpacks | Official product image reference; source-linked. Added June 7, 2026. |
+| Think Tank Photo BackLight 36L | https://www.thinktankphoto.com/collections/mindshift-gear/products/backlight-36l | Think Tank official Shopify product image | Gear / Backpacks | Official product image reference; source-linked. Added June 7, 2026. |
+| Think Tank Photo FirstLight 46L+ | https://www.thinktankphoto.com/products/firstlight-46l | Think Tank official Shopify product image | Gear / Backpacks | Official product image reference; source-linked. Added June 7, 2026. |
+| Shimoda Action X70 HD Starter Kit | https://shimodadesigns.com/action-x70-hd-starter-kit-w-xl-dv-core-unit-army-green/ | Shimoda official BigCommerce product image | Gear / Backpacks | Official product image reference; source-linked. Added June 7, 2026. |
+| Tenba Axis V2 32L | https://tenba.com/axis-v2-32l-backpack-black/ | Tenba official BigCommerce product image | Gear / Backpacks | Official product image reference; source-linked. Added June 7, 2026. |
 
 ## Link-Only References
 
