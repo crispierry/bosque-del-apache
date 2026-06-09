@@ -2,6 +2,36 @@
 
 This file tracks requested project work that has not yet been implemented, verified, and published.
 
+## 2026-06-09 - Rebuild Bosque Book As Native Text Pages
+
+Status: completed and validated June 9, 2026.
+
+Goal: replace the primary Bosque book route on the website with a native selectable-text web book, while preserving the previous screenshot/page-image reader as an archive.
+
+Requested requirements:
+
+- Make `/books/bosque-del-apache-photo-plan` a native book landing page with contents, field index, real images, and archive link.
+- Add section routes under `/books/bosque-del-apache-photo-plan/chapters/[chapterSlug]/[sectionSlug]`.
+- Cover the full current field plan across readable sections: overview, field guide, map/locations, itinerary, photo windows, travel, gear, practice, inspiration, image disclosure, and resources.
+- Do not use generated page screenshots in the native book body.
+- Preserve the old image-based reader at `/books/bosque-del-apache-photo-plan/archive`.
+- Preserve legacy `?page=N` behavior by redirecting those links to the archive reader with the same page number.
+
+Implementation notes:
+
+- Rebuilt the website Bosque book data as native chapters, sections, figures, tables, source links, and field-index entries.
+- Moved the screenshot-reader data into archive-only book data and updated the book-generation script so future screenshot archive rebuilds do not overwrite the native book data.
+- Added reusable Bosque book components for section prose, figures with disclosure labels, responsive tables, previous/next navigation, and archive callouts.
+- Updated the Books shelf language from image-reader page count to native field-guide sections.
+
+Acceptance notes:
+
+- Focused website book tests passed with `npm run test -- __tests__/books.test.ts`.
+- Website linting, type checking, and production build passed with `npm run lint`, `npm run typecheck`, and `npm run build`.
+- Browser QA passed on desktop and 390px mobile for the native landing page, a long Field Guide section, a visual-heavy section, a table-heavy Gear section, and the archive reader.
+- Verified the primary native book has no slideshow controls and no screenshot page images in section bodies.
+- Verified legacy `/books/bosque-del-apache-photo-plan?page=36` redirects to `/books/bosque-del-apache-photo-plan/archive?page=36` and loads archived `page-036.webp`.
+
 ## 2026-06-09 - Add Bosque Book Field Index
 
 Status: completed and validated June 9, 2026.
