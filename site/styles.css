@@ -3982,7 +3982,11 @@ main {
   }
 
   .top-tabs,
-  .hero-actions {
+  .hero-actions,
+  .button-link,
+  .visual-expand-button,
+  .visual-expand-cue,
+  .gallery-open-original {
     display: none;
   }
 

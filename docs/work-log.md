@@ -2,6 +2,32 @@
 
 This file tracks requested project work that has not yet been implemented, verified, and published.
 
+## 2026-06-08 - Publish Bosque As Website Book
+
+Status: completed and validated June 8, 2026.
+
+Goal: regenerate the Bosque del Apache field-plan PDF from the updated planner and publish it as a native book reader in the website Books section, following the Tanzania book pattern.
+
+Requested requirements:
+
+- Use the updated Bosque del Apache data.
+- Generate a fresh book from the Bosque planner/PDF.
+- Publish it on the personal website under Books.
+- Use the Tanzania book implementation as the model.
+
+Implementation notes:
+
+- Regenerated `site/bosque-del-apache-photo-plan.pdf` from the current planner with all planner views and the full field guide rendered.
+- Built a 124-page website book asset set in the main website repo with page images, cover image, transcript JSON, and generated book metadata.
+- Added the Bosque book reader route at `/books/bosque-del-apache-photo-plan`.
+- Hid web-only planner controls from print output so the generated PDF/book pages read as a finished field guide.
+- Raised the source static payload guard to 100 MiB because the refreshed 124-page PDF intentionally increases the standalone project artifact size.
+
+Acceptance notes:
+
+- Source checks passed with `node --check site/app.js`, `node --check site/data.js`, and `node scripts/qa-static.mjs`.
+- Website checks passed with lint, typecheck, build, performance load/transition audits, and local browser verification of the Books shelf, Bosque reader, page images, and transcript panel.
+
 ## 2026-06-07 - Add Five Backpack Recommendations
 
 Status: completed and validated June 7, 2026.
