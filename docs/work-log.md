@@ -18,14 +18,14 @@ Requested requirements:
 Implementation notes:
 
 - Regenerated `site/bosque-del-apache-photo-plan.pdf` from the current planner with all planner views and the full field guide rendered.
-- Built a 124-page website book asset set in the main website repo with page images, cover image, transcript JSON, and generated book metadata.
+- Built a 133-page website book asset set in the main website repo with page images, cover image, transcript JSON, and generated book metadata.
 - Added the Bosque book reader route at `/books/bosque-del-apache-photo-plan`.
 - Hid web-only planner controls from print output so the generated PDF/book pages read as a finished field guide.
 - Raised the source static payload guard to 100 MiB because the refreshed 124-page PDF intentionally increases the standalone project artifact size.
 
 Acceptance notes:
 
-- Source checks passed with `node --check site/app.js`, `node --check site/data.js`, and `node scripts/qa-static.mjs`.
+- Source checks passed with `node --check site/app.js`, `node --check site/data.js`, `node scripts/qa-static.mjs`, and a PDF text extraction check confirming no blank-text pages.
 - Website checks passed with lint, typecheck, build, performance load/transition audits, and local browser verification of the Books shelf, Bosque reader, page images, and transcript panel.
 
 ## 2026-06-07 - Add Five Backpack Recommendations
