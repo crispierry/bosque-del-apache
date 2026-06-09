@@ -61,7 +61,7 @@ function renderStandaloneFrameCard(id, options = {}) {
     .filter(Boolean)
     .join(" ");
   return `<button class="${classes}" type="button" data-visual-id="${visual.id}" aria-label="Open full image: ${visual.title}">
-    <img src="${visual.src}" alt="${visual.alt}" width="1920" height="1080" loading="${options.loading || "lazy"}" decoding="async" />
+    <img src="${visual.src}" alt="${visual.alt}" width="${visual.width || 1920}" height="${visual.height || 1080}" loading="${options.loading || "lazy"}" decoding="async" />
     <span class="visual-frame-copy">
       <b>${label}</b>
       <small class="visual-disclosure-chip">${visualDisclosureLabel(visual)}</small>
@@ -313,7 +313,19 @@ function ensureLeaflet() {
 
 function renderOverview() {
   const root = document.querySelector("#overview");
+  const coverVisual = selectedBookCoverVisual || coverStudyVisuals[0];
   root.innerHTML = `
+    <section class="book-cover-page" aria-label="Bosque del Apache book cover">
+      <img class="book-cover-image" src="${coverVisual.src}" alt="${coverVisual.alt}" width="${coverVisual.width}" height="${coverVisual.height}" decoding="async" fetchpriority="high" />
+      <div class="book-cover-shade" aria-hidden="true"></div>
+      <div class="book-cover-title">
+        <p>Field plan</p>
+        <h1>Bosque del Apache</h1>
+        <p class="book-cover-author">Cris Pierry</p>
+      </div>
+      <span class="book-cover-watermark" aria-hidden="true"></span>
+    </section>
+    <div class="overview-after-cover">
     <section class="hero">
       <div class="hero-copy">
         <p class="eyebrow">Field plan</p>
@@ -356,7 +368,8 @@ function renderOverview() {
         <h3>Choose the photograph before choosing the lens.</h3>
         <p>Some mornings want tight 500-800mm action. Others want geese, sky, water, mountains, and sound in one frame. Keep the plan flexible enough to make both kinds of image.</p>
       </article>
-    </section>`;
+    </section>
+    </div>`;
 }
 
 const shotInspirationGalleryExcludedGroups = new Set(["travel-workflow"]);
@@ -478,6 +491,8 @@ function openVisualLightbox(overlay, id) {
 
   image.src = visual.src;
   image.alt = visual.alt;
+  image.width = visual.width || 1536;
+  image.height = visual.height || 1024;
   if (disclosure) disclosure.textContent = visualDisclosureLabel(visual);
   title.textContent = visual.title;
   note.textContent =
@@ -1635,7 +1650,7 @@ function renderInspiration() {
           <p class="eyebrow">Visual references</p>
           <h2>Shot Inspiration</h2>
         </div>
-        <p>Thirty planning images show the kinds of Bosque del Apache photographs to plan for: roosts, blast-offs, fly-ins, fields, wetlands, small subjects, weather, motion, and blue hour.</p>
+        <p>Thirty planning images plus full-bleed cover studies show the kinds of Bosque del Apache photographs to plan for: roosts, blast-offs, fly-ins, fields, wetlands, small subjects, weather, motion, blue hour, and book-cover candidates.</p>
       </div>
       ${renderGuideScopeNote()}
       <div class="inspiration-feature-row">
@@ -1669,6 +1684,27 @@ function renderInspiration() {
               hideDescription: false,
               showLocation: index < 6,
               loading: index < 4 ? "eager" : "lazy",
+            })
+          )
+          .join("")}
+      </div>
+    </section>
+    <section class="inspiration-generated-section cover-study-section">
+      <div class="section-title compact-title">
+        <div>
+          <p class="eyebrow">Cover studies</p>
+          <h3>Unused full-bleed cover candidates</h3>
+        </div>
+        <p>These generated portrait studies came from the realistic Bosque cover exploration. The selected crane-reflection image is used as the book cover; the remaining studies stay available for shot planning and future cover swaps.</p>
+      </div>
+      <div class="inspiration-generated-grid cover-study-grid">
+        ${unusedCoverStudyVisuals
+          .map((visual, index) =>
+            renderStandaloneFrameCard(visual.id, {
+              className: "inspiration-generated-card cover-study-card",
+              hideDescription: false,
+              showLocation: index < 4,
+              loading: index < 3 ? "eager" : "lazy",
             })
           )
           .join("")}

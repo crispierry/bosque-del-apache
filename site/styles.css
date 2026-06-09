@@ -209,6 +209,114 @@ main {
   display: block;
 }
 
+.book-cover-page {
+  position: relative;
+  display: grid;
+  min-height: min(940px, calc(100svh - 96px));
+  margin: calc(-1 * clamp(24px, 5vw, 56px)) calc(-1 * clamp(16px, 4vw, 42px)) clamp(28px, 5vw, 54px);
+  overflow: hidden;
+  isolation: isolate;
+  background: #141414;
+}
+
+.book-cover-image,
+.book-cover-shade {
+  position: absolute;
+  inset: 0;
+}
+
+.book-cover-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.book-cover-shade {
+  z-index: 1;
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.2) 34%,
+      rgba(16, 18, 20, 0.12) 62%,
+      rgba(16, 18, 20, 0.58)
+    );
+}
+
+.book-cover-title {
+  position: relative;
+  z-index: 2;
+  align-self: start;
+  max-width: min(760px, 86vw);
+  padding: clamp(58px, 10vw, 116px) clamp(24px, 8vw, 92px);
+  color: #151515;
+}
+
+.book-cover-title p {
+  margin: 0;
+  color: rgba(21, 21, 21, 0.72);
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.book-cover-title h1 {
+  max-width: 10ch;
+  margin: 10px 0 20px;
+  font-family: "Instrument Serif", Georgia, serif;
+  font-size: clamp(4.2rem, 13vw, 10.8rem);
+  font-weight: 400;
+  line-height: 0.9;
+  letter-spacing: 0;
+}
+
+.book-cover-title .book-cover-author {
+  color: rgba(21, 21, 21, 0.68);
+  font-size: clamp(0.82rem, 1.2vw, 1.05rem);
+  letter-spacing: 0.14em;
+}
+
+.book-cover-watermark {
+  position: absolute;
+  right: 20px;
+  bottom: 18px;
+  z-index: 2;
+  width: 26px;
+  height: 26px;
+  opacity: 0.42;
+  filter: drop-shadow(0 1px 5px rgba(0, 0, 0, 0.25));
+}
+
+.book-cover-watermark::before,
+.book-cover-watermark::after {
+  position: absolute;
+  content: "";
+  background: rgba(255, 255, 255, 0.86);
+  clip-path: polygon(
+    50% 0,
+    61% 38%,
+    100% 50%,
+    61% 62%,
+    50% 100%,
+    39% 62%,
+    0 50%,
+    39% 38%
+  );
+}
+
+.book-cover-watermark::before {
+  inset: 4px;
+}
+
+.book-cover-watermark::after {
+  top: 0;
+  right: 0;
+  width: 9px;
+  height: 9px;
+  opacity: 0.78;
+}
+
 .hero {
   display: grid;
   grid-template-columns: minmax(0, 0.86fr) minmax(340px, 0.58fr);
@@ -3517,6 +3625,16 @@ main {
   gap: 16px;
 }
 
+.cover-study-grid {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+}
+
+.cover-study-card img {
+  aspect-ratio: 1225 / 1584;
+  height: auto;
+  object-fit: cover;
+}
+
 .inspiration-generated-card .visual-frame-copy span {
   font-size: 0.78rem;
 }
@@ -3966,6 +4084,16 @@ main {
     size: letter;
   }
 
+  @page :first {
+    margin: 0;
+    size: letter;
+  }
+
+  @page cover {
+    margin: 0;
+    size: letter;
+  }
+
   html {
     scroll-behavior: auto;
   }
@@ -3975,14 +4103,16 @@ main {
   }
 
   .app-shell {
-    position: static;
-    display: block;
-    border-bottom: 1px solid #dddddd;
-    padding: 0 0 18px;
+    display: none;
   }
 
   .top-tabs,
-  .hero-actions {
+  .hero-actions,
+  .button-link,
+  .visual-expand-button,
+  .visual-expand-cue,
+  .gallery-open-original,
+  .gallery-lightbox {
     display: none;
   }
 
@@ -4000,6 +4130,42 @@ main {
 
   #overview {
     break-before: auto;
+    padding: 0;
+  }
+
+  .overview-after-cover {
+    padding: 28px 0 0;
+  }
+
+  .book-cover-page {
+    page: cover;
+    width: 8.5in;
+    height: 11in;
+    min-height: 11in;
+    margin: 0;
+    break-after: page;
+    transform: scale(1.16);
+    transform-origin: top left;
+  }
+
+  .book-cover-title {
+    max-width: 6.9in;
+    padding: 0.78in 0.72in;
+  }
+
+  .book-cover-title h1 {
+    font-size: 72pt;
+  }
+
+  .book-cover-title .book-cover-author {
+    font-size: 9pt;
+  }
+
+  .book-cover-watermark {
+    right: 0.2in;
+    bottom: 0.18in;
+    width: 0.24in;
+    height: 0.24in;
   }
 
   .hero,

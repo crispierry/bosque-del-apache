@@ -311,7 +311,7 @@ const largestImage = imageFiles
   .sort((a, b) => b.size - a.size)[0];
 const initialGzipBytes = gzipSync(`${data}\n${app}\n${styles}`).length;
 
-assert("site payload stays under 90 MiB", totalSiteBytes <= 90 * 1024 * 1024, formatMiB(totalSiteBytes));
+assert("site payload stays under 100 MiB", totalSiteBytes <= 100 * 1024 * 1024, formatMiB(totalSiteBytes));
 assert(
   "largest image stays under 1.25 MiB",
   largestImage && largestImage.size <= 1.25 * 1024 * 1024,
