@@ -2,6 +2,35 @@
 
 This file tracks requested project work that has not yet been implemented, verified, and published.
 
+## 2026-06-08 - Add Realistic Full-Bleed Book Covers
+
+Status: completed and validated June 8, 2026.
+
+Goal: generate realistic Bosque del Apache cover options, use one as the full-bleed book cover, and include the unused candidates in both the website gallery and the book.
+
+Requested requirements:
+
+- Generate all ten realistic cover options.
+- Use one image as the dedicated full-bleed book cover page.
+- Add the unused cover options to the website gallery.
+- Include the unused cover options in the generated book as well.
+
+Implementation notes:
+
+- Generated ten photorealistic Bosque del Apache cover studies plus one bonus portrait candidate.
+- Selected the crane reflection pair as the full-bleed cover because it has clean title-safe sky, strong Bosque context, and a calm field-guide tone.
+- Replaced the visible cover disclosure text with a small, light AI-style sparkle watermark at the lower right.
+- Added the ten unused cover candidates to Shot Inspiration under an explicit cover-studies section.
+- Added all cover studies to the visual asset manifest with AI-generation disclosure, usage placement, and field-technique notes.
+- Regenerated the Bosque PDF and website book as a 138-page book with the selected full-bleed cover and the unused candidates included in the book body.
+- Optimized the cover-study JPEGs so the standalone source artifact remains under the 100 MiB static payload guard.
+
+Acceptance notes:
+
+- Source checks passed with `node --check site/app.js`, `node --check site/data.js`, `node scripts/qa-static.mjs`, and PDF text extraction confirming no blank-text pages.
+- Visual QA confirmed the generated web-book cover is full-bleed and uses the selected crane reflection cover.
+- Generated book metadata and transcript confirm 138 pages and cover-study content in the book.
+
 ## 2026-06-08 - Publish Bosque As Website Book
 
 Status: completed and validated June 8, 2026.

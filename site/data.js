@@ -2478,6 +2478,250 @@ const inspirationGeneratedVisuals = [
   },
 }));
 
+const coverStudyVisuals = [
+  {
+    id: "cover-study-snow-goose-blastoff",
+    title: "Cover study: snow goose blast-off",
+    file: "cover-study-01-snow-goose-blastoff.jpg",
+    sceneType: "Full-bleed cover study",
+    selectedCover: false,
+    description:
+      "Portrait cover candidate built around the classic Bosque snow-goose blast-off spectacle, with cranes and dawn water anchoring the lower frame.",
+    location: "Flight Deck, Main Pool, or the strongest active snow-goose roost after scouting.",
+    lens: "24-105mm, 70-200mm, or the wide end of a wildlife zoom.",
+    focalLength: "70-180mm",
+    aperture: "f/7.1-f/9",
+    shutterSpeed: "1/2000-1/3200 sec",
+    iso: "ISO 800-3200",
+    technique:
+      "Start wider than instinct during the eruption, keep the flock cloud intact, and preserve enough water and mountain context to make the image read as Bosque.",
+    promptSummary:
+      "Full-bleed portrait cover candidate: massive snow-goose blast-off, sunrise water, cranes for scale, distant New Mexico mountains, no text or logos.",
+  },
+  {
+    id: "cover-study-dawn-crane-mist",
+    title: "Cover study: dawn crane mist",
+    file: "cover-study-02-dawn-crane-mist.jpg",
+    sceneType: "Full-bleed cover study",
+    selectedCover: false,
+    description:
+      "Quiet dawn roost candidate with sandhill cranes, frost, mist, and subdued winter color.",
+    location: "Highway 1 crane pools, North Loop roost pool, or another legal shallow-water crane roost.",
+    lens: "100-400mm or 200-600mm wildlife zoom.",
+    focalLength: "250-450mm",
+    aperture: "f/6.3-f/8",
+    shutterSpeed: "1/500-1/1250 sec",
+    iso: "ISO 1600-6400",
+    technique:
+      "Use cold air and breath as the subject, wait for separated head positions, and keep the title area quiet by avoiding cluttered upper-frame detail.",
+    promptSummary:
+      "Full-bleed portrait cover candidate: sandhill cranes standing in cold dawn mist, soft water, frosted reeds, no text or logos.",
+  },
+  {
+    id: "cover-study-flight-formations-mountains",
+    title: "Cover study: flight formations and mountains",
+    file: "cover-study-03-flight-formations-mountains.jpg",
+    sceneType: "Full-bleed cover study",
+    selectedCover: false,
+    description:
+      "Mountain-forward cover candidate with cranes crossing a clean cold sky over refuge water and fields.",
+    location: "Open roost, field, or wetland view where flight lines cross the mountain band.",
+    lens: "70-200mm, 100-400mm, or the short end of a wildlife zoom.",
+    focalLength: "100-300mm",
+    aperture: "f/7.1-f/9",
+    shutterSpeed: "1/1600-1/2500 sec",
+    iso: "ISO 400-1600",
+    technique:
+      "Treat formations and mountains as the design, then choose a frame that keeps the upper sky clean enough for cover typography.",
+    promptSummary:
+      "Full-bleed portrait cover candidate: crane formation, blue-gray New Mexico mountains, winter refuge habitat, no text or logos.",
+  },
+  {
+    id: "cover-study-golden-crane-landing",
+    title: "Cover study: golden crane landing",
+    file: "cover-study-04-golden-crane-landing.jpg",
+    sceneType: "Full-bleed cover study",
+    selectedCover: false,
+    description:
+      "Single-subject action candidate with a sandhill crane landing into golden water and reflection.",
+    location: "Wind-aligned crane-pool edge with clean morning or evening water.",
+    lens: "Long wildlife zoom on beanbag, monopod, or tripod/gimbal.",
+    focalLength: "500-700mm",
+    aperture: "f/6.3-f/8",
+    shutterSpeed: "1/2000-1/2500 sec",
+    iso: "ISO 800-3200",
+    technique:
+      "Pre-frame the landing lane, leave room for wings and reflection, and expose for the lit feathers without losing water color.",
+    promptSummary:
+      "Full-bleed portrait cover candidate: single sandhill crane landing, golden side light, reflection, no text or logos.",
+  },
+  {
+    id: "cover-study-overhead-goose-pattern",
+    title: "Cover study: overhead goose pattern",
+    file: "cover-study-05-overhead-goose-pattern.jpg",
+    sceneType: "Full-bleed cover study",
+    selectedCover: false,
+    description:
+      "Graphic sky candidate with snow geese scattered through clean blue negative space.",
+    location: "Any legal pullout or deck when geese cross overhead after lift-off.",
+    lens: "100-400mm or 200-600mm zoom.",
+    focalLength: "300-500mm",
+    aperture: "f/7.1-f/9",
+    shutterSpeed: "1/2500-1/3200 sec",
+    iso: "ISO 400-1600",
+    technique:
+      "Use flock spacing as the composition, avoid bunching at the edges, and let negative space carry the cover.",
+    promptSummary:
+      "Full-bleed portrait cover candidate: snow geese patterned against a clean blue New Mexico sky, no text or logos.",
+  },
+  {
+    id: "cover-study-crane-reflection-pair",
+    title: "Selected cover: crane reflection pair",
+    file: "cover-study-06-crane-reflection-pair.jpg",
+    sceneType: "Selected full-bleed cover",
+    selectedCover: true,
+    description:
+      "Selected full-bleed cover image: two sandhill cranes with calm reflections, pastel dawn water, distant cottonwoods, and a clean title-safe sky.",
+    location: "Still crane pool, wetland channel, or legal roadside roost edge with mountain and cottonwood context.",
+    lens: "100-400mm or 200-600mm wildlife zoom.",
+    focalLength: "250-450mm",
+    aperture: "f/7.1-f/9",
+    shutterSpeed: "1/500-1/1000 sec",
+    iso: "ISO 400-1600",
+    technique:
+      "Compose the reflection first, preserve the sky as title space, and wait for both heads to separate cleanly from the background.",
+    promptSummary:
+      "Selected full-bleed portrait cover: paired sandhill cranes, complete reflections, pastel dawn, distant New Mexico mountains, no text or logos.",
+  },
+  {
+    id: "cover-study-sunset-crane-fly-in",
+    title: "Cover study: sunset crane fly-in",
+    file: "cover-study-07-sunset-crane-fly-in.jpg",
+    sceneType: "Full-bleed cover study",
+    selectedCover: false,
+    description:
+      "Dramatic sunset candidate with crane silhouettes and warm reflected water.",
+    location: "Roost approach, crane pool, or legal pullout with clean sunset sky behind returning cranes.",
+    lens: "100-400mm or 200-600mm zoom.",
+    focalLength: "200-450mm",
+    aperture: "f/7.1-f/9",
+    shutterSpeed: "1/1000-1/2500 sec",
+    iso: "ISO 400-1600",
+    technique:
+      "Expose for the sky, let the cranes become graphic silhouettes, and keep enough spacing between birds for readable wing shapes.",
+    promptSummary:
+      "Full-bleed portrait cover candidate: sunset crane fly-in silhouettes, glowing wetland water, mountains, no text or logos.",
+  },
+  {
+    id: "cover-study-cottonwoods-water-mountains",
+    title: "Cover study: cottonwoods, water, and mountains",
+    file: "cover-study-08-cottonwoods-water-mountains.jpg",
+    sceneType: "Full-bleed cover study",
+    selectedCover: false,
+    description:
+      "Sense-of-place cover candidate with winter cottonwoods, reflective water, small birds, and mountain scale.",
+    location: "South Loop wetland, Willow/Coyote/Dabbler deck area, or a legal broad wetland view.",
+    lens: "24-105mm, 70-200mm, or 100-400mm.",
+    focalLength: "70-180mm",
+    aperture: "f/8-f/11",
+    shutterSpeed: "1/250-1/800 sec",
+    iso: "ISO 200-800",
+    technique:
+      "Let the refuge layers do the work: water foreground, birds as punctuation, cottonwoods and mountains for place, and a calm sky for title.",
+    promptSummary:
+      "Full-bleed portrait cover candidate: Bosque wetland landscape, cottonwoods, mountains, winter birds, no text or logos.",
+  },
+  {
+    id: "cover-study-high-key-mist-waterbirds",
+    title: "Cover study: high-key mist waterbirds",
+    file: "cover-study-09-high-key-mist-waterbirds.jpg",
+    sceneType: "Full-bleed cover study",
+    selectedCover: false,
+    description:
+      "Minimal high-key candidate where fog, white birds, and pale water create a quiet art-book cover.",
+    location: "Any legal wetland pullout or deck when fog or mist simplifies the background.",
+    lens: "100-400mm or 200-600mm zoom.",
+    focalLength: "200-500mm",
+    aperture: "f/7.1-f/9",
+    shutterSpeed: "1/500-1/1600 sec",
+    iso: "ISO 800-3200",
+    technique:
+      "Expose high-key while preserving bird shape, use reeds sparingly for structure, and let negative space carry the cover.",
+    promptSummary:
+      "Full-bleed portrait cover candidate: high-key fog, cranes and geese in pale winter water, no text or logos.",
+  },
+  {
+    id: "cover-study-blue-hour-moon-cranes",
+    title: "Cover study: blue-hour moon cranes",
+    file: "cover-study-10-blue-hour-moon-cranes.jpg",
+    sceneType: "Full-bleed cover study",
+    selectedCover: false,
+    description:
+      "Cinematic blue-hour candidate with moon, crane silhouettes, still water, and a deep title-safe sky.",
+    location: "Legal roost view or wetland edge within official access hours.",
+    lens: "70-200mm, 100-400mm, or normal-to-short telephoto zoom.",
+    focalLength: "100-250mm",
+    aperture: "f/5.6-f/8",
+    shutterSpeed: "1/125-1/500 sec",
+    iso: "ISO 1600-6400",
+    technique:
+      "Keep the horizon stable, place the moon deliberately, and let silhouettes and blue reflections carry the mood.",
+    promptSummary:
+      "Full-bleed portrait cover candidate: blue-hour moon, crane silhouettes, reflective wetland, no text or logos.",
+  },
+  {
+    id: "cover-study-intimate-crane-portrait",
+    title: "Cover study: intimate crane portrait",
+    file: "cover-study-11-intimate-crane-portrait.jpg",
+    sceneType: "Bonus full-bleed cover study",
+    selectedCover: false,
+    description:
+      "Bonus single-crane portrait candidate with telephoto compression, frost, water, and softly blurred background birds.",
+    location: "Crane pool, wetland edge, or legal pullout where one bird separates cleanly from the flock.",
+    lens: "Long wildlife zoom.",
+    focalLength: "500-700mm",
+    aperture: "f/6.3-f/8",
+    shutterSpeed: "1/500-1/1600 sec",
+    iso: "ISO 400-1600",
+    technique:
+      "Protect the neck curve and reflection, wait for a clean head angle, and use the upper background as quiet cover space.",
+    promptSummary:
+      "Bonus full-bleed portrait cover candidate: single sandhill crane, frosted wetland, soft dawn background, no text or logos.",
+  },
+].map((item) => ({
+  id: item.id,
+  title: item.title,
+  src: `./assets/generated/book-covers/${item.file}`,
+  width: 1225,
+  height: 1584,
+  category: "Cover Study",
+  alt: `Generated full-bleed Bosque del Apache book cover candidate: ${item.title
+    .replace(/^Selected cover: |^Cover study: /, "")
+    .toLowerCase()}`,
+  caption: `${item.description} Not a field photograph from Bosque.`,
+  rights:
+    "AI-generated full-bleed cover/planning image created from this guide's Bosque del Apache cover prompts. Use as expectation-setting only.",
+  placement: item.selectedCover
+    ? ["Book cover", "Overview", "Visual Asset Manifest"]
+    : ["Shot Inspiration", "Gallery", "Book", "Visual Asset Manifest"],
+  description: item.description,
+  sceneType: item.sceneType,
+  selectedCover: item.selectedCover,
+  promptSummary: item.promptSummary,
+  lesson: {
+    supposedLocation: item.location,
+    lens: item.lens,
+    focalLength: item.focalLength,
+    aperture: item.aperture,
+    shutterSpeed: item.shutterSpeed,
+    iso: item.iso,
+    technique: item.technique,
+  },
+}));
+
+const selectedBookCoverVisual = coverStudyVisuals.find((visual) => visual.selectedCover);
+const unusedCoverStudyVisuals = coverStudyVisuals.filter((visual) => !visual.selectedCover);
+
 const practiceTechniqueVisuals = [
   {
     id: "practice-hd-camera-setup-baseline",
@@ -2653,6 +2897,7 @@ const visualById = new Map(
     ...itineraryGeneratedVisuals,
     ...photoWindowGeneratedVisuals,
     ...inspirationGeneratedVisuals,
+    ...coverStudyVisuals,
     ...practiceTechniqueVisuals,
     ...practiceVisuals,
     ...practiceStandaloneVisuals,
@@ -2889,6 +3134,10 @@ const inspirationLessons = Object.fromEntries(
   inspirationGeneratedVisuals.map((visual) => [visual.id, visual.lesson])
 );
 
+const coverStudyLessons = Object.fromEntries(
+  coverStudyVisuals.map((visual) => [visual.id, visual.lesson])
+);
+
 const standaloneGalleryLessons = Object.fromEntries(
   standaloneGalleryVisuals.map((visual) => {
     const lesson = galleryLessons[visual.parentId];
@@ -2994,6 +3243,7 @@ const visualLessons = {
   ...itineraryLessons,
   ...photoWindowLessons,
   ...inspirationLessons,
+  ...coverStudyLessons,
   ...practiceLessons,
   ...practiceTechniqueLessons,
   ...practiceStandaloneLessons,
