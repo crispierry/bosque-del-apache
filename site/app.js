@@ -321,8 +321,7 @@ function renderOverview() {
       <div class="book-cover-title">
         <p>Field plan</p>
         <h1>Bosque del Apache</h1>
-        <span>Publication date: June 5, 2026</span>
-        <strong>A five-day photography field guide</strong>
+        <p class="book-cover-author">Cris Pierry</p>
       </div>
       <span class="book-cover-watermark" aria-hidden="true"></span>
     </section>
