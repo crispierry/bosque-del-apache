@@ -2,6 +2,33 @@
 
 This file tracks requested project work that has not yet been implemented, verified, and published.
 
+## 2026-06-09 - Add Bosque Book Field Index
+
+Status: completed and validated June 9, 2026.
+
+Goal: add an inline index to the Bosque del Apache book page, similar to the Tanzania book index, while modifying only the Bosque book surface.
+
+Requested requirements:
+
+- Use the Tanzania and AI book index work as reference patterns.
+- Create a Bosque-specific index plan instead of copying the Tanzania animal-index logic.
+- Keep the change scoped to the Bosque del Apache book.
+
+Implementation notes:
+
+- Plan: use the Tanzania-style inline reader index, but make the entries field-planning concepts: places, light windows, subjects, gear, practice, logistics, image rights, and references.
+- Added a curated `Field Index` below the Bosque web-book reader at `/books/bosque-del-apache-photo-plan`.
+- Added index data to both the current Bosque book data file and the Bosque book generator so future book rebuilds preserve the index.
+- Added focused book tests for alphabetical order, valid page references, major-section coverage, and key planning topics.
+
+Acceptance notes:
+
+- Generator syntax passed with `node --check scripts/build-bosque-book.mjs`.
+- Focused website book tests passed with `npm test -- __tests__/books.test.ts`.
+- Website type checking and linting passed with `npm run typecheck` and `npm run lint`.
+- Local browser QA passed on desktop and 390px mobile for the Field Index section, with no horizontal overflow and no browser console errors.
+- Verified that a page reference such as `?page=36` hydrates the reader to page 36 and loads the matching page image.
+
 ## 2026-06-08 - Add Realistic Full-Bleed Book Covers
 
 Status: completed and validated June 8, 2026.
