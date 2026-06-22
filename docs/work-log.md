@@ -2,6 +2,25 @@
 
 This file tracks requested project work that has not yet been implemented, verified, and published.
 
+## 2026-06-22 - Add Sony 24-50mm Lens Option
+
+Status: completed, imported to the website repo, and validated locally June 22, 2026; awaiting commit/publish.
+
+Goal: add the Sony FE 24-50mm F2.8 G to the lens list, tables, web page, and book-facing guide copy, and add f-stop details to the lens chart labels.
+
+Implementation notes:
+
+- Added the Sony FE 24-50mm F2.8 G to the Sony lens data using Sony's official support specifications.
+- Added the lens to comparison rows, filter guidance, Sony kit notes, research notes, and complete-guide table/copy references.
+- Updated length and weight chart labels so each lens/teleconverter bar includes the maximum aperture or stop-loss detail alongside the physical measurement.
+- Refreshed the website project artifact, native website book gear section, archive book index/data, and downloadable book PDF in `/Users/cris/Documents/github/cris pierry website`.
+
+Acceptance notes:
+
+- Source checks passed with `node --check site/data.js`, `node --check site/app.js`, and `node scripts/qa-static.mjs`.
+- Browser preview passed on desktop and 390px mobile for the Gear Lenses workspace: the Sony 24-50 card appears, the comparison table includes the compact fast-standard row, chart labels include f-stop detail, and the chart area does not create page overflow.
+- Website import/book checks passed with `npm run build:bosque`, `npm run build:bosque-book`, `npm test -- __tests__/books.test.ts`, `npm run typecheck`, `npm run perf:projects`, and `npm run lint`.
+
 ## 2026-06-09 - Rebuild Bosque Book As Native Text Pages
 
 Status: completed and validated June 9, 2026.

@@ -361,7 +361,7 @@ function renderOverview() {
       <article class="panel">
         <p class="eyebrow">Pack tonight</p>
         <h3>Stage two camera roles before sleep.</h3>
-        <p>Mount the long wildlife zoom for crane and goose action, keep the 24-105 ready for flock scale and place, and set out layers, hand warmers, cards, batteries, lens cloth, beanbag, water, and snacks.</p>
+        <p>Mount the long wildlife zoom for crane and goose action, keep the 24-105 ready for flock scale and place, use the 24-50 f/2.8 only when compact fast-standard context is the better choice, and set out layers, hand warmers, cards, batteries, lens cloth, beanbag, water, and snacks.</p>
       </article>
       <article class="panel">
         <p class="eyebrow">Field rule</p>
@@ -1903,7 +1903,7 @@ function renderMedia() {
         <aside class="recommendation-summary">
           <p class="eyebrow">Primary takeaway</p>
           <h3>Carry reach, but do not let reach make every decision.</h3>
-          <p>The Sony 200-600 is a primary wildlife recommendation. The 24-105 stays ready for flock scale and place. The 100-400 and 400-800 are situational choices for handling or bright-light reach.</p>
+          <p>The Sony 200-600 is a primary wildlife recommendation. The 24-105 stays ready for flock scale and place, while the 24-50 f/2.8 is the compact fast-standard swap. The 100-400 and 400-800 are situational choices for handling or bright-light reach.</p>
         </aside>
       </section>
       ${renderGuideScopeNote()}
@@ -1917,7 +1917,7 @@ function renderMedia() {
         <article class="brief-card">
           <span>02</span>
           <h3>EXIF evidence</h3>
-          <p>The evidence supports a full range from 24-105mm environmental frames to 800mm tight action, with 400-600mm-equivalent work as the recurring center.</p>
+          <p>The evidence supports a full range from 24-50mm or 24-105mm environmental frames to 800mm tight action, with 400-600mm-equivalent work as the recurring center.</p>
         </article>
         <article class="brief-card">
           <span>03</span>

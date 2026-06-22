@@ -1,7 +1,7 @@
 // Research-backed Bosque del Apache data, visual records, and field-planning content.
 // Rendering and interaction logic lives in app.js.
 const checkedDate = "2026-06-03";
-const gearCheckedDate = "2026-06-05";
+const gearCheckedDate = "2026-06-22";
 const backpackCheckedDate = "2026-06-07";
 const visualCheckedDate = "2026-06-04";
 const guideFraming = {
@@ -3326,6 +3326,14 @@ const sources = [
   },
   {
     topic: "Gear specs",
+    title: "Sony FE 24-50mm F2.8 G specifications",
+    url: "https://www.sony.com/electronics/support/lenses-e-mount-lenses/sel2450g/specifications",
+    checked: gearCheckedDate,
+    description:
+      "This official Sony support page verifies the FE 24-50mm F2.8 G entry, including the constant f/2.8 aperture, 67 mm filter, 440 g weight, close-focus range, and no-lens-OSS stabilization note.",
+  },
+  {
+    topic: "Gear specs",
     title: "Sony SEL20TC 2x Teleconverter specifications",
     url: "https://www.sony.com/lr/electronics/camera-lenses/sel20tc/specifications",
     checked: gearCheckedDate,
@@ -4556,6 +4564,29 @@ const gearItems = [
   },
   {
     system: "Sony",
+    name: "FE 24-50mm F2.8 G",
+    role: "Compact fast standard zoom for travel, people, low light, and close details",
+    specs: {
+      aperture: "f/2.8-f/22",
+      filter: "67 mm",
+      length: "92.3 mm",
+      weight: "440 g",
+      minFocus: "0.19-0.30 m AF",
+      teleconverter: "No",
+      introduced: "2024",
+      stabilization: "No lens OSS; body-integrated stabilization",
+      zoomFocus: "Extending zoom; internal focus; linear motor AF",
+      weather: "Dust and moisture resistant design; fluorine front coating",
+    },
+    photo: "https://electronics.sony.com/imaging/lenses/all-e-mount/p/sel2450g",
+    photoLabel: "Sony product/spec page",
+    source:
+      "https://www.sony.com/electronics/support/lenses-e-mount-lenses/sel2450g/specifications",
+    note:
+      "A small constant f/2.8 standard zoom for travel, people, and low-light context. For Bosque spectacle, the 24-105 remains stronger because 50-105 mm helps with flock scale and habitat compression.",
+  },
+  {
+    system: "Sony",
     name: "FE 24-70mm F2.8 GM II",
     role: "Travel, people, low light, shallow depth of field",
     specs: {
@@ -5443,6 +5474,7 @@ const kitRecommendations = [
     items: [
       "Body 1: FE 200-600mm for cranes, geese, distant ducks, and repeatable flight lanes.",
       "Body 2: FE 24-105mm for blast-off scale, mountain bands, reflections, weather, and story frames.",
+      "Optional compact standard: FE 24-50mm F2.8 G when a lighter f/2.8 travel/people lens matters more than 50-105 mm reach.",
       "Optional swap: FE 100-400mm when birds are close or you need lighter handheld acquisition.",
       "Optional reach: FE 400-800mm or a Sony teleconverter only when light is strong and subjects are distant.",
     ],
@@ -5465,7 +5497,7 @@ const kitRecommendations = [
     items: [
       "Body 1: FE 200-600mm as the classic Sony wildlife lens for Serengeti, Ngorongoro, birds, distant cats, and fixed vehicle positions.",
       "Body 2: FE 70-200mm F2.8 for close mammals, cubs, portraits, low light, camp life, and environmental compression; use the FE 70-200mm F4 Macro G OSS II if weight and close-focus detail matter more than f/2.8.",
-      "Carry 24-105mm for landscapes and vehicle/camp context; mount it when the day is not wildlife-first.",
+      "Carry 24-105mm for landscapes and vehicle/camp context; swap to FE 24-50mm F2.8 G only when compact size and f/2.8 matter more than reach.",
       "Do not carry both 200-600 and 400-800 unless distant birds are a top priority and baggage weight allows it.",
     ],
   },
@@ -5492,6 +5524,11 @@ const filterGuidance = [
     title: "72 mm Sony 70-200 f/4 branch",
     note:
       "72 mm covers the Sony FE 70-200mm F4 Macro G OSS II. Buy this size only if that lighter 70-200 travels and you expect glare, water, or landscape work with it.",
+  },
+  {
+    title: "67 mm compact Sony standard",
+    note:
+      "67 mm covers the Sony FE 24-50mm F2.8 G. Buy this size only if that compact fast standard zoom travels; it does not share the 77 mm filter set used by the 24-105, 70-200 f/2.8, and 100-400.",
   },
   {
     title: "82 mm fast-zoom branch",
@@ -5571,6 +5608,13 @@ const gearComparisonRows = [
     sony: "FE 24-105mm F4 G OSS",
     canon: "RF 24-105mm F4 L IS USM",
     note: "Very similar travel/refuge-context role. Both share 77 mm filters; Canon is slightly shorter, Sony is slightly lighter.",
+  },
+  {
+    category: "Compact fast standard zoom",
+    sony: "FE 24-50mm F2.8 G",
+    canon: "RF 24-70mm F2.8 L IS USM",
+    note:
+      "Sony's 24-50 is the compact f/2.8 travel option. It is much smaller and lighter than a 24-70, but gives up 50-70 mm and the 24-105's extra reach.",
   },
   {
     category: "Fast standard zoom",
@@ -5682,6 +5726,15 @@ function shortLensLabel(name) {
     .replace("Extender RF 2x", "RF 2x TC");
 }
 
+function chartApertureLabel(apertureText) {
+  const text = String(apertureText || "").trim();
+  if (!text || text === "N/A") return "";
+  const stopLoss = text.match(/^Loses\s+(\d+)\s+stops?$/i);
+  if (stopLoss) return `${stopLoss[1]}-stop loss`;
+  const maximum = text.split(/\s+to\s+/i)[0].trim();
+  return maximum.replace(/^f\/(\d+(?:\.\d+)?)-f\/\d+(?:\.\d+)?$/i, "f/$1");
+}
+
 function getLensScaleTrackWidth(itemCount) {
   const axisWidth = 78;
   const columnWidth = 78;
@@ -5749,7 +5802,7 @@ const gearScaleCategories = [
 function gearScaleCategoryForItem(item) {
   const name = item.name;
   if (/Teleconverter|Extender/i.test(name)) return "teleconverters";
-  if (/24-105|24-70/i.test(name)) return "standard";
+  if (/24-105|24-70|24-50/i.test(name)) return "standard";
   if (/70-200/i.test(name)) return "seventy-two-hundred";
   if (/100-400|100-500/i.test(name)) return "wildlife-zooms";
   if (/500mm F5\.6/i.test(name)) return "prime-reach";
@@ -5882,6 +5935,7 @@ function renderLensLengthScale(selectedSystems = new Set(gearScaleBrands.map((br
         system: item.system,
         name: item.name,
         label: shortLensLabel(item.name),
+        apertureLabel: chartApertureLabel(item.specs.aperture),
         primaryMm: length.primary,
         extendedMm: length.extended,
       };
@@ -5912,7 +5966,7 @@ function renderLensLengthScale(selectedSystems = new Set(gearScaleBrands.map((br
       </div>
       <div class="lens-scale-label">
         <strong>${item.label}</strong>
-        <span>${isReference ? item.note : `${item.primaryMm}${item.extendedMm ? `-${item.extendedMm}` : ""} mm`}</span>
+        <span>${isReference ? item.note : `${item.apertureLabel ? `${item.apertureLabel}; ` : ""}${item.primaryMm}${item.extendedMm ? `-${item.extendedMm}` : ""} mm`}</span>
       </div>
     </article>`;
   };
@@ -5958,6 +6012,7 @@ function renderLensWeightScale(selectedSystems = new Set(gearScaleBrands.map((br
         system: item.system,
         name: item.name,
         label: shortLensLabel(item.name),
+        apertureLabel: chartApertureLabel(item.specs.aperture),
         weightG: weight.total,
         weightLabel: weight.label,
       };
@@ -5978,7 +6033,7 @@ function renderLensWeightScale(selectedSystems = new Set(gearScaleBrands.map((br
       </div>
       <div class="lens-scale-label">
         <strong>${item.label}</strong>
-        <span>${isReference ? item.note : item.weightLabel}</span>
+        <span>${isReference ? item.note : `${item.apertureLabel ? `${item.apertureLabel}; ` : ""}${item.weightLabel}`}</span>
       </div>
     </article>`;
   };

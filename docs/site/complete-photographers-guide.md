@@ -70,19 +70,19 @@ Current names, access, and road conditions must be verified on the [FWS Visit Us
 
 | Location | Best use | Focal lengths | Field notes |
 |---|---|---|---|
-| Scenic Drive / Auto Tour Loop | Main photography framework for the refuge: wetlands, fields, decks, flight lines, raptors, ducks, cranes, geese. | 24-105mm, 100-500mm, 200-600mm, 150-600mm, 400-800mm in good light. | Official loop is about 12 miles, with one-way signs and a two-way connector. Drive slowly, use legal turnouts, and do not block traffic. Beginner-friendly if you obey signs and scout patiently. |
-| North Loop / Farm Deck area | Mid-morning feeding birds, field cranes/geese, raptors, flock movement, distant groups. | 100-500mm to 600mm+; 24-105mm for field scale. | Strong after fly-out when birds move to feeding fields. Field and gate conditions vary. Good for experienced photographers who can read distance, heat shimmer, wind, and disturbance. |
-| South Loop | Wetlands, ducks, geese, coots, herons, reeds, reflections, marsh birds, slower practice after sunrise. | 100-500mm, 200-600mm, 400-800mm in good light; 24-105mm for habitat. | Dabbler Deck and Eagle Scout Deck are useful anchors. Often beginner-friendly because subjects and habitat are varied even when the main spectacle is elsewhere. |
-| Flight Deck / Main Pool | Classic snow-goose blast-off, cranes, ducks, wide flock patterns, sunset returns if birds are using the pool. | 24-105mm for blast-off scale, 100-500mm or 200-600mm for individual birds. | Can be crowded. Main Pool changes with water management, so scout before committing a dawn. Good for first-timers when water and birds are present. |
-| Boardwalk / Boardwalk Lagoon area | Marsh detail, ducks, waders, rails if lucky, reeds, quieter compositions. | 100-500mm, 200-600mm, macro/detail lens if carried, 24-105mm for habitat. | Best when you want slower observation and composition after the main morning action. Stay on legal paths. |
+| Scenic Drive / Auto Tour Loop | Main photography framework for the refuge: wetlands, fields, decks, flight lines, raptors, ducks, cranes, geese. | 24-105mm or Sony 24-50mm f/2.8 for context; 100-500mm, 200-600mm, 150-600mm, 400-800mm in good light. | Official loop is about 12 miles, with one-way signs and a two-way connector. Drive slowly, use legal turnouts, and do not block traffic. Beginner-friendly if you obey signs and scout patiently. |
+| North Loop / Farm Deck area | Mid-morning feeding birds, field cranes/geese, raptors, flock movement, distant groups. | 100-500mm to 600mm+; 24-105mm or 24-50mm f/2.8 for field scale. | Strong after fly-out when birds move to feeding fields. Field and gate conditions vary. Good for experienced photographers who can read distance, heat shimmer, wind, and disturbance. |
+| South Loop | Wetlands, ducks, geese, coots, herons, reeds, reflections, marsh birds, slower practice after sunrise. | 100-500mm, 200-600mm, 400-800mm in good light; 24-105mm or 24-50mm f/2.8 for habitat. | Dabbler Deck and Eagle Scout Deck are useful anchors. Often beginner-friendly because subjects and habitat are varied even when the main spectacle is elsewhere. |
+| Flight Deck / Main Pool | Classic snow-goose blast-off, cranes, ducks, wide flock patterns, sunset returns if birds are using the pool. | 24-105mm for blast-off scale, Sony 24-50mm f/2.8 if compact wide context is the priority, 100-500mm or 200-600mm for individual birds. | Can be crowded. Main Pool changes with water management, so scout before committing a dawn. Good for first-timers when water and birds are present. |
+| Boardwalk / Boardwalk Lagoon area | Marsh detail, ducks, waders, rails if lucky, reeds, quieter compositions. | 100-500mm, 200-600mm, macro/detail lens if carried, 24-105mm or 24-50mm f/2.8 for habitat. | Best when you want slower observation and composition after the main morning action. Stay on legal paths. |
 | Dabbler and Diver Deck / wetland decks | Ducks, geese, coots, herons, reflections, bright-water exposure practice. | 100-500mm, 200-600mm, 400-800mm in good light. | Shared space. Keep tripods compact and be courteous. Excellent for mid-morning or when wind makes flight work frustrating. |
-| Marsh areas | Ducks, waders, shorebirds in season, harriers, backlit reeds, environmental frames. | Long zoom plus 24-105mm. | Subject distance can be deceptive. Watch edges, shadows, and behavior. Good for photographers who can make habitat images. |
-| Farm fields | Feeding cranes/geese, raptors, blackbirds, dust, environmental behavior. | 400-800mm, 200-600mm, 100-500mm, 24-105mm for scale. | Vehicle as blind. Do not walk birds off food. Do not enter fields. Light shimmer can hurt long-distance sharpness after sun rises. |
-| Roost pools / crane ponds along legal public pullouts | Sunrise crane departures, sunset returns, silhouettes, reflections, cold breath, geese if present. | 24-105mm, 100-500mm, 200-600mm. | Use only legal parking/pullouts. Stay off railroad property, shoulders, private land, and closed areas. Wind determines landing/takeoff direction. |
-| Rio Viejo Trail area | Marsh birds, songbirds, quail, roadrunner, deer, coyote, lower-pressure walking. | 100-500mm or 200-600mm; 24-105mm for habitat. | Good mid-morning reset. Official restroom/access details should be checked on FWS pages. |
-| Desert Arboretum / Visitor Center area | Roadrunner, Gambel's quail, sparrows, phoebes, desert plants, close-subject practice. | 100-400mm, 100-500mm, 24-105mm. | Use vehicle-blind behavior and slow movement. Visitor Center hours as of June 3, 2026 are Thursday-Monday, 9 AM-4 PM per [FWS](https://www.fws.gov/refuge/bosque-del-apache/visit-us). |
-| Nearby public roads | Possible legal views of crane ponds or fly lines. | 24-105mm to 600mm. | Only if parking is safe and legal. Do not stand in traffic lanes, on railroad property, or on private land. |
-| Bernardo Wildlife Area | Optional complement, not part of Bosque. Winter cranes/geese and waterfowl may be possible. | 100-500mm, 200-600mm, 24-105mm. | Clearly separate from Bosque logistics. Use local/current sources such as [Visit Socorro's Bernardo page](https://socorronm.org/location-activity/ladd-s-gordon-waterfowl-complex-bernardo-waterfowl-area/) and verify state-area access before going. |
+| Marsh areas | Ducks, waders, shorebirds in season, harriers, backlit reeds, environmental frames. | Long zoom plus 24-105mm; Sony 24-50mm f/2.8 for compact context/details. | Subject distance can be deceptive. Watch edges, shadows, and behavior. Good for photographers who can make habitat images. |
+| Farm fields | Feeding cranes/geese, raptors, blackbirds, dust, environmental behavior. | 400-800mm, 200-600mm, 100-500mm, 24-105mm for scale; 24-50mm f/2.8 for compact field context. | Vehicle as blind. Do not walk birds off food. Do not enter fields. Light shimmer can hurt long-distance sharpness after sun rises. |
+| Roost pools / crane ponds along legal public pullouts | Sunrise crane departures, sunset returns, silhouettes, reflections, cold breath, geese if present. | 24-105mm or 24-50mm f/2.8, 100-500mm, 200-600mm. | Use only legal parking/pullouts. Stay off railroad property, shoulders, private land, and closed areas. Wind determines landing/takeoff direction. |
+| Rio Viejo Trail area | Marsh birds, songbirds, quail, roadrunner, deer, coyote, lower-pressure walking. | 100-500mm or 200-600mm; 24-105mm or 24-50mm f/2.8 for habitat. | Good mid-morning reset. Official restroom/access details should be checked on FWS pages. |
+| Desert Arboretum / Visitor Center area | Roadrunner, Gambel's quail, sparrows, phoebes, desert plants, close-subject practice. | 100-400mm, 100-500mm, 24-105mm, Sony 24-50mm f/2.8 for closer context. | Use vehicle-blind behavior and slow movement. Visitor Center hours as of June 3, 2026 are Thursday-Monday, 9 AM-4 PM per [FWS](https://www.fws.gov/refuge/bosque-del-apache/visit-us). |
+| Nearby public roads | Possible legal views of crane ponds or fly lines. | 24-105mm or 24-50mm f/2.8 to 600mm. | Only if parking is safe and legal. Do not stand in traffic lanes, on railroad property, or on private land. |
+| Bernardo Wildlife Area | Optional complement, not part of Bosque. Winter cranes/geese and waterfowl may be possible. | 100-500mm, 200-600mm, 24-105mm or 24-50mm f/2.8. | Clearly separate from Bosque logistics. Use local/current sources such as [Visit Socorro's Bernardo page](https://socorronm.org/location-activity/ladd-s-gordon-waterfowl-complex-bernardo-waterfowl-area/) and verify state-area access before going. |
 
 Do not claim "Flight Deck is best" or "North Loop is best" without same-week evidence. The right question is: where did the birds roost last night, where did they feed this morning, and how will tomorrow's wind and light change the usable angle?
 
@@ -104,7 +104,7 @@ Roadrunners, Gambel's quail, sparrows, phoebes, blackbirds, herons, egrets, shor
 
 Flight photography starts before the bird enters the frame. Set continuous autofocus, subject detection if your camera handles birds reliably, high-speed burst, and a shutter speed fast enough for the image you want. Start slightly wider than maximum reach during chaotic action. Once you have the bird tracked, zoom or crop tighter.
 
-For blast-offs, decide between three compositions: wide flock shape, medium chaos, or tight individuals. Do not try to make all three at once. Wide frames often need 24-105mm or 70-200mm. Medium and tight frames need 100-500mm or 200-600mm. The classic mistake is being at 600mm when the whole sky erupts.
+For blast-offs, decide between three compositions: wide flock shape, medium chaos, or tight individuals. Do not try to make all three at once. Wide frames often need 24-105mm or 70-200mm; the Sony 24-50mm f/2.8 can cover compact wide context but gives up the 50-105mm reach that often helps with flock scale. Medium and tight frames need 100-500mm or 200-600mm. The classic mistake is being at 600mm when the whole sky erupts.
 
 For crane fly-ins and landings, watch wind. Cranes usually drop legs before landing and may glide, flare, or run. Pick a landing lane, pre-frame it, and wait. A quartering angle is often better than straight-on because it shows wings, legs, and body shape.
 
@@ -127,25 +127,26 @@ These are starting points, not rules. Tune for your camera, lens, distance, ligh
 | Scenario | Starting settings |
 |---|---|
 | Pre-dawn silhouettes | Manual, 1/500-1/1000 sec, f/4-f/6.3, Auto ISO or ISO 1600-6400, expose for sky color, WB daylight/cloudy or fixed Kelvin. |
-| Sunrise snow-goose blast-off | 1/1600-1/3200 sec, f/5.6-f/8, Auto ISO, continuous AF, wide/zone tracking, start 24-105mm or 100-500mm before going tight. |
+| Sunrise snow-goose blast-off | 1/1600-1/3200 sec, f/5.6-f/8, Auto ISO, continuous AF, wide/zone tracking, start 24-105mm, Sony 24-50mm f/2.8, or 100-500mm before going tight. |
 | Sandhill cranes in flight | 1/1600-1/2500 sec, f/5.6-f/8, continuous AF, medium zone, leave space for wings and direction. |
 | Snow geese in sun | 1/2000-1/3200 sec, f/7.1-f/9, ISO as needed, protect highlights, check blinkies often. |
 | Backlit birds | Manual exposure from bright background, 1/1000-1/2500 sec depending motion, consider silhouettes or rim light intentionally. |
 | Slow-shutter flock blur | 1/15-1/125 sec, f/8-f/16 as needed, ISO low, pan smoothly, expect low keeper rate. |
 | Stationary portraits | 1/500-1/1000 sec, f/5.6-f/8, single point or small zone, eye/subject detect if reliable, stabilize. |
-| Environmental wide shots | 1/250-1/1000 sec depending bird motion, f/5.6-f/11, 24-105mm, compose water, sky, mountains, and flock shape. |
+| Environmental wide shots | 1/250-1/1000 sec depending bird motion, f/5.6-f/11, 24-105mm or Sony 24-50mm f/2.8, compose water, sky, mountains, and flock shape. |
 | Sunset fly-ins | 1/1000-1/2500 sec for action, slower for silhouettes, manual exposure, fixed WB, be ready to widen. |
 
 ## Best Equipment To Take
 
-Minimum viable kit: one capable camera body, a 100-400mm/100-500mm/150-600mm/200-600mm class lens, a wide-to-standard zoom such as 24-105mm, extra batteries, plenty of cards, lens cloths, warm gloves, headlamp, binoculars, water, snacks, and a way to support the long lens from the vehicle.
+Minimum viable kit: one capable camera body, a 100-400mm/100-500mm/150-600mm/200-600mm class lens, a wide-to-standard zoom such as 24-105mm, or the Sony 24-50mm f/2.8 if compact fast-standard carry matters more than extra reach, extra batteries, plenty of cards, lens cloths, warm gloves, headlamp, binoculars, water, snacks, and a way to support the long lens from the vehicle.
 
 Ideal serious wildlife kit: two bodies, one wide/standard zoom mounted on one body, one flexible long zoom mounted on the other, optional longer reach lens for good light, beanbag, monopod or gimbal/tripod, rain/dust cover, remote release, extra batteries kept warm, multiple fast cards, portable power, binoculars, lens cloths, blower, sensor-cleaning supplies, and a phone loaded with weather, wind, sunrise/sunset, eBird, and offline map tools.
 
-Landscape plus wildlife kit: 16-35mm or 20-40mm if you love wide landscapes, 24-105mm as the primary environmental lens, 70-200mm for compression if space allows, plus the main long wildlife zoom. Do not overpack every telephoto if it slows your response or forces lens changes in dust and cold.
+Landscape plus wildlife kit: 16-35mm or 20-40mm if you love wide landscapes, 24-105mm as the primary environmental lens, Sony 24-50mm f/2.8 as a compact fast-standard swap for travel/people/low-light detail, 70-200mm for compression if space allows, plus the main long wildlife zoom. Do not overpack every telephoto if it slows your response or forces lens changes in dust and cold.
 
 Lens guidance:
 
+- 24-50mm f/2.8: compact fast-standard option for travel, people, low-light details, and close context. At Bosque, it is a swap for compactness and f/2.8, not a replacement for the 24-105mm when flock scale and 70-105mm reach matter.
 - 100-400mm / 100-500mm: best flexible flight and close-pass range. Excellent for first light, vehicle work, and sudden distance changes.
 - 150-600mm / 200-600mm: strong primary wildlife choice, especially for cranes, geese, ducks, raptors, and fields.
 - 300mm / 400mm primes: excellent handling and image quality if you accept framing limits. Add teleconverters only when light and AF support it.
@@ -254,7 +255,7 @@ Best months: December for first-time serious photographers; late November throug
 
 Best daily schedule: arrive 40-60 minutes before sunrise; shoot blast-off and early flight; scout fields and wetlands mid-morning; rest/download/eat midday; reposition 60-90 minutes before sunset; stay through blue hour within legal access.
 
-Essential gear: camera body, flexible long zoom, 24-105mm or equivalent, extra batteries/cards, beanbag, lens cloths, binoculars, headlamp, gloves, hand warmers, water, snacks, downloaded maps.
+Essential gear: camera body, flexible long zoom, 24-105mm or equivalent, Sony 24-50mm f/2.8 if you choose the compact fast-standard branch, extra batteries/cards, beanbag, lens cloths, binoculars, headlamp, gloves, hand warmers, water, snacks, downloaded maps.
 
 Starting camera settings: 1/1600-1/3200 sec for flight, f/5.6-f/8, Auto ISO or manual ISO as tested, continuous AF, bird detection if reliable, medium/wide zone for flight, histogram/highlight warnings on, raw capture.
 
